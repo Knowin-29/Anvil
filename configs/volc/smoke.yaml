@@ -1,0 +1,16 @@
+TaskName: "gsa-forge-smoke-v1"
+Description: "GSA-Forge smoke: verify vePFS mount, GPU count, ms-swift import"
+Entrypoint: "bash /path/to/Anvil/configs/volc/code/volc_smoke_entry.sh"
+ImageUrl: "registry.example.invalid/anvil:latest"
+Framework: "Custom"
+TaskRoleSpecs:
+  - RoleName: "worker"
+    RoleReplicas: 1
+    Flavor: "ml.hpcpni2l.28xlarge"
+ActiveDeadlineSeconds: "1h"
+Storages:
+  - Type: "Vepfs"
+    MountPath: "/path/to/workspace/foundation"
+    VepfsId: "YOUR_VEPFS_ID"
+    SubPath: "foundation"
+    ReadOnly: false

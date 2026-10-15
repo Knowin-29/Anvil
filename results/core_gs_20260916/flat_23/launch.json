@@ -1,0 +1,36 @@
+{
+  "job": {
+    "id": "flat_23",
+    "arm": "flat",
+    "seed": 23,
+    "steps": 256
+  },
+  "manifest_sha256": "60632538326b4e9d853f9cdecd61677e5006a699e2545ddf2a5479a0f1bdb633",
+  "launcher_sha256": "d3d3f83d15e48a7c5ce9f31b3af01639f6874d25baca3b9e919cee8325075c18",
+  "runtime_sha256": "3247b34f8d47f9d5809261512011b6048a470ab2121396ba3417ad6f1670b520",
+  "plugin_sha256": "e49784947df07dad4b85d5e0a6d87b6db693c303acfe66d876be049ee75da9ba",
+  "gpus": [
+    2,
+    3
+  ],
+  "settings": {
+    "updates": 256,
+    "effective_batch": 4,
+    "lr": 5e-06,
+    "max_length": 3072,
+    "max_completion_length": 256,
+    "image_tokens": 1536,
+    "topk": 128,
+    "jsd_beta": 0.5,
+    "SFT_weight": 1,
+    "MTD_weight": 1,
+    "selection": "terminal checkpoint; no evaluation-dependent arm/checkpoint selection",
+    "budget": "Equal updates, common maximum rollout/context budget; actual tokens/calls logged, not claimed identical."
+  },
+  "cuda_compiler_sha256": "04224d0db67f2c15551b17a9204bf3a15e32cff732e0f3f3d0f6acab07889b45",
+  "execution": {
+    "teacher_deepspeed": "zero3_offload",
+    "config_sha256": "fe35e2577d19eb666a01d772b7a4f2fbceed4a46f8c27699b0778377ab7382d1",
+    "reason": "Frozen teacher parameter CPU offload to share GPUs; model, objective, data and update budget unchanged."
+  }
+}

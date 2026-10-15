@@ -1,0 +1,25 @@
+{
+  "source_index_sha256": "e76ba625e2f63a762ea6c5695ca52187c952b04da58b86477e66cd1c1f8aae51",
+  "source_receipt_sha256": "6a97d62da27f1e5ffca509c3ce426a93966baba0b43f9e516af7c1f965504087",
+  "counts": {
+    "ai2d_test": {
+      "population": 3088,
+      "evaluated": 309
+    },
+    "scienceqa_test": {
+      "population": 2017,
+      "evaluated": 202
+    },
+    "textvqa_val": {
+      "population": 5000,
+      "evaluated": 500
+    }
+  },
+  "selection": "Fixed SHA256 UID ordering, ceiling of 10% per benchmark, frozen before core-checkpoint VQA inference.",
+  "image_tokens": 1536,
+  "thinking": false,
+  "batch": 4,
+  "temperature": 0,
+  "max_output": "32 for multiple choice; 64 for TextVQA",
+  "scope": "Matched initial/post retention panel; these are sampled retention scores, not replacement full-benchmark leaderboard scores."
+}

@@ -1,0 +1,52 @@
+schema_version: 1
+protocol: iclr-claim-artifact-visual-contract-v3
+
+claim:
+  primary: quantify general-capability retention after E1 post-training
+  paired: quantify same-item G-to-S behavior under oracle, predicted, absent, and preregistered corrupted grounding context on the same 40 scenes
+  excluded:
+    - no missing value is estimated, borrowed, or plotted as zero
+    - an unavailable v5.2 result produces no paired table or paired figure panel
+    - these artifacts do not establish a trained FirstFault method result
+
+reviewer_questions:
+  - does E1 post-training retain AI2D, ScienceQA, and TextVQA performance?
+  - how much spatial accuracy is lost when oracle boxes are replaced by the model's own grounding?
+  - do absent and deterministically corrupted boxes confirm that the downstream answer uses grounding context?
+  - which failed S items are Attributed(G), Local(S), or Inconclusive under the fail-closed three-state rule?
+
+source:
+  only: verified iclr-claim-evidence-v3 JSON
+  identity: canonical payload SHA256 plus live compiler file binding
+  forbidden: console logs, partial shards, external reference values, and manually entered estimates
+
+uncertainty:
+  general: paired item bootstrap within each dataset and macro average
+  paired_gs: paired scene bootstrap over the oracle-minus-predicted-context gap; strict E2E is reported separately
+  context_controls: paired scene bootstrap over oracle-minus-absent and oracle-minus-corrupted gaps
+  confidence: 0.95
+
+layout:
+  table_general: dataset rows with n, Base, E1, paired delta, CI, validity, and transition counts
+  table_paired_gs: exact40 grounding, absent, corrupted, oracle, predicted-context, gap, CI, recovery, and Attributed(G)/Local(S)/Inconclusive counts
+  figure_pending: one full-width General Retention forest panel
+  figure_complete: two panels, adding all four G-to-S contexts, propagation, transition counts, and fail-closed attribution counts
+  output_width_in: 5.5
+
+encoding:
+  ink: "#202124"
+  grounding: "#0072B2"
+  spatial: "#009E73"
+  stress_or_gap: "#E69F00"
+  loss: "#A33A3A"
+  rule: "#C7CBD1"
+  redundancy: color is repeated by marker shape, line style, direct labels, and signs
+  missingness: omitted, never assigned a numeric coordinate
+
+outputs:
+  editable_vector: fig_claim_evidence.svg
+  publication_vector: fig_claim_evidence.pdf
+  raster_preview: fig_claim_evidence.png
+  latex_general: tab_general_retention.tex
+  latex_paired_when_available: tab_scannet_v52_paired_gs.tex
+  provenance: render_manifest.json

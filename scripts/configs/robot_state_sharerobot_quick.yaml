@@ -1,0 +1,8 @@
+# A_robot_state quick config for ShareRobot single-frame subsets.
+# Uses trajectory and affordance frames; planning is multi-frame and skipped by default.
+sources:
+  - path: /path/to/datasets/downloads/sharerobot
+    source_type: sharerobot
+    subsets: [trajectory, affordance]
+    max_images: 50
+    weight: 1.0

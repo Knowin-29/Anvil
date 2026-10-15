@@ -1,0 +1,23 @@
+{
+  "python": "3.11.15",
+  "observed_packages": {
+    "torch": "2.5.1+cu121",
+    "transformers": "5.5.0",
+    "ms-swift": "4.2.0.dev0",
+    "deepspeed": "0.19.1",
+    "accelerate": "1.13.0",
+    "peft": "0.18.1",
+    "datasets": "3.6.0",
+    "safetensors": "0.7.0",
+    "numpy": "2.2.6",
+    "Pillow": "11.3.0",
+    "opencv-python": "4.13.0.92",
+    "PyYAML": "6.0.1",
+    "Flask": "3.1.3",
+    "pycocotools": null,
+    "fastapi": "0.136.3",
+    "uvicorn": "0.48.0"
+  },
+  "complete_lockfile": false,
+  "upstream_swift_equivalence_verified": false
+}

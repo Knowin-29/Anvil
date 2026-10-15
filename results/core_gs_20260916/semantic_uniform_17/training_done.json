@@ -1,0 +1,14 @@
+{
+  "adapter": "/path/to/Anvil/engineering/data/core_gs_20260916/semantic_uniform_17/training/v1-20260916-221535/checkpoint-256",
+  "adapter_sha256": "6563e3d80eb223a541964d16a5baeed9fc61d34fb7e3642e50f7e6403ff88628",
+  "trainer_state_sha256": "40b606863a345b10f67f3cb51b9cf7dd742638b2781ab359217e1e573a9ec85e",
+  "seconds": 8379.348060859833,
+  "global_step": 256,
+  "job": {
+    "id": "semantic_uniform_17",
+    "arm": "semantic_uniform",
+    "seed": 17,
+    "steps": 256
+  },
+  "full_GSA_qualified": false
+}

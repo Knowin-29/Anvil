@@ -1,0 +1,72 @@
+{
+  "image_id": "scene_08_non_operable_blocker",
+  "image_path": "tests/fixtures/images/scene_08_non_operable_blocker.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        50.0,
+        55.0,
+        75.0,
+        80.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        62.0,
+        68.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the pen",
+      "referring_expressions": [
+        "笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_08_non_operable_blocker_pen_0.png"
+    },
+    {
+      "id": "box_0",
+      "class_name": "box",
+      "bbox": [
+        42.0,
+        40.0,
+        82.0,
+        70.0
+      ],
+      "operation": "non_operable",
+      "grasp_point": [
+        62.0,
+        52.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the sealed box",
+      "referring_expressions": [
+        "盒子"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_08_non_operable_blocker_box_0.png"
+    }
+  ],
+  "edges": [
+    {
+      "subject": "box_0",
+      "object": "pen_0",
+      "predicate": "occluding",
+      "source": "derived",
+      "confidence": 1.0
+    }
+  ],
+  "ternary_relations": [],
+  "blocking_dag": [
+    [
+      "box_0",
+      "pen_0"
+    ]
+  ]
+}

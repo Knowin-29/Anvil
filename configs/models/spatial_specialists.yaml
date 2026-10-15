@@ -1,0 +1,76 @@
+schema_version: 1
+storage_root: /path/to/environment/models
+
+models:
+  - id: spaceqwen2_5_vl_3b_instruct
+    display_name: SpaceQwen2.5-VL-3B-Instruct
+    current_state: TBD
+    target_tier: formal
+    source: huggingface
+    repo_id: remyxai/SpaceQwen2.5-VL-3B-Instruct
+    revision: 332ff3fbc40d0e62af64b1bd2e0a606b3cca028e
+    path: /path/to/environment/models/SpaceQwen2.5-VL-3B-Instruct
+    license: apache-2.0
+    parameter_count: 3.75B
+    remote_weight_bytes: 7509337120
+    remote_payload_bytes_without_gguf: 7529047531
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    template_type: qwen2_5_vl
+    wrapper: /path/to/Anvil/scripts/run_eval_dp.sh
+    table_identity: SpatialVLM-style open reproduction; not the original SpatialVLM
+    table_eligible: true
+    notes: Qwen2.5-VL architecture is registered in the pinned ms-swift tree.
+
+  - id: roborefer_2b_sft
+    display_name: RoboRefer-2B-SFT
+    current_state: TBD
+    target_tier: formal_if_rgb_only
+    source: huggingface
+    repo_id: Zhoues/RoboRefer-2B-SFT
+    revision: 5838509249e43bc135ce55d05eace34edd2ffaf4
+    path: /path/to/environment/models/RoboRefer-2B-SFT
+    license: apache-2.0
+    remote_weight_bytes: 4914147048
+    remote_payload_bytes_without_gguf: 4941874379
+    protocol: custom_nvila_rgb_or_rgb_depth_to_text
+    harness: upstream_roborefer_api_required
+    wrapper: /path/to/Anvil/scripts/run_roborefer_same_protocol.sh
+    table_eligible: conditional
+    formal_conditions:
+      enable_depth: 0
+      prompt_source: frozen_gsa_eval_v7
+      parser_scorer_source: frozen_gsa_eval_v7
+    notes: Current ms-swift has no NVILA/RoboRefer loader; RGB-D runs are diagnostic only.
+
+  - id: roborefer_8b_sft
+    display_name: RoboRefer-8B-SFT
+    current_state: TBD
+    target_tier: diagnostic_until_2b_path_passes
+    source: huggingface
+    repo_id: Zhoues/RoboRefer-8B-SFT
+    revision: bd04070786084c624156194d89333c375b274b28
+    path: /path/to/environment/models/RoboRefer-8B-SFT
+    license: apache-2.0
+    remote_weight_bytes: 17128482664
+    remote_payload_bytes_without_gguf: 17149663620
+    protocol: custom_nvila_rgb_or_rgb_depth_to_text
+    harness: upstream_roborefer_api_required
+    wrapper: /path/to/Anvil/scripts/run_roborefer_same_protocol.sh
+    table_eligible: false
+    notes: Do not download before the 2B RGB-only interface and metric canary passes.
+
+  - id: spatialvlm_original
+    display_name: SpatialVLM
+    current_state: TBD
+    target_tier: TBD
+    source: publication_only
+    repo_id: null
+    revision: null
+    path: null
+    license: TBD
+    protocol: no_released_exact_checkpoint_registered
+    harness: unavailable
+    wrapper: null
+    table_eligible: false
+    notes: Public SpatialVLM numbers must remain external; SpaceQwen/SpaceLLaVA are reproductions.

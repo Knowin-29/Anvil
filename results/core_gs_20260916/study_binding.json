@@ -1,0 +1,28 @@
+{
+  "schema": "anvil-gs-mechanism-binding-v1",
+  "full_GSA_qualified": false,
+  "scope": "Two-stage source-grounded mechanism comparison, independent Action results remain separate.",
+  "teacher_policy": "Run measured G/S specialists even when a superiority contrast is inconclusive; report quality rather than require favorable evidence.",
+  "teachers": {
+    "G": {
+      "adapter": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/G/training/v0-20260916-052214/checkpoint-512",
+      "sha256": "5ddecceb902825519db4c26a603f43b0f115ba263b8cca3f112dacaed85317e3"
+    },
+    "S": {
+      "adapter": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/S/training/v0-20260916-052214/checkpoint-512",
+      "sha256": "8f57b5c0fe6d7c27a2fd6da3fcea8a8dc468f1f44895520339b49a44e7541fed"
+    }
+  },
+  "student": {
+    "adapter": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/linked/training/v0-20260916-052214/checkpoint-512",
+    "sha256": "822ae721e1344981ecea034c82ffda63003581c8b89bceb935d6126a9eeaa757"
+  },
+  "training": {
+    "path": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/train_linked.jsonl",
+    "sha256": "93d6d8125717e71d77de9932ac026bd1517f40faabd551c559c9445c626c2918"
+  },
+  "context_evidence": {
+    "path": "/path/to/Anvil/engineering/data/core_gs_20260916/context_evidence.json",
+    "sha256": "6a448f13eba4df6087fd626bf06ad72efdfae87e5320abd5d13e1f839d25cb9f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "gsa-paper-figures",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Deterministic editable figures for the GSA paper",
+  "dependencies": {
+    "pptxgenjs": "^3.12.0"
+  }
+}

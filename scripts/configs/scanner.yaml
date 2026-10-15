@@ -1,0 +1,38 @@
+# Quality Scanner 配置
+# 用法: python -m apps.data_flywheel.scanner.scanner --config scripts/configs/scanner.yaml
+
+annotations_dir: "data/output/flywheel/v3_run_1778980547/annotations"
+score_suffix: ".scores.jsonl"
+
+# 多模型 Judge 端点 (可配置多个进行集成评估)
+judges:
+  - name: "qwen2.5-vl-32b"
+    base_url: "http://localhost:10301"
+    model: "qwen2.5-vl-32b"
+    weight: 1.0
+    max_tokens: 512
+    temperature: 0.1
+  # 如果部署了第二个模型可以取消注释
+  # - name: "internvl2-26b"
+  #   base_url: "http://localhost:10302"
+  #   model: "internvl2-26b"
+  #   weight: 0.8
+  #   max_tokens: 512
+  #   temperature: 0.1
+
+# 扫描参数
+batch_size: 8          # 每批发给 Judge 的标注数
+concurrency: 4         # 并发请求数
+scan_interval_seconds: 30  # 扫描间隔 (秒)
+max_image_size: 960    # 图片最大边长 (压缩后发送, 减小以加速推理)
+resume: true           # 断点续扫
+
+# 质量阈值
+pass_threshold: 0.6    # >= 此分数视为通过
+delete_threshold: 0.3  # < 此分数标记为 suggest_delete
+
+# 可选: 只扫描指定能力维度 (留空扫描全部)
+# capabilities:
+#   - G
+#   - S
+#   - Aff

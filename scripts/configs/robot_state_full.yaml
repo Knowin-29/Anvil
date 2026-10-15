@@ -1,0 +1,36 @@
+# A_robot_state full config. Remove max_images limits for larger runs if desired.
+sources:
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_empty
+    source_type: image_dir
+    recursive: true
+    weight: 1.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_holding_object
+    source_type: image_dir
+    recursive: true
+    weight: 1.5
+
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_contact_target
+    source_type: image_dir
+    recursive: true
+    weight: 1.5
+
+  - path: /path/to/datasets/datasets/robot_tool_state/object_between_fingers
+    source_type: image_dir
+    recursive: true
+    weight: 2.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/tool_in_hand
+    source_type: image_dir
+    recursive: true
+    weight: 1.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/wrist_view_operation
+    source_type: image_dir
+    recursive: true
+    weight: 1.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/uncertain_or_occluded
+    source_type: image_dir
+    recursive: true
+    weight: 0.5

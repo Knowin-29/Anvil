@@ -1,0 +1,19 @@
+{
+  "source": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/train_linked.jsonl",
+  "source_sha256": "93d6d8125717e71d77de9932ac026bd1517f40faabd551c559c9445c626c2918",
+  "records": 2011,
+  "model": "/path/to/external_environment/hf_models/Qwen/Qwen3.6-27B",
+  "model_config_sha256": "69db4eb7196bc8190813231b3018ca05d8c2e3abc7b1af19d55c157af44a9d9c",
+  "generation": {
+    "batch": 4,
+    "max_new_tokens": 512,
+    "temperature": 0,
+    "seed": 17,
+    "image_tokens": 1536,
+    "max_length": 4096
+  },
+  "split": "Only previously frozen training scenes; dev and evaluation never generate training candidates.",
+  "rounds": "One common initial output; exactly one additional call per failed source check in each of no-feedback and named-feedback arms. Already correct first outputs reused.",
+  "metric": "Correctness against independent official instance/depth targets, not human precision. Final source-verified retention and conditional correctness have the same acceptance criterion and are not an independent verifier-accuracy estimate.",
+  "human_review": "Historical 320 judgments reported separately; no new review or paid calls."
+}

@@ -1,0 +1,28 @@
+services:
+  vlm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gsa-vlm-qwen36:latest
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+              count: 2
+    volumes:
+      - /path/to/environment/hf_models/Qwen/Qwen3.6-27B:/model:ro
+    ports:
+      - "10301:8000"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0,1
+      - TRANSFORMERS_CACHE=/tmp/hf_cache
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/v1/models"]
+      interval: 10s
+      timeout: 5s
+      retries: 60
+      start_period: 120s
+    restart: unless-stopped

@@ -1,0 +1,31 @@
+{
+  "schema": "gsa-scannet-sensor-canary-scenes-v1",
+  "protocol": "gsa-depth-v5.0-scannet-sensor-pairwise",
+  "official_split": "val",
+  "split_revision": "3830fce7f8b2e48ef047ef7fd76ea5f62903f51c",
+  "selection_origin": "canary_v3_scene_set_with_ineligible_scene0077_00_replaced_by_lowest_hash_strict_eligible_scene",
+  "quality_contract": {
+    "max_frames_per_scene": 64,
+    "strictly_interior_bbox": true,
+    "min_bbox_area_fraction": 0.01,
+    "max_bbox_area_fraction": 0.45,
+    "excluded_generic_categories": [
+      "furniture",
+      "object",
+      "objects"
+    ],
+    "quartile_separation_required": true
+  },
+  "scene_ids": [
+    "scene0300_01",
+    "scene0307_01",
+    "scene0354_00",
+    "scene0500_00",
+    "scene0535_00",
+    "scene0616_01",
+    "scene0647_01",
+    "scene0678_02",
+    "scene0685_02",
+    "scene0695_03"
+  ]
+}

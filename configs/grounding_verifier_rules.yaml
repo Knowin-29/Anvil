@@ -1,0 +1,447 @@
+#! wbj - all the parameters could be tuned here for grounding section.
+
+# G_grounding verifier tuning rules.
+# This file is the single tuning surface for direct grounding pass-rate experiments.
+# Defaults intentionally mirror the original hard-coded verifier behavior.
+
+grounding_generator:
+  # ------------------------------------------------------------------
+  # Independent validation of the G_grounding GENERATION stage.
+  #
+  # This section reproduces the production grounding pipeline from the very
+  # beginning up to (but NOT including) the rule verifier, i.e. the path inside
+  # scripts/generator_service.py for dimension "G_grounding":
+  #   1. VLM object detection  (the generator itself)
+  #   2. label building + bbox denormalization
+  #   3. active bbox cross-check (Layer-1 self-check, last step before verifier)
+  #
+  # It is ONLY consumed by scripts/evaluate_grounding_generator.py and is NOT
+  # wired into the live generator_service.py service. All previously hard-coded
+  # tunables (prompts, temperatures, token limits, image encoding, bbox area
+  # filters, coordinate convention) are surfaced here so they can be tuned and
+  # validated independently of the running production service.
+  # ------------------------------------------------------------------
+
+  # Number of input images processed in parallel. Each image triggers at least
+  # one VLM detection call plus one cross-check call per detected object, so
+  # raise carefully when the provider rate-limits requests.
+  worker_count: 32
+
+  # Per-image cap applied after loading the input list. 0 means "no limit" and
+  # processes every input. Mirrors GSA_MAX_IMAGES in generator_service.py.
+  max_images: 0
+
+  # ---- VLM endpoint used for BOTH detection and cross-check ----
+  # Single OpenAI-compatible /chat/completions endpoint. The production service
+  # round-robins across VLM_URL_A/VLM_URL_B; this independent module keeps one
+  # explicit endpoint for reproducibility. ${ENV} placeholders are expanded.
+  model:
+    # Default: using Qwen3.6 27B
+    # OpenAI-compatible base URL (the module appends /chat/completions).
+    endpoint: "http://127.0.0.1:8181/v1"
+    # Name of the env var holding the Bearer token. Leave empty for key-less
+    # local services. The token itself must never be written into this file.
+    api_key_env: ""
+    # Model name sent in the request payload. ${ENV} placeholders are expanded.
+    model: "Qwen/Qwen3.6-27B"
+    # Per-request HTTP timeout in seconds. Production uses 180s for detection.
+    timeout_seconds: 180
+    # Passed through as extra_body.chat_template_kwargs to disable Qwen "thinking"
+    # so the content (not reasoning_content) carries the parseable JSON.
+    # PARITY NOTE: production only injects this for volceapi/dashscope endpoints;
+    # this module applies it unconditionally. If you point at an endpoint where
+    # production would NOT disable thinking and want to match it exactly, set
+    # this to {} to omit the kwarg.
+    chat_template_kwargs:
+      enable_thinking: false
+
+  # ---- Image preprocessing (mirrors VLMClient._encode_image) ----
+  image:
+    # Longest image side (px) before base64 encoding. Larger keeps more detail
+    # for small-object detection but raises latency and token cost.
+    max_size: 960
+    # JPEG quality (1-100) for the encoded image. Lower shrinks the payload.
+    jpeg_quality: 85
+
+  # ---- Coordinate convention (mirrors denormalize_bbox) ----
+  # The VLM is asked to emit bbox coordinates in 0..coordinate_normalized_range;
+  # they are converted to pixel coordinates using the real image size. 1000 is
+  # the Qwen-VL convention used everywhere else in this repo. NOTE: the detection
+  # prompt below also hard-codes "0-1000", so change both together if you retune.
+  coordinate_normalized_range: 1000
+
+  # ---- bbox sanity filters applied during denormalization ----
+  # A denormalized box is dropped (label discarded) when it is degenerate or its
+  # area falls outside this band. These mirror the hard-coded checks in
+  # generator_service.denormalize_bbox and act as an early geometry gate that
+  # runs before the rule verifier ever sees the label.
+  bbox_filters:
+    # Boxes covering more than this fraction of the image area are detector
+    # failures (e.g. whole-scene boxes) and are dropped.
+    max_area_ratio: 0.95
+    # Boxes smaller than this fraction of image area are noise and are dropped. #! wbj - temperal change this rule: 0.001->0.0000001
+    min_area_ratio: 0.0000001
+
+  # Default confidence assigned when the model omits a per-object confidence.
+  # Mirrors build_label's float(item.get("confidence", 0.5)).
+  default_confidence: 0.5
+
+  # ---- Object detection: the generator itself ----
+  detection:
+    # Sampling temperature. Production hard-codes 0.7; lower is more
+    # deterministic, higher surfaces more (and noisier) candidate objects.
+    temperature: 0.7
+    # Max tokens for the detection response. Long object lists need headroom;
+    # production uses 8192.
+    max_tokens: 8192
+    # Retries on transient VLM/HTTP errors (timeouts, 429, connection drops).
+    # Production uses VLM_MAX_RETRIES (default 3) for the detection call.
+    retries: 3
+    # Optional system prompt. The production pipeline sends the whole detection
+    # instruction as the user turn with NO system prompt, so this defaults to
+    # empty. Set a value to A/B test a system-role framing.
+    system_prompt: ""
+    # The detection instruction. This is the single largest tuning surface for
+    # generation quality: it defines what counts as an object, how tight the
+    # bbox must be, the confidence rubric, and the output JSON schema.
+    # PARITY: pinned to generator_service.PROMPTS["G_grounding"] by
+    # tests/test_grounding_generator_consistency.py, with ONE allowed delta — the
+    # area wording says "95%" here vs the stale "70%" in production, to agree with
+    # bbox_filters.max_area_ratio (0.95), which is the gate actually enforced.
+    # Any other change to the production prompt will fail that test on purpose.
+    # prompt: |
+    #   You are a precise visual grounding system for robotic manipulation. Your task is to detect and localize ALL distinct physical objects in this scene that a robot could potentially interact with.
+
+    #   STRICT RULES:
+    #   - Only detect PHYSICAL objects (not backgrounds, walls, floors, ceilings, shadows, reflections)
+    #   - Each bbox must TIGHTLY enclose the object (no padding, no full-image boxes)
+    #   - Confidence must reflect how certain you are about the object boundary
+    #   - Do NOT detect abstract concepts, textures, or regions
+
+    #   Think step by step:
+    #   1. Divide the image into quadrants and scan each systematically
+    #   2. For each object found: estimate the TIGHT bounding box (x1,y1 = top-left corner, x2,y2 = bottom-right corner)
+    #   3. Verify: does the bbox actually contain only this object? Is it tight enough?
+    #   4. Assign a specific, descriptive class name (e.g., "blue_ceramic_mug" not just "cup")
+    #   5. Rate confidence: 0.9+ = clearly visible with sharp boundaries, 0.7-0.9 = partially occluded, 0.5-0.7 = uncertain boundary
+
+    #   Output format - JSON array:
+    #   [{"object_name": "descriptive_specific_name", "bbox": [x1,y1,x2,y2], "confidence": 0.5-1.0}]
+    #   Coordinates normalized 0-1000. Detect ALL visible objects in the image (typically 3-10). Do not miss small objects. Each bbox MUST be smaller than 95% of image area.
+    #! wbj - The original prompt is from generator_service.PROMPTS["G_grounding"] and listed above, some changes are made to this prompt:
+    prompt: |
+      You are a precise visual grounding system for robotic manipulation. Your task is to detect and localize ALL distinct physical objects in this scene that a robot could potentially interact with.
+
+      STRICT RULES:
+      - Only detect PHYSICAL objects (also could be backgrounds, walls, floors, ceilings, shadows, reflections, etc.)
+      - Each bbox must TIGHTLY enclose the object (no padding, no full-image boxes)
+      - Confidence must reflect how certain you are about the object boundary
+      - You can detect abstract concepts, textures, or regions
+
+      Think step by step:
+      1. Divide the image into quadrants and scan each systematically
+      2. For each object found: estimate the TIGHT bounding box (x1,y1 = top-left corner, x2,y2 = bottom-right corner)
+      3. Verify: does the bbox actually contain only this object? Is it tight enough?
+      4. Assign a specific, descriptive class name (e.g., "blue_ceramic_mug" not just "cup")
+      5. Rate confidence: 0.9+ = clearly visible with sharp boundaries, 0.7-0.9 = partially occluded, 0.5-0.7 = uncertain boundary
+
+      Output format - JSON array:
+      [{"object_name": "descriptive_specific_name", "bbox": [x1,y1,x2,y2], "confidence": 0.5-1.0}]
+      Coordinates normalized 0-1000. Detect ALL visible objects in the image (typically 3-10). Do not miss small objects. Each bbox MUST be smaller than 95% of image area.
+
+      
+
+  # ---- Active bbox cross-check: Layer-1 self-check (legacy stage) ----
+  # PRODUCTION PARITY: the LIVE generator path
+  # (generator_service.run_continuous -> run_all_dimensions) does NOT run
+  # verify_bbox; cross-check only existed in the now-unused run_dimension().
+  # So enabling this is STRICTER than the running generator. Default is false to
+  # mirror live behavior; set true only to study the legacy self-check stage.
+  cross_check:
+    # Master switch. When false, every denormalized label is emitted unchecked,
+    # reproducing the live generator (which skips cross-check entirely).
+    enabled: false
+    # Sampling temperature for the cross-check call. Production reuses the same
+    # 0.7 chat path; lower it for steadier yes/no verification.
+    temperature: 0.7
+    # Max tokens for the cross-check response.
+    max_tokens: 8192
+    # Retries for the cross-check call. Production uses 1.
+    retries: 1
+    # Behavior on a missing/unparseable/failed response: production treats it as
+    # match=true (the label is KEPT). Set to false to instead drop labels whose
+    # cross-check could not be parsed (stricter).
+    keep_on_unparsed: true
+    # Cross-check (reverse-verification) prompt. The model is shown the image and
+    # asked to confirm the claimed object is actually inside the candidate box;
+    # labels whose match==false are dropped before the verifier stage.
+    # Placeholders: {object} = claimed object class, {bbox} = candidate box
+    # rendered as [x1,y1,x2,y2]. The box is sent in 0-1000 normalized coordinates
+    # (see bbox_coord_space below), matching the prompt wording.
+    prompt: |
+      I claim there is a "{object}" in the region {bbox} (normalized 0-1000 coords). Look at that region carefully. Is my claim correct? Is "{object}" really there? Reply ONLY with JSON: {"match": true/false, "actual_object": "what you actually see there", "confidence": 0.0-1.0}
+    # Coordinate space {bbox} is rendered in FOR THE CROSS-CHECK PROMPT ONLY. This
+    # never changes the bbox stored on the emitted label, which always stays in
+    # PIXEL space because the downstream rule verifier expects pixel bboxes.
+    #   normalized -> box converted to 0..coordinate_normalized_range. This is the
+    #                 default and the intended behavior: the cross-check prompt says
+    #                 "normalized 0-1000", so the box must be sent as 0-1000.
+    #   pixel      -> raw pixel box; only reproduces the legacy generator_service
+    #                 .verify_bbox quirk where pixel coords were passed under a
+    #                 "normalized 0-1000" wording (kept for back-compat / A-B).
+    bbox_coord_space: normalized
+
+
+
+
+# ===========================================================================
+# (2) Verifier RULE module config — consumed by scripts/verifier_service.py
+#     (load_grounding_verifier_config / _checks_G_grounding) and the independent
+#     evaluator scripts/evaluate_grounding_verifier.py.
+#     All rule tunables previously scattered at the file root (score_weights,
+#     tag_thresholds, content_quality, geometry_valid, confidence_check) are now
+#     unified here under `verifier:`. The loader reads this section; if it is
+#     absent it falls back to root-level keys for backward compatibility.
+# ===========================================================================
+verifier:
+  score_weights:
+    # Grounding labels must at least contain a specific object name and a valid bbox.
+    schema_valid: 0.20
+    # Object naming quality is weighted highest because vague names make bbox labels hard to train on.
+    content_quality: 0.30
+    # Geometry is critical for grounding, so bbox shape and scale carry substantial weight.
+    geometry_valid: 0.25
+    # Currently G_grounding has no extra semantic consistency checks, so this stays neutral.
+    consistency: 0.15
+    # Confidence is useful but model confidence is noisy, so it has the lowest weight.
+    confidence_check: 0.10
+
+  tag_thresholds:
+    # Final score at or above this value is counted as verified_auto.
+    verified_auto: 0.85
+    # Final score at or above this value but below verified_auto goes to human review.
+    needs_human_review: 0.60
+
+  content_quality:
+    # Missing object names or generic names such as "object" are unusable for grounding supervision.
+    generic_name_score: 0.0
+    # Names shorter than this are usually abbreviations or parser artifacts. #! wbj - temperal disable this rule: 3->1
+    min_name_length: 1
+    # Too-short names keep a small score instead of hard rejection because some datasets use terse labels. #! wbj - temperal disable this rule: 0.3->0.9
+    short_name_score: 0.9
+    # Background or non-manipulable categories are weak robot grounding targets. #! wbj - temperal disable this rule: 0.3->1.0
+    non_manipulable_score: 1.0
+    # Single short words like "cup" may be valid but less descriptive than "red_cup". #! wbj - temperal disable this rule, only to filter one letter words: 5->2
+    single_short_word_max_length: 2
+    # Raising this value increases passrate for simple object-class labels.
+    single_short_word_score: 0.6
+    # Specific object names with enough semantic information receive full content score.
+    good_score: 1.0
+
+  geometry_valid:
+    # Bboxes covering almost the whole image are usually detector failures.
+    full_image_edge_tolerance_px: 2
+    full_image_score: 0.1
+    # Very large boxes are penalized strongly; relaxing this raises passrate for furniture-like objects. 
+    too_large_area_ratio: 0.50
+    too_large_score: 0.4   #! wbj - temperal change this rule: 0.2->0.4
+    # Moderately large boxes may be valid furniture but are still lower-confidence labels.
+    large_area_ratio: 0.30
+    large_score: 0.6   #! wbj - temperal change this rule: 0.4->0.6
+    # Tiny boxes are often noise or missed detections.  #! wbj - temperal disable this rule: 0.001->0.0000001. It is functionally repetitive compared to the small-box judgment based on pixels.
+    too_small_area_ratio: 0.0000001
+    too_small_score: 0.3
+    # Extreme aspect ratios usually indicate a bad crop or line-like artifact.
+    max_aspect_ratio: 100.0   #! wbj - temperal change this rule: 10.0->100.0
+    elongated_score: 0.4
+    # Very small width or height is treated as degenerate even if x1<x2 and y1<y2. #! wbj - temperal change this rule: 5->3
+    min_side_px: 5
+    degenerate_score: 0.3
+    # Normal-sized, well-shaped boxes receive full geometry score.
+    good_score: 1.0
+    # Low-resolution images make visual verification less reliable.
+    very_low_resolution_side_px: 200
+    very_low_resolution_cap: 0.4
+    low_resolution_side_px: 400
+    low_resolution_cap: 0.7
+    # Invalid bbox format or x1>=x2/y1>=y2 remains a hard geometry failure.
+    invalid_bbox_score: 0.0
+    # Out-of-bounds check: a box whose coordinates fall outside the image by more
+    # than this pixel tolerance (x1/y1 < -tol or x2 > img_w+tol or y2 > img_h+tol)
+    # is a localization failure. The rule verifier previously had NO bounds check,
+    # so such boxes (e.g. y2=9998 on a ~1000px image) slipped through as
+    # verified_auto. They now get this geometry score AND have schema_valid forced
+    # to 0, i.e. a HARD REJECT (treated like an invalid/degenerate bbox).
+    out_of_bounds_tolerance_px: 2
+    out_of_bounds_score: 0.0
+
+  confidence_check:
+    # These common template confidence values are treated as less trustworthy than calibrated scores.
+    # template_values: [0.85, 0.90]
+    template_values: [0.50]
+    template_tolerance: 0.001
+    template_score: 0.2
+    # Confidence >= high_confidence_min gets full confidence score.
+    high_confidence_min: 0.92
+    high_confidence_score: 1.0
+    # Confidence >= medium_confidence_min gets partial confidence score.
+    medium_confidence_min: 0.70
+    medium_confidence_score: 0.7
+    # Confidence >= low_confidence_min gets weak confidence score.
+    low_confidence_min: 0.50
+    low_confidence_score: 0.2   #! wbj - temperal change this rule: 0.4->0.2
+    # Confidence below low_confidence_min is treated as untrusted.
+    very_low_confidence_score: 0.0
+    # Missing or non-numeric confidence is weak evidence rather than a hard schema failure.
+    missing_confidence_score: 0.3
+
+specialist:
+  # Production pipeline samples only verified candidates; direct evaluator can override this.
+  default_mode: off
+  # Mirrors VERIFIER_SPECIALIST_SAMPLE_RATE from the production scanner.
+  sample_rate: 0.15
+  # Mirrors VERIFIER_IOU_THRESHOLD for bbox agreement.
+  iou_threshold: 0.4
+
+specialist_voting:
+  # Independent multi-model specialist verifier settings.
+  # This section is used by scripts/evaluate_specialist_voting.py only and is
+  # not wired into the production verifier pipeline.
+
+  # Voting policy for combining 1-3 model judgments:
+  # - majority: N=1 requires 1 agree, N=2 requires 2 agrees, N=3 requires 2 agrees.
+  # - any: pass if at least one enabled model agrees. This is the default for
+  #   specialist voting so a single agreeing model marks the sample verified_auto.
+  # - all: pass only if every enabled model agrees.
+  vote_policy: any
+
+  # Number of samples evaluated in parallel. Each worker may call VLM services,
+  # so increase carefully if providers rate-limit requests.
+  worker_count: 32
+
+  # Maximum number of enabled models accepted by the independent voting verifier.
+  max_models: 3
+
+  # IoU threshold for bbox agreement. A model agrees when best predicted bbox IoU
+  # against the input bbox is greater than or equal to this value.
+  iou_threshold: 0.4
+
+  # If a model returns no bbox, optionally ask it for one target point and check
+  # whether that point falls inside the input bbox.
+  enable_point_fallback: true
+
+  # Extra point-in-box tolerance in 0-1000 normalized coordinates for fallback.
+  point_margin_1000: 50
+
+  # Per-model HTTP request timeout in seconds.
+  timeout_seconds: 30
+
+  # Default bbox prompt template index. Templates are zero-based; index 0 uses
+  # the first prompt below. Override from CLI with --bbox-prompt-index.
+  bbox_prompt_index: 0
+
+  # Default pointing prompt template index. Templates are zero-based; index 0
+  # uses the first prompt below. Override from CLI with --point-prompt-index.
+  pointing_prompt_index: 0
+
+  # Bbox verification prompts. {object} comes from object_class/object_name in
+  # the input metadata, and {bbox} is the input bbox converted to 0-1000 coords.
+  # Expected model output is exactly [x1,y1,x2,y2] or None.
+  bbox_prompts:
+    - 'Given the image and the candidate bounding box {bbox} normalized to 0-1000, check whether the box contains the target object "{object}". If it does, output ONLY the tight bounding box of that object as [x1,y1,x2,y2] normalized to 0-1000. If the target object is not inside the candidate box, output ONLY None.'
+    - 'Inspect only the region specified by bounding box {bbox} in the image. Determine whether the object "{object}" is present in that region. If present, return ONLY a refined bounding box around the object in the format [x1,y1,x2,y2], normalized to 0-1000. If absent, return ONLY None.'
+    - 'Verify the candidate box {bbox} for object "{object}". If the candidate box contains the object, re-localize the visible object precisely and output ONLY [x1,y1,x2,y2] in 0-1000 normalized image coordinates. If the candidate box does not contain "{object}", output ONLY None.'
+    - 'The candidate bounding box is {bbox} in normalized 0-1000 coordinates. First decide if it encloses any visible instance of "{object}". If yes, produce a tight corrected bounding box for that same object as [x1,y1,x2,y2] using 0-1000 normalized coordinates. If no, produce exactly None.'
+    - 'Check whether "{object}" appears inside the provided box {bbox}. Do not describe the image. If the object is inside, output only the corrected bbox of the object as [x1,y1,x2,y2] with coordinates normalized to 0-1000. If the object is not inside, output only None.'
+    - 'You are verifying a grounding annotation. Candidate object: "{object}". Candidate bbox: {bbox}, normalized to 0-1000. If this bbox contains the candidate object, return a tighter bbox around the object in the same normalized [x1,y1,x2,y2] format. Otherwise return None. Output no explanation.'
+    - 'Focus on the image area within {bbox}. Is the target "{object}" visible there? If yes, output the best tight bounding box for the target object, formatted exactly as [x1,y1,x2,y2] in normalized 0-1000 coordinates. If not visible there, output exactly None.'
+    - 'For the target label "{object}", validate the proposed bounding box {bbox}. If the proposed box overlaps the actual target object and contains it, refine the box to the object boundary and output only [x1,y1,x2,y2] normalized to 0-1000. If the proposed box is for the wrong object or background, output only None.'
+    - 'Given target "{object}" and candidate bbox {bbox}, answer with one of two outputs only: a normalized bbox [x1,y1,x2,y2] if the target object is present inside the candidate bbox, or None if it is absent. The bbox must tightly cover the target object and use 0-1000 image coordinates.'
+    - 'Look at the candidate region {bbox} in the image and verify whether it contains "{object}". If it contains the object, return only the refined target bbox as [x1,y1,x2,y2] in normalized 0-1000 coordinates. If it does not contain the object, return only None. Do not include text, markdown, or reasoning.'
+    - 'Object: "{object}". Candidate box: {bbox}. If the object is inside this box, return its tight bbox as [x1,y1,x2,y2] in 0-1000 coordinates. Otherwise return None.'
+    - 'Check box {bbox} for "{object}". If present inside the box, output only [x1,y1,x2,y2] for the object in 0-1000 coordinates. If absent, output None.'
+    - 'Inside candidate box {bbox}, find "{object}". Return only its tight [x1,y1,x2,y2] bbox in 0-1000 coordinates, or None if not found.'
+    - 'Verify whether {bbox} contains "{object}". If yes, output the corrected object bbox [x1,y1,x2,y2] in 0-1000 coordinates. If no, output None.'
+    - 'Look only at region {bbox}. If "{object}" is visible there, return its bbox [x1,y1,x2,y2] in 0-1000 coordinates. Else return None.'
+    - 'Target "{object}", candidate {bbox}. Return [x1,y1,x2,y2] for the target if it is in the candidate box; otherwise return None.'
+    - 'Does box {bbox} contain "{object}"? Answer only with the object bbox [x1,y1,x2,y2] in 0-1000 coordinates, or None.'
+    - 'For "{object}" in candidate box {bbox}, output the tight object bbox [x1,y1,x2,y2] using 0-1000 coordinates. If not in the box, output None.'
+    - 'Validate candidate bbox {bbox} for "{object}". If valid, return the refined bbox [x1,y1,x2,y2] in 0-1000 coordinates. If invalid, return None.'
+    - 'Find "{object}" only if it lies in {bbox}. Output only [x1,y1,x2,y2] normalized to 0-1000, or None.'
+    - 'Candidate region: {bbox}. Target: "{object}". Return the target bbox [x1,y1,x2,y2] in 0-1000 coordinates if present; otherwise None.'
+    - 'If "{object}" appears inside {bbox}, output its tight bbox [x1,y1,x2,y2] in 0-1000 coordinates. If not, output None.'
+    - 'Check the proposed box {bbox}. If it covers "{object}", return a tight bbox [x1,y1,x2,y2] in 0-1000 coordinates. Else return None.'
+    - 'Return only one result: [x1,y1,x2,y2] for "{object}" inside {bbox}, or None if "{object}" is not inside {bbox}.'
+    - 'Given "{object}" and box {bbox}, output the object bbox in [x1,y1,x2,y2] 0-1000 format if the object is inside; otherwise None.'
+    - 'Inspect {bbox}. If it contains "{object}", return the object boundary as [x1,y1,x2,y2] in 0-1000 coordinates. Otherwise return None.'
+    - 'In box {bbox}, is there "{object}"? If yes, output [x1,y1,x2,y2] for that object in 0-1000 coordinates. If no, output None.'
+    - 'Use candidate box {bbox} to verify "{object}". Return the corrected bbox [x1,y1,x2,y2] in 0-1000 coordinates, or None.'
+    - 'Output only [x1,y1,x2,y2] if "{object}" is present within {bbox}; output only None if it is not present.'
+    - 'Check whether {bbox} matches "{object}". If yes, return the tight bbox [x1,y1,x2,y2] normalized to 0-1000. If no, return None.'
+
+
+  # Pointing fallback prompts. {object} and {bbox} use the same metadata as
+  # bbox_prompts. Expected model output is exactly (x,y) or None.
+  pointing_prompts:
+    - 'Given the image and the candidate bounding box {bbox} normalized to 0-1000, check whether the box contains the target object "{object}". If it does, output ONLY the center point of that object as (x,y) normalized to 0-1000. If the target object is not inside the candidate box, output ONLY None.'
+    - 'Inspect only the region specified by bounding box {bbox} in the image. Determine whether the object "{object}" is present in that region. If present, return ONLY the center point of the object in the format (x,y), normalized to 0-1000. If absent, return ONLY None.'
+    - 'Verify the candidate box {bbox} for object "{object}". If the candidate box contains the object, locate the center of the visible target object and output ONLY (x,y) in 0-1000 normalized image coordinates. If the candidate box does not contain "{object}", output ONLY None.'
+    - 'The candidate bounding box is {bbox} in normalized 0-1000 coordinates. First decide if it contains any visible instance of "{object}". If yes, produce the center point of that object as (x,y) using 0-1000 normalized coordinates. If no, produce exactly None.'
+    - 'Check whether "{object}" appears inside the provided box {bbox}. Do not describe the image. If the object is inside, output only the object center point as (x,y) with coordinates normalized to 0-1000. If the object is not inside, output only None.'
+    - 'You are verifying a grounding annotation. Candidate object: "{object}". Candidate bbox: {bbox}, normalized to 0-1000. If this bbox contains the candidate object, return the center point of the object in the same normalized coordinate system as (x,y). Otherwise return None. Output no explanation.'
+    - 'Focus on the image area within {bbox}. Is the target "{object}" visible there? If yes, output the best center point for the target object, formatted exactly as (x,y) in normalized 0-1000 coordinates. If not visible there, output exactly None.'
+    - 'For the target label "{object}", validate the proposed bounding box {bbox}. If the proposed box overlaps and contains the actual target object, output only the object center point as (x,y), normalized to 0-1000. If the proposed box is for the wrong object or background, output only None.'
+    - 'Given target "{object}" and candidate bbox {bbox}, answer with one of two outputs only: a normalized center point (x,y) if the target object is present inside the candidate bbox, or None if it is absent. The point must be near the visual center of the target object and use 0-1000 image coordinates.'
+    - 'Look at the candidate region {bbox} in the image and verify whether it contains "{object}". If it contains the object, return only the target object center point as (x,y) in normalized 0-1000 coordinates. If it does not contain the object, return only None. Do not include text, markdown, or reasoning.'
+    - 'Object: "{object}". Candidate box: {bbox}. If the object is inside this box, return its center point as (x,y) in 0-1000 coordinates. Otherwise return None.'
+    - 'Check box {bbox} for "{object}". If present inside the box, output only its center point (x,y) in 0-1000 coordinates. If absent, output None.'
+    - 'Inside candidate box {bbox}, find "{object}". Return only its center point (x,y) in 0-1000 coordinates, or None if not found.'
+    - 'Verify whether {bbox} contains "{object}". If yes, output the object center point (x,y) in 0-1000 coordinates. If no, output None.'
+    - 'Look only at region {bbox}. If "{object}" is visible there, return its center point (x,y) in 0-1000 coordinates. Else return None.'
+    - 'Target "{object}", candidate {bbox}. Return (x,y) for the target center if it is in the candidate box; otherwise return None.'
+    - 'Does box {bbox} contain "{object}"? Answer only with the object center point (x,y) in 0-1000 coordinates, or None.'
+    - 'For "{object}" in candidate box {bbox}, output the object center point (x,y) using 0-1000 coordinates. If not in the box, output None.'
+    - 'Validate candidate bbox {bbox} for "{object}". If valid, return the center point (x,y) in 0-1000 coordinates. If invalid, return None.'
+    - 'Find "{object}" only if it lies in {bbox}. Output only (x,y) normalized to 0-1000, or None.'
+    - 'Candidate region: {bbox}. Target: "{object}". Return the target center point (x,y) in 0-1000 coordinates if present; otherwise None.'
+    - 'If "{object}" appears inside {bbox}, output its center point (x,y) in 0-1000 coordinates. If not, output None.'
+    - 'Check the proposed box {bbox}. If it covers "{object}", return the object center point (x,y) in 0-1000 coordinates. Else return None.'
+    - 'Return only one result: (x,y) for "{object}" inside {bbox}, or None if "{object}" is not inside {bbox}.'
+    - 'Given "{object}" and box {bbox}, output the object center in (x,y) 0-1000 format if the object is inside; otherwise None.'
+    - 'Inspect {bbox}. If it contains "{object}", return the object center as (x,y) in 0-1000 coordinates. Otherwise return None.'
+    - 'In box {bbox}, is there "{object}"? If yes, output (x,y) for that object center in 0-1000 coordinates. If no, output None.'
+    - 'Use candidate box {bbox} to verify "{object}". Return the center point (x,y) in 0-1000 coordinates, or None.'
+    - 'Output only (x,y) if "{object}" is present within {bbox}; output only None if it is not present.'
+    - 'Check whether {bbox} matches "{object}". If yes, return the center point (x,y) normalized to 0-1000. If no, return None.'
+
+
+  # Each model uses an OpenAI-compatible /chat/completions endpoint. endpoint can
+  # use environment placeholders such as ${VLM_URL}; api_key_env names the env var
+  # that stores the Bearer token. Leave api_key_env empty for no-key services.
+  # Per-model temperature/max_tokens/system_prompt/chat_template_kwargs are
+  # optional and are passed through to the request payload when configured.
+  models:
+    # Qwen3.6 local service: no API key, disable thinking for deterministic bbox output.
+    - name: qwen3_6_27b
+      endpoint: "http://127.0.0.1:8181/v1"
+      api_key_env: ""
+      model: "Qwen/Qwen3.6-27B"
+      system_prompt: "You are a helpful AI assistant."
+      temperature: 0
+      max_tokens: 512
+      chat_template_kwargs:
+        enable_thinking: false
+      enabled: true
+
+    # Volc API service: put the hidden token in VOLC_API_KEY, not in this file.
+    - name: volc_llm
+      endpoint: "${VOLC_API_URL}"
+      api_key_env: "VOLC_API_KEY"
+      model: "LLM"
+      system_prompt: "You are a helpful AI assistant."
+      temperature: 0.6
+      max_tokens: 8192
+      chat_template_kwargs:
+        enable_thinking: false
+      enabled: true
+

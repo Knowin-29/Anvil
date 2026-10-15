@@ -1,0 +1,107 @@
+{
+  "image_id": "scene_07_cascade_blocking",
+  "image_path": "tests/fixtures/images/scene_07_cascade_blocking.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        55.0,
+        55.0,
+        75.0,
+        80.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        65.0,
+        68.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the pen",
+      "referring_expressions": [
+        "笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_07_cascade_blocking_pen_0.png"
+    },
+    {
+      "id": "book_0",
+      "class_name": "book",
+      "bbox": [
+        45.0,
+        42.0,
+        80.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        60.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the book",
+      "referring_expressions": [
+        "书"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_07_cascade_blocking_book_0.png"
+    },
+    {
+      "id": "card_0",
+      "class_name": "card",
+      "bbox": [
+        38.0,
+        30.0,
+        82.0,
+        55.0
+      ],
+      "operation": "push",
+      "grasp_point": [
+        60.0,
+        40.0
+      ],
+      "extra_tags": [
+        "push_only"
+      ],
+      "hierarchical_name": "the card",
+      "referring_expressions": [
+        "卡片"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_07_cascade_blocking_card_0.png"
+    }
+  ],
+  "edges": [
+    {
+      "subject": "book_0",
+      "object": "pen_0",
+      "predicate": "stacked-on",
+      "source": "derived",
+      "confidence": 1.0
+    },
+    {
+      "subject": "card_0",
+      "object": "book_0",
+      "predicate": "occluding",
+      "source": "derived",
+      "confidence": 1.0
+    }
+  ],
+  "ternary_relations": [],
+  "blocking_dag": [
+    [
+      "book_0",
+      "pen_0"
+    ],
+    [
+      "card_0",
+      "book_0"
+    ]
+  ]
+}

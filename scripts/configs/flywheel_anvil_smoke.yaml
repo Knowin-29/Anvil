@@ -1,0 +1,43 @@
+# Rex-Embodied v3.0 smoke validation config.
+# Same sources as flywheel_anvil_quick.yaml, limited to 1 image each.
+
+sources:
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Archive
+    source_type: image_dir
+    weight: 3.0
+    recursive: true
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Augment
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/brands_images
+    source_type: image_dir
+    weight: 2.5
+    recursive: true
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/appliance_datasets/washing_machine_1029/processed_washing_machine_data_all
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/images
+    source_type: image_dir
+    weight: 1.0
+    recursive: true
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/clevr/images
+    source_type: image_dir
+    weight: 0.8
+    max_images: 1
+
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/aokvqa/images
+    source_type: image_dir
+    weight: 0.5
+    max_images: 1

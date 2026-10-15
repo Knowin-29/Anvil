@@ -1,0 +1,76 @@
+{
+  "image_id": "scene_03_card_occludes_pen",
+  "image_path": "tests/fixtures/images/scene_03_card_occludes_pen.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        40.0,
+        50.0,
+        70.0,
+        80.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        55.0,
+        65.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the pen",
+      "referring_expressions": [
+        "笔",
+        "那支笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_03_card_occludes_pen_pen_0.png"
+    },
+    {
+      "id": "card_0",
+      "class_name": "card",
+      "bbox": [
+        35.0,
+        45.0,
+        75.0,
+        75.0
+      ],
+      "operation": "push",
+      "grasp_point": [
+        55.0,
+        55.0
+      ],
+      "extra_tags": [
+        "push_only"
+      ],
+      "hierarchical_name": "the card",
+      "referring_expressions": [
+        "卡片",
+        "那张卡片"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_03_card_occludes_pen_card_0.png"
+    }
+  ],
+  "edges": [
+    {
+      "subject": "card_0",
+      "object": "pen_0",
+      "predicate": "occluding",
+      "source": "derived",
+      "confidence": 1.0
+    }
+  ],
+  "ternary_relations": [],
+  "blocking_dag": [
+    [
+      "card_0",
+      "pen_0"
+    ]
+  ]
+}

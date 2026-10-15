@@ -1,0 +1,85 @@
+{
+  "image_id": "scene_05_three_red_pens",
+  "image_path": "tests/fixtures/images/scene_05_three_red_pens.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        10.0,
+        30.0,
+        25.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        18.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the left red pen",
+      "referring_expressions": [
+        "左边的红笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_05_three_red_pens_pen_0.png"
+    },
+    {
+      "id": "pen_1",
+      "class_name": "pen",
+      "bbox": [
+        40.0,
+        30.0,
+        55.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        48.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the middle red pen",
+      "referring_expressions": [
+        "中间的红笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_05_three_red_pens_pen_1.png"
+    },
+    {
+      "id": "pen_2",
+      "class_name": "pen",
+      "bbox": [
+        70.0,
+        30.0,
+        85.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        78.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the right red pen",
+      "referring_expressions": [
+        "右边的红笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_05_three_red_pens_pen_2.png"
+    }
+  ],
+  "edges": [],
+  "ternary_relations": [],
+  "blocking_dag": []
+}

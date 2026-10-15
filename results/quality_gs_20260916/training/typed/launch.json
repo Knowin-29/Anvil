@@ -1,0 +1,9 @@
+{
+  "training_manifest_sha256": "8397d8d966a02d76ad25eaf522db1c66bc425cadff0896be4c5bdbf14dbb5b5f",
+  "arm": "typed",
+  "gpu": 2,
+  "steps": 256,
+  "seed": 17,
+  "matched_records": 1137,
+  "no_wallclock_kill": true
+}

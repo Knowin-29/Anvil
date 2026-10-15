@@ -1,0 +1,16 @@
+TaskName: "gsa-sft27b-gsabench"
+Description: "GSA-Forge 27B teacher SFT on GSA-Bench train (350K flywheel multi-form, resumable)"
+Entrypoint: "bash /path/to/Anvil/configs/volc/code/train_sft_gsabench.sh"
+ImageUrl: "registry.example.invalid/anvil:latest"
+Framework: "Custom"
+TaskRoleSpecs:
+  - RoleName: "worker"
+    RoleReplicas: 1
+    Flavor: "ml.hpcpni2l.28xlarge"
+ActiveDeadlineSeconds: "72h"
+Storages:
+  - Type: "Vepfs"
+    MountPath: "/path/to/workspace/foundation"
+    VepfsId: "YOUR_VEPFS_ID"
+    SubPath: "foundation"
+    ReadOnly: false

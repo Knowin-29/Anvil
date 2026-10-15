@@ -1,0 +1,10 @@
+{
+  "files": {
+    "scannetv2_test.txt": "0214c6a3b1ee516ad653393b0321e7c0394c7662a4b3702eac1ddd7fbc00f7e0",
+    "scannetv2_train.txt": "96acca299b7855f02824c496b19077904d80996e7ced1bb9f0dac98f7dd4d0c8",
+    "scannetv2_val.txt": "d75d4971c3fa7128c643695840e279042c212ef904fe933bd00cf9918c61b083"
+  },
+  "repository": "https://github.com/ScanNet/ScanNet",
+  "revision": "3830fce7f8b2e48ef047ef7fd76ea5f62903f51c",
+  "source_directory": "Tasks/Benchmark"
+}

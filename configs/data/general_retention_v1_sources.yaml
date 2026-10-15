@@ -1,0 +1,213 @@
+schema_version: 1
+suite_id: general-retention-v1
+frozen_at_utc: '2026-08-24T17:46:53Z'
+source_policy:
+  primary_data_only: true
+  adapter_role: protocol_transport_only
+  adapter_requires_primary_crosswalk: true
+  formal_ready_requires_runner_scorer_and_leakage: true
+
+datasets:
+  ai2d_test:
+    expected_samples: 3088
+    split: official_test_ids_with_available_questions
+    official_page: https://prior.allenai.org/projects/diagram-understanding
+    license: AI2D-NonCommercial-2016
+    license_note: >-
+      Academic, non-profit, government-sponsored research, and evaluation use only;
+      redistribution and public release of modified data are prohibited by license.txt.
+    license_evidence:
+      archive_member: ai2d/license.txt
+      bytes: 1176
+      sha256: 13d865fdea1a49b241ed10d58e6af850222982d9986f17cef3fb67bdbea5b040
+    files:
+      archive:
+        path: data/general_retention_v1/sources/ai2d/ai2d-all.zip
+        url: https://ai2-website.s3.amazonaws.com/data/ai2d-all.zip
+        bytes: 990965374
+        md5: 34c5d454f78ec8d8890ea1c508306c95
+        sha256: 1a6b77eebb8b7dbdf76a0ba6ca76c2f97ce8f81d8ee33b06593aa722e54c4786
+        etag: '"b3c1385908033296e0e7802c93dd777a-15"'
+        last_modified: Mon, 12 Sep 2016 16:35:58 GMT
+      test_ids:
+        path: data/general_retention_v1/sources/ai2d/ai2d_test_ids.csv
+        url: https://s3-us-east-2.amazonaws.com/prior-datasets/ai2d_test_ids.csv
+        bytes: 4667
+        md5: 467d42fd1562c2f02f62dfedf116619c
+        sha256: d29524eb547d057c0a661379a0167a8cf0d18989702d4f89bad7046cd6cac851
+        etag: '"467d42fd1562c2f02f62dfedf116619c"'
+        last_modified: Wed, 26 Oct 2022 02:45:46 GMT
+
+  scienceqa_test:
+    expected_samples: 2017
+    split: official_test_image_subset
+    official_repo: https://github.com/lupantech/ScienceQA
+    revision: 2cbf8318e07b9ece895bb2ae605e71e38d623264
+    revision_date_utc: '2024-09-19T03:47:49Z'
+    license: CC-BY-NC-SA-4.0
+    license_evidence:
+      file_role: license
+      revision: 2cbf8318e07b9ece895bb2ae605e71e38d623264
+    files:
+      problems:
+        path: data/general_retention_v1/sources/scienceqa/repo/data/scienceqa/problems.json
+        url: https://raw.githubusercontent.com/lupantech/ScienceQA/2cbf8318e07b9ece895bb2ae605e71e38d623264/data/scienceqa/problems.json
+        bytes: 31529211
+        sha256: 4d9b598da966d9736dd79e430a97da861a2216aeb7483a5092350e823ab20ce7
+      pid_splits:
+        path: data/general_retention_v1/sources/scienceqa/repo/data/scienceqa/pid_splits.json
+        url: https://raw.githubusercontent.com/lupantech/ScienceQA/2cbf8318e07b9ece895bb2ae605e71e38d623264/data/scienceqa/pid_splits.json
+        bytes: 502927
+        sha256: 85c7820b9f136e572579a01dab2c77a7f8140b59211e421fa5182491d45ee3a7
+      images:
+        path: data/general_retention_v1/sources/scienceqa/test.zip
+        url: https://scienceqa.s3.us-west-1.amazonaws.com/images/test.zip
+        bytes: 206009461
+        md5: 4a43692e9762b55b3a4f8414f43ae74f
+        sha256: 0c6acb9379caf5d5d43b2898aa74bd885f48c84c964243fcd924889a733e05cf
+        etag: '"cc7b735760fe8955d40fedc66c7e9c5b-12"'
+        last_modified: Sun, 16 Oct 2022 22:34:49 GMT
+      license:
+        path: data/general_retention_v1/sources/scienceqa/repo/LICENSE-DATA
+        url: https://raw.githubusercontent.com/lupantech/ScienceQA/2cbf8318e07b9ece895bb2ae605e71e38d623264/LICENSE-DATA
+        bytes: 19071
+        sha256: fae845447443179ecda7a2cdaf6f305e92fe8fc1b7e0c5a8f39a2e4d5de9bfce
+
+  textvqa_val:
+    expected_samples: 5000
+    split: validation
+    version: 0.5.1
+    official_page: https://textvqa.org/download
+    license: CC-BY-4.0
+    license_evidence:
+      file_role: official_site_bundle
+      required_text: CC BY 4.0
+    files:
+      annotations:
+        path: data/general_retention_v1/sources/textvqa/TextVQA_0.5.1_val.json
+        url: https://dl.fbaipublicfiles.com/textvqa/data/TextVQA_0.5.1_val.json
+        bytes: 3116162
+        md5: 90f839369ad2177b4b76610438603a6a
+        sha256: 4ceb5aadc1a41719d0a3e4dfdf06838bcfee1db569a9a65ee67d31c99893081d
+        s3_version_id: eVx4wR0yhtNIbXY.IIyzljlcvl4HuAbD
+        last_modified: Mon, 16 Mar 2020 21:47:36 GMT
+      images:
+        path: data/general_retention_v1/sources/textvqa/train_val_images.zip
+        url: https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip
+        bytes: 7072297970
+        md5: d12dd8098899044e4ae1af34db7ecfef
+        sha256: ecf35005640d0708eae185aab1c0a10f89b2db7420b29185a1ed92a8f4290498
+        s3_version_id: ncyQEgyLZWkblorpGNAyzWbH_ssT6yG0
+        last_modified: Mon, 08 Apr 2019 22:39:28 GMT
+      official_site_bundle:
+        path: data/general_retention_v1/sources/textvqa/site_bundle.js
+        url: https://textvqa.org/static/js/main.b0ef1b39.chunk.js
+        bytes: 212162
+        sha256: f74e88ca3edc75c418c8a947b9d1816b61101f8099d3b3ab9b17e518c1c30f48
+
+adapter:
+  implementation: open-compass/VLMEvalKit
+  revision: 122bc8074c542867425fb463a1dd2f10932fc6f4
+  revision_date_utc: '2026-08-24T02:25:31Z'
+  repository: https://github.com/open-compass/VLMEvalKit
+  crosswalk_policy:
+    exact_or_transcoded_image:
+      acceptance: exact_bytes_or_exact_pillow_default_jpeg
+      require_equal_dimensions: true
+      deterministic_transform: >-
+        PIL.Image.open(path), mode conversion as in VLMEvalKit vlm.py when
+        required, then Image.save(BytesIO(), format='JPEG') with Pillow
+        defaults. Admission requires the transformed SHA-256 to equal the
+        adapter image SHA-256 exactly; perceptual distances are descriptive.
+    ai2d_notebook_replay:
+      acceptance: pinned_notebook_transform_replay
+      notebook_definition: first_cover_image_definition
+      font_path: data/general_retention_v1/sources/vlmevalkit/timesb.ttf
+      normalized_thumbnail: 64x64_rgb_lanczos
+      max_normalized_rgb_mae: 0.02
+      min_grayscale_correlation: 0.99
+      sensitivity_gates:
+        - {max_normalized_rgb_mae: 0.002, min_grayscale_correlation: 0.9999}
+        - {max_normalized_rgb_mae: 0.005, min_grayscale_correlation: 0.999}
+        - {max_normalized_rgb_mae: 0.01, min_grayscale_correlation: 0.995}
+        - {max_normalized_rgb_mae: 0.02, min_grayscale_correlation: 0.99}
+        - {max_normalized_rgb_mae: 0.03, min_grayscale_correlation: 0.98}
+      note: >-
+        The frozen AI2D_TEST transport matches the notebook's first
+        cover_image definition. Replay is transformation-aware and tolerates
+        only font/JPEG rasterizer drift under the declared pixel gate; pHash is
+        not an admission criterion.
+    ai2d_labeled_derivative:
+      acceptance: metadata_and_pinned_notebook_replay
+      require_equal_dimensions: true
+      binding_fields:
+        - adapter_index
+        - question
+        - choices
+        - answer
+        - image_id
+        - abcLabel
+        - upstream_is_abc
+        - image_path
+      note: >-
+        AI2D_TEST applies the pinned AI2D_preproc.ipynb `is_abc` rule to
+        abcLabel=true questions; only selected rows transport a labeled/masked
+        derivative under ai2d/images_abc/<image_id>.png. These rows are admitted
+        by exact primary metadata, the reproduced `is_abc` decision and path,
+        equal dimensions, the pinned adapter file hash, and a frozen row-mapping
+        digest. Their perceptual distances are descriptive and are not
+        presented as raw-image identity.
+  transport_note: >-
+    The OpenXLab distribution endpoint presented an expired TLS certificate on
+    2026-08-24. Files were fetched with certificate verification disabled, then
+    admitted only by the VLMEvalKit-pinned MD5 and the primary-data crosswalk.
+  files:
+    ai2d_test:
+      path: data/general_retention_v1/AI2D_TEST.tsv
+      url: https://opencompass.openxlab.space/utils/VLMEval/AI2D_TEST.tsv
+      bytes: 167443652
+      md5: 0f593e0d1c7df9a3d69bf1f947e71975
+      sha256: 3b16aa83c6809149df6978c7d5a6ee830b75f0010a60b26d33c004c47d575c4a
+    scienceqa_test:
+      path: data/general_retention_v1/ScienceQA_TEST.tsv
+      url: https://opencompass.openxlab.space/utils/benchmarks/ScienceQA/ScienceQA_TEST.tsv
+      bytes: 51398059
+      md5: e42e9e00f9c59a80d8a5db35bc32b71f
+      sha256: 253086b4dae6a615e31b637ef1d01474d9345cad425ab541f83c37102404501a
+    textvqa_val:
+      path: data/general_retention_v1/TextVQA_VAL.tsv
+      url: https://opencompass.openxlab.space/utils/VLMEval/TextVQA_VAL.tsv
+      bytes: 1222773494
+      md5: b233b31f551bbf4056f2f955da3a92cd
+      sha256: f9bd2e1518185f678a60b9a31fea5655f7533704fa7d7c9b3775bf0ca2a6b8d0
+  implementation_files:
+    image_mcq:
+      path: data/general_retention_v1/sources/vlmevalkit/image_mcq.py
+      sha256: 7d8bdf897d3d4f87d9d95e51f4dba60648576a0c072a9834f3938bfb17419a2e
+    image_vqa:
+      path: data/general_retention_v1/sources/vlmevalkit/image_vqa.py
+      sha256: 7af7fa286b1fda747b68e1a2bb7718601c77dc57f7e535bb8deb559596c44a74
+    vqa_eval:
+      path: data/general_retention_v1/sources/vlmevalkit/vqa_eval.py
+      sha256: c04e0a1cad29cd8caa786ea1a96d2d945630304d756d1bba234b36e66c83f06d
+    ai2d_preproc:
+      path: data/general_retention_v1/sources/vlmevalkit/AI2D_preproc.ipynb
+      url: https://raw.githubusercontent.com/open-compass/VLMEvalKit/122bc8074c542867425fb463a1dd2f10932fc6f4/scripts/AI2D_preproc.ipynb
+      sha256: f70237fa36f103d7d4493b054dcbe1ea540c46152c72ff850c77a5253278dc27
+    vlm_image_codec:
+      path: data/general_retention_v1/sources/vlmevalkit/vlm.py
+      url: https://raw.githubusercontent.com/open-compass/VLMEvalKit/122bc8074c542867425fb463a1dd2f10932fc6f4/vlmeval/smp/vlm.py
+      sha256: be6cdee64a1e5092f37d3b8cac887bb318ca7a5b90042e473109ae3efdf840c3
+    ai2d_font:
+      path: data/general_retention_v1/sources/vlmevalkit/timesb.ttf
+      url: http://opencompass.openxlab.space/utils/Fonts/timesb.ttf
+      sha256: 56735cfcb1d3feac66d5d9bb446c8598e522dc03c54923943899217c227bdfab
+
+outputs:
+  extraction_root: data/general_retention_v1/extracted
+  adapter_extraction_root: data/general_retention_v1/extracted_adapter
+  source_manifest: artifacts/general_retention_v1/source_manifest.json
+  sample_manifest: artifacts/general_retention_v1/eval_samples.jsonl
+  image_manifest: artifacts/general_retention_v1/eval_images.jsonl
+  adapter_image_manifest: artifacts/general_retention_v1/eval_adapter_images.jsonl
+  crosswalk_manifest: artifacts/general_retention_v1/adapter_primary_crosswalk.json

@@ -1,0 +1,357 @@
+schema_version: anvil-method-registry-v1
+status: control_runtime_implemented_experiments_pending
+submission_ready: false
+created_on: 2026-09-04
+notice: >-
+  This file freezes method identities and matched-control semantics. It contains
+  no observations or checkpoint claims. A method becomes result-eligible only
+  after its immutable config and checkpoint hashes enter result_registry.yaml.
+
+runtime_controls:
+  entry: engineering/worktree/scripts/run_mopd_9b_lora_l20.sh
+  enable: ANVIL_MTD=1
+  common_objective: stage_normalized_reference_sft_plus_residual_preserving_jsd
+  teacher_qualification: unchanged_required_before_model_loading
+  implemented_presets:
+    flat: {ANVIL_ROUTING_MODE: flat, ANVIL_STRUCTURAL_ALPHA: 0}
+    structural: {ANVIL_ROUTING_MODE: structural, ANVIL_STRUCTURAL_ALPHA: 2}
+    declared: {ANVIL_ROUTING_MODE: declared, ANVIL_STRUCTURAL_ALPHA: 2}
+    semantic_uniform: {ANVIL_ROUTING_MODE: semantic, ANVIL_STRUCTURAL_ALPHA: 0}
+    semantic_weighted: {ANVIL_ROUTING_MODE: semantic, ANVIL_STRUCTURAL_ALPHA: 2}
+  full_9b_training_verified: false
+  matched_budget_suite_verified: false
+  budget_note: >-
+    The runtime logs actual teacher forwards and scored positions. Different
+    selectors can select different populations and span lengths. Shared settings
+    alone do not prove equality of realized student/teacher token budgets.
+    These five complete-recipe controls do not inherit selector-only eligibility.
+
+shared_budget_contract:
+  match:
+    - initialization
+    - train_manifest_revision
+    - data_order
+    - student_tokens
+    - teacher_scored_tokens
+    - teacher_queries
+    - optimizer_updates
+    - trainable_parameters
+    - maximum_sequence_length
+    - decoding_and_rollout_policy
+  teacher_budget_population: route_eligible_examples_only
+  task_graph_source: immutable_record_fields_not_free_text
+  descriptive_seeds: [17, 29, 43]
+  core_routing_inference_seeds: [17, 29, 43, 71, 101, 113, 127, 149]
+  minimum_seeds_for_sub_1pp_primary_effect: 5
+
+selector_only_contract:
+  linked_scan_policy:
+    traversal: declared_topological_order
+    stage_reachable_if: all_declared_predecessors_structural_and_semantic_pass
+    stop_states: [structural_invalid, semantic_failure, indeterminate_low_confidence]
+    indeterminate_action: skip_mtd_retain_sft
+    downstream_evaluation_after_indeterminate: forbidden
+  fixed_across_arms:
+    - initialization
+    - train_manifest_revision
+    - data_order
+    - frozen_student_rollout
+    - route_eligibility_population
+    - teacher_bank_and_qualification_revision
+    - teacher_queries
+    - teacher_scored_tokens
+    - selected_stage_span_definition
+    - generalized_jsd_divergence
+    - top_k_support
+    - stage_length_normalization
+    - structural_token_weighting
+    - sft_mtd_mixture
+    - all_pass_skip_mtd_retain_sft
+    - indeterminate_skip_mtd_retain_sft
+  only_variable: selector_rule
+  dynamic_effect_population: route_eligible_linked_traces
+
+methods:
+  base_qwen3_5_9b:
+    family: no_training
+    teacher_access: none
+    route: none
+    supervision_span: none
+
+  qwen2_5_vl_3b:
+    family: unified_local_baseline
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  qwen2_5_vl_7b:
+    family: unified_local_baseline
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  qwen3_vl_8b_instruct:
+    family: unified_local_baseline
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  internvl3_5_8b:
+    family: unified_local_baseline
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  llava_onevision_qwen2_7b_ov_hf:
+    family: unified_local_baseline
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  robobrain2_5_8b_nv_local:
+    family: unified_local_embodied_specialist
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  roborefer_8b_sft_local:
+    family: unified_local_embodied_specialist
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  robospatialbrain_local:
+    family: unified_local_embodied_specialist
+    teacher_access: none
+    route: none
+    supervision_span: none
+    evaluation_only: true
+
+  merged_legacy_mixture_sft:
+    family: historical_local_diagnostic
+    teacher_access: none
+    route: declared_form
+    supervision_span: full_target
+    evaluation_only: true
+
+  naive_eight_form_sft:
+    family: supervised
+    teacher_access: none
+    route: declared_form
+    supervision_span: full_target
+    role: motivation_diagnostic_only
+
+  tuned_balanced_sft:
+    family: supervised
+    teacher_access: none
+    route: declared_form
+    supervision_span: full_target
+    selection: dev_only_lr_by_sampling_by_serialization_grid
+
+  offline_response_kd:
+    family: distillation
+    teacher_access: offline_response
+    route: declared_family
+    supervision_span: full_response
+
+  single_teacher_gkd:
+    family: distillation
+    teacher_access: one_joint_teacher_on_student_rollout
+    route: none
+    supervision_span: full_response
+
+  vanilla_mopd:
+    family: multi_teacher_opd
+    teacher_access: one_declared_domain_teacher
+    route: prompt_domain
+    supervision_span: full_response
+    exposure: natural
+
+  flat_mopd_balanced_exposure:
+    family: multi_teacher_opd
+    teacher_access: one_declared_domain_teacher
+    route: prompt_domain
+    supervision_span: full_response
+    exposure: family_balanced
+    structural_token_weighting: false
+    stage_length_normalization: false
+    reference_sft: same_stage_normalized_sft_as_other_core_controls
+    distillation_reduction: one_mean_over_all_non_eos_response_tokens_per_example
+    role: primary_flat_control
+
+  declared_family_route:
+    family: multi_teacher_opd
+    teacher_access: one_declared_family_teacher
+    route: declared_output_family
+    supervision_span: declared_stage
+    reference_access: false
+    structural_token_weighting: true
+    stage_length_normalization: true
+    eligibility: nonempty_declared_stage_and_qualified_teacher
+    semantics_in_selection: not_consulted
+    span_policy: ordered_delimiters_allow_invalid_upstream_json_without_semantic_evaluation
+
+  structural_first_violation_route:
+    family: multi_teacher_opd
+    teacher_access: one_selected_specialist
+    route: first_parse_or_contract_failure
+    supervision_span: selected_stage
+    reference_access: false
+    structural_token_weighting: true
+    stage_length_normalization: true
+    eligibility: atomic_or_first_parse_or_contract_failure
+    semantics_in_selection: not_consulted
+    no_structural_failure_policy: skip_mtd_retain_sft
+
+  context_aware_mopd:
+    family: multi_teacher_opd
+    teacher_access: one_declared_family_teacher
+    route: declared_output_family
+    supervision_span: declared_stage
+    dependency_context: ground_to_relation_to_act
+    reference_access: false
+
+  validity_filter_only:
+    family: data_control
+    teacher_access: same_as_flat_mopd_balanced_exposure
+    route: prompt_domain
+    supervision_span: full_response
+    contract_use: filter_training_records_only
+
+  va_opd_style_weighting:
+    family: prior_method_control
+    teacher_access: one_declared_family_teacher
+    route: declared_output_family
+    supervision_span: visual_advantage_weighted_tokens
+    reference_access: false
+
+  reference_aware_uniform_mixture:
+    family: reference_control
+    teacher_access: all_qualified_specialists
+    route: uniform
+    supervision_span: all_active_stages
+    reference_access: true
+
+  reference_aware_soft_mixture:
+    family: reference_control
+    teacher_access: weighted_qualified_specialists
+    route: evaluator_score_softmax
+    supervision_span: active_stages
+    reference_access: true
+
+  permuted_semantic_score_route:
+    inherits: selector_only_contract
+    family: reference_control
+    teacher_access: one_selected_specialist
+    route: permuted_evaluator_scores
+    supervision_span: selected_stage
+    reference_access: true_but_broken_alignment
+
+  auxiliary_label_only:
+    family: reference_control
+    teacher_access: unchanged_from_flat_control
+    route: prompt_domain
+    supervision_span: full_response
+    reference_access: auxiliary_only
+
+  last_semantic_fault_route:
+    inherits: selector_only_contract
+    family: selector_control
+    teacher_access: one_selected_specialist
+    route: latest_reference_aware_semantic_failure
+    supervision_span: selected_stage
+    reference_access: true
+
+  largest_normalized_deficit_route:
+    inherits: selector_only_contract
+    family: selector_control
+    teacher_access: one_selected_specialist
+    route: largest_normalized_evaluator_deficit
+    supervision_span: selected_stage
+    reference_access: true
+
+  all_failed_stage_mixture_route:
+    inherits: selector_only_contract
+    family: selector_control
+    teacher_access: matched_budget_mixture_of_failed_stage_specialists
+    route: all_decisive_semantic_failures
+    supervision_span: matched_selected_stage_tokens
+    reference_access: true
+
+  learned_router:
+    inherits: selector_only_contract
+    family: selector_control
+    teacher_access: one_selected_specialist
+    route: learned_from_development_routes
+    supervision_span: selected_stage
+    reference_access: true
+
+  oracle_best_one_step_improvement_route:
+    inherits: selector_only_contract
+    family: selector_oracle
+    teacher_access: one_selected_specialist
+    route: best_measured_one_step_development_improvement
+    supervision_span: selected_stage
+    reference_access: true
+
+  semantic_first_fault_uniform_weights:
+    family: proposed_route_only
+    teacher_access: one_selected_specialist
+    route: earliest_reference_aware_semantic_failure
+    supervision_span: selected_stage
+    structural_token_weighting: false
+    stage_length_normalization: true
+    all_pass_policy: skip_mtd_retain_sft
+    low_confidence_policy: skip_mtd_retain_sft
+    eligibility: atomic_or_earliest_decisive_linked_fault
+
+  semantic_first_fault_mtd:
+    inherits: selector_only_contract
+    family: proposed_full
+    teacher_access: one_selected_specialist
+    route: earliest_reference_aware_semantic_failure
+    supervision_span: selected_stage
+    structural_token_weighting: true
+    stage_length_normalization: true
+    all_pass_policy: skip_mtd_retain_sft
+    low_confidence_policy: skip_mtd_retain_sft
+    eligibility: atomic_or_earliest_decisive_linked_fault
+    uncertainty_band: form_specific_development_calibrated
+    deployment: single_student_only
+
+  human_semantic_oracle_route:
+    inherits: selector_only_contract
+    family: selector_oracle
+    teacher_access: one_selected_specialist
+    route: independent_human_earliest_decisive_fault
+    supervision_span: selected_stage
+    reference_access: audited_human_route
+
+selector_ablations:
+  - last_semantic_fault_route
+  - largest_normalized_deficit_route
+  - all_failed_stage_mixture_route
+  - learned_router
+  - oracle_best_one_step_improvement_route
+
+route_states:
+  - structural_invalid
+  - semantic_failure
+  - indeterminate_low_confidence
+  - all_pass
+
+frozen_aliases:
+  flat_mopd: flat_mopd_balanced_exposure
+  declared_route: declared_family_route
+  anvil_9b: semantic_first_fault_mtd
+
+prohibited_aliases:
+  static_declared_family: ambiguous_old_name
+  va_opd_style: ambiguous_old_name

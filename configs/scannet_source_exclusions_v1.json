@@ -1,0 +1,14 @@
+{
+  "dataset": "ScanNet v2",
+  "exclusions": [
+    {
+      "artifact": "scene0015_00_2d-label-filt.zip",
+      "evidence": "unzip_test_failed",
+      "official_split": "val",
+      "reason": "corrupt_zip_archive",
+      "scene_id": "scene0015_00",
+      "sha256": "53b2f2857b00089c868f1d017553c7a8902bb7004f5cffcd6fa696d878dbc3ff"
+    }
+  ],
+  "schema": "gsa-scannet-source-exclusions-v1"
+}

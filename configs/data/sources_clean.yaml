@@ -1,0 +1,624 @@
+meta:
+  built_by: trains/build_clean_registry.py
+  source_registry: /path/to/Anvil/data/sources_registry_local.yaml
+  policy: open-license public data only; internal/business sources removed
+  n_kept: 50
+  n_dropped: 7
+  n_relabeled: 6
+  n_missing_jsonl: 0
+image_roots:
+  aliyun_table: /path/to/workspace/foundation/contributor/prompt_grounding_table_20260605
+  aliyun_point: /path/to/workspace/foundation/contributor/prompt_grounding_table_20260605/point_count_control_before_after
+  aliyun_log: /path/to/datasets/datasets/qwen-proxy-log-mirror-fast
+  aliyun_swift: /path/to/datasets/datasets/dataset_jsons_qwen3_swift
+  aliyun_origin: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3
+sources:
+- name: pixmo_points
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_points/point_points_both_to_swift_onlypoint.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 1270495
+  ratio: 0.6
+  scene_type: mixed
+  license: open (Pixmo Points)
+  general: false
+  notes: pixmo points only-point 版本
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: prism
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/PRISM/train_internvl_no_ref_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - S_spatial
+  - A_identity_attr
+  est_samples: 730824
+  ratio: 0.8
+  scene_type: indoor_general
+  license: open (PRISM)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_2d_choice
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/2D/choice_qa_filtered_2D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 460654
+  ratio: 0.5
+  scene_type: indoor_general
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_2d_reasoning
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/2D/reasoning_template_qa_filtered_2D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 460513
+  ratio: 0.5
+  scene_type: indoor_general
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_3d_choice
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/3D/choice_qa_filtered_3D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 216412
+  ratio: 0.5
+  scene_type: 3d_spatial
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_3d_reasoning
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/3D/reasoning_template_qa_filtered_3D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 351802
+  ratio: 0.5
+  scene_type: 3d_spatial
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_3d_vacant
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/3D/vacant_qa_filtered_3D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 231496
+  ratio: 0.5
+  scene_type: 3d_spatial
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: refspatial_3d_visual_choice
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/refspatial/3D/visual_choice_qa_filtered_3D_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 539976
+  ratio: 0.4
+  scene_type: 3d_spatial
+  license: open (RefSpatial/RoboRefer)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: sat_spatial_qa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_train_internvl_no_think_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 80000
+  ratio: 2.0
+  scene_type: indoor_general
+  license: open (SAT)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: robopoint_ref
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/robopoint_rft_point_ref_train_45000_test_2000_0417/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_action_interface
+  - G_grounding
+  est_samples: 34200
+  ratio: 2.0
+  scene_type: tabletop_manipulation
+  license: open (RoboPoint)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: roborefit_rec
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/roborefit_rft_point_rec_train_35000_test_1000_0502/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_action_interface
+  - G_grounding
+  est_samples: 35000
+  ratio: 2.0
+  scene_type: tabletop_manipulation
+  license: open (RoboRefit)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: fsd_free_point
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_action_interface
+  - G_grounding
+  est_samples: 32790
+  ratio: 2.0
+  scene_type: tabletop_manipulation
+  license: open (FSD)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: whatsup_spatial
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/whatsup_rft_spatial_qa_train_4000_test_138_0417/data_train_internvl_no_think_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 4000
+  ratio: 2.0
+  scene_type: indoor_general
+  license: open (WhatsUp)
+  general: false
+  notes: 空间关系多选QA (response为A/B/C/D选择题), 对spatial reasoning有价值, 保留训练
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: vsr
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/vsr/vsr_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  est_samples: 2152
+  ratio: 2.0
+  scene_type: indoor_general
+  license: open (VSR)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: tallyqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/tallyqa/tallyqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  est_samples: 86627
+  ratio: 1.0
+  scene_type: mixed
+  license: open (TallyQA)
+  general: false
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: clevr
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/clevr/clevr_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 70000
+  ratio: 0.3
+  scene_type: synthetic
+  license: open (CLEVR)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: vqav2
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/vqav2/vqav2_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 82772
+  ratio: 0.3
+  scene_type: mixed
+  license: open (VQAv2)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: okvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/okvqa/okvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 9009
+  ratio: 0.3
+  scene_type: mixed
+  license: open (OK-VQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: aokvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/aokvqa/aokvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 16539
+  ratio: 0.3
+  scene_type: mixed
+  license: open (A-OKVQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: cocoqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/cocoqa/cocoqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 46272
+  ratio: 0.3
+  scene_type: mixed
+  license: open (COCOQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: textvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/textvqa/textvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  est_samples: 21953
+  ratio: 0.2
+  scene_type: mixed
+  license: open (TextVQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: chartqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/chartqa/chartqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 18265
+  ratio: 0.2
+  scene_type: document
+  license: open (ChartQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: docvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/docvqa/docvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  est_samples: 10189
+  ratio: 0.2
+  scene_type: document
+  license: open (DocVQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: scienceqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/scienceqa/scienceqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 4976
+  ratio: 0.2
+  scene_type: mixed
+  license: open (ScienceQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: ai2d
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/ai2d/ai2d_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 2434
+  ratio: 0.3
+  scene_type: diagram
+  license: open (AI2D)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: visual7w
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/visual7w/visual7w_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - S_spatial
+  - A_identity_attr
+  est_samples: 14366
+  ratio: 0.3
+  scene_type: mixed
+  license: open (Visual7W)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: localized_narratives
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/localized_narratives/localized_narratives_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 199998
+  ratio: 0.2
+  scene_type: mixed
+  license: open (Localized Narratives)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: ocrvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/ocrvqa/ocrvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 165746
+  ratio: 0.2
+  scene_type: document
+  license: open (OCR-VQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: pixmo_cap_qa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_cap_qa/pixmo_cap_qa_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 179557
+  ratio: 0.2
+  scene_type: mixed
+  license: open (Pixmo Cap QA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: pixmo_ask_model_anything
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_ask_model_anything/pixmo_ask_model_anything_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 92686
+  ratio: 0.2
+  scene_type: mixed
+  license: open (Pixmo AMA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: pixmo_count_counting
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_count_counting/pixmo_count_counting_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  est_samples: 9203
+  ratio: 0.3
+  scene_type: mixed
+  license: open (Pixmo Count)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: pixmo_pointing_explanations
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_pointing_explanations/pixmo_pointing_explanations_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - A_identity_attr
+  est_samples: 46372
+  ratio: 0.25
+  scene_type: mixed
+  license: open (Pixmo Pointing)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: nlvr2
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/nlvr2/nlvr2_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 50426
+  ratio: 0.25
+  scene_type: mixed
+  license: open (NLVR2)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: plotqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/plotqa/plotqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 157070
+  ratio: 0.2
+  scene_type: chart
+  license: open (PlotQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: dvqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/dvqa/dvqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 200000
+  ratio: 0.2
+  scene_type: chart
+  license: open (DVQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: figureqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/figureqa/figureqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 100000
+  ratio: 0.2
+  scene_type: chart
+  license: open (FigureQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: iconqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/iconqa/iconqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 27307
+  ratio: 0.25
+  scene_type: diagram
+  license: open (IconQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: mapqa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/mapqa/mapqa_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 37417
+  ratio: 0.25
+  scene_type: map
+  license: open (MapQA)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: raven
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/raven/raven_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - S_spatial
+  - A_identity_attr
+  est_samples: 42000
+  ratio: 0.25
+  scene_type: synthetic
+  license: open (RAVEN)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: robut_wikisql
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/robut_wikisql/robut_wikisql_qwen_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - A_identity_attr
+  est_samples: 74989
+  ratio: 0.2
+  scene_type: table
+  license: open (Robut WikiSQL)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: sharegpt4o
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/ShareGPT-4o/gpt4o_to_swift.jsonl
+  format: msswift_ready
+  dimensions:
+  - G_grounding
+  - S_spatial
+  - A_identity_attr
+  est_samples: 2111
+  ratio: 0.5
+  scene_type: mixed
+  license: open (ShareGPT-4o)
+  general: true
+  available_local: true
+  image_path_remap: /mnt/data->/path/to/datasets
+- name: visual_genome
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/visual_genome/vg_grounding_swift.jsonl
+  dimensions:
+  - G_grounding
+  est_samples: 5408476
+  ratio: 1.0
+  scene_type: indoor_general
+  license: open (Visual Genome, CC BY 4.0)
+  notes: bbox grounding; image root re-rooted to robopoint-data mirror
+  available_local: true
+  image_path_remap: auto
+- name: visual_genome_cleaned
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/visual_genome_cleaned/vg_2src_full.jsonl
+  dimensions:
+  - G_grounding
+  est_samples: 1053390
+  ratio: 1.0
+  scene_type: indoor_general
+  license: open (Visual Genome, CC BY 4.0)
+  available_local: true
+  image_path_remap: auto
+- name: gs_spatial_qa
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/gs_spatial_qa/gs_spatial_qa_manifest.jsonl
+  dimensions:
+  - S_spatial
+  est_samples: 539700
+  ratio: 1.0
+  scene_type: indoor_general
+  license: open (GS spatial QA)
+  available_local: true
+  image_path_remap: auto
+- name: vsi_590k
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/VSI_590K/vsi_590k_msswift.jsonl
+  dimensions:
+  - S_spatial
+  est_samples: 45888
+  ratio: 1.0
+  scene_type: 3d_spatial
+  license: open (VSI-590K)
+  available_local: true
+  image_path_remap: auto
+- name: mimic_cgd
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/mimic_cgd/mimic_cgd_qwen_to_swift.jsonl
+  dimensions:
+  - S_spatial
+  est_samples: 70939
+  ratio: 0.5
+  scene_type: indoor_general
+  license: open (MIMIC-CGD)
+  available_local: true
+  image_path_remap: auto
+- name: pixmo_points_label
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/pixmo_points/point_points_both_to_swift_labelpoint.jsonl
+  dimensions:
+  - G_grounding
+  est_samples: 2540990
+  ratio: 1.0
+  scene_type: mixed
+  license: open (Pixmo Points)
+  available_local: true
+  image_path_remap: auto
+- name: robopoint_ref_40k
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/robopoint_rft_point_ref_train_40000_test_2000_0417/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  dimensions:
+  - A_action_interface
+  - G_grounding
+  est_samples: 160000
+  ratio: 1.0
+  scene_type: tabletop_manipulation
+  license: open (RoboPoint)
+  available_local: true
+  image_path_remap: auto
+- name: roborefit_rec_105k
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/roborefit_rft_point_rec_train_35000_test_1000_0502/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  dimensions:
+  - A_action_interface
+  - G_grounding
+  est_samples: 105000
+  ratio: 1.0
+  scene_type: tabletop_manipulation
+  license: open (RoboRefit)
+  available_local: true
+  image_path_remap: auto
+- name: fsd_free_point_98k
+  path: /path/to/datasets/datasets/dataset_jsons_qwen3_swift/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/data_train_internvl_no_think_to_swift_onlypoint.jsonl
+  dimensions:
+  - A_action_interface
+  est_samples: 98370
+  ratio: 1.0
+  scene_type: tabletop_manipulation
+  license: open (FSD)
+  available_local: true
+  image_path_remap: auto

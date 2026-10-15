@@ -1,0 +1,14 @@
+{
+  "adapter": "/path/to/Anvil/engineering/data/core_gs_20260916/flat_17/training/v2-20260916-152917/checkpoint-256",
+  "adapter_sha256": "df7c32a32d8f9e5919221139b82dd41c9446a3f6e870185e3713a71baf90c12d",
+  "trainer_state_sha256": "347b88acf0ba4526d0f1cfd68035836a96c2c8cdaadf9113ffecfff3da9dc62b",
+  "seconds": 8563.67017602874,
+  "global_step": 256,
+  "job": {
+    "id": "flat_17",
+    "arm": "flat",
+    "seed": 17,
+    "steps": 256
+  },
+  "full_GSA_qualified": false
+}

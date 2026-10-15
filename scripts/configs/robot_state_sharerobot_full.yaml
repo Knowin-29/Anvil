@@ -1,0 +1,7 @@
+# A_robot_state full config for ShareRobot single-frame subsets.
+# Increase or remove max_images once the quick run is verified.
+sources:
+  - path: /path/to/datasets/downloads/sharerobot
+    source_type: sharerobot
+    subsets: [trajectory, affordance]
+    weight: 1.0

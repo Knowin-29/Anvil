@@ -1,0 +1,10 @@
+{
+  "total": 254621,
+  "by_scene": {
+    "exploration": 86000,
+    "tabletop": 63900,
+    "kitchen": 43814,
+    "embodied_home": 30907,
+    "object_state": 30000
+  }
+}

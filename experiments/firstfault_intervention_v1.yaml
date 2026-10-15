@@ -1,0 +1,174 @@
+schema_version: 1
+contract_id: firstfault-intervention-v1
+result_protocol: firstfault-intervention-result-v1
+evidence_role: paired_context_diagnosis
+
+comparability:
+  same_item: required
+  same_observation: required
+  same_checkpoint: required
+  same_decoding: required
+  same_downstream_target: required
+  deterministic_descendant_regeneration: required
+
+lineage:
+  predicted_state_source: exact_upstream_cell_emitted_state
+  static_state_source: manifest_bound_oracle_absent_corrupted_state
+  context_identity: canonical_sha256_of_ordered_context_sources
+  malformed_emitted_state: hashable_and_propagated_but_semantic_sample_zero
+
+score_semantics:
+  range: [0.0, 1.0]
+  correctness_threshold_source: manifest_target_semantic_metric_contract
+  context_sensitivity_threshold_source: manifest_target_semantic_metric_contract
+  monotonic_tolerance_source: manifest_target_semantic_metric_contract
+  malformed_response: sample_zero
+  malformed_semantic_score: null
+  dependency_gap: oracle_minus_predicted
+  oracle_headroom: positive_part_of_oracle_minus_predicted
+  headroom_recovery: bounded_repair_gain_over_positive_oracle_headroom
+
+cell_admission:
+  withhold_only_for:
+    - protocol_or_binding_mismatch
+    - missing_duplicate_or_unexpected_uid
+    - incomplete_or_incorrect_shard_coverage
+    - preregistered_output_health_gate_failure
+  max_malformed_rate: 0.25
+  max_truncation_rate: 0.15
+  gate_scope: chain_target_probe
+
+bootstrap:
+  unit: scene_uid
+  method: deterministic_percentile_cluster_bootstrap
+  confidence: 0.95
+  resamples: 10000
+  seed: 51051
+
+cost_fields:
+  - model_queries
+  - teacher_queries
+  - model_input_tokens
+  - model_output_tokens
+  - teacher_input_tokens
+  - teacher_output_tokens
+  - specialist_scored_tokens
+  - model_cost_microusd
+  - teacher_cost_microusd
+
+cost_accounting:
+  receipt_scope: per_cell
+  monetary_unit: micro_usd
+  rate_policy_binding: bundle_cost_policy_identity_sha256
+  aggregation: exact_integer_sum
+
+probe_definitions:
+  G.local:
+    target_stage: G
+    intervention_stage: null
+    context_mode: none
+    semantic_role: local_G_under_no_parents
+    semantic_metric_source: target.semantic_metric_contract
+  S.predicted_G:
+    target_stage: S
+    intervention_stage: G
+    context_mode: predicted
+    semantic_role: S_under_predicted_G
+    semantic_metric_source: target.semantic_metric_contract
+  S.oracle_G:
+    target_stage: S
+    intervention_stage: G
+    context_mode: oracle
+    semantic_role: S_under_oracle_G
+    semantic_metric_source: target.semantic_metric_contract
+  S.absent_G:
+    target_stage: S
+    intervention_stage: G
+    context_mode: absent
+    semantic_role: S_with_G_removed
+    semantic_metric_source: target.semantic_metric_contract
+  S.corrupted_G:
+    target_stage: S
+    intervention_stage: G
+    context_mode: corrupted
+    semantic_role: S_with_type_valid_corrupted_G
+    semantic_metric_source: target.semantic_metric_contract
+  A.predicted_GS:
+    target_stage: A
+    intervention_stage: G
+    context_mode: predicted
+    semantic_role: A_under_predicted_G_then_predicted_S
+    semantic_metric_source: target.semantic_metric_contract
+  A.repair_G:
+    target_stage: A
+    intervention_stage: G
+    context_mode: oracle
+    semantic_role: A_after_oracle_G_and_regenerated_predicted_S
+    semantic_metric_source: target.semantic_metric_contract
+  A.oracle_GS:
+    target_stage: A
+    intervention_stage: S
+    context_mode: oracle
+    semantic_role: A_under_oracle_G_and_oracle_S
+    semantic_metric_source: target.semantic_metric_contract
+  A.absent_G:
+    target_stage: A
+    intervention_stage: G
+    context_mode: absent
+    semantic_role: A_after_G_removed_and_descendants_regenerated
+    semantic_metric_source: target.semantic_metric_contract
+  A.corrupted_G:
+    target_stage: A
+    intervention_stage: G
+    context_mode: corrupted
+    semantic_role: A_after_type_valid_corrupted_G_and_descendants_regenerated
+    semantic_metric_source: target.semantic_metric_contract
+  A.absent_S:
+    target_stage: A
+    intervention_stage: S
+    context_mode: absent
+    semantic_role: A_under_oracle_G_with_S_removed
+    semantic_metric_source: target.semantic_metric_contract
+  A.corrupted_S:
+    target_stage: A
+    intervention_stage: S
+    context_mode: corrupted
+    semantic_role: A_under_oracle_G_with_type_valid_corrupted_S
+    semantic_metric_source: target.semantic_metric_contract
+
+chains:
+  G_S:
+    stages: [G, S]
+    required_probes:
+      - G.local
+      - S.predicted_G
+      - S.oracle_G
+      - S.absent_G
+      - S.corrupted_G
+    primary_target: S
+  G_S_A:
+    stages: [G, S, A]
+    required_probes:
+      - G.local
+      - S.predicted_G
+      - S.oracle_G
+      - S.absent_G
+      - S.corrupted_G
+      - A.predicted_GS
+      - A.repair_G
+      - A.oracle_GS
+      - A.absent_G
+      - A.corrupted_G
+      - A.absent_S
+      - A.corrupted_S
+    primary_target: A
+
+first_fault_states:
+  - Attributed
+  - Local
+  - Inconclusive
+
+first_fault_transitions:
+  G_S: [G_repair]
+  G_S_A: [G_repair, S_repair]
+  states: [wrong, correct]

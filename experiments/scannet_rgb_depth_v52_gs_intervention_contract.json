@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "protocol": "gsa-depth-v5.2-gs-context-intervention-contract-v3",
+  "scope": {
+    "records": 40,
+    "unit": "scene",
+    "same_item": true,
+    "same_image": true,
+    "same_model_binding": true,
+    "same_deterministic_decoding": true,
+    "held_out_evaluation_only": true
+  },
+  "contexts": {
+    "oracle": {
+      "source": "formal_human_admitted_A_B_grounding_boxes",
+      "boxes_present": true
+    },
+    "predicted": {
+      "source": "exact_strictly_parsed_G_output_for_the_same_item",
+      "boxes_present": true,
+      "oracle_matching_allowed": false
+    },
+    "absent": {
+      "source": "no_grounding_coordinates",
+      "boxes_present": false,
+      "preserved_inputs": [
+        "image",
+        "A_category",
+        "B_category",
+        "nearer_question",
+        "response_grammar"
+      ]
+    },
+    "corrupted": {
+      "source": "formal_oracle_boxes_with_unconditional_slot_assignment_swap",
+      "boxes_present": true,
+      "transform": {
+        "A_bbox": "oracle_B_bbox",
+        "B_bbox": "oracle_A_bbox"
+      },
+      "selection_rule": "apply_to_every_item_without_branching",
+      "per_target_assignment_is_ground_truth": false,
+      "per_target_non_gt_rule": "A_receives_distinct_B_oracle_bbox_and_B_receives_distinct_A_oracle_bbox",
+      "downstream_truth_fields_read": [],
+      "model_outputs_read": [],
+      "preserves": [
+        "bbox_type",
+        "bbox_coordinate_space",
+        "two_box_multiset",
+        "box_area_distribution",
+        "box_aspect_ratio_distribution"
+      ]
+    }
+  },
+  "metrics": {
+    "dependency_gap": "S_oracle_accuracy_minus_S_predicted_context_accuracy_on_all_40_scenes",
+    "invalid_or_capped_G_predicted_context_credit": 0,
+    "strict_end_to_end": "G_both_boxes_IoU_at_least_0.5_and_S_predicted_context_correct",
+    "strict_end_to_end_is_dependency_gap_endpoint": false,
+    "primary_bootstrap_unit": "paired_scene",
+    "predicted_context_and_strict_end_to_end_transitions_reported_separately": true
+  },
+  "attribution": {
+    "states": [
+      "Attributed(G)",
+      "Local(S)",
+      "Inconclusive"
+    ],
+    "grounding_correctness": "both_A_B_IoU_at_least_0.5",
+    "Local(S)_interpretation": "the_target_stage_fails_under_oracle_context_while_G_passes_the_frozen_correctness_threshold",
+    "health_required_for_any_conclusive_state": [
+      "G_is_uncapped_and_strictly_parsed",
+      "S_pred_is_emitted_uncapped_and_strictly_parsed",
+      "S_oracle_is_uncapped_and_strictly_parsed",
+      "S_absent_is_uncapped_and_strictly_parsed",
+      "S_corrupted_is_uncapped_and_strictly_parsed"
+    ],
+    "decision_rule": {
+      "Attributed(G)": "all_outputs_healthy_and_S_pred_wrong_and_G_incorrect_and_S_oracle_correct_and_S_absent_wrong_and_S_corrupted_wrong",
+      "Local(S)": "all_outputs_healthy_and_G_correct_and_S_pred_wrong_and_S_oracle_wrong_and_S_absent_wrong_and_S_corrupted_wrong",
+      "Inconclusive": "all_other_cases"
+    },
+    "controls_for_Local(S)": "controls_need_not_demonstrate_state_use_but_must_not_outperform_the_failed_oracle_context",
+    "mandatory_inconclusive_cases": [
+      "no_downstream_failure",
+      "invalid_or_capped_or_unparsed_output",
+      "missing_predicted_context_request",
+      "oracle_degradation",
+      "nonmonotonic_intervention",
+      "context_insensitive_or_control_failure",
+      "oracle_repairs_S_but_G_passes_the_frozen_correctness_threshold",
+      "simultaneous_unresolved_G_and_oracle_context_S_failures"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+Given the object "{object_name}" in the image, analyze its affordance:
+
+1. What actions can be performed on/with this object? (pick, push, press, place, pour, open)
+2. Where is the best contact point for the primary action?
+3. What is the approach direction?
+4. Why is this point suitable for the action?
+
+Respond in the format:
+[Affordance] {object_name}:
+  Shape: {shape_description}
+  Action: {primary_action}
+  Reason: {why_this_point}
+  Contact: ({x}, {y})
+  Direction: {approach_direction}

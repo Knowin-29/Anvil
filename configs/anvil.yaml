@@ -1,0 +1,23 @@
+# Configure these paths and endpoint before generation. No remote service is implied.
+vlm:
+  base_url: "${ANVIL_VLM_BASE_URL:-http://127.0.0.1:8000/v1}"
+  model: "${GSA_VLM_MODEL:-Qwen3.5-397B-A17B}"
+  api_key: "${VLM_API_KEY}"
+  max_image_size: 1280
+  timeout: 120
+  max_retries: 3
+input:
+  image_dirs: []
+  max_images: 40
+  discover_external_sources: false
+  max_objects_per_image: 8
+pipeline:
+  enabled_stages: [G, S, A_identity_attr, A_obj_state, A_robot_state, A_action_precondition, A_action_interface]
+  concurrency: 4
+output:
+  root: data/anvil_gsa
+quotas: {G: 100, S: 100, A_robot_state: 100}
+scene_families: {}
+verifier: {auto_pass_confidence: 0.8}
+robot_state_datasets: {enabled: [], ingest_only: false, max_samples_per_source: 0}
+robot_state_episode: {enabled: false}

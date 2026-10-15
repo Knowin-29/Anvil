@@ -1,0 +1,6068 @@
+[
+  {
+    "uid": "ai2d_test:4601.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:766.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1931.png-6",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:976.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2036.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1819.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2966.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2108.png-9",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1922.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1773.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3787.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1931.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2086.png-6",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1856.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1939.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1902.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3518.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1433.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4128.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2551.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4540.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4692.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2034.png-7",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2081.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2029.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:397.png-9",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1890.png-7",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3889.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:948.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3939.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:437.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:320.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:742.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4025.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:745.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4714.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:774.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1931.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2470.png-4",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2086.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:276.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:542.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:354.png-4",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2176.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3576.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2390.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4128.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2614.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4736.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2991.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:781.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1826.png-6",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3753.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:314.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:0.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3169.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2306.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1968.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2551.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1268.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2035.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1322.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:342.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2388.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4171.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:831.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:391.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1773.png-10",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:263.png-4",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2108.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1196.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1881.png-7",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:458.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:391.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:579.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:138.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2000.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3542.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2697.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1481.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:624.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3465.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2587.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1772.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:495.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3347.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1898.png-7",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:534.png-7",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1240.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:34.png-19",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4577.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1707.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:28.png-13",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1442.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:504.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2108.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:869.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3038.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1952.png-6",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2241.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2274.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2021.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2859.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2470.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4123.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:447.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4883.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1436.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:257.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3458.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:28.png-20",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:354.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1173.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1939.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:119.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1421.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1281.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4577.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2068.png-6",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4334.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2594.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1199.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2380.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1881.png-6",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:514.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4078.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1505.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3228.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1017.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:69.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2700.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1804.png-6",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2023.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2108.png-8",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3389.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4013.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:369.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1041.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1987.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2306.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4459.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3375.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3972.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2320.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2014.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2431.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:282.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2143.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2379.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:626.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:500.png-9",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1051.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:28.png-9",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:85.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:163.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4835.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2108.png-4",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:447.png-5",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4163.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4660.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1138.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2392.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2922.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3347.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:263.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2488.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2005.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1890.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:135.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:577.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1856.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1320.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1264.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1264.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2272.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1320.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1952.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:294.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:24.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4554.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1629.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1826.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:859.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4740.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1931.png-9",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:931.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:876.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:11.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2167.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2029.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:483.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:704.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1392.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:864.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1794.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4880.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:411.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:447.png-7",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:534.png-4",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1294.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1503.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:85.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4096.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3163.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:24.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4660.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2432.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4129.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2222.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:411.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2963.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:28.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:634.png-4",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2034.png-4",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2676.png-2",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2241.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:19.png-17",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2581.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1259.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1927.png-8",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3874.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2470.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:702.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:337.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:858.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2518.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4270.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:504.png-5",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3535.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3297.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4437.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1670.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:263.png-6",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1880.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4511.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:348.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1503.png-2",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1717.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4263.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:32.png-8",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2601.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:483.png-10",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2579.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:273.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:257.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1794.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2274.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2086.png-9",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2261.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1956.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:336.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:369.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2257.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:514.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4683.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:281.png-8",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1945.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2277.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:116.png-4",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2448.png-3",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:177.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2028.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3823.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2021.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3854.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:814.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1804.png-8",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:186.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3210.png-0",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4144.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3465.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2419.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:319.png-6",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1135.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:770.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4822.png-2",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1931.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3939.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1783.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1880.png-5",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:28.png-14",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2034.png-6",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4859.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2390.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2074.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4750.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3518.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3796.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:337.png-5",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2143.png-1",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1880.png-8",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1493.png-0",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:320.png-7",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4740.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:3803.png-2",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:397.png-4",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4757.png-3",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:487.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2864.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:598.png-1",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4437.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2295.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:34.png-3",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2659.png-1",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1840.png-5",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:2034.png-0",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:1987.png-3",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4750.png-0",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "ai2d_test:4084.png-1",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10244",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19117",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4578",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:7005",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6825",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11138",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14779",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:21063",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9609",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2579",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14800",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:337",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1916",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18429",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20749",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1392",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10090",
+    "response": "<think>\n\n</think>\n\nE",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3514",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13953",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5490",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3885",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13977",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2538",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16536",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10689",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15516",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11285",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4153",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10512",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15810",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1165",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10563",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9855",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5925",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15290",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1719",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17496",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13945",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14387",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:674",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5663",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10094",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10185",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15637",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8212",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10247",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5642",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1674",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20334",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14132",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20584",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18173",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11116",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11995",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2328",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17503",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11532",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12365",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:918",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10791",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3217",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1049",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2395",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13811",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20040",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9525",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9093",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17988",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18787",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20984",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20174",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4271",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4351",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12723",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6338",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18167",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5018",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1043",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5090",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9120",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4339",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9223",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10984",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10681",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2332",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5805",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12664",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15235",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8931",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16424",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17698",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13886",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9546",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9249",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13443",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15706",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14308",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16883",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2870",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16340",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9898",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19879",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2621",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13962",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1228",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11502",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3213",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13392",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:7626",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20788",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18889",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10919",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20948",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13253",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19225",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2638",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20762",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6785",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2978",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8709",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20221",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1326",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11745",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4167",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12176",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3259",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14861",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12799",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18627",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11607",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18632",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15273",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19367",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14505",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18586",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8648",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19305",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3379",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1223",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12487",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19726",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:21053",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:198",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20542",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:15241",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1269",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6371",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:9495",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:4532",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:517",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11514",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19002",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17857",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10661",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8490",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14492",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16606",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13715",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:18499",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1633",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11690",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5606",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:10614",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13015",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:1672",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6051",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8609",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8720",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2845",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12753",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5522",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16436",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:19545",
+    "response": "<think>\n\n</think>\n\nD",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13754",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3541",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13072",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13461",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3788",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20120",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6091",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:8004",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11768",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13311",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:366",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:85",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12139",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:12026",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:2148",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:5146",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:20283",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:6375",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:14743",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:17929",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13571",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:3703",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:16673",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:7121",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13914",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11446",
+    "response": "<think>\n\n</think>\n\nA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:13752",
+    "response": "<think>\n\n</think>\n\nC",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:21087",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "scienceqa_test:11060",
+    "response": "<think>\n\n</think>\n\nB",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37585",
+    "response": "<think>\n\n</think>\n\n Detable",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35610",
+    "response": "<think>\n\n</think>\n\nspanish",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37019",
+    "response": "<think>\n\n</think>\n\n opt-out",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38634",
+    "response": "<think>\n\n</think>\n\nscience",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37726",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39117",
+    "response": "<think>\n\n</think>\n\nLindsey Apodaca",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:34616",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35854",
+    "response": "<think>\n\n</think>\n\n normal",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37200",
+    "response": "<think>\n\n</think>\n\n2010",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35142",
+    "response": "<think>\n\n</think>\n\n galactica",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36114",
+    "response": "<think>\n\n</think>\n\n10 fl oz",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35751",
+    "response": "<think>\n\n</think>\n\nhablis 1er cru",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:36813",
+    "response": "<think>\n\n</think>\n\nNikon",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39185",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39069",
+    "response": "<think>\n\n</think>\n\n901",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36707",
+    "response": "<think>\n\n</think>\n\namato gelato",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35634",
+    "response": "<think>\n\n</think>\n\ncastello di brolio",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37473",
+    "response": "<think>\n\n</think>\n\nkansas",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38991",
+    "response": "<think>\n\n</think>\n\ncowbellman",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35944",
+    "response": "<think>\n\n</think>\n\noffice",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35208",
+    "response": "<think>\n\n</think>\n\n cognac",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38102",
+    "response": "<think>\n\n</think>\n\n32",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36113",
+    "response": "<think>\n\n</think>\n\n12:50",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:34738",
+    "response": "<think>\n\n</think>\n\ninspirations",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35466",
+    "response": "<think>\n\n</think>\n\n75%",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36373",
+    "response": "<think>\n\n</think>\n\n3",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39441",
+    "response": "<think>\n\n</think>\n\n440",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39279",
+    "response": "<think>\n\n</think>\n\nThe Atrium",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38442",
+    "response": "<think>\n\n</think>\n\nsand",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37393",
+    "response": "<think>\n\n</think>\n\n8",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39304",
+    "response": "<think>\n\n</think>\n\n1926",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35556",
+    "response": "<think>\n\n</think>\n\nwho is a professor that made a difference for you?",
+    "finish_reason": "stop",
+    "completion_tokens": 12
+  },
+  {
+    "uid": "textvqa_val:38148",
+    "response": "<think>\n\n</think>\n\nohs",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38641",
+    "response": "<think>\n\n</think>\n\ndeep sea",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38984",
+    "response": "<think>\n\n</think>\n\n10€",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37130",
+    "response": "<think>\n\n</think>\n\n1251",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36754",
+    "response": "<think>\n\n</think>\n\nsun",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36429",
+    "response": "<think>\n\n</think>\n\nlego",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36318",
+    "response": "<think>\n\n</think>\n\nair pacific",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37801",
+    "response": "<think>\n\n</think>\n\nparis",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38071",
+    "response": "<think>\n\n</think>\n\nresponsive web design",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37792",
+    "response": "<think>\n\n</think>\n\nwestjet",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35830",
+    "response": "<think>\n\n</think>\n\ndoubleplay",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34620",
+    "response": "<think>\n\n</think>\n\n3",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35250",
+    "response": "<think>\n\n</think>\n\n40",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36323",
+    "response": "<think>\n\n</think>\n\n3",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38664",
+    "response": "<think>\n\n</think>\n\n the big rock candy mountain",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35220",
+    "response": "<think>\n\n</think>\n\nbevi",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35561",
+    "response": "<think>\n\n</think>\n\n18.96",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37677",
+    "response": "<think>\n\n</think>\n\nringdoll",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37570",
+    "response": "<think>\n\n</think>\n\nthe ornament",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37472",
+    "response": "<think>\n\n</think>\n\nbaby",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37304",
+    "response": "<think>\n\n</think>\n\n$29.99",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:35359",
+    "response": "<think>\n\n</think>\n\n no",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38301",
+    "response": "<think>\n\n</think>\n\n0171 oscar.",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:36760",
+    "response": "<think>\n\n</think>\n\nconstruction paper",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39470",
+    "response": "<think>\n\n</think>\n\n50",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36355",
+    "response": "<think>\n\n</think>\n\n sleeping",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38349",
+    "response": "<think>\n\n</think>\n\nferrari trento",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38389",
+    "response": "<think>\n\n</think>\n\n33",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36051",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39306",
+    "response": "<think>\n\n</think>\n\n nike",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38241",
+    "response": "<think>\n\n</think>\n\n winchester",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38279",
+    "response": "<think>\n\n</think>\n\nspring",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37550",
+    "response": "<think>\n\n</think>\n\n58",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35806",
+    "response": "<think>\n\n</think>\n\n melissa keil",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:39582",
+    "response": "<think>\n\n</think>\n\ntrading post",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37689",
+    "response": "<think>\n\n</think>\n\nact",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35450",
+    "response": "<think>\n\n</think>\n\nGATORADE 1.00\nWATER 1.00\nHOT CHOCOLATE 1.50\nCANDY 75\nCHIPS 50\nFRUIT SNACKS 50\nCHEX MIX 75",
+    "finish_reason": "stop",
+    "completion_tokens": 57
+  },
+  {
+    "uid": "textvqa_val:38882",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36441",
+    "response": "<think>\n\n</think>\n\n50",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37510",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37978",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39397",
+    "response": "<think>\n\n</think>\n\nctrl",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39182",
+    "response": "<think>\n\n</think>\n\n the christmas century magazine",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36908",
+    "response": "<think>\n\n</think>\n\n disney",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38701",
+    "response": "<think>\n\n</think>\n\nthe adventures of sherlock holmes",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:38393",
+    "response": "<think>\n\n</think>\n\n theo",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37284",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37301",
+    "response": "<think>\n\n</think>\n\nenter",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36305",
+    "response": "<think>\n\n</think>\n\nstroboscopie",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34747",
+    "response": "<think>\n\n</think>\n\n army",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37475",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38335",
+    "response": "<think>\n\n</think>\n\nRAVEL",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35734",
+    "response": "<think>\n\n</think>\n\n64-bit",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37842",
+    "response": "<think>\n\n</think>\n\nd.c.",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:34988",
+    "response": "<think>\n\n</think>\n\n926",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39145",
+    "response": "<think>\n\n</think>\n\nwww.todossomostindaya.blogspot.com",
+    "finish_reason": "stop",
+    "completion_tokens": 11
+  },
+  {
+    "uid": "textvqa_val:36627",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38181",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36132",
+    "response": "<think>\n\n</think>\n\nShin-Tamana",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34633",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36658",
+    "response": "<think>\n\n</think>\n\nAmerican Gothic Tales",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:34934",
+    "response": "<think>\n\n</think>\n\n inorgánicos",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39202",
+    "response": "<think>\n\n</think>\n\nthe wipers times or salient news.",
+    "finish_reason": "stop",
+    "completion_tokens": 10
+  },
+  {
+    "uid": "textvqa_val:35522",
+    "response": "<think>\n\n</think>\n\nwww.LosMocanos.com",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:35993",
+    "response": "<think>\n\n</think>\n\n tomcat",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34609",
+    "response": "<think>\n\n</think>\n\n audemars piguet",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38300",
+    "response": "<think>\n\n</think>\n\nlittle printer",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36510",
+    "response": "<think>\n\n</think>\n\nyao",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36863",
+    "response": "<think>\n\n</think>\n\npc 300 lc",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:37447",
+    "response": "<think>\n\n</think>\n\n coca cola",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37084",
+    "response": "<think>\n\n</think>\n\nn",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36015",
+    "response": "<think>\n\n</think>\n\nblanket?",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35718",
+    "response": "<think>\n\n</think>\n\n2010",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38571",
+    "response": "<think>\n\n</think>\n\nqatar",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38010",
+    "response": "<think>\n\n</think>\n\ncargo",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34879",
+    "response": "<think>\n\n</think>\n\nreynolds",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35938",
+    "response": "<think>\n\n</think>\n\n12",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39035",
+    "response": "<think>\n\n</think>\n\no",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35207",
+    "response": "<think>\n\n</think>\n\nnew york",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37237",
+    "response": "<think>\n\n</think>\n\nidentita",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35609",
+    "response": "<think>\n\n</think>\n\n fatal1ty",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36909",
+    "response": "<think>\n\n</think>\n\n2014",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37206",
+    "response": "<think>\n\n</think>\n\n67",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36684",
+    "response": "<think>\n\n</think>\n\nwww.emeleXista.com",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:39527",
+    "response": "<think>\n\n</think>\n\nwww.ofog.org",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36568",
+    "response": "<think>\n\n</think>\n\ntime time",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34608",
+    "response": "<think>\n\n</think>\n\n10:10",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35364",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39155",
+    "response": "<think>\n\n</think>\n\n large type",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37483",
+    "response": "<think>\n\n</think>\n\n8.80",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36745",
+    "response": "<think>\n\n</think>\n\nmadison av",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35678",
+    "response": "<think>\n\n</think>\n\n dodgers",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37928",
+    "response": "<think>\n\n</think>\n\nthe business design summit",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35079",
+    "response": "<think>\n\n</think>\n\n5",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39187",
+    "response": "<think>\n\n</think>\n\n$2.70",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35652",
+    "response": "<think>\n\n</think>\n\n ruler",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39430",
+    "response": "<think>\n\n</think>\n\ntyle",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35651",
+    "response": "<think>\n\n</think>\n\n10",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37672",
+    "response": "<think>\n\n</think>\n\n photographer",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38951",
+    "response": "<think>\n\n</think>\n\nindians",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38706",
+    "response": "<think>\n\n</think>\n\n spain",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38702",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35635",
+    "response": "<think>\n\n</think>\n\ngreat",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36953",
+    "response": "<think>\n\n</think>\n\ncts stadium",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34905",
+    "response": "<think>\n\n</think>\n\n only",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36115",
+    "response": "<think>\n\n</think>\n\npepsi cola",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35242",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38800",
+    "response": "<think>\n\n</think>\n\n12:34",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:34961",
+    "response": "<think>\n\n</think>\n\ncanon",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37495",
+    "response": "<think>\n\n</think>\n\nshout about tv",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38832",
+    "response": "<think>\n\n</think>\n\ntopco scientific",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36171",
+    "response": "<think>\n\n</think>\n\n the times",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39247",
+    "response": "<think>\n\n</think>\n\n10:40",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37553",
+    "response": "<think>\n\n</think>\n\nwm",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38590",
+    "response": "<think>\n\n</think>\n\nassembly area",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36250",
+    "response": "<think>\n\n</think>\n\niriver",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35144",
+    "response": "<think>\n\n</think>\n\nTocca",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34634",
+    "response": "<think>\n\n</think>\n\njeff vandermeer & mark roberts",
+    "finish_reason": "stop",
+    "completion_tokens": 10
+  },
+  {
+    "uid": "textvqa_val:39587",
+    "response": "<think>\n\n</think>\n\nsprecher",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36120",
+    "response": "<think>\n\n</think>\n\npharma",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39329",
+    "response": "<think>\n\n</think>\n\n60:00",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37215",
+    "response": "<think>\n\n</think>\n\nam3",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35407",
+    "response": "<think>\n\n</think>\n\n4",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37468",
+    "response": "<think>\n\n</think>\n\n11 6-11",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:36356",
+    "response": "<think>\n\n</think>\n\n at&t",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38718",
+    "response": "<think>\n\n</think>\n\nguadalajara",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38321",
+    "response": "<think>\n\n</think>\n\ngold's gym",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36839",
+    "response": "<think>\n\n</think>\n\njean koontz",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37784",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34760",
+    "response": "<think>\n\n</think>\n\n senator mike lee",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35585",
+    "response": "<think>\n\n</think>\n\n11",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35761",
+    "response": "<think>\n\n</think>\n\n white",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39019",
+    "response": "<think>\n\n</think>\n\nleft",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34916",
+    "response": "<think>\n\n</think>\n\n squatting",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39287",
+    "response": "<think>\n\n</think>\n\n michigan",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35308",
+    "response": "<think>\n\n</think>\n\n3m",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34958",
+    "response": "<think>\n\n</think>\n\n648-3004",
+    "finish_reason": "stop",
+    "completion_tokens": 9
+  },
+  {
+    "uid": "textvqa_val:36564",
+    "response": "<think>\n\n</think>\n\ntoshiba",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37349",
+    "response": "<think>\n\n</think>\n\nas above so below",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37010",
+    "response": "<think>\n\n</think>\n\n Tamale Town",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39520",
+    "response": "<think>\n\n</think>\n\nccsg-12",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37117",
+    "response": "<think>\n\n</think>\n\nrye whiskey",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37052",
+    "response": "<think>\n\n</think>\n\n2013-2014",
+    "finish_reason": "stop",
+    "completion_tokens": 10
+  },
+  {
+    "uid": "textvqa_val:37464",
+    "response": "<think>\n\n</think>\n\n APPRENTICE",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36380",
+    "response": "<think>\n\n</think>\n\nthe family fun game",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35218",
+    "response": "<think>\n\n</think>\n\n23",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34877",
+    "response": "<think>\n\n</think>\n\n not",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36025",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39281",
+    "response": "<think>\n\n</think>\n\n1509",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37359",
+    "response": "<think>\n\n</think>\n\nperfect partners",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34675",
+    "response": "<think>\n\n</think>\n\nDEWASA",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38717",
+    "response": "<think>\n\n</think>\n\nixtlan del rio",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38417",
+    "response": "<think>\n\n</think>\n\ndavison's auto service",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36955",
+    "response": "<think>\n\n</think>\n\n no",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35937",
+    "response": "<think>\n\n</think>\n\n dell",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38755",
+    "response": "<think>\n\n</think>\n\nMYR 1,499",
+    "finish_reason": "stop",
+    "completion_tokens": 9
+  },
+  {
+    "uid": "textvqa_val:35896",
+    "response": "<think>\n\n</think>\n\n19",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36413",
+    "response": "<think>\n\n</think>\n\nabsinthe",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35512",
+    "response": "<think>\n\n</think>\n\nPractical LSF 7.0 Administration",
+    "finish_reason": "stop",
+    "completion_tokens": 10
+  },
+  {
+    "uid": "textvqa_val:36048",
+    "response": "<think>\n\n</think>\n\nSR1 18",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36648",
+    "response": "<think>\n\n</think>\n\nzara",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36885",
+    "response": "<think>\n\n</think>\n\n040 504 0577",
+    "finish_reason": "stop",
+    "completion_tokens": 13
+  },
+  {
+    "uid": "textvqa_val:35012",
+    "response": "<think>\n\n</think>\n\nontario library association",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36556",
+    "response": "<think>\n\n</think>\n\ninstalando",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37021",
+    "response": "<think>\n\n</think>\n\nlittle valley brewery",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38659",
+    "response": "<think>\n\n</think>\n\n like mumford & sons",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38118",
+    "response": "<think>\n\n</think>\n\n accoutrements",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37953",
+    "response": "<think>\n\n</think>\n\ntedxconcordia",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:39332",
+    "response": "<think>\n\n</think>\n\n143",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37680",
+    "response": "<think>\n\n</think>\n\nstiegl",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36817",
+    "response": "<think>\n\n</think>\n\n12:54",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37910",
+    "response": "<think>\n\n</think>\n\nsamsung",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36770",
+    "response": "<think>\n\n</think>\n\n16:15",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:39449",
+    "response": "<think>\n\n</think>\n\nHarm",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39501",
+    "response": "<think>\n\n</think>\n\nthe exorcism",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34709",
+    "response": "<think>\n\n</think>\n\nipm",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35857",
+    "response": "<think>\n\n</think>\n\nterrace hotel",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36005",
+    "response": "<think>\n\n</think>\n\nchocolate bock",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:39204",
+    "response": "<think>\n\n</think>\n\nleap",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35297",
+    "response": "<think>\n\n</think>\n\nsluggerr",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35685",
+    "response": "<think>\n\n</think>\n\n3",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36310",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34679",
+    "response": "<think>\n\n</think>\n\njiba",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39063",
+    "response": "<think>\n\n</think>\n\nTe",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36651",
+    "response": "<think>\n\n</think>\n\n64",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37704",
+    "response": "<think>\n\n</think>\n\ncsuf",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39455",
+    "response": "<think>\n\n</think>\n\nalan j. bradley & sons ltd.",
+    "finish_reason": "stop",
+    "completion_tokens": 11
+  },
+  {
+    "uid": "textvqa_val:38899",
+    "response": "<think>\n\n</think>\n\nwedding ale",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39288",
+    "response": "<think>\n\n</think>\n\nx c",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35140",
+    "response": "<think>\n\n</think>\n\n10",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39249",
+    "response": "<think>\n\n</think>\n\nu",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36878",
+    "response": "<think>\n\n</think>\n\n10",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39179",
+    "response": "<think>\n\n</think>\n\n1971",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37544",
+    "response": "<think>\n\n</think>\n\nhamilton beach",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37006",
+    "response": "<think>\n\n</think>\n\n8",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38138",
+    "response": "<think>\n\n</think>\n\nHUDSON",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34875",
+    "response": "<think>\n\n</think>\n\n17.3 inch",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:39483",
+    "response": "<think>\n\n</think>\n\n17",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36929",
+    "response": "<think>\n\n</think>\n\nearly care & development",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38626",
+    "response": "<think>\n\n</think>\n\n the festival drum",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38492",
+    "response": "<think>\n\n</think>\n\n5004",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34992",
+    "response": "<think>\n\n</think>\n\n1",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38775",
+    "response": "<think>\n\n</think>\n\nno events today",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38014",
+    "response": "<think>\n\n</think>\n\npublic pad",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37331",
+    "response": "<think>\n\n</think>\n\ncandy",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39591",
+    "response": "<think>\n\n</think>\n\nstorm chasers",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35496",
+    "response": "<think>\n\n</think>\n\n17:23",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38374",
+    "response": "<think>\n\n</think>\n\n athletics",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37203",
+    "response": "<think>\n\n</think>\n\n liberty",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39006",
+    "response": "<think>\n\n</think>\n\n2007",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36045",
+    "response": "<think>\n\n</think>\n\nsaigon",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34892",
+    "response": "<think>\n\n</think>\n\ns",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35270",
+    "response": "<think>\n\n</think>\n\nben's chili bowl",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:39411",
+    "response": "<think>\n\n</think>\n\n h",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36625",
+    "response": "<think>\n\n</think>\n\n isaac asimov",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35427",
+    "response": "<think>\n\n</think>\n\nStarobrno",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37100",
+    "response": "<think>\n\n</think>\n\n vincent van gogh",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36484",
+    "response": "<think>\n\n</think>\n\npodem levar...",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34689",
+    "response": "<think>\n\n</think>\n\n fox",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34797",
+    "response": "<think>\n\n</think>\n\nw",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36972",
+    "response": "<think>\n\n</think>\n\n50",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34969",
+    "response": "<think>\n\n</think>\n\nenergy drink",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37309",
+    "response": "<think>\n\n</think>\n\ncandy",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38999",
+    "response": "<think>\n\n</think>\n\nwed 9-21",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:35228",
+    "response": "<think>\n\n</think>\n\n18-220mm",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:36094",
+    "response": "<think>\n\n</think>\n\njvc",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34628",
+    "response": "<think>\n\n</think>\n\nwillis",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36668",
+    "response": "<think>\n\n</think>\n\n8",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37798",
+    "response": "<think>\n\n</think>\n\nylvanias",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39572",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37153",
+    "response": "<think>\n\n</think>\n\nkorean air",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:34989",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35432",
+    "response": "<think>\n\n</think>\n\nchicago",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37807",
+    "response": "<think>\n\n</think>\n\n white",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35057",
+    "response": "<think>\n\n</think>\n\n alternative transportation",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35983",
+    "response": "<think>\n\n</think>\n\n syrup of black-draught",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:36682",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38815",
+    "response": "<think>\n\n</think>\n\nrevenge of the mummy",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:36236",
+    "response": "<think>\n\n</think>\n\n green",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39036",
+    "response": "<think>\n\n</think>\n\n select",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35292",
+    "response": "<think>\n\n</think>\n\n18",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38446",
+    "response": "<think>\n\n</think>\n\nkaiju for grown ups",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:37832",
+    "response": "<think>\n\n</think>\n\nsurface pro 3",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36480",
+    "response": "<think>\n\n</think>\n\npharmacy",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36361",
+    "response": "<think>\n\n</think>\n\nfepasa",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37075",
+    "response": "<think>\n\n</think>\n\nexpedia.ca",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36700",
+    "response": "<think>\n\n</think>\n\n32",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37831",
+    "response": "<think>\n\n</think>\n\n24",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35162",
+    "response": "<think>\n\n</think>\n\nlive music",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35968",
+    "response": "<think>\n\n</think>\n\nin station way finding",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:34864",
+    "response": "<think>\n\n</think>\n\n Carnegie Hall",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35694",
+    "response": "<think>\n\n</think>\n\n the beatles",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:34798",
+    "response": "<think>\n\n</think>\n\nav-147-vz",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:37820",
+    "response": "<think>\n\n</think>\n\nindia pale ale",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37016",
+    "response": "<think>\n\n</think>\n\n4.01",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35454",
+    "response": "<think>\n\n</think>\n\nap",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37335",
+    "response": "<think>\n\n</think>\n\nmilk",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37104",
+    "response": "<think>\n\n</think>\n\nthe desert",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34982",
+    "response": "<think>\n\n</think>\n\nrock the stripes",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35672",
+    "response": "<think>\n\n</think>\n\n1970",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35843",
+    "response": "<think>\n\n</think>\n\n44",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36867",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38644",
+    "response": "<think>\n\n</think>\n\n john pizzarelli quartet",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:36476",
+    "response": "<think>\n\n</think>\n\nfirst year",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39296",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39566",
+    "response": "<think>\n\n</think>\n\n stop",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34919",
+    "response": "<think>\n\n</think>\n\ntab",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39512",
+    "response": "<think>\n\n</think>\n\n9",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36549",
+    "response": "<think>\n\n</think>\n\nA401",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36869",
+    "response": "<think>\n\n</think>\n\nmolto",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36850",
+    "response": "<think>\n\n</think>\n\nLA",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36721",
+    "response": "<think>\n\n</think>\n\nnavy",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34960",
+    "response": "<think>\n\n</think>\n\n£10",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35118",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38087",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34742",
+    "response": "<think>\n\n</think>\n\nfancy dress joke shop",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:39361",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38749",
+    "response": "<think>\n\n</think>\n\nle coq sportif",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37439",
+    "response": "<think>\n\n</think>\n\nlimited edition white hot tee",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36937",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35089",
+    "response": "<think>\n\n</think>\n\n texas",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35534",
+    "response": "<think>\n\n</think>\n\n12:35",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37902",
+    "response": "<think>\n\n</think>\n\nm6tal",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39104",
+    "response": "<think>\n\n</think>\n\nH Fox Talbot",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36052",
+    "response": "<think>\n\n</think>\n\nif is the liberary",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35760",
+    "response": "<think>\n\n</think>\n\n4",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34806",
+    "response": "<think>\n\n</think>\n\n10:05",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37765",
+    "response": "<think>\n\n</think>\n\nmotts landing",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37382",
+    "response": "<think>\n\n</think>\n\n birmingham's most stylish dressed by birmingham's most stylish - harvey nichols",
+    "finish_reason": "stop",
+    "completion_tokens": 18
+  },
+  {
+    "uid": "textvqa_val:38690",
+    "response": "<think>\n\n</think>\n\nthe box of delights",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36418",
+    "response": "<think>\n\n</think>\n\n2010",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37213",
+    "response": "<think>\n\n</think>\n\n pulitzer prize",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36664",
+    "response": "<think>\n\n</think>\n\nMartha Foley and David Burnett",
+    "finish_reason": "stop",
+    "completion_tokens": 7
+  },
+  {
+    "uid": "textvqa_val:36464",
+    "response": "<think>\n\n</think>\n\nbeer",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37373",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35323",
+    "response": "<think>\n\n</think>\n\ncasio",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35326",
+    "response": "<think>\n\n</think>\n\nipa",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35034",
+    "response": "<think>\n\n</think>\n\ntaco bell",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36910",
+    "response": "<think>\n\n</think>\n\n154-JDX",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35186",
+    "response": "<think>\n\n</think>\n\nfahrräder",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:39502",
+    "response": "<think>\n\n</think>\n\nducati",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39020",
+    "response": "<think>\n\n</think>\n\n psalm 56:4",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:35175",
+    "response": "<think>\n\n</think>\n\ngivry",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35418",
+    "response": "<think>\n\n</think>\n\n42",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38419",
+    "response": "<think>\n\n</think>\n\n33",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39324",
+    "response": "<think>\n\n</think>\n\nYes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36483",
+    "response": "<think>\n\n</think>\n\n4",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36717",
+    "response": "<think>\n\n</think>\n\n21:31",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36183",
+    "response": "<think>\n\n</think>\n\n citi",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39144",
+    "response": "<think>\n\n</think>\n\n17th st",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:39338",
+    "response": "<think>\n\n</think>\n\n m",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37339",
+    "response": "<think>\n\n</think>\n\n2010",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36434",
+    "response": "<think>\n\n</think>\n\n fujifilm",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36353",
+    "response": "<think>\n\n</think>\n\nrioja",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35059",
+    "response": "<think>\n\n</think>\n\n26",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37858",
+    "response": "<think>\n\n</think>\n\nferret",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35096",
+    "response": "<think>\n\n</think>\n\n margaret macmillan",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35188",
+    "response": "<think>\n\n</think>\n\nLG",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35039",
+    "response": "<think>\n\n</think>\n\nbrugal",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37815",
+    "response": "<think>\n\n</think>\n\n23",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35373",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35150",
+    "response": "<think>\n\n</think>\n\n7:47 AM",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:39082",
+    "response": "<think>\n\n</think>\n\nlight",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39199",
+    "response": "<think>\n\n</think>\n\ndiet coke",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35264",
+    "response": "<think>\n\n</think>\n\nmadrid",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38592",
+    "response": "<think>\n\n</think>\n\nguinness",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36617",
+    "response": "<think>\n\n</think>\n\n Cruelty and insanity",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38649",
+    "response": "<think>\n\n</think>\n\nlong island",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39510",
+    "response": "<think>\n\n</think>\n\n the energy glut",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36487",
+    "response": "<think>\n\n</think>\n\ncalculus",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38941",
+    "response": "<think>\n\n</think>\n\nencyclopedia",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37340",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37670",
+    "response": "<think>\n\n</think>\n\nthree",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39508",
+    "response": "<think>\n\n</think>\n\nthree blind mice",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37184",
+    "response": "<think>\n\n</think>\n\nt-mobile",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38305",
+    "response": "<think>\n\n</think>\n\nsushi",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35415",
+    "response": "<think>\n\n</think>\n\nquintanomedia.com",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35764",
+    "response": "<think>\n\n</think>\n\n2",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36739",
+    "response": "<think>\n\n</think>\n\nfacebook",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36494",
+    "response": "<think>\n\n</think>\n\n Carter Dickson",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36923",
+    "response": "<think>\n\n</think>\n\n saturday",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34714",
+    "response": "<think>\n\n</think>\n\n78",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35325",
+    "response": "<think>\n\n</think>\n\nguinness",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37877",
+    "response": "<think>\n\n</think>\n\n1876",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38311",
+    "response": "<think>\n\n</think>\n\nchardonnay",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38540",
+    "response": "<think>\n\n</think>\n\nstandard",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36119",
+    "response": "<think>\n\n</think>\n\nartificial jewellery",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36462",
+    "response": "<think>\n\n</think>\n\n1862",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36184",
+    "response": "<think>\n\n</think>\n\nR.A. Dickey",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35408",
+    "response": "<think>\n\n</think>\n\nthe general",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37351",
+    "response": "<think>\n\n</think>\n\nxi",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38478",
+    "response": "<think>\n\n</think>\n\n u",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35744",
+    "response": "<think>\n\n</think>\n\napple",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34761",
+    "response": "<think>\n\n</think>\n\n601 E street NW\nWashington, DC 20049",
+    "finish_reason": "stop",
+    "completion_tokens": 17
+  },
+  {
+    "uid": "textvqa_val:37873",
+    "response": "<think>\n\n</think>\n\nunattended children will be given espresso and a free kitten",
+    "finish_reason": "stop",
+    "completion_tokens": 12
+  },
+  {
+    "uid": "textvqa_val:38859",
+    "response": "<think>\n\n</think>\n\nFlorida FSC Supercon",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:35282",
+    "response": "<think>\n\n</think>\n\n35",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38965",
+    "response": "<think>\n\n</think>\n\n75 ani",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:38603",
+    "response": "<think>\n\n</think>\n\n1868",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37003",
+    "response": "<think>\n\n</think>\n\ncoca-cola",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36254",
+    "response": "<think>\n\n</think>\n\n2011",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38648",
+    "response": "<think>\n\n</think>\n\n37",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35829",
+    "response": "<think>\n\n</think>\n\nvikings",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37230",
+    "response": "<think>\n\n</think>\n\n11:11:11",
+    "finish_reason": "stop",
+    "completion_tokens": 9
+  },
+  {
+    "uid": "textvqa_val:39065",
+    "response": "<think>\n\n</think>\n\nCarl Davis",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35998",
+    "response": "<think>\n\n</think>\n\nhf62 gvo",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36012",
+    "response": "<think>\n\n</think>\n\n37",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35838",
+    "response": "<think>\n\n</think>\n\nxii",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34851",
+    "response": "<think>\n\n</think>\n\n new york",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38795",
+    "response": "<think>\n\n</think>\n\n6:30pm",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:36134",
+    "response": "<think>\n\n</think>\n\nyellow",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:34802",
+    "response": "<think>\n\n</think>\n\nbaseball",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35905",
+    "response": "<think>\n\n</think>\n\nPella, Iowa.",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:34868",
+    "response": "<think>\n\n</think>\n\n kicker",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36153",
+    "response": "<think>\n\n</think>\n\no",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35862",
+    "response": "<think>\n\n</think>\n\n eastern air lines",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36301",
+    "response": "<think>\n\n</think>\n\nEBEL",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38600",
+    "response": "<think>\n\n</think>\n\ncomponent",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37381",
+    "response": "<think>\n\n</think>\n\n10:10",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38987",
+    "response": "<think>\n\n</think>\n\n western",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39251",
+    "response": "<think>\n\n</think>\n\nfres",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38211",
+    "response": "<think>\n\n</think>\n\nstop",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37185",
+    "response": "<think>\n\n</think>\n\ngoogle",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37489",
+    "response": "<think>\n\n</think>\n\nsmile",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37007",
+    "response": "<think>\n\n</think>\n\n DIRECTV",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35361",
+    "response": "<think>\n\n</think>\n\n on",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35817",
+    "response": "<think>\n\n</think>\n\ndocomo",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37186",
+    "response": "<think>\n\n</think>\n\n$229.95",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:38316",
+    "response": "<think>\n\n</think>\n\n2009",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:38753",
+    "response": "<think>\n\n</think>\n\n11:58",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37980",
+    "response": "<think>\n\n</think>\n\nconstabulary",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37922",
+    "response": "<think>\n\n</think>\n\n europe",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38194",
+    "response": "<think>\n\n</think>\n\n4551-1110",
+    "finish_reason": "stop",
+    "completion_tokens": 10
+  },
+  {
+    "uid": "textvqa_val:36231",
+    "response": "<think>\n\n</think>\n\nslumbrew",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35540",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35768",
+    "response": "<think>\n\n</think>\n\n ing",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36853",
+    "response": "<think>\n\n</think>\n\n Barry",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38743",
+    "response": "<think>\n\n</think>\n\nirish",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34671",
+    "response": "<think>\n\n</think>\n\n ray kurzweil",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36735",
+    "response": "<think>\n\n</think>\n\nG",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37064",
+    "response": "<think>\n\n</think>\n\ngosse",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38879",
+    "response": "<think>\n\n</think>\n\n delta",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36156",
+    "response": "<think>\n\n</think>\n\nmwl",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35815",
+    "response": "<think>\n\n</think>\n\njingu stadium",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:39273",
+    "response": "<think>\n\n</think>\n\n radford",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38801",
+    "response": "<think>\n\n</think>\n\n1995 Dom Perignon",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:36178",
+    "response": "<think>\n\n</think>\n\n line",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35262",
+    "response": "<think>\n\n</think>\n\nok",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36532",
+    "response": "<think>\n\n</think>\n\n12:00",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:34788",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37837",
+    "response": "<think>\n\n</think>\n\nt-mobile",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38741",
+    "response": "<think>\n\n</think>\n\n Herning",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37830",
+    "response": "<think>\n\n</think>\n\nLakers",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35653",
+    "response": "<think>\n\n</think>\n\n rolex",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35513",
+    "response": "<think>\n\n</think>\n\n whiskey",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35518",
+    "response": "<think>\n\n</think>\n\nwalmart",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39458",
+    "response": "<think>\n\n</think>\n\nairtouch",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35083",
+    "response": "<think>\n\n</think>\n\nbutter",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34910",
+    "response": "<think>\n\n</think>\n\nsummer blend",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38157",
+    "response": "<think>\n\n</think>\n\nepic",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:34663",
+    "response": "<think>\n\n</think>\n\ncoronita",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36370",
+    "response": "<think>\n\n</think>\n\nedge",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36861",
+    "response": "<think>\n\n</think>\n\nben's puke bucket",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:37778",
+    "response": "<think>\n\n</think>\n\nd.h. lawrence",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38518",
+    "response": "<think>\n\n</think>\n\nles mois",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37247",
+    "response": "<think>\n\n</think>\n\nshadow of the watching star",
+    "finish_reason": "stop",
+    "completion_tokens": 6
+  },
+  {
+    "uid": "textvqa_val:38599",
+    "response": "<think>\n\n</think>\n\na",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37840",
+    "response": "<think>\n\n</think>\n\nwomen",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39318",
+    "response": "<think>\n\n</think>\n\n10",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36247",
+    "response": "<think>\n\n</think>\n\n1062",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37403",
+    "response": "<think>\n\n</think>\n\nthe balvenie",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:37342",
+    "response": "<think>\n\n</think>\n\n30",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:36901",
+    "response": "<think>\n\n</think>\n\nBioabfalle",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:36235",
+    "response": "<think>\n\n</think>\n\nvirginia",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:34865",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35037",
+    "response": "<think>\n\n</think>\n\n bus",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36832",
+    "response": "<think>\n\n</think>\n\nwinter",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36984",
+    "response": "<think>\n\n</think>\n\nnypd",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37517",
+    "response": "<think>\n\n</think>\n\n horses",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:36300",
+    "response": "<think>\n\n</think>\n\nlimitless",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38412",
+    "response": "<think>\n\n</think>\n\n143",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:35939",
+    "response": "<think>\n\n</think>\n\n auburn",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36704",
+    "response": "<think>\n\n</think>\n\nlaneige",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35776",
+    "response": "<think>\n\n</think>\n\n405",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:37135",
+    "response": "<think>\n\n</think>\n\nsony",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38751",
+    "response": "<think>\n\n</think>\n\n yes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38274",
+    "response": "<think>\n\n</think>\n\nsamsung",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38364",
+    "response": "<think>\n\n</think>\n\nin cooperation",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35613",
+    "response": "<think>\n\n</think>\n\n lang",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37791",
+    "response": "<think>\n\n</think>\n\n kde",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35705",
+    "response": "<think>\n\n</think>\n\n21",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35859",
+    "response": "<think>\n\n</think>\n\nkiris",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:39498",
+    "response": "<think>\n\n</think>\n\nkraft",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38128",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:39542",
+    "response": "<think>\n\n</think>\n\nbeer",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35622",
+    "response": "<think>\n\n</think>\n\nkc",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37205",
+    "response": "<think>\n\n</think>\n\nyes",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:37993",
+    "response": "<think>\n\n</think>\n\n10",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:35577",
+    "response": "<think>\n\n</think>\n\nno",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:38479",
+    "response": "<think>\n\n</think>\n\nTrojanTalk.com",
+    "finish_reason": "stop",
+    "completion_tokens": 5
+  },
+  {
+    "uid": "textvqa_val:35914",
+    "response": "<think>\n\n</think>\n\nchateau",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37481",
+    "response": "<think>\n\n</think>\n\nrockstar",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:37265",
+    "response": "<think>\n\n</think>\n\ngreeting cards",
+    "finish_reason": "stop",
+    "completion_tokens": 4
+  },
+  {
+    "uid": "textvqa_val:36894",
+    "response": "<think>\n\n</think>\n\ndouble chorizo, rocket + piquillo pepper",
+    "finish_reason": "stop",
+    "completion_tokens": 11
+  },
+  {
+    "uid": "textvqa_val:36304",
+    "response": "<think>\n\n</think>\n\n38",
+    "finish_reason": "stop",
+    "completion_tokens": 3
+  },
+  {
+    "uid": "textvqa_val:38101",
+    "response": "<think>\n\n</think>\n\n yield",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  },
+  {
+    "uid": "textvqa_val:35573",
+    "response": "<think>\n\n</think>\n\n Archeopteryx lithographica",
+    "finish_reason": "stop",
+    "completion_tokens": 8
+  },
+  {
+    "uid": "textvqa_val:37025",
+    "response": "<think>\n\n</think>\n\nblue",
+    "finish_reason": "stop",
+    "completion_tokens": 2
+  }
+]

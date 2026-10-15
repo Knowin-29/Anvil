@@ -1,0 +1,75 @@
+schema_version: 1
+protocol_id: general-retention-formal-v1
+suite_id: general-retention-v1
+
+# Formal source identities are fixed before either model is evaluated.  The
+# source manifest and crosswalk bind official split metadata, licenses, release
+# hashes, primary images, adapter transports, and the transformation-aware AI2D
+# replay.  The leakage report binds the exact E1 post-training corpus.
+source_evidence:
+  source_manifest_path: /path/to/Anvil/artifacts/general_retention_v1/source_manifest.json
+  source_manifest_identity_sha256: 4687e366d03aafa35e673fb88129d66d55088943ff44f35110996a1669fa8897
+  sample_manifest_path: /path/to/Anvil/artifacts/general_retention_v1/eval_samples.jsonl
+  adapter_image_manifest_path: /path/to/Anvil/artifacts/general_retention_v1/eval_adapter_images.jsonl
+  crosswalk_path: /path/to/Anvil/artifacts/general_retention_v1/adapter_primary_crosswalk.json
+  crosswalk_identity_sha256: 2c9c978cea2f792619ea470b5b5e214d9a66e3af936b93105ee5941f5f9d9c06
+  leakage_report_path: /path/to/Anvil/artifacts/general_retention_v1_leakage.json
+  leakage_identity_sha256: bc55a602d262b2e1ffef5313dcd9c8ee8cbd4500b48140029cbae20acf344629
+  vqa_reference_path: /path/to/Anvil/data/general_retention_v1/sources/vlmevalkit/vqa_eval.py
+  vqa_reference_sha256: c04e0a1cad29cd8caa786ea1a96d2d945630304d756d1bba234b36e66c83f06d
+
+generation:
+  engine: swift_transformers_engine
+  logical_shards: 4
+  shard_rule: stable_runtime_index_stride_4
+  hardware: exactly_4_unique_physical_L20_at_least_44_GiB
+  batch_size_per_gpu: 16
+  temperature: 0.0
+  thinking: false
+  device_map_per_worker: cuda:0
+
+health_admission:
+  malformed_response_credit: 0.0
+  max_malformed_percent: 5.0
+  max_truncation_percent: 1.0
+  raw_scores_always_reported_after_complete_protocol_valid_run: true
+  general_avg_requires_all_cells_admitted: true
+
+aggregate:
+  name: General Avg
+  rule: unweighted_macro_average_of_three_benchmark_percentages
+  no_partial_aggregate: true
+
+datasets:
+  - id: ai2d_test
+    display_name: AI2D_TEST
+    split: official_test
+    expected_n: 3088
+    tsv_path: /path/to/Anvil/data/general_retention_v1/AI2D_TEST.tsv
+    md5: 0f593e0d1c7df9a3d69bf1f947e71975
+    sha256: 3b16aa83c6809149df6978c7d5a6ee830b75f0010a60b26d33c004c47d575c4a
+    metric: multiple_choice_accuracy
+    parser: strict_letter_or_unique_exact_option_text_v1
+    max_tokens: 32
+
+  - id: scienceqa_test
+    display_name: ScienceQA_TEST
+    split: official_test_image_subset
+    expected_n: 2017
+    tsv_path: /path/to/Anvil/data/general_retention_v1/ScienceQA_TEST.tsv
+    md5: e42e9e00f9c59a80d8a5db35bc32b71f
+    sha256: 253086b4dae6a615e31b637ef1d01474d9345cad425ab541f83c37102404501a
+    metric: multiple_choice_accuracy
+    parser: strict_letter_or_unique_exact_option_text_v1
+    max_tokens: 32
+
+  - id: textvqa_val
+    display_name: TextVQA_VAL
+    split: official_validation
+    expected_n: 5000
+    tsv_path: /path/to/Anvil/data/general_retention_v1/TextVQA_VAL.tsv
+    md5: b233b31f551bbf4056f2f955da3a92cd
+    sha256: f9bd2e1518185f678a60b9a31fea5655f7533704fa7d7c9b3775bf0ca2a6b8d0
+    metric: official_vqa_soft_accuracy
+    parser: nonempty_answer_span_v1
+    max_tokens: 64

@@ -1,0 +1,74 @@
+# Rex-Embodied v3.0 数据飞轮 — 多场景数据源配置
+#
+# 数据源按场景分组:
+#   1. appliance: 知音家电实拍 (洗衣机旋钮/屏幕/整机)
+#   2. anvil_augment: 知音增强数据 (合成/增广)
+#   3. brands: 品牌家电图片 (LG/SIEMENS/旋钮指示器)
+#   4. academic_spatial: 学术空间推理数据集 (FSD/PRISM/SAT)
+#   5. academic_general: 学术通用 VQA 数据集 (CLEVR/VQAv2/AOKVQA)
+#
+# 用法:
+#   python -m apps.data_flywheel.pipeline --v3 --source-config scripts/configs/flywheel_anvil.yaml
+
+sources:
+  # ============================================================
+  # 场景 1: 知音家电实拍 — 洗衣机旋钮 (核心 Affordance 数据)
+  # ============================================================
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Archive
+    source_type: image_dir
+    weight: 3.0
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  # ============================================================
+  # 场景 2: 知音增强数据 — 合成/增广图像
+  # ============================================================
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Augment
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  # ============================================================
+  # 场景 3: 品牌家电图片 (LG/SIEMENS/旋钮指示器)
+  # ============================================================
+  - path: /path/to/datasets/datasets/brands_images
+    source_type: image_dir
+    weight: 2.5
+    recursive: true
+
+  # ============================================================
+  # 场景 4: 洗衣机加工数据 (已标注)
+  # ============================================================
+  - path: /path/to/datasets/datasets/appliance_datasets/washing_machine_1029/processed_washing_machine_data_all
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  # ============================================================
+  # 场景 5: 学术空间推理 — FSD pointing 数据
+  # ============================================================
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/images
+    source_type: image_dir
+    weight: 1.0
+    max_images: 5000
+
+  # ============================================================
+  # 场景 6: 学术通用 — CLEVR (空间推理)
+  # ============================================================
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/clevr/images
+    source_type: image_dir
+    weight: 0.8
+    max_images: 3000
+
+  # ============================================================
+  # 场景 7: 学术通用 — AOKVQA (场景推理)
+  # ============================================================
+  - path: /path/to/datasets/datasets/originDatasets_transfer_from_hpc3/aokvqa/images
+    source_type: image_dir
+    weight: 0.5
+    max_images: 2000

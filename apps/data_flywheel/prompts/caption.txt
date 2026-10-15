@@ -1,0 +1,8 @@
+Describe this image in detail. Focus on:
+1. Objects present and their categories
+2. Spatial relationships between objects
+3. Object attributes (color, size, shape, material)
+4. Scene context and setting
+5. Any notable interactions or affordances
+
+Provide a comprehensive caption in 2-3 sentences.

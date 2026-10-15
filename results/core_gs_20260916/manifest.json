@@ -1,0 +1,88 @@
+{
+  "study_binding_sha256": "fd59b5934031266b6abd53fe109c79a169141b05636ecfef1cbbc5c114e2d514",
+  "jobs": [
+    {
+      "id": "semantic_weighted_17",
+      "arm": "semantic_weighted",
+      "seed": 17,
+      "steps": 256
+    },
+    {
+      "id": "flat_17",
+      "arm": "flat",
+      "seed": 17,
+      "steps": 256
+    },
+    {
+      "id": "declared_17",
+      "arm": "declared",
+      "seed": 17,
+      "steps": 256
+    },
+    {
+      "id": "structural_17",
+      "arm": "structural",
+      "seed": 17,
+      "steps": 256
+    },
+    {
+      "id": "semantic_uniform_17",
+      "arm": "semantic_uniform",
+      "seed": 17,
+      "steps": 256
+    },
+    {
+      "id": "semantic_weighted_23",
+      "arm": "semantic_weighted",
+      "seed": 23,
+      "steps": 256
+    },
+    {
+      "id": "flat_23",
+      "arm": "flat",
+      "seed": 23,
+      "steps": 256
+    },
+    {
+      "id": "declared_23",
+      "arm": "declared",
+      "seed": 23,
+      "steps": 256
+    },
+    {
+      "id": "structural_23",
+      "arm": "structural",
+      "seed": 23,
+      "steps": 256
+    },
+    {
+      "id": "semantic_uniform_23",
+      "arm": "semantic_uniform",
+      "seed": 23,
+      "steps": 256
+    }
+  ],
+  "evaluation": {
+    "path": "/path/to/Anvil/engineering/data/linked_sensor_training_v1/qualification_linked.jsonl",
+    "sha256": "ebe0814f03d78a3e899aaf6da36bc792e4c21f6a114cc5e9defbb5565b6d1beb",
+    "records": 282,
+    "physical_scenes": 50,
+    "previously_observed_source_split": true
+  },
+  "common": {
+    "updates": 256,
+    "effective_batch": 4,
+    "lr": 5e-06,
+    "max_length": 3072,
+    "max_completion_length": 256,
+    "image_tokens": 1536,
+    "topk": 128,
+    "jsd_beta": 0.5,
+    "SFT_weight": 1,
+    "MTD_weight": 1,
+    "selection": "terminal checkpoint; no evaluation-dependent arm/checkpoint selection",
+    "budget": "Equal updates, common maximum rollout/context budget; actual tokens/calls logged, not claimed identical."
+  },
+  "full_MTD_GSA_completed": false,
+  "no_new_human_annotation": true
+}

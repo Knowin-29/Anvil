@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anvil-embodied"
+version = "0.1.0"
+description = "Embodied spatial reasoning data flywheel and distillation pipelines"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.26,<3", "Pillow>=10", "PyYAML>=6", "requests>=2.31", "tqdm>=4.66", "pydantic>=2", "flask>=3"]
+
+[project.optional-dependencies]
+source = ["opencv-python-headless", "pycocotools", "h5py"]
+test = ["pytest>=8", "httpx", "fastapi", "scipy", "opencv-python-headless", "pycocotools"]
+viewer = ["fastapi", "uvicorn", "gradio", "matplotlib", "opencv-python-headless"]
+train = ["torch>=2.5", "transformers", "peft", "accelerate", "datasets", "deepspeed"]
+
+[project.scripts]
+anvil = "anvil.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["anvil*", "apps*", "trains*", "eval*", "firstfault*", "services*", "gui*", "scripts*", "tools*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+markers = ["integration: requires datasets, model weights, GPU or external services"]

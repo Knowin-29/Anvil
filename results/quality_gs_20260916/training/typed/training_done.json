@@ -1,0 +1,8 @@
+{
+  "adapter": "/path/to/Anvil/engineering/data/quality_gs_20260916/training/typed/training/v0-20260916-174635/checkpoint-256",
+  "adapter_sha256": "2b8373ea5134c7d521f56e7d45643a8cc08d200fa639bb9965d3f9470e9e4067",
+  "trainer_state_sha256": "b521503d861635c9106dd5d07627cc87324c3d82687ff8096554c0393d685f3e",
+  "num_input_tokens_seen": 1537846,
+  "global_step": 256,
+  "source_sha256": "e89996d5eb8c49fe93614d96ccd4f9dc296ee519eb4b9fed313356a10f83cec8"
+}

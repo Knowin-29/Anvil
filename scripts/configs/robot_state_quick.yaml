@@ -1,0 +1,31 @@
+# A_robot_state quick config. Put images under /path/to/datasets/datasets/robot_tool_state/.
+sources:
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_empty
+    source_type: image_dir
+    recursive: true
+    max_images: 50
+    weight: 1.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_holding_object
+    source_type: image_dir
+    recursive: true
+    max_images: 50
+    weight: 1.5
+
+  - path: /path/to/datasets/datasets/robot_tool_state/gripper_contact_target
+    source_type: image_dir
+    recursive: true
+    max_images: 50
+    weight: 1.5
+
+  - path: /path/to/datasets/datasets/robot_tool_state/object_between_fingers
+    source_type: image_dir
+    recursive: true
+    max_images: 50
+    weight: 2.0
+
+  - path: /path/to/datasets/datasets/robot_tool_state/tool_in_hand
+    source_type: image_dir
+    recursive: true
+    max_images: 50
+    weight: 1.0

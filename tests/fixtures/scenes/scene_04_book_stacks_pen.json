@@ -1,0 +1,72 @@
+{
+  "image_id": "scene_04_book_stacks_pen",
+  "image_path": "tests/fixtures/images/scene_04_book_stacks_pen.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        40.0,
+        55.0,
+        70.0,
+        80.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        55.0,
+        68.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the pen",
+      "referring_expressions": [
+        "笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_04_book_stacks_pen_pen_0.png"
+    },
+    {
+      "id": "book_0",
+      "class_name": "book",
+      "bbox": [
+        35.0,
+        40.0,
+        75.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        55.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the book",
+      "referring_expressions": [
+        "书"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_04_book_stacks_pen_book_0.png"
+    }
+  ],
+  "edges": [
+    {
+      "subject": "book_0",
+      "object": "pen_0",
+      "predicate": "stacked-on",
+      "source": "derived",
+      "confidence": 1.0
+    }
+  ],
+  "ternary_relations": [],
+  "blocking_dag": [
+    [
+      "book_0",
+      "pen_0"
+    ]
+  ]
+}

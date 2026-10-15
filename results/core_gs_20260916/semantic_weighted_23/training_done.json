@@ -1,0 +1,14 @@
+{
+  "adapter": "/path/to/Anvil/engineering/data/core_gs_20260916/semantic_weighted_23/training/v0-20260916-220658/checkpoint-256",
+  "adapter_sha256": "2056103bf4a7236b0024061853caa159fbe04a94d4bd341a2e5b0134fc40cb03",
+  "trainer_state_sha256": "8647a77ea8aa215c2500640f3eba35d76c9f30dc8b806a0254f7dd2d99a57447",
+  "seconds": 8297.118222224992,
+  "global_step": 256,
+  "job": {
+    "id": "semantic_weighted_23",
+    "arm": "semantic_weighted",
+    "seed": 23,
+    "steps": 256
+  },
+  "full_GSA_qualified": false
+}

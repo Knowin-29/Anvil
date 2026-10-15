@@ -1,0 +1,164 @@
+# Multi-source A_robot_state local vLLM configuration.
+# Phase 1 sources:
+#   - BridgeDataV2 wrist images through staged VLM
+#   - Embodied-Reasoner cached observation images through staged VLM
+#   - Robo2VLM extracted images through staged VLM
+#   - ShareRobot demo images through staged VLM
+#   - ShareRobot / Embodied-Reasoner / Robo2VLM structured adapters as candidates
+# Use with:
+#   CUDA_VISIBLE_DEVICES=0,1 \
+#   VLLM_CUDA_VISIBLE_DEVICES=0,1 \
+#   VLLM_TENSOR_PARALLEL_SIZE=2 \
+#   GSA_PIPELINE_CONCURRENCY=1 \
+#   bash scripts/run_gsa_with_local_vllm.sh \
+#     --config scripts/configs/gsa_robot_state_multi_vllm_local.yaml \
+#     --max-images 5
+
+vlm:
+  base_url: "${VLLM_BASE_URL:-http://localhost:10301/v1}"
+  model: "${VLLM_MODEL:-/path/to/workspace/foundation/contributor/hf_models/Qwen/Qwen2.5-VL-7B-Instruct}"
+  api_key: ""
+  max_image_size: 1280
+  timeout: 300
+  concurrency: "${GSA_VLM_CONCURRENCY:-1}"
+  max_retries: 2
+
+input:
+  image_dirs:
+    - "/path/to/datasets/downloads/bridge_data_v2/images"
+    - "/path/to/datasets/downloads/fmb/fmb_extracted/wrist_images"
+    - "/path/to/datasets/downloads/droid/droid_100_extracted/wrist_images"
+    - "/path/to/datasets/downloads/robo2vlm/extracted_images"
+    - "/path/to/datasets/downloads/sharerobot/images"
+  image_globs:
+    - "/path/to/datasets/downloads/embodied_reasoner/.image_cache/**/*.png"
+  image_source_priority:
+    - bridge_data_v2
+    - fmb
+    - droid_100
+    - embodied_reasoner
+    - robo2vlm
+    - sharerobot
+  balance_image_sources: true
+  force_robot_state_vlm: true
+  robot_state_vlm_roots:
+    - "/path/to/datasets/downloads/bridge_data_v2/images"
+    - "/path/to/datasets/downloads/fmb/fmb_extracted/wrist_images"
+    - "/path/to/datasets/downloads/droid/droid_100_extracted/wrist_images"
+    - "/path/to/datasets/downloads/embodied_reasoner/.image_cache"
+    - "/path/to/datasets/downloads/robo2vlm/extracted_images"
+    - "/path/to/datasets/downloads/sharerobot/images"
+  discover_external_sources: false
+  business_log_dirs: []
+  anchor_set_path: "data/anchor/gsa_anchors_v0.jsonl"
+  max_images: "${GSA_MAX_IMAGES:-10}"
+
+pipeline:
+  concurrency: "${GSA_PIPELINE_CONCURRENCY:-1}"
+  enabled_stages:
+    - G
+    - S
+    - A_robot_state
+
+output:
+  root: "data/output/gsa_v0"
+
+scene_families:
+  delivery:
+    keywords: ["deliver", "hand", "give", "take", "receive", "pass"]
+    scenario: "SC.1"
+  tabletop_tidy:
+    keywords: ["table", "desk", "tidy", "clean", "arrange", "organize", "bridge", "robo2vlm", "sharerobot", "embodied_reasoner"]
+    scenario: "SC.2"
+  storage:
+    keywords: ["store", "put away", "shelf", "cabinet", "drawer", "container", "fridge"]
+    scenario: "SC.3"
+
+quotas:
+  G: 100
+  S: 100
+  A_robot_state: 500
+
+robot_state_datasets:
+  enabled:
+    - sharerobot
+    - embodied_reasoner
+    - robo2vlm
+    - fmb
+    - droid_100
+  ingest_only: false
+  max_samples_per_source: 200
+  nas_overrides:
+    sharerobot:
+      root: "/path/to/datasets/downloads/sharerobot"
+      planning_dirs:
+        - "planning/train"
+      trajectory_json: "trajectory/trajectory.json"
+      images_root: "images"
+      planning_tasks_for_robot_state:
+        - future_prediction_task
+        - past_description_task
+        - planning_task
+        - planning_with_context_task
+    embodied_reasoner:
+      root: "/path/to/datasets/downloads/embodied_reasoner"
+      trajectory_json: "data_engine_origin_trajectory_9390.json"
+      images_root: ".image_cache"
+    robo2vlm:
+      root: "/path/to/datasets/downloads/robo2vlm"
+      parquet_glob: "data/*.parquet"
+      extracted_images_dir: "extracted_images"
+    fmb:
+      root: "/path/to/datasets/downloads/fmb/fmb_extracted"
+      manifest: "fmb_robot_state_manifest.jsonl"
+      images_root: "wrist_images"
+    droid_100:
+      root: "/path/to/datasets/downloads/droid/droid_100_extracted"
+      manifest: "droid_100_robot_state_manifest.jsonl"
+      images_root: "wrist_images"
+
+robot_state_episode:
+  enabled: false
+  sources:
+    - droid_100
+    - fmb
+  frames_per_episode: 6
+  max_episodes_per_source: 5
+  output_episode_summary: true
+  output_dynamic_labels: false
+  dynamic_label_version: "v1"
+  dynamic_min_confidence: 0.8
+  min_frames_per_dynamic_episode: 3
+  dynamic_sources: []
+
+verifier:
+  auto_pass_confidence: 0.8
+  review_threshold: 0.5
+  delete_threshold: 0.2
+
+review_queue:
+  max_per_bucket: 500
+  priority_subtypes:
+    - gripper_empty
+    - holding_object
+    - object_between_fingers
+    - contact_state
+    - tool_ready
+
+sources:
+  vlm_generated:
+    status: "ready"
+    priority: 1
+  sharerobot:
+    status: "ready"
+    priority: 2
+  embodied_reasoner:
+    status: "ready"
+    priority: 3
+  robo2vlm:
+    status: "ready"
+    priority: 4
+
+ports:
+  viewer: 10303
+  vlm_local: 10301

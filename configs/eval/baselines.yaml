@@ -1,0 +1,83 @@
+# Baseline matrix for the paper. Each row is a model/config we must evaluate under the
+# SAME unified harness so numbers are comparable.
+#
+# Grouped by what claim the baseline defends against. A reviewer asks "how do you know
+# your gain came from X?" -- every group below answers one such question.
+
+groups:
+
+  # --- Q: is the gain just from any post-training? --------------------------------
+  zero_shot:
+    purpose: "Untrained lower bound for every backbone we touch."
+    rows:
+      - {name: "Qwen3.5-9B",   model_path: "/path/to/environment/hf_models/Qwen/Qwen3.5-9B",  trained: false}
+      - {name: "Qwen3.6-27B",  model_path: "/path/to/environment/hf_models/Qwen/Qwen3.6-27B", trained: false}
+      - {name: "Qwen2.5-VL-7B", model_path: "HF:Qwen/Qwen2.5-VL-7B-Instruct", trained: false, needs_download: true}
+      - {name: "InternVL2-8B",  model_path: "HF:OpenGVLab/InternVL2-8B",      trained: false, needs_download: true}
+
+  # --- Q: is the gain just from data VOLUME rather than our structure? ------------
+  volume_matched:
+    purpose: >
+      Same number of training samples drawn from existing open annotations instead of
+      our multi-form corpus. Any margin over this isolates structure, not token count.
+    rows:
+      - {name: "9B + open-mix (volume-matched)", base: "Qwen3.5-9B",
+         data: "trains/corpus_v2/shard_000.jsonl", n_match: 333396}
+      - {name: "9B + single-form (bbox only)",    base: "Qwen3.5-9B",
+         data: "derived:form=bbox", n_match: 333396,
+         note: "tests whether 8 interoperable forms beat one form at equal volume"}
+
+  # --- Q: does the verifier actually do anything? ---------------------------------
+  verification_ablation:
+    purpose: "Separates the two uses of the verification signal."
+    rows:
+      - {name: "9B + no verification (keep all)", base: "Qwen3.5-9B", data: "derived:unfiltered"}
+      - {name: "9B + verifier as FILTER only",    base: "Qwen3.5-9B", data: "trains/gsa_bench/train.jsonl"}
+      - {name: "9B + verifier as REWARD (RL)",    base: "Qwen3.5-9B", data: "trains/gsa_bench/train.jsonl",
+         stage: "sft_then_grpo", reward: "0.3*contract + 0.7*verified_at_k"}
+
+  # --- Q: is this backbone-specific? ---------------------------------------------
+  cross_architecture:
+    purpose: "Same corpus, different backbones. A data contribution must transfer."
+    rows:
+      - {name: "Qwen2.5-VL-7B + GSA-Bench", base: "Qwen2.5-VL-7B"}
+      - {name: "InternVL2-8B + GSA-Bench",  base: "InternVL2-8B"}
+      - {name: "Qwen3.5-9B + GSA-Bench",    base: "Qwen3.5-9B"}
+
+  # --- Q: does the multi-teacher / OPD pipeline add value over plain SFT? ---------
+  pipeline:
+    purpose: "The GSA-Forge training stack, stage by stage, so each stage is attributable."
+    rows:
+      - {name: "27B SFT (all forms)",        base: "Qwen3.6-27B", data: "trains/gsa_bench/train.jsonl"}
+      - {name: "27B Teacher-G",              base: "Qwen3.6-27B", data: "derived:dim=G"}
+      - {name: "27B Teacher-S",              base: "Qwen3.6-27B", data: "derived:dim=S"}
+      - {name: "27B Teacher-A",              base: "Qwen3.6-27B", data: "derived:dim=A"}
+      - {name: "27B + RL (verifier reward)",  base: "27B SFT", stage: "grpo"}
+      - {name: "GSA-Forge-9B (OPD, single teacher)", base: "Qwen3.5-9B", stage: "gkd", teacher: "27B SFT"}
+      - {name: "GSA-Forge-9B (OPD, G/S/A teachers)", base: "Qwen3.5-9B", stage: "gkd_multi",
+         teacher: "Teacher-G + Teacher-S + Teacher-A",
+         note: "the headline model; multi-teacher is the MiMo-style design"}
+
+  # --- Q: how do we compare to published embodied-perception models? -------------
+  published_reference:
+    purpose: >
+      Reference points from the literature. Reported as published where we cannot
+      re-run them; clearly marked as such in the table. RynnBrain is included
+      specifically because its general-capability regression is severe, which is what
+      our anti-forgetting column measures.
+    rows:
+      - {name: "RynnBrain-8B",  citation: "arXiv:2602.14979", rerun: false}
+      - {name: "RoboPoint-13B", citation: "CoRL 2024",        rerun: false}
+      - {name: "SpatialRGPT-8B", citation: "NeurIPS 2024",    rerun: false}
+
+# Every row above is evaluated on ALL of these, through one harness.
+evaluation:
+  embodied: [vsibench, blink, cv_bench, erqa, embspatial, where2place, refspatial_bench, robovqa, openeqa]
+  gsa_bench_test: {path: "trains/gsa_bench/test.jsonl", n: 1463, labels: "human_gt"}
+  general_anti_forgetting:
+    purpose: "A specialized gain paid for by forgetting is not a usable result."
+    suites: [MMBench, MMStar, MMMU, TextVQA]
+  protocol:
+    decoding: "greedy, temperature 0, identical max_new_tokens per benchmark"
+    parsing: "shared robust JSON/box/point parser; also reads answers inside <think> spans"
+    seeds: "3 seeds for any run whose claim is a margin < 2 points"

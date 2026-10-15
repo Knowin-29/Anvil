@@ -1,0 +1,172 @@
+{
+  "artifact_role": "historical_mechanism_control",
+  "eligible_for_final_model_release": false,
+  "final_release": {
+    "status": "checkpoint_and_evaluation_binding_missing",
+    "checkpoint": null,
+    "weights_sha256": null,
+    "evaluation_manifest": null,
+    "uploaded": false
+  },
+  "base_repository": "Qwen/Qwen3.5-9B",
+  "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "student": "registry/anvil-9b",
+  "weights_sha256": "557bd1f75ba40be36b78f0bb91df76b972e049d53858ba9f079f72cabc6c0d64",
+  "seed": 17,
+  "updates": 256,
+  "selection": "Prespecified semantic-weighted arm, seed 17, terminal checkpoint; not chosen by evaluation score.",
+  "scope": "G-to-S routed continuation; Action verification is a separate experiment.",
+  "evidence_transform": "Server path prefixes are replaced. Per-item targets, responses and measured numbers are unchanged. The file inventory stores original and distributed checksums.",
+  "gpu_reproduction_verified": false,
+  "weight_delivery": {
+    "included_in_git": false,
+    "adapter_filename": "adapter_model.safetensors",
+    "sha256": "557bd1f75ba40be36b78f0bb91df76b972e049d53858ba9f079f72cabc6c0d64",
+    "access": "Owner-managed accepted supplement; no public model endpoint yet",
+    "base": "Qwen/Qwen3.5-9B",
+    "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "pretrained_baselines": {
+    "robobrain25_8b_nv_native": {
+      "repository": "BAAI/RoboBrain2.5-8B-NV",
+      "revision": "7ae187cc62e45cfa1c5904903a8f017f11b2037b",
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "status": "local_files_verified_full_native_evaluation_in_progress",
+      "local_inference_files_verified": 13,
+      "binding_sha256": "2d086efb72cff20cc17830aea1074a79c081649a02eb63af8906d9d592d6a8a3",
+      "cpu_preflight_sha256": "ddd0a473a48ef221a30a90743bff75a0d1f969fe2bdae535f063d53d41e080b0",
+      "cpu_preflight_scope": "750 tensor names/shapes and one training input per native form; no model generation or accuracy claim",
+      "evaluation_export_manifest_sha256": "43ed54572e076a1e2bb086bbdca0e92ea33b51e4a38b573bdcd10497f343f49d",
+      "planned_records": 580000,
+      "shards": 3,
+      "records_per_shard": [193339, 193331, 193330],
+      "partition": "Per-form original ordinal modulo three; disjoint union covers every selected record",
+      "response_text_policy": "identity-generated-text-v1",
+      "template": "qwen3_vl",
+      "comparison_scope": "Unchanged Anvil native prompts, images, references, budgets and metric formulas; checkpoint-specific chat template",
+      "full_evaluation_complete": false,
+      "official_leaderboard_claimed": false,
+      "trained_by_this_project": false,
+      "weights_redistributed": false
+    }
+  },
+  "supervised_checkpoints": {
+    "native_v4_preparation": {
+      "role": "Terminal source-native specialist and joint SFT preparation; not final MOPD",
+      "status": "four_sft_runs_complete_matched_evaluation_in_progress",
+      "base_model": "Qwen/Qwen3.5-9B",
+      "training_export_manifest_sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd",
+      "format": "LoRA adapters",
+      "seed": 17,
+      "terminal_update": 1024,
+      "gradient_accumulation": 8,
+      "micro_batch_size": 1,
+      "lora_rank": 64,
+      "lora_alpha": 128,
+      "complete_training_epoch_claimed": false,
+      "teacher_qualified": false,
+      "final_model_release_eligible": false,
+      "uploaded": true,
+      "completed_form_comparisons": {
+        "as_of": "2026-10-14",
+        "status": "paired_source_ids_content_hashes_and_common_generation_fields_verified",
+        "full_benchmark_complete": false,
+        "final_mopd_result": false,
+        "scope": "Terminal SFT preparation checkpoints, original frozen prompts, full denominators for completed forms only",
+        "rows": [
+          {"form": "depth_order", "source": "PRISM", "metric": "reference_exact", "n": 3601, "specialist": "S", "specialist_successes": 3301, "joint_successes": 3174},
+          {"form": "action_cot", "source": "ALFRED", "metric": "expert_continuation_exact", "n": 3327, "specialist": "A", "specialist_successes": 862, "joint_successes": 605},
+          {"form": "action_cot", "source": "ALFRED", "metric": "next_action_exact", "n": 3327, "specialist": "A", "specialist_successes": 2144, "joint_successes": 1864},
+          {"form": "affordance", "source": "ShareRobot-Bench", "metric": "region_iou50", "n": 193, "specialist": "A", "specialist_successes": 11, "joint_successes": 13},
+          {"form": "dof", "source": "PRISM", "metric": "contract_valid", "n": 580, "specialist": "A", "specialist_successes": 0, "joint_successes": 0}
+        ],
+        "evidence_metrics_sha256": {
+          "A_complete_scope": "0a9bf5ce768d296a3eef5e729e34278761a769c146bd13675cd4c0f0827cb512",
+          "S_depth": "31fd2668dedad9373a08b5870b7d76b0061b1963fe2f190bbba2f32171d4eba5",
+          "joint_action_depth": "134e729596ad1b89f2e30a9d95f0c1d737349201c060aa4c8f571eb9f4b2d8db",
+          "joint_affordance": "e568004582781efde2e965b3aad96edda4759f071fcdd4fe83f9abeb199473f0",
+          "joint_dof": "42c679c5ca929e8cf9c809c6a427ac1cec015222e2794b7c70f1e9d00661087a"
+        },
+        "caution": "Affordance did not improve; no valid gripper geometry in either arm. Base Action/depth format failures are not interpreted as zero spatial ability. No family-wide teacher qualification granted."
+      },
+      "private_staging": {
+        "visibility": "private",
+        "revision": "eba32c86e2982376b24556d368c0ddff2a3bc744",
+        "staging_manifest_sha256": "ab9c4fe9c8c4b0b2c997b6cecc618e905ca0078f0f66f5f39ef3769bc4ae15d0",
+        "verified_files": 14,
+        "adapter_files": 4,
+        "includes_dataset_media": false,
+        "includes_optimizer_state": false,
+        "public_download_available": false,
+        "access": "Owner-managed private handoff; not an anonymous or final-model release",
+        "weight_license_status": "Private staging only; no new public adapter license granted"
+      },
+      "training_reference_calibration": {
+        "status": "all_rows_and_paired_aggregates_verified",
+        "records": 768,
+        "source_form_groups": 12,
+        "records_per_group": 64,
+        "groups_with_lower_specialist_nll": 11,
+        "metric": "specialist minus joint record-mean next-token NLL; source/form groups equally weighted within each family",
+        "family_nll_differences": {
+          "G": -0.03294060508046245,
+          "S": -0.0019745413164001238,
+          "A": -0.05131115912393621
+        },
+        "non_improved_group": {
+          "family": "S",
+          "form": "metric_comparison",
+          "source": "coco_train2017",
+          "nll_difference": 0.00006145583731356763
+        },
+        "panel_manifest_sha256": "89a2a3bca9dbaead0f2d0400943aa7b3f98c33fdd45f651abe1c5dd28368e2e8",
+        "protocol_sha256": "01c4cf0d0d0de7fd32fefa5bc57c1e5d62b0842cbc31703c81c88a1db441cd92",
+        "scores_sha256": "140715f02ba36d1dadc0231ebbd32264e73aa6d2878f419c3d71f7e28f5c964e",
+        "metrics_sha256": "0377639fea4e3194710b88d3f70fb9b6ec30ba493e103e3591aa4674c348552f",
+        "acceptance_sha256": "dc629c8df91490d4d7671d3bfcd6655be40b2c8cc09f00062e0561be765f7fc6",
+        "heldout_accuracy_claimed": false,
+        "semantic_precision_claimed": false,
+        "teacher_qualification_granted": false,
+        "raw_evidence_uploaded": false
+      },
+      "adapters": {
+        "G": {
+          "weights_sha256": "a464c5ff5a2d866b0188f03a224fb549cd9ea2fa44ba92c313f48a8e33674753",
+          "training_protocol_sha256": "c299492dca4d7439890d11e7933162e8f92659f1ffb6b471b60b8cc3f542e3c4",
+          "training_seconds": 11662.63
+        },
+        "S": {
+          "weights_sha256": "f92ba29e05968e8e1d65217a19b4a8a502a4f970ffe18b6793ab9c55c967aea0",
+          "training_protocol_sha256": "f0c248818df30f96b6cfe10135f9e0b0880328b0c563a71c08ce9a600a2234e9",
+          "training_seconds": 13441.908
+        },
+        "A": {
+          "weights_sha256": "3459635b22124198c56b0c68716c934c29e5e438b93a38ef37c6fbbaf6983649",
+          "training_protocol_sha256": "3c68913634b85ed15a43aa63fac3be24693623256978c2c05b3791e34f26244b",
+          "training_seconds": 12197.06
+        },
+        "joint": {
+          "weights_sha256": "0366e975db34dfea692431064222f27c02089d1efb07ea9e76c490f2957f9a1f",
+          "training_protocol_sha256": "a3633659f4a6ac9c04a256cec4d878dc09f35a9d2ab1979bb65d574aa7089563",
+          "training_seconds": 12524.734
+        }
+      }
+    },
+    "P4_s17": {
+      "role": "Historical broad/source-filtered SFT comparison; not the final main-table MOPD checkpoint",
+      "format": "merged sharded checkpoint",
+      "shards": 4,
+      "index_sha256": "ef0d98eb06db4e5397c982a55654115d608fcfecc431469b1b09d80e03a45229",
+      "config_sha256": "8da5b95f7d72559de45ff82f27cdca65290534b2be9bb7204ab0b375890e65c7",
+      "full_weight_checksum_recomputed": false,
+      "access": "Owner-managed; source and base-model rights apply"
+    },
+    "P5_s17": {
+      "role": "Historical placement-adapted SFT comparison; not the final main-table MOPD checkpoint",
+      "format": "LoRA adapter",
+      "terminal_update": 5800,
+      "weights_sha256": "d2f67cac304e0242d504155a3f89c3adfa7d821ebfcca94687b0d9209ff24c7a",
+      "access": "Owner-managed; source and base-model rights apply"
+    }
+  }
+}

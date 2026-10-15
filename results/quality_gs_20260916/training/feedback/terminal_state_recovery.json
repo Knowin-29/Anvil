@@ -1,0 +1,11 @@
+{
+  "global_step": 256,
+  "global_samples": 1024,
+  "num_input_tokens_seen": 1535783,
+  "adapter_sha256": "0046b75f280ea379a29c7ddd47eeea9f32f36f43eaf759b5189f80f0ed9ffa07",
+  "model_state_sha256": "d6a4631308d9362172c0bc8278b6983eb92b2197d1181919ae599bc6f4d7cce6",
+  "terminal_log_sha256": "d2f453d0785a0a1b03f3aac996bdf3cee32bdb152aa52f4cdabc50a5409eb0c3",
+  "matching_adapter_tensors": 496,
+  "optimizer_checkpoint_complete": false,
+  "provenance": "Observed DeepSpeed model state and terminal evaluation log; not a reconstructed Hugging Face trainer state. Disk quota interrupted subsequent optimizer serialization. Every saved adapter tensor matches the step-256 model state exactly."
+}

@@ -1,0 +1,38 @@
+{
+  "image_id": "scene_02_single_card",
+  "image_path": "tests/fixtures/images/scene_02_single_card.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "card_0",
+      "class_name": "card",
+      "bbox": [
+        30.0,
+        40.0,
+        70.0,
+        60.0
+      ],
+      "operation": "push",
+      "grasp_point": [
+        50.0,
+        50.0
+      ],
+      "extra_tags": [
+        "push_only"
+      ],
+      "hierarchical_name": "the card",
+      "referring_expressions": [
+        "卡片",
+        "那张卡片"
+      ],
+      "attributes": {},
+      "mask_file": "tests/fixtures/masks/scene_02_single_card_card_0.png"
+    }
+  ],
+  "edges": [],
+  "ternary_relations": [],
+  "blocking_dag": []
+}

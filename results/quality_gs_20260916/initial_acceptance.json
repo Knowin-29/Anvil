@@ -1,0 +1,28 @@
+{
+  "source_sha256": "93d6d8125717e71d77de9932ac026bd1517f40faabd551c559c9445c626c2918",
+  "prediction_sha256": {
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_0/initial/predictions.jsonl": "89bde864d1d4253ac2046bc8d27996c247b3a007fcb2caac252e0a8c0eaaa0d1",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_1/initial/predictions.jsonl": "c6c40f11d699358807d81ab4569aad1303388366b0b45e162bc68b98f9eccd6c"
+  },
+  "candidates": 2011,
+  "pool": {
+    "raw": {
+      "retained": 2011,
+      "source_correct": 1126
+    },
+    "syntax": {
+      "retained": 1998,
+      "source_correct": 1126
+    },
+    "typed": {
+      "retained": 1965,
+      "source_correct": 1126
+    }
+  },
+  "model": "Qwen3.6-27B",
+  "initial_generation_calls": 2011,
+  "new_human_annotation": 0,
+  "inference_worker_seconds": 10876.03964473959,
+  "allocated_pair_gpu_hours": 6.042244247077551,
+  "timing_scope": "Sum of measured batch inference times on two workers, each assigned two GPUs; excludes model initialization and later repairs."
+}

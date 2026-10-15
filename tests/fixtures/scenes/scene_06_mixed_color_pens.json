@@ -1,0 +1,61 @@
+{
+  "image_id": "scene_06_mixed_color_pens",
+  "image_path": "tests/fixtures/images/scene_06_mixed_color_pens.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "pen_red",
+      "class_name": "pen",
+      "bbox": [
+        20.0,
+        30.0,
+        35.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        28.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the red pen",
+      "referring_expressions": [
+        "红笔"
+      ],
+      "attributes": {
+        "color_primary": "red"
+      },
+      "mask_file": "tests/fixtures/masks/scene_06_mixed_color_pens_pen_red.png"
+    },
+    {
+      "id": "pen_blue",
+      "class_name": "pen",
+      "bbox": [
+        60.0,
+        30.0,
+        75.0,
+        70.0
+      ],
+      "operation": "pick",
+      "grasp_point": [
+        68.0,
+        50.0
+      ],
+      "extra_tags": [],
+      "hierarchical_name": "the blue pen",
+      "referring_expressions": [
+        "蓝笔"
+      ],
+      "attributes": {
+        "color_primary": "blue"
+      },
+      "mask_file": "tests/fixtures/masks/scene_06_mixed_color_pens_pen_blue.png"
+    }
+  ],
+  "edges": [],
+  "ternary_relations": [],
+  "blocking_dag": []
+}

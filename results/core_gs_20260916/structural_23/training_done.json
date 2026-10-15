@@ -1,0 +1,14 @@
+{
+  "adapter": "/path/to/Anvil/engineering/data/core_gs_20260916/structural_23/training/v0-20260916-200242/checkpoint-256",
+  "adapter_sha256": "ebb33298ebf477dc68b099a3e646b6f427358bb0b1612cc2868ebc1a0dae49b4",
+  "trainer_state_sha256": "d5bb50977d6e6f8298be0881768468786a9d87d6db9e59f8d61c88106d386354",
+  "seconds": 7632.842138073873,
+  "global_step": 256,
+  "job": {
+    "id": "structural_23",
+    "arm": "structural",
+    "seed": 23,
+    "steps": 256
+  },
+  "full_GSA_qualified": false
+}

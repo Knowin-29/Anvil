@@ -1,0 +1,69 @@
+# Protocol Contract v1 -- the paper is the contract, engineering aligns to it.
+#
+# This file is the machine-checkable extraction of the evaluation protocol that the
+# Anvil ICLR 2027 manuscript declares in its Experiments section and Appendix. Any
+# engineering artifact that disagrees with a value here is the artifact to fix; the
+# manuscript is NOT edited to match the engine.
+#
+# Source of truth in the manuscript (byte-frozen baseline .baseline_stable_20260908_083129):
+#   - paper/sections/experiments.tex  section "Protocol"
+#   - paper/sections/appendix.tex     lines ~499-524 (protocol id, health gate, prompt notes)
+# Source of truth in the engine:
+#   - experiments/result_registry.yaml  "protocol:" block
+#   - eval/gsa_eval/registry.py          BenchmarkSpec entries
+#   - eval/build_result_index.py         gsa-eval-v7 enforcement
+#
+# extracted_utc: 2026-09-08
+
+contract_id: anvil-protocol-contract-v1
+binds_manuscript: gsa_iclr2027/paper
+binds_protocol: gsa-eval-v7
+
+decoding:
+  deterministic: true
+  reasoning: off            # THINKING=off; on-mode measured 6/10 truncated, 0 parsable
+  seed: 0
+  output_tokens_multiple_choice: 128
+  output_tokens_coordinates: 256
+
+# Exact n per split as stated in experiments.tex. The engine's required_n must match.
+splits:
+  cv_bench:        {required_n: 2638, scored: 2638, aggregate: official_source_weighted, also_report: micro_mean}
+  embspatial:      {required_n: 3640, scored: 3640}
+  refspatial_bench:{required_n: 277,  scored: 100,  scored_subgroup: location, audits_all: 277}
+  where2place:     {required_n: 100,  scored: 100,  role: protocol_shift_stress_test}
+  gsa_bench_test:  {required_n: 1463, scored: 1463, alias: Anvil-Bench-G}
+
+scoring:
+  malformed_response: zero_end_to_end_credit
+  numeric_cells_source: result_registry_only   # never hand-transcribed
+  withheld_or_missing_render: blank             # never 0 (0 is reachable on point-in-mask)
+
+# Main ranking health gate.
+trust_gate_main:
+  max_parse_failure_percent: 25.0
+  max_truncation_percent: 15.0
+
+# General-domain retention is a SEPARATE, stricter protocol (appendix ~476).
+trust_gate_general_retention:
+  protocol_id: general-retention-formal-v3
+  max_malformed_percent: 5.0
+  max_truncation_percent: 1.0
+  note: five_to_fifteen_times_stricter_than_main_gate
+
+# Load-bearing protocol notes the manuscript states explicitly; the engine must not
+# silently deviate from these or the non-claims in section sota break.
+protocol_notes:
+  cv_bench_prompt: appends_answer_only_instruction_not_in_cambrian1_original
+  embspatial_cross_check: qwen3_vl_8b_instruct 78.50_self_reported_vs_78.87_ours
+  where2place_no_visual_prompting_scaffold: true
+  where2place_leading_73_59_is_manually_filtered_not_shipped_100_image_set: true
+  refspatial_no_single_All_score: true          # three incompatible aggregations exist
+  refspatial_unseen_excluded_by_dataset_card: true
+
+# Conformance check: engine values verified equal to contract on 2026-09-08.
+engine_conformance:
+  result_registry_protocol_block: MATCH   # gsa-eval-v7, seed 0, thinking false, 25/15 gate
+  registry_required_n: MATCH              # 2638/3640/277(100)/100/1463 identical
+  registry_max_tokens: MATCH              # mc 128, coord 256
+  deviations_found: []                    # none as of extraction

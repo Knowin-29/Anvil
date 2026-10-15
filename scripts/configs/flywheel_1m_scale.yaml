@@ -1,0 +1,100 @@
+# GSA 飞轮 1M 规模扩展配置
+# 目标: 从 186K -> 1M verified annotations
+# 日产目标: 100K+/天
+
+sources:
+  # 已有本地图片 (高质量，权重高)
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Archive
+    source_type: image_dir
+    weight: 3.0
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  - path: /path/to/datasets/datasets/VLM_Dataset_Root/01_Raw_Augment
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  - path: /path/to/datasets/datasets/brands_images
+    source_type: image_dir
+    weight: 2.5
+    recursive: true
+
+  - path: /path/to/datasets/datasets/appliance_datasets/washing_machine_1029/processed_washing_machine_data_all
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+
+  # 扩展: NAS 学术数据集 (大规模)
+  - path: /path/to/datasets/downloads/BridgeDataV2
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    max_images: 25000
+    filters:
+      min_resolution: [200, 200]
+
+  - path: /path/to/datasets/downloads/embodied_reasoner
+    source_type: image_dir
+    weight: 2.5
+    recursive: true
+    filters:
+      min_resolution: [200, 200]
+
+  - path: /path/to/datasets/dataflywheel/input/kitchen/embodied_reasoner
+    source_type: image_dir
+    weight: 3.0
+    recursive: true
+
+  - path: /path/to/datasets/dataflywheel/input/object_state/changeit_frames
+    source_type: image_dir
+    weight: 2.5
+    recursive: true
+
+  - path: /path/to/datasets/dataflywheel/input/navigation/spatialsense
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+
+  - path: /path/to/datasets/dataflywheel/input/tabletop
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+
+  - path: /path/to/datasets/dataflywheel/input/household
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+
+  # Benchmark evaluation scenes (100K)
+  - path: /path/to/datasets/datasets/benchmark_eval_all
+    source_type: image_dir
+    weight: 1.5
+    recursive: true
+    max_images: 50000
+    filters:
+      min_resolution: [200, 200]
+
+  # Grasp-Anything (for A_action_interface)
+  - path: /path/to/storage/nas-backup/datasets/rynnbrain_datasets/downloads/Grasp-Anything/image
+    source_type: image_dir
+    weight: 2.0
+    recursive: true
+    max_images: 50000
+
+dimensions:
+  - G_grounding
+  - S_spatial
+  - A_identity_attr
+  - A_obj_state
+  - A_action_precondition
+  - A_action_interface
+
+# 高吞吐参数
+batch_size: 200
+scan_interval: 5
+max_concurrent_generate: 16
+max_concurrent_verify: 8

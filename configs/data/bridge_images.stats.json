@@ -1,0 +1,14 @@
+{
+  "source": "bridge_data_v2_raw",
+  "license": "open (BridgeData V2, CC-BY-4.0)",
+  "raw_root": "/path/to/datasets/bridge_raw_work/extracted/raw",
+  "stride": 3,
+  "n_images": 30807,
+  "top_scenes": {
+    "bridge_data_v1": 11904,
+    "bridge_data_v2": 11358,
+    "flap": 3015,
+    "rss": 2522,
+    "icra": 2008
+  }
+}

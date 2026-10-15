@@ -1,0 +1,120 @@
+# GSA local vLLM configuration
+# Use with: bash scripts/run_gsa_v0.sh --config scripts/configs/gsa_vllm_local.yaml
+
+# GSA Data Flywheel v0 Configuration
+# Used by: scripts/run_gsa_v0.sh
+
+# Local vLLM OpenAI-compatible configuration
+vlm:
+  base_url: "${VLLM_BASE_URL:-http://localhost:10301/v1}"
+  model: "${VLLM_MODEL:-/path/to/workspace/foundation/contributor/hf_models/Qwen/Qwen2.5-VL-7B-Instruct}"
+  api_key: ""  # Local vLLM does not require an API key by default
+  max_image_size: 1280
+  timeout: 300
+  concurrency: "${GSA_VLM_CONCURRENCY:-4}"
+  max_retries: 2
+
+# Input Configuration
+input:
+  image_dirs:
+    - "data/input/images"
+    - "data/output/flywheel/daily_*/images"
+    - "tests/fixtures/images"
+  discover_external_sources: false
+  business_log_dirs:
+    - "data/output/flywheel/daily_*/annotations"
+  anchor_set_path: "data/anchor/gsa_anchors_v0.jsonl"
+  max_images: "${GSA_MAX_IMAGES:-20}"  # Local vLLM smoke default; override with env or --max-images
+
+# Pipeline concurrency. N>1 sends multiple OpenAI-compatible requests to vLLM
+# so vLLM can use continuous batching. Start small and tune by GPU memory.
+pipeline:
+  concurrency: "${GSA_PIPELINE_CONCURRENCY:-4}"
+
+# Output Configuration
+output:
+  root: "data/output/gsa_v0"
+
+# Scene Family Configuration
+scene_families:
+  delivery:
+    keywords: ["deliver", "hand", "give", "take", "receive", "pass"]
+    scenario: "SC.1"
+  tabletop_tidy:
+    keywords: ["table", "desk", "tidy", "clean", "arrange", "organize"]
+    scenario: "SC.2"
+  storage:
+    keywords: ["store", "put away", "shelf", "cabinet", "drawer", "container"]
+    scenario: "SC.3"
+
+# Per-bucket quotas (target per scene_family per subtype)
+quotas:
+  G: 100
+  S: 100
+  A_state: 80
+  A_action: 60
+  A_robot_state: 500
+
+robot_state_datasets:
+  # Local vLLM runs default to the VLM image pipeline. Structured NAS ingest is
+  # intentionally disabled here so --max-images N stays bounded for smoke runs.
+  enabled: []
+  ingest_only: false  # or: GSA_INGEST_ONLY=1 / bash run_gsa_v0.sh --ingest-only
+  max_samples_per_source: 0
+  nas_overrides:
+    sharerobot:
+      root: "/path/to/datasets/downloads/sharerobot"
+      planning_dirs:
+        - "planning/train"
+      trajectory_json: "trajectory/trajectory.json"
+      images_root: "images"
+      planning_tasks_for_robot_state:
+        - future_prediction_task
+        - past_description_task
+        - planning_task
+        - planning_with_context_task
+    embodied_reasoner:
+      root: "/path/to/datasets/downloads/embodied_reasoner"
+      trajectory_json: "data_engine_origin_trajectory_9390.json"
+      images_root: "data/images"
+    robo2vlm:
+      root: "/path/to/datasets/downloads/robo2vlm"
+      parquet_glob: "data/*.parquet"
+      extracted_images_dir: "extracted_images"
+    bridge_data_v2:
+      root: "/path/to/datasets/downloads/bridge_data_v2"
+      images_root: "images"
+
+# Verifier thresholds
+verifier:
+  auto_pass_confidence: 0.8
+  review_threshold: 0.5
+  delete_threshold: 0.2
+
+# Review queue policy
+review_queue:
+  max_per_bucket: 500
+  priority_subtypes:
+    - "grasp_point_2d"
+    - "push_contact_point_2d"
+    - "place_region_2d"
+
+# Source readiness
+sources:
+  real_log:
+    status: "ready"
+    priority: 1
+  vlm_generated:
+    status: "ready"
+    priority: 2
+  public_refcoco:
+    status: "adapter_needed"
+    priority: 3
+  public_grasp_anything:
+    status: "manifest_only"
+    priority: 4
+
+# Ports
+ports:
+  viewer: 10303
+  vlm_local: 10301

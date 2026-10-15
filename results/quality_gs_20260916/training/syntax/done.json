@@ -1,0 +1,8 @@
+{
+  "source_sha256": "ebe0814f03d78a3e899aaf6da36bc792e4c21f6a114cc5e9defbb5565b6d1beb",
+  "prediction_sha256": "3b9ec5bf6aa96d5798a89fa8fef55aa8565de20d9add2a6a833507c62358b3ef",
+  "result_sha256": "66621aefedd7009b9aff6456c5bb2789ca2230bc16b21b99ec69ac5d51c65785",
+  "training_done_sha256": "344222f1de20244b282d9d52c48678e3bc3e096ba6c5c89545b7a58ca5d66008",
+  "native_evaluation_complete": true,
+  "VQA_retention_complete": false
+}

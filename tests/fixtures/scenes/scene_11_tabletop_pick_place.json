@@ -1,0 +1,262 @@
+{
+  "image_id": "scene_11_tabletop_pick_place",
+  "image_path": "tests/fixtures/images/scene_11_tabletop_pick_place.png",
+  "image_size": [
+    100,
+    100
+  ],
+  "nodes": [
+    {
+      "id": "table_0",
+      "class_name": "table",
+      "bbox": [
+        0.0,
+        60.0,
+        100.0,
+        100.0
+      ],
+      "center_3d": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "size_3d": [
+        1.0,
+        1.0,
+        0.1
+      ],
+      "mean_depth": 1.0,
+      "valid_3d": true,
+      "operation": "push",
+      "role_ids": [
+        "support_surface",
+        "base_support_root"
+      ],
+      "placement_policy": "push_only",
+      "hierarchical_name": "the table",
+      "referring_expressions": [
+        "桌子",
+        "the table"
+      ],
+      "attributes": {
+        "color_primary": "brown",
+        "shape": "wide"
+      }
+    },
+    {
+      "id": "bowl_0",
+      "class_name": "bowl",
+      "bbox": [
+        60.0,
+        48.0,
+        90.0,
+        78.0
+      ],
+      "mask_file": "tests/fixtures/masks/scene_11_tabletop_pick_place_bowl_0.png",
+      "grasp_point": [
+        75.0,
+        62.0
+      ],
+      "center_3d": [
+        0.35,
+        0.0,
+        0.82
+      ],
+      "size_3d": [
+        0.24,
+        0.24,
+        0.14
+      ],
+      "mean_depth": 0.82,
+      "valid_3d": true,
+      "operation": "pick",
+      "is_container": true,
+      "role_ids": [
+        "container",
+        "support_surface"
+      ],
+      "support_parent": "table_0",
+      "support_type": "on-top-of",
+      "hierarchical_name": "the blue bowl",
+      "referring_expressions": [
+        "蓝碗",
+        "碗",
+        "the blue bowl"
+      ],
+      "attributes": {
+        "color_primary": "blue",
+        "shape": "round"
+      },
+      "point_cloud_sample": [
+        [
+          0.3,
+          -0.02,
+          0.81
+        ],
+        [
+          0.4,
+          0.02,
+          0.83
+        ],
+        [
+          0.35,
+          0.0,
+          0.82
+        ]
+      ]
+    },
+    {
+      "id": "pen_0",
+      "class_name": "pen",
+      "bbox": [
+        18.0,
+        68.0,
+        44.0,
+        74.0
+      ],
+      "mask_file": "tests/fixtures/masks/scene_11_tabletop_pick_place_pen_0.png",
+      "grasp_point": [
+        31.0,
+        71.0
+      ],
+      "center_3d": [
+        -0.2,
+        0.0,
+        0.76
+      ],
+      "size_3d": [
+        0.18,
+        0.03,
+        0.02
+      ],
+      "mean_depth": 0.76,
+      "valid_3d": true,
+      "operation": "pick",
+      "support_parent": "table_0",
+      "support_type": "on-top-of",
+      "hierarchical_name": "the red pen",
+      "referring_expressions": [
+        "红笔",
+        "那支笔",
+        "the red pen"
+      ],
+      "attributes": {
+        "color_primary": "red",
+        "shape": "thin"
+      },
+      "point_cloud_sample": [
+        [
+          -0.24,
+          0.0,
+          0.76
+        ],
+        [
+          -0.18,
+          0.01,
+          0.77
+        ],
+        [
+          -0.12,
+          -0.01,
+          0.75
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "subject": "bowl_0",
+      "object": "pen_0",
+      "predicate": "right-of",
+      "source": "2d",
+      "confidence": 0.9
+    },
+    {
+      "subject": "bowl_0",
+      "object": "pen_0",
+      "predicate": "near",
+      "source": "2d",
+      "confidence": 0.8
+    }
+  ],
+  "ternary_relations": [],
+  "blocking_dag": [],
+  "support_relations": [
+    {
+      "subject": "bowl_0",
+      "object": "table_0",
+      "relation": "on-top-of",
+      "confidence": 0.92
+    },
+    {
+      "subject": "pen_0",
+      "object": "table_0",
+      "relation": "on-top-of",
+      "confidence": 0.94
+    }
+  ],
+  "placement_regions": [
+    {
+      "region_id": "inside_bowl_0",
+      "region_type": "inside-container",
+      "support_id": "bowl_0",
+      "anchor_ids": [
+        "bowl_0"
+      ],
+      "polygon_2d": [
+        [
+          60.0,
+          48.0
+        ],
+        [
+          90.0,
+          48.0
+        ],
+        [
+          90.0,
+          78.0
+        ],
+        [
+          60.0,
+          78.0
+        ]
+      ],
+      "point_2d": [
+        75.0,
+        63.0
+      ],
+      "reason": "visible_container"
+    },
+    {
+      "region_id": "free_table_0",
+      "region_type": "free-space",
+      "support_id": "table_0",
+      "anchor_ids": [
+        "table_0"
+      ],
+      "polygon_2d": [
+        [
+          0.0,
+          60.0
+        ],
+        [
+          100.0,
+          60.0
+        ],
+        [
+          100.0,
+          100.0
+        ],
+        [
+          0.0,
+          100.0
+        ]
+      ],
+      "point_2d": [
+        50.0,
+        88.0
+      ],
+      "reason": "support_surface_free_space"
+    }
+  ]
+}

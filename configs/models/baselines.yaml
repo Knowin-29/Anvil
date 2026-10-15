@@ -1,0 +1,146 @@
+schema_version: 1
+storage_root: /path/to/environment/models
+
+models:
+  - id: qwen3_5_9b_base
+    display_name: Qwen3.5-9B
+    source: local
+    path: /path/to/environment/hf_models/Qwen/Qwen3.5-9B
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: student_base
+    table_eligible: true
+
+  - id: qwen3_6_27b_teacher
+    display_name: Qwen3.6-27B
+    source: local
+    path: /path/to/environment/hf_models/Qwen/Qwen3.6-27B
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: teacher_and_capacity_control
+    table_eligible: true
+
+  # Local embodied specialists for the unified-protocol SOTA comparison. Weights are
+  # already on disk (no download); each is evaluated under the frozen gsa-eval-v7
+  # harness so its cells enter the paper as observations, not source-native context.
+  - id: robobrain2_5_8b_nv_local
+    display_name: RoboBrain2.5-8B-NV (local)
+    source: local
+    path: /path/to/models/RoboBrain2.5-8B-NV
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: embodied_specialist_sota_local
+    table_eligible: true
+
+  - id: robobrain2_0_7b_local
+    display_name: RoboBrain2.0-7B (local)
+    source: local
+    path: /path/to/datasets/models/RoboBrain2.0-7B
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: embodied_specialist_sota_local
+    table_eligible: true
+
+  - id: mimo_embodied_7b_local
+    display_name: MiMo-Embodied-7B (local)
+    source: local
+    path: /path/to/datasets/models/MiMo-Embodied-7B
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: embodied_specialist_sota_local
+    table_eligible: true
+
+  - id: qwen2_5_vl_3b_instruct
+    display_name: Qwen2.5-VL-3B-Instruct
+    source: huggingface
+    repo_id: Qwen/Qwen2.5-VL-3B-Instruct
+    revision: 66285546d2b821cf421d4f5eb2576359d3770cd3
+    path: /path/to/environment/models/Qwen2.5-VL-3B-Instruct
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: smaller_open_baseline
+    license: apache-2.0
+    table_eligible: true
+
+  - id: qwen2_5_vl_7b_instruct
+    display_name: Qwen2.5-VL-7B-Instruct
+    source: huggingface
+    repo_id: Qwen/Qwen2.5-VL-7B-Instruct
+    revision: cc594898137f460bfe9f0759e9844b3ce807cfb5
+    path: /path/to/environment/models/Qwen2.5-VL-7B-Instruct
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: same_scale_open_baseline
+    license: apache-2.0
+    table_eligible: true
+
+  - id: qwen3_vl_8b_instruct
+    display_name: Qwen3-VL-8B-Instruct
+    source: huggingface
+    repo_id: Qwen/Qwen3-VL-8B-Instruct
+    revision: 0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
+    path: /path/to/environment/models/Qwen3-VL-8B-Instruct
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: same_scale_generation_control
+    license: apache-2.0
+    table_eligible: true
+
+  - id: internvl3_5_8b_hf
+    display_name: InternVL3.5-8B-HF
+    source: huggingface
+    repo_id: OpenGVLab/InternVL3_5-8B-HF
+    revision: 741a7d03020411e666c6109218ab71e08151ef86
+    path: /path/to/environment/models/InternVL3_5-8B-HF
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: cross_family_open_baseline
+    license: apache-2.0
+    table_eligible: true
+
+  - id: llava_onevision_qwen2_7b_ov_hf
+    display_name: LLaVA-OneVision-Qwen2-7B-OV-HF
+    source: huggingface
+    repo_id: llava-hf/llava-onevision-qwen2-7b-ov-hf
+    revision: 0d50680527681998e456c7b78950205bedd8a068
+    path: /path/to/environment/models/llava-onevision-qwen2-7b-ov-hf
+    protocol: image_text_to_text
+    harness: unified_gsa_eval
+    role: cross_family_open_baseline
+    license: apache-2.0
+    table_eligible: true
+
+  - id: smolvla_base
+    display_name: SmolVLA base
+    source: local
+    path: /path/to/environment/models/smolvla_base
+    protocol: observation_state_images_to_action_chunk
+    harness: action_policy_eval
+    role: embodied_policy_reference
+    table_eligible: false
+    exclusion_reason: Different input/output protocol from the perception benchmark.
+
+  - id: smolvlm2_2b_instruct
+    display_name: SmolVLM2-2.2B-Instruct
+    source: huggingface
+    repo_id: HuggingFaceTB/SmolVLM2-2.2B-Instruct
+    revision: main
+    path: /path/to/environment/models/SmolVLM2-2.2B-Instruct
+    protocol: image_text_to_text
+    harness: unsupported_by_current_msswift
+    role: compact_open_reference
+    table_eligible: false
+    exclusion_reason: Current pinned ms-swift has no SmolVLM model registration.
+
+  - id: openvla_7b
+    display_name: OpenVLA-7B
+    source: huggingface
+    repo_id: openvla/openvla-7b
+    revision: main
+    path: /path/to/environment/models/openvla-7b
+    protocol: image_instruction_to_robot_action
+    harness: action_policy_eval
+    role: vision_language_action_reference
+    license: mit
+    table_eligible: false
+    exclusion_reason: Action-token policy requires robot-environment evaluation.

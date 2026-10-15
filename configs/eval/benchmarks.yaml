@@ -1,0 +1,89 @@
+# Unified public-benchmark registry for GSA-Forge evaluation.
+# Reuses the validated runners in benchmark_eval_all/src (backend=api, OpenAI-compatible)
+# and the datasets under transferred_datasets/EmbodiedAI_benchmark. Business benchmarks
+# (WashingMachine, EA-Temporal) are intentionally excluded.
+#
+# To evaluate a model: serve it OpenAI-compatibly, then for each benchmark run the
+# listed runner with --backend api. GSA-Bench runs locally via eval/run_gsa_bench.sh.
+
+meta:
+  runner_root: /path/to/datasets/datasets/benchmark_eval_all/src
+  data_root: /path/to/datasets/datasets/transferred_datasets/EmbodiedAI_benchmark
+  excluded: [WashingMachine, EA-Temporal]   # internal / uncertain-provenance
+
+benchmarks:
+  vsibench:
+    runner: vsibench_qwen.py
+    data: VSI-Bench/test-00000-of-00001.parquet
+    n: 5130
+    metric: MRA+Acc(overall)
+    input: video
+    public_ref: "Thinking in Space (CVPR'25)"
+  blink:
+    runner: BLINK_Benchmark/eval/test_benchmark.py
+    data: BLINK
+    metric: multiple-choice acc (spatial subtasks)
+    input: multi-image
+    public_ref: "BLINK (ECCV'24)"
+  cv_bench:
+    runner: cv_bench_qwen_local.py
+    data: CV-Bench
+    n: 2638
+    metric: acc (2D/3D)
+    input: single-image
+    public_ref: "Cambrian-1 (NeurIPS'24)"
+  erqa:
+    runner: erqa_api.py
+    data: ERQA/data/erqa.tfrecord
+    n: 400
+    metric: acc
+    input: single+multi-image
+    public_ref: "Gemini Robotics (ERQA)"
+  embspatial:
+    runner: embspatial/inference.py
+    data: EmbSpatial-Bench/embspatial_bench.json
+    n: 3640
+    metric: multiple-choice acc (6 relations)
+    input: single-image
+    public_ref: "EmbSpatial (ACL'24)"
+  where2place:
+    runner: where2place_qwen_local.py
+    data: where2place/point_questions.jsonl
+    n: 100
+    metric: point-in-mask
+    input: single-image
+    public_ref: "RoboPoint (CoRL'24)"
+  refspatial_bench:
+    runner: refsptialeval_qwen_local.py
+    data: RefSpatial-Bench
+    n: 277
+    metric: point acc
+    input: single-image
+    public_ref: "RoboRefer / RefSpatial-Bench"
+  robovqa:
+    runner: robovqa/inference.py
+    data: robovqa/robovqa_val_internvl.jsonl
+    n: 1921
+    metric: LLM-judge (freeform+binary)
+    input: video
+    public_ref: "RoboVQA (arXiv:2311.00899)"
+  openeqa:
+    runner: openeqa/inference.py
+    data: openeqa/open-eqa-v0.json
+    n: 1636
+    metric: LLM-judge 1-5 -> 0-100
+    input: video
+    public_ref: "OpenEQA (CVPR'24)"
+
+# Baselines already measured on disk (sanity-check anchors, not ours):
+baselines:
+  internvl3_5_14b_lora:
+    source: benchmark_eval_all/benchmark_results_summary.csv
+    vsibench: 57.37
+    blink: 71.33
+    cv_bench: 84.82
+    erqa: 40.75
+    embspatial: 75.74
+  rynnbrain_8b:
+    source: EmbodiedAI_benchmark/EmbSpatial-Bench/findings.md
+    embspatial: 81.59

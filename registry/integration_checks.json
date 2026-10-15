@@ -1,0 +1,61 @@
+{
+  "schema": "anvil-integration-checks-v1",
+  "date": "2026-09-17",
+  "license": "MIT",
+  "generation_verification": {
+    "passed": 484,
+    "skipped": 15,
+    "coverage": "action contracts and full loop, robot states/episodes/adapters, scene understanding, training-data validation, ontology, VLM client"
+  },
+  "training_routing": {
+    "passed": 122,
+    "coverage": "MOPD routing, reference losses, two-rank CPU gradient equivalence, first-fault intervention contracts"
+  },
+  "frozen_experiments": {
+    "passed": 62
+  },
+  "saved_result_replay": {
+    "cells": 17,
+    "records_per_cell": 282,
+    "predictions": 4794,
+    "exact_summary_match": true
+  },
+  "packaging_metadata_and_wheel_build": "passed; install from editable source for data/config assets",
+  "cli_help": [
+    "generate",
+    "evaluate",
+    "dashboard"
+  ],
+  "not_run": [
+    "full optional legacy test suite",
+    "new GPU training",
+    "live external teacher/service calls",
+    "all source-specific dataset integrations",
+    "PowerPoint visual rendering"
+  ],
+  "remote_pushed": false,
+  "alignment_branch": {
+    "contract": "anvil-gen-v3",
+    "checked_on": "2026-09-18",
+    "cpu_regression_passed": 170,
+    "alignment_tests_passed": 43,
+    "production_entrypoint": "generate_to_scale.sh; foreground/background export, accepted-record goals, decoded-image novelty, finite exhaustion and resume tested offline",
+    "frozen_experiment_tests_passed": 62,
+    "saved_prediction_replay": {"cells": 17, "predictions": 4794, "exact_summary_match": true},
+    "source_inventory_entries": 121,
+    "spatial_inventory_entries": 32,
+    "source_csv_sha256": "df8ebbcc984b4629caad52cf0dcc469f463c5203f4af2d828b7a7d591c04cc88",
+    "transport_test": "loopback fake model service; not model-quality evidence",
+    "optional_training_tests_unavailable": 13,
+    "optional_training_reason": "peft and the custom ms-swift training stack are absent in the CPU test environment",
+    "existing_baseline_failures": [
+      "test_vlm_client_json_parse.py: test_first_object_truncated_returns_empty_dict_and_labeled_warning",
+      "test_vlm_client_json_parse.py: test_truncated_array_keeps_complete_objects"
+    ],
+    "baseline_failure_check": "Both also fail on unmodified main; new v3 transport bypasses permissive JSON repair",
+    "not_run": ["real teacher or Astra calls", "GPU distillation", "new benchmark model evaluation", "5.8M-scale production"]
+  },
+  "python_syntax_files": 697,
+  "shell_syntax_files": 150,
+  "release_scan_errors": []
+}

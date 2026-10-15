@@ -1,0 +1,44 @@
+{
+  "source_sha256": "93d6d8125717e71d77de9932ac026bd1517f40faabd551c559c9445c626c2918",
+  "prediction_sha256": {
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_0/initial/predictions.jsonl": "89bde864d1d4253ac2046bc8d27996c247b3a007fcb2caac252e0a8c0eaaa0d1",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_0/no_feedback/predictions.jsonl": "bc2c8f231e4c2f33dde67a193a4e65da943a3047f81cc0ae21069629a1778167",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_0/feedback/predictions.jsonl": "beaaa17c3f94c0f146f17da4ee5fee471890af02157b9de99db0d1dedd24a3cf",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_1/initial/predictions.jsonl": "c6c40f11d699358807d81ab4569aad1303388366b0b45e162bc68b98f9eccd6c",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_1/no_feedback/predictions.jsonl": "367681330a518a483cedfb472fb48bb307d5509e3aa5a1069f5e6d4b2a24c416",
+    "/path/to/Anvil/engineering/data/quality_gs_20260916/shard_1/feedback/predictions.jsonl": "755263e2b92f0e85be13d52e88a399fd7f874c087c54dc7e7a9eeb26669240bc"
+  },
+  "phases": {
+    "initial": {
+      "calls": 2011,
+      "source_correct": 1126,
+      "inference_worker_seconds": 10876.03964473959,
+      "allocated_gpu_hours": 6.042244247077551,
+      "source_correct_per_allocated_gpu_hour": 186.35459838364062,
+      "prompt_tokens": 2801682,
+      "completion_tokens": 263120
+    },
+    "no_feedback": {
+      "calls": 885,
+      "source_correct": 11,
+      "inference_worker_seconds": 4979.546688491013,
+      "allocated_gpu_hours": 2.7664148269394517,
+      "source_correct_per_allocated_gpu_hour": 3.9762655596267003,
+      "prompt_tokens": 1374350,
+      "completion_tokens": 115918
+    },
+    "feedback": {
+      "calls": 885,
+      "source_correct": 111,
+      "inference_worker_seconds": 5073.4531547059305,
+      "allocated_gpu_hours": 2.8185850859477393,
+      "source_correct_per_allocated_gpu_hour": 39.381461483422505,
+      "prompt_tokens": 1384009,
+      "completion_tokens": 115971
+    }
+  },
+  "new_human_annotation": 0,
+  "paid_calls": 0,
+  "scope": "Each phase uses two-GPU workers; measured inference time excludes model loading and idle time. Repair phases each address exactly the same 885 initial failures. Source correctness determines admission and is not an independent verifier precision estimate.",
+  "cpu_collection_wall_seconds": 3.392650400288403
+}

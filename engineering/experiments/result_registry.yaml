@@ -1,0 +1,619 @@
+# BEGIN CLOSEOUT_STATUS
+submission_closeout_20260915: {"evidence": "engineering/data/submission_closeout_20260915/acceptance.json", "completed_jobs": 7, "total_jobs": 7, "needcheck": 3, "paper_pages": 41, "main_conclusion_page": 11, "paper_sha256": "6c96f4c7aa29f4ad7dc54071e34fd5d220415191aef678ab594e541ca1e3d0b5", "full_MTD_completed": false}
+# END CLOSEOUT_STATUS
+schema_version: anvil-observation-registry-v1
+status: blocked_missing_artifacts
+submission_ready: false
+final_acceptance_showcases_20260915:
+  status: scoped_queue_complete_manuscript_backfilled
+  evidence: engineering/data/source_controls_20260915/acceptance_recovery_final.json
+  evidence_sha256: 09901a7ed60ae57610efd7c8eaa52e3616ca912931149829f228f9ae51f67ca3
+  spatial_cells_including_equivalence: 60
+  spatial_predictions_including_equivalence: 48227
+  spatial_cells_with_original_score_admission: 56
+  fixed_budget_observation_cells: 4
+  equivalence_cells: 2
+  equivalence_predictions: 224
+  retention_cells: 6
+  retention_predictions: 20210
+  nonduplicate_total_cells: 64
+  nonduplicate_total_predictions: 68213
+  retention_rescore: engineering/data/source_controls_20260915/retention_verification.json
+  retention_rescore_sha256: 846d8d95e38b30c53a2a0c07e8a8318751a504fcd0e7b58b863b45b110d6b7b8
+  mixed_minus_replay_pp: {W2P: [30.00, 30.49], RoboSpatial_context: [18.16, 18.10]}
+  control_scope: Same 303 updates and 7264 row exposures; tokens and unique images not matched.
+  retention_seed44_strict: {AI2D: 69.04, ScienceQA: 85.18, TextVQA: 83.66, macro: 79.29}
+  retention_seed44_parser_sensitivity_only: {AI2D: 86.17, ScienceQA: 93.60, TextVQA: 83.66}
+  remaining_gpu_jobs: []
+  showcase_manifest: engineering/data/showcases_20260915/manifest.json
+  paper_sha256: 348bdd1b6e69ce8dbe392ac00519909697a85faf9b0b2df1f02cd348a2710096
+  paper_pages: 35
+  main_conclusion_page: 11
+  remaining_needcheck: 73
+  title_and_original_anvil_primary_rows_preserved: true
+  full_mtd_or_teacher_refresh_completed: false
+  prior_timed_blocks: Historical snapshots superseded by this acceptance.
+recovery_20260915_0630:
+  status: completed_training_resumed_evaluation
+  evidence: engineering/data/source_controls_20260915/acceptance_0615.json
+  evidence_sha256: 26702370e80f475e774deca56464e0e5522125d91ff5ebd42d25ed9472281e01
+  accepted_spatial_cells: 30
+  accepted_spatial_predictions: 25105
+  accepted_retention_cells: 3
+  accepted_retention_predictions: 10105
+  completed_generation_runtime_timeouts: 0
+  export_failure: Disk quota exceeded after both vacancy controls completed303 updates.
+  incomplete_export_bytes_removed: 9685416416
+  adapters_preserved: true
+  retraining_needed: false
+  runtime_seconds: {replay_s43: 10260.3, replay_s44: 10056.3, vacancy_s43: 7305.9, vacancy_s44: 7300.8}
+  resume_evaluator: engineering/worktree/eval/anvil_adapter_resume.py
+  save_interval_predictions: 4
+  full_weight_exports: false
+  hard_runtime_kill_for_recovery: false
+  identity_locked_resume: true
+  in_memory_merge_equivalence: {cases: 224, exact_response_matches: 224, W2P: 66.71, BLINK: 89.52}
+  retention_seed43_strict: {AI2D: 68.49, ScienceQA: 84.83, TextVQA: 83.84, macro: 79.05}
+  retention_seed43_parser_sensitivity_only: {AI2D: 86.53, ScienceQA: 93.65, TextVQA: 83.84}
+  recovery_acceptance: engineering/data/source_controls_20260915/acceptance_recovery_final.json
+  remaining_jobs: [four_control_evaluations, seed44_remaining_spatial, seed44_retention]
+  paper_sha256: 471a46cc7fd7a636a3b8f44e203173bc4fd8e2210c8c626305106389e7417b56
+  paper_pages: 33
+  main_pages: 9
+  remaining_needcheck: 73
+  tests_passed: 9
+expanded_queue_20260915:
+  status: running_not_observed
+  started_UTC: '2026-09-15T03:32:29Z'
+  plan: engineering/data/source_controls_20260915/plan.json
+  plan_sha256: 8766e9500e4c7d78cdfabe08da88ab104be4b1d758f4cb31c4538a82548371ab
+  launch_validation: All four isolated GPU/303-step configurations and training hashes checked; all four retries have completed optimizer updates. Retention loaded qwen3_5 and is generating official AI2D cases.
+  four_control_runs: [control_replay_s43, control_vacancy_s43, control_replay_s44, control_vacancy_s44]
+  controls: {GPUs: [3, 4, 5, 6], seeds: [43, 44], steps: 303, row_exposures: 7264, dev_rows: 360, learning_rate: 0.00002, lora_rank: 16, lora_alpha: 32, effective_batch: 24}
+  unique_control_pool_rows: {replay: 3656, vacancy: 3608}
+  control_scope: Matches optimizer updates and row exposures, not tokens/unique examples; source substitution, not full MTD or causal flywheel attribution.
+  terminal_only: checkpoint-303
+  control_train_variant: training_portfix_v1
+  control_ports: [29643, 29743, 29644, 29744]
+  initial_failure: Four default-port collisions before training; failed directories/logs preserved and retries isolated.
+  retention: {GPU: 0, cases: 10105, suites: [AI2D, ScienceQA, TextVQA], model: vacancy_repair_seed43, execution: local_single_GPU_same_frozen_inputs_and_strict_scorers, reuse_base_and_P5_predictions: true, cap_hours: 4}
+  cosmos_remaining: {GPU: 1, after: vacancy_remaining, cells: 7, cases: 7366, wait_cap_hours: 1, inference_cap_hours: 3}
+  newly_scheduled_cells: 34
+  newly_scheduled_predictions: 35763
+  expected_elapsed_hours: [3, 5]
+  control_limits: {training_hours: 6, merge_minutes: 30, inference_hours: 2}
+  CPU_acceptance: engineering/data/source_controls_20260915/acceptance.json
+  baseline_CPU_acceptance: engineering/data/source_controls_20260915/baseline_acceptance.json
+  paid_calls: false
+  annotation_agents: false
+  current_paper_unchanged: true
+acceptance_20260915:
+  status: prior_batch_accepted_followups_running
+  evidence: engineering/data/closeout_20260915/acceptance_initial.json
+  evidence_sha256: ed9d49cbf431b329b7b7783ceb24f4ce96be221295fa62a85a1a730f604ba8ba
+  verification: Exact full UID sets and counts, independent frozen-scorer CPU recomputation, result/shard SHA bindings.
+  completed_cells: 12
+  completed_predictions: 7097
+  needcheck_before: 95
+  needcheck_after: 73
+  paper_sha256: 164606cfab6884fc9044b5f5a20f32ba64a32a3d29953c21180f25a5ce2f71f6
+  paper_pages: 33
+  main_pages: 9
+  paper_validation: Compiled; changed pages visually inspected; no overfull boxes or undefined references/citations.
+  backfill_scope: New adaptation observation; verified historical corpus, DoF frequency, exclusion counts and output-health counters; corrected CV micro-aggregation prose.
+  original_Anvil_primary_rows_changed: false
+  training:
+    checkpoint: engineering/data/vacancy_repair_20260914/training_uuidfix_v1/v0-20260914-131926/checkpoint-303
+    updates: 303
+    runtime_seconds: 8539.2327
+    GPU_hours: 2.3720
+    trainable_parameters_millions: 43.2783
+    reported_peak_GiB: 30.00390625
+    mean_training_loss: 0.3053889505737292
+    eval_loss: 0.3682672381401062
+    eval_token_accuracy: 0.874479294290615
+    source: Final structured logging.jsonl record, not the legacy regex fields in train_status.json.
+  vacancy_results:
+    where2place: {n: 100, P5: 35.16, adapted: 68.00, delta_pp: 32.84, paired_image_95: [24.11, 41.66]}
+    robospatial_home_context: {n: 122, P5: 33.60, adapted: 62.30, delta_pp: 28.70, paired_image_95: [20.70, 36.78]}
+    vabench_point: {n: 300, P5: 80.67, adapted: 80.67}
+    blink_relative_depth: {n: 124, P5: 89.52, adapted: 89.52}
+    erqa: {n: 287, P5: 49.48, adapted: 48.08}
+    embspatial: {n: 3640, P5: 78.41, adapted: 77.91}
+  uncertainty_scope: 5000 paired image-ID resamples, seed 20260915, conditional on fixed checkpoints; not training-seed CI.
+  common_subset:
+    erqa: {n: 285, adapted: 48.42}
+    vabench_point: {n: 286, any_point: 81.12, first_point: 71.33}
+  followups:
+    cosmos: {task: G-only missing baseline, gpu: GPU-dbd5bb1f-b83c-b9e7-00a8-3ae281412b60, inference_cap_hours: 2}
+    vacancy_remaining: {tasks: [cv_bench, refspatial_bench, gsa_bench_test, robospatial_home], gpu: GPU-89a0f1ff-fe00-4ddb-3a67-1b6858b49d75, inference_cap_hours: 2}
+    vacancy_seed44: {task: Same frozen recipe and train/dev split with a second seed, gpu: GPU-e38ccc36-9561-3255-6558-ced24fd795b1, training_cap_hours: 6, merge_cap_minutes: 30, inference_cap_hours: 2}
+    final_CPU_acceptance: {output: engineering/data/closeout_20260915/acceptance_final.json, wait_cap_hours: 8}
+  launcher_repair: Immutable script snapshot per job; CPU-only recovery; per-benchmark elapsed time; final status file; occupied GPU waits up to one hour.
+  original_queue_failures: P4 seed23 and MiMo completed generation, but live shell-source edits interrupted subsequent scoring; Cosmos refused a foreign allocation before inference.
+  full_MTD_preflight: {date: '2026-09-15', exit_code: 2, missing: artifacts/audits/pilot_semantic_audit_composite.json}
+  unresolved_core_evidence: [qualified_full_GSA_teachers, independent_unreleased_native_form_targets, matched_budget_MTD_runs, human_semantic_reliability]
+  all_needcheck_filled_today_guaranteed: false
+  historical_counter_sources:
+    eval_results/qwen2_5_vl_7b_full_local4_v8_local4_20260821_125929_tmux/where2place.json: 5e9f5894a9b20c9bb98e417d13562f3959a3c5ada17e6f413786f949d263575c
+    eval_results/qwen2_5_vl_3b_full_local4_v8_local4_20260821_125929_tmux/where2place.json: b6d403377c979228afbed9b32521388ec2b57ab5b9ca360d94e687d472818dbf
+    eval_results/qwen2_5_vl_3b_full_local4_v8_local4_20260821_125929_tmux/gsa_bench_test.json: 1a2bbfc67f7b98f65ee76131ef4d62e6dc6041580d6578ddbd9f72f20181bb91
+created_on: 2026-09-04
+manuscript: iclr2027_conference.tex
+policy: >-
+  This registry accepts observations only. A result is eligible for the manuscript
+  only when every provenance field is populated and the referenced files exist.
+  Values from target_result_registry.yaml are design targets and must never be copied
+  here as observations.
+
+reporting_policy_20260914:
+  owner_request: Report actual observations in academic prose; keep operational checks in engineering artifacts.
+  reported_score_is_not_qualified_claim: true
+  missing_scene_metadata: >-
+    Does not suppress an observed point estimate. Image-screening evidence remains
+    bound; scene-level separation must not be asserted when source IDs are unavailable.
+  output_health: >-
+    Preserve the frozen scorer and all failures. A score_if_untrusted value may be
+    displayed as a fixed-budget observation with its material token-limit condition;
+    this does not change the old registry's eligibility verdict or authorize SOTA.
+
+closeout_20260914:
+  owner_approved: Consolidate appendix numerical forecasts; local bounded training/evaluation; no paid API or new annotation.
+  needcheck_before: 487
+  needcheck_after: 95
+  count_scope: Non-comment calls in all sections and tables, not just compiled inputs.
+  consolidation: Removed 13 forecast-only table sources and three plotted forecast panels; five pending evidence packages replace repeated estimates.
+  forecasts_recoverable_from: engineering/experiments/target_result_registry.yaml
+  title_unchanged: true
+  paper_sha256: 3685a717a2d2dda57006879441e93fd6849495f383e7020ad12430c84fe4d8d4
+  paper_pages: 32
+  main_pages: 9
+  related_regression_tests: {passed: 46, skipped: 1}
+  original_Anvil_primary_scores_unchanged: true
+  optional_frontier_goal: Astra parity is not a measured result and is omitted from the abstract.
+  historical_generator: Qwen3.5-397B-A17B
+  historical_model_evidence: logs/vlm_requests_v2_full500.jsonl.gz (model field; see bound SHA above)
+  recent_local_generator: Qwen3.6-27B
+  full_MTD_complete: false
+  submission_ready: false
+
+efficiency_20260914:
+  evidence_root: engineering/data/efficiency_20260914
+  scope: Lightweight geometric recheck of already-retained outputs; not full-contract validation, semantic precision, or raw generation yield.
+  parsed_records: 598891
+  malformed_json_lines: 1
+  parsed_records_with_covered_rule_violations: 0
+  sequential_cpu_seconds: 13.255359770730138
+  parsed_records_per_second: 45181.0445
+  measurement: One pass, including file I/O, parsing, input hashing, and rule evaluation; no image loading or model calls.
+  shard_reports:
+    shard0: {parsed: 167459, seconds: 3.8117806538939476, sha256: 95816cac91a980602fedc54e7b64f975ef088d46e8d3225c2d1adc931ba5fe80}
+    shard1: {parsed: 163286, seconds: 3.6108279949985445, sha256: 35d7ba49047d6f927c2d2822cdd06c171a43d600ff86cb1ebe20c4f472f198ec}
+    shard2: {parsed: 167682, seconds: 3.651363867800683, sha256: eb8736b92c2db6bed622fdb01281bf87aac17d8588d7b7b453a4474057da432c}
+    shard3: {parsed: 100464, malformed: 1, seconds: 2.181387254036963, sha256: 14c61881dcf7d690b8c2b16aa957ca9c4fb151cd8d2fd386015c6736321f2a11}
+  generation_throughput: Not inferred from cumulative record counts divided by last-resume stats.wall_seconds.
+  semantic_precision_95_percent_claim_supported: false
+
+vacancy_repair_20260914:
+  status: completed_303_updates_and_six_full_endpoints_accepted_20260915
+  evidence_root: engineering/data/vacancy_repair_20260914
+  recipe: Restore 3812 P4 RefSpatial-vacancy training records plus equal deterministic P5 train-only replay.
+  candidate_rows: 7624
+  train_rows: 7264
+  dev_rows: 360
+  train_sha256: c94cb795d8b1c1fa7520198732782ee8126ccc14196a265eaa98c47fb3b65d12
+  dev_sha256: e7802f07f2eced5957d2c4a97573b2c15f8747a8e16513b4ccfd64c2642ed258
+  initialization: P5 SFT merged seed17
+  recipe_parameters: {updates: 303, seed: 43, learning_rate: 0.00002, rank: 16, alpha: 32, effective_batch: 24, max_length: 2048, image_max_tokens: 1536}
+  checkpoint_selection: Predeclared terminal checkpoint-303 only; no test-driven selection.
+  cap: 6h training + 30m CPU merge + 2h inference; exit on failure, no unbounded retries.
+  dev_scope: Image-disjoint within this mixture; replay dev may have appeared in P5 pretraining and is not an independent endpoint.
+  training_directory: training_uuidfix_v1
+  first_attempt: Failed before the first update because installed DeepSpeed requires integer CUDA_VISIBLE_DEVICES; preserved in training/.
+  retry_fix: Resolve the exact requested UUID to matching CUDA and NVML ordinal; never substitute another GPU.
+  evaluation: [where2place, robospatial_home_context, vabench_point, blink_relative_depth, erqa, embspatial]
+  causal_flywheel_or_full_MTD_claim: false
+
+expanded_observations_20260914:
+  evidence_class: single_seed_SFT_and_pretrained_checkpoint_observations
+  summary: engineering/data/public_eval_expansion_20260914/summary.json
+  common_subset_sensitivity: engineering/data/public_eval_expansion_20260914/common_subset_cpu.json
+  completed_model_benchmark_cells: 20
+  prediction_count: 4244
+  gpu_inference_finished: true
+  retraining_performed: false
+  full_set_caveat: >-
+    P4 and P5 have the same two exact VABench training-image matches; the union of
+    exact and unresolved near-image candidates affects 14 VABench and 2 ERQA items.
+    The main table reports full-set observations with appendix qualifications.
+  common_subset: >-
+    CPU-only sensitivity applies the same answer-independent exclusions to all four
+    models: VABench 286, ERQA 285. No original score or prediction is overwritten;
+    owner requested retaining the original primary table on September 14.
+  distillation_or_SOTA_claim_authorized: false
+
+historical_pilot_recount_20260914:
+  scope: Historical construction counts only; not semantic accuracy or current-release quality.
+  verification: Recounted all eight raw and Swift files; per-form row counts and unique image IDs agree.
+  selected_images: 500
+  completed_image_paths: 500
+  images_with_retained_output: 468
+  request_attempts: 3583
+  retained_records: 3275
+  retained_by_form: {bbox: 468, detection: 468, point: 468, mask: 374, depth: 394, affordance: 342, dof: 367, action_cot: 394}
+  selected_form_slots: 4000
+  retention_percent: 81.875
+  source_clean_pilot: {images: 299, train: 2074, val: 85, G: 1150, S: 265, A: 744}
+  evidence_root: /path/to/Anvil/engineering/worktree
+  bound_sources:
+    data/flywheel_v2/full500/stats.json: 24ce0672d27bc45b216d60af5ecd43320ec10257a7adb660bcf245d4a3bae8ae
+    artifacts/upload_review_500_v2/manifest.jsonl: 70242213528e500ce13659aa7015b97fcab627812f9cd78493b34aea2310a5b7
+    logs/vlm_requests_v2_full500.jsonl.gz: 35e624a354ae777d3a836a973cf1c2a31fccf472063e119847f62e9ed90c11a4
+    trains/gsa_bench_v2_pilot_clean/manifest.json: 46c1c23a7b4e7402f5a1b55871374eef800c086256888639be21b892df59c106
+    trains/gsa_bench_v2_pilot_clean/train.jsonl: 9697a7e9eb741ca3a35f4aa1f49603ae5e40c8933bd7b0dca4d9ef4d7e368cd6
+    trains/gsa_bench_v2_pilot_clean/val.jsonl: 7f4e59bda958dd00cf936b8d6d410d462e748dca7ff0951a2c1c84950d5663c6
+
+table2_fill_20260914:
+  status: scoped_queue_complete
+  current_paper_sha256: 348bdd1b6e69ce8dbe392ac00519909697a85faf9b0b2df1f02cd348a2710096
+  current_paper_pages: 35
+  current_main_pages: 11
+  remaining_noncomment_needcheck_calls: 73
+  launcher: engineering/worktree/scripts/run_anvil_table2_fill.sh
+  artifact_root: engineering/data/table2_fill_20260914
+  formal_scoring_sha256: 38af902acaa80c47e370bb73f81424729e428689a15fa51de9be13a0bbd06ead
+  architecture_adapter: Explicit model/template types; separate adapter fingerprint recorded in outputs.
+  scheduled_cells:
+    rb25: [where2place, blink_relative_depth, erqa, vabench_point, gsa_bench_test]
+    rynn: [where2place, blink_relative_depth, vabench_point, gsa_bench_test, cv_bench, embspatial]
+    mimo: [blink_relative_depth, gsa_bench_test]
+    cosmos: [gsa_bench_test]
+  w2p_sensitivity: Base and P5 at identical 512-token budget, full 100 examples; preserve original 256-token primary results.
+  w2p_512_observations:
+    base: {score: 46.86, n: 100, parse_failures: 0, capped: 13, shard_sha256: da46603efba4f499f280a1d8041a1d0e0fbb4678f683fc9acc1ac6448edf29e0}
+    p5: {score: null, score_if_untrusted: 32.96, n: 100, parse_failures: 3, capped: 33, shard_sha256: 7aef6764599cf7f64dc20d76e8f1044fc5b71312e0d34db214a45c3879eb443e}
+  w2p_interpretation: Neither model improves with the larger output budget; not a positive intervention.
+  completed_cells_backfilled:
+    rb25:
+      where2place: {score: 68.00, n: 100, parse_failures: 0, capped: 0, shard_sha256: bae8f14dd96dc05e501598d8d3e89b7d1bba1df8dae957f7277d06f998bd8ff1}
+      blink_relative_depth: {score: 84.68, n: 124, parse_failures: 0, capped: 0, shard_sha256: 73dd82e177a2d5d2afae220ba4bf20e446ea9634e687daee0402b63bf719f60c}
+      erqa: {score: 45.99, n: 287, parse_failures: 1, capped: 0, shard_sha256: 263fc339e3ea9c1e734c5084c99633bd93fd05fe922bc209390b3d3feae940b2}
+      vabench_point: {score: 42.00, n: 300, parse_failures: 0, capped: 5, shard_sha256: a9470eadf4e0ca5282eea5ba938fe48044eb688311dbb752bc90a986e6032977}
+      gsa_bench_test: {score: 61.17, n: 1463, parse_failures: 4, capped: 8, shard_sha256: 723de568ace91ce386492e5eed1a9eaab1e9cd50176b3c3f3a700b2a61deeae9}
+    rynn:
+      where2place: {score: 67.00, n: 100, parse_failures: 0, capped: 0, shard_sha256: 839f180ea19c7624fc573f7e333ae678039b137f1de7da9b9c8a6bd9ce858019}
+      blink_relative_depth: {score: 90.32, n: 124, parse_failures: 0, capped: 0, shard_sha256: a98499d3daef2390f3faa6fa5b2d09a64a50e6031c99f161b00a33f9312b2cf9}
+      vabench_point: {score: null, score_if_untrusted: 11.67, n: 300, parse_failures: 74, capped: 115, reporting_scope: fixed_budget_observation_not_native_model_ability, shard_sha256: 5e6d48d7c167429594a109f508cc853762ad74f306972be8e02d2a2ff3948ed0}
+      gsa_bench_test: {score: 55.98, n: 1463, parse_failures: 13, capped: 16, shard_sha256: 693199af3663e5476c644300fdc547408c0f9c2c6dfe48607d927980585bccd3}
+      cv_bench: {score: 87.87, n: 2638, parse_failures: 0, capped: 0, shard_sha256: f6a1b5c822b63a7608c5e685b4f882adbffafcd1dc413ed2ecdb593d73b966ad}
+      embspatial: {score: 79.78, n: 3640, parse_failures: 0, capped: 0, shard_sha256: 369f4cd972e7541959ae7ab7c569f3acf535081e386b480bd1f5ae7af5ec4a63}
+    mimo:
+      blink_relative_depth: {score: null, score_if_untrusted: 62.10, n: 124, parse_failures: 30, capped: 30, reporting_scope: fixed_128_token_observation_not_native_model_ability, shard_sha256: 80707802ce812aff2708415a1265f918b5c92148420005bfa8ed5013b6239071}
+  completion_queue: >-
+    P4 seed23 adds five missing expanded benchmarks. MiMo G alone reruns with a 3h
+    cap after the original 2h timeout (no partial G shard was written); BLINK is reused.
+    Cosmos G follows on a free explicitly scoped card; previous launches refused foreign allocations.
+  completed_cell_shard_pattern: engineering/data/table2_fill_20260914/{model}/shards/{benchmark}/shard_0.jsonl
+  completed_cell_adapter_sha256: 30f441da2d5c0d358f6953fcf69191395eb396d860cb0dcba8679ecdf3f2ad26
+  completed_cell_verification: Full unique-ID shards independently CPU-scored with unchanged score definitions before whole-model worker completion.
+  unavailable_local_weights: [Magma-8B, RoboRefer-8B-SFT]
+  no_new_full_MTD_claim: true
+  MTD_preflight_20260914:
+    command: PATH=/path/to/external_environment/env/gsa_train/bin:$PATH ANVIL_MTD=1 PREFLIGHT_ONLY=1 bash scripts/run_mopd_qualified_dlc.sh
+    exit_code: 2
+    blocker: Missing artifacts/audits/pilot_semantic_audit_composite.json; no qualified full G/S/A teacher package.
+
+published_context_expansion_20260914:
+  ranking_scope: Original published settings only; never pooled with our local rankings.
+  source_reports:
+    robobrain2_v1: {url: 'https://arxiv.org/html/2507.02029v1', tables: [2, 3]}
+    mimo_v1: {url: 'https://arxiv.org/html/2511.16518v1', tables: [2, 3]}
+    rynnbrain_v1: {url: 'https://arxiv.org/html/2602.14979v1', tables: [3]}
+  observations:
+    cosmos_reason1_7b:
+      robobrain2_v1: {cv_bench: 74.71, embspatial: 65.22, refspatial_overall: 5.44, where2place: 5.51, blink_depth: 63.71}
+      mimo_v1: {erqa_full: 39.09, vabench_point: 5.96}
+    magma_8b:
+      robobrain2_v1: {cv_bench: 60.98, embspatial: 64.59, refspatial_overall: 4.50, where2place: 10.89, blink_depth: 65.32}
+      mimo_v1: {erqa_full: 25.73}
+    mimo_embodied_7b:
+      mimo_v1: {cv_bench: 88.82, embspatial: 76.24, refspatial_overall: 48.00, where2place: 63.60, erqa_full: 46.75, robospatial_overall: 61.76, vabench_point: 46.93}
+    rynnbrain_8b:
+      rynnbrain_v1: {refspatial_overall: 59.2, erqa_full: 46.8, robospatial_overall: 73.1}
+  discrepancy_note: >-
+    MiMo v1 Table 3 lists Cosmos/VeBrain/Magma CV-Bench values 68.57/79.68/65.88,
+    which match their BLINK overall values in RoboBrain2 v1 Table 2, not its CV-Bench
+    values. Preserve the original evaluation report's CV-Bench scores, not that reuse.
+
+required_provenance:
+  - run_id
+  - canonical_method_id
+  - dataset_id
+  - split_revision
+  - manifest_path
+  - manifest_sha256
+  - checkpoint_revision
+  - checkpoint_sha256
+  - config_path
+  - config_sha256
+  - prediction_path
+  - prediction_sha256
+  - scorer_revision
+  - scorer_sha256
+  - log_path
+  - log_sha256
+  - seed
+  - aggregation_script
+  - aggregation_sha256
+
+required_result_fields:
+  - cell_id
+  - value
+  - evidence_class
+  - verification_timestamp
+
+canonical_methods:
+  base_qwen3_5_9b: null
+  qwen2_5_vl_3b: null
+  qwen2_5_vl_7b: null
+  qwen3_vl_8b_instruct: null
+  internvl3_5_8b: null
+  llava_onevision_qwen2_7b_ov_hf: null
+  robobrain2_5_8b_nv_local: null
+  roborefer_8b_sft_local: null
+  robospatialbrain_local: null
+  merged_legacy_mixture_sft: null
+  naive_eight_form_sft: null
+  tuned_balanced_sft: null
+  offline_response_kd: null
+  single_teacher_gkd: null
+  vanilla_mopd: null
+  flat_mopd_balanced_exposure: null
+  structural_first_violation_route: null
+  declared_family_route: null
+  context_aware_mopd: null
+  validity_filter_only: null
+  va_opd_style_weighting: null
+  reference_aware_uniform_mixture: null
+  reference_aware_soft_mixture: null
+  permuted_semantic_score_route: null
+  auxiliary_label_only: null
+  last_semantic_fault_route: null
+  largest_normalized_deficit_route: null
+  all_failed_stage_mixture_route: null
+  learned_router: null
+  oracle_best_one_step_improvement_route: null
+  human_semantic_oracle_route: null
+  semantic_first_fault_uniform_weights: null
+  semantic_first_fault_mtd: null
+
+headline_results:
+  public_transfer: null
+  anvil_bench: null
+  data_pipeline: null
+  teacher_qualification: null
+  route_audit: null
+  general_retention: null
+  reliability: null
+  interventions: null
+
+hard_gates:
+  all_required_files_exist: false
+  all_hashes_match: false
+  canonical_method_ids_unique: true
+  per_seed_coverage_complete: false
+  per_item_coverage_complete: false
+  no_target_state_values: false
+  no_unresolved_needcheck: false
+  figure_3_provenance_complete: false
+  figure_4_registry_generated: false
+  table_4_23_28_consistent: false
+  significance_outputs_present: false
+  equivalence_outputs_present: false
+
+# Historical, fully hash-bound diagnostics that are useful for manuscript context but
+# are not Anvil-9B headline evidence.  The paths are relative to ANVIL_WORKTREE and
+# deliberately do not expose the server's absolute filesystem layout.
+historical_diagnostics:
+  general_retention_formal_v3_base_vs_legacy_e1:
+    status: admitted_historical_diagnostic
+    claim_scope: legacy_joint_sft_not_anvil_9b
+    protocol_id: general-retention-formal-v3
+    source_manifest: artifacts/general_retention_v1/source_manifest.json
+    source_manifest_sha256: 23b54fa549e45505e4c9353e90ca8ccbb93313846899f2473c47aafc1dd275ae3
+    leakage_report: artifacts/general_retention_v1_leakage.json
+    leakage_report_sha256: 618f2adf23278fa16d0911f3291090d6da635c69b2d7c20ed46be38182d71e13
+    result_path: artifacts/dlc_runs/gr_v3_native_20260831_0211/general_retention_base_e1/results/base_vs_e1.json
+    result_sha256: 1e4a5bc42e17323f73933b4557bc58b5504ff185667d7b93a5b38b02b0353bff
+    values:
+      ai2d_test: {base: 87.92098445595855, legacy_e1: 86.52849740932642, delta_points: -1.3924870466321266, retention_percent: 98.41620626151014}
+      scienceqa_test: {base: 94.39762022805156, legacy_e1: 92.5632127912742, delta_points: -1.8344074367773605, retention_percent: 98.05674178860115}
+      textvqa_val: {base: 83.97200000000004, legacy_e1: 82.54600000000002, delta_points: -1.4260000000000205, retention_percent: 98.30184346020079}
+      macro_average: {base: 88.76353489467351, legacy_e1: 87.21257003381463, delta_points: -1.5509648608588752}
+    interpretation: >-
+      This is a separate general-retention protocol with complete UID coverage and
+      PASS leakage evidence. It documents retention of a historical E1 checkpoint;
+      it does not establish Anvil-9B performance, routing gains, or a SOTA claim.
+
+quality_diagnostics:
+  anvil_p5_source_filtered_sft_seed17:
+    status: admitted_scoped_sft_observations
+    claim_scope: two_public_spatial_cells_not_distillation_or_data_ablation
+    source_registry: ../Anvil_ICLR27/engineering/data/p5_retention_clean_run_seed17_v2/spatial_registry_20260914/result_index.json
+    source_registry_sha256: b95257d9c86bdc7b4fcb272a04d915ef0722d9be84fb3c68311c23f79c3a4ca7
+    evaluation_code_sha256: eb873c0242ad5d08290d13c2608d7c7c0dc79b8521128d6b3e77986c0a459497
+    historical_code_snapshot: ../Anvil_ICLR27/engineering/data/p5_retention_clean_run_seed17_v2/historical_eval_v7
+    completed_lineage: ../Anvil_ICLR27/engineering/data/p5_retention_clean_run_seed17_v2/completed_lineage.json
+    completed_lineage_sha256: 4302fd817712e5bf96081659930f437899168d51367d875e44f9f01d68eb569b
+    selected_adapter_sha256: d2f67cac304e0242d504155a3f89c3adfa7d821ebfcca94687b0d9209ff24c7a
+    merged_checkpoint_content_identity_sha256: 8cf895f85d70cd786ca3d49a1cd9da654966507713bd1e1103b56b9c4cbf3799
+    actual_training_rows: 185584
+    actual_training_image_paths: 113590
+    steps: 5800
+    seed: 17
+    entries:
+      embspatial:
+        value: 78.41
+        n: 3640
+        result_path: eval_results/anvil_p5_retention_clean_seed17_final_v7/embspatial.json
+        result_sha256: 6c257e7b17deab4c65726074870d7c9776cc984bce757d1b2c32df56e07676b3
+        prediction_path: save/logs/preds_anvil_p5_retention_clean_seed17_final_v7_embspatial.jsonl
+        prediction_sha256: 3bf49de321b8cf31c38c6dfbd0a0ea0c9267568e3e3fc11ad33208563376a6f7
+      refspatial_location100:
+        value: 57.88
+        n: 100
+        full_split_n: 277
+        result_path: eval_results/anvil_p5_retention_clean_seed17_final_v7/refspatial_bench.json
+        result_sha256: c4fdee87cd6e15148b69d132ef6e154f4df9f02eda2c39aca2b5c7054e74ce34
+        prediction_path: save/logs/preds_anvil_p5_retention_clean_seed17_final_v7_refspatial_bench.jsonl
+        prediction_sha256: 460e4591acd5aa94532bfed4ef8c257d641856ab4873f6cab7b2508adb46b964
+    limitations: >-
+      All five spatial outputs were recomputed from complete, unique UID predictions;
+      CV-Bench/G-only precursor metadata and Where2Place output health still withhold
+      the other cells. P5 is a fresh-base SFT diagnostic, not a matched data ablation,
+      Teacher qualification, MTD result, seed-significance result or SOTA claim.
+      Actual trainer configuration, adapter, merged weights and data/audit hashes match.
+      The historical SFT shell wrapper's exact bytes are not recovered; its current
+      hash differs from the launch receipt. This limits exact historical launcher replay,
+      not the recomputed scores of the preserved checkpoint. Full release remains pending.
+  anvil_p4_image_disjoint_sft_seed17:
+    status: admitted_scoped_sft_observations
+    claim_scope: five_public_spatial_cells_not_distillation_or_data_ablation
+    comparison_eligible_cells: [embspatial, refspatial_location100]
+    comparison_withheld_cells: [cv_bench, where2place, anvil_bench_g]
+    comparison_limitation: >-
+      The five observed scores remain preserved. Protocol/output health alone does
+      not resolve missing evaluation scene metadata. The hash-bound spatial result
+      index admits two cells for comparison; the other three are unranked diagnostics.
+    evaluation_code_sha256: eb873c0242ad5d08290d13c2608d7c7c0dc79b8521128d6b3e77986c0a459497
+    training_args_path: ../GSA_collect/output/anvil_p4_imgdis_v1_seed17/v1-20260909-161819/args.json
+    training_args_sha256: 1ce1038a5de3996b30106943635d6b4778b1aa1172a1e969b7b8b546d2596ebd
+    corpus_manifest_path: ../GSA_collect/trains/corpus_source_clean_v1/p4/manifest.json
+    corpus_manifest_sha256: fc791a49ba93557ec23120ac906cfc6605ab5ac940e4bf056553626a4f24d7a9
+    corpus_rows_sha256: 1afebc5a30ebdb98d3d9173c53d1b5e350f2b9d06d2693015ee35726516b6f82
+    training_fingerprints_binding_sha256: 976bd554a875aa1ebbffa77d51d5b5ac7bf7a041a11cc861155a62cfbe306470
+    selected_adapter_config_sha256: 9ee573b444cbed400981996dcfdc371aa58fd841e49f856b3a0b037cda732766
+    selected_adapter_sha256: 2065e47077644a6299131fbe2d0c46fed1e0a92e15e290187fbb5b7dfedfd148
+    merged_checkpoint_index_sha256: ef0d98eb06db4e5397c982a55654115d608fcfecc431469b1b09d80e03a45229
+    actual_training_rows: 263322
+    actual_training_image_paths: 159497
+    steps: 8146
+    seed: 17
+    entries:
+      cv_bench:
+        value: 88.21
+        n: 2638
+        result_path: eval_results/anvil_p4_imgdis_seed17_final_v7/cv_bench.json
+        result_sha256: ebc6205bbbefcd3135173dc5fdd0d90adc1c92e138db8dd027cc8c5456f1a5b8
+        prediction_path: save/logs/preds_anvil_p4_imgdis_seed17_final_v7_cv_bench.jsonl
+        prediction_sha256: 0e338bb91d7fc24597494cb907f6212692065b83fd3efc6870e55db244fdbf5e
+      embspatial:
+        value: 82.34
+        n: 3640
+        result_path: eval_results/anvil_p4_imgdis_seed17_final_v7/embspatial.json
+        result_sha256: 3f52c14f57913451f95597a953f26ad723b722dea501b2d582f40043e7c9f106
+        prediction_path: save/logs/preds_anvil_p4_imgdis_seed17_final_v7_embspatial.jsonl
+        prediction_sha256: cb653ad530226ccac0de612b08e5d1ca6d774cd2b001f4de25c76c0d2a78c436
+      refspatial_location100:
+        value: 54.83
+        n: 100
+        full_split_n: 277
+        full_split_value: 33.45
+        result_path: eval_results/anvil_p4_imgdis_seed17_final_v7/refspatial_bench.json
+        result_sha256: fc243af91c19340e83c8e87819f6add6c3ee77f73ecf761137880638903a21c7
+        prediction_path: save/logs/preds_anvil_p4_imgdis_seed17_final_v7_refspatial_bench.jsonl
+        prediction_sha256: ecc9e8ab0a7c3a898cbf357bef660788c466da6c2b84b2757cdf5ec1489a5177
+      where2place:
+        value: 35.34
+        n: 100
+        result_path: eval_results/anvil_p4_imgdis_seed17_final_v7/where2place.json
+        result_sha256: 10727f9b550ecc8ca6b41c6ce929693cb8ae15ebe680fc1b4c7ef07ecf38d629
+        prediction_path: save/logs/preds_anvil_p4_imgdis_seed17_final_v7_where2place.jsonl
+        prediction_sha256: 20182a16a9814ae6f176b2a97f866a8f6a093788ed9732730d3e9ccddd9320d0
+      anvil_bench_g:
+        value: 56.46
+        n: 1463
+        parse_failure_rate: 0.55
+        result_path: eval_results/anvil_p4_imgdis_seed17_final_v7/gsa_bench_test.json
+        result_sha256: f19a062c218ca213bb1892bc265cb48d4ffff8526820aa6f7c8c082a4fb5678b
+        prediction_path: save/logs/preds_anvil_p4_imgdis_seed17_final_v7_gsa_bench_test.jsonl
+        prediction_sha256: 6d41337b096b9b2ed0ee8594ff6ff93c0d8642a7cb53b14d88368cc0146f8719
+    limitations: >-
+      All five cells were produced by the frozen gsa-eval-v7 harness on complete,
+      unique-UID predictions with healthy parse/truncation rates (CV-Bench, EmbSpatial,
+      RefSpatial and Where2Place at 0.0% parse failure; the G-only precursor at 0.55%).
+      RefSpatial reports the aligned Location-100 subgroup as its primary cell and the
+      full-277 mixed split as context. This is an image-disjoint P4 SFT continuation, a
+      single-seed diagnostic; it is not a matched-budget data ablation, Teacher
+      qualification, MTD routing result, seed-significance result, or SOTA claim. The
+      final column is the 1,463-item Anvil-Bench-G precursor, not the full eight-form
+      Anvil-Bench. Training args, corpus manifest/rows, image fingerprints, the selected
+      8,146-step adapter and the merged checkpoint index all verify by SHA-256.
+  public_protocol_baselines_gsa_eval_v7:
+    status: admitted_protocol_diagnostic
+    claim_scope: local_baselines_only_not_anvil_9b
+    source_registry: experiments/result_registry.yaml
+    source_registry_sha256: b12e205e7f2763c6e0e7ef5cfc9ad6ca97030ab6891359c5e4855851d8fb9977
+    result_index: artifacts/results/result_index.json
+    result_index_sha256: 61c45ddcf5980582bec0dfe9cdaba073b24407255f5b944b2c6bbd185e58e6e8
+    evaluation_code_sha256: eb873c0242ad5d08290d13c2608d7c7c0dc79b8521128d6b3e77986c0a459497
+    entries:
+      qwen3_vl_8b_instruct:
+        result_dir: eval_results/qwen3_vl_8b_instruct_full_v7_local4_20260822_171239
+        cells:
+          cv_bench: {value: 86.69, n: 2638, result_sha256: 66ed2f2cd9761bfc9585fc09407d3ac4d14286e31722714020f8de30c31c0ed0}
+          embspatial: {value: 78.87, n: 3640, result_sha256: 47cb1d1f8e1c39af8607f0dd5f37a7c1f007a607e90988b55f10161694c1b0eb}
+          refspatial_bench: {value: 53.50, n: 277, result_sha256: 661f27417896b58a55c3909f7f895bad836985f6659bee35345192ae27ac6301}
+          where2place: {value: 34.32, n: 100, result_sha256: 6e4702ce004e2923d6af289925eadcc6c176788e4575b24ea72d14334b2359dd}
+          anvil_bench_g: {value: 55.16, n: 1463, result_sha256: 191a99148bcc3eea7bc28495fa65e7ffadf49ee0ff2214fe856175841fcf6f1f}
+      qwen3_5_9b_base:
+        result_dir: eval_results/qwen3_5_9b_base_full
+        cells:
+          cv_bench: {value: 87.15, n: 2638, result_sha256: f8e53b6f8696bc5685df8433e14ca333a33361a77f4555cf9804cfb702c2fa93}
+          embspatial: {value: 75.58, n: 3640, result_sha256: e47ecfb972dba3ade176d11ce73cf48a56921315a0c4b01e543a435beba4e4fc}
+          refspatial_bench: {value: 61.67, n: 277, result_sha256: c3561024c8df93aaa54bb6d58f972787d3d6e9c2aaace155c1fa81f493f79c67}
+          where2place: {value: 47.97, n: 100, result_sha256: d19472438f0565e145753f7ac3fe00957fae47c6dec0e4a7fa57f0d49f55214e}
+          anvil_bench_g: {value: 56.87, n: 1463, result_sha256: 5ecab5028f34af893bf34b223a1671c757cbf9d2023ddbe74e55681ba6257082}
+    interpretation: >-
+      These two rows are complete local reruns under gsa-eval-v7. The final column
+      is the 1,463-item G-only precursor, not the manuscript's full eight-form
+      Anvil-Bench. They establish baseline context only; they do not certify an
+      Anvil-9B result or a SOTA margin.
+  pilot_semantic_audit_v3:
+    status: admitted_scoped_pilot
+    claim_scope: generated_label_quality_only_non_depth_forms
+    manifest_path: data/semantic_audit_v3/manifest.json
+    manifest_sha256: b6cb238cfdca993c6540a16abb6e9b23a46c277526dfaaf70bf09ce0b6a83b9a
+    result_path: artifacts/audits/pilot_semantic_audit_v3_adjudicated.json
+    result_sha256: 953736ba2d460d58d66e396f75f442b749556efbe66efa755e24fec3364ee8f5
+    observed: >-
+      40 paired decisions per form. Action-cot, affordance, bbox, detection, dof,
+      mask, and point pass the pilot eligibility gate; depth is blocked at raw
+      agreement 0.65 with 14 unresolved cases. This is not benchmark ground truth.
+  scannet_rgb_depth_v51_formal_calibration:
+    status: admitted_heldout_calibration
+    claim_scope: depth_teacher_calibration_only
+    manifest_path: data/semantic_audit_v51_scannet_rgb_auditable_depth_formal/manifest.json
+    manifest_sha256: 6855e6285f00b307d2a230b4460af1d81da518fca77b52a428045103e2639624
+    result_path: artifacts/audits/scannet_rgb_depth_v51_formal.json
+    result_sha256: 2b0c5c3c437d7db6d331f9b65e2d4fd005eb9d745b1a3cfd749926d69cee4198
+    observed: >-
+      40 image- and scene-unique records, 40/40 paired decisions, raw agreement
+      1.0, resolved correctness 1.0, and FORMAL_PASS. This held-out calibration
+      pack is not a training set or a benchmark leaderboard result.
+  scannet_rgb_depth_v51_s_oracle_seven_model:
+    status: admitted_heldout_diagnostic
+    claim_scope: oracle_context_depth_ordering_only
+    manifest_path: data/semantic_audit_v51_scannet_rgb_auditable_depth_formal/manifest.json
+    manifest_sha256: 6855e6285f00b307d2a230b4460af1d81da518fca77b52a428045103e2639624
+    result_path: artifacts/results/scannet_v51_s_oracle_leaderboard_v2.json
+    result_sha256: 287041f8a0ab14927146f347a001c30a3a2282cedc06b5316650866bba4a9069
+    aggregation_script: eval/compile_scannet_v51_s_oracle_leaderboard_v2.py
+    aggregation_sha256: 915306c8b7816e6ed105c4d8a480b30a18c06871fd717400e33ba8ffeb3fb04b
+    protocol_id: gsa-depth-v5.1-formal40-s-oracle-seven-model-leaderboard-v2
+    observed: >-
+      Seven complete local model results share 40 scene-unique held-out items, a
+      balanced 20/20 target map, identical requests and decoding, and a common
+      scene-level paired bootstrap. The artifact reports comparability PASS,
+      LIVE_REHASH_PASS, and complete formal trust. It is evaluation-only and
+      supports neither training materialization nor routed-distillation claims.

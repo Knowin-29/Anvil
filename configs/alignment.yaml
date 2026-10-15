@@ -1,0 +1,71 @@
+# Versioned alignment design; no network calls until `anvil align run --execute`.
+contract: anvil-gen-v3
+split_seed: anvil-alignment-v1
+benchmark_fraction: 0.10
+max_tokens: 2048
+timeout_seconds: 120
+transport_retries: 1
+generation_attempts: 2
+# Author-reported pool; local reproduction requires split manifests.
+# Runtime --target-records counts training only, not the complete pool.
+expansion_target:
+  records: 5220000
+  records_scope: accepted_train
+  pool_records: 5800000
+  benchmark_records: 580000
+  source_images: 160000
+  status: pending_local_reproduction
+  production_dashboard: required
+  stratified_spot_checks: required
+  quality_to_model_test: matched_size_training
+student_base: Qwen3.5-9B
+student_checkpoint_sha256: null
+roles:
+  teacher_G: {url_env: ANVIL_G_URL, model_env: ANVIL_G_MODEL, key_env: ANVIL_G_KEY}
+  teacher_S: {url_env: ANVIL_S_URL, model_env: ANVIL_S_MODEL, key_env: ANVIL_S_KEY}
+  teacher_A: {url_env: ANVIL_A_URL, model_env: ANVIL_A_MODEL, key_env: ANVIL_A_KEY}
+  # Set this to the approved Astra deployment; actual response model is recorded.
+  # Historical Qwen3.5-397B-A17B calls must retain their original identity.
+  strong_verifier: {url_env: ANVIL_STRONG_URL, model_env: ANVIL_STRONG_MODEL, key_env: ANVIL_STRONG_KEY}
+  student_verifier:
+    enabled: false
+    url_env: ANVIL_STUDENT_URL
+    model_env: ANVIL_STUDENT_MODEL
+    key_env: ANVIL_STUDENT_KEY
+
+# Candidate capabilities based on the supplied inventory, not downloaded assets,
+# implemented source parsers, semantic validation results or licensing approval.
+# Respect official splits and shared parent scene/image identities across sources.
+source_capabilities:
+  SpatialSense: [direction, support, containment, topology, relative_depth]
+  VSR: [direction, topology, orientation, relative_depth]
+  Visual_Genome: [direction, support, containment, topology]
+  GQA: [direction, size, topology]
+  Open_Images_V7: [direction, support, topology]
+  CLEVR: [direction, distance, size]
+  CLEVRER: [motion, topology]
+  Hypersim: [relative_depth, distance, size, orientation, viewpoint]
+  NYU_Depth_V2: [relative_depth, distance, size]
+  SUN_RGB_D: [relative_depth, distance, size, orientation]
+  ScanNet_v2: [relative_depth, distance, size, viewpoint]
+  ScanNet_pp: [relative_depth, distance, size, viewpoint]
+  Taskonomy_Omnidata: [relative_depth, distance, orientation]
+  CA_1M: [relative_depth, distance, size, orientation]
+  ASE: [relative_depth, distance, viewpoint, motion]
+  HM3D: [distance, viewpoint]
+  ETH3D: [relative_depth, distance, viewpoint]
+  iBims_1: [relative_depth, distance]
+  DynamicReplica: [relative_depth, motion]
+  SAT: [direction, size, viewpoint, motion]
+  VSI_590K: [distance, direction, size, viewpoint]
+  VLM_3R_DATA: [distance, direction, viewpoint, motion]
+  RefSpatial: [direction, distance, size, viewpoint]
+  Robo2VLM_1: [direction, distance, motion]
+  RoboAfford: [direction, topology, support]
+  RoboPoint: [direction, topology]
+  FSD: [direction, topology, motion]
+  RoboVQA: [motion, support]
+  ShareRobot: [direction, motion]
+  NLVR2: [direction, size, topology]
+  EmbSpatial: [direction, relative_depth, distance]
+  WhatsUp: [direction, relative_depth]

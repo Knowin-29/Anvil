@@ -1,0 +1,16 @@
+TaskName: "gsa-sft27b-v1"
+Description: "GSA-Forge 27B teacher SFT on clean-v1 open data (resumable, 8xA800 ZeRO-3)"
+Entrypoint: "bash /path/to/Anvil/configs/volc/code/train_sft_27b.sh"
+ImageUrl: "registry.example.invalid/anvil:latest"
+Framework: "Custom"
+TaskRoleSpecs:
+  - RoleName: "worker"
+    RoleReplicas: 1
+    Flavor: "ml.hpcpni2l.28xlarge"
+ActiveDeadlineSeconds: "72h"
+Storages:
+  - Type: "Vepfs"
+    MountPath: "/path/to/workspace/foundation"
+    VepfsId: "YOUR_VEPFS_ID"
+    SubPath: "foundation"
+    ReadOnly: false

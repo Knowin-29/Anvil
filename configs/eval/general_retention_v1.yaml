@@ -1,0 +1,126 @@
+schema_version: 1
+suite:
+  id: general-retention-v1
+  purpose: paired general-capability retention after GSA post-training
+  current_state: TBD
+  target_tier: formal
+  aggregate: unweighted_macro_average_of_benchmark_percentages
+  aggregate_name: General Avg
+  no_partial_aggregate: true
+  protocol:
+    input: single_rgb_image_and_text
+    temperature: 0.0
+    thinking: false
+    subset_seed: 0
+    subset_limit: 0
+    generation_batch_size: 16
+    max_parse_failure_percent: 5.0
+    max_truncation_percent: 1.0
+    sample_scoring:
+      malformed_response: zero_end_to_end_credit
+      output_validity: one_minus_parse_failure_rate
+      truncation: report_separately
+    cell_admission:
+      withhold_only_for:
+        - run_level_protocol_mismatch
+        - missing_or_incomplete_uid_shard_coverage
+        - preregistered_output_health_gate_failure
+  admission:
+    require_exact_release_md5: true
+    require_expected_row_count: true
+    require_unique_sample_ids: true
+    require_decodable_images: true
+    require_zero_posttraining_image_overlap: true
+    require_near_duplicate_audit: true
+    require_same_prompt_parser_scorer: true
+
+# These are official evaluation TSVs as distributed by VLMEvalKit. They are not
+# currently on this machine. The similarly named JSONL files in sources_clean.yaml
+# are training conversions with no split provenance and are never substitutes.
+benchmarks:
+  - id: ai2d_test
+    display_name: AI2D_TEST
+    current_state: TBD
+    target_tier: formal
+    capability: diagram_reasoning
+    split: test
+    expected_n: 3088
+    local_path: /path/to/Anvil/data/general_retention_v1/AI2D_TEST.tsv
+    source_url: https://opencompass.openxlab.space/utils/VLMEval/AI2D_TEST.tsv
+    md5: 0f593e0d1c7df9a3d69bf1f947e71975
+    id_column: index
+    required_columns: [index, image, question, answer]
+    image_columns: [image, image_path]
+    metric: multiple_choice_accuracy
+    max_tokens: 32
+
+  - id: scienceqa_test
+    display_name: ScienceQA_TEST
+    current_state: TBD
+    target_tier: formal
+    capability: visual_science_reasoning
+    split: test_image_subset
+    expected_n: 2017
+    local_path: /path/to/Anvil/data/general_retention_v1/ScienceQA_TEST.tsv
+    source_url: https://opencompass.openxlab.space/utils/benchmarks/ScienceQA/ScienceQA_TEST.tsv
+    md5: e42e9e00f9c59a80d8a5db35bc32b71f
+    id_column: index
+    required_columns: [index, image, question, answer]
+    image_columns: [image, image_path]
+    metric: multiple_choice_accuracy
+    max_tokens: 32
+
+  - id: textvqa_val
+    display_name: TextVQA_VAL
+    current_state: TBD
+    target_tier: formal
+    capability: scene_text_reading
+    split: validation
+    expected_n: 5000
+    local_path: /path/to/Anvil/data/general_retention_v1/TextVQA_VAL.tsv
+    source_url: https://opencompass.openxlab.space/utils/VLMEval/TextVQA_VAL.tsv
+    md5: b233b31f551bbf4056f2f955da3a92cd
+    id_column: index
+    required_columns: [index, image, question, answer]
+    image_columns: [image, image_path]
+    metric: official_vqa_soft_accuracy
+    max_tokens: 64
+
+models:
+  - id: qwen3_5_9b_base
+    evidence_role: frozen_base_anchor
+    current_state: formal
+    required_for_initial_release: true
+    path: /path/to/environment/hf_models/Qwen/Qwen3.5-9B
+  - id: gsa_joint_sft_e1
+    evidence_role: legacy_posttraining_diagnostic
+    current_state: diagnostic
+    required_for_initial_release: true
+    path: /path/to/Anvil/output/merged_e1
+  - id: g_family_v3_seed42_ckpt53
+    evidence_role: one_seed_small_data_diagnostic
+    current_state: diagnostic
+    required_for_initial_release: false
+    path: /path/to/Anvil/output/g_family_v3_seed42_ckpt53_merged
+
+posttraining_corpora:
+  - id: e1_train
+    path: /path/to/Anvil/trains/gsa_bench/train_shuf.jsonl
+    image_field: images
+    expected_rows: 333396
+    sha256: 4627f5500862a316434f1c2f22f541f763c0a5556bfadd5c607451811c8ce2d3
+
+formal_runner:
+  current_state: TBD
+  required_path: /path/to/Anvil/scripts/run_general_retention_dp.sh
+  blocker: No frozen same-engine TSV loader and official TextVQA scorer exists yet.
+
+leakage_audit:
+  current_state: TBD
+  required_path: /path/to/Anvil/artifacts/general_retention_v1_leakage.json
+  required_fields:
+    suite_id: general-retention-v1
+    posttraining_corpus_sha256: 4627f5500862a316434f1c2f22f541f763c0a5556bfadd5c607451811c8ce2d3
+    exact_image_collisions: 0
+    near_duplicate_image_collisions_unresolved: 0
+    image_question_collisions: 0

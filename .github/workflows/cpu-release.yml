@@ -1,0 +1,26 @@
+name: CPU release preflight
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  contracts-and-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install CPU-only contract dependencies
+        run: python -m pip install -e '.[source]' pytest
+      - name: Validate selected contracts and release guards
+        run: python -m pytest tests/test_alignment.py tests/test_release_export.py tests/test_model_release.py tests/test_source_production.py tests/test_prism_native.py tests/test_alfred_native.py tests/test_source_native_regions.py -q
+      - name: Inspect current tracked source for private release inputs
+        run: python tools/export_anvil_release.py --check-only

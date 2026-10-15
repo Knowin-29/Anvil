@@ -1,0 +1,153 @@
+{
+  "version": "2026-10-15",
+  "raw_images_distributed": false,
+  "datasets": [
+    {
+      "id": "anvil-source-native-v4",
+      "records": 5800000,
+      "unique_decoded_images": 160000,
+      "train_records": 5220000,
+      "benchmark_records": 580000,
+      "train_images": 142616,
+      "benchmark_images": 17384,
+      "native_forms": 11,
+      "qa_train_records_in_total": 464000,
+      "selection_sha256": "231ed5715b9f4991fec533546862bfb471e700e6d28b3de66ccb52680397c980",
+      "state": "complete_local_portable_package_independently_verified",
+      "portable_manifest_sha256": "99b1ee19c842208dbaaaa1eef1ef4314c3d9c2868ea3e9216b0654b4af43a08b",
+      "portable_verification_sha256": "8481633864a57639686fcce46ccbada1b774b79ed8f45e5972532085900ed242",
+      "encoded_image_files": 160001,
+      "inventory_files": 153,
+      "inventory_bytes": 28069628956,
+      "verification_scope": "Every archived image decoded and hash-checked; every compressed record checked against split, form and image inventory; not model or human semantic adjudication",
+      "access": "Complete portable package verified in private Hub staging; licensed annotation subset publicly downloadable; original images not public",
+      "public_annotation_release": {
+        "repo_id": "Knowin-29/Anvil-Ben",
+        "revision": "91dd25a5723447e0c1e47ed9057fc187305e1ac9",
+        "annotation_records": 5766133,
+        "heldout_records": 572299,
+        "train_records": 5193834,
+        "qa_replay_in_train": 464000,
+        "original_images": 0,
+        "remaining_private_records": 33867,
+        "full_aggregate_public": false,
+        "sources": ["CLEVR", "coco_train2017", "pixmo_points"],
+        "terms": "CC-BY-4.0 for CLEVR/COCO annotations; ODC-BY-1.0 for PixMo-derived database; image rights separate"
+      },
+      "purpose": "Complete source-native specialist/joint training and matched evaluation inputs; not a completed MOPD result",
+      "human_or_strong_model_adjudication_claimed": false,
+      "source_rights_inventory": {
+        "status": "coco_image_license_ids_bound_creator_attribution_and_other_media_review_pending",
+        "summary_sha256": "ef5254139ca152b3eb5d4f21e2dd2785892dca5e705e7d2538e3e1aec910b7ca",
+        "coco_image_licenses_sha256": "bbc197d195cdf540e4dba452d073b538c3c3036f232472fce9ea6116afeeab88",
+        "coco_image_files": 81897,
+        "coco_multi_id_images": 11,
+        "coco_images_with_any_noncommercial_entry": 56574,
+        "image_files_by_source": {
+          "coco_train2017": 81897,
+          "CLEVR": 46400,
+          "pixmo_points": 20303,
+          "ALFRED": 5240,
+          "ShareRobot": 4994,
+          "PRISM": 979,
+          "ShareRobot-Bench": 188
+        },
+        "creator_attribution_complete": false,
+        "redistribution_review_complete": false,
+        "images_or_targets_changed": false
+      },
+      "public_release_eligible": false
+    },
+    {
+      "id": "anvil-p4",
+      "records": 263322,
+      "images": 159497,
+      "G": 121806,
+      "S": 24570,
+      "A": 45085,
+      "QA": 71861,
+      "access": "Owner-managed corpus; source licenses apply; no public download yet",
+      "purpose": "Source-clean SFT continuation"
+    },
+    {
+      "id": "anvil-bench-g",
+      "records": 1463,
+      "access": "Owner-managed independent grounding targets",
+      "purpose": "Held-out grounding benchmark"
+    },
+    {
+      "id": "linked-gs",
+      "records": 2463,
+      "scenes": 447,
+      "train": 2011,
+      "evaluation": 282,
+      "remaining_dev": 170,
+      "access": "Source images require ScanNet access; frozen text targets and predictions included",
+      "path": "results/linked_sensor_training_v1",
+      "purpose": "Source-linked two-stage study"
+    },
+    {
+      "id": "quality-gs",
+      "initial_candidates": 2011,
+      "initial_failures": 885,
+      "feedback_retained": 1237,
+      "matched_training_records": 1137,
+      "path": "results/quality_gs_20260916",
+      "purpose": "Generation, repair and matched-size study"
+    },
+    {
+      "id": "coco-native-mask",
+      "records": 2048,
+      "train": 1060,
+      "test": 988,
+      "access": "Obtain COCO train2017 images and annotations from the provider",
+      "purpose": "Source-native polygon transfer"
+    },
+    {
+      "id": "alfred-plan",
+      "judgments": 1012,
+      "trajectories": 506,
+      "scenes": 92,
+      "access": "Obtain ALFRED source data from the provider",
+      "purpose": "Static plan verification, not robot execution"
+    }
+  ],
+  "source_terms_evidence": {
+    "checked_at": "2026-10-12",
+    "scope": "Provider declarations only; not a blanket media redistribution or commercial-use approval",
+    "coco_train2017": {
+      "url": "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/5e1c4da72464b1c6f068df0c02c91e3000ea62c4/dataset/termsofuse.htm",
+      "sha256": "bd019f88ee44c29b2f19c5b99888cf5bc2e7c16f57b6e52af8ed3a60462e8bdd",
+      "declaration": "Annotations CC-BY-4.0; image rights separate"
+    },
+    "pixmo_points": {
+      "url": "https://huggingface.co/datasets/allenai/pixmo-points/raw/2b5c6931e790e00ae00d4a2857e5f95d88f09a66/README.md",
+      "sha256": "d27942e5b8edd178371b23f8ef3586a183bb3a47557576844401c51179ebfc17",
+      "declaration": "ODC-BY-1.0 database; linked-image rights separate"
+    },
+    "CLEVR": {
+      "url": "https://cs.stanford.edu/people/jcjohns/clevr/",
+      "sha256": "242e393a82b537b199e0488c312b92e00e70bf9c25488b6ea079db6d794aeabb",
+      "declaration": "All data CC-BY-4.0; attribution and modification notice required"
+    },
+    "PRISM": {
+      "url": "https://huggingface.co/datasets/allenai/PRISM/raw/34cfb7f6d98e019a2251cdc40c8079fbf0cccba1/README.md",
+      "sha256": "7a980dbf658395550e73405006c5bbda7ae3b6040fd715b783e8be71fcf98ce8",
+      "declaration": "MIT dataset card; underlying ShapeNet-Sem/ACRONYM assets separately identified"
+    },
+    "ALFRED": {
+      "url": "https://github.com/askforalfred/alfred/blob/f91f4c0c96c7a29f33d0557f86b0a21035379b3b/LICENSE",
+      "declaration": "MIT repository license; externally hosted media scope not established by this review"
+    },
+    "ShareRobot": {
+      "url": "https://huggingface.co/datasets/BAAI/ShareRobot/raw/3266d92902b038ce40e7fb8aac5bfd9287eb3e45/README.md",
+      "sha256": "f0d974f259c83fb4e1c59d53b5a1282d6163158690d42f9936c5c18d4c3506ec",
+      "declaration": "No aggregate license declared in checked card; multiple upstream datasets"
+    },
+    "ShareRobot-Bench": {
+      "url": "https://huggingface.co/datasets/BAAI/ShareRobot-Bench/raw/68e9c15600f85f601b9cf492e4d994b50ed4cd4d/README.md",
+      "sha256": "6f3b30074114e42ff4dcc4ed51457110e8d67e82066eee82c9574b387ec70c1d",
+      "declaration": "Apache-2.0 dataset card; component-image chain still to review"
+    }
+  }
+}

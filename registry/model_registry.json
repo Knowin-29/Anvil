@@ -1,0 +1,21 @@
+{
+  "artifact_role": "historical_mechanism_control",
+  "eligible_for_final_model_release": false,
+  "final_release": {
+    "status": "checkpoint_and_evaluation_binding_missing",
+    "checkpoint": null,
+    "weights_sha256": null,
+    "evaluation_manifest": null,
+    "uploaded": false
+  },
+  "base_repository": "Qwen/Qwen3.5-9B",
+  "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "student": "registry/anvil-9b",
+  "weights_sha256": "557bd1f75ba40be36b78f0bb91df76b972e049d53858ba9f079f72cabc6c0d64",
+  "seed": 17,
+  "updates": 256,
+  "selection": "Prespecified semantic-weighted arm, seed 17, terminal checkpoint; not chosen by evaluation score.",
+  "scope": "G-to-S routed continuation; Action verification is a separate experiment.",
+  "evidence_transform": "Server path prefixes are replaced. Per-item targets, responses and measured numbers are unchanged. The file inventory stores original and distributed checksums.",
+  "gpu_reproduction_verified": false
+}

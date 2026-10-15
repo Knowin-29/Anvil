@@ -1,0 +1,16 @@
+TaskName: "gsa-teachers-v1"
+Description: "GSA-Forge per-dimension G/S/A teachers (resumable, 8xA800)"
+Entrypoint: "bash /path/to/Anvil/configs/volc/code/train_teachers.sh"
+ImageUrl: "registry.example.invalid/anvil:latest"
+Framework: "Custom"
+TaskRoleSpecs:
+  - RoleName: "worker"
+    RoleReplicas: 1
+    Flavor: "ml.hpcpni2l.28xlarge"
+ActiveDeadlineSeconds: "72h"
+Storages:
+  - Type: "Vepfs"
+    MountPath: "/path/to/workspace/foundation"
+    VepfsId: "YOUR_VEPFS_ID"
+    SubPath: "foundation"
+    ReadOnly: false
