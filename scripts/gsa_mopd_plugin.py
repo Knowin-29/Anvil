@@ -145,21 +145,29 @@ class GSARoutedMOPDTrainer(GKDTrainer):
 
     def _prepare_batch_inputs(self, inputs, encode_prompt_only=False):
         from collections.abc import Mapping as BatchMapping
+        import inspect
+        parent_encoder = super()._prepare_batch_inputs
+        legacy_parent = "encode_prompt_only" in inspect.signature(parent_encoder).parameters
         if isinstance(inputs, BatchMapping):
             if inputs.get("gsa_contract_version") == "anvil-source-native-train-v1":
                 raise ValueError("Native MTD requires a list of source records, not a single mapping")
             native_batch = False
         else:
+            # Newer Swift GKD passes typed samples to this hook. Keep its
+            # micro-batch handling; Anvil's custom training_step passes raw rows.
+            if inputs and not isinstance(inputs[0], BatchMapping):
+                return parent_encoder(inputs)
             native_batch = any(row.get("gsa_contract_version") == "anvil-source-native-train-v1" for row in inputs)
+        limit = getattr(getattr(self, "template", None), "max_length", None)
         if native_batch:
             # Swift's CLI "delete" becomes template "raise". Anvil's custom
             # training_step calls this encoder directly, without GKD resampling.
             # Never silently clip native prompts or supervised references.
             if getattr(self.template, "truncation_strategy", None) != "raise":
                 raise ValueError("Native MTD requires non-truncating template encoding (CLI --truncation_strategy delete)")
-            limit = getattr(self.template, "max_length", None)
             if type(limit) is not int or limit <= 0:
                 raise ValueError("Native MTD requires a finite positive template context limit")
+        if native_batch or (not isinstance(inputs, BatchMapping) and not legacy_parent):
             # Upstream GKD calls _template_context without max_length, which
             # temporarily clears the configured limit. Preserve the same SDK
             # encoding/collation path but pass the native limit explicitly.
@@ -176,8 +184,10 @@ class GSARoutedMOPDTrainer(GKDTrainer):
                         messages[-1]["content"] = None
                     rows.append(self.template.encode(data, return_length=True))
                 encoded = to_device(self.template.data_collator(rows), self.model.device)
+        elif isinstance(inputs, BatchMapping) and not legacy_parent:
+            encoded = dict(inputs)
         else:
-            encoded = super()._prepare_batch_inputs(inputs, encode_prompt_only=encode_prompt_only)
+            encoded = parent_encoder(inputs, encode_prompt_only=encode_prompt_only)
         # Keep routing/lineage on the raw rows. Swift's remove_unused_columns=False
         # otherwise forwards it through the template into model.generate/forward.
         return {key: value for key, value in encoded.items()
@@ -282,7 +292,10 @@ class AnvilOnPolicyTrainer(GSARoutedMOPDTrainer):
         reference = self._anvil_reference
         reference_plan = self.anvil_router.plan(self._anvil_rows, reference, tokenizer,
                                                  reference=True, qualified=self.anvil_qualified,
-                                                 reference_prefix=getattr(self.template, "response_prefix", "") or "")
+                                                 # response_prefix can be None while Swift
+                                                 # inserts template_meta.non_thinking_prefix.
+                                                 # Resolve it by the same method as encoding.
+                                                 reference_prefix=self.template._get_response_prefix() or "")
         plan = self.anvil_router.plan(self._anvil_rows, inputs, tokenizer,
                                       reference=False, qualified=self.anvil_qualified)
         if not torch.equal(plan.token_ids, inputs["input_ids"][:, 1:]):

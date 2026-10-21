@@ -578,7 +578,8 @@ def _cpu_anvil_trainer(student):
     trainer.anvil_router = ContractV2BatchRouter(_exact_fixture_score)
     trainer.anvil_qualified = {family: True for family in ("G", "S", "A")}
     trainer.processing_class = CharacterTokenizer()
-    trainer.template = SimpleNamespace(forward_context=lambda *args: nullcontext())
+    trainer.template = SimpleNamespace(
+        forward_context=lambda *args: nullcontext(), _get_response_prefix=lambda: "")
     trainer.args = SimpleNamespace(offload_teacher_model=False, gradient_checkpointing_kwargs={})
     trainer.anvil_options = {"topk": 8, "beta": .5, "structural_alpha": 2., "temperature": .9, "chunk_size": 16}
     trainer.anvil_sft_weight = trainer.anvil_mtd_weight = 1.
@@ -855,3 +856,23 @@ def test_sampler_requires_every_family_and_one_global_batch():
 def test_dataset_families_rejects_missing_metadata():
     with pytest.raises(ValueError, match="invalid or missing"):
         dataset_families([{"gsa_family": "G"}, {}])
+
+
+def test_native_reference_uses_resolved_nonthinking_prefix():
+    from trains.mopd.anvil_runtime import AnvilBatchRouter
+    torch.set_num_threads(1)
+    student = TinyTokenModel()
+    trainer = _cpu_anvil_trainer(student)
+    prefix = "<think>\n\n</think>\n\n"
+    trainer.template.response_prefix = None
+    trainer.template._get_response_prefix = lambda: prefix
+    trainer.anvil_router = AnvilBatchRouter()
+    row = _native_fixture("point")
+    reference = row["messages"][-1]["content"]
+    trainer._anvil_rows = [row]
+    trainer._anvil_reference = _encode_responses([prefix + reference])
+    loss = trainer.compute_loss(student, _encode_responses([reference]))
+    assert torch.isfinite(loss)
+    assert trainer._anvil_last_budget["reference_loss_positions"] == len(reference)
+    loss.backward()
+    assert torch.isfinite(student.weight.grad).all()

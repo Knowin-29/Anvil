@@ -30,8 +30,9 @@ provides 5,766,133 annotations from the frozen 5.8M package, including 572,299
 held-out spatial records. The remaining 33,867 records and original image
 bundle are not public. Download metadata and source-specific terms are indexed
 in `registry/datasets.json`; the subset is not the full eleven-form benchmark.
-Final-model upload is paused until complete matched evaluation and checkpoint
-binding. Existing private SFT preparation backups are not public final weights.
+Full-corpus specialist and joint SFT repair is in progress. Teacher qualification,
+on-policy MOPD, final export and remote weight verification remain outstanding.
+Existing private SFT preparation backups are not public final weights.
 
 This release also preserves legacy mapping-batch metadata filtering in the MOPD
 plugin while retaining strict native-row encoding budgets. The selected CPU
@@ -50,6 +51,21 @@ not its unused older table. These are manuscript-reported values, not new infere
 The model registries explicitly mark historical adapters as ineligible for
 final-model release. Their hashes remain available for reproducing the separate
 mechanism studies; they do not identify the final main-table model.
+
+## Maintained version
+
+`main` is the maintained source branch. The older GSA development trees and
+private Anvil history are provenance for past experiments, not newer releases.
+Use this repository for new development; keep model/data/run artifacts outside
+the source checkout and bind them by their recorded manifests and hashes.
+
+The October 21 maintenance update uses Swift's resolved response prefix when
+validating native references, including non-thinking Qwen templates whose raw
+`response_prefix` attribute is unset, and preserves raw-row encoding when the
+newer Swift GKD hook expects typed micro-batches. It also adds numerically checked chunked
+head objective helpers. Those helpers are not yet connected to the MOPD trainer;
+their unit tests do not establish full-scale MOPD memory feasibility or training
+completion. Full-scale SFT repair does not by itself qualify teachers.
 
 ## Native supervision
 

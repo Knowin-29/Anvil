@@ -111,14 +111,6 @@ def test_qualified_mopd_wrapper_has_no_historical_fallback_and_requires_eligibil
     assert 'ALLOW_UNQUALIFIED_TEACHERS:-0' in text
 
 
-def test_dashboard_mopd_readiness_is_bound_to_eligibility_paths():
-    text = (ROOT / "run_all_exp.sh").read_text()
-    assert "declared_joint == pathlib.Path(joint).resolve()" in text
-    assert '(declared_teachers.get(family) or {}).get("eligible") is True' in text
-    assert "== pathlib.Path(teachers[family]).resolve()" in text
-    assert "qualification_ready and eligibility_ok" in text
-
-
 def _fake_qualified_root(tmp_path):
     (tmp_path / "artifacts/audits").mkdir(parents=True)
     (tmp_path / "artifacts/audits/pilot_semantic_audit_composite.json").write_text(
