@@ -1,0 +1,42 @@
+{
+  "state": "verified_matched4096_exposures",
+  "records": 4096,
+  "source_exposures": {
+    "general_qa": 1024,
+    "native_distillation": 2048,
+    "spatial_reference": 1024
+  },
+  "forms": {
+    "QA": 1024,
+    "bbox": 209,
+    "mask": 206,
+    "point": 1273,
+    "depth_order": 5,
+    "direction": 331,
+    "action_cot": 145,
+    "dof": 178,
+    "metric_comparison": 330,
+    "affordance": 349,
+    "detection": 24,
+    "relation_graph": 22
+  },
+  "unique_by_category": {
+    "general_qa": 1024,
+    "native_distillation": 2048,
+    "spatial_reference": 1024
+  },
+  "matched_source_rows_per_update": true,
+  "stochastic_rollouts_identical_claimed": false,
+  "topology_note": "Sources and update schedule match16GPU formal; RNG and native token normalization groups differ on8GPUs.",
+  "exposure_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank0.jsonl": "4ff58a764175f6f302a081c43d218c918290ab213ec456057fd79b38c9bdfa4f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank1.jsonl": "2b54a63e67eaaf72bc074def20ad95e8a5b35af12dd81013c663b6cae76f35a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank2.jsonl": "6284a0eae359be09816396c6012025ae06d605d2ff600118842bbb327f59ce8d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank3.jsonl": "db75ddc5449200cfd9549d1466b44b92ac98a3a6fe1c67f1b227ac767e0b6a33",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank4.jsonl": "91ce121714904083efd1576fc47c94299e4071f257b20af5709f40e783d27660",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank5.jsonl": "05fc04575dfa3d9f115c292323e165d57b00891b8f4c1a59c3e712c1fb78b832",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank6.jsonl": "bebe796d92a89aef75a64b6dec5efa521314e02fa8203744876f143003e06aa1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/no_mtd/exposure_rank7.jsonl": "d512aeb1c74d2df4ef2ff398a996dbea2ccef542d49709a3b9459af07b4ad7d2"
+  },
+  "final_mopd": false
+}

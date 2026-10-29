@@ -26,7 +26,7 @@ def main():
     sources = {Path(item['source']) for item in manifest['files'].values()}
     sources |= set((C / 'objective_controls_20261029').glob('*.py'))
     sources |= {C / 'native_mopd_v7.py', C / 'review_prism_learning_candidates.py',
-                C / 'refresh_source_snapshot.py'}
+                C / 'review_objective_controls.py', C / 'refresh_source_snapshot.py'}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -46,6 +46,15 @@ def main():
         }.items():
             if path.exists():
                 extra['objective_' + arm + '_' + kind + '.json'] = path
+        for kind, path in {
+            'public_report':C / 'objective_controls_20261029/evaluation' / arm / 'report.json',
+            'exposure_audit':C / 'objective_controls_20261029/runs' / arm / 'exposure_audit.json'
+        }.items():
+            if path.exists():
+                extra['objective_' + arm + '_' + kind + '.json'] = path
+    comparison = C / 'objective_controls_20261029/comparison.json'
+    if comparison.exists():
+        extra['objective_controls_comparison.json'] = comparison
     for name, source in extra.items():
         manifest['evidence'][name] = copy(source, DEST / 'evidence' / name)
     for name, item in manifest['evidence'].items():
