@@ -1,5 +1,5 @@
 {
-  "state": "partial_waiting_controls",
+  "state": "complete_requires_training_decision",
   "initial_public": {
     "cv_bench": 87.07,
     "embspatial": 79.51,
@@ -21,6 +21,69 @@
   },
   "formal128_macro": 68.61428571428571,
   "results": {
+    "low_native_sft": {
+      "loss_weights": {
+        "native_sft_weight": 0.1,
+        "mtd_weight": 1.0
+      },
+      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/low_native_sft/checkpoint-128",
+      "adapter_sha256": "ac936255290acc998f4bd06c4b11dd5fdffa43d62d537445277a4c64ad43ed30",
+      "public": {
+        "cv_bench": 86.92,
+        "embspatial": 79.15,
+        "refspatial_bench": 52.62,
+        "where2place": 62.52,
+        "blink_relative_depth": 86.29,
+        "erqa": 48.78,
+        "vabench_point": 68.67
+      },
+      "macro": 69.27857142857142,
+      "general": {
+        "ai2d_test": {
+          "n": 3088,
+          "score": 87.92098445595855,
+          "parse_failures": 0
+        },
+        "scienceqa_test": {
+          "n": 2017,
+          "score": 98.21517104610808,
+          "parse_failures": 0
+        },
+        "textvqa_val": {
+          "n": 5000,
+          "score": 86.97400000000049,
+          "parse_failures": 0
+        }
+      },
+      "minus_initial": {
+        "cv_bench": -0.14999999999999147,
+        "embspatial": -0.35999999999999943,
+        "refspatial_bench": -1.4000000000000057,
+        "where2place": -1.019999999999996,
+        "blink_relative_depth": 0.0,
+        "erqa": 0.0,
+        "vabench_point": -2.0
+      },
+      "minus_formal128": {
+        "cv_bench": 0.10999999999999943,
+        "embspatial": 0.060000000000002274,
+        "refspatial_bench": 2.039999999999999,
+        "where2place": 2.2900000000000063,
+        "blink_relative_depth": 0.8100000000000023,
+        "erqa": 0.0,
+        "vabench_point": -0.6599999999999966
+      },
+      "source_exposures": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      },
+      "unique_by_category": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      }
+    },
     "no_mtd": {
       "loss_weights": {
         "native_sft_weight": 1.0,
@@ -85,11 +148,10 @@
       }
     }
   },
-  "pending": [
-    "low_native_sft"
-  ],
+  "pending": [],
   "observations": [
-    "Zero-MTD supervision also changes the public macro by -1.300000pp. Distillation is not required for this observed regression; this does not exonerate teachers or prove one sole cause."
+    "Zero-MTD supervision also changes the public macro by -1.300000pp. Distillation is not required for this observed regression; this does not exonerate teachers or prove one sole cause.",
+    "Low-native-reference-SFT plus positive MTD changes public macro by -0.704286pp versus initial. Inspect all seven task scores and formal512 before choosing a new training run."
   ],
   "evidence": {
     "initial": {
@@ -103,6 +165,18 @@
     "experiment": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/experiment.json",
       "sha256": "902eea949a5663c1d6e9a09545e59de778a4a142931de4b1a37dc506473b7da9"
+    },
+    "low_native_sft": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/evaluation/low_native_sft/report.json",
+      "sha256": "522426c9455a2e14d69d8699fe7fdb1cd40060f55ac1203f069a96edb5a5da33"
+    },
+    "low_native_sft_exposures": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/low_native_sft/exposure_audit.json",
+      "sha256": "d94a0b924ed331b2cae40cb58ddbe04cd7d118acb4bd0852678be60a3e450796"
+    },
+    "low_native_sft_gpu_resume": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runtime/low_native_sft/runtime_verified.json",
+      "sha256": "82fd0e925cbd76a469bae37f65cc0f0a8047dea7eec3e15f170a49375e7664ad"
     },
     "no_mtd": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/evaluation/no_mtd/report.json",
@@ -130,5 +204,5 @@
   "final_mopd": false,
   "final_quality_accepted": false,
   "weights_uploaded": false,
-  "completed": 1793253729.5797691
+  "completed": 1793255764.4333115
 }

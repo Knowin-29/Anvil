@@ -1,0 +1,9 @@
+{
+  "response": {
+    "Id": "t-20261029144143-vllzd"
+  },
+  "plan_sha256": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9",
+  "config_sha256": "41a1063b9abda22a771ee853addb5067df9c9330d48cebb7ab9879644314e7c7",
+  "gpus": 8,
+  "submitted": 1793256105.7567842
+}

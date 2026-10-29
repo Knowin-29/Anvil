@@ -42,6 +42,15 @@ optimizer1→3 resume check before training, then unchanged seven-public and
 10,105-example general evaluation. Current task receipts are archived;
 source/CPU checks alone do not establish GPU success or quality improvement.
 
+Both phase1 controls have now completed full public/general evaluation. Native
+SFT0.1/MTD1 reaches69.278571 public macro; SFT1/MTD0 reaches68.682857. Both remain
+below the initial69.982857, while general performance remains stable. The lower
+native SFT weight mitigates part of the regression; no sole cause is established.
+Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
+student, teachers, data and schedule. The first reserves eight public-evaluation
+slots; the second waits for formal512 public success before using spare capacity.
+All controls remain excluded from final delivery.
+
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
 than the train-only category prior. It has not replaced the live formal teacher.

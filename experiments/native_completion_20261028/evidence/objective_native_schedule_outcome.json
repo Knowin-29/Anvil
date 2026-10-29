@@ -1,0 +1,9 @@
+{
+  "stage": "not_submitted_public_diagnostic_condition_unmet",
+  "macro": 69.27857142857142,
+  "minimum": 69.98285714285716,
+  "quality_rejection_inferred": false,
+  "note": "Budget rule for an additional native diagnostic, not final model admission.",
+  "updated": 1793255633.9080236,
+  "pid": 2272013
+}

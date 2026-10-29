@@ -150,6 +150,25 @@ def snapshot():
         value=json.loads(comparison.read_text())
         result['objective_control_comparison']=dict(path=str(comparison),sha256=sha(comparison),
             state=value['state'],pending=value['pending'],observations=value['observations'])
+    phase2=ROOT/'objective_controls_phase2_20261029'
+    result['objective_controls_phase2']={}
+    for arm in ['no_native_sft','low_native_sft_no_mtd']:
+        item=dict(final_mopd=False,final_quality_accepted=False)
+        for name,path in {
+            'submission':phase2/'submissions'/arm/'submission.json',
+            'node':phase2/'runs'/arm/'node_status.json','training':phase2/'runs'/arm/'status.json',
+            'runtime':phase2/'runtime'/arm/'runtime_verified.json','failure':phase2/'runs'/arm/'failure.json'
+        }.items():
+            if path.exists():item[name]=json.loads(path.read_text())
+        report=phase2/'evaluation'/arm/'report.json'
+        if report.exists():
+            value=json.loads(report.read_text())
+            item['report']=dict(path=str(report),sha256=sha(report),macro=value['paper_aligned_macro'],
+                checkpoint_minus_initial=value['checkpoint_minus_initial_percentage_points'])
+        result['objective_controls_phase2'][arm]=item
+    for name in ['controller_status.json','controller_failure.json','comparison.json']:
+        path=phase2/name
+        if path.exists():result['objective_phase2_'+name.removesuffix('.json')]=json.loads(path.read_text())
     first=ROOT/'formal_mopd/runs/candidate1_20261029/evaluation/128/report.json'
     if first.exists():
         value=json.loads(first.read_text())
@@ -275,6 +294,14 @@ def main():
                 if reports_ready and not comparison_done and not (controls/'comparison_failure.json').exists():
                     proc=subprocess.run(['python3',str(ROOT/'review_objective_controls.py')],capture_output=True,text=True,timeout=300)
                     if proc.returncode:save(controls/'comparison_failure.json',dict(error=proc.stderr[-4000:],time=time.time()))
+                phase2=ROOT/'objective_controls_phase2_20261029'
+                reports_ready=all((phase2/'evaluation'/arm/'report.json').exists()
+                                  for arm in ['no_native_sft','low_native_sft_no_mtd'])
+                comparison=phase2/'comparison.json'
+                comparison_done=comparison.exists() and json.loads(comparison.read_text())['state']=='complete_requires_training_decision'
+                if reports_ready and not comparison_done and not (phase2/'comparison_failure.json').exists():
+                    proc=subprocess.run(['python3',str(ROOT/'review_phase2_objectives.py')],capture_output=True,text=True,timeout=300)
+                    if proc.returncode:save(phase2/'comparison_failure.json',dict(error=proc.stderr[-4000:],time=time.time()))
                 if result['evaluation']['all_complete'] and not (ROOT/'qualification_summary.json').exists():
                     aggregate()
                 priority=ROOT/'diagnosis_32gpu'

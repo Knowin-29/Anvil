@@ -1,0 +1,143 @@
+{
+  "state": "actual_auxiliary_replay_overlap_audit",
+  "formal_committed_step": 427,
+  "scope": "Only five supplemental QA/spatial reference pools; not original full SFT/native corpus coverage.",
+  "source_groups": {
+    "ai2d": {
+      "available": 11774,
+      "unique_seen_by_initial_student": 5464,
+      "mopd_prefix_exposures": 1152,
+      "unique_in_mopd_prefix": 1152,
+      "new_unique_vs_initial": 0,
+      "exposures_repeating_initial_records": 1152,
+      "unique_seen_in_combined_lineage": 5464,
+      "remaining_unseen_in_available_pool": 6310
+    },
+    "scienceqa": {
+      "available": 5944,
+      "unique_seen_by_initial_student": 4940,
+      "mopd_prefix_exposures": 1136,
+      "unique_in_mopd_prefix": 1136,
+      "new_unique_vs_initial": 0,
+      "exposures_repeating_initial_records": 1136,
+      "unique_seen_in_combined_lineage": 4940,
+      "remaining_unseen_in_available_pool": 1004
+    },
+    "textvqa": {
+      "available": 32845,
+      "unique_seen_by_initial_student": 5456,
+      "mopd_prefix_exposures": 1136,
+      "unique_in_mopd_prefix": 1136,
+      "new_unique_vs_initial": 0,
+      "exposures_repeating_initial_records": 1136,
+      "unique_seen_in_combined_lineage": 5456,
+      "remaining_unseen_in_available_pool": 27389
+    },
+    "fsd_goal": {
+      "available": 29448,
+      "unique_seen_by_initial_student": 12288,
+      "mopd_prefix_exposures": 2560,
+      "unique_in_mopd_prefix": 2560,
+      "new_unique_vs_initial": 2560,
+      "exposures_repeating_initial_records": 0,
+      "unique_seen_in_combined_lineage": 14848,
+      "remaining_unseen_in_available_pool": 14600
+    },
+    "refspatial_vacancy": {
+      "available": 3384,
+      "unique_seen_by_initial_student": 3384,
+      "mopd_prefix_exposures": 848,
+      "unique_in_mopd_prefix": 848,
+      "new_unique_vs_initial": 0,
+      "exposures_repeating_initial_records": 848,
+      "unique_seen_in_combined_lineage": 3384,
+      "remaining_unseen_in_available_pool": 0
+    }
+  },
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_repairs/joint_broad/exposure_rank0.jsonl": "d19d9546e1264777612a39f5396cce74ad61b2f6a9def8bbe6e128b65351f0f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_repairs/joint_broad/exposure_rank1.jsonl": "76f117725a188109020d8006373f65882cca11e6f5cdefb782f35e5398205861",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_repairs/joint_broad/exposure_rank2.jsonl": "fb9107f2dfa9b4ee1cdae8da0c043f70d6ad84cd7307097506e4e242a04c8097",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_repairs/joint_broad/exposure_rank3.jsonl": "0e08e6610bc6b094301f9974318bbf07881aead0dd56099135bd1c1d2796ecac",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/joint_spatial/exposure_rank0.jsonl": "baeb881c72457e5905f24cba698dd7fa4f0113e525cf7030b3ec3f85c21cd1bb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/joint_spatial/exposure_rank1.jsonl": "6033357175c314f4f24f6c7a22af1d83a4445d770c5ef58e5492c75b2a23ae65",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/joint_spatial/exposure_rank2.jsonl": "8169a50cd2ed6310d4e57bef1ee11fe5a69f8a60b518dbbf272a9b2a07a8a8ab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/joint_spatial/exposure_rank3.jsonl": "27aaa109b9ec3ce0097f20f0c54ee506e84769db17433645c5afd4051c286650",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank0.jsonl": "6a22eee58c7df41e77fb53459131acf87cebba877785cb6f89776d5dacd5452e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank1.jsonl": "7ae5e3f5ce0dbc847bf69dd5d174ef59b6d3d2182c91a3c36b3f6ef30423751e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank2.jsonl": "96d639e202a025c37b0a9ebe14facdbffc412e18d1e72e41e528a78fa80d5be7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank3.jsonl": "744f4882395a453013db11aa0ba4b60f9e8d00f045c0668a8d343ec51b19072a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank4.jsonl": "1316249fd448f57cdd7e54b1fa2aa2fc39b01fac643718b0eed8468c7d8dd171",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank5.jsonl": "a62fc176cb3eaa19b390dacfb8766ff33b6f1bc0113915f39410bcf063611965",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank6.jsonl": "fd83104222cba1fe1890615b9ebd4270ca44d61b445494cd8cc3379e0e406108",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/exposure_rank7.jsonl": "6c9188d0cf3630a8d951e3d605267a9e7b56fb62304b6229a75fe754c513fc0d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank0.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "7c0d0fad1f5b6f1a3a2a572bcafa1679a187e35807908d4729ef27663acb4c58"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank1.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "f515c0dc2c02a92102a778e8afc0595fb5a696f96dcd3024d8c77be2ffbaa39d"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank2.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "51f8a23b345b73e29871b73ae5ccd4b5545f0c39c8a4ff037acd32e22e04e8d8"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank3.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "6c5c0310fd7e5af5acc76b7c18735593ead8c2e6eea5a17ee7f0cd02a7eecb1e"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank4.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "f4a6710da7cfef6be820370238fe2fcf1950d3f70e780f95f7f62f4f1c5b5647"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank5.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "c9948d6a4fbfc221285c2b2732528536992356b3a4b43e8659e866b0bf1f3255"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank6.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "b6d26028d4584cd5dbccdb0dc8dfb0eea62a4bb087a19a7f59276b0d7bcec2f6"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank7.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "218c343e4c0759ef51f826078cd06bbbda6d03d8a94be33161b08945e1515b47"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank8.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "29da97a081d7be7bd5797e85ea4265d39aedfd5bfb366c1596237ff552f4a762"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank9.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "bf733425f21ed14f14a7f212e886fa8bfe95b564e047769609d3dc2be5dc4f03"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank10.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "ea8c8ae8da6f532317043587a8f07bf255e644c452b38510ad22d1285a4b91f2"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank11.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "b1ca761c7d5e8cbc5618c70bf29e4dc8772b3a92c7643ee6b671ec962a619548"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank12.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "69ce483391202cf3852ca829463573383671eacc72c95b8b19631a20b9a4e2e0"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank13.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "a6570ab6f105626fa0d26166e980783d633a09921b7914981c6839620095c715"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank14.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "b7fa9f23a1bc58bc68944b78466fc7be2f4b92fdbb755bcebe645b765c7f165c"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank15.jsonl": {
+      "committed_rows": 854,
+      "prefix_sha256": "75bd872498ddb49908ffcf16701c3e40c1a0bc7b1593a98a3ddfe97014af0ed9"
+    }
+  },
+  "initial_lineage_sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89",
+  "quality_cause_proven": false,
+  "training_sampling_changed": false,
+  "checked_at": "2026-10-29T14:18:19.713351+08:00"
+}

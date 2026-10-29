@@ -25,12 +25,15 @@ def main():
     manifest = json.loads((DEST / 'snapshot_manifest.json').read_text())
     sources = {Path(item['source']) for item in manifest['files'].values()}
     sources |= set((C / 'objective_controls_20261029').glob('*.py'))
+    sources |= set((C / 'objective_controls_phase2_20261029').glob('*.py'))
     sources |= {C / 'native_mopd_v7.py', C / 'review_prism_learning_candidates.py',
                 C / 'review_objective_controls.py', C / 'refresh_source_snapshot.py'}
     sources |= {C / name for name in ['checkpoint_prefix_audit.py', 'validate_checkpoint_prefix_audit.py',
                                      'prepare_next_teacher_candidate.py', 'audit_mtd_reduction.py']}
     sources |= {C / name for name in ['objective_native_diagnostic.py', 'submit_objective_native_diagnostic.py',
                                      'validate_objective_native_diagnostic.py']}
+    sources |= {C / name for name in ['review_completed_control_public.py', 'review_phase2_objectives.py',
+                                     'validate_phase2_scheduling.py']}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -49,6 +52,11 @@ def main():
         'objective_topology_clarification.json': C / 'objective_controls_20261029/topology_clarification.json',
         'objective_native_cpu_validation.json': C / 'objective_native_diagnostics/cpu_validation.json',
         'objective_native_launch_policy.json': C / 'objective_native_diagnostics/low_native_sft/policy.json',
+        'objective_native_schedule_outcome.json': C / 'objective_native_diagnostics/low_native_sft/controller_status.json',
+        'objective_phase2_cpu_validation.json': C / 'objective_controls_phase2_20261029/cpu_validation.json',
+        'objective_phase2_experiment.json': C / 'objective_controls_phase2_20261029/experiment.json',
+        'objective_phase2_scheduling_validation.json': C / 'objective_controls_phase2_20261029/scheduling_validation.json',
+        'auxiliary_replay_overlap_427.json': C / 'auxiliary_replay_overlap_20261029.json',
     }
     for arm in ['low_native_sft', 'no_mtd']:
         for kind, path in {
@@ -66,6 +74,13 @@ def main():
     comparison = C / 'objective_controls_20261029/comparison.json'
     if comparison.exists():
         extra['objective_controls_comparison.json'] = comparison
+    for arm in ['no_native_sft', 'low_native_sft_no_mtd']:
+        for kind,path in {
+            'submission':C/'objective_controls_phase2_20261029/submissions'/arm/'submission.json',
+            'runtime':C/'objective_controls_phase2_20261029/runtime'/arm/'runtime_verified.json',
+            'public_report':C/'objective_controls_phase2_20261029/evaluation'/arm/'report.json'
+        }.items():
+            if path.exists():extra['phase2_'+arm+'_'+kind+'.json']=path
     for name, source in extra.items():
         manifest['evidence'][name] = copy(source, DEST / 'evidence' / name)
     for name, item in manifest['evidence'].items():
@@ -98,6 +113,15 @@ The zero-MTD arm cannot be released as MOPD. Each task requires a genuine GPU
 optimizer1→3 resume check before training, then unchanged seven-public and
 10,105-example general evaluation. Current task receipts are archived;
 source/CPU checks alone do not establish GPU success or quality improvement.
+
+Both phase1 controls have now completed full public/general evaluation. Native
+SFT0.1/MTD1 reaches69.278571 public macro; SFT1/MTD0 reaches68.682857. Both remain
+below the initial69.982857, while general performance remains stable. The lower
+native SFT weight mitigates part of the regression; no sole cause is established.
+Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
+student, teachers, data and schedule. The first reserves eight public-evaluation
+slots; the second waits for formal512 public success before using spare capacity.
+All controls remain excluded from final delivery.
 
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse

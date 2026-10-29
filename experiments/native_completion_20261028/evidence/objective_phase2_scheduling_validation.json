@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "first_control_reserves_public8": true,
+  "second_requires512_report_and_cloud_success": true,
+  "unknown_status_does_not_release_public": true,
+  "near1024_public_reservation_restored": true,
+  "simultaneous_cap": 32,
+  "controller": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/submit.py",
+    "sha256": "06a28f4809c142a905e2c3a20bfdaf3076b468706b6891cb273d5b050e32039c"
+  },
+  "validation_code": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_phase2_scheduling.py",
+    "sha256": "6456ae41311d5a3906835315e89c7219b615a63f2933ce18d4511aa248ec2fc3"
+  },
+  "cloud_mutated": false,
+  "completed": 1793256077.4859073
+}
