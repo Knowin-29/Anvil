@@ -94,6 +94,16 @@ def main():
                 evidence={k:bound(p) for k,p in {'quality_review':review_path,'runtime':runtime_path,
                          'scaling':scaling_path,'initialization_lineage':lineage}.items()},
                 frozen_files=frozen, final_quality_accepted=False, weights_uploaded=False, created=time.time())
+    if (HERE / 'launch_policy.json').exists():
+        decision = read(HERE / 'budget_decision.json')
+        require(decision['nodes'] == args.nodes and decision['updates'] == args.steps,
+                'Formal plan differs from the declared measured budget decision')
+        require(decision['policy_sha256'] == sha(HERE / 'launch_policy.json')
+                and decision['scaling_sha256'] == sha(scaling_path), 'Changed budget evidence')
+        for key, file in [('launch_policy', HERE / 'launch_policy.json'),
+                          ('budget_decision', HERE / 'budget_decision.json')]:
+            plan['evidence'][key] = bound(file)
+            plan['frozen_files'][str(file)] = sha(file)
     plan_path = root / 'plan.json'; save(plan_path, plan)
     config = yaml.safe_load((D / 'mopd_v6_candidate1_multinode/cli.yaml').read_text())
     config['TaskName'] = 'task_anvil_formal_MOPD_' + root.name + '_A800x' + str(world)

@@ -11,9 +11,11 @@
     "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/evaluate_checkpoint.py": "601b8aa87086cb94a8a59533f44e0ec81b4e800a7e12309baf67a419dca352b4",
     "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/score_checkpoint.py": "91bcedb1cb1e4579c13ff3f3230942d55944c822cd0f50cd02731311d571a49a",
     "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/checkpoint_public_worker.py": "58bd27fd34aaa6aef744ec080e6519bc9c852f105d78844bea8e1cf705489782",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/prepare_plan.py": "073b5aa5311934155f63132ed55afc5846b13727881e46e8e35394d35fc251c5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/prepare_plan.py": "9660f774fcc3f80de08c6c56185b6a73977ba999b131f6ea6a68a3c5d14a4b1c",
     "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/formal_common.py": "dae6b50171a7a41d64e12805a667ff88b9a83ea521772d0841a5238ef28c6d42",
     "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/train_node.py": "183a04560ff064cfb8aff925f64dbaf15aff1e8452bf8002631400309fefc1f7"
   },
-  "completed": 1793236937.6230524
+  "completed": 1793236937.6230524,
+  "updated": 1793238069.1356332,
+  "budget_policy_binding_cli_checked": true
 }

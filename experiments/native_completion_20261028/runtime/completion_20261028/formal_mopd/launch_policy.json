@@ -1,0 +1,28 @@
+{
+  "schema": "anvil-first-formal-budget-policy-v1",
+  "maximum_updates": 2048,
+  "maximum_guarded_training_hours": 48,
+  "final_reserve_hours": 24,
+  "minimum_16GPU_speedup": 1.25,
+  "readiness_timeout_hours": 6,
+  "deadline_utc": "2026-11-02T05:48:00+00:00",
+  "run_directory": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029",
+  "gpu_ceiling": 32,
+  "global_batch": 32,
+  "note": "First formal run budget depends on completed real-pool throughput. Preserve time for checkpoint quality review and correction. This policy does not accept final quality or upload models.",
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/merge_checkpoint.py": "971880394221619904e3ff7c72d404c0f2fb6aed4039c168ce0b43bf5cd8b6ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/controller.py": "30a5b9f48073408a20ac02a0784a15cb9c56a18f00499d04d3b9af6523071fbb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/evaluate_checkpoint.py": "601b8aa87086cb94a8a59533f44e0ec81b4e800a7e12309baf67a419dca352b4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/score_checkpoint.py": "91bcedb1cb1e4579c13ff3f3230942d55944c822cd0f50cd02731311d571a49a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/checkpoint_public_worker.py": "58bd27fd34aaa6aef744ec080e6519bc9c852f105d78844bea8e1cf705489782",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/prepare_plan.py": "9660f774fcc3f80de08c6c56185b6a73977ba999b131f6ea6a68a3c5d14a4b1c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/formal_common.py": "dae6b50171a7a41d64e12805a667ff88b9a83ea521772d0841a5238ef28c6d42",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/train_node.py": "183a04560ff064cfb8aff925f64dbaf15aff1e8452bf8002631400309fefc1f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/candidate1_quality_review.json": "c4cc3b0f12cbddfdf1598be3c25459c544358b987c9496a8a33a81200e4958fa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/cpu_validation_v2.json": "c2bad967620b4d08a029f0d63974c43ba1110bca00dd652df877627c293afa9b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/compare_mopd_scaling.py": "68bf6511e104c6a5d119bd73673a2618db9caac11589adbfe5aeee5b772ed8aa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/launch_formal_when_ready.py": "2117485a273a04caf706e1d0835e12455aff716debd5ddbbd1be39bd236661e0"
+  },
+  "created": 1793238069.1404667
+}
