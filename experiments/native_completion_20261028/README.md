@@ -73,6 +73,15 @@ general image pairs affecting28 such rows were visually inspected and found
 to show distinct content; conservative exclusions remain in place. These new
 reservations do not erase prior student exposure or establish a blind test.
 
+An independent final_delivery_selected_v2 workflow supports explicit selection
+of a sealed formal checkpoint after its cloud run is terminal. It freezes only
+the committed source-exposure prefix, discloses selected versus planned updates
+and the original run's actual disposition, and preserves full580K/seven-public/
+10105-general evaluation and explicit quality review. The original live handoff
+and all of its delivery files are unchanged. CPU tests use the real512 checkpoint,
+its merged model and16384-row prefix; terminal states are simulated only in
+deleted temporary fixtures. No checkpoint has been selected for final delivery.
+
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
 than the train-only category prior. It has not replaced the live formal teacher.
