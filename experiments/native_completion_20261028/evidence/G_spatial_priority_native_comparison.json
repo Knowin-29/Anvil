@@ -1,0 +1,92 @@
+{
+  "state": "complete_requires_quality_review",
+  "results": {
+    "G_spatial_priority": {
+      "n": 390528,
+      "finish_reasons": {
+        "stop": 388212,
+        "length": 1375,
+        "abort": 941
+      },
+      "groups": [
+        {
+          "form": "bbox",
+          "source": "coco_train2017",
+          "n": 81280,
+          "mean": {
+            "box_f1_iou50": 0.3241264763779528,
+            "contract_valid": 0.9999876968503937,
+            "json_valid": 1.0,
+            "matched_box_iou": 0.30074016452745445,
+            "truncated": 0.0
+          }
+        },
+        {
+          "form": "detection",
+          "source": "coco_train2017",
+          "n": 3738,
+          "mean": {
+            "box_f1_iou50": 0.23840715449292924,
+            "contract_valid": 0.9574638844301766,
+            "json_valid": 0.958533975387908,
+            "matched_box_iou": 0.19493126666484478,
+            "truncated": 0.04119850187265917
+          }
+        },
+        {
+          "form": "mask",
+          "source": "coco_train2017",
+          "n": 81250,
+          "mean": {
+            "contract_valid": 0.9817723076923077,
+            "json_valid": 0.9833723076923077,
+            "matched_mask_iou": 0.13585608114414888,
+            "truncated": 0.0043938461538461536
+          }
+        },
+        {
+          "form": "point",
+          "source": "coco_train2017",
+          "n": 81244,
+          "mean": {
+            "contract_valid": 1.0,
+            "interior_point_f1": 0.3578110383536015,
+            "json_valid": 1.0,
+            "truncated": 0.0
+          }
+        },
+        {
+          "form": "point",
+          "source": "pixmo_points",
+          "n": 143016,
+          "mean": {
+            "annotated_point_f1_r50": 0.4627296453077599,
+            "contract_valid": 0.9938048889634726,
+            "json_valid": 0.9938258656374112,
+            "truncated": 0.006041282094311126
+          }
+        }
+      ],
+      "evidence": {
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/0/evaluation/metrics.json": "ee4467c1cccd57ff8f3b273bc5433347f76e33088e98796bff949fa79e821a00",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/1/evaluation/metrics.json": "31296f9d553779965efd8b783963d464ab3587cb261547ade65e1892724638aa",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/2/evaluation/metrics.json": "002aca5107e5d6fa7b61995d39e2be338b68e7a1aae94b5c6c5177bfbd2f1e74",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/3/evaluation/metrics.json": "294bf0be657b8cdc7fb0260e48eeeeec442c0c7394486537dfe925c4a86eb253",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/4/evaluation/metrics.json": "9d6c64d5ea609bb5ec4622fc24e4cf1252a8738de99632b665f8686b8cba6372",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/5/evaluation/metrics.json": "79778075dcf7ee9d63d23f46b93704f0cf358216543613e9a247cc07530f68e3",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/6/evaluation/metrics.json": "5c0141617c655f400e4ed4c95f6399bef9616767004a16860ae4a9ff6e8cf093",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/7/evaluation/metrics.json": "df50bb0032a96ecc5250412a51097cae8cfcbd67457e7febea2d8c4b4da1005e",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/8/evaluation/metrics.json": "e7e7dcde64ed181a11a90b756a98b12a22e24623c5b9eeadce4242b29bf5e8ee",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/9/evaluation/metrics.json": "93008fa25948f804d6c4a3551e6461c28493110a5429f06a78aa98030eaa3f16",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/10/evaluation/metrics.json": "f54effed1ce380824f089064b6cd4982ac980c29642c34b3dee624d39d5a582e",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/11/evaluation/metrics.json": "befbd212e6025bc16ef2e8027aacc4d8025393e54b687ffddd1adefa22cb133e",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/12/evaluation/metrics.json": "b5d0463eeffd26aea37686734ce14b4c610eca7124aa614ffc6987406fe9be29",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/13/evaluation/metrics.json": "231378d67c6343dc9c9c3c315d06e35d589d68d01ca981dd92587be179541502",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/14/evaluation/metrics.json": "df554167c9d9909bef3149f2ce80bd21977081dff4ce8da6f78bea397eb151ab",
+        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native/15/evaluation/metrics.json": "d220b316f24111da200042f504be0eb7fc43de725bdb6e9880ba3a349226c0d6"
+      }
+    }
+  },
+  "teacher_qualified": false,
+  "final_mopd": false
+}

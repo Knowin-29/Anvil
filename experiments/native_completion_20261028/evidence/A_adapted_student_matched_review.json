@@ -1,0 +1,161 @@
+{
+  "state": "complete_exact_A_pair_requires_teacher_review",
+  "n": 4100,
+  "teacher": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+  "student": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+  "groups": [
+    {
+      "form": "action_cot",
+      "n": 3327,
+      "metrics": {
+        "contract_valid": {
+          "teacher": 0.9954914337240758,
+          "student": 0.9963931469792606,
+          "teacher_minus_student": -0.0009017132551848439
+        },
+        "expert_continuation_exact": {
+          "teacher": 0.25939284640817556,
+          "student": 0.1920649233543733,
+          "teacher_minus_student": 0.06732792305380225
+        },
+        "json_valid": {
+          "teacher": 0.9954914337240758,
+          "student": 0.9990982867448152,
+          "teacher_minus_student": -0.0036068530207393756
+        },
+        "next_action_exact": {
+          "teacher": 0.6396152690111211,
+          "student": 0.5837090471896603,
+          "teacher_minus_student": 0.055906221821460766
+        },
+        "target_object_exact": {
+          "teacher": 0.5743913435527502,
+          "student": 0.4845205891193267,
+          "teacher_minus_student": 0.08987075443342352
+        },
+        "target_role_exact": {
+          "teacher": 0.8130447850916742,
+          "student": 0.7938082356477307,
+          "teacher_minus_student": 0.019236549443943485
+        },
+        "truncated": {
+          "teacher": 0.0012022843402464682,
+          "student": 0.0009017132551848512,
+          "teacher_minus_student": 0.00030057108506161706
+        }
+      }
+    },
+    {
+      "form": "affordance",
+      "n": 193,
+      "metrics": {
+        "contract_valid": {
+          "teacher": 1.0,
+          "student": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "instruction_copy_exact": {
+          "teacher": 1.0,
+          "student": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "teacher": 1.0,
+          "student": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "region_iou": {
+          "teacher": 0.11386315907797635,
+          "student": 0.1336609422218822,
+          "teacher_minus_student": -0.01979778314390586
+        },
+        "region_iou50": {
+          "teacher": 0.05181347150259067,
+          "student": 0.07253886010362694,
+          "teacher_minus_student": -0.020725388601036267
+        },
+        "region_iou75": {
+          "teacher": 0.0,
+          "student": 0.015544041450777202,
+          "teacher_minus_student": -0.015544041450777202
+        },
+        "region_iou90": {
+          "teacher": 0.0,
+          "student": 0.0,
+          "teacher_minus_student": 0.0
+        },
+        "truncated": {
+          "teacher": 0.0,
+          "student": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "form": "dof",
+      "n": 580,
+      "metrics": {
+        "contract_valid": {
+          "teacher": 1.0,
+          "student": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "teacher": 1.0,
+          "student": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "normalized_projected_contact_l2": {
+          "teacher": 0.08527639132853547,
+          "student": 0.09170607306322882,
+          "teacher_minus_student": -0.006429681734693354
+        },
+        "pi_symmetric_rotation_error_degrees": {
+          "teacher": 80.65314903824058,
+          "student": 80.90354318155902,
+          "teacher_minus_student": -0.2503941433184309
+        },
+        "rotation_error_degrees": {
+          "teacher": 112.2170578740328,
+          "student": 112.22975246230726,
+          "teacher_minus_student": -0.012694588274456464
+        },
+        "truncated": {
+          "teacher": 0.0,
+          "student": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    }
+  ],
+  "teacher_qualified": false,
+  "formal_mopd": false,
+  "assessment": "Action next/expert continuation and contact improve; rotation advantage is only0.25degrees and absolute geometry remains weak; affordanceIoU is lower. No claim of across-form superiority or solvedpose.",
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_affordance.jsonl": "969fc72c21c46ef9826b59f06ec6fd8dab90ab66eb4ddfdefb93fde30240cd03",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_dof.jsonl": "efc6a6bc6f0ace1fead2853ef4ae99906a8dcf019f71b3c430aea915673955df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_action_cot.jsonl": "909a9cc9e256f05e3256c0e81da659571300d367b678d45e3cf581ce7e2da2b4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_affordance.jsonl": "b8228191fb7b5c594da19553320e9475b01b8ca9819deeb0f9cc2f674c1d4ec9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_dof.jsonl": "522516ad1a0440ddac31b69006c0c4e4a49079a49a3479351ae1970ecb1203f8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_action_cot.jsonl": "ecec72f7d48c6acc87a05ab5f708f7d4fac9025426e9f38add49461ba39f31fb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_affordance.jsonl": "44a81a0a8342187ad2e729019d9aa2310ad80ec524ea4a695962e3e6c638f51b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_dof.jsonl": "990fc0265531a44e01770469e218ea00f04039fdbe75215eebb20f05792587c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_action_cot.jsonl": "ca656527ea3fb1146529e5f127568e9d77cfbd6f12bf49784afef8350b0ebfb7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_affordance.jsonl": "8bf236e5d0f8613e364d8250f05bc29ad22e61d9fcb4796e1e450db347d73a7c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_dof.jsonl": "60e6b5a8db99022f6b28e0d93100cb720be7223d74fa754a94cf9d8ca7732db7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_action_cot.jsonl": "c15102ee7d819f55c9c35cb9d4cbad313f194acb2560084d2daa908da0edcc7f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_affordance.jsonl": "37db05731f52bce1a0458f06e0b0a88a716676a534b9297d237ad2b2e6302b88",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_dof.jsonl": "5c01bb0e2826ec9be1336debf7310cc74de97a062d5e5e8bc8ec6e2abcbd1673",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_action_cot.jsonl": "7372331bfa04c41cee60d083658ecf9eb240b54bebfe9807b7425db33657a72d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_affordance.jsonl": "94e95cd76f01db0367030ae8a6634b768d9a28c701b4d7a05bfe1edad6b5ba0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_dof.jsonl": "0519ed912b4f5083a4415de8d76ef1720ea9ac0ffc65f95d86e088bedd13b58e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_action_cot.jsonl": "103fff8a2bdac14ef460c85460cd0dad6898a7f12c50aa8cb446314b31244922",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_affordance.jsonl": "62343024d290e77ddef4a6e2a13517d8beac1439dcf060d104cb7881071acb36",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_dof.jsonl": "8f57e3d6aef8087c7f3fee1ea596511db3bf8a170d5a9cc00c7ac1f8d9a9dc5b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_action_cot.jsonl": "a86a44e2e60fc2cf938593b2a85cc21b619f7421d6810ccc2e7e3565d6d178e3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_affordance.jsonl": "7bce1bf7e6e2e6b65e80360381627c8958da333ba0f3c3957c75d0d353fe6af2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_dof.jsonl": "c603ebbb203b8044d6d1e59591c0d519d02a68f6c7ca453308477aacfcfbb030",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_action_cot.jsonl": "fdc5e01ed3ad2c514ca141e7a6086e3b1c35c98b6cdf04dcf01184bbcb7e0b14"
+  },
+  "completed": 1793234634.162595
+}

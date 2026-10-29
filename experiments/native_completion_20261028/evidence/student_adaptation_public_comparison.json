@@ -1,0 +1,326 @@
+{
+  "state": "complete",
+  "results": {
+    "student_adaptation": {
+      "public": {
+        "cv_bench": {
+          "n": 2638,
+          "score": 87.07,
+          "detail": {
+            "per_group": {
+              "2D/Count": {
+                "n": 788,
+                "acc": 72.21
+              },
+              "2D/Relation": {
+                "n": 650,
+                "acc": 96.31
+              },
+              "3D/Depth": {
+                "n": 600,
+                "acc": 96.67
+              },
+              "3D/Distance": {
+                "n": 600,
+                "acc": 87.0
+              }
+            },
+            "n_correct": 2297
+          },
+          "parse_failures": 0,
+          "capped": 0
+        },
+        "embspatial": {
+          "n": 3640,
+          "score": 79.51,
+          "detail": {
+            "per_group": {
+              "above": {
+                "n": 596,
+                "acc": 81.21
+              },
+              "close": {
+                "n": 612,
+                "acc": 68.3
+              },
+              "far": {
+                "n": 594,
+                "acc": 65.66
+              },
+              "left": {
+                "n": 616,
+                "acc": 92.53
+              },
+              "right": {
+                "n": 620,
+                "acc": 92.26
+              },
+              "under": {
+                "n": 602,
+                "acc": 76.41
+              }
+            },
+            "n_correct": 2894
+          },
+          "parse_failures": 0,
+          "capped": 0
+        },
+        "refspatial_bench": {
+          "n": 277,
+          "score": 49.1,
+          "detail": {
+            "per_group": {
+              "location": {
+                "n": 100,
+                "mean_in_mask": 54.02
+              },
+              "placement": {
+                "n": 100,
+                "mean_in_mask": 48.5
+              },
+              "unseen": {
+                "n": 77,
+                "mean_in_mask": 43.51
+              }
+            },
+            "any_point_hit": 54.15,
+            "points_per_question": {
+              "n": 277,
+              "median": 1,
+              "mean": 2.08,
+              "max": 19,
+              "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+            },
+            "coord_scale": {
+              "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+              "used": {
+                "thousandth": 277
+              },
+              "n_reinterpreted_vs_auto": 0,
+              "auto_would_have_said": {
+                "ambiguous": 72,
+                "thousandth": 205
+              },
+              "n_ambiguous_under_auto": 72,
+              "corpus_vote_under_auto": "thousandth"
+            },
+            "referent_type": "mixed",
+            "referent_by_group": {
+              "location": "object",
+              "placement": "vacancy",
+              "unseen": "mixed"
+            },
+            "by_referent_type": {
+              "mixed": {
+                "n": 77,
+                "mean_in_mask": 43.51
+              },
+              "object": {
+                "n": 100,
+                "mean_in_mask": 54.02
+              },
+              "vacancy": {
+                "n": 100,
+                "mean_in_mask": 48.5
+              }
+            }
+          },
+          "parse_failures": 0,
+          "capped": 1
+        },
+        "where2place": {
+          "n": 100,
+          "score": 63.54,
+          "detail": {
+            "per_group": {
+              "seen": {
+                "n": 70,
+                "mean_in_mask": 65.6
+              },
+              "unseen": {
+                "n": 30,
+                "mean_in_mask": 58.72
+              }
+            },
+            "any_point_hit": 78.0,
+            "points_per_question": {
+              "n": 100,
+              "median": 4,
+              "mean": 4.5,
+              "max": 25,
+              "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+            },
+            "coord_scale": {
+              "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+              "used": {
+                "thousandth": 100
+              },
+              "n_reinterpreted_vs_auto": 0,
+              "auto_would_have_said": {
+                "ambiguous": 15,
+                "thousandth": 85
+              },
+              "n_ambiguous_under_auto": 15,
+              "corpus_vote_under_auto": "thousandth"
+            },
+            "referent_type": "vacancy",
+            "referent_by_group": {}
+          },
+          "parse_failures": 0,
+          "capped": 1
+        },
+        "blink_relative_depth": {
+          "n": 124,
+          "score": 86.29,
+          "detail": {
+            "per_group": {
+              "relative_depth": {
+                "n": 124,
+                "acc": 86.29
+              }
+            },
+            "n_correct": 107
+          },
+          "parse_failures": 0,
+          "capped": 0
+        },
+        "erqa": {
+          "n": 287,
+          "score": 48.78,
+          "detail": {
+            "per_group": {
+              "Action Reasoning": {
+                "n": 66,
+                "acc": 45.45
+              },
+              "Other": {
+                "n": 5,
+                "acc": 0.0
+              },
+              "Pointing": {
+                "n": 32,
+                "acc": 53.12
+              },
+              "Spatial Reasoning": {
+                "n": 57,
+                "acc": 45.61
+              },
+              "State Estimation": {
+                "n": 47,
+                "acc": 59.57
+              },
+              "Task Reasoning": {
+                "n": 16,
+                "acc": 75.0
+              },
+              "Trajectory Reasoning": {
+                "n": 64,
+                "acc": 42.19
+              }
+            },
+            "n_correct": 140
+          },
+          "parse_failures": 1,
+          "capped": 0
+        },
+        "vabench_point": {
+          "n": 300,
+          "score": 70.67,
+          "detail": {
+            "per_group": {
+              "point": {
+                "n": 300,
+                "acc": 70.67
+              }
+            },
+            "n_correct": 212,
+            "coord_scale": {
+              "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+              "used": {
+                "thousandth": 300
+              }
+            }
+          },
+          "parse_failures": 0,
+          "capped": 0
+        }
+      },
+      "retention": {
+        "ai2d_test": {
+          "n": 3088,
+          "score": 88.01813471502591,
+          "parse_failures": 0
+        },
+        "scienceqa_test": {
+          "n": 2017,
+          "score": 98.06643529995043,
+          "parse_failures": 0
+        },
+        "textvqa_val": {
+          "n": 5000,
+          "score": 86.75400000000046,
+          "parse_failures": 0
+        }
+      },
+      "paper_aligned_public": {
+        "cv_bench": 87.07,
+        "embspatial": 79.51,
+        "refspatial_bench": 54.02,
+        "where2place": 63.54,
+        "blink_relative_depth": 86.29,
+        "erqa": 48.78,
+        "vabench_point": 70.67
+      },
+      "paper_aligned_macro": 69.98285714285716,
+      "public_macro": 69.28,
+      "retention_macro": 90.94619000499227
+    }
+  },
+  "prediction_sha256": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/cv_bench.jsonl": "f112b7960adaa7b16ec1b8c9bc0b0d8167f9a81d0e304c224197cc8afbb48b6d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/cv_bench.jsonl": "40504f7475d2d1129264566a9af99c387ecefa8c504ebff15cb3999c6354518d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/cv_bench.jsonl": "ee03255a103b09ee6de99813a88c3b723b9280546f25c77cf9587d2ac5184451",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/cv_bench.jsonl": "b4cd0caa6f643408cb9a3e4528d06aea2897129824610a1045a3e1112e78422e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/embspatial.jsonl": "2ba1219a9313826a9b57223f36534adcd5dfaa1aed5eaf591b7e1262a9946e84",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/embspatial.jsonl": "f85113b0cd89281cd6c75b8e9b38727cbd3dcb333f0d36d9d946c553a7bb8643",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/embspatial.jsonl": "586bba3c5922144da40341a979a6c880a855100cc6e87c035f0838aecaf3a5f5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/embspatial.jsonl": "d1a50dec1e747f0e8e8ecf73792ffadced423eefb32364d31413d7fb678bfa7f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/refspatial_bench.jsonl": "a1ddaa96575c686cfb6fb07316ab2aae1b52ae2c00b4fd37bee14fea2158802d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/refspatial_bench.jsonl": "f547318e44b13bb7b130ce7ce499e7cc21ba2825c8ca38f801c9f4ad743bfa99",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/refspatial_bench.jsonl": "3fb8f6789e8adcdd85baa0d6be6ce44c18f78dedfd4bcfcfad452b8db7d1f767",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/refspatial_bench.jsonl": "275b58675d6a50526cfbbf63199b9b5b528a557d7815e5b48071c4ac68cd9dfd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/where2place.jsonl": "0671c6d04d502807abf5810b3a703cf41a0d7a4dd82e1bede06c2f305ca35d4b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/where2place.jsonl": "7cc331e5667dc55c8859ac06cb6a9b46c29417a15b36ea3720ffec3fc4edd9d2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/where2place.jsonl": "b4477d7e4f5a18cc8c17feed88ae41b2192c20253dceb42c95e66ce3c8e086a4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/where2place.jsonl": "5cd9183be3629fabe5c813a1d61754799879a6b834f50391549428744ecc6ab4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/blink_relative_depth.jsonl": "9c76b4de4b9b3c542cbabd135e6600f153cad0cb08bf63312298012f4eb679e0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/blink_relative_depth.jsonl": "1c9b2f5c9f2fde678be980e80dd112ebe5c1f64f0907122ab5b1de556eb1decb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/blink_relative_depth.jsonl": "ae87b5a5d6f5d571d7c271f285ada8790f6317c8dbad1e1db24528e63dfaf58e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/blink_relative_depth.jsonl": "da0b4c203c6171b37e1963ef9802687dc472456ebdbc65e14770e4fdd3f31874",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/erqa.jsonl": "b083dd942a8328f0c23936c0f60bb7ca616767ab12b164d7d35c14e40a9be48f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/erqa.jsonl": "29f5f5cf660ff7a535ccbcfde555ad804b0f4c61b146bb5bdf1fa6b2dc1ad8da",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/erqa.jsonl": "533ea3d57247f0973c6dccea55a4dac0bd57cc3b3e8041ec32685fb4db7e27d3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/erqa.jsonl": "2b53c5c716fbe9be6f47a124541ef03e982845a3b29d1bb3f9b9401cedd6829f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/vabench_point.jsonl": "f2f91edc0612de2759763136bcf47ba537cf2c3564d7bb2f8b2d23ce85cb7c53",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/vabench_point.jsonl": "d953b890e37532803dbbd37a1fd9ef30eb14c72e702e87023895e9b60d82550b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/vabench_point.jsonl": "5a575e87efde4df11a99fb51b412b4f7ae7859fe93b251d8a460316bf21ba46f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/vabench_point.jsonl": "834a3ec7d16127016da7ced0d0e44b1f7e0eae416116d4e562543b7ead08773b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/0/retention.jsonl": "fb60d582700bb6accfe891305deaa330db7b216861b2a0259a62370d1c485e62",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/1/retention.jsonl": "d7adf47e2051bce2f4e1be051ff99a2ee62756f0c70aa9fdca432378cff09494",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/2/retention.jsonl": "ec228691aad46b59a315ee2e41018b1e646520baa992d788bd033dc262a1f090",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_benchmarks/student_adaptation/3/retention.jsonl": "bf41a484111a66fc795a9f5e9f08421930e0d3b86d8ae7cde56b5cd92feb70cd"
+  },
+  "protocol": "Matched full seven public benchmarks and10105 official VQA examples; current runtime1536 image tokens; not the older sampled1111-panel",
+  "paper_main_table_target": {
+    "cv_bench": 88.21,
+    "embspatial": 82.34,
+    "refspatial_bench": 59.0,
+    "where2place": 68.0,
+    "blink_relative_depth": 91.13,
+    "erqa": 50.52,
+    "vabench_point": 80.67,
+    "macro": 74.27
+  },
+  "current_model_role": "One student representation adaptation; not final MOPD",
+  "publication_results_reproduced": false
+}

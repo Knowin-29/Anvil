@@ -1,0 +1,349 @@
+{
+  "schema": "anvil-teacher-usefulness-review-v1",
+  "reviewed_utc": "2026-10-29T01:16:00.131833+00:00",
+  "decision": "admit_exact_candidates_for_formal_MOPD_with_intermediate_evaluation",
+  "student": {
+    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+    "adapter_sha256": "0fb12a657fb5fa33c38ba8aef869c754fdd322e93dd1f2bc3b388a71661da8d0",
+    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/complete.json",
+    "completion_sha256": "52206dc3a22a0e0000040d26c5e54b4c17fa5e0a4b85ba725a443610a10f2df4"
+  },
+  "teachers": {
+    "G": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
+      "adapter_sha256": "79e1353ff3435a68cba9e7aff4d226d5cfed4525db17961e812c0509e4d05a77",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/complete.json",
+      "completion_sha256": "f9cb5c612499ef8ece843bbe5c47d3586f0067231f0d89a69f8d1166f9652515"
+    },
+    "A": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+      "adapter_sha256": "d199a630dfc97dc466bccb997996c4ada85889a3b64c7cc2d259c789075c6be8",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
+      "completion_sha256": "a0e98791c600f5dd5e8dfe58679551674314d8c518ab1f34cfe8d480f435f06f"
+    },
+    "S": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_S/checkpoint-38248",
+      "adapter_sha256": "c31617be286ac6beb133a24a7bd706135a4ab4b996bae0e9c5596320d1f73d09",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/pipeline_status.json",
+      "completion_sha256": "bd55c600e34ebe44dc33957f782793058ce05b4118fb09c1c33163b0bebbfd27"
+    }
+  },
+  "rationale": "Matched results show complementary teacher knowledge on masks, all four S tasks, and action continuation. Admit for measured formal distillation with unchanged native reference supervision; universal teacher superiority or perfect source geometry is not required. This decision does not accept final model quality or authorize publication without final evaluation.",
+  "family_assessments": {
+    "G": {
+      "eligible": true,
+      "benefits": "Matched mask validity 98.3068% vs50.1674%, IoU .133360 vs .086358; public macro72.2429 vs student69.9829.",
+      "limitations": "Matched bbox/detection/point task scores slightly below student; mask IoU remains low. Full390528 G validation complete. Negative transfer must be monitored."
+    },
+    "S": {
+      "eligible": true,
+      "benefits": "Matched depth exact .90625 vs .875; direction .772686 vs .757053; distance MAE .098576 vs .105420; graph F1 .787436 vs .750444.",
+      "limitations": "Paired35989 G/S sample, not full exact-student native validation; some S groups are small. Full original S validation exists but sampled deltas are descriptive."
+    },
+    "A": {
+      "eligible": true,
+      "benefits": "Full4100 matched A: next action63.9615% vs58.3709%, expert continuation25.9393% vs19.2065%; 100% valid DoF and improved contact error.",
+      "limitations": "Pose80.653deg vs student80.904deg is a negligible advantage and remains worse than train-only category prior; affordance IoU .113863 is below student .133661. This is not a claim geometry is solved."
+    }
+  },
+  "adapted_student_GS_sample_groups": [
+    {
+      "family": "G",
+      "form": "bbox",
+      "source": "coco_train2017",
+      "n": 5080,
+      "metrics": {
+        "box_f1_iou50": {
+          "student": 0.3391732283464567,
+          "teacher": 0.33366141732283466,
+          "teacher_minus_student": -0.005511811023622047
+        },
+        "contract_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "matched_box_iou": {
+          "student": 0.31490933496058027,
+          "teacher": 0.3084407911301889,
+          "teacher_minus_student": -0.0064685438303913505
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "family": "G",
+      "form": "detection",
+      "source": "coco_train2017",
+      "n": 232,
+      "metrics": {
+        "box_f1_iou50": {
+          "student": 0.24318591540704476,
+          "teacher": 0.23543090572298794,
+          "teacher_minus_student": -0.007755009684056808
+        },
+        "contract_valid": {
+          "student": 0.9525862068965517,
+          "teacher": 0.9310344827586207,
+          "teacher_minus_student": -0.021551724137931036
+        },
+        "json_valid": {
+          "student": 0.9525862068965517,
+          "teacher": 0.9353448275862069,
+          "teacher_minus_student": -0.017241379310344827
+        },
+        "matched_box_iou": {
+          "student": 0.20646969822682554,
+          "teacher": 0.19300090539288267,
+          "teacher_minus_student": -0.013468792833942854
+        },
+        "truncated": {
+          "student": 0.04741379310344827,
+          "teacher": 0.06465517241379311,
+          "teacher_minus_student": 0.017241379310344827
+        }
+      }
+    },
+    {
+      "family": "G",
+      "form": "mask",
+      "source": "coco_train2017",
+      "n": 5079,
+      "metrics": {
+        "contract_valid": {
+          "student": 0.501673557786966,
+          "teacher": 0.9830675329789329,
+          "teacher_minus_student": 0.4813939751919669
+        },
+        "json_valid": {
+          "student": 0.5030517818468202,
+          "teacher": 0.9846426461901949,
+          "teacher_minus_student": 0.48159086434337467
+        },
+        "matched_mask_iou": {
+          "student": 0.08635830638592487,
+          "teacher": 0.13336001317843305,
+          "teacher_minus_student": 0.04700170679250817
+        },
+        "truncated": {
+          "student": 0.005119117936601693,
+          "teacher": 0.005512896239417208,
+          "teacher_minus_student": 0.00039377830281551486
+        }
+      }
+    },
+    {
+      "family": "G",
+      "form": "point",
+      "source": "coco_train2017",
+      "n": 5078,
+      "metrics": {
+        "contract_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "interior_point_f1": {
+          "student": 0.3629381646317448,
+          "teacher": 0.3558487593540764,
+          "teacher_minus_student": -0.0070894052776683735
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "family": "G",
+      "form": "point",
+      "source": "pixmo_points",
+      "n": 8938,
+      "metrics": {
+        "annotated_point_f1_r50": {
+          "student": 0.46669338147730444,
+          "teacher": 0.4570139916056443,
+          "teacher_minus_student": -0.009679389871660117
+        },
+        "contract_valid": {
+          "student": 0.984672186171403,
+          "teacher": 0.9937346162452451,
+          "teacher_minus_student": 0.009062430073842023
+        },
+        "json_valid": {
+          "student": 0.9850078317296934,
+          "teacher": 0.9937346162452451,
+          "teacher_minus_student": 0.008726784515551577
+        },
+        "truncated": {
+          "student": 0.014097113448198702,
+          "teacher": 0.006041620049228015,
+          "teacher_minus_student": -0.008055493398970687
+        }
+      }
+    },
+    {
+      "family": "S",
+      "form": "depth_order",
+      "source": "PRISM",
+      "n": 224,
+      "metrics": {
+        "contract_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "reference_exact": {
+          "student": 0.875,
+          "teacher": 0.90625,
+          "teacher_minus_student": 0.03125
+        },
+        "reference_relation_f1": {
+          "student": 0.875,
+          "teacher": 0.90625,
+          "teacher_minus_student": 0.03125
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "family": "S",
+      "form": "direction",
+      "source": "coco_train2017",
+      "n": 5565,
+      "metrics": {
+        "contract_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "reference_exact": {
+          "student": 0.7570530098831986,
+          "teacher": 0.7726864330637916,
+          "teacher_minus_student": 0.015633423180592992
+        },
+        "reference_relation_f1": {
+          "student": 0.7570530098831986,
+          "teacher": 0.7726864330637916,
+          "teacher_minus_student": 0.015633423180592992
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "family": "S",
+      "form": "metric_comparison",
+      "source": "coco_train2017",
+      "n": 5560,
+      "metrics": {
+        "contract_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "normalized_image_distance_mae": {
+          "student": 0.10542036780575569,
+          "teacher": 0.09857576079136685,
+          "teacher_minus_student": -0.006844607014388837
+        },
+        "relation_identity_exact": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    },
+    {
+      "family": "S",
+      "form": "relation_graph",
+      "source": "coco_train2017",
+      "n": 233,
+      "metrics": {
+        "contract_valid": {
+          "student": 0.9957081545064378,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.004291845493562232
+        },
+        "json_valid": {
+          "student": 1.0,
+          "teacher": 1.0,
+          "teacher_minus_student": 0.0
+        },
+        "reference_exact": {
+          "student": 0.030042918454935622,
+          "teacher": 0.034334763948497854,
+          "teacher_minus_student": 0.004291845493562232
+        },
+        "reference_relation_f1": {
+          "student": 0.7504436845731863,
+          "teacher": 0.7874362140316613,
+          "teacher_minus_student": 0.03699252945847491
+        },
+        "truncated": {
+          "student": 0.0,
+          "teacher": 0.0,
+          "teacher_minus_student": 0.0
+        }
+      }
+    }
+  ],
+  "safeguard": "Evaluate sealed formal checkpoints at128,512,1024,and final planned update on seven public benchmarks and10105 general examples; full580000 native final evaluation required. Review per-benchmark regressions and actual training throughput before extending/changing experiment.",
+  "quality_success_not_guaranteed": true,
+  "final_model_accepted": false,
+  "formal_runtime_still_required": true,
+  "sft_general_retention_is_admission_gate": false,
+  "universal_teacher_superiority_claimed": false,
+  "adaptive_selection_disclosed": true,
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_teachers_comparison.json": "f667998cf6048ea0dd9450a874db475cee16f543e64b6f46bb9e6ec68df88bf6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_comparison.json": "f8fb6a0756d092a675811d61af68e7054a9602676699d1c5dfd9e3e1b964ffc0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native_comparison.json": "2d4b77e396da20513e1263f5eb3532147b3a53022800d03ac2059fa5fc7e53bf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/A_adapted_student_matched_review.json": "a2aebae665af75eeedb5db0da1de0a0f58b72bc2cab02b2032c393cbe8b6ae3c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_public_comparison.json": "ba558ef5304c386bc60efe56bdf070afa39d4a7240f232d9e0d2db0026b2bd8f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_comparison_G.json": "3a1e6631b6f36855fc811dce7638d0d0555149202ed3e83085a2b18c384781d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/bindings.json": "fba1865be5f310e1007028a077acf5364f8d12c6a415041e72e922d02be337ba"
+  }
+}

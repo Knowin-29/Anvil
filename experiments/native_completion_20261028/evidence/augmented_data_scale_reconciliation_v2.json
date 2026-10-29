@@ -1,0 +1,34 @@
+{
+  "state": "available_pool_accounted_not_actual_exposure",
+  "original_records": 5800000,
+  "original_train_records": 5220000,
+  "original_images": 160000,
+  "original_train_images": 142616,
+  "supplemental_train_records": {
+    "retention_replay": 50563,
+    "spatial_replay": 32832,
+    "prism_expansion": 13536
+  },
+  "supplemental_distinct_images": {
+    "retention_replay": 28665,
+    "spatial_replay": 32167,
+    "prism_expansion": 2298
+  },
+  "supplemental_image_overlap": 0,
+  "original_spatial_supplement_overlap": 954,
+  "available_union_records": 5896931,
+  "available_training_records": 5316931,
+  "available_union_images": 222176,
+  "available_train_union_images": 204792,
+  "source_mixture_matches_paper": false,
+  "actual_exposure_rule": "Use each final model lineage plus exposure logs; this inventory does NOT establish that all supplemental rows were trained.",
+  "bindings": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/manifest.json": "084190c12acdc1dee6c18a19663df111a1345b8ec5c29f9aef1e678f49e0443c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/manifest.json": "abb2b9079fac7be483ddd94441eb0c6e537f0033635e23cb9dd9417845ee17bf"
+  },
+  "prism_overlap_with_previous_supplements": 0,
+  "original_prism_supplement_overlap": 0,
+  "prior_inventory_sha256": "f01cc6936f38fd51636acf3bbb1c80338da99e43c9df41696678e6e0f4a0bf7f",
+  "prism_note": "Official additional training scenes only. Original5800000/5220000 and prior heldout scores unchanged. Inventory is not actual exposure; only chosen model lineage counts."
+}
