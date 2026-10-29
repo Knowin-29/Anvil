@@ -1,0 +1,37 @@
+{
+  "schema": "anvil-step512-paired-GS-diagnostic-policy-v1",
+  "step": 512,
+  "native_GS_records": 35989,
+  "gpu_budget": 8,
+  "launch_before_formal_step": 768,
+  "task_deadline_seconds": 5400,
+  "purpose": "Distinguish native-geometry learning from public regression after formal512 and negative objective controls.",
+  "decision_after_observing_public512": true,
+  "original_fixed_sample_unchanged": true,
+  "full_final_validation": false,
+  "original_training_modified": false,
+  "evidence": {
+    "formal512_review": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal512_review_20261029.json",
+      "sha256": "314ca08986cfcec5d9c99b5213a89d875b5740e8fe1d74a4770aaaf8e8b66444"
+    },
+    "low_sft_no_mtd": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/low_native_sft_no_mtd/report.json",
+      "sha256": "106fd7b60328bfa0a66ded6bbd4db4c21bd97a0eca87c1e6fb1a277ab8cf8069"
+    },
+    "cpu_validation": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/cpu_validation.json",
+      "sha256": "3931dad5848d0e3ab46d5c040aa873c679173e271e0bcfb26ea211fd1b7c1def"
+    },
+    "spec": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/spec.json",
+      "sha256": "9662ff7cf6509ebf6d8de03424c09f7da6b6a241b2f36b472a3be7bda35a42d4"
+    }
+  },
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs512.py": "6af9c835ac7d1f66530e9c2a1ace89831248edd789a1e967f832230f050941b2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_diagnostic_512.py": "faf65dedbf298af1c078a968b4efdd7f643e38985899f067ec2ccab407429253",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/plan.json": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9"
+  },
+  "created": 1793260527.589519
+}

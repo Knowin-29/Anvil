@@ -1,0 +1,573 @@
+{
+  "schema": "anvil-formal-checkpoint-GS-diagnostic-v1",
+  "step": 512,
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512",
+  "model": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/512/merged",
+  "public_spec": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/512/spec.json",
+    "sha256": "acdedfa61d34ca9cc950e3c167f7a6c04d1b5649da7b936afba20cddc563bff6"
+  },
+  "selection": {
+    "schema": "anvil-predeclared-student-GS-sample-v1",
+    "seed": 170629,
+    "tasks": [
+      {
+        "local_gpu": 0,
+        "shard": 26,
+        "shards": 128,
+        "records": 4500,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 30
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 696
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 1,
+        "shard": 44,
+        "shards": 128,
+        "records": 4499,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 696
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 2,
+        "shard": 52,
+        "shards": 128,
+        "records": 4499,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 696
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 3,
+        "shard": 58,
+        "shards": 128,
+        "records": 4499,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 696
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 4,
+        "shard": 68,
+        "shards": 128,
+        "records": 4499,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 696
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 5,
+        "shard": 87,
+        "shards": 128,
+        "records": 4498,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 6,
+        "shard": 92,
+        "shards": 128,
+        "records": 4498,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      },
+      {
+        "local_gpu": 7,
+        "shard": 115,
+        "shards": 128,
+        "records": 4497,
+        "files": {
+          "eval_depth_order.jsonl": {
+            "records": 3601,
+            "sha256": "d95c1a7e3e44f68563fda0ba906b01c1195ebfb747e636939f5288b65c8d2e45",
+            "form": "depth_order",
+            "family": "S",
+            "shard_records": 28
+          },
+          "eval_detection.jsonl": {
+            "records": 3738,
+            "sha256": "8865e69338ceb43ce3961db27e732ac5df91b25d1b9ce52e3b3675ea46bc2a7f",
+            "form": "detection",
+            "family": "G",
+            "shard_records": 29
+          },
+          "eval_relation_graph.jsonl": {
+            "records": 3742,
+            "sha256": "7fa1c7150b9a72a711901b1f61b8f2be74a36b0e654b6f242ed45016b4754966",
+            "form": "relation_graph",
+            "family": "S",
+            "shard_records": 29
+          },
+          "eval_mask.jsonl": {
+            "records": 81250,
+            "sha256": "061b282786fb1b0d258c78574922f99a043f0a79859dfce09d6cc9d9372d75ae",
+            "form": "mask",
+            "family": "G",
+            "shard_records": 634
+          },
+          "eval_bbox.jsonl": {
+            "records": 81280,
+            "sha256": "4f7a1357f6ff969d9e2a053865e6ef22b92a7d5a789739c414a71bb165341e84",
+            "form": "bbox",
+            "family": "G",
+            "shard_records": 635
+          },
+          "eval_metric_comparison.jsonl": {
+            "records": 88984,
+            "sha256": "7af552b43adf86a1dc4a45528cd2c21e69ff7c3934e20b0a09d9b891a857a7cc",
+            "form": "metric_comparison",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_direction.jsonl": {
+            "records": 89045,
+            "sha256": "ca006bc9b33b7fd8ba63f01bf03328a3548871154a543890ce20713c95bd0532",
+            "form": "direction",
+            "family": "S",
+            "shard_records": 695
+          },
+          "eval_point.jsonl": {
+            "records": 224260,
+            "sha256": "70f2ee967750db424b08bd2a1e40aa1827d458badb25a37bab47e2dee594835c",
+            "form": "point",
+            "family": "G",
+            "shard_records": 1752
+          }
+        }
+      }
+    ],
+    "forms": [
+      "bbox",
+      "detection",
+      "mask",
+      "point",
+      "direction",
+      "metric_comparison",
+      "relation_graph",
+      "depth_order"
+    ],
+    "selection": "Eight ordinal strata sampled without replacement from128; fixed before adapted-student results",
+    "expected_records": 35989,
+    "full_validation": false,
+    "export_manifest": "/Knowin/sim/weilinruan/Anvil/arxiv/native_evaluation_export_20261012_v4/manifest.json",
+    "export_manifest_sha256": "43ed54572e076a1e2bb086bbdca0e92ea33b51e4a38b573bdcd10497f343f49d",
+    "scorer_changed": false,
+    "reference_targets_changed": false
+  },
+  "baseline_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native",
+  "baseline_adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/cloud_a800/checkpoints.py": "a7fd7b10cf9c67f78ad07d665a94e6ba8e63d988f0261972c17800a7ffc51626",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_node.py": "10041ca43b857bde0bf23e55cf62b80883f8bd1b00b84e184eea91674280c99c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native.py": "4c8ef08d0ec413f8dbaafe8f48864fd5eb5cf4344c0ffd9f8919284af0dd77ad",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_comparison.json": "f8fb6a0756d092a675811d61af68e7054a9602676699d1c5dfd9e3e1b964ffc0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_selection.json": "ab129190c628ac943458232ab01629de7def6eb5d193cdf1db475806a10d0f2f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_spec.json": "6737bb4efbe9d342f039e2900f2accf5c9924d6f5cd8934fcdd331295d779388",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/eval_core.py": "72533225e78b1efa070f4a4d64fd305521d9b3b7ec1b388b6c910b7948bb48d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/probe_vllm.py": "0766712a71b4daeeb237b284db5098fe98d7bdcd3530ca192386ba67073a03f4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/run_vllm_eval.py": "85479ca67299db133bf065267989316f73499f0f64260782ba72212a0a37540d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/eval/native_metrics.py": "599bdbf3858c100d5e0d9ed826a97833f980d26bf16bdd5660a9be0141bc80b2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/arxiv_source_scale.py": "9e8b78f69695e0c64184b624f6381b9a90e4fbf13946d7fb505e9a3c02c0c0c7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/map_prism_native.py": "ee620991e2a178f64cf01d30497494059db80587ad12ad53733a9ad767b8ca0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/flywheel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/flywheel/native_training.py": "1c740d0e4eea3134a3f3a08c6ffafdb232c0d07407f99b0b32f91d392e517ecf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/training_preflight.py": "5409f199fd29bd5aa8960d7c74e6c4825a178f7cec329096b3a97a52073e3451",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/formal_common.py": "dae6b50171a7a41d64e12805a667ff88b9a83ea521772d0841a5238ef28c6d42",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_diagnostic_512.py": "faf65dedbf298af1c078a968b4efdd7f643e38985899f067ec2ccab407429253"
+  },
+  "full_validation": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "note": "Exact same fixed G/S sample as the initial student. Diagnostic only; final580K remains required."
+}

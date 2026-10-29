@@ -38,6 +38,7 @@ def main():
                                      'prepare_vacancy_expansion_candidate.py']}
     selected=C/'final_delivery_selected_v2'
     sources |= set(selected.glob('*.py')) | {selected/'README.md'}
+    sources |= {C/'midrun_gs_diagnostic_512.py',C/'submit_midrun_gs512.py'}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -71,6 +72,9 @@ def main():
         'selected_delivery_cpu_validation.json': selected/'selection_cpu_validation.json',
         'selected_delivery_interface_cpu_validation.json': selected/'interface_validation/cpu_validation.json',
         'selected_delivery_rotation128_parity.json': selected/'interface_validation/rotation128_interface_validation.json',
+        'formal512_native_cpu_validation.json': C/'native_diagnostics/candidate1_step512/cpu_validation.json',
+        'formal512_native_policy.json': C/'native_diagnostics/candidate1_step512/policy.json',
+        'formal512_native_spec.json': C/'native_diagnostics/candidate1_step512/spec.json',
     }
     for arm in ['low_native_sft', 'no_mtd']:
         for kind, path in {
@@ -98,6 +102,11 @@ def main():
     expansion = C / 'vacancy_expansion_candidate_20261029/manifest.json'
     if expansion.exists():
         extra['vacancy_expansion_candidate_manifest.json'] = expansion
+    for name,path in {
+        'phase2_objective_comparison.json':C/'objective_controls_phase2_20261029/comparison.json',
+        'formal512_native_submission.json':C/'native_diagnostics/candidate1_step512/submission.json',
+    }.items():
+        if path.exists():extra[name]=path
     for name, source in extra.items():
         manifest['evidence'][name] = copy(source, DEST / 'evidence' / name)
     for name, item in manifest['evidence'].items():
@@ -139,6 +148,11 @@ Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
 student, teachers, data and schedule. The first reserves eight public-evaluation
 slots; the second waits for formal512 public success before using spare capacity.
 All controls remain excluded from final delivery.
+Phase2 nativeSFT0.1/MTD0 now completes at68.098571 macro, versus69.278571
+with the same nativeSFT weight and activeMTD. Where2Place is56.53 versus62.52;
+general scores remain stable. The zero-native-SFT/activeMTD arm is still running.
+These descriptive short-run results do not support simply reducing nativeSFT
+without distillation, and do not establish a single cause of the regression.
 
 Formal step512 has now completed full seven-public/general evaluation. Its
 public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp

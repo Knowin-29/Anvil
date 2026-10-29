@@ -1,0 +1,22 @@
+{
+  "state": "passed_cpu_only",
+  "real_baseline_rows": 35989,
+  "original_pairing_and_scorer_functions_unchanged": true,
+  "real512_model_spec_verified": true,
+  "checks": [
+    "24+8allowed_before768",
+    "UNKNOWNcharged",
+    "step768launchrefused",
+    "step1024launchrefused"
+  ],
+  "original_baseline_validation": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_cpu_validation.json",
+    "sha256": "f00ef7cd3241b573db5060450cf7e51ad955ce13b04f61a9f7021eb319282e46"
+  },
+  "new_code": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs512.py": "6af9c835ac7d1f66530e9c2a1ace89831248edd789a1e967f832230f050941b2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_diagnostic_512.py": "faf65dedbf298af1c078a968b4efdd7f643e38985899f067ec2ccab407429253"
+  },
+  "gpu_submitted": false,
+  "created": 1793260527.5868568
+}

@@ -1,0 +1,147 @@
+{
+  "state": "partial_waiting_controls",
+  "initial_public": {
+    "cv_bench": 87.07,
+    "embspatial": 79.51,
+    "refspatial_bench": 54.02,
+    "where2place": 63.54,
+    "blink_relative_depth": 86.29,
+    "erqa": 48.78,
+    "vabench_point": 70.67
+  },
+  "initial_macro": 69.98285714285716,
+  "formal128_public": {
+    "cv_bench": 86.81,
+    "embspatial": 79.09,
+    "refspatial_bench": 50.58,
+    "where2place": 60.23,
+    "blink_relative_depth": 85.48,
+    "erqa": 48.78,
+    "vabench_point": 69.33
+  },
+  "formal128_macro": 68.61428571428571,
+  "results": {
+    "low_native_sft_no_mtd": {
+      "loss_weights": {
+        "native_sft_weight": 0.1,
+        "mtd_weight": 0.0
+      },
+      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runs/low_native_sft_no_mtd/checkpoint-128",
+      "adapter_sha256": "c9486e6925d797cd303b307957080cc9168f1f5de7371094ca4dfc7ec35331d3",
+      "public": {
+        "cv_bench": 86.88,
+        "embspatial": 78.96,
+        "refspatial_bench": 50.46,
+        "where2place": 56.53,
+        "blink_relative_depth": 87.1,
+        "erqa": 48.43,
+        "vabench_point": 68.33
+      },
+      "macro": 68.09857142857142,
+      "general": {
+        "ai2d_test": {
+          "n": 3088,
+          "score": 87.92098445595855,
+          "parse_failures": 0
+        },
+        "scienceqa_test": {
+          "n": 2017,
+          "score": 98.16559246405552,
+          "parse_failures": 0
+        },
+        "textvqa_val": {
+          "n": 5000,
+          "score": 86.9280000000005,
+          "parse_failures": 0
+        }
+      },
+      "minus_initial": {
+        "cv_bench": -0.18999999999999773,
+        "embspatial": -0.5500000000000114,
+        "refspatial_bench": -3.5600000000000023,
+        "where2place": -7.009999999999998,
+        "blink_relative_depth": 0.8099999999999881,
+        "erqa": -0.3500000000000014,
+        "vabench_point": -2.3400000000000034
+      },
+      "minus_formal128": {
+        "cv_bench": 0.06999999999999318,
+        "embspatial": -0.13000000000000966,
+        "refspatial_bench": -0.11999999999999744,
+        "where2place": -3.6999999999999957,
+        "blink_relative_depth": 1.6199999999999903,
+        "erqa": -0.3500000000000014,
+        "vabench_point": -1.0
+      },
+      "source_exposures": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      },
+      "unique_by_category": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      },
+      "minus_phase1_low_native_sft": {
+        "cv_bench": -0.04000000000000625,
+        "embspatial": -0.19000000000001194,
+        "refspatial_bench": -2.1599999999999966,
+        "where2place": -5.990000000000002,
+        "blink_relative_depth": 0.8099999999999881,
+        "erqa": -0.3500000000000014,
+        "vabench_point": -0.3400000000000034
+      }
+    }
+  },
+  "pending": [
+    "no_native_sft"
+  ],
+  "observations": [
+    "low_native_sft_no_mtd: public macro change -1.884286pp vs initial and -1.180000pp vs phase1 low-SFT/MTD1."
+  ],
+  "evidence": {
+    "initial": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_public_comparison.json",
+      "sha256": "ba558ef5304c386bc60efe56bdf070afa39d4a7240f232d9e0d2db0026b2bd8f"
+    },
+    "formal128": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/128/report.json",
+      "sha256": "cae9ca1cc204c37e7b22301e73cd395d9b512df5e280fa340154d7e91baa7bdc"
+    },
+    "experiment": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/experiment.json",
+      "sha256": "71f8ea70523078b9a5a4c9110971c89ee9f9d29243737f23c4389e0dfeb1408c"
+    },
+    "low_native_sft_no_mtd": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/low_native_sft_no_mtd/report.json",
+      "sha256": "106fd7b60328bfa0a66ded6bbd4db4c21bd97a0eca87c1e6fb1a277ab8cf8069"
+    },
+    "low_native_sft_no_mtd_exposures": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runs/low_native_sft_no_mtd/exposure_audit.json",
+      "sha256": "c23650201e2639096662e6cdf87dd5048417f7a4c4f91055da55a3a22e1616bf"
+    },
+    "low_native_sft_no_mtd_gpu_resume": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/runtime_verified.json",
+      "sha256": "16f61f74969e5529c73179956c091ae95d7504f012ab549be7c2d13f7415917b"
+    },
+    "phase1_low_native_sft": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/evaluation/low_native_sft/report.json",
+      "sha256": "522426c9455a2e14d69d8699fe7fdb1cd40060f55ac1203f069a96edb5a5da33"
+    },
+    "topology_clarification": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/topology_clarification.json",
+      "sha256": "539cf57267ff99eb40e5c1a2cf479f02f827773b06b5707dbacba9a71ef69645"
+    }
+  },
+  "limitations": [
+    "Eight physical GPUs versus16 changes generation RNG and floating-point reduction order. The all-eligible per-example objective weights are equal; see the topology clarification.",
+    "One128-update run per arm, no replicate confidence interval.",
+    "Evaluation sets used adaptively; no new blind-test claim.",
+    "Objective controls are nonfinal; no automatic final acceptance or task restart."
+  ],
+  "final_mopd": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "completed": 1793260241.7954
+}

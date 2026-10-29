@@ -50,6 +50,11 @@ Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
 student, teachers, data and schedule. The first reserves eight public-evaluation
 slots; the second waits for formal512 public success before using spare capacity.
 All controls remain excluded from final delivery.
+Phase2 nativeSFT0.1/MTD0 now completes at68.098571 macro, versus69.278571
+with the same nativeSFT weight and activeMTD. Where2Place is56.53 versus62.52;
+general scores remain stable. The zero-native-SFT/activeMTD arm is still running.
+These descriptive short-run results do not support simply reducing nativeSFT
+without distillation, and do not establish a single cause of the regression.
 
 Formal step512 has now completed full seven-public/general evaluation. Its
 public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp

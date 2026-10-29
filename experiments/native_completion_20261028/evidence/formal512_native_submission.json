@@ -1,0 +1,9 @@
+{
+  "response": {
+    "Id": "t-20261029155852-2t7kq"
+  },
+  "plan_sha256": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9",
+  "config_sha256": "b58393cce0bd4fc5f71cceadea52e62da361cb295b0bbaa9bcf1e916355c7672",
+  "gpus": 8,
+  "submitted": 1793260735.3428042
+}
