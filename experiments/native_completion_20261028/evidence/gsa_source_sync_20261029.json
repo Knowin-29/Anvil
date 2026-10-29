@@ -1,0 +1,15 @@
+{
+  "state": "source_remote_verified",
+  "checked_at": "2026-10-29T10:34:19.229457+08:00",
+  "repository": "https://github.com/RWLinno/GSA_Forge",
+  "branch": "ICLR27",
+  "commit": "48f9d4b90473f5427bbca07879ed2a2a355120ba",
+  "local_tree": "6c09edb850f14d8e3d88d356e363c5a0acf641f1",
+  "reviewed_files": 666,
+  "all_reviewed_blobs_verified_before_commit": true,
+  "remote_head_verified": true,
+  "working_tree_tracked_clean": true,
+  "source_inventory_sha256": "a05895cb39d4881900cb72372cb83a30e2cb4b6fe82ac700c304eceda0b4f4e2",
+  "data_and_weights_sync_claimed": false,
+  "existing_origin_and_server_credentials_unchanged": true
+}

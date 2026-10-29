@@ -1,6 +1,6 @@
 {
   "schema": "anvil-native-completion-source-snapshot-v1",
-  "created_utc": "2026-10-29T02:06:22.089018+00:00",
+  "created_utc": "2026-10-29T02:42:01.695092+00:00",
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020",
   "files": {
     "cloud_a800/checkpoints.py": {
@@ -865,8 +865,8 @@
     },
     "completion_20261028/campaign_monitor.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor.py",
-      "sha256": "50382fa246532b8d0c210fac53446b2b497d57083b6c9e622d52c23692f43b52",
-      "bytes": 22670
+      "sha256": "b3560196d88832a72db257db036f0e5bba357cf9bab007410abb02c029e6da4f",
+      "bytes": 23908
     },
     "completion_20261028/formal_mopd/launch_policy.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/launch_policy.json",
@@ -887,6 +887,16 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/supervise_formal_v2.py",
       "sha256": "49b1de8da38853f29d8bce9da019e1b26368e4d754db7ff5ee1b81499823c052",
       "bytes": 1752
+    },
+    "completion_20261028/final_delivery_handoff_v1.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py",
+      "sha256": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+      "bytes": 11640
+    },
+    "completion_20261028/validate_final_handoff_v1.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_final_handoff_v1.py",
+      "sha256": "a7e0187cec584dc411ef3abdbf838b2508f968b6d3cf09115e23ea20655eb088",
+      "bytes": 5645
     }
   },
   "evidence": {
@@ -945,6 +955,18 @@
     "hf_pre_delivery_status.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hf_pre_delivery_status_20261029.json",
       "sha256": "17a9d87b7d44679e5b0662ee2e2e07663ace58437c963991de92bcddb9d9bd59"
+    },
+    "final_handoff_cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_handoff_cpu_validation.json",
+      "sha256": "9a7f5762373d87cae4971e115d17adb2729b608b2dea868200e8a969029597af"
+    },
+    "final_handoff_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/candidate1_20261029/handoff_policy.json",
+      "sha256": "5600b73768e7a169aa590f898586a6e83626eb6d9ecf1c9dacaaed2581c71fe8"
+    },
+    "gsa_source_sync_20261029.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/gsa_sync_20261029/git_sync_receipt.json",
+      "sha256": "e23a1e146072ea20b8057f8915ceaa6a2a29fb5049085279e9206c123b7aa550"
     }
   },
   "model_weights_in_git": false,
@@ -954,5 +976,6 @@
   "note": "Exact source snapshot; live cloud scripts remain untouched. Host-bound manifests and private data remain on shared storage. Restore original directory layout to reproduce this campaign.",
   "verbatim_source_whitespace_note": "Two original PRISM trainer lines have trailing spaces. Preserved byte-for-byte because those source files are frozen in running jobs; source SHA256 bindings are authoritative.",
   "automatic_formal_readiness_policy": "At most2048updates/48guardedtraininghours; at least24h finalreserve; actual8/16GPUthroughput; campaign32GPUcap.",
-  "formal_task_id": "t-20261029095820-px5rk"
+  "formal_task_id": "t-20261029095820-px5rk",
+  "final_validation_handoff": "After formal training and scheduled checkpoint diagnostics finish: verify final tip, derive merged copy, freeze 580K+seven-public+10105-general evaluation, submit at most four eight-GPU nodes under32cap, score/audit lineage. Stop for explicit model-quality assessment; no automatic upload or acceptance."
 }

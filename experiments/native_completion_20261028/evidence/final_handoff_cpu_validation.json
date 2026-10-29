@@ -1,0 +1,18 @@
+{
+  "state": "passed",
+  "validation": "CPU fault injection, no real final model or DLC submission",
+  "supervisor_sha256": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+  "checks": [
+    "completed non-smoke full-budget and diagnostic handoff required",
+    "live incomplete formal run rejected",
+    "transient cloud observation recovered",
+    "unknown cloud state fully charged",
+    "duplicate cloud ID rejected",
+    "32 GPU full capacity prevents submission",
+    "24+8 GPU submission recorded once",
+    "existing receipt avoids duplicate submission",
+    "ambiguous outcome preserves intent and prevents retry",
+    "changed submitted config rejected"
+  ],
+  "formal_plan_sha256": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9"
+}

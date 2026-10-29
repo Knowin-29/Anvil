@@ -105,6 +105,27 @@ def snapshot():
         result['formal_runs'][folder.name]=item
         result['final_training'].update(state=item['state'],updates=plan['steps'],world=plan['world'],
             actual_mopd_training_started=(run/'status.json').exists(),training_run=str(run))
+    result['final_delivery_handoffs']={}
+    for state_path in (ROOT/'delivery_runs').glob('*/status.json'):
+        folder=state_path.parent
+        state=json.loads(state_path.read_text())
+        item=dict(status=state,status_path=str(state_path),
+                  heartbeat_age_seconds=max(0,now-state['updated']))
+        process=folder/'process.json'
+        if process.exists():
+            item['process']=json.loads(process.read_text())
+            item['process_alive']=Path('/proc',str(item['process']['pid'])).exists()
+        failure=folder/'failure.json'
+        if failure.exists():item['failure']=json.loads(failure.read_text())
+        result['final_delivery_handoffs'][folder.name]=item
+        result['final_validation'].update(state=state['stage'],handoff_status=str(state_path),
+            final_quality_accepted=False,weights_uploaded=False)
+        report=folder/'evaluation/final_report.json'
+        if report.exists():
+            value=json.loads(report.read_text())
+            result['final_validation'].update(report=str(report),report_sha256=sha(report),
+                macro=value['paper_aligned_macro'],native_records=value['native']['n'],
+                final_spec_sha256=value['final_spec_sha256'])
     policy=ROOT/'completion_policy.json'
     if policy.exists():result['completion_policy']=json.loads(policy.read_text())
     result['diagnosis']={'benchmarks':{},'repairs':{}}
