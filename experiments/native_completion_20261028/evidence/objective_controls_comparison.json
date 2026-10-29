@@ -115,10 +115,14 @@
     "no_mtd_gpu_resume": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runtime/no_mtd/runtime_verified.json",
       "sha256": "3fe0b3d221b33e0e7eb76a38a65b0594ca5530eb186972f27297826651519c5b"
+    },
+    "topology_clarification": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/topology_clarification.json",
+      "sha256": "539cf57267ff99eb40e5c1a2cf479f02f827773b06b5707dbacba9a71ef69645"
     }
   },
   "limitations": [
-    "Eight physical GPUs versus16 changes RNG and MTD normalization groups.",
+    "Eight physical GPUs versus16 changes generation RNG and floating-point reduction order. The all-eligible per-example objective weights are equal; see the topology clarification.",
     "One128-update run per arm, no replicate confidence interval.",
     "Evaluation sets used adaptively; no new blind-test claim.",
     "Objective controls are nonfinal; no automatic final acceptance or task restart."
@@ -126,5 +130,5 @@
   "final_mopd": false,
   "final_quality_accepted": false,
   "weights_uploaded": false,
-  "completed": 1793252815.6180925
+  "completed": 1793253729.5797691
 }

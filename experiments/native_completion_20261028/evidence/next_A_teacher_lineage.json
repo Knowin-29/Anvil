@@ -1,0 +1,338 @@
+{
+  "family": "A",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+  "adapter_sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244",
+  "warm_start": {
+    "checkpoint": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024",
+    "updates": 1024,
+    "per_row_exposure_log_available": false,
+    "exact_unique_records": null
+  },
+  "specialist_sft": {
+    "checkpoint": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177",
+    "epoch": 1.0,
+    "updates": 177,
+    "available_training_records": 11317,
+    "source_manifest_sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd",
+    "coverage_evidence": "Completed map-style specialist epoch; historical per-row exposure logs unavailable."
+  },
+  "post_sft_stages": [
+    {
+      "schema": "anvil-stage-exposure-audit-v1",
+      "state": "complete_stage_audit",
+      "run": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr",
+      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512",
+      "execution_only": false,
+      "steps": 512,
+      "global_batch": 32,
+      "exposures": 16384,
+      "groups": {
+        "original_native:ALFRED": {
+          "exposures": 1640,
+          "unique_records": 1640,
+          "repeated_exposures": 0,
+          "unique_images": 1567,
+          "unique_ids_sha256": "813d5ea4c79074dc606699850ea77acc1104114d3064769a4678e12e4c6792c5"
+        },
+        "original_native:CLEVR": {
+          "exposures": 3264,
+          "unique_records": 3264,
+          "repeated_exposures": 0,
+          "unique_images": 3264,
+          "unique_ids_sha256": "365504235b3141d82da3b21439aaca87e41857b9d88df9560d11341ab3f3305c"
+        },
+        "original_native:PRISM": {
+          "exposures": 9840,
+          "unique_records": 3008,
+          "repeated_exposures": 6832,
+          "unique_images": 530,
+          "unique_ids_sha256": "3f6553e79d27d5984d7286d93838db40e7debcf680fd523123d2cf03baf706f1"
+        },
+        "original_native:ShareRobot": {
+          "exposures": 1640,
+          "unique_records": 1640,
+          "repeated_exposures": 0,
+          "unique_images": 1528,
+          "unique_ids_sha256": "7f30d13cbdd54c3423d20c0aaac6ef1fac3a353a2527ea457aec47676480370e"
+        }
+      },
+      "unique_records": 9552,
+      "unique_images": 6889,
+      "by_form": {
+        "dof": 9840,
+        "affordance": 1640,
+        "action_cot": 1640,
+        "QA": 3264
+      },
+      "evidence": [
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
+          "sha256": "9307a5391a4a3ebddf0fa75928aba9844b7be03a50388e823af96f49187d80d8"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
+          "sha256": "00c6a842540881690c1a54927f472c0d9d6818fee4355e7bb1311d34059e7e6d"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
+          "sha256": "6b81817a625ff0a692b93ebce05d33bcb06b0e3dfef1afb6a4d4c7cb856b659f"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
+          "sha256": "62a477c1df6af58beb5d42189689e7cc19c60ecd89d78c5ff6ee419fc52c58f3"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
+          "sha256": "9e78a17325791b9514fb77ba7b15ab53c9a5e59e7ba93eb808086d8da1120547"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
+          "sha256": "bbfbcf4ffef62ad29248e4abf9eda89980e14be57541510b523d11b8b46d7793"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
+          "sha256": "91bc290408f7dd62ae0b4e448b8e5e63e536ed9023cee31b8910586549ac26a9"
+        }
+      ],
+      "other_experiment_arms_included": false,
+      "complete_final_model_lineage": false
+    },
+    {
+      "schema": "anvil-stage-exposure-audit-v1",
+      "state": "complete_stage_audit",
+      "run": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4",
+      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+      "execution_only": false,
+      "steps": 2048,
+      "global_batch": 32,
+      "exposures": 65536,
+      "groups": {
+        "original_source:ALFRED": {
+          "exposures": 6552,
+          "unique_records": 2402,
+          "repeated_exposures": 4150,
+          "unique_images": 2275,
+          "unique_ids_sha256": "a30bfadb3e4d5267f4cacd6f604f1c303e8ab08b704f67b07d38911c0dd5f907"
+        },
+        "original_source:CLEVR": {
+          "exposures": 13104,
+          "unique_records": 13104,
+          "repeated_exposures": 0,
+          "unique_images": 13104,
+          "unique_ids_sha256": "ba7b1719c3cd61617ce9606f96efd9ceaafe454b67dd50d03e100d9aa987e79b"
+        },
+        "original_source:PRISM": {
+          "exposures": 7149,
+          "unique_records": 3008,
+          "repeated_exposures": 4141,
+          "unique_images": 530,
+          "unique_ids_sha256": "3f6553e79d27d5984d7286d93838db40e7debcf680fd523123d2cf03baf706f1"
+        },
+        "original_source:ShareRobot": {
+          "exposures": 6552,
+          "unique_records": 5907,
+          "repeated_exposures": 645,
+          "unique_images": 4994,
+          "unique_ids_sha256": "41d01af53e8a371c6a05a41c0054b2e25ad3afbd006e7fd05ab45f3c09d965a6"
+        },
+        "supplemental_prism:PRISM": {
+          "exposures": 32179,
+          "unique_records": 13536,
+          "repeated_exposures": 18643,
+          "unique_images": 2298,
+          "unique_ids_sha256": "dda02b32e417b3a134723338b04c537f739bbe04face944a25cbead77338a5c1"
+        }
+      },
+      "unique_records": 37957,
+      "unique_images": 23201,
+      "by_form": {
+        "dof": 39328,
+        "affordance": 6552,
+        "action_cot": 6552,
+        "QA": 13104
+      },
+      "evidence": [
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+          "sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+          "sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
+          "sha256": "f47b34226328ad341d435d6e8338e03f42cb9d0cc58fb9f53943720426cf9712"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
+          "sha256": "35799dc6a1035dfb50220e300db8fa201f2d9bf36e00451f2b6c8a3d0bc16136"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
+          "sha256": "1e36ec6c9e5bdeec76e8a1d1497a3113c1df9811c75546ad981054b4021fb692"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
+          "sha256": "df342c77c83defdd8dcb12ed8e0c27462be396a17a15d3bef98882f8ccf6c824"
+        },
+        {
+          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
+          "sha256": "322261ca43e6e6c421372e4e22731dc9efcf5b38a70356ac5806457f5a92433e"
+        }
+      ],
+      "other_experiment_arms_included": false,
+      "complete_final_model_lineage": false
+    }
+  ],
+  "post_sft_actual": {
+    "exposures": 81920,
+    "unique_supplemental_records": 13536,
+    "groups": {
+      "original_replay:ALFRED": {
+        "exposures": 8192,
+        "unique_records": 2402,
+        "unique_images": 2275,
+        "repetitions_within_logged_stages": 5790,
+        "unique_ids_sha256": "a30bfadb3e4d5267f4cacd6f604f1c303e8ab08b704f67b07d38911c0dd5f907"
+      },
+      "original_replay:CLEVR": {
+        "exposures": 16368,
+        "unique_records": 13104,
+        "unique_images": 13104,
+        "repetitions_within_logged_stages": 3264,
+        "unique_ids_sha256": "ba7b1719c3cd61617ce9606f96efd9ceaafe454b67dd50d03e100d9aa987e79b"
+      },
+      "original_replay:PRISM": {
+        "exposures": 16989,
+        "unique_records": 3008,
+        "unique_images": 530,
+        "repetitions_within_logged_stages": 13981,
+        "unique_ids_sha256": "3f6553e79d27d5984d7286d93838db40e7debcf680fd523123d2cf03baf706f1"
+      },
+      "original_replay:ShareRobot": {
+        "exposures": 8192,
+        "unique_records": 5907,
+        "unique_images": 4994,
+        "repetitions_within_logged_stages": 2285,
+        "unique_ids_sha256": "41d01af53e8a371c6a05a41c0054b2e25ad3afbd006e7fd05ab45f3c09d965a6"
+      },
+      "supplemental:PRISM": {
+        "exposures": 32179,
+        "unique_records": 13536,
+        "unique_images": 2298,
+        "repetitions_within_logged_stages": 18643,
+        "unique_ids_sha256": "dda02b32e417b3a134723338b04c537f739bbe04face944a25cbead77338a5c1"
+      }
+    },
+    "historical_unlogged_warm_start_included": false,
+    "original_replays_are_additional_unique_training_records": false
+  },
+  "counted_as_direct_student_exposure": false,
+  "evidence": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+      "sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+      "sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
+      "sha256": "f47b34226328ad341d435d6e8338e03f42cb9d0cc58fb9f53943720426cf9712"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
+      "sha256": "35799dc6a1035dfb50220e300db8fa201f2d9bf36e00451f2b6c8a3d0bc16136"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
+      "sha256": "1e36ec6c9e5bdeec76e8a1d1497a3113c1df9811c75546ad981054b4021fb692"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
+      "sha256": "df342c77c83defdd8dcb12ed8e0c27462be396a17a15d3bef98882f8ccf6c824"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
+      "sha256": "322261ca43e6e6c421372e4e22731dc9efcf5b38a70356ac5806457f5a92433e"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/adapter_model.safetensors",
+      "sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
+      "sha256": "9307a5391a4a3ebddf0fa75928aba9844b7be03a50388e823af96f49187d80d8"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
+      "sha256": "00c6a842540881690c1a54927f472c0d9d6818fee4355e7bb1311d34059e7e6d"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
+      "sha256": "6b81817a625ff0a692b93ebce05d33bcb06b0e3dfef1afb6a4d4c7cb856b659f"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
+      "sha256": "62a477c1df6af58beb5d42189689e7cc19c60ecd89d78c5ff6ee419fc52c58f3"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
+      "sha256": "9e78a17325791b9514fb77ba7b15ab53c9a5e59e7ba93eb808086d8da1120547"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
+      "sha256": "bbfbcf4ffef62ad29248e4abf9eda89980e14be57541510b523d11b8b46d7793"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
+      "sha256": "91bc290408f7dd62ae0b4e448b8e5e63e536ed9023cee31b8910586549ac26a9"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/adapter_model.safetensors",
+      "sha256": "e2065acffbd58d2d10d07927e5a144261603f93b5211ffbff5ce041f86cf51ab"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/complete.json",
+      "sha256": "6b84c0fad6978f4ea1a18a47ed7f150d52e7cbe83050f38ccd19d758346486f5"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/training_protocol.json",
+      "sha256": "7d1ba865c4afccdb950590232c09528a680c84ff83a8d8dca37afc6e420ef9c1"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177/trainer_state.json",
+      "sha256": "7eabc9cacbadfeeae0a91e9888af81264a69ae297af51dd3fbe24df51a40fdeb"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177/adapter_model.safetensors",
+      "sha256": "3e592ddb3285064c3da9db785411ef9432656f80bd485f926d1161332a74bf9b"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_training_export_20261012_v4_r2/manifest.json",
+      "sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/protocol.json",
+      "sha256": "3c68913634b85ed15a43aa63fac3be24693623256978c2c05b3791e34f26244b"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training.command.json",
+      "sha256": "1d1c6672e24d42a4717f7e9d1442bc2efcdffaa0194a8963a1f67c0806c24c5a"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training.result.json",
+      "sha256": "a5cadcd63edc9af297c784832ac6c6e8daa7745293f3c9e521a8aabe03ae2793"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/trainer_state.json",
+      "sha256": "3d92d0c79fd99b8f27ea06b99f5779a36b72ac6ec953cce275ff9b56d50f8dfe"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/adapter_model.safetensors",
+      "sha256": "3459635b22124198c56b0c68716c934c29e5e438b93a38ef37c6fbbaf6983649"
+    }
+  ]
+}

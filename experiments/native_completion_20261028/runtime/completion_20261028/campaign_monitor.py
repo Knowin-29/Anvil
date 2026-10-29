@@ -106,9 +106,11 @@ def snapshot():
         result['final_training'].update(state=item['state'],updates=plan['steps'],world=plan['world'],
             actual_mopd_training_started=(run/'status.json').exists(),training_run=str(run))
     result['midrun_native_diagnostics']={}
-    for folder in (ROOT/'native_diagnostics').glob('*'):
+    for folder in [*(ROOT/'native_diagnostics').glob('*'),*(ROOT/'objective_native_diagnostics').glob('*')]:
         if not folder.is_dir():continue
-        item=dict(full_final_validation=False,final_quality_accepted=False)
+        if folder.name.startswith('cpu_'):continue
+        objective_control=folder.parent.name=='objective_native_diagnostics'
+        item=dict(full_final_validation=False,final_quality_accepted=False,objective_control=objective_control)
         for name in ['controller_status.json','status.json','controller_process.json']:
             path=folder/name
             if path.exists():item[name.removesuffix('.json')]=json.loads(path.read_text())
@@ -124,7 +126,7 @@ def snapshot():
             value=json.loads(report.read_text())
             item['report']=dict(path=str(report),sha256=sha(report),n=value['n'],
                                 step=value['step'],groups=value['groups'])
-        result['midrun_native_diagnostics'][folder.name]=item
+        result['midrun_native_diagnostics'][('objective_' if objective_control else '')+folder.name]=item
     result['objective_controls']={}
     controls=ROOT/'objective_controls_20261029'
     for arm in ['low_native_sft','no_mtd']:

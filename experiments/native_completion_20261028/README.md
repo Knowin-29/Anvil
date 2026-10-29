@@ -33,8 +33,10 @@ public spatial regression, not an accepted final result or proof of collapse.
 Two nonfinal128-update controls test native-reference SFT0.1/MTD1 and SFT1/MTD0.
 They preserve the1664-update learning-rate horizon and exactly match all4096
 training rows in the original first128 updates. Eight physical GPUs with a
-virtual16 sampler differ in rank RNG and native token-normalization groups, so
+virtual16 sampler differ in rank RNG and floating-point reduction order, so
 these are diagnostic comparisons rather than exact stochastic replications.
+The reduction audit corrects earlier frozen notes: MTD normalizes over eligible
+examples; all observed nonempty native rows keep the same per-example weight.
 The zero-MTD arm cannot be released as MOPD. Each task requires a genuine GPU
 optimizer1→3 resume check before training, then unchanged seven-public and
 10,105-example general evaluation. Current task receipts are archived;

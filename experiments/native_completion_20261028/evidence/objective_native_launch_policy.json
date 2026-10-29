@@ -1,0 +1,27 @@
+{
+  "schema": "anvil-conditional-objective-native-diagnostic-v1",
+  "control_task": "t-20261029121655-c9bfj",
+  "minimum_macro_for_diagnostic": 69.98285714285716,
+  "final_quality_gate": false,
+  "reason": "Spend8GPUs on paired35989 native diagnostics if the full low-native-SFT public macro reaches its exact initial-student baseline; this threshold only allocates diagnostics.",
+  "launch_deadline": 1793268000.0,
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostic.py": "96e99049a07b37a4293737785eae55b3356ac757dd4ca7687f4c3a9a538b3fc7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_objective_native_diagnostic.py": "09276c0ae2aeb9bb200a55b6d520cd857d19dec9da0709d977c28469306b9e92",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs_diagnostic.py": "a938cd407eaaf603046e4f5aa2b26a38307114f015e0a552c7bea1190cb0ef98",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/controller.py": "30a5b9f48073408a20ac02a0784a15cb9c56a18f00499d04d3b9af6523071fbb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/objective_control_common.py": "104c4a35beaa11f19248a62ad9052391631bfd3e3be319dd3ef97bb2576d73d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_objective_native_diagnostic.py": "cea748911de33129779e564872528b1d69573428074d33eab4dec1631af4e6c9"
+  },
+  "cpu_validation": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostics/cpu_validation.json",
+    "sha256": "ebd373b272263fcb014012ec5307fcb0706d5b649f53b5cf0d64f73a08524d92"
+  },
+  "baseline_public": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_public_comparison.json",
+    "sha256": "ba558ef5304c386bc60efe56bdf070afa39d4a7240f232d9e0d2db0026b2bd8f"
+  },
+  "gpu_cap": 32,
+  "public_slots_reserved": 8
+}

@@ -55,11 +55,18 @@ def main():
     if 'low_native_sft' in results:
         delta = results['low_native_sft']['macro'] - sum(baseline.values()) / 7
         observations.append('Low-native-reference-SFT plus positive MTD changes public macro by %.6fpp versus initial. Inspect all seven task scores and formal512 before choosing a new training run.' % delta)
+    topology = O / 'topology_clarification.json'
+    if topology.exists():
+        clarification = read(topology)
+        require(clarification['state'] == 'verified_reduction_clarification', 'Unverified topology interpretation')
+        for filename, expected in clarification['evidence'].items():
+            require(sha(filename) == expected, 'Changed reduction analysis source')
+        evidence['topology_clarification'] = bound(topology)
     report = dict(state='complete_requires_training_decision' if not pending else 'partial_waiting_controls',
         initial_public=baseline, initial_macro=sum(baseline.values()) / 7,
         formal128_public=formal['paper_aligned_public'], formal128_macro=formal['paper_aligned_macro'],
         results=results, pending=pending, observations=observations, evidence=evidence,
-        limitations=['Eight physical GPUs versus16 changes RNG and MTD normalization groups.',
+        limitations=['Eight physical GPUs versus16 changes generation RNG and floating-point reduction order. The all-eligible per-example objective weights are equal; see the topology clarification.',
                     'One128-update run per arm, no replicate confidence interval.',
                     'Evaluation sets used adaptively; no new blind-test claim.',
                     'Objective controls are nonfinal; no automatic final acceptance or task restart.'],

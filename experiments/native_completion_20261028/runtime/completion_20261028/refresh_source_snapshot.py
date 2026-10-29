@@ -27,6 +27,10 @@ def main():
     sources |= set((C / 'objective_controls_20261029').glob('*.py'))
     sources |= {C / 'native_mopd_v7.py', C / 'review_prism_learning_candidates.py',
                 C / 'review_objective_controls.py', C / 'refresh_source_snapshot.py'}
+    sources |= {C / name for name in ['checkpoint_prefix_audit.py', 'validate_checkpoint_prefix_audit.py',
+                                     'prepare_next_teacher_candidate.py', 'audit_mtd_reduction.py']}
+    sources |= {C / name for name in ['objective_native_diagnostic.py', 'submit_objective_native_diagnostic.py',
+                                     'validate_objective_native_diagnostic.py']}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -38,6 +42,13 @@ def main():
         'objective_controls_cpu_validation.json': C / 'objective_controls_20261029/cpu_validation.json',
         'objective_controls_experiment.json': C / 'objective_controls_20261029/experiment.json',
         'objective_controls_derivation.json': C / 'objective_controls_20261029/derivation.json',
+        'checkpoint_prefix128_audit.json': C / 'checkpoint_prefixes/candidate1_step128/report.json',
+        'checkpoint_prefix_validation.json': C / 'checkpoint_prefix_validation.json',
+        'next_teacher_candidate_preparation.json': C / 'next_candidate_prism_20261029/preparation.json',
+        'next_A_teacher_lineage.json': C / 'next_candidate_prism_20261029/A_teacher_lineage.json',
+        'objective_topology_clarification.json': C / 'objective_controls_20261029/topology_clarification.json',
+        'objective_native_cpu_validation.json': C / 'objective_native_diagnostics/cpu_validation.json',
+        'objective_native_launch_policy.json': C / 'objective_native_diagnostics/low_native_sft/policy.json',
     }
     for arm in ['low_native_sft', 'no_mtd']:
         for kind, path in {
@@ -63,7 +74,7 @@ def main():
         first_formal_checkpoint_public_regression=True,
         objective_controls=dict(final_mopd=False, steps=128, source_rows_matched=4096,
             world=8, sampler_world=16, schedule_steps=1664,
-            limitation='Physical topology changes RNG and token-normalization groups; diagnostic comparisons only.'),
+            limitation='Physical topology changes generation RNG and floating-point reduction order; all-eligible per-example objective weights are equal.'),
         formal_training_completed=False, final_model_uploaded=False)
     (DEST / 'snapshot_manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     readme = DEST / 'README.md'
@@ -79,8 +90,10 @@ public spatial regression, not an accepted final result or proof of collapse.
 Two nonfinal128-update controls test native-reference SFT0.1/MTD1 and SFT1/MTD0.
 They preserve the1664-update learning-rate horizon and exactly match all4096
 training rows in the original first128 updates. Eight physical GPUs with a
-virtual16 sampler differ in rank RNG and native token-normalization groups, so
+virtual16 sampler differ in rank RNG and floating-point reduction order, so
 these are diagnostic comparisons rather than exact stochastic replications.
+The reduction audit corrects earlier frozen notes: MTD normalizes over eligible
+examples; all observed nonempty native rows keep the same per-example weight.
 The zero-MTD arm cannot be released as MOPD. Each task requires a genuine GPU
 optimizer1→3 resume check before training, then unchanged seven-public and
 10,105-example general evaluation. Current task receipts are archived;

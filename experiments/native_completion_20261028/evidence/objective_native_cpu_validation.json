@@ -1,0 +1,23 @@
+{
+  "state": "passed",
+  "actual_control_spec_load": true,
+  "matched_records": 35989,
+  "unchanged_pairing_and_scoring_AST": true,
+  "public_capacity_reservation_cases_passed": true,
+  "unknown_capacity_charged": true,
+  "final_mopd": false,
+  "code_sha256": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostic.py": "96e99049a07b37a4293737785eae55b3356ac757dd4ca7687f4c3a9a538b3fc7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_objective_native_diagnostic.py": "09276c0ae2aeb9bb200a55b6d520cd857d19dec9da0709d977c28469306b9e92",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs_diagnostic.py": "a938cd407eaaf603046e4f5aa2b26a38307114f015e0a552c7bea1190cb0ef98",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/controller.py": "30a5b9f48073408a20ac02a0784a15cb9c56a18f00499d04d3b9af6523071fbb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/objective_control_common.py": "104c4a35beaa11f19248a62ad9052391631bfd3e3be319dd3ef97bb2576d73d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_objective_native_diagnostic.py": "cea748911de33129779e564872528b1d69573428074d33eab4dec1631af4e6c9"
+  },
+  "actual_spec": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostics/cpu_no_mtd_prepare/spec.json",
+    "sha256": "fab80020de97c79776c15b689d5311109423d49d1e16d6743fc869d5367bc6d7"
+  },
+  "completed": 1793254157.7295966
+}

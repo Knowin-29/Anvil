@@ -1,0 +1,32 @@
+{
+  "state": "passed",
+  "tests": {
+    "real4096_prefix_and_live_append_validation": true,
+    "partial_future_suffix_ignored": true,
+    "missing_committed_row_rejected": true,
+    "duplicate_committed_row_rejected": true,
+    "reordered_committed_rows_rejected": true,
+    "wrong_rank_rejected": true,
+    "partial_committed_row_rejected": true,
+    "quality_promotion_rejected": true,
+    "changed_checkpoint_evidence_rejected": true,
+    "actual_zero_mtd_control_rejected": true
+  },
+  "actual_records": 4096,
+  "report": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step128/report.json",
+    "sha256": "fee0b796421e0c3be7d548ac76339c486a7b22ba152059b3a32a4f261d4f753a"
+  },
+  "code": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefix_audit.py",
+    "sha256": "db17401d915f0f9b10ff4f75e7a384b9dc6a191f3117ce7d57bb27b7bc0a73a7"
+  },
+  "validation_code": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_checkpoint_prefix_audit.py",
+    "sha256": "07652b5d3fb849b85c0ae6a5d8ce3ac2b6b7a50aa143992750f4eea84dc47be8"
+  },
+  "frozen_final_handoff_modified": false,
+  "delivery_selection_created": false,
+  "final_quality_accepted": false,
+  "completed": 1793253280.4140785
+}

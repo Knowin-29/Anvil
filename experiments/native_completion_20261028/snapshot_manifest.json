@@ -1,6 +1,6 @@
 {
   "schema": "anvil-native-completion-source-snapshot-v1",
-  "created_utc": "2026-10-29T05:48:17.557305+00:00",
+  "created_utc": "2026-10-29T06:11:37.707766+00:00",
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020",
   "files": {
     "cloud_a800/checkpoints.py": {
@@ -865,8 +865,8 @@
     },
     "completion_20261028/campaign_monitor.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor.py",
-      "sha256": "23bb7762df91de69ae462dc5246fd4d918fedca8629e97940e3c6ee5fb66db36",
-      "bytes": 27618
+      "sha256": "258b2839fe48740e52bf44375fe705554aed82be65e0a57b7b1b412309f07b4c",
+      "bytes": 27878
     },
     "completion_20261028/formal_mopd/launch_policy.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/launch_policy.json",
@@ -955,8 +955,8 @@
     },
     "completion_20261028/refresh_source_snapshot.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refresh_source_snapshot.py",
-      "sha256": "068d2526d8ffd98880f168e6a2e3ba7f31a6b0ec963d280d070b902f8788dbd1",
-      "bytes": 5655
+      "sha256": "581c42c4543ff6707b9cf016565019636466151e58d3e4798e5c56d1b4d31411",
+      "bytes": 6969
     },
     "completion_20261028/review_prism_learning_candidates.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/review_prism_learning_candidates.py",
@@ -965,8 +965,43 @@
     },
     "completion_20261028/review_objective_controls.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/review_objective_controls.py",
-      "sha256": "9e5a3f3ff601dcae22155f025d725ee24f0b6f74395038429a313afa28aa59c3",
-      "bytes": 5188
+      "sha256": "7c7ef2be82bb2976d2a8c772099ed6a09bce41d2d3928c7b67f836d9e47ee563",
+      "bytes": 5739
+    },
+    "completion_20261028/audit_mtd_reduction.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_mtd_reduction.py",
+      "sha256": "04489e7d756ea972fe3d5f639072e99611ee6ec4f9fb88e53004eaa863d10cbc",
+      "bytes": 4012
+    },
+    "completion_20261028/checkpoint_prefix_audit.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefix_audit.py",
+      "sha256": "db17401d915f0f9b10ff4f75e7a384b9dc6a191f3117ce7d57bb27b7bc0a73a7",
+      "bytes": 8753
+    },
+    "completion_20261028/prepare_next_teacher_candidate.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_next_teacher_candidate.py",
+      "sha256": "237b769cd3876b2a9f5f7415361aff574fdd996f94aa1bba0d1cc516b1c5a667",
+      "bytes": 5313
+    },
+    "completion_20261028/validate_checkpoint_prefix_audit.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_checkpoint_prefix_audit.py",
+      "sha256": "07652b5d3fb849b85c0ae6a5d8ce3ac2b6b7a50aa143992750f4eea84dc47be8",
+      "bytes": 3202
+    },
+    "completion_20261028/objective_native_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostic.py",
+      "sha256": "96e99049a07b37a4293737785eae55b3356ac757dd4ca7687f4c3a9a538b3fc7",
+      "bytes": 12823
+    },
+    "completion_20261028/submit_objective_native_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_objective_native_diagnostic.py",
+      "sha256": "09276c0ae2aeb9bb200a55b6d520cd857d19dec9da0709d977c28469306b9e92",
+      "bytes": 4451
+    },
+    "completion_20261028/validate_objective_native_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_objective_native_diagnostic.py",
+      "sha256": "cea748911de33129779e564872528b1d69573428074d33eab4dec1631af4e6c9",
+      "bytes": 3215
     }
   },
   "evidence": {
@@ -1113,8 +1148,43 @@
     },
     "objective_controls_comparison.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/comparison.json",
-      "sha256": "678191fc40dfbf0e79fe81e14cd452ec8151f8a14715d629a83e2e7797d619c2",
-      "bytes": 4770
+      "sha256": "c375e9893f29c63615a636be319777ebcc5b852cb7c3bb4897c47284332de534",
+      "bytes": 5139
+    },
+    "checkpoint_prefix128_audit.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step128/report.json",
+      "sha256": "fee0b796421e0c3be7d548ac76339c486a7b22ba152059b3a32a4f261d4f753a",
+      "bytes": 14000
+    },
+    "checkpoint_prefix_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefix_validation.json",
+      "sha256": "417e9d1ddf5c4e7c539a4b5217a99ea0d2b36873c2d3eab8366aae04cb7d57e4",
+      "bytes": 1334
+    },
+    "next_teacher_candidate_preparation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/preparation.json",
+      "sha256": "7f0c7a7dad1ccd085116e89b6242db4615ed85a0a8d394be5656ab852f1f6310",
+      "bytes": 12757
+    },
+    "next_A_teacher_lineage.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/A_teacher_lineage.json",
+      "sha256": "5f4904e0bd75224ebaa33fe70b164f32b928a9de58957b6b6d19201e9794a076",
+      "bytes": 16732
+    },
+    "objective_topology_clarification.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/topology_clarification.json",
+      "sha256": "539cf57267ff99eb40e5c1a2cf479f02f827773b06b5707dbacba9a71ef69645",
+      "bytes": 6535
+    },
+    "objective_native_cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostics/cpu_validation.json",
+      "sha256": "ebd373b272263fcb014012ec5307fcb0706d5b649f53b5cf0d64f73a08524d92",
+      "bytes": 1792
+    },
+    "objective_native_launch_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_native_diagnostics/low_native_sft/policy.json",
+      "sha256": "8aab5e0bd09c644d328ab38c5530845422cf8f49ffd9a204a7b3abb6a1cfd832",
+      "bytes": 2221
     }
   },
   "model_weights_in_git": false,
@@ -1135,6 +1205,6 @@
     "world": 8,
     "sampler_world": 16,
     "schedule_steps": 1664,
-    "limitation": "Physical topology changes RNG and token-normalization groups; diagnostic comparisons only."
+    "limitation": "Physical topology changes generation RNG and floating-point reduction order; all-eligible per-example objective weights are equal."
   }
 }

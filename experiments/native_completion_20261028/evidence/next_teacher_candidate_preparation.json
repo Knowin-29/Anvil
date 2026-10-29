@@ -1,0 +1,338 @@
+{
+  "state": "prepared_for_future_decision_only",
+  "source_comparison": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_matched_review.json",
+    "sha256": "e994e7fcefc09b3faa3622248507335af4c80aa60faaa1a89aa8e707e8ce0e7d"
+  },
+  "binding": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/bindings.json",
+    "sha256": "5b6d64b3dfd100b658752bf05565e778277180a8a7ae1d302d9d5454534764f6"
+  },
+  "teacher_lineage": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/A_teacher_lineage.json",
+    "sha256": "5f4904e0bd75224ebaa33fe70b164f32b928a9de58957b6b6d19201e9794a076"
+  },
+  "initial_student_lineage": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/initialization_lineage.json",
+    "sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89"
+  },
+  "previous_A": {
+    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+    "adapter_sha256": "d199a630dfc97dc466bccb997996c4ada85889a3b64c7cc2d259c789075c6be8",
+    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
+    "completion_sha256": "a0e98791c600f5dd5e8dfe58679551674314d8c518ab1f34cfe8d480f435f06f"
+  },
+  "proposed_A": {
+    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+    "adapter_sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244",
+    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+    "completion_sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
+  },
+  "interfaces": {
+    "G": {
+      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/protocol.json",
+      "protocol_sha256": "6703e4626e7ebb2e271dd422970784f4a09ce94df06ed32c897914f29937e49f",
+      "declared_representation": null,
+      "student_requires_representation_adaptation": false
+    },
+    "A": {
+      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+      "protocol_sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48",
+      "declared_representation": "anvil-dof-train-rotation128-v1",
+      "student_requires_representation_adaptation": false
+    },
+    "S": {
+      "protocol": null,
+      "protocol_sha256": null,
+      "declared_representation": null,
+      "student_requires_representation_adaptation": false
+    },
+    "student": {
+      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/protocol.json",
+      "protocol_sha256": "ef61ca5a508e835dc08bf1966fc6b6fc66c1fa146124d81ac0c462b9c209e53a",
+      "declared_representation": "anvil-dof-train-rotation128-v1",
+      "student_requires_representation_adaptation": false
+    }
+  },
+  "comparisons": {
+    "current_A": [
+      {
+        "form": "action_cot",
+        "source": "ALFRED",
+        "n": 3327,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 0.9954914337240758,
+            "candidate": 0.9966937180643222,
+            "candidate_minus_baseline": 0.0012022843402464682
+          },
+          "expert_continuation_exact": {
+            "baseline": 0.25939284640817556,
+            "candidate": 0.24917342951608054,
+            "candidate_minus_baseline": -0.01021941689209498
+          },
+          "json_valid": {
+            "baseline": 0.9954914337240758,
+            "candidate": 0.9966937180643222,
+            "candidate_minus_baseline": 0.0012022843402464682
+          },
+          "next_action_exact": {
+            "baseline": 0.6396152690111211,
+            "candidate": 0.6299969942891493,
+            "candidate_minus_baseline": -0.009618274721971746
+          },
+          "target_object_exact": {
+            "baseline": 0.5743913435527502,
+            "candidate": 0.567478208596333,
+            "candidate_minus_baseline": -0.0069131349564171924
+          },
+          "target_role_exact": {
+            "baseline": 0.8130447850916742,
+            "candidate": 0.8214607754733995,
+            "candidate_minus_baseline": 0.008415990381725278
+          },
+          "truncated": {
+            "baseline": 0.0012022843402464682,
+            "candidate": 0.0015028554253080854,
+            "candidate_minus_baseline": 0.00030057108506161706
+          }
+        }
+      },
+      {
+        "form": "affordance",
+        "source": "ShareRobot-Bench",
+        "n": 193,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "instruction_copy_exact": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "json_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "region_iou": {
+            "baseline": 0.11386315907797635,
+            "candidate": 0.14319011487669342,
+            "candidate_minus_baseline": 0.029326955798717056
+          },
+          "region_iou50": {
+            "baseline": 0.05181347150259067,
+            "candidate": 0.08808290155440414,
+            "candidate_minus_baseline": 0.03626943005181347
+          },
+          "region_iou75": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "region_iou90": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "truncated": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          }
+        }
+      },
+      {
+        "form": "dof",
+        "source": "PRISM",
+        "n": 580,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "json_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "normalized_projected_contact_l2": {
+            "baseline": 0.08527639132853541,
+            "candidate": 0.0774290445493468,
+            "candidate_minus_baseline": -0.00784734677918861
+          },
+          "pi_symmetric_rotation_error_degrees": {
+            "baseline": 80.65314903824064,
+            "candidate": 76.36526724844272,
+            "candidate_minus_baseline": -4.28788178979792
+          },
+          "rotation_error_degrees": {
+            "baseline": 112.21705787403283,
+            "candidate": 111.71688731775879,
+            "candidate_minus_baseline": -0.5001705562740395
+          },
+          "truncated": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          }
+        }
+      }
+    ],
+    "initial_student": [
+      {
+        "form": "action_cot",
+        "source": "ALFRED",
+        "n": 3327,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 0.9963931469792606,
+            "candidate": 0.9966937180643222,
+            "candidate_minus_baseline": 0.00030057108506161706
+          },
+          "expert_continuation_exact": {
+            "baseline": 0.1920649233543733,
+            "candidate": 0.24917342951608054,
+            "candidate_minus_baseline": 0.05710850616170724
+          },
+          "json_valid": {
+            "baseline": 0.9990982867448152,
+            "candidate": 0.9966937180643222,
+            "candidate_minus_baseline": -0.0024045686804929365
+          },
+          "next_action_exact": {
+            "baseline": 0.5837090471896603,
+            "candidate": 0.6299969942891493,
+            "candidate_minus_baseline": 0.04628794709948903
+          },
+          "target_object_exact": {
+            "baseline": 0.4845205891193267,
+            "candidate": 0.567478208596333,
+            "candidate_minus_baseline": 0.0829576194770063
+          },
+          "target_role_exact": {
+            "baseline": 0.7938082356477307,
+            "candidate": 0.8214607754733995,
+            "candidate_minus_baseline": 0.02765253982566877
+          },
+          "truncated": {
+            "baseline": 0.0009017132551848512,
+            "candidate": 0.0015028554253080854,
+            "candidate_minus_baseline": 0.0006011421701232341
+          }
+        }
+      },
+      {
+        "form": "affordance",
+        "source": "ShareRobot-Bench",
+        "n": 193,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "instruction_copy_exact": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "json_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "region_iou": {
+            "baseline": 0.13366094222188213,
+            "candidate": 0.14319011487669342,
+            "candidate_minus_baseline": 0.009529172654811275
+          },
+          "region_iou50": {
+            "baseline": 0.07253886010362694,
+            "candidate": 0.08808290155440414,
+            "candidate_minus_baseline": 0.015544041450777202
+          },
+          "region_iou75": {
+            "baseline": 0.015544041450777202,
+            "candidate": 0.0,
+            "candidate_minus_baseline": -0.015544041450777202
+          },
+          "region_iou90": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "truncated": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          }
+        }
+      },
+      {
+        "form": "dof",
+        "source": "PRISM",
+        "n": 580,
+        "metrics": {
+          "contract_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "json_valid": {
+            "baseline": 1.0,
+            "candidate": 1.0,
+            "candidate_minus_baseline": 0.0
+          },
+          "normalized_projected_contact_l2": {
+            "baseline": 0.09170607306322881,
+            "candidate": 0.0774290445493468,
+            "candidate_minus_baseline": -0.01427702851388201
+          },
+          "pi_symmetric_rotation_error_degrees": {
+            "baseline": 80.90354318155907,
+            "candidate": 76.36526724844272,
+            "candidate_minus_baseline": -4.538275933116354
+          },
+          "rotation_error_degrees": {
+            "baseline": 112.2297524623071,
+            "candidate": 111.71688731775879,
+            "candidate_minus_baseline": -0.5128651445483134
+          },
+          "truncated": {
+            "baseline": 0.0,
+            "candidate": 0.0,
+            "candidate_minus_baseline": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "category_prior_rotation_degrees": 70.88,
+  "limitations": [
+    "Pose76.365deg remains worse than the70.88deg train-only category prior.",
+    "Next-action accuracy falls0.961827pp versus current A, although it is4.628795pp above the initial student.",
+    "Teacher comparisons and objective controls used held-out evaluation adaptively.",
+    "The best native-reference loss coefficient and any future run budget remain undecided."
+  ],
+  "remaining_before_training": [
+    "Review complete low-native-SFT and formal512 public results.",
+    "Make an explicit new teacher/run decision; freeze chosen loss weights and budget.",
+    "Prove actual GPU optimizer resume and throughput with this exact student/teacher/trainer tuple."
+  ],
+  "teacher_qualified": false,
+  "formal_run_admitted": false,
+  "submitted": false,
+  "current_training_modified": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "code": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_next_teacher_candidate.py",
+    "sha256": "237b769cd3876b2a9f5f7415361aff574fdd996f94aa1bba0d1cc516b1c5a667"
+  },
+  "completed": 1793253556.9451482
+}
