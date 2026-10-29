@@ -1,0 +1,450 @@
+{
+  "state": "complete_paired_GS_diagnostic_requires_review",
+  "step": 512,
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512",
+  "initial_student": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+  "n": 35989,
+  "full_validation": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "spec_sha256": "9662ff7cf6509ebf6d8de03424c09f7da6b6a241b2f36b472a3be7bda35a42d4",
+  "groups": [
+    {
+      "form": "bbox",
+      "source": "coco_train2017",
+      "n": 5080,
+      "metrics": {
+        "box_f1_iou50": {
+          "initial_student": 0.3391732283464567,
+          "formal_checkpoint": 0.3387795275590551,
+          "checkpoint_minus_initial": -0.0003937007874015748
+        },
+        "contract_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "matched_box_iou": {
+          "initial_student": 0.3149093349605809,
+          "formal_checkpoint": 0.3134213936250869,
+          "checkpoint_minus_initial": -0.0014879413354939638
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    },
+    {
+      "form": "depth_order",
+      "source": "PRISM",
+      "n": 224,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "reference_exact": {
+          "initial_student": 0.875,
+          "formal_checkpoint": 0.875,
+          "checkpoint_minus_initial": 0.0
+        },
+        "reference_relation_f1": {
+          "initial_student": 0.875,
+          "formal_checkpoint": 0.875,
+          "checkpoint_minus_initial": 0.0
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    },
+    {
+      "form": "detection",
+      "source": "coco_train2017",
+      "n": 232,
+      "metrics": {
+        "box_f1_iou50": {
+          "initial_student": 0.2431859154070449,
+          "formal_checkpoint": 0.2497627347019024,
+          "checkpoint_minus_initial": 0.006576819294857496
+        },
+        "contract_valid": {
+          "initial_student": 0.9525862068965517,
+          "formal_checkpoint": 0.9439655172413793,
+          "checkpoint_minus_initial": -0.008620689655172414
+        },
+        "json_valid": {
+          "initial_student": 0.9525862068965517,
+          "formal_checkpoint": 0.9482758620689655,
+          "checkpoint_minus_initial": -0.004310344827586207
+        },
+        "matched_box_iou": {
+          "initial_student": 0.2064696982268255,
+          "formal_checkpoint": 0.20914608114946626,
+          "checkpoint_minus_initial": 0.002676382922640753
+        },
+        "truncated": {
+          "initial_student": 0.04741379310344827,
+          "formal_checkpoint": 0.05172413793103448,
+          "checkpoint_minus_initial": 0.004310344827586207
+        }
+      }
+    },
+    {
+      "form": "direction",
+      "source": "coco_train2017",
+      "n": 5565,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "reference_exact": {
+          "initial_student": 0.7570530098831986,
+          "formal_checkpoint": 0.7635220125786164,
+          "checkpoint_minus_initial": 0.00646900269541779
+        },
+        "reference_relation_f1": {
+          "initial_student": 0.7570530098831986,
+          "formal_checkpoint": 0.7635220125786164,
+          "checkpoint_minus_initial": 0.00646900269541779
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    },
+    {
+      "form": "mask",
+      "source": "coco_train2017",
+      "n": 5079,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 0.501673557786966,
+          "formal_checkpoint": 0.4345343571569207,
+          "checkpoint_minus_initial": -0.06713920063004529
+        },
+        "json_valid": {
+          "initial_student": 0.5030517818468202,
+          "formal_checkpoint": 0.43630635951959046,
+          "checkpoint_minus_initial": -0.06674542232722977
+        },
+        "matched_mask_iou": {
+          "initial_student": 0.08635830638592502,
+          "formal_checkpoint": 0.07216005643696151,
+          "checkpoint_minus_initial": -0.014198249948963524
+        },
+        "truncated": {
+          "initial_student": 0.005119117936601693,
+          "formal_checkpoint": 0.004134672179562906,
+          "checkpoint_minus_initial": -0.0009844457570387872
+        }
+      }
+    },
+    {
+      "form": "metric_comparison",
+      "source": "coco_train2017",
+      "n": 5560,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "normalized_image_distance_mae": {
+          "initial_student": 0.10542036780575542,
+          "formal_checkpoint": 0.1049322116906475,
+          "checkpoint_minus_initial": -0.0004881561151079178
+        },
+        "relation_identity_exact": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    },
+    {
+      "form": "point",
+      "source": "coco_train2017",
+      "n": 5078,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "interior_point_f1": {
+          "initial_student": 0.3629381646317448,
+          "formal_checkpoint": 0.3631350925561245,
+          "checkpoint_minus_initial": 0.00019692792437967703
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    },
+    {
+      "form": "point",
+      "source": "pixmo_points",
+      "n": 8938,
+      "metrics": {
+        "annotated_point_f1_r50": {
+          "initial_student": 0.4666933814773048,
+          "formal_checkpoint": 0.4693717267499373,
+          "checkpoint_minus_initial": 0.002678345272632458
+        },
+        "contract_valid": {
+          "initial_student": 0.984672186171403,
+          "formal_checkpoint": 0.9871335869321995,
+          "checkpoint_minus_initial": 0.0024614007607965988
+        },
+        "json_valid": {
+          "initial_student": 0.9850078317296934,
+          "formal_checkpoint": 0.98746923249049,
+          "checkpoint_minus_initial": 0.0024614007607965988
+        },
+        "truncated": {
+          "initial_student": 0.014097113448198702,
+          "formal_checkpoint": 0.012307003803982993,
+          "checkpoint_minus_initial": -0.0017901096442157081
+        }
+      }
+    },
+    {
+      "form": "relation_graph",
+      "source": "coco_train2017",
+      "n": 233,
+      "metrics": {
+        "contract_valid": {
+          "initial_student": 0.9957081545064378,
+          "formal_checkpoint": 0.9957081545064378,
+          "checkpoint_minus_initial": 0.0
+        },
+        "json_valid": {
+          "initial_student": 1.0,
+          "formal_checkpoint": 1.0,
+          "checkpoint_minus_initial": 0.0
+        },
+        "reference_exact": {
+          "initial_student": 0.030042918454935622,
+          "formal_checkpoint": 0.030042918454935622,
+          "checkpoint_minus_initial": 0.0
+        },
+        "reference_relation_f1": {
+          "initial_student": 0.7504436845731861,
+          "formal_checkpoint": 0.7532497824996426,
+          "checkpoint_minus_initial": 0.002806097926456392
+        },
+        "truncated": {
+          "initial_student": 0.0,
+          "formal_checkpoint": 0.0,
+          "checkpoint_minus_initial": 0.0
+        }
+      }
+    }
+  ],
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/spec.json": "9662ff7cf6509ebf6d8de03424c09f7da6b6a241b2f36b472a3be7bda35a42d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/metrics.json": "b15b8d8a40183954180196d98f99300cb5151fc0b4250f57ff91c9b44b7fa6a4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/protocol.json": "c883db89f531173684c9daf90c76b43dc68d6a021955f87810f4d6ea407b91ed",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_depth_order.jsonl": "daa7bd0a43c960a06d180f97284c76fbb7de2676d6c531cb6aac0ece8f521328",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_detection.jsonl": "eb9b7af16e1cd34087b27dc78831e0a6ebb7335e8cfefce5573d3cf62c3c42e2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_relation_graph.jsonl": "a1de5a495f2f8e669136e714df46e064922350f79b1630d7c588696a97e293cf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_mask.jsonl": "5ba3854dbc7c697634e7c1e85076ace245bec67d2c7fd4da5210b05d830523aa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_bbox.jsonl": "edc5f5fc15a4c983d7485606846e6cbeb207a36e8a8fe9f3dd861baaf47a4ff6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_metric_comparison.jsonl": "3b0125cec1b08080ea4d8180f027ee8fb24a355b26c78b5cd54ecc0dfbab0bee",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_direction.jsonl": "f748f608971a3bc707747ad585ed5a913875f9392e30b3768810cf9271128009",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/26/evaluation/predictions_point.jsonl": "9dd15a9dac995660226c10338fb0481a8e06133f28ea9b38984ca76acbefe51b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/metrics.json": "b545ccae8685e8486ea50dd7d7ed8b809809b2710593fb7a7b5f0e51e627a903",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/protocol.json": "dd3b63e30cdc9e3b73b6549a3df5044fc3bf8225eb16e2f0fe61e376ed37e18b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_depth_order.jsonl": "1419c3ca0f23629131438ad8e4aa3d0428a07c99c7aaca8c5df7f59f2fa10500",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_detection.jsonl": "d70766a02493d305d548f44e600f6eab65d9d71d8bc44e900b66f3a054836454",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_relation_graph.jsonl": "acfbaaa92a0fc758a222790f9c8343bcebd46cf8d1e1ef844975c99289bd5ec9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_mask.jsonl": "ed30ec52192f9daffb00030e786d57b04d448ab278a142b21380956be5ce2519",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_bbox.jsonl": "a1bfa1b90a52b75f18d5b1cbfd558a1f63caddc17bc9c6e1f689eaf9d97b1432",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_metric_comparison.jsonl": "0851c5b0928f5b9880788f604f51a5b9b879ebb8f7ab6638a19ffe53e29cce12",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_direction.jsonl": "50377df2671e38c11c6d5c9829101cce8ceafba211713bd21b21dbf7af204588",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/44/evaluation/predictions_point.jsonl": "937947a204654c9483d13018d131ab56ae8fac2dbad6cec15fceb2c543d8a632",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/metrics.json": "af0bcf41dea7670ac221e3923725e8163e45396cedff1527cde6fe21901c0d89",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/protocol.json": "753adef976bf1967e7ed617052b06cc3e4c82cdfe396d4854b66efc47792d794",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_depth_order.jsonl": "b86b47ef0c4fb8e8d7e39531adaa166139bf5af3ea8c5e72373b69578c61c45b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_detection.jsonl": "1b4459540280dd119187f518cd33c046fdbb6fcc1024d46c2b45596cd25fa267",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_relation_graph.jsonl": "0e4eaac7c1d398b191ad4dbe13ad105939e1dc5a9facb01e74a3c3ce12d48f04",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_mask.jsonl": "12e2f7be72f76290ce274fc5f57375e281bd4bf8c38028cd752255191a1b074a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_bbox.jsonl": "8a0f51ec23eced6c654459805e8a20b3a2acb61fd9739830bf99bb486074d9d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_metric_comparison.jsonl": "a73827dd5a150de0e7b456092d687eaf7c61c0071c86761f3f0149a1d7ea19e9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_direction.jsonl": "c0c2208f488441a81f619f42b07e6944ebcc0a61133268f2c5cac3c429a04fae",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/52/evaluation/predictions_point.jsonl": "407db76bd07d87a7e77a83b71cf482585781d200d08cad6c658bc84341e65684",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/metrics.json": "c1a9db2bba89439160409422c592a97d065abdba87557e0410bea5466c4322d0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/protocol.json": "4e7113963f7c9be06bdadbe6a448b8500b50b03625b7d4e404236ab3619575f6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_depth_order.jsonl": "ddbb26d9a125baecfeeb4e1087f542c68acaa4f825ba6e7514bcf8a2557a8f41",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_detection.jsonl": "3358679524e38a55ee231ec4fad53355b25c8e2e01925ce9e6bc70fd296d66cc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_relation_graph.jsonl": "14f68f66cd6e54e69bb622e62a0a89dec39d338262f2dbbac5e54699b3757b17",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_mask.jsonl": "a81a602f643fad051e1a45c55782cf99386e2dab725a5201e1ac9abd2edaf225",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_bbox.jsonl": "6ecf00a7cb2aa53c972590c8a6805777ca6d131022c6f1aa37e45a6de7b64aa7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_metric_comparison.jsonl": "8a3d5e184eaacc27b95bb90aac7779d67b5ec33c5003b35f8a092056ae764c00",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_direction.jsonl": "59bc5e2b5be694aee471dc8aa8166c3f6627f29cd66f57862d37113534652fdf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/58/evaluation/predictions_point.jsonl": "fb14bbf6895b21a020b0317e3aa6d6455b85bf6464c1c0ec1b337bc47851be0d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/metrics.json": "443ffe34157cc663667d8ffcf3dac6a540456505e07e203cdd12670733ef67d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/protocol.json": "4398fd2f9301cd09df066934a95b1d3eddcde867f79d7bc46fb99f65199f5bcb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_depth_order.jsonl": "6d5d558301e2316e95e16138196d8338509630dc7737410a90ef98ba49c602af",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_detection.jsonl": "372763ddca50937f8e5fef7a6bc0f65bbf2bb95c6a5029d2f1dbd292c0fe933f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_relation_graph.jsonl": "91a198170bdeb17d73cde5c02c3cacdc7e208442ae25bf309d7544f5531b4338",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_mask.jsonl": "8ee1916dc833d4d27211ddc4ac439d8e03aa44343ffb9ce75cc11f52b94f9671",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_bbox.jsonl": "dbff17a373aa243824018d03ea8af635b7d5431a68d10a06087d710ad6089ea2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_metric_comparison.jsonl": "cd014a3ef566cca2960077647b110f5acc54fe051f7a8048069e4051bf7551c1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_direction.jsonl": "9798094ba8954b2ba8d512c4e8eeb45b450fe3cc344be3ddc135215b69cda3ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/68/evaluation/predictions_point.jsonl": "bd6f79255d7f503f817448c0d30c51d03c7a6de2d42fdbfd1680f8d41540a064",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/metrics.json": "8f07aad1e44b69d8537e2f24e16ac82b0b213512c4231d873a092764bd9d5830",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/protocol.json": "4617742a0932b79c9635fbeadb430bb7a75eb371b9571822953ae4fd9313dd83",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_depth_order.jsonl": "239d5348649447d2f73d52bf2b43ca7f9edf98fdc72b93e6da4baef8660ea249",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_detection.jsonl": "73835e86e8c7232cd818ff967f9ab37ad039248def2b92fb454f9c6db90736ca",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_relation_graph.jsonl": "9ccd6b4beadceed3e505db5d50d77202249246b601b502d695c4325d64ab324e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_mask.jsonl": "71473ca3abf16c86898b6dccb839ccaf3d7067ebbfbaa9fa02dd784065f8e999",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_bbox.jsonl": "160fe04ce636bdf1d2d9be64a5b6008ffe8500f0068c09e4c1cb3549c95c00f6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_metric_comparison.jsonl": "376584ca3f90324cc3016f179686205448c47209ca8613e30a3f91064165068e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_direction.jsonl": "1f84dc450292d8f6b2d6504a75f247ae9322da6c00a7494877c4569f7730a6b1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/87/evaluation/predictions_point.jsonl": "9cbcc5a44ffc7589138fedd5c854eff6800a732467e04f9ea2c8fbd48e9867dc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/metrics.json": "66735091c9fb0cd44af414e33a29472296e2c5ca994740f38832997e9f02b557",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/protocol.json": "187266547ad89569fbf5d5da4cbf03690b63ddad9d3e7074baba55d19ac400c6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_depth_order.jsonl": "21c2b40d7a2f7474eadceafb193a980ff2abde43cb68f5bbd8d7a84022c29533",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_detection.jsonl": "173e199673f6f641e41061da9d1d0193056ec9e3bac8b4de006fb7870f43c2d8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_relation_graph.jsonl": "6dc6007b377e65508cd3e6c7cd1c3b0f9ff715e07cb489bbe71b683153b8a71c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_mask.jsonl": "76b6f674b1f7cb64e0526fdf34daf25f023a09527be97d88ec64a36cc294f75a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_bbox.jsonl": "17232bd9f61c45208e14969a28c5519f6ec27ca0e3a63e259ec0be6681992c62",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_metric_comparison.jsonl": "0420c75c1bb9084a1e711ac0ca77411a0f4f3930ae1256c6937fcdd9b20b3cc5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_direction.jsonl": "af683eeef83fb0b6e34c34d72aff78d5556c5187965ab90a5ba8ffc59f06a9ff",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/92/evaluation/predictions_point.jsonl": "742e770fe2eedb59b31b69dfb323e0f76fac844e94176a0a62f5966a16952342",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/metrics.json": "fef76d2582f572186939168010bb6624f6d980e3da3b89ea3fb070bd8e5caf29",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/protocol.json": "03a7fb729306eed8ed804c1384a4ed83c312463d10bb8e9fa41ef938a307cff7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_depth_order.jsonl": "6b5cd2a25726ecf5232358f3b79716571535815bba5d2f02e806167b69a4773d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_detection.jsonl": "4d36873df31357f9e03c2ca16d6ce3c9324bd330dec0bb43457ccb14d50ca8a9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_relation_graph.jsonl": "612fcaf260496ea69920aff70fcc50ef9cbecfb2d8563496d3dd46b6e3bd6462",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_mask.jsonl": "956b0f56f3cc6b3fe04b1cabc6140f4916c477798fc26ddb15f724692f57a75d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_bbox.jsonl": "2a377d1f17aa7e946e026612d3fa2022e6208f231935fb5bd2a7b61d3ea204aa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_metric_comparison.jsonl": "187e333d6321a23e41f02c8c2fef7db5db55ee4f712116cc279a339a9521c0d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_direction.jsonl": "37d78b094ff522dc2cc52e3186415a845d873cd728d05119c9c67a001468aeba",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native/115/evaluation/predictions_point.jsonl": "665ef78bfb1387f136a16163520c5aa7d2b6540e8071641e2affd91a1a44b186",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/metrics.json": "3d281bdb0a3c83a829f70773317be3948e3f0262853e6bf33b042250daf623d3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/protocol.json": "a1df1c61e252f1a598d004cbd72f0467fe615f48af0cc6a64ce613e5f93c983d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_depth_order.jsonl": "340420197fa53ca4c13daa0aeed6d85742a02b65a07b18518fe338ed2b00f288",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_detection.jsonl": "90c3cbdfd6ca7fe5c2bc3f4958ca9b38aac93a0064ca7a9440242a3161dfa2ff",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_relation_graph.jsonl": "cb03fec46b57bd95e530c95a1453b1de08e0431f70de5daafdc132f29f74caac",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_mask.jsonl": "be98bed7e50cd0ccfcc706b3b22bed9970773a0078d29bd9945149b1942e9c21",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_bbox.jsonl": "0879ce8ba1fd706a62b296944cfc4d2b11decac4b6468887731d1018785009a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_metric_comparison.jsonl": "8f6a3e54cc76e6921e4fdb4e6374869a05445af01dd4cbd2f1bb7846ce157c66",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_direction.jsonl": "737bfa21093d30a5514e2991088b905488cd96bc4a0865c06cabe362f9539ea7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/26/evaluation/predictions_point.jsonl": "57bf50b20c4dedd2162e4e7e459498276934ef609d7ba6130ffff86408aa414d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/metrics.json": "96655c6056cc92e58495487ee7f5fd29a13f0d4436285cb2d235994fd3d808c8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/protocol.json": "1de716f5054ab39467891075f0d3b802475937779b0dd2c536bc4cc0f81a1159",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_depth_order.jsonl": "17988e7c1861182d9b8d456454b3258910fb312ed1431339a9c5538c6fadac67",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_detection.jsonl": "354e462e12669481a7b1fcdf5d08712d186ee0522a1b4adb72d7c1171670f7ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_relation_graph.jsonl": "0341d12148d19a5c9ab5e20b8d46a76be6d3f09c1904ff87859c5d9d5b97ce49",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_mask.jsonl": "349bcd9002a035059b40eac5143ad1cd5612d1627087702296c5967abc143486",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_bbox.jsonl": "50895b66577bdbdc2f2e99b9262e3700ebdc7909ac03ed2d76c5991a9120661b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_metric_comparison.jsonl": "a814851667ef130ae1e7587abbe28d69632e227d2f50a343f5d79d2f4073a0f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_direction.jsonl": "a86cd6746d41e8e8102bb256999186738644645a3ecb0b4c6d7f22041fa17641",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/44/evaluation/predictions_point.jsonl": "6f2eface330f89f9acdcfc4eba84098935023716ad0f80ee074cde5005cb927c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/metrics.json": "f62a12fdd8744a471d5187d081d0b80055bcea1fb8bc1f9eac57887ef787b465",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/protocol.json": "b5ba099150a207c59932386fb9867f9d6893500c5548b36540c80fb5735f466b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_depth_order.jsonl": "a1f18d09616406ae43c6c11b76b25076440baeada880ec5836a2119890be8c93",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_detection.jsonl": "e8fdbecdba03d2dfcf4b8d3334310d95a6027cb9463c8eb5cdfdf7039942da08",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_relation_graph.jsonl": "beefadfcd4e44ff7e94be1524a9f90b69442bdd69644f9ef5319524e26bce8ca",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_mask.jsonl": "320adf5bb1b5241b65ebfb5da8542e845fc48470305e1966ecfc7c14fbf8308d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_bbox.jsonl": "6f1eaee044a7c96847c8bd3588564b89fcc7fe47cf08d61e4d5078f1759f4a03",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_metric_comparison.jsonl": "b29b13ddbda830abef7f07bb272012a7c4380387e7d63607ffb8b5bfc9556e75",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_direction.jsonl": "57b613f970deb6a7687f983c571ab8d5533aaebb1390086738f7efc990b6f066",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/52/evaluation/predictions_point.jsonl": "cee6b0534cfb8337933f0b0de79ac0ecb652fea764c3c5496f7df364e965782c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/metrics.json": "51a06f7617606387f7400e69abdadac07c38a6c345ca12c5110db632dd38d13d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/protocol.json": "455ecfe19bf76d048f9b2014d5180d1d3d8d534baadd12d8127e33c51f4245b8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_depth_order.jsonl": "f795f4db89923f2d2cec079ff97880cedc8f6a392b8a381124f14cdfd73046a1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_detection.jsonl": "f0a7eb4556e45ce4499789b8513c129f3172d55a593933160f2113523c1e1484",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_relation_graph.jsonl": "e83ec5c344d0897820ea20284d7eb392489e9f102fb8edb3cfbdd2969fa2694e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_mask.jsonl": "5857dbc5e3ce62054cb3da90db58ef7f9d9247bf27d67a706fdaef9c097c0eb9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_bbox.jsonl": "4f7330addb52a6076994fec254094b47ca3f334fef40e648251f000e0df65366",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_metric_comparison.jsonl": "d932214c0392d001f8c70601fbc548ca7bbd05497e18918838b63d2aeb74a0b8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_direction.jsonl": "f4e1b5a928e8740e81747d480cdb35ec431add0e50e2602a757ce480faf708bc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/58/evaluation/predictions_point.jsonl": "ef2b2a0d5cc3ad4c4cf0e042e5ed6956fc71d820579c8133218e03f6a1725c00",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/metrics.json": "6bd0c538b279c3db958ccc6d3b482aa9581cd6290c27a12dff33e4a3bac7613a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/protocol.json": "cae51d797744df2daeb8c730dfdd3c3a85879f9fb44017bc14c2d833bb6876c6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_depth_order.jsonl": "75d4110b7a38a84d45cbbe648f4c479c9aa641d68899fa0685bdd2013ca674d2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_detection.jsonl": "188e1adbfdcec99e7f3b51d4efb93bf2107d5db5a80acb92eb773b4b193ac7a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_relation_graph.jsonl": "d479a920224a3379b17f64cda53d81564de81ab84456e5efd1b211765e838603",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_mask.jsonl": "21b5569db7b07ad0e83d85f3f3dd2e9e506437ff7ce30217452139d233cdcfee",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_bbox.jsonl": "23a09a4b51dcdcfa65573075751688f1123f58785cd8c1de7a7e890665418e88",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_metric_comparison.jsonl": "94867729a3cf382d07fb93c7dac6f1b4906e6f1856f6e7ebf76605f6f5cb4374",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_direction.jsonl": "241dd377e13cdca769c3076f7f83a5b85c78fb88e7e7c99308c3aa923a6eaede",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/68/evaluation/predictions_point.jsonl": "d39821d57b0a46cb51d43194e11be05eebd7176bc9c9d2edc25c10fccbb9f955",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/metrics.json": "fe36a2551529977d469a32abe7917f0178516c8a303010e16ddb6a03b0ee8aa6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/protocol.json": "bc3dfb7da5b76cd71801ac93d50b5b305eee68238ca9d30b392ab5ad492d321f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_depth_order.jsonl": "d6bfeb8f19c923c1babad2afd7dca6cb7b9ba97e7220a8626d6902e58face835",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_detection.jsonl": "07612b6e603e75df0cb27ee77c3eb99ea2f95a869f58c6323450686ab2449446",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_relation_graph.jsonl": "8d24320508fefe677f515127ff3011543de22196913d58fc131e3fab3c83f617",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_mask.jsonl": "e84267a1d9866cdfccbeb80e04c6a75eebb1c759fe760e124866ffd70d2493ef",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_bbox.jsonl": "c517021a32f6a932fba72294f6b97b896bbe892866bd0477702779eb38660184",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_metric_comparison.jsonl": "26cd4980ce214df25d6d8143e960e36f3b9a0af7432b085accc5a9e3bf8713a8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_direction.jsonl": "66361c3efde905eceb932cf422f141643e81a8a36ff027a3703e9d283814c71e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/87/evaluation/predictions_point.jsonl": "61d0661f27e1aac82d82f84a01318483d55a8dc0ffb49c09a25b7192d34aebe9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/metrics.json": "768fa300e2c6c34bc8c87d71d1e6eead7fa1e5003bbfbaacf52aedb63ad87c11",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/protocol.json": "c83ad78b68b59cb48fa6773e6f809741e53fc5a2cc0b49f4ba03253a1749cca7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_depth_order.jsonl": "14ab54d967d1e2534f4c8de5688596cf2e26978628ffa32c0aaf711b635636cd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_detection.jsonl": "7100122357633ac71306472780229530f2d31f5d8b83ee84bfb3011a1e72082a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_relation_graph.jsonl": "c067751aa6c577f5daf6ae33f42eeb8331e8c09d184c14ffc4039db7a9afc9c3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_mask.jsonl": "d7578a335f10b74fb70ac9b3d047bc1e6f9ba8114d4136d986747d5ab7afa0a1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_bbox.jsonl": "c8bffa78c564c8cb8680a4ece327ddbb03e030238c6acf2aebc757e9c4bf13fd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_metric_comparison.jsonl": "7d37fb49ce461176ae269b3a9fdefd56d566f46c2bea9c225795f335aec384ec",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_direction.jsonl": "51f7de6c5ba9f529dc4c06957e4eaa6a3931b2073787c9a3fe57641f236934ee",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/92/evaluation/predictions_point.jsonl": "76a01634c37b14160bb9454770b24f8807f20faafce4c46bda201889cd73b4be",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/metrics.json": "4bed61ce8904267ff2950ffc1227701b264e69012df7330f6d9673fc3c4d96d3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/protocol.json": "9caa95d453d14c0739870aa37451dad4009c539b6a467feb70ae983ac8a97c0f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_depth_order.jsonl": "99b4e16a34e60ac2840f0ed4b60a461288610d5c0911b3c9c46e1a6fd4e72eef",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_detection.jsonl": "48f8c2eb6005508c4fe5defa6869a6e0800427ec1ba7ca05f16b5cace2cdf1b5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_relation_graph.jsonl": "2ae48fe71fc0720266623d59e975fd216d6559dbd147ed06986b92306418edaf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_mask.jsonl": "d3f4b6fb674dc2ec9fa3f5de585ff1081b2a242b9e9376798a906bd99ef2cba7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_bbox.jsonl": "159cfe830ca954166330de51ffc44f44c25ae23093c9bc2022267b0609e4f140",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_metric_comparison.jsonl": "d84653d5af9c41383828b5390fcb023955b51ed9d0c85a8ce776895ed2c3650c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_direction.jsonl": "ff1949941deb3a31844396c078b03a51ac35e907896f0d4eff3819f2b363d6a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step512/shards/115/evaluation/predictions_point.jsonl": "fc04fa4ea807a63a580b4940e73ca650a59b87242e5be31e24526f7eb6ee7203"
+  },
+  "uncertainty": "Fixed8of128ordinalstrata reused from baseline; descriptive matched estimates, not an independent final test."
+}

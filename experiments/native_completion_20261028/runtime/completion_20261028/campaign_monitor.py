@@ -102,6 +102,13 @@ def snapshot():
         for pattern in ['*failure.json','training/node*_failure.json','evaluation/*/failure.json']:
             for failure in folder.glob(pattern):item['failures'].append(dict(path=str(failure),detail=json.loads(failure.read_text())))
         if (folder/'controller_status.json').exists():item['controller']=json.loads((folder/'controller_status.json').read_text())
+        stopped=folder/'quality_stop_decision.json'
+        if stopped.exists():
+            decision=json.loads(stopped.read_text())
+            assert decision['task_id']==item['submission']['response']['Id']
+            assert decision['terminal_cloud_confirmed'] and decision['terminal_cloud']['Status'] in ('Killed','Stopped')
+            item.update(state='stopped_for_quality_review',quality_stop=decision,
+                        remaining_training_hours_recent_throughput=None)
         result['formal_runs'][folder.name]=item
         result['final_training'].update(state=item['state'],updates=plan['steps'],world=plan['world'],
             actual_mopd_training_started=(run/'status.json').exists(),training_run=str(run))
@@ -172,6 +179,18 @@ def snapshot():
         path=phase2/name
         if path.exists():result['objective_phase2_'+name.removesuffix('.json')]=json.loads(path.read_text())
     result['cpu_data_preparation']={}
+    probe=ROOT/'mask_decode_probe_20261029'
+    result['mask_decode_diagnostic']={'training_performed':False,'final_validation':False}
+    for name in ['status','submission','report','failure']:
+        path=probe/(name+'.json')
+        if path.exists():result['mask_decode_diagnostic'][name]=json.loads(path.read_text())
+    result['mask_decode_diagnostic']['workers']={}
+    for path in probe.glob('workers/*/status.json'):
+        value=json.loads(path.read_text())
+        for name in ['complete','failure']:
+            extra=path.parent/(name+'.json')
+            if extra.exists():value[name]=json.loads(extra.read_text())
+        result['mask_decode_diagnostic']['workers'][path.parent.name]=value
     expansion=ROOT/'vacancy_expansion_candidate_20261029'
     for name,path in {'process':ROOT/'vacancy_expansion_process.json',
                       'status':expansion/'status.json','failure':expansion/'failure.json',
@@ -199,6 +218,12 @@ def snapshot():
             item['process_alive']=Path('/proc',str(item['process']['pid'])).exists()
         failure=folder/'failure.json'
         if failure.exists():item['failure']=json.loads(failure.read_text())
+        retirement=folder/'retirement.json'
+        if retirement.exists():
+            item['historical_status']=state
+            state=json.loads(retirement.read_text())
+            item.update(status=state,retirement_path=str(retirement),process_alive=False,
+                        heartbeat_age_seconds=None)
         result['final_delivery_handoffs'][folder.name]=item
         result['final_validation'].update(state=state['stage'],handoff_status=str(state_path),
             final_quality_accepted=False,weights_uploaded=False)

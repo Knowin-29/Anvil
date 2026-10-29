@@ -1,0 +1,10 @@
+{
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/cli.yaml",
+  "config_sha256": "8f946f676c7d8353ac97fdf3fa565b02295a6f4f76747c1e63219f66dc0d7f4d",
+  "spec_sha256": "e1ea37e891aabe51969c093b4e79d78c2a501c227b911fccb451e92213c8b043",
+  "gpus": 8,
+  "submitted": 1793263184.491714,
+  "response": {
+    "Id": "t-20261029163948-sbrrk"
+  }
+}

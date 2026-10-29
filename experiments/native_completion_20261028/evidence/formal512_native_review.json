@@ -1,0 +1,375 @@
+{
+  "state": "verified_native512_requires_training_decision",
+  "created": "2026-10-29T16:23:34.381203+08:00",
+  "step": 512,
+  "n": 35989,
+  "prediction_protocol_metrics_artifacts_verified": 161,
+  "report_sha256": "cda03ae03e850ea60389ce4afdc3145a19f226bd096e9fee516ebc00a76ef457",
+  "comparison": [
+    {
+      "form": "bbox",
+      "source": "coco_train2017",
+      "n": 5080,
+      "metrics": {
+        "box_f1_iou50": {
+          "initial": 0.3391732283464567,
+          "step128": 0.3454724409448819,
+          "step512": 0.3387795275590551,
+          "delta512_initial": -0.0003937007874015748,
+          "delta512_128": -0.006692913385826782
+        },
+        "contract_valid": {
+          "initial": 1.0,
+          "step128": 0.9994094488188976,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0005905511811024056
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 0.9994094488188976,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0005905511811024056
+        },
+        "matched_box_iou": {
+          "initial": 0.3149093349605809,
+          "step128": 0.3174239563470658,
+          "step512": 0.3134213936250869,
+          "delta512_initial": -0.0014879413354939638,
+          "delta512_128": -0.004002562721978908
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    },
+    {
+      "form": "depth_order",
+      "source": "PRISM",
+      "n": 224,
+      "metrics": {
+        "contract_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "reference_exact": {
+          "initial": 0.875,
+          "step128": 0.8794642857142857,
+          "step512": 0.875,
+          "delta512_initial": 0.0,
+          "delta512_128": -0.004464285714285698
+        },
+        "reference_relation_f1": {
+          "initial": 0.875,
+          "step128": 0.8794642857142857,
+          "step512": 0.875,
+          "delta512_initial": 0.0,
+          "delta512_128": -0.004464285714285698
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    },
+    {
+      "form": "detection",
+      "source": "coco_train2017",
+      "n": 232,
+      "metrics": {
+        "box_f1_iou50": {
+          "initial": 0.2431859154070449,
+          "step128": 0.24812850528778774,
+          "step512": 0.2497627347019024,
+          "delta512_initial": 0.006576819294857496,
+          "delta512_128": 0.001634229414114674
+        },
+        "contract_valid": {
+          "initial": 0.9525862068965517,
+          "step128": 0.9525862068965517,
+          "step512": 0.9439655172413793,
+          "delta512_initial": -0.008620689655172414,
+          "delta512_128": -0.008620689655172376
+        },
+        "json_valid": {
+          "initial": 0.9525862068965517,
+          "step128": 0.9525862068965517,
+          "step512": 0.9482758620689655,
+          "delta512_initial": -0.004310344827586207,
+          "delta512_128": -0.004310344827586188
+        },
+        "matched_box_iou": {
+          "initial": 0.2064696982268255,
+          "step128": 0.20957678050270295,
+          "step512": 0.20914608114946626,
+          "delta512_initial": 0.002676382922640753,
+          "delta512_128": -0.0004306993532366965
+        },
+        "truncated": {
+          "initial": 0.04741379310344827,
+          "step128": 0.04741379310344827,
+          "step512": 0.05172413793103448,
+          "delta512_initial": 0.004310344827586207,
+          "delta512_128": 0.004310344827586209
+        }
+      }
+    },
+    {
+      "form": "direction",
+      "source": "coco_train2017",
+      "n": 5565,
+      "metrics": {
+        "contract_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "reference_exact": {
+          "initial": 0.7570530098831986,
+          "step128": 0.760826594788859,
+          "step512": 0.7635220125786164,
+          "delta512_initial": 0.00646900269541779,
+          "delta512_128": 0.0026954177897574594
+        },
+        "reference_relation_f1": {
+          "initial": 0.7570530098831986,
+          "step128": 0.760826594788859,
+          "step512": 0.7635220125786164,
+          "delta512_initial": 0.00646900269541779,
+          "delta512_128": 0.0026954177897574594
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    },
+    {
+      "form": "mask",
+      "source": "coco_train2017",
+      "n": 5079,
+      "metrics": {
+        "contract_valid": {
+          "initial": 0.501673557786966,
+          "step128": 0.4995077771214806,
+          "step512": 0.4345343571569207,
+          "delta512_initial": -0.06713920063004529,
+          "delta512_128": -0.06497341996455991
+        },
+        "json_valid": {
+          "initial": 0.5030517818468202,
+          "step128": 0.5008860011813349,
+          "step512": 0.43630635951959046,
+          "delta512_initial": -0.06674542232722977,
+          "delta512_128": -0.0645796416617444
+        },
+        "matched_mask_iou": {
+          "initial": 0.08635830638592502,
+          "step128": 0.09027766918729947,
+          "step512": 0.07216005643696151,
+          "delta512_initial": -0.014198249948963524,
+          "delta512_128": -0.018117612750337964
+        },
+        "truncated": {
+          "initial": 0.005119117936601693,
+          "step128": 0.003150226422524119,
+          "step512": 0.004134672179562906,
+          "delta512_initial": -0.0009844457570387872,
+          "delta512_128": 0.0009844457570387872
+        }
+      }
+    },
+    {
+      "form": "metric_comparison",
+      "source": "coco_train2017",
+      "n": 5560,
+      "metrics": {
+        "contract_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "normalized_image_distance_mae": {
+          "initial": 0.10542036780575542,
+          "step128": 0.10568731151079093,
+          "step512": 0.1049322116906475,
+          "delta512_initial": -0.0004881561151079178,
+          "delta512_128": -0.0007550998201434345
+        },
+        "relation_identity_exact": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    },
+    {
+      "form": "point",
+      "source": "coco_train2017",
+      "n": 5078,
+      "metrics": {
+        "contract_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "interior_point_f1": {
+          "initial": 0.3629381646317448,
+          "step128": 0.3653012997243009,
+          "step512": 0.3631350925561245,
+          "delta512_initial": 0.00019692792437967703,
+          "delta512_128": -0.0021662071681764483
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    },
+    {
+      "form": "point",
+      "source": "pixmo_points",
+      "n": 8938,
+      "metrics": {
+        "annotated_point_f1_r50": {
+          "initial": 0.4666933814773048,
+          "step128": 0.4694627666348146,
+          "step512": 0.4693717267499373,
+          "delta512_initial": 0.002678345272632458,
+          "delta512_128": -9.103988487729753e-05
+        },
+        "contract_valid": {
+          "initial": 0.984672186171403,
+          "step128": 0.9856791228462743,
+          "step512": 0.9871335869321995,
+          "delta512_initial": 0.0024614007607965988,
+          "delta512_128": 0.0014544640859252
+        },
+        "json_valid": {
+          "initial": 0.9850078317296934,
+          "step128": 0.9862385321100917,
+          "step512": 0.98746923249049,
+          "delta512_initial": 0.0024614007607965988,
+          "delta512_128": 0.0012307003803982974
+        },
+        "truncated": {
+          "initial": 0.014097113448198702,
+          "step128": 0.012530767509509957,
+          "step512": 0.012307003803982993,
+          "delta512_initial": -0.0017901096442157081,
+          "delta512_128": -0.00022376370552696333
+        }
+      }
+    },
+    {
+      "form": "relation_graph",
+      "source": "coco_train2017",
+      "n": 233,
+      "metrics": {
+        "contract_valid": {
+          "initial": 0.9957081545064378,
+          "step128": 0.9957081545064378,
+          "step512": 0.9957081545064378,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "json_valid": {
+          "initial": 1.0,
+          "step128": 1.0,
+          "step512": 1.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "reference_exact": {
+          "initial": 0.030042918454935622,
+          "step128": 0.030042918454935622,
+          "step512": 0.030042918454935622,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        },
+        "reference_relation_f1": {
+          "initial": 0.7504436845731861,
+          "step128": 0.752239728611253,
+          "step512": 0.7532497824996426,
+          "delta512_initial": 0.002806097926456392,
+          "delta512_128": 0.0010100538883895949
+        },
+        "truncated": {
+          "initial": 0.0,
+          "step128": 0.0,
+          "step512": 0.0,
+          "delta512_initial": 0.0,
+          "delta512_128": 0.0
+        }
+      }
+    }
+  ],
+  "decision": "Do not accept current checkpoint for release. Mask quality deterioration requires explicit recipe review jointly with phase2 no-native-SFT control; current frozen run unchanged pending that review.",
+  "limitations": [
+    "Same adaptive fixed35989 G/S diagnostic; not full580K final validation",
+    "Small gains elsewhere do not cancel mask degradation.",
+    "No sole-cause attribution from this checkpoint trajectory."
+  ],
+  "final_quality_accepted": false,
+  "weights_uploaded": false
+}

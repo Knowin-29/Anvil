@@ -1,0 +1,90 @@
+{
+  "schema": "anvil-paired-mask-decoding-probe-v1",
+  "inputs": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/inputs.jsonl",
+  "models": {
+    "initial": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+      "adapter_sha256": "0fb12a657fb5fa33c38ba8aef869c754fdd322e93dd1f2bc3b388a71661da8d0"
+    },
+    "step512": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512",
+      "adapter_sha256": "a9f1b6259028b3aa5b539e59bd49ae1401cbd5cda5a27e7268f66785b13fe908"
+    }
+  },
+  "tasks": {
+    "initial_greedy_0": {
+      "model": "initial",
+      "mode": "greedy",
+      "shard": 0
+    },
+    "initial_greedy_1": {
+      "model": "initial",
+      "mode": "greedy",
+      "shard": 1
+    },
+    "initial_sample_0": {
+      "model": "initial",
+      "mode": "sample",
+      "shard": 0
+    },
+    "initial_sample_1": {
+      "model": "initial",
+      "mode": "sample",
+      "shard": 1
+    },
+    "step512_greedy_0": {
+      "model": "step512",
+      "mode": "greedy",
+      "shard": 0
+    },
+    "step512_greedy_1": {
+      "model": "step512",
+      "mode": "greedy",
+      "shard": 1
+    },
+    "step512_sample_0": {
+      "model": "step512",
+      "mode": "sample",
+      "shard": 0
+    },
+    "step512_sample_1": {
+      "model": "step512",
+      "mode": "sample",
+      "shard": 1
+    }
+  },
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/cloud_a800/checkpoints.py": "a7fd7b10cf9c67f78ad07d665a94e6ba8e63d988f0261972c17800a7ffc51626",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/backend_inputs_G.jsonl": "704428814f0918750fbb74ce8c8508b9cb1a76166ec6d16c703b3ed6c0a9e20e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/repair_node.py": "bb5b964b756a168e09710a10fc8ba79c21ad677e94364cbaafecbd6c44071420",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_node.py": "10041ca43b857bde0bf23e55cf62b80883f8bd1b00b84e184eea91674280c99c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/eval_core.py": "72533225e78b1efa070f4a4d64fd305521d9b3b7ec1b388b6c910b7948bb48d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/probe_vllm.py": "0766712a71b4daeeb237b284db5098fe98d7bdcd3530ca192386ba67073a03f4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/run_vllm_eval.py": "85479ca67299db133bf065267989316f73499f0f64260782ba72212a0a37540d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/eval/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/eval/native_metrics.py": "599bdbf3858c100d5e0d9ed826a97833f980d26bf16bdd5660a9be0141bc80b2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/arxiv_source_scale.py": "9e8b78f69695e0c64184b624f6381b9a90e4fbf13946d7fb505e9a3c02c0c0c7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/tools/map_prism_native.py": "ee620991e2a178f64cf01d30497494059db80587ad12ad53733a9ad767b8ca0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/flywheel/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/score_code/trains/flywheel/native_training.py": "1c740d0e4eea3134a3f3a08c6ffafdb232c0d07407f99b0b32f91d392e517ecf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/eval_code/training_preflight.py": "5409f199fd29bd5aa8960d7c74e6c4825a178f7cec329096b3a97a52073e3451",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/cpu_validation.json": "f5f591049a291e07cf8a8e5ef9413235eccb50ffe1908f6e9df68c2e468a45a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/inputs.jsonl": "0c7a00ecbec652a4e33acba74c6bb9389711f1136374008ae60a6436fc52dcd6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029.py": "648c75fed69a01db9ebbc526abbd7b5d277f14913c1475b6ff5c380afcbe5470",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_mask_decode_probe_20261029.py": "5a6ffad56fef981003d6c1a811fc4ab7c53ec18a3143b5d3ba6be675eb148096",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/eval_core.py": "72533225e78b1efa070f4a4d64fd305521d9b3b7ec1b388b6c910b7948bb48d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/training_data.py": "31bceea226bfbd125c234a43e1962d11e16285e3e8f391e837bd71a26e5a40ca"
+  },
+  "planned_decodes": 128,
+  "unique_examples": 32,
+  "training_performed": false,
+  "final_validation": false,
+  "limitations": [
+    "Adaptive diagnostic after observing formal512 mask regression; not a blind benchmark.",
+    "Sixteen training and sixteen heldout examples reused from the existing fixed backend diagnostic; these are not the same as all8192 committed MOPD rollouts.",
+    "One seeded sample per example per checkpoint; sampling variance and dataset effects cannot be excluded.",
+    "Both modes use the same HF adapter runtime; this isolates decoding settings here, not general backend parity."
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema": "anvil-quality-stop-decision-v1",
+  "time": "2026-10-29T16:25:04.991415+08:00",
+  "task_id": "t-20261029095820-px5rk",
+  "decision": "Stop candidate1 explicitly for native mask quality regression; preserve all artifacts. No final delivery selection or acceptance.",
+  "rationale": [
+    "5079 identical paired mask rows: validity50.1674%\u219243.4534%; IoU0.0863583\u21920.0721601 at512, versus0.0902777 at128.",
+    "Seven-public macro69.088571 still below initial69.982857.",
+    "Continue the existing no-native-SFT control to distinguish objective effects before choosing replacement."
+  ],
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native512_review_20261029.json": "1d3a98a446548c035b01d968a4f89b815c319f11599eed4fc29f32674e42bf76"
+  },
+  "planned_steps": 1664,
+  "recovery_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-640",
+  "recovery_checkpoint_files_verified": 22,
+  "recovery_adapter_sha256": "1865b99761a584076922b46d2ce6b7d9bb586c6ff81c1ab8cee39face7bfc2fc",
+  "recovery_committed_prefix": {
+    "exposures": 20480,
+    "source_exposures": {
+      "general_qa": 5120,
+      "native_distillation": 10240,
+      "spatial_reference": 5120
+    },
+    "by_form": {
+      "QA": 5120,
+      "bbox": 1032,
+      "point": 6365,
+      "depth_order": 21,
+      "action_cot": 721,
+      "metric_comparison": 1639,
+      "dof": 905,
+      "direction": 1640,
+      "affordance": 1782,
+      "mask": 1031,
+      "relation_graph": 108,
+      "detection": 116
+    },
+    "unique_records": 20480,
+    "unique_images": 19093,
+    "groups": {
+      "general_qa:ai2d": {
+        "exposures": 1712,
+        "unique_records": 1712,
+        "repeated_exposures": 0,
+        "unique_images": 1464,
+        "unique_ids_sha256": "a4a746a40669ab0eac808332d338402a26d807bc19cbb9fc4bb4596711e6e47d"
+      },
+      "general_qa:scienceqa": {
+        "exposures": 1712,
+        "unique_records": 1712,
+        "repeated_exposures": 0,
+        "unique_images": 1516,
+        "unique_ids_sha256": "9ca36073e8378ebac4e2fe6f619075903fb633b204d9d6e2192539753a3a5a9e"
+      },
+      "general_qa:textvqa": {
+        "exposures": 1696,
+        "unique_records": 1696,
+        "repeated_exposures": 0,
+        "unique_images": 1696,
+        "unique_ids_sha256": "85b177aab4d86aea3ddd9aad65f6c8707ef4bff4779293c2ef1c8ef84feb8131"
+      },
+      "native_distillation:ALFRED": {
+        "exposures": 721,
+        "unique_records": 721,
+        "repeated_exposures": 0,
+        "unique_images": 714,
+        "unique_ids_sha256": "0a5405efc2f72edeca236d314364c91458984522dc5ee0f282ca7a3486db081b"
+      },
+      "native_distillation:PRISM": {
+        "exposures": 926,
+        "unique_records": 926,
+        "repeated_exposures": 0,
+        "unique_images": 499,
+        "unique_ids_sha256": "260de4274daca027bdc70681bb274c85d9ffa5cfa04c994abd90d21c2d69dbe8"
+      },
+      "native_distillation:ShareRobot": {
+        "exposures": 1782,
+        "unique_records": 1782,
+        "repeated_exposures": 0,
+        "unique_images": 1654,
+        "unique_ids_sha256": "4a285f378202d3f559373e0b04e62c3087b83ad41aa617f0d36787e683fa884a"
+      },
+      "native_distillation:coco_train2017": {
+        "exposures": 6599,
+        "unique_records": 6599,
+        "repeated_exposures": 0,
+        "unique_images": 6355,
+        "unique_ids_sha256": "ec205d563154f136f6d02143c1ab54a2a4c8d38ee329347805843676ccba1c9f"
+      },
+      "native_distillation:pixmo_points": {
+        "exposures": 212,
+        "unique_records": 212,
+        "repeated_exposures": 0,
+        "unique_images": 212,
+        "unique_ids_sha256": "3d6afadb9dca32a11e7fb72addb979ff38e843ccacd502be168ca951c9adc3fd"
+      },
+      "spatial_reference:fsd_goal": {
+        "exposures": 3840,
+        "unique_records": 3840,
+        "repeated_exposures": 0,
+        "unique_images": 3840,
+        "unique_ids_sha256": "2466512e0fe260ec48d8f3d0e35f059b0733afc0b1b531fdab9c8e55012a50fb"
+      },
+      "spatial_reference:refspatial_vacancy": {
+        "exposures": 1280,
+        "unique_records": 1280,
+        "repeated_exposures": 0,
+        "unique_images": 1186,
+        "unique_ids_sha256": "4a0f7cb5de750b9d2d0a393c0d0bf312cdf821e511c7eb589d7fc5c846986283"
+      }
+    }
+  },
+  "completed_full_budget": false,
+  "terminal_cloud_confirmed": true,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "terminal_cloud": {
+    "Id": "t-20261029095820-px5rk",
+    "Name": "task_anvil_formal_MOPD_candidate1_20261029_A800x16",
+    "Status": "Killed"
+  },
+  "cloud_checked_at": "2026-10-29T16:28:10.665802+08:00",
+  "last_observed_training": {
+    "stage": "training",
+    "step": 669,
+    "max_steps": 1664,
+    "sft": 0.3666204306339087,
+    "mtd": 0.01673593697137221,
+    "grad_norm": 0.6547814607620239,
+    "seconds": 8.487703050952405,
+    "elapsed": 22880.600152597995,
+    "examples_seen": 21408,
+    "source_exposures": {
+      "native_distillation": 10704,
+      "general_qa": 5360,
+      "spatial_reference": 5344
+    },
+    "exact_cycle_stops": 0,
+    "qa_examples_seen": 5360,
+    "spatial_examples_seen": 16048,
+    "peak_gpu_gib": 41.57551956176758,
+    "smoke": false
+  },
+  "controllers_retired": [
+    1748845,
+    1847971
+  ]
+}

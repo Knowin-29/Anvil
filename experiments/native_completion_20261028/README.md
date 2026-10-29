@@ -60,8 +60,17 @@ Formal step512 has now completed full seven-public/general evaluation. Its
 public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp
 below initialization. RefSpatial Location100 is51.30 and Where2Place60.70;
 ERQA49.83 improves1.05pp over initialization. This is not accepted final quality.
-The explicit decision is to preserve the frozen run until phase2 objective
-results are reviewed (or the next declared checkpoint arrives first).
+The subsequent matched native512 diagnostic found mask validity falling from
+50.17% to43.45% and IoU from0.08636 to0.07216 on5,079 unchanged examples.
+The formal run was explicitly stopped for quality review after669 logged
+updates; all22 files of the640 recovery checkpoint and its20,480-row committed
+prefix were verified. The original1664-step budget was not completed. Its
+training controller and final-tip handoff were retired without final submissions.
+No checkpoint was selected for release; the final objective remains unfinished.
+Paired failures show2,842 exact-cycle stops at512 versus2,497 initially. By
+contrast all8,192 committed training rollouts through512 ended with EOS.
+A separate fixed32-example HF probe compares greedy versus sampled decoding
+at initialization and512. It is inference-only and cannot establish final quality.
 
 A read-only upstream audit matched all3,384 active vacancy records exactly to
 source coordinates and image dimensions. The raw source has231,554 records,
@@ -82,8 +91,8 @@ An independent final_delivery_selected_v2 workflow supports explicit selection
 of a sealed formal checkpoint after its cloud run is terminal. It freezes only
 the committed source-exposure prefix, discloses selected versus planned updates
 and the original run's actual disposition, and preserves full580K/seven-public/
-10105-general evaluation and explicit quality review. The original live handoff
-and all of its delivery files are unchanged. CPU tests use the real512 checkpoint,
+10105-general evaluation and explicit quality review. The original delivery files are unchanged; its former live handoff was
+explicitly retired after the quality stop recorded above. CPU tests use the real512 checkpoint,
 its merged model and16384-row prefix; terminal states are simulated only in
 deleted temporary fixtures. No checkpoint has been selected for final delivery.
 

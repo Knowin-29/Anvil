@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "actual_encode_prompt_and_pixels_match_full_reference_encoding": 32,
+  "rows": 32,
+  "models_sealed_files_verified": true,
+  "original_scorer_unchanged": true,
+  "worker_module_imported": true,
+  "cycle_detector_boundary_cases": 3,
+  "created": 1793263141.942586
+}

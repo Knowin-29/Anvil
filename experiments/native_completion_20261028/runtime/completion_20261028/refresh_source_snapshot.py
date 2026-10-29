@@ -39,6 +39,7 @@ def main():
     selected=C/'final_delivery_selected_v2'
     sources |= set(selected.glob('*.py')) | {selected/'README.md'}
     sources |= {C/'midrun_gs_diagnostic_512.py',C/'submit_midrun_gs512.py'}
+    sources |= {C/'mask_decode_probe_20261029.py',C/'prepare_mask_decode_probe_20261029.py'}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -105,6 +106,15 @@ def main():
     for name,path in {
         'phase2_objective_comparison.json':C/'objective_controls_phase2_20261029/comparison.json',
         'formal512_native_submission.json':C/'native_diagnostics/candidate1_step512/submission.json',
+        'formal512_native_report.json':C/'native_diagnostics/candidate1_step512/report.json',
+        'formal512_native_review.json':C/'native512_review_20261029.json',
+        'formal512_rollout_efficiency.json':C/'rollout_efficiency_step512_20261029.json',
+        'paired_mask_failure.json':C/'paired_mask_failure_20261029.json',
+        'candidate1_quality_stop.json':C/'formal_candidate1_quality_stop_20261029.json',
+        'candidate1_controller_retirement.json':C/'candidate1_controller_retirement_20261029.json',
+        'mask_decode_probe_spec.json':C/'mask_decode_probe_20261029/spec.json',
+        'mask_decode_probe_cpu_validation.json':C/'mask_decode_probe_20261029/cpu_validation.json',
+        'mask_decode_probe_submission.json':C/'mask_decode_probe_20261029/submission.json',
     }.items():
         if path.exists():extra[name]=path
     for name, source in extra.items():
@@ -158,8 +168,17 @@ Formal step512 has now completed full seven-public/general evaluation. Its
 public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp
 below initialization. RefSpatial Location100 is51.30 and Where2Place60.70;
 ERQA49.83 improves1.05pp over initialization. This is not accepted final quality.
-The explicit decision is to preserve the frozen run until phase2 objective
-results are reviewed (or the next declared checkpoint arrives first).
+The subsequent matched native512 diagnostic found mask validity falling from
+50.17% to43.45% and IoU from0.08636 to0.07216 on5,079 unchanged examples.
+The formal run was explicitly stopped for quality review after669 logged
+updates; all22 files of the640 recovery checkpoint and its20,480-row committed
+prefix were verified. The original1664-step budget was not completed. Its
+training controller and final-tip handoff were retired without final submissions.
+No checkpoint was selected for release; the final objective remains unfinished.
+Paired failures show2,842 exact-cycle stops at512 versus2,497 initially. By
+contrast all8,192 committed training rollouts through512 ended with EOS.
+A separate fixed32-example HF probe compares greedy versus sampled decoding
+at initialization and512. It is inference-only and cannot establish final quality.
 
 A read-only upstream audit matched all3,384 active vacancy records exactly to
 source coordinates and image dimensions. The raw source has231,554 records,
@@ -189,6 +208,8 @@ The expanded A learning control improves pose80.65°→76.37°, contact error an
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
 than the train-only category prior. It has not replaced the live formal teacher.
 '''
+    text = text.replace('The original live handoff\nand all of its delivery files are unchanged.',
+        'The original delivery files are unchanged; its former live handoff was\nexplicitly retired after the quality stop recorded above.')
     readme.write_text(text)
     print(json.dumps(dict(source_files=len(manifest['files']), evidence_files=len(manifest['evidence']),
                           secrets_scan_passed=True, archived_bytes_verified=True)))
