@@ -1,0 +1,21 @@
+{
+  "state": "read_only_HF_identity_and_repository_verified",
+  "account": "Knowin-29",
+  "repository": "Knowin-29/Anvil-MOPD-9B",
+  "revision": "8c2cfe01656473bc2766e2e4fb2af619fb36384a",
+  "credential_role": "write",
+  "files": [
+    {
+      "name": ".gitattributes",
+      "size": 1519
+    },
+    {
+      "name": "README.md",
+      "size": 1313
+    }
+  ],
+  "weight_files": [],
+  "final_weights_present": false,
+  "server_credential_store_modified": false,
+  "checked": 1793238662.4046285
+}

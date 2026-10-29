@@ -1,0 +1,14 @@
+{
+  "state": "selected_from_completed_equal_source_throughput",
+  "policy_sha256": "2c3c3c0af03fba3a492c5c2ea0c283d9bffb6af40233bb2a048da249e8eba75f",
+  "scaling_sha256": "0ff84bd253206aae4047ef357693334f07a84231064fe091242460b1b9271393",
+  "nodes": 2,
+  "updates": 1664,
+  "guarded_seconds_per_update": 99.19031026214361,
+  "measured_seconds_per_update": 41.61742981458277,
+  "estimated_training_hours": 19.236500892073813,
+  "guarded_training_hours": 46.84796563227972,
+  "final_reserve_hours": 24,
+  "selected": 1793239059.527597,
+  "rationale": "Bounded first formal run, up to2048updates and48guardedhours, preserving time for quality-driven correction and final delivery."
+}

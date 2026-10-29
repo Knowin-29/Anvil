@@ -1,0 +1,8 @@
+{
+  "state": "existing_task_controller_resumed",
+  "new_pid": 1748845,
+  "code_sha256": "49b1de8da38853f29d8bce9da019e1b26368e4d754db7ff5ee1b81499823c052",
+  "frozen_plan_unchanged": true,
+  "trainer_unchanged": true,
+  "task_restarted": false
+}
