@@ -1,0 +1,283 @@
+{
+  "schema": "anvil-formal-checkpoint-prefix-audit-v1",
+  "state": "verified_committed_prefix",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512",
+  "adapter_sha256": "a9f1b6259028b3aa5b539e59bd49ae1401cbd5cda5a27e7268f66785b13fe908",
+  "selected_step": 512,
+  "planned_steps": 1664,
+  "global_batch": 32,
+  "planned_training_completion_inferred": false,
+  "selected_for_delivery": false,
+  "final_quality_accepted": false,
+  "actual": {
+    "exposures": 16384,
+    "source_exposures": {
+      "general_qa": 4096,
+      "native_distillation": 8192,
+      "spatial_reference": 4096
+    },
+    "by_form": {
+      "QA": 4096,
+      "bbox": 825,
+      "point": 5091,
+      "depth_order": 17,
+      "action_cot": 574,
+      "metric_comparison": 1315,
+      "dof": 724,
+      "direction": 1317,
+      "affordance": 1422,
+      "mask": 824,
+      "relation_graph": 87,
+      "detection": 92
+    },
+    "unique_records": 16384,
+    "unique_images": 15443,
+    "groups": {
+      "general_qa:ai2d": {
+        "exposures": 1376,
+        "unique_records": 1376,
+        "repeated_exposures": 0,
+        "unique_images": 1237,
+        "unique_ids_sha256": "58229b5aa6b7377af407b752b7a69dffc4ab11340627d8d2830a9997b3cb3a06"
+      },
+      "general_qa:scienceqa": {
+        "exposures": 1360,
+        "unique_records": 1360,
+        "repeated_exposures": 0,
+        "unique_images": 1210,
+        "unique_ids_sha256": "0c60843d69eaa9ab96031aa7bbfd721892b7555ac1fc00e9093029c6d80f52f0"
+      },
+      "general_qa:textvqa": {
+        "exposures": 1360,
+        "unique_records": 1360,
+        "repeated_exposures": 0,
+        "unique_images": 1360,
+        "unique_ids_sha256": "5d675b93ee2717e537cc67ca86d40f14a862ee30af6a6b557c3ebfe95744e665"
+      },
+      "native_distillation:ALFRED": {
+        "exposures": 574,
+        "unique_records": 574,
+        "repeated_exposures": 0,
+        "unique_images": 569,
+        "unique_ids_sha256": "5cd782e442ac3ce012c5c6901bc46a3630db1923c3e41a5ccde59b7a8ebb497c"
+      },
+      "native_distillation:PRISM": {
+        "exposures": 741,
+        "unique_records": 741,
+        "repeated_exposures": 0,
+        "unique_images": 409,
+        "unique_ids_sha256": "685f8bf3688050583770fda5f617aee11d78ccc5ec85d89c9c752bfc4430ccfe"
+      },
+      "native_distillation:ShareRobot": {
+        "exposures": 1422,
+        "unique_records": 1422,
+        "repeated_exposures": 0,
+        "unique_images": 1339,
+        "unique_ids_sha256": "1dcdb7a95fdcd2a520f2e36a3c6e6b4d5ef80b52bd17d867ae11f78664b05f60"
+      },
+      "native_distillation:coco_train2017": {
+        "exposures": 5287,
+        "unique_records": 5287,
+        "repeated_exposures": 0,
+        "unique_images": 5144,
+        "unique_ids_sha256": "fd0d82da43c0b2eff49638e0c31802869edb647ca2aadcc77946392ce8721401"
+      },
+      "native_distillation:pixmo_points": {
+        "exposures": 168,
+        "unique_records": 168,
+        "repeated_exposures": 0,
+        "unique_images": 168,
+        "unique_ids_sha256": "e81d21bd655d413c30e0e1a8d107145fade48605608b6bd82e9355d7702b8211"
+      },
+      "spatial_reference:fsd_goal": {
+        "exposures": 3072,
+        "unique_records": 3072,
+        "repeated_exposures": 0,
+        "unique_images": 3072,
+        "unique_ids_sha256": "d64ad09d428d54b5ee1e968c49bebd37acb1f6e00f34ce72d6284e35409d9ff3"
+      },
+      "spatial_reference:refspatial_vacancy": {
+        "exposures": 1024,
+        "unique_records": 1024,
+        "repeated_exposures": 0,
+        "unique_images": 962,
+        "unique_ids_sha256": "61bd9bd5166b2465173aa1ad3db9d6d00478ce9c01c18fe8d8e8291ce146b0bd"
+      }
+    }
+  },
+  "rank_prefixes": [
+    {
+      "rank": 0,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank0.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank0.jsonl",
+      "bytes": 1249470,
+      "rows": 1024,
+      "sha256": "37923b7b530501010c5e2a8c2906e538c59457ec3cf3071f4b07938e7c4c0fc5"
+    },
+    {
+      "rank": 1,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank1.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank1.jsonl",
+      "bytes": 1250458,
+      "rows": 1024,
+      "sha256": "126fde9c1a5097776ec0abcedfdf1058233a2a107f4fd50244582d0511408e4c"
+    },
+    {
+      "rank": 2,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank2.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank2.jsonl",
+      "bytes": 1250852,
+      "rows": 1024,
+      "sha256": "c6e2568fb1f4af3f41ab904fc5b030a07cc2a449543ac203e4e98c19f9eb95e9"
+    },
+    {
+      "rank": 3,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank3.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank3.jsonl",
+      "bytes": 1250114,
+      "rows": 1024,
+      "sha256": "677db54738c3574d52cf10cd5c2645bc4dde307da1218cffcb1cea9579f87c38"
+    },
+    {
+      "rank": 4,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank4.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank4.jsonl",
+      "bytes": 1249385,
+      "rows": 1024,
+      "sha256": "947c5c25499608d07f4bba7f9b340c2c53a2963e1b35698324fe12bc09c6bcad"
+    },
+    {
+      "rank": 5,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank5.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank5.jsonl",
+      "bytes": 1249831,
+      "rows": 1024,
+      "sha256": "cca0e23924b094a018b885f908f68f9d3c55a78ee963ebb378ebfb7dfd309ff9"
+    },
+    {
+      "rank": 6,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank6.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank6.jsonl",
+      "bytes": 1250283,
+      "rows": 1024,
+      "sha256": "8e60ee6f6d9ee39784368a764e08eb8e01b848b1a4f165e8a36ce4e78cd6dade"
+    },
+    {
+      "rank": 7,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank7.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank7.jsonl",
+      "bytes": 1249911,
+      "rows": 1024,
+      "sha256": "e3efcbd0de28edea05770b0af7e5cfb36969416dcd7b36709a0c7b1e964bccda"
+    },
+    {
+      "rank": 8,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank8.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank8.jsonl",
+      "bytes": 1250313,
+      "rows": 1024,
+      "sha256": "8ddf77db484771f4233a0c3a9b5130eb56ba17a343e950c6f9639b0a8ac555e3"
+    },
+    {
+      "rank": 9,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank9.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank9.jsonl",
+      "bytes": 1249536,
+      "rows": 1024,
+      "sha256": "fab898b72f377342d89ecc129c1c76e11a0b1baf23734e85be23d3b5b123c987"
+    },
+    {
+      "rank": 10,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank10.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank10.jsonl",
+      "bytes": 1251001,
+      "rows": 1024,
+      "sha256": "8300dbbb0971e2b9c617e68539e0cda82ec018afd6afb6548dec0f419f910d24"
+    },
+    {
+      "rank": 11,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank11.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank11.jsonl",
+      "bytes": 1251389,
+      "rows": 1024,
+      "sha256": "d6104d4a168fc397b2f3c1ced3060fdf4c109b8f437f63bc7c13c4a1899d6742"
+    },
+    {
+      "rank": 12,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank12.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank12.jsonl",
+      "bytes": 1250042,
+      "rows": 1024,
+      "sha256": "2c4c3bead6f7298f2e5b8a8aafcc39ace9f2870f352334c745b7b3369575acb7"
+    },
+    {
+      "rank": 13,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank13.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank13.jsonl",
+      "bytes": 1251327,
+      "rows": 1024,
+      "sha256": "44294f74c048cbfe864bbce3c04530e4759d6b973d1ff69bdd53dcac4b17ca45"
+    },
+    {
+      "rank": 14,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank14.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank14.jsonl",
+      "bytes": 1251813,
+      "rows": 1024,
+      "sha256": "61817b28997eaf7c497ae92c30750feb8fc9e631e860d696942e453fd6ef381d"
+    },
+    {
+      "rank": 15,
+      "original_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/exposure_rank15.jsonl",
+      "snapshot": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/exposures/exposure_rank15.jsonl",
+      "bytes": 1251328,
+      "rows": 1024,
+      "sha256": "e6cb32648db9acf6effbd3363c17a845e5bb7c2bfd9d73612a833155e5acc77a"
+    }
+  ],
+  "original_full_sft_records": 5220000,
+  "initial_student_lineage": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/initialization_lineage.json",
+    "sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89",
+    "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+    "adapter_sha256": "0fb12a657fb5fa33c38ba8aef869c754fdd322e93dd1f2bc3b388a71661da8d0",
+    "post_sft_logged_exposures": 81920,
+    "unique_supplemental_student_records": 44936,
+    "warm_start_disclosed": true,
+    "full_final_lineage_required_separately": true
+  },
+  "later_updates_counted": false,
+  "other_experiment_arms_counted": false,
+  "required_before_delivery": [
+    "Explicit checkpoint selection and training-budget disposition.",
+    "Complete580K native and seven-public/general evaluation of this exact checkpoint.",
+    "Final quality review, full selected-tip lineage, complete HF package and remote hash verification."
+  ],
+  "evidence": {
+    "plan": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/plan.json",
+      "sha256": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9"
+    },
+    "eligibility": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/eligibility.json",
+      "sha256": "dacc3bf97e9fa912d5e16c80b9015b7f5b1d6d5aa04de0f5dada9ffca15f5b3f"
+    },
+    "protocol": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/protocol.json",
+      "sha256": "0146e4a60e1e3d2e7abb56699758bbbef764afdef798174691204325a598cfe5"
+    },
+    "checkpoint": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512/checkpoint_complete.json",
+      "sha256": "df8e52d390fd307ec08d0ecf79c600aa103221e6a21214d9637ed13a58811547"
+    },
+    "trainer_state": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512/trainer_state.json",
+      "sha256": "51b284c4bf25e2698a2b2114d9c1173f3a2ee13151b6bbbfcbcd83d4e7cb6881"
+    },
+    "audit_code": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefix_audit.py",
+      "sha256": "db17401d915f0f9b10ff4f75e7a384b9dc6a191f3117ce7d57bb27b7bc0a73a7"
+    }
+  },
+  "created": 1793257353.9218848
+}

@@ -1,0 +1,116 @@
+{
+  "schema": "anvil-vacancy-active-exclusion-review-v1",
+  "state": "bounded_visual_similarity_review_complete",
+  "active_records_removed_from_new_candidate": 866,
+  "direct_reasons": {
+    "historical_or_campaign_development_scan": 715,
+    "same_scan_as_excluded_image": 150,
+    "dhash64_radius6": 1
+  },
+  "public_general_linked_active_records": 28,
+  "public_general_linked_unique_image_pairs": 8,
+  "pairs": [
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47333298_26581932820416_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/2ab6b1f1d5ffee943d5dcb772a27b8466aed6cb09f3e0746c1f369505d64e0bc.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 6,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Wooden bathroom shelf with brush and dish versus an outdoor-sport group portrait; different content.",
+      "source_sha256": "baf3c4722faba1012986d0e14b90eb12f806a2a789107a4a57cc2d9b557efd4c",
+      "protected_sha256": "2ab6b1f1d5ffee943d5dcb772a27b8466aed6cb09f3e0746c1f369505d64e0bc"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332597_363052914018166_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/8b6061f837199057c1c235965a118e0767f9241d44eb19ffd590659170bba7ee.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 4,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Domestic refrigerator and sink versus book spines; different content.",
+      "source_sha256": "159c5831db847ea0e67d445f7f480c2cc5203cb80ee169313175ae64b85ca93f",
+      "protected_sha256": "8b6061f837199057c1c235965a118e0767f9241d44eb19ffd590659170bba7ee"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47204585_564525942708_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/7c4c88c95443a6db2c5a1deef09e94d7e30c7c244b87f8f8bfea881ba45efbb9.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 6,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Utility room doorway and appliances versus a laptop showing a sunset; different content.",
+      "source_sha256": "6b5b4b92fd7d23417446710d4f4e09534680df09009928c2733d56ce0514401c",
+      "protected_sha256": "7c4c88c95443a6db2c5a1deef09e94d7e30c7c244b87f8f8bfea881ba45efbb9"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/42447294_408860199741666_wide_image.png",
+      "protected": "/Knowin/foundation/data/datasets/transferred_datasets/EmbodiedAI_benchmark/ERQA/images/304_0.png",
+      "reason": "dhash64_radius6",
+      "distance": 6,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Kitchen with dining table versus close-up wall holes marked by colored arrows; different content.",
+      "source_sha256": "eaf474e5c70f54fbe1a1aa99daf0f611050f2051a4a7852d38c1e98e8827a8b9",
+      "protected_sha256": "0aef865cfdaf4f0441ba10a408b8c89c7e2a8bc09395e9c4c27ce4ac2737ff78"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/48018081_103457325320708_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/f49f918fdf1acd62e871871f85737a45ed37ee4daa1c8b3efff66552558a64d5.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 5,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Room corner with binders on a shelf versus a scanned historical text page; different content.",
+      "source_sha256": "41e032773ea3d49bc5b65d6bc91e7669874fca227b83bf1d7278ee944fb91108",
+      "protected_sha256": "f49f918fdf1acd62e871871f85737a45ed37ee4daa1c8b3efff66552558a64d5"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429870_14379983683708_wide_image.png",
+      "protected": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/assets/cv_bench/3D_1939.png",
+      "reason": "dhash64_radius6",
+      "distance": 6,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Indoor board-game cupboard versus an outdoor street with vehicles; different content.",
+      "source_sha256": "4909cabe413c38e16882ce664a952184c351b5e9c2bafb1754422b322090cd5f",
+      "protected_sha256": "133d5419a81c0041d1ed3dbced5c629a3b9488fd7c7a7fe181ab4b441f8d8055"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332591_362642590426666_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/ai2d_test/e222cdadc0c7a7c91dd73385807f4a368859ac590ff5573bf884d63722c4456a.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 5,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Bathroom shelving and patterned shower screen versus a labeled plant diagram; different content.",
+      "source_sha256": "a4f54afa408b3d602fbf4965f1f14e10b246eaaee537922cddd66a23553da25a",
+      "protected_sha256": "e222cdadc0c7a7c91dd73385807f4a368859ac590ff5573bf884d63722c4456a"
+    },
+    {
+      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429764_358116643902166_wide_image.png",
+      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/c360b6f437eff08254b406ae5c2ceaca4865b0046ad31defbea111b508115855.jpg",
+      "reason": "dhash64_radius6",
+      "distance": 6,
+      "reviewer": "assistant_visual_inspection_via_view_image",
+      "assessment": "visually_distinct_not_a_duplicate",
+      "observation": "Bathroom with bath and shower versus encyclopedia book spines; different content.",
+      "source_sha256": "8bf6060c5d22a432aaea6daa80f435bbd3548a960bcbdae4a3d86957ddabad34",
+      "protected_sha256": "c360b6f437eff08254b406ae5c2ceaca4865b0046ad31defbea111b508115855"
+    }
+  ],
+  "candidate_exclusions_relaxed": false,
+  "active_training_modified": false,
+  "limitations": [
+    "Only these eight flagged public/general pairs were visually reviewed, not every possible relationship.",
+    "New scan reservations are data exclusions; they do not erase prior student training exposure or create a new blind benchmark.",
+    "Historical development was image-disjoint; this candidate applies the stronger scan-disjoint rule.",
+    "The conservative candidate exclusions remain in place, including the visually distinct pairs."
+  ],
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json": "f860ac914f92bc2768f12df6a2cacea15eadd97ba206a5c537aa07ceda54ea6d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/exclusions.jsonl": "d7fb93774c5ec4efaead62df9d157c19bd9b815cf526a6a8669a5ad1c47a5cb6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/image_fingerprints.jsonl": "c764b61b750d37208c3fdbcd8cf88558a3589de70b4e738133df085e10d6cb61"
+  },
+  "completed": 1793258727.4304035
+}

@@ -1,0 +1,31 @@
+{
+  "state": "verified_checkpoint512_public_evidence",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512",
+  "step": 512,
+  "benchmark_scores": {
+    "cv_bench": 87.07,
+    "embspatial": 78.76,
+    "refspatial_bench": 51.3,
+    "where2place": 60.7,
+    "blink_relative_depth": 86.29,
+    "erqa": 49.83,
+    "vabench_point": 69.67
+  },
+  "macro": 69.08857142857143,
+  "minus_initial_macro": -0.8942857142857292,
+  "minus_step128_macro": 0.4742857142857133,
+  "decision": "continue_existing_frozen_run_until_phase2_controls_are_reviewed",
+  "rationale": "512 recovers part of128 regression (+0.474286pp) but remains below initial (-0.894286pp). ERQA improves; RefSpatial/Where2Place remain worse. Await controlled objective results before choosing a new immutable recipe; no evidence of global numerical collapse.",
+  "next_review": "Completed phase2 public/general results, or formal1024 if earlier; act immediately on numerical/runtime failure.",
+  "final_quality_accepted": false,
+  "training_complete": false,
+  "weights_uploaded": false,
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/512/spec.json": "acdedfa61d34ca9cc950e3c167f7a6c04d1b5649da7b936afba20cddc563bff6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/512/report.json": "a9d0d877520da774719e341a94ad47270faaeb8283f54fef9a1dd9aa5a0604c1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/128/report.json": "cae9ca1cc204c37e7b22301e73cd395d9b512df5e280fa340154d7e91baa7bdc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/report.json": "39eda7ada04d777ff3086486c8385f0440712631c19e2866651cdacd12187715"
+  },
+  "artifacts_verified": 64,
+  "completed": 1793258356.750873
+}

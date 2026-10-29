@@ -1,0 +1,88 @@
+{
+  "schema": "anvil-vacancy-expansion-preparation-v1",
+  "created": 1793257933.8218112,
+  "source_records": 231496,
+  "rule": "File/RGB identity or pHash/dHash Hamming<=6; any-hit entire RefSpatial scan excluded.",
+  "reserve_rule": "sha256(scan:<id>)[:8] modulo20 ==0; no reserved scan enters training.",
+  "other_reservations": "All campaign native/public/general evaluation; FSD test; historical and current development.",
+  "targets": "Exact processed source prompts and point targets; no label regeneration or coordinate modification.",
+  "evidence": {
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_filtered_3D_groupLength.jsonl": {
+      "path": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_filtered_3D_groupLength.jsonl",
+      "bytes": 103081363,
+      "sha256": "2d72a1bb6a5e77389ce6047e1c249b76edde7283db7c10bde84f9d20ae66ce8c"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_upstream_fidelity_20261029.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_upstream_fidelity_20261029.json",
+      "bytes": 4720,
+      "sha256": "b0a21856ac6102c2f305a8dc5443bd5d8861868ddc5ac830da67df272296e9de"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/inputs/manifest.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/inputs/manifest.json",
+      "bytes": 2846950,
+      "sha256": "220213faf36360fdf425d951effacf0e535484e26ab9ba778fc9edb89f4824b4"
+    },
+    "/Knowin/sim/weilinruan/Anvil/arxiv/native_training_export_20261012_v4_r2/manifest.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_training_export_20261012_v4_r2/manifest.json",
+      "bytes": 10382,
+      "sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json",
+      "bytes": 3089,
+      "sha256": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/refspatial_vacancy.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/refspatial_vacancy.jsonl",
+      "bytes": 4382378,
+      "sha256": "667823ac9ad9cb12fc60961e1bc73f5764b1da4ce12d121eda2d5f2404c6911f"
+    },
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/data_test_internvl_no_think.jsonl": {
+      "path": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425/data_test_internvl_no_think.jsonl",
+      "bytes": 169308,
+      "sha256": "f47aaf2b5b5939eb2a298ef708cf9877f2b8dcaa05c1bc377bef9ca86ab085c6"
+    },
+    "/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/vacancy_repair_20260914/split/dev.jsonl": {
+      "path": "/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/vacancy_repair_20260914/split/dev.jsonl",
+      "bytes": 203579,
+      "sha256": "e7802f07f2eced5957d2c4a97573b2c15f8747a8e16513b4ccfd64c2642ed258"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/development.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/development.jsonl",
+      "bytes": 2566547,
+      "sha256": "e22a4a56e4b67ebd4ed2ccf64aafd3e0e9e4ff74aed88c829de007cd295e7bf2"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/development.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/development.jsonl",
+      "bytes": 2903247,
+      "sha256": "82d12e8528471a710dab0004aa95ce2ce2c1b1b94f2d8eaa1ea17180a181976f"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/sft_source/evaluation.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/sft_source/evaluation.jsonl",
+      "bytes": 4474734,
+      "sha256": "a8c7d40e6f869ad230b261d8538f23aafc10ae4b07c8871f19b32ba3076cc81f"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_vacancy_expansion_candidate.py": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_vacancy_expansion_candidate.py",
+      "bytes": 11561,
+      "sha256": "72fee61f9732bca9c89299d9d8cfc3732d614bbdd92c10f76c858e4b470afd19"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_spatial_replay.py": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_spatial_replay.py",
+      "bytes": 11719,
+      "sha256": "60aa1d4808931e1ceb3efa10c2fa3669cf3727f2bf0d89290d6e2d935c7656b3"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_vacancy_source_lineage.py": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_vacancy_source_lineage.py",
+      "bytes": 7309,
+      "sha256": "eba7c3ace6831198ee1dbd895b82a1d37b2b7528ef4773a0284ea546446a1e2e"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/tools/arxiv_source_scale.py": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/tools/arxiv_source_scale.py",
+      "bytes": 36562,
+      "sha256": "9e8b78f69695e0c64184b624f6381b9a90e4fbf13946d7fb505e9a3c02c0c0c7"
+    }
+  },
+  "training_admitted": false,
+  "active_training_modified": false
+}

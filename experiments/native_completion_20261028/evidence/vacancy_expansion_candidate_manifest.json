@@ -1,0 +1,62 @@
+{
+  "schema": "anvil-vacancy-expansion-candidate-v1",
+  "state": "prepared_requires_training_recipe_review",
+  "counts": {
+    "train": 182878,
+    "excluded_historical_or_campaign_development_scan": 21059,
+    "excluded_deterministic_reserved_scan": 12093,
+    "excluded_same_scan_as_excluded_image": 14896,
+    "excluded_phash64_radius6": 4,
+    "excluded_dhash64_radius6": 566
+  },
+  "source_records": 231496,
+  "source_unique_images": 44771,
+  "candidate_train_records": 182878,
+  "candidate_unique_images": 35736,
+  "candidate_train_scans": 2574,
+  "unchanged_active_rows_retained": 2518,
+  "active_rows_excluded_by_stronger_full_pool_reservation": 866,
+  "additional_records_vs_active": 180360,
+  "new_to_original_images": 35736,
+  "protected_native_images": 17384,
+  "protected_external_images": 17639,
+  "fixed_reserved_source_images": 2353,
+  "blocked_scans": 469,
+  "database_image_rows_sha256": "4a5faa1e834aba21b4df799a86302da61119f49adc3d4483909972d75b519359",
+  "files": {
+    "policy.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/policy.json",
+      "bytes": 6120,
+      "sha256": "1088c0ccc6c16357675782c86120442484f90475380aa1cea45ed7dcdf864e96"
+    },
+    "train.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
+      "bytes": 244642476,
+      "sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966"
+    },
+    "exclusions.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/exclusions.jsonl",
+      "bytes": 14586969,
+      "sha256": "d7fb93774c5ec4efaead62df9d157c19bd9b815cf526a6a8669a5ad1c47a5cb6"
+    },
+    "image_fingerprints.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/image_fingerprints.jsonl",
+      "bytes": 25934367,
+      "sha256": "c764b61b750d37208c3fdbcd8cf88558a3589de70b4e738133df085e10d6cb61"
+    }
+  },
+  "original_corpus_records": 5800000,
+  "original_sft_records": 5220000,
+  "actual_training_exposures": 0,
+  "training_admitted": false,
+  "active_training_modified": false,
+  "benchmark_labels_modified": false,
+  "limitations": [
+    "Source annotations have no claimed official train/test partition; conservative campaign reservations are applied.",
+    "Image and scan exclusions do not establish absence of every semantic relationship.",
+    "This pool does not establish target semantic correctness or improvement on a benchmark.",
+    "Expanded inventory must not be counted as observed training or added twice to existing supplements."
+  ],
+  "elapsed": 470.6555724143982,
+  "completed": 1793258403.7847102
+}

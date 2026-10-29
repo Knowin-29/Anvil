@@ -105,6 +105,8 @@ def snapshot():
         result['formal_runs'][folder.name]=item
         result['final_training'].update(state=item['state'],updates=plan['steps'],world=plan['world'],
             actual_mopd_training_started=(run/'status.json').exists(),training_run=str(run))
+        if (run/'status.json').exists():
+            result['final_training']['runtime_preparation_state']='GPU_verified_actual_formal_training'
     result['midrun_native_diagnostics']={}
     for folder in [*(ROOT/'native_diagnostics').glob('*'),*(ROOT/'objective_native_diagnostics').glob('*')]:
         if not folder.is_dir():continue
@@ -169,6 +171,17 @@ def snapshot():
     for name in ['controller_status.json','controller_failure.json','comparison.json']:
         path=phase2/name
         if path.exists():result['objective_phase2_'+name.removesuffix('.json')]=json.loads(path.read_text())
+    result['cpu_data_preparation']={}
+    expansion=ROOT/'vacancy_expansion_candidate_20261029'
+    for name,path in {'process':ROOT/'vacancy_expansion_process.json',
+                      'status':expansion/'status.json','failure':expansion/'failure.json',
+                      'manifest':expansion/'manifest.json',
+                      'upstream_fidelity':ROOT/'vacancy_upstream_fidelity_20261029.json'}.items():
+        if path.exists():result['cpu_data_preparation'][name]=json.loads(path.read_text())
+    process=result['cpu_data_preparation'].get('process')
+    if process:
+        result['cpu_data_preparation']['process_alive']=Path('/proc',str(process['pid'])).exists()
+        result['cpu_data_preparation']['training_admitted']=False
     first=ROOT/'formal_mopd/runs/candidate1_20261029/evaluation/128/report.json'
     if first.exists():
         value=json.loads(first.read_text())

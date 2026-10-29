@@ -51,6 +51,28 @@ student, teachers, data and schedule. The first reserves eight public-evaluation
 slots; the second waits for formal512 public success before using spare capacity.
 All controls remain excluded from final delivery.
 
+Formal step512 has now completed full seven-public/general evaluation. Its
+public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp
+below initialization. RefSpatial Location100 is51.30 and Where2Place60.70;
+ERQA49.83 improves1.05pp over initialization. This is not accepted final quality.
+The explicit decision is to preserve the frozen run until phase2 objective
+results are reviewed (or the next declared checkpoint arrives first).
+
+A read-only upstream audit matched all3,384 active vacancy records exactly to
+source coordinates and image dimensions. The raw source has231,554 records,
+including58 out-of-range targets already excluded from the231,496 processed
+records. The active conversion is faithful, but semantic correctness is not
+independently established. A separate CPU preparation screens the full source
+against native/public/general/test/development images and fixed scan reserves.
+This candidate inventory is not admitted to active training or counted as
+actual coverage; its manifest is archived only when preparation completes.
+Preparation retained182,878 records/35,736 images, including180,360 records
+absent from the existing3,384-record pool. Stronger scan/development exclusions
+remove866 existing rows from this separate candidate. Eight flagged public or
+general image pairs affecting28 such rows were visually inspected and found
+to show distinct content; conservative exclusions remain in place. These new
+reservations do not erase prior student exposure or establish a blind test.
+
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
 than the train-only category prior. It has not replaced the live formal teacher.

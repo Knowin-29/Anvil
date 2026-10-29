@@ -34,6 +34,8 @@ def main():
                                      'validate_objective_native_diagnostic.py']}
     sources |= {C / name for name in ['review_completed_control_public.py', 'review_phase2_objectives.py',
                                      'validate_phase2_scheduling.py']}
+    sources |= {C / name for name in ['audit_vacancy_source_lineage.py',
+                                     'prepare_vacancy_expansion_candidate.py']}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -57,6 +59,12 @@ def main():
         'objective_phase2_experiment.json': C / 'objective_controls_phase2_20261029/experiment.json',
         'objective_phase2_scheduling_validation.json': C / 'objective_controls_phase2_20261029/scheduling_validation.json',
         'auxiliary_replay_overlap_427.json': C / 'auxiliary_replay_overlap_20261029.json',
+        'formal_checkpoint512_public_report.json': C / 'formal_mopd/runs/candidate1_20261029/evaluation/512/report.json',
+        'formal_checkpoint512_review.json': C / 'formal512_review_20261029.json',
+        'checkpoint_prefix512_audit.json': C / 'checkpoint_prefixes/candidate1_step512/report.json',
+        'vacancy_upstream_fidelity.json': C / 'vacancy_upstream_fidelity_20261029.json',
+        'vacancy_expansion_candidate_policy.json': C / 'vacancy_expansion_candidate_20261029/policy.json',
+        'vacancy_expansion_visual_review.json': C / 'vacancy_expansion_visual_review_20261029.json',
     }
     for arm in ['low_native_sft', 'no_mtd']:
         for kind, path in {
@@ -81,6 +89,9 @@ def main():
             'public_report':C/'objective_controls_phase2_20261029/evaluation'/arm/'report.json'
         }.items():
             if path.exists():extra['phase2_'+arm+'_'+kind+'.json']=path
+    expansion = C / 'vacancy_expansion_candidate_20261029/manifest.json'
+    if expansion.exists():
+        extra['vacancy_expansion_candidate_manifest.json'] = expansion
     for name, source in extra.items():
         manifest['evidence'][name] = copy(source, DEST / 'evidence' / name)
     for name, item in manifest['evidence'].items():
@@ -122,6 +133,28 @@ Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
 student, teachers, data and schedule. The first reserves eight public-evaluation
 slots; the second waits for formal512 public success before using spare capacity.
 All controls remain excluded from final delivery.
+
+Formal step512 has now completed full seven-public/general evaluation. Its
+public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp
+below initialization. RefSpatial Location100 is51.30 and Where2Place60.70;
+ERQA49.83 improves1.05pp over initialization. This is not accepted final quality.
+The explicit decision is to preserve the frozen run until phase2 objective
+results are reviewed (or the next declared checkpoint arrives first).
+
+A read-only upstream audit matched all3,384 active vacancy records exactly to
+source coordinates and image dimensions. The raw source has231,554 records,
+including58 out-of-range targets already excluded from the231,496 processed
+records. The active conversion is faithful, but semantic correctness is not
+independently established. A separate CPU preparation screens the full source
+against native/public/general/test/development images and fixed scan reserves.
+This candidate inventory is not admitted to active training or counted as
+actual coverage; its manifest is archived only when preparation completes.
+Preparation retained182,878 records/35,736 images, including180,360 records
+absent from the existing3,384-record pool. Stronger scan/development exclusions
+remove866 existing rows from this separate candidate. Eight flagged public or
+general image pairs affecting28 such rows were visually inspected and found
+to show distinct content; conservative exclusions remain in place. These new
+reservations do not erase prior student exposure or establish a blind test.
 
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse

@@ -1,0 +1,117 @@
+{
+  "schema": "anvil-vacancy-upstream-fidelity-v1",
+  "state": "conversion_fidelity_verified",
+  "active_records": 3384,
+  "active_unique_images": 2821,
+  "historical_rows": 7264,
+  "historical_unique_records": 3608,
+  "historical_repeated_rows": 3656,
+  "upstream": {
+    "processed_rows": 231496,
+    "raw_rows": 231554,
+    "raw_invalid_or_empty_normalized_targets": 58,
+    "processed_unique_records": 231496,
+    "raw_unique_records": 231496,
+    "processed_scans": 3043,
+    "known_raw_format_suffix_removed": 127697
+  },
+  "exact_processed_matches": 3384,
+  "raw_normalized_coordinate_matches": 3384,
+  "raw_coordinate_max_absolute_error_on_1000_scale": 0.0,
+  "dimension_mismatches": 0,
+  "active_queries_with_multiple_upstream_point_targets": 1,
+  "mismatches": [],
+  "raw_invalid_examples": [
+    {
+      "id": 2934,
+      "image": "47115222_95768750158333_wide_image.png",
+      "target": "[(0.687, -0.001)]"
+    },
+    {
+      "id": 2937,
+      "image": "47115222_95768750158333_wide_image.png",
+      "target": "[(0.836, -0.001)]"
+    },
+    {
+      "id": 12816,
+      "image": "47334193_355739522190500_wide_image.png",
+      "target": "[(0.406, -0.001)]"
+    },
+    {
+      "id": 17298,
+      "image": "47670031_32228801935708_wide_image.png",
+      "target": "[(0.906, -0.002)]"
+    },
+    {
+      "id": 25297,
+      "image": "43895908_110760935894583_wide_image.png",
+      "target": "[(0.483, -0.001)]"
+    },
+    {
+      "id": 30794,
+      "image": "47670075_38525518180958_wide_image.png",
+      "target": "[(0.944, -0.002)]"
+    },
+    {
+      "id": 32678,
+      "image": "45261089_442168292083_wide_image.png",
+      "target": "[(0.172, -0.001)]"
+    },
+    {
+      "id": 33939,
+      "image": "47430246_182573585329125_wide_image.png",
+      "target": "[(0.444, -0.001)]"
+    },
+    {
+      "id": 37599,
+      "image": "47332482_338658303789708_wide_image.png",
+      "target": "[(0.474, -0.002)]"
+    },
+    {
+      "id": 38606,
+      "image": "47670334_66406198254375_wide_image.png",
+      "target": "[(0.363, -0.001)]"
+    }
+  ],
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/refspatial_vacancy.jsonl": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/refspatial_vacancy.jsonl",
+      "bytes": 4382378,
+      "sha256": "667823ac9ad9cb12fc60961e1bc73f5764b1da4ce12d121eda2d5f2404c6911f"
+    },
+    "/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl": {
+      "path": "/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl",
+      "bytes": 3623824,
+      "sha256": "d32bd8177149538c20e4d15515f228270d98dcd3ebf6021bd1025b0758119360"
+    },
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_filtered_3D_groupLength.jsonl": {
+      "path": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_filtered_3D_groupLength.jsonl",
+      "bytes": 103081363,
+      "sha256": "2d72a1bb6a5e77389ce6047e1c249b76edde7283db7c10bde84f9d20ae66ce8c"
+    },
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_qwenvl.jsonl": {
+      "path": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/vacant_qa_qwenvl.jsonl",
+      "bytes": 118125235,
+      "sha256": "f4f3748aafb3cf07f4fc8f6e48ebdbe00877fe1189a84a823964eadfdd8e4722"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json",
+      "bytes": 3089,
+      "sha256": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd"
+    },
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_vacancy_source_lineage.py": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_vacancy_source_lineage.py",
+      "bytes": 7309,
+      "sha256": "eba7c3ace6831198ee1dbd895b82a1d37b2b7528ef4773a0284ea546446a1e2e"
+    }
+  },
+  "limitations": [
+    "Equality to upstream is not independent semantic validation of free space.",
+    "Full upstream inventory is not leak-screened or admitted for training.",
+    "Multiple point targets for a query may represent valid alternative positions.",
+    "No live dataset, labels, teachers, training plan or scorer was changed."
+  ],
+  "training_changed": false,
+  "full_upstream_admitted": false,
+  "created": 1793257618.6456974
+}
