@@ -1,0 +1,26 @@
+{
+  "schema": "anvil-step128-GS-diagnostic-launch-policy-v1",
+  "created": 1793243044.4209838,
+  "launch_deadline": 1793257444.420984,
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_diagnostic.py": "6afe562b4efb786484f08f2255551c8d12c53233db09a13072d2a507a4b2f322",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs_diagnostic.py": "a938cd407eaaf603046e4f5aa2b26a38307114f015e0a552c7bea1190cb0ef98",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_midrun_gs_diagnostic.py": "f3ead197a6c26b99630d0019514a4c4d340ca8b51864f3f552371e10d2b120c1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/plan.json": "1e38a2a0edd48e652c0c314bf51ea842122b73ff2255b29331f01f4f48c6f7b9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_selection.json": "ab129190c628ac943458232ab01629de7def6eb5d193cdf1db475806a10d0f2f"
+  },
+  "cpu_validation": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_cpu_validation.json",
+    "sha256": "f00ef7cd3241b573db5060450cf7e51ad955ce13b04f61a9f7021eb319282e46"
+  },
+  "selection_before_checkpoint_results": true,
+  "checkpoint_step": 128,
+  "native_GS_records": 35989,
+  "additional_GPUs": 8,
+  "public_GPU_reservation": 8,
+  "require_A_controls_success": true,
+  "full_final_validation": false,
+  "original_training_changed": false,
+  "credential_store_modified": false
+}

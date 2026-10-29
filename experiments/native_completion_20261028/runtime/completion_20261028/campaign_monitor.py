@@ -105,6 +105,26 @@ def snapshot():
         result['formal_runs'][folder.name]=item
         result['final_training'].update(state=item['state'],updates=plan['steps'],world=plan['world'],
             actual_mopd_training_started=(run/'status.json').exists(),training_run=str(run))
+    result['midrun_native_diagnostics']={}
+    for folder in (ROOT/'native_diagnostics').glob('*'):
+        if not folder.is_dir():continue
+        item=dict(full_final_validation=False,final_quality_accepted=False)
+        for name in ['controller_status.json','status.json','controller_process.json']:
+            path=folder/name
+            if path.exists():item[name.removesuffix('.json')]=json.loads(path.read_text())
+        item['failures']=[]
+        for pattern in ['*failure.json','shards/*/evaluation/failure.json']:
+            for path in folder.glob(pattern):
+                item['failures'].append(dict(path=str(path),detail=json.loads(path.read_text())))
+        item['shards']={}
+        for path in folder.glob('shards/*/evaluation/status.json'):
+            item['shards'][path.parent.parent.name]=json.loads(path.read_text())
+        report=folder/'report.json'
+        if report.exists():
+            value=json.loads(report.read_text())
+            item['report']=dict(path=str(report),sha256=sha(report),n=value['n'],
+                                step=value['step'],groups=value['groups'])
+        result['midrun_native_diagnostics'][folder.name]=item
     result['final_delivery_handoffs']={}
     for state_path in (ROOT/'delivery_runs').glob('*/status.json'):
         folder=state_path.parent

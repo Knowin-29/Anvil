@@ -1,6 +1,6 @@
 {
   "schema": "anvil-native-completion-source-snapshot-v1",
-  "created_utc": "2026-10-29T02:42:01.695092+00:00",
+  "created_utc": "2026-10-29T03:07:55.482223+00:00",
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020",
   "files": {
     "cloud_a800/checkpoints.py": {
@@ -865,8 +865,8 @@
     },
     "completion_20261028/campaign_monitor.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor.py",
-      "sha256": "b3560196d88832a72db257db036f0e5bba357cf9bab007410abb02c029e6da4f",
-      "bytes": 23908
+      "sha256": "4789a10b7b830b131d2dbc615fe118f6a0308f512b7fd2e492240b1d18124e23",
+      "bytes": 25088
     },
     "completion_20261028/formal_mopd/launch_policy.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/launch_policy.json",
@@ -897,6 +897,21 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_final_handoff_v1.py",
       "sha256": "a7e0187cec584dc411ef3abdbf838b2508f968b6d3cf09115e23ea20655eb088",
       "bytes": 5645
+    },
+    "completion_20261028/midrun_gs_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_diagnostic.py",
+      "sha256": "6afe562b4efb786484f08f2255551c8d12c53233db09a13072d2a507a4b2f322",
+      "bytes": 12635
+    },
+    "completion_20261028/submit_midrun_gs_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/submit_midrun_gs_diagnostic.py",
+      "sha256": "a938cd407eaaf603046e4f5aa2b26a38307114f015e0a552c7bea1190cb0ef98",
+      "bytes": 5623
+    },
+    "completion_20261028/validate_midrun_gs_diagnostic.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_midrun_gs_diagnostic.py",
+      "sha256": "f3ead197a6c26b99630d0019514a4c4d340ca8b51864f3f552371e10d2b120c1",
+      "bytes": 3985
     }
   },
   "evidence": {
@@ -967,6 +982,14 @@
     "gsa_source_sync_20261029.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/gsa_sync_20261029/git_sync_receipt.json",
       "sha256": "e23a1e146072ea20b8057f8915ceaa6a2a29fb5049085279e9206c123b7aa550"
+    },
+    "midrun_gs_cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/midrun_gs_cpu_validation.json",
+      "sha256": "f00ef7cd3241b573db5060450cf7e51ad955ce13b04f61a9f7021eb319282e46"
+    },
+    "midrun_gs_launch_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step128/policy.json",
+      "sha256": "f7ab696b06ef1a2c36fd519385d611cfda4a8800651013e94a35aa4d00bdf60e"
     }
   },
   "model_weights_in_git": false,
@@ -977,5 +1000,6 @@
   "verbatim_source_whitespace_note": "Two original PRISM trainer lines have trailing spaces. Preserved byte-for-byte because those source files are frozen in running jobs; source SHA256 bindings are authoritative.",
   "automatic_formal_readiness_policy": "At most2048updates/48guardedtraininghours; at least24h finalreserve; actual8/16GPUthroughput; campaign32GPUcap.",
   "formal_task_id": "t-20261029095820-px5rk",
-  "final_validation_handoff": "After formal training and scheduled checkpoint diagnostics finish: verify final tip, derive merged copy, freeze 580K+seven-public+10105-general evaluation, submit at most four eight-GPU nodes under32cap, score/audit lineage. Stop for explicit model-quality assessment; no automatic upload or acceptance."
+  "final_validation_handoff": "After formal training and scheduled checkpoint diagnostics finish: verify final tip, derive merged copy, freeze 580K+seven-public+10105-general evaluation, submit at most four eight-GPU nodes under32cap, score/audit lineage. Stop for explicit model-quality assessment; no automatic upload or acceptance.",
+  "midrun_native_diagnostic": "Step128, exact35989 previously selected G/S rows, paired with initial student; reserve8publicGPUslots and wait for A controls to release8GPUs; unchanged native scorer; not full final validation."
 }
