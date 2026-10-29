@@ -1,0 +1,18 @@
+{
+  "original": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v6.py",
+    "sha256": "568619ea46d745d785f10a8fd56ee5337653cd35a4c26866d3b7367275a04d75"
+  },
+  "derived": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v7.py",
+    "sha256": "aa3cafd691165f170461ee03d6f013df9fb59cd464f55f7b11939784110c3d1b"
+  },
+  "changes": [
+    "Explicit native-reference SFT and MTD coefficients; supervised replay unchanged.",
+    "Zero-MTD control skips teacher and sampled rollout; never a final MOPD.",
+    "Short controls preserve1664-update optimizer schedule.",
+    "Eight-GPU virtual16 sampler matches all4096 real first128 source rows exactly.",
+    "Runtime proof binds trainer/student/teachers/topology/weights/schedule; metadata excludes all controls from final delivery."
+  ],
+  "limitations": "Eight versus16 physical GPUs changes rank RNG and MTD token-normalization groups; these are diagnostic comparisons, not exact stochastic replications."
+}

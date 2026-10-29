@@ -1,0 +1,43 @@
+{
+  "state": "verified_formal_checkpoint_and_128_update_prefix",
+  "checked_at": "2026-10-29T11:23:51.254042+08:00",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-128",
+  "checkpoint_receipt_sha256": "f5b6873d2fc80c48fcb2eda28c91c5d2c0807c68d3aa3141b4aab9f7dd0b12c4",
+  "adapter_sha256": "3fbd796aa170dd1e705c1d8b0a4a8d59dc985ca5745d959da7e0679b96251bef",
+  "checkpoint_files_verified": 22,
+  "step": 128,
+  "planned_updates": 1664,
+  "world": 16,
+  "global_batch": 32,
+  "actual_exposures": 4096,
+  "source_exposures": {
+    "general_qa": 1024,
+    "native_distillation": 2048,
+    "spatial_reference": 1024
+  },
+  "unique_records_by_category": {
+    "general_qa": 1024,
+    "native_distillation": 2048,
+    "spatial_reference": 1024
+  },
+  "loss_gradient_all_finite": true,
+  "mtd_positive_each_update": true,
+  "native_forms": {
+    "bbox": 209,
+    "depth_order": 5,
+    "action_cot": 145,
+    "point": 249,
+    "metric_comparison": 330,
+    "dof": 178,
+    "direction": 331,
+    "affordance": 349,
+    "mask": 206,
+    "relation_graph": 22,
+    "detection": 24
+  },
+  "mean_update_seconds": 36.263016262311794,
+  "estimated_training_end": "2026-10-30T02:52:11.247021+08:00",
+  "estimate_not_guarantee": true,
+  "final_quality_accepted": false,
+  "weights_uploaded": false
+}

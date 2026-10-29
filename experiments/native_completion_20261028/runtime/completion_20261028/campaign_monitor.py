@@ -125,6 +125,29 @@ def snapshot():
             item['report']=dict(path=str(report),sha256=sha(report),n=value['n'],
                                 step=value['step'],groups=value['groups'])
         result['midrun_native_diagnostics'][folder.name]=item
+    result['objective_controls']={}
+    controls=ROOT/'objective_controls_20261029'
+    for arm in ['low_native_sft','no_mtd']:
+        folder=controls/'runs'/arm
+        item=dict(final_mopd=False,final_quality_accepted=False)
+        for name,path in {
+            'submission':controls/'submissions'/arm/'submission.json',
+            'node':folder/'node_status.json','training':folder/'status.json',
+            'runtime':controls/'runtime'/arm/'runtime_verified.json',
+            'exposure_audit':folder/'exposure_audit.json','failure':folder/'failure.json'
+        }.items():
+            if path.exists():item[name]=json.loads(path.read_text())
+        report=controls/'evaluation'/arm/'report.json'
+        if report.exists():
+            value=json.loads(report.read_text())
+            item['report']=dict(path=str(report),sha256=sha(report),macro=value['paper_aligned_macro'],
+                checkpoint_minus_initial=value['checkpoint_minus_initial_percentage_points'])
+        result['objective_controls'][arm]=item
+    first=ROOT/'formal_mopd/runs/candidate1_20261029/evaluation/128/report.json'
+    if first.exists():
+        value=json.loads(first.read_text())
+        result['known_quality_failures'].append(
+            'Formal step128 public macro %.6f vs initial69.982857; public spatial regression is unresolved. General remains stable; objective controls are diagnostic only.' % value['paper_aligned_macro'])
     result['final_delivery_handoffs']={}
     for state_path in (ROOT/'delivery_runs').glob('*/status.json'):
         folder=state_path.parent

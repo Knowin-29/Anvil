@@ -1,6 +1,6 @@
 {
   "schema": "anvil-native-completion-source-snapshot-v1",
-  "created_utc": "2026-10-29T03:07:55.482223+00:00",
+  "created_utc": "2026-10-29T04:18:49.905634+00:00",
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020",
   "files": {
     "cloud_a800/checkpoints.py": {
@@ -865,8 +865,8 @@
     },
     "completion_20261028/campaign_monitor.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor.py",
-      "sha256": "4789a10b7b830b131d2dbc615fe118f6a0308f512b7fd2e492240b1d18124e23",
-      "bytes": 25088
+      "sha256": "f40911013f5788df51ef726a09ccf56c53198a1d110c8a83b629103dcb80c428",
+      "bytes": 26519
     },
     "completion_20261028/formal_mopd/launch_policy.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/launch_policy.json",
@@ -912,6 +912,56 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/validate_midrun_gs_diagnostic.py",
       "sha256": "f3ead197a6c26b99630d0019514a4c4d340ca8b51864f3f552371e10d2b120c1",
       "bytes": 3985
+    },
+    "completion_20261028/native_mopd_v7.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v7.py",
+      "sha256": "aa3cafd691165f170461ee03d6f013df9fb59cd464f55f7b11939784110c3d1b",
+      "bytes": 36281
+    },
+    "completion_20261028/objective_controls_20261029/merge.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/merge.py",
+      "sha256": "39cdd59b18d5c1d9ab7f54ba9f8a1cfecc6acf77e4e5aa3b19b97f214450278c",
+      "bytes": 4208
+    },
+    "completion_20261028/objective_controls_20261029/node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/node.py",
+      "sha256": "3197beb560a8d26d8d7b711e10fed5112efd80249d7827da7e6625af4ba1c837",
+      "bytes": 10350
+    },
+    "completion_20261028/objective_controls_20261029/objective_control_common.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/objective_control_common.py",
+      "sha256": "104c4a35beaa11f19248a62ad9052391631bfd3e3be319dd3ef97bb2576d73d4",
+      "bytes": 3958
+    },
+    "completion_20261028/objective_controls_20261029/prepare_validate.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/prepare_validate.py",
+      "sha256": "a3abe62d4486d6bba01df5eebd8236a0a5391d1d182f2cdf188dbfe25e051119",
+      "bytes": 8673
+    },
+    "completion_20261028/objective_controls_20261029/public_worker.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/public_worker.py",
+      "sha256": "c44148544ae4bdc14523a6436f7541d46d95c3d634102f2e7d4484464ebc7ad4",
+      "bytes": 4903
+    },
+    "completion_20261028/objective_controls_20261029/score.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/score.py",
+      "sha256": "1974bf2ece90f309cb08278511b8232a830f4c6ea472d17c629e43fb1f1a3304",
+      "bytes": 5330
+    },
+    "completion_20261028/objective_controls_20261029/submit.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/submit.py",
+      "sha256": "65714b44cac571a326655ff81b1a049ee7c47b15d8a61cb55525264ba02d18d9",
+      "bytes": 2939
+    },
+    "completion_20261028/refresh_source_snapshot.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refresh_source_snapshot.py",
+      "sha256": "14eb9ce4f3e08fc0617b6ee2e031bee3c99ad6aa92fe8bdb2f145ad3eaf8dda0",
+      "bytes": 5116
+    },
+    "completion_20261028/review_prism_learning_candidates.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/review_prism_learning_candidates.py",
+      "sha256": "a0cb45502929502301740f4facad32cb48fdaf64378b8705419f9da0bfcb40d5",
+      "bytes": 3616
     }
   },
   "evidence": {
@@ -990,6 +1040,51 @@
     "midrun_gs_launch_policy.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step128/policy.json",
       "sha256": "f7ab696b06ef1a2c36fd519385d611cfda4a8800651013e94a35aa4d00bdf60e"
+    },
+    "formal_checkpoint128_integrity.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/checkpoint128_integrity_review.json",
+      "sha256": "87bd14521b900a53a6195e13a049f4a1541f2b3c7cacb2feb13eb55ab3066265",
+      "bytes": 1374
+    },
+    "formal_checkpoint128_public_report.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/evaluation/128/report.json",
+      "sha256": "cae9ca1cc204c37e7b22301e73cd395d9b512df5e280fa340154d7e91baa7bdc",
+      "bytes": 22475
+    },
+    "formal_checkpoint128_native_GS_report.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_diagnostics/candidate1_step128/report.json",
+      "sha256": "cc65525648d5c8b5ec3394a037133618defcdb66a1c720dd0462f08b9d0d7042",
+      "bytes": 45134
+    },
+    "prism_learning_matched_review.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_matched_review.json",
+      "sha256": "e994e7fcefc09b3faa3622248507335af4c80aa60faaa1a89aa8e707e8ce0e7d",
+      "bytes": 37882
+    },
+    "objective_controls_cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/cpu_validation.json",
+      "sha256": "73d327a359f5cbabd38a3f1a9acaf7aef731600fef0d5b2d83e326552fca877b",
+      "bytes": 16796
+    },
+    "objective_controls_experiment.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/experiment.json",
+      "sha256": "902eea949a5663c1d6e9a09545e59de778a4a142931de4b1a37dc506473b7da9",
+      "bytes": 17686
+    },
+    "objective_controls_derivation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/derivation.json",
+      "sha256": "25b7b382ae896c18cf682beda399193e6ce68f0ded7c4513ad241194b50b9113",
+      "bytes": 1042
+    },
+    "objective_low_native_sft_submission.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/submissions/low_native_sft/submission.json",
+      "sha256": "94f97981f02fd1e08c18d616a73d94a1be826a3e34720e5a7d9b7401605da7d9",
+      "bytes": 279
+    },
+    "objective_no_mtd_submission.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/submissions/no_mtd/submission.json",
+      "sha256": "757eaf4807feb9813652ba8f590b4aff4c025d405392d712fbe640b8382bb4de",
+      "bytes": 279
     }
   },
   "model_weights_in_git": false,
@@ -1001,5 +1096,15 @@
   "automatic_formal_readiness_policy": "At most2048updates/48guardedtraininghours; at least24h finalreserve; actual8/16GPUthroughput; campaign32GPUcap.",
   "formal_task_id": "t-20261029095820-px5rk",
   "final_validation_handoff": "After formal training and scheduled checkpoint diagnostics finish: verify final tip, derive merged copy, freeze 580K+seven-public+10105-general evaluation, submit at most four eight-GPU nodes under32cap, score/audit lineage. Stop for explicit model-quality assessment; no automatic upload or acceptance.",
-  "midrun_native_diagnostic": "Step128, exact35989 previously selected G/S rows, paired with initial student; reserve8publicGPUslots and wait for A controls to release8GPUs; unchanged native scorer; not full final validation."
+  "midrun_native_diagnostic": "Step128, exact35989 previously selected G/S rows, paired with initial student; reserve8publicGPUslots and wait for A controls to release8GPUs; unchanged native scorer; not full final validation.",
+  "first_formal_checkpoint_public_regression": true,
+  "objective_controls": {
+    "final_mopd": false,
+    "steps": 128,
+    "source_rows_matched": 4096,
+    "world": 8,
+    "sampler_world": 16,
+    "schedule_steps": 1664,
+    "limitation": "Physical topology changes RNG and token-normalization groups; diagnostic comparisons only."
+  }
 }

@@ -21,3 +21,25 @@ The original controller encountered transient cloud visibility immediately after
 The project entry and historical GSA source preservation are documented in `../../docs/project_layout_20261029.md`; GSA branch `RWLinno/GSA_Forge/ICLR27` was remotely verified at48f9d4b90473f5427bbca07879ed2a2a355120ba. This is source synchronization, not a claim that all GSA data or models were uploaded.
 
 A separately declared step128 native diagnostic reuses the initial student's fixed35,989 G/S rows and unchanged scorer to detect negative transfer early. It waits for the A controls to finish and always reserves8GPU slots for the formal controller's public validation, keeping the campaign within32GPUs. Paired comparisons require identical sample IDs, reference hashes and inference protocols. CPU validation covers the complete real baseline, mismatch rejection and resource accounting. This diagnostic does not replace full final validation or alter the formal training plan.
+
+## First formal checkpoint and objective controls
+
+The verified formal step128 checkpoint has seven-public macro68.614286 versus
+the exact initial student's69.982857 (−1.368571 percentage points). Its general
+scores remain essentially stable. On35,989 exact paired native G/S examples,
+gains are small and mask validity is essentially unchanged. This is unresolved
+public spatial regression, not an accepted final result or proof of collapse.
+
+Two nonfinal128-update controls test native-reference SFT0.1/MTD1 and SFT1/MTD0.
+They preserve the1664-update learning-rate horizon and exactly match all4096
+training rows in the original first128 updates. Eight physical GPUs with a
+virtual16 sampler differ in rank RNG and native token-normalization groups, so
+these are diagnostic comparisons rather than exact stochastic replications.
+The zero-MTD arm cannot be released as MOPD. Each task requires a genuine GPU
+optimizer1→3 resume check before training, then unchanged seven-public and
+10,105-example general evaluation. Current task receipts are archived;
+source/CPU checks alone do not establish GPU success or quality improvement.
+
+The expanded A learning control improves pose80.65°→76.37°, contact error and
+affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
+than the train-only category prior. It has not replaced the live formal teacher.

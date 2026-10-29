@@ -1,0 +1,622 @@
+{
+  "state": "complete_matched_A_learning_control_review",
+  "n_per_model": 4100,
+  "rows_and_references_exactly_matched": true,
+  "inference_protocols_matched": true,
+  "model_roots": {
+    "current_A": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular",
+    "initial_student": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation",
+    "A_prism_lr5e5": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5",
+    "A_prism_lr1e4": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4"
+  },
+  "comparisons": {
+    "A_prism_lr5e5": {
+      "current_A": [
+        {
+          "form": "action_cot",
+          "source": "ALFRED",
+          "n": 3327,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 0.9954914337240758,
+              "candidate": 0.996092575894199,
+              "candidate_minus_baseline": 0.0006011421701232341
+            },
+            "expert_continuation_exact": {
+              "baseline": 0.25939284640817556,
+              "candidate": 0.2395551547941088,
+              "candidate_minus_baseline": -0.019837691614066726
+            },
+            "json_valid": {
+              "baseline": 0.9954914337240758,
+              "candidate": 0.996092575894199,
+              "candidate_minus_baseline": 0.0006011421701232341
+            },
+            "next_action_exact": {
+              "baseline": 0.6396152690111211,
+              "candidate": 0.6245867147580403,
+              "candidate_minus_baseline": -0.015028554253080854
+            },
+            "target_object_exact": {
+              "baseline": 0.5743913435527502,
+              "candidate": 0.5266005410279531,
+              "candidate_minus_baseline": -0.047790802524797116
+            },
+            "target_role_exact": {
+              "baseline": 0.8130447850916742,
+              "candidate": 0.799819657348963,
+              "candidate_minus_baseline": -0.013225127742711151
+            },
+            "truncated": {
+              "baseline": 0.0012022843402464682,
+              "candidate": 0.0015028554253080854,
+              "candidate_minus_baseline": 0.00030057108506161706
+            }
+          }
+        },
+        {
+          "form": "affordance",
+          "source": "ShareRobot-Bench",
+          "n": 193,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "instruction_copy_exact": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "region_iou": {
+              "baseline": 0.11386315907797634,
+              "candidate": 0.1365783039614394,
+              "candidate_minus_baseline": 0.022715144883463084
+            },
+            "region_iou50": {
+              "baseline": 0.05181347150259067,
+              "candidate": 0.06217616580310881,
+              "candidate_minus_baseline": 0.010362694300518135
+            },
+            "region_iou75": {
+              "baseline": 0.0,
+              "candidate": 0.0051813471502590676,
+              "candidate_minus_baseline": 0.0051813471502590676
+            },
+            "region_iou90": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        },
+        {
+          "form": "dof",
+          "source": "PRISM",
+          "n": 580,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "normalized_projected_contact_l2": {
+              "baseline": 0.0852763913285354,
+              "candidate": 0.08861620682836435,
+              "candidate_minus_baseline": 0.003339815499828949
+            },
+            "pi_symmetric_rotation_error_degrees": {
+              "baseline": 80.65314903824064,
+              "candidate": 77.72028082079017,
+              "candidate_minus_baseline": -2.93286821745047
+            },
+            "rotation_error_degrees": {
+              "baseline": 112.21705787403282,
+              "candidate": 112.21455025153647,
+              "candidate_minus_baseline": -0.0025076224963539
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        }
+      ],
+      "initial_student": [
+        {
+          "form": "action_cot",
+          "source": "ALFRED",
+          "n": 3327,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 0.9963931469792606,
+              "candidate": 0.996092575894199,
+              "candidate_minus_baseline": -0.00030057108506161706
+            },
+            "expert_continuation_exact": {
+              "baseline": 0.1920649233543733,
+              "candidate": 0.2395551547941088,
+              "candidate_minus_baseline": 0.0474902314397355
+            },
+            "json_valid": {
+              "baseline": 0.9990982867448152,
+              "candidate": 0.996092575894199,
+              "candidate_minus_baseline": -0.003005710850616171
+            },
+            "next_action_exact": {
+              "baseline": 0.5837090471896603,
+              "candidate": 0.6245867147580403,
+              "candidate_minus_baseline": 0.04087766756837992
+            },
+            "target_object_exact": {
+              "baseline": 0.4845205891193267,
+              "candidate": 0.5266005410279531,
+              "candidate_minus_baseline": 0.04207995190862639
+            },
+            "target_role_exact": {
+              "baseline": 0.7938082356477307,
+              "candidate": 0.799819657348963,
+              "candidate_minus_baseline": 0.006011421701232342
+            },
+            "truncated": {
+              "baseline": 0.0009017132551848512,
+              "candidate": 0.0015028554253080854,
+              "candidate_minus_baseline": 0.0006011421701232341
+            }
+          }
+        },
+        {
+          "form": "affordance",
+          "source": "ShareRobot-Bench",
+          "n": 193,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "instruction_copy_exact": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "region_iou": {
+              "baseline": 0.13366094222188213,
+              "candidate": 0.1365783039614394,
+              "candidate_minus_baseline": 0.0029173617395573032
+            },
+            "region_iou50": {
+              "baseline": 0.07253886010362694,
+              "candidate": 0.06217616580310881,
+              "candidate_minus_baseline": -0.010362694300518135
+            },
+            "region_iou75": {
+              "baseline": 0.015544041450777202,
+              "candidate": 0.0051813471502590676,
+              "candidate_minus_baseline": -0.010362694300518135
+            },
+            "region_iou90": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        },
+        {
+          "form": "dof",
+          "source": "PRISM",
+          "n": 580,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "normalized_projected_contact_l2": {
+              "baseline": 0.0917060730632288,
+              "candidate": 0.08861620682836435,
+              "candidate_minus_baseline": -0.0030898662348644514
+            },
+            "pi_symmetric_rotation_error_degrees": {
+              "baseline": 80.90354318155906,
+              "candidate": 77.72028082079017,
+              "candidate_minus_baseline": -3.183262360768891
+            },
+            "rotation_error_degrees": {
+              "baseline": 112.2297524623071,
+              "candidate": 112.21455025153647,
+              "candidate_minus_baseline": -0.015202210770640422
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "A_prism_lr1e4": {
+      "current_A": [
+        {
+          "form": "action_cot",
+          "source": "ALFRED",
+          "n": 3327,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 0.9954914337240758,
+              "candidate": 0.9966937180643222,
+              "candidate_minus_baseline": 0.0012022843402464682
+            },
+            "expert_continuation_exact": {
+              "baseline": 0.25939284640817556,
+              "candidate": 0.24917342951608054,
+              "candidate_minus_baseline": -0.01021941689209498
+            },
+            "json_valid": {
+              "baseline": 0.9954914337240758,
+              "candidate": 0.9966937180643222,
+              "candidate_minus_baseline": 0.0012022843402464682
+            },
+            "next_action_exact": {
+              "baseline": 0.6396152690111211,
+              "candidate": 0.6299969942891493,
+              "candidate_minus_baseline": -0.009618274721971746
+            },
+            "target_object_exact": {
+              "baseline": 0.5743913435527502,
+              "candidate": 0.567478208596333,
+              "candidate_minus_baseline": -0.0069131349564171924
+            },
+            "target_role_exact": {
+              "baseline": 0.8130447850916742,
+              "candidate": 0.8214607754733995,
+              "candidate_minus_baseline": 0.008415990381725278
+            },
+            "truncated": {
+              "baseline": 0.0012022843402464682,
+              "candidate": 0.0015028554253080854,
+              "candidate_minus_baseline": 0.00030057108506161706
+            }
+          }
+        },
+        {
+          "form": "affordance",
+          "source": "ShareRobot-Bench",
+          "n": 193,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "instruction_copy_exact": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "region_iou": {
+              "baseline": 0.11386315907797635,
+              "candidate": 0.14319011487669342,
+              "candidate_minus_baseline": 0.029326955798717056
+            },
+            "region_iou50": {
+              "baseline": 0.05181347150259067,
+              "candidate": 0.08808290155440414,
+              "candidate_minus_baseline": 0.03626943005181347
+            },
+            "region_iou75": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "region_iou90": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        },
+        {
+          "form": "dof",
+          "source": "PRISM",
+          "n": 580,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "normalized_projected_contact_l2": {
+              "baseline": 0.08527639132853541,
+              "candidate": 0.0774290445493468,
+              "candidate_minus_baseline": -0.00784734677918861
+            },
+            "pi_symmetric_rotation_error_degrees": {
+              "baseline": 80.65314903824064,
+              "candidate": 76.36526724844272,
+              "candidate_minus_baseline": -4.28788178979792
+            },
+            "rotation_error_degrees": {
+              "baseline": 112.21705787403283,
+              "candidate": 111.71688731775879,
+              "candidate_minus_baseline": -0.5001705562740395
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        }
+      ],
+      "initial_student": [
+        {
+          "form": "action_cot",
+          "source": "ALFRED",
+          "n": 3327,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 0.9963931469792606,
+              "candidate": 0.9966937180643222,
+              "candidate_minus_baseline": 0.00030057108506161706
+            },
+            "expert_continuation_exact": {
+              "baseline": 0.1920649233543733,
+              "candidate": 0.24917342951608054,
+              "candidate_minus_baseline": 0.05710850616170724
+            },
+            "json_valid": {
+              "baseline": 0.9990982867448152,
+              "candidate": 0.9966937180643222,
+              "candidate_minus_baseline": -0.0024045686804929365
+            },
+            "next_action_exact": {
+              "baseline": 0.5837090471896603,
+              "candidate": 0.6299969942891493,
+              "candidate_minus_baseline": 0.04628794709948903
+            },
+            "target_object_exact": {
+              "baseline": 0.4845205891193267,
+              "candidate": 0.567478208596333,
+              "candidate_minus_baseline": 0.0829576194770063
+            },
+            "target_role_exact": {
+              "baseline": 0.7938082356477307,
+              "candidate": 0.8214607754733995,
+              "candidate_minus_baseline": 0.02765253982566877
+            },
+            "truncated": {
+              "baseline": 0.0009017132551848512,
+              "candidate": 0.0015028554253080854,
+              "candidate_minus_baseline": 0.0006011421701232341
+            }
+          }
+        },
+        {
+          "form": "affordance",
+          "source": "ShareRobot-Bench",
+          "n": 193,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "instruction_copy_exact": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "region_iou": {
+              "baseline": 0.13366094222188213,
+              "candidate": 0.14319011487669342,
+              "candidate_minus_baseline": 0.009529172654811275
+            },
+            "region_iou50": {
+              "baseline": 0.07253886010362694,
+              "candidate": 0.08808290155440414,
+              "candidate_minus_baseline": 0.015544041450777202
+            },
+            "region_iou75": {
+              "baseline": 0.015544041450777202,
+              "candidate": 0.0,
+              "candidate_minus_baseline": -0.015544041450777202
+            },
+            "region_iou90": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        },
+        {
+          "form": "dof",
+          "source": "PRISM",
+          "n": 580,
+          "metrics": {
+            "contract_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "json_valid": {
+              "baseline": 1.0,
+              "candidate": 1.0,
+              "candidate_minus_baseline": 0.0
+            },
+            "normalized_projected_contact_l2": {
+              "baseline": 0.09170607306322881,
+              "candidate": 0.0774290445493468,
+              "candidate_minus_baseline": -0.01427702851388201
+            },
+            "pi_symmetric_rotation_error_degrees": {
+              "baseline": 80.90354318155907,
+              "candidate": 76.36526724844272,
+              "candidate_minus_baseline": -4.538275933116354
+            },
+            "rotation_error_degrees": {
+              "baseline": 112.2297524623071,
+              "candidate": 111.71688731775879,
+              "candidate_minus_baseline": -0.5128651445483134
+            },
+            "truncated": {
+              "baseline": 0.0,
+              "candidate": 0.0,
+              "candidate_minus_baseline": 0.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "candidate_for_future_consideration": "A_prism_lr1e4",
+  "rationale": "Among the two controls, LR1e-4 has lower pose/contact error and higher affordance IoU/action accuracy. Compared with current A, geometry/affordance improve while action accuracy falls slightly. It remains weaker than the train-only category pose prior; pose quality is not solved.",
+  "category_prior_rotation_error_degrees": 70.88,
+  "current_formal_binding_changed": false,
+  "subsequent_formal_run_admitted": false,
+  "final_model_quality_accepted": false,
+  "weights_uploaded": false,
+  "next_decision": "Review first formal checkpoint public and paired G/S diagnostics before deciding whether another teacher-bound run is useful. No hot swap in the running candidate.",
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/metrics.json": "50e9501373979a678e6f559f9ce48e97302b34dae37071eac5cee57d736893a9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/protocol.json": "367a2ad891bef2f536669d5dc4b35687d61599e2c37056f1aaf1a23f634f43f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_affordance.jsonl": "969fc72c21c46ef9826b59f06ec6fd8dab90ab66eb4ddfdefb93fde30240cd03",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_dof.jsonl": "efc6a6bc6f0ace1fead2853ef4ae99906a8dcf019f71b3c430aea915673955df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/0/evaluation/predictions_action_cot.jsonl": "909a9cc9e256f05e3256c0e81da659571300d367b678d45e3cf581ce7e2da2b4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/metrics.json": "662753f35f20b7f5ecd8be60e9498bff698c60d92f507c2cfe5ed79e2a352f14",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/protocol.json": "ff89fd4f50a8ce17c9c065d73882869ed2cb4bf4f520cf5d6e52bc7be6b4f667",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_affordance.jsonl": "b8228191fb7b5c594da19553320e9475b01b8ca9819deeb0f9cc2f674c1d4ec9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_dof.jsonl": "522516ad1a0440ddac31b69006c0c4e4a49079a49a3479351ae1970ecb1203f8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/1/evaluation/predictions_action_cot.jsonl": "ecec72f7d48c6acc87a05ab5f708f7d4fac9025426e9f38add49461ba39f31fb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/metrics.json": "40526e3877468dc595d0acd1b9b028087f6c8dc8afe9acb97d68b9cdc2d84487",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/protocol.json": "815ef5054f2a64a81fa4bb2f4a5a1311b5f5a51236c74241624b6ec2827a0511",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_affordance.jsonl": "44a81a0a8342187ad2e729019d9aa2310ad80ec524ea4a695962e3e6c638f51b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_dof.jsonl": "990fc0265531a44e01770469e218ea00f04039fdbe75215eebb20f05792587c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/2/evaluation/predictions_action_cot.jsonl": "ca656527ea3fb1146529e5f127568e9d77cfbd6f12bf49784afef8350b0ebfb7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/metrics.json": "3a21f79b71985d2f3a9f2895bb3f35bcb0473d2af013e530300ea1284d74b7d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/protocol.json": "2c6e2e06fb97b639a34e8e1cc5ed0cf76956d880143d9bea0fc2fad20b8a2423",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_affordance.jsonl": "8bf236e5d0f8613e364d8250f05bc29ad22e61d9fcb4796e1e450db347d73a7c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_dof.jsonl": "60e6b5a8db99022f6b28e0d93100cb720be7223d74fa754a94cf9d8ca7732db7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_evaluations/A_pose_angular/3/evaluation/predictions_action_cot.jsonl": "c15102ee7d819f55c9c35cb9d4cbad313f194acb2560084d2daa908da0edcc7f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/metrics.json": "dec5b3bb08c81333cc4faded5be2751b27d6ab8647aec59106462bb6acc1090e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/protocol.json": "550bb4b22b4dee986f1a85d2d3e0043d7d9d8aa1a8493875e8d6d1503670f9e7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_affordance.jsonl": "37db05731f52bce1a0458f06e0b0a88a716676a534b9297d237ad2b2e6302b88",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_dof.jsonl": "5c01bb0e2826ec9be1336debf7310cc74de97a062d5e5e8bc8ec6e2abcbd1673",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/0/evaluation/predictions_action_cot.jsonl": "7372331bfa04c41cee60d083658ecf9eb240b54bebfe9807b7425db33657a72d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/metrics.json": "a48c8cb1131ea5b40073e2e366d1a5a77586210a789d4132944958f10cd5d965",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/protocol.json": "e2bd123e1b3470e9f2e8df4762909acf57026c73cd45b448e4941acef39e05c5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_affordance.jsonl": "94e95cd76f01db0367030ae8a6634b768d9a28c701b4d7a05bfe1edad6b5ba0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_dof.jsonl": "0519ed912b4f5083a4415de8d76ef1720ea9ac0ffc65f95d86e088bedd13b58e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/1/evaluation/predictions_action_cot.jsonl": "103fff8a2bdac14ef460c85460cd0dad6898a7f12c50aa8cb446314b31244922",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/metrics.json": "3fd0b7841660e5da126c42660010233e789362949abc43e0314aa760de9489ba",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/protocol.json": "063bbd6ef1b6a02609daea2e43861f4cac3cd00c763737ec990a92a8bf22cdc7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_affordance.jsonl": "62343024d290e77ddef4a6e2a13517d8beac1439dcf060d104cb7881071acb36",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_dof.jsonl": "8f57e3d6aef8087c7f3fee1ea596511db3bf8a170d5a9cc00c7ac1f8d9a9dc5b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/2/evaluation/predictions_action_cot.jsonl": "a86a44e2e60fc2cf938593b2a85cc21b619f7421d6810ccc2e7e3565d6d178e3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/metrics.json": "4c09052aef07e198fed78707997fbf7e2c7fcbd9b693891df34218a23564082e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/protocol.json": "48e737ef785ed0251cd1a86a8347ae43c9a60db77c983baf3b9d4daada033e6e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_affordance.jsonl": "7bce1bf7e6e2e6b65e80360381627c8958da333ba0f3c3957c75d0d353fe6af2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_dof.jsonl": "c603ebbb203b8044d6d1e59591c0d519d02a68f6c7ca453308477aacfcfbb030",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_evaluations/student_adaptation/3/evaluation/predictions_action_cot.jsonl": "fdc5e01ed3ad2c514ca141e7a6086e3b1c35c98b6cdf04dcf01184bbcb7e0b14",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/0/evaluation/metrics.json": "80f6118e9496ad467d146bd67facb6bb9aeb3a4ae92c98d5e300bc60742a9224",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/0/evaluation/protocol.json": "c32b56be8c04393d3321c0f7bb135e76d03cd25dacd52ef8260efd1eadc6cf35",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/0/evaluation/predictions_affordance.jsonl": "169063ece50ef7e00e6f2726fc95469b3ac773146e8ae51f368acc3ccbdfbb7b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/0/evaluation/predictions_dof.jsonl": "543e3af5a5509372b7c4550059507039172f8444861d1641807bd4d042131dd1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/0/evaluation/predictions_action_cot.jsonl": "30ec376d0a314000a77ab0478ea1af0e7da0a4192bc7fa8446653ce727f4e17b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/1/evaluation/metrics.json": "1232f7bb09bc231f1771e9cda4f2c47c73b47947d217cc7de7fa9f70b6c4e85d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/1/evaluation/protocol.json": "196f11dad8918da952ee7092a5257bbe75139716edb848e1acc2fbb3f42e88de",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/1/evaluation/predictions_affordance.jsonl": "d29c5e50c1a63c62fb3f605872bf6ddecd18e9aa69a07f070a2aa57d8ad51f8a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/1/evaluation/predictions_dof.jsonl": "03163d7dec05765185d64237c23b7f72b83c6961ac1ba44b04cb84f5db2557de",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/1/evaluation/predictions_action_cot.jsonl": "3f6af0904ab78e354cded475afb137e20c40d7f7325c2723beb6411c38a87994",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/2/evaluation/metrics.json": "6480cefb6c1ba1edbbe2594749dd219861c3e3eae117a6f0bb6c35e2bdf298ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/2/evaluation/protocol.json": "09b33e3299f5d85c4ee958f72a9fffa1ddf3296108fdce5b1fde60a641ed9d08",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/2/evaluation/predictions_affordance.jsonl": "dccc61d2b9b34c661d1b201223ace9ab9c2b7e955551429fa33f3ef312ce3556",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/2/evaluation/predictions_dof.jsonl": "beec22850a10c81de3b6f1c984df58c7ca1bad9ed7611c95c1d3952bb750b91c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/2/evaluation/predictions_action_cot.jsonl": "3051aa83c5a6be3a92e30ae2f480e2791f5b54eecb204873175e342303db0115",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/3/evaluation/metrics.json": "b5afaa292bd23f31be76c90e87e3e173f606bc534e7cf082d2e206496c74d91c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/3/evaluation/protocol.json": "e70ce4de6d4aedc504e15dc5f16bd2fb70448d16bda3fbf5840a4058a5517702",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/3/evaluation/predictions_affordance.jsonl": "f3feba5a8edcd7a89bf8d764689860aee0c6d3e74dfd68bf2d54e7025bd8feaf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/3/evaluation/predictions_dof.jsonl": "f9f22e6ec660e97e6d06f9e81b6b3b8a3688b9a46c0b6a6e3588a6323aac593e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr5e5/3/evaluation/predictions_action_cot.jsonl": "f38990a11e9ee9bb678e196a94f112879c9f3b851329099124083a0397b7a4a1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/0/evaluation/metrics.json": "a901e0fa83836de732816b57403118979910ce8f3df702866ae863b5c9180bd2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/0/evaluation/protocol.json": "fb411ad873768bb4b20363c364bf561a2471182a5974dfcfc53c73485a26d270",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/0/evaluation/predictions_affordance.jsonl": "afb0c88871e70a13c427f40e94cc7853ebd7faa0ed7fddd5df011fea26b03ba0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/0/evaluation/predictions_dof.jsonl": "7ff0543f28d760c8f2878ce1b5c51135a2bf8cb1f5e0401a12e7e85451b5e2b7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/0/evaluation/predictions_action_cot.jsonl": "394425660af334252f8e207c192a823fa33a3a0d7ecd46bafed7d1558f93bc34",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/1/evaluation/metrics.json": "7fd8aa5c81116347e09e5c6b3ebb4ec5c2c747bac2bc231e4c4edd6fa73f87eb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/1/evaluation/protocol.json": "184a44f45153b60b3d82ec992fd8d0bce123eb0c294e034824b741f2e91224b8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/1/evaluation/predictions_affordance.jsonl": "a513b6aed01392d27aad98afe6693a9f21d6b8f3649104d62b4e9b97af35be6d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/1/evaluation/predictions_dof.jsonl": "5afae42d44a47c6506baa27fcc3ec51adc38cfacb32923f72da7d76b1949c9f2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/1/evaluation/predictions_action_cot.jsonl": "9e72514b9c8934c01af0bc5dec72230b43a767224ebe9ebc295188e1ffa3a249",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/2/evaluation/metrics.json": "176da9ac365ecff75a036e10e5a4cd82004bb0a06c3e0c19c3cf3a75e376b9ab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/2/evaluation/protocol.json": "cf0a8e938a4bf5785e4bf917995ce8a646ba130567a9587b7cea55c1560ff99b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/2/evaluation/predictions_affordance.jsonl": "af5a2e873980848ac00da8e0c9ec75ef72c79091e22b24a84842ebabfed6280c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/2/evaluation/predictions_dof.jsonl": "2e9d228fdfad439ec531b8a0c11e3afb7216a71568bede2f89dbf7a09f0ab05d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/2/evaluation/predictions_action_cot.jsonl": "b756290ed63f6904fc2f0963ff5263e7cb9d7da4f649459b687b6c5e2b0b12ad",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/3/evaluation/metrics.json": "9333faf123405d754bdb3925c9f6d1c10d34af92674b261b3598b8b7f8c187fe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/3/evaluation/protocol.json": "54f494c5468d123bdd93aa0a34d18df7c7f0fa6bf184d612208ad8bad5c09d69",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/3/evaluation/predictions_affordance.jsonl": "77f7d34f1e0aa55a4f9d27b6af916af8b8bdffce4b921aa05c6ed095426a10e5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/3/evaluation/predictions_dof.jsonl": "c03ce500a6ff1419593816b65b1781bb69c936bed1595842049dfc89e3b6535b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_evaluations/A_prism_lr1e4/3/evaluation/predictions_action_cot.jsonl": "855595006ae03e6732cdb312365874694322d3305e0431dad7b85b3ef9265fdd"
+  },
+  "code_sha256": "a0cb45502929502301740f4facad32cb48fdaf64378b8705419f9da0bfcb40d5",
+  "completed": 1793244755.3039799
+}
