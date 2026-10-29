@@ -1,0 +1,129 @@
+{
+  "state": "complete_requires_review",
+  "spec_sha256": "e1ea37e891aabe51969c093b4e79d78c2a501c227b911fccb451e92213c8b043",
+  "summary": {
+    "initial/greedy": {
+      "train": {
+        "n": 16,
+        "cycle_stops": 11,
+        "mean_tokens": 1375.5,
+        "metrics": {
+          "json_valid": 0.3125,
+          "contract_valid": 0.3125,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.13192505023521972
+        }
+      },
+      "heldout": {
+        "n": 16,
+        "cycle_stops": 8,
+        "mean_tokens": 1023.3125,
+        "metrics": {
+          "json_valid": 0.5,
+          "contract_valid": 0.5,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.12956383123906473
+        }
+      }
+    },
+    "initial/sample": {
+      "train": {
+        "n": 16,
+        "cycle_stops": 0,
+        "mean_tokens": 287.9375,
+        "metrics": {
+          "json_valid": 1.0,
+          "contract_valid": 1.0,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.3173360162833435
+        }
+      },
+      "heldout": {
+        "n": 16,
+        "cycle_stops": 0,
+        "mean_tokens": 274.0625,
+        "metrics": {
+          "json_valid": 1.0,
+          "contract_valid": 1.0,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.195053853198801
+        }
+      }
+    },
+    "step512/greedy": {
+      "train": {
+        "n": 16,
+        "cycle_stops": 9,
+        "mean_tokens": 1298.625,
+        "metrics": {
+          "json_valid": 0.4375,
+          "contract_valid": 0.4375,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.15114902198519586
+        }
+      },
+      "heldout": {
+        "n": 16,
+        "cycle_stops": 7,
+        "mean_tokens": 594.125,
+        "metrics": {
+          "json_valid": 0.5625,
+          "contract_valid": 0.5625,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.04022268102049845
+        }
+      }
+    },
+    "step512/sample": {
+      "train": {
+        "n": 16,
+        "cycle_stops": 0,
+        "mean_tokens": 297.625,
+        "metrics": {
+          "json_valid": 1.0,
+          "contract_valid": 1.0,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.3212298965400179
+        }
+      },
+      "heldout": {
+        "n": 16,
+        "cycle_stops": 0,
+        "mean_tokens": 278.5,
+        "metrics": {
+          "json_valid": 1.0,
+          "contract_valid": 1.0,
+          "truncated": 0.0,
+          "matched_mask_iou": 0.15078793816362035
+        }
+      }
+    }
+  },
+  "evidence": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_greedy_0/predictions.jsonl": "31d711f83498bd2fcc387c38150c9819e577eff2c1a427582a86b9c1d51a2d43",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_greedy_0/protocol.json": "f5be2c8e00b74650d4e37792c6a5eaaa20669145f4a4ca542fc0d3716756f3d1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_greedy_1/predictions.jsonl": "eaa3cc16f37c1ef33f54e6448df6ea00e9ec717004fc42bface1ba4a20c5e015",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_greedy_1/protocol.json": "ffbc10bffb558b646f2daae2e364bba548446847740fdf7f632f3876f1d68f2b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_sample_0/predictions.jsonl": "5a1a2a30977dac5e4e6c3915fc400ae0e21d533d8f67a4179a7ed91181fe59c4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_sample_0/protocol.json": "e72108393998fa5af874a7af2e9eab56b8d73ff0593ce591cb87212cdfc66893",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_sample_1/predictions.jsonl": "33436ca9f6c166494de0ebdfe650b144e085e96000ac0b24248861a809d27d2f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/initial_sample_1/protocol.json": "920c3d8b59cb78966408f679c4119b7a365da83f6186d11c417730836ecd8809",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_greedy_0/predictions.jsonl": "da0a3952220e434775ef6014b0b76f2e357a62b84ef3d4313c4b244250187003",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_greedy_0/protocol.json": "69bf3c7569ae850f3af46950f9feb5693fa883e0c367c407aa17ab9dc76a95e2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_greedy_1/predictions.jsonl": "110ce1ccc352b354c1206dfa74caba8facc67b0561aa0bc2738882f676b2a0e1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_greedy_1/protocol.json": "278a748c8d9318dd8775b4e47e0e5227f412e4c164939fa6d66ddb4cf4b2fb55",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_sample_0/predictions.jsonl": "3b28badb88842a4ec3ec60d383f0c1f4203589fef9f1bf14d15585b11da1d158",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_sample_0/protocol.json": "889083f932033a67cd187d2975c82ea170b31167038efdf749b3d27753159b0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_sample_1/predictions.jsonl": "8ecb00ca09c98f60687e9174f6ddea074f7fd17c9d92128aee5c0272bdc5abc5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mask_decode_probe_20261029/workers/step512_sample_1/protocol.json": "1a62d5479bab19d710d6e7c9e958cd2566f5acb006c0fb407fe57ae892e58fbc"
+  },
+  "training_performed": false,
+  "final_quality_accepted": false,
+  "limitations": [
+    "Adaptive diagnostic after observing formal512 mask regression; not a blind benchmark.",
+    "Sixteen training and sixteen heldout examples reused from the existing fixed backend diagnostic; these are not the same as all8192 committed MOPD rollouts.",
+    "One seeded sample per example per checkpoint; sampling variance and dataset effects cannot be excluded.",
+    "Both modes use the same HF adapter runtime; this isolates decoding settings here, not general backend parity."
+  ],
+  "completed": 1793265132.6130133
+}

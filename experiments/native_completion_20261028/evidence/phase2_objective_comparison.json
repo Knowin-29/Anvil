@@ -1,5 +1,5 @@
 {
-  "state": "partial_waiting_controls",
+  "state": "complete_requires_training_decision",
   "initial_public": {
     "cv_bench": 87.07,
     "embspatial": 79.51,
@@ -21,6 +21,78 @@
   },
   "formal128_macro": 68.61428571428571,
   "results": {
+    "no_native_sft": {
+      "loss_weights": {
+        "native_sft_weight": 0.0,
+        "mtd_weight": 1.0
+      },
+      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runs/no_native_sft/checkpoint-128",
+      "adapter_sha256": "96f35b9762e546d25bcdabeff4197d3c48d627f2fb7e887c33d8b78bbe3952ba",
+      "public": {
+        "cv_bench": 87.0,
+        "embspatial": 79.12,
+        "refspatial_bench": 51.83,
+        "where2place": 61.32,
+        "blink_relative_depth": 87.1,
+        "erqa": 49.48,
+        "vabench_point": 68.0
+      },
+      "macro": 69.12142857142858,
+      "general": {
+        "ai2d_test": {
+          "n": 3088,
+          "score": 87.98575129533678,
+          "parse_failures": 0
+        },
+        "scienceqa_test": {
+          "n": 2017,
+          "score": 98.06643529995043,
+          "parse_failures": 0
+        },
+        "textvqa_val": {
+          "n": 5000,
+          "score": 86.92000000000047,
+          "parse_failures": 0
+        }
+      },
+      "minus_initial": {
+        "cv_bench": -0.06999999999999318,
+        "embspatial": -0.39000000000000057,
+        "refspatial_bench": -2.190000000000005,
+        "where2place": -2.219999999999999,
+        "blink_relative_depth": 0.8099999999999881,
+        "erqa": 0.6999999999999957,
+        "vabench_point": -2.6700000000000017
+      },
+      "minus_formal128": {
+        "cv_bench": 0.18999999999999773,
+        "embspatial": 0.030000000000001137,
+        "refspatial_bench": 1.25,
+        "where2place": 1.0900000000000034,
+        "blink_relative_depth": 1.6199999999999903,
+        "erqa": 0.6999999999999957,
+        "vabench_point": -1.3299999999999983
+      },
+      "source_exposures": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      },
+      "unique_by_category": {
+        "general_qa": 1024,
+        "native_distillation": 2048,
+        "spatial_reference": 1024
+      },
+      "minus_phase1_low_native_sft": {
+        "cv_bench": 0.0799999999999983,
+        "embspatial": -0.030000000000001137,
+        "refspatial_bench": -0.7899999999999991,
+        "where2place": -1.2000000000000028,
+        "blink_relative_depth": 0.8099999999999881,
+        "erqa": 0.6999999999999957,
+        "vabench_point": -0.6700000000000017
+      }
+    },
     "low_native_sft_no_mtd": {
       "loss_weights": {
         "native_sft_weight": 0.1,
@@ -94,10 +166,9 @@
       }
     }
   },
-  "pending": [
-    "no_native_sft"
-  ],
+  "pending": [],
   "observations": [
+    "no_native_sft: public macro change -0.861429pp vs initial and -0.157143pp vs phase1 low-SFT/MTD1.",
     "low_native_sft_no_mtd: public macro change -1.884286pp vs initial and -1.180000pp vs phase1 low-SFT/MTD1."
   ],
   "evidence": {
@@ -112,6 +183,18 @@
     "experiment": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/experiment.json",
       "sha256": "71f8ea70523078b9a5a4c9110971c89ee9f9d29243737f23c4389e0dfeb1408c"
+    },
+    "no_native_sft": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/report.json",
+      "sha256": "68a89c54248ba8ee3696614ed2bfcd925b0ce386eb87f1131240d22af6178b62"
+    },
+    "no_native_sft_exposures": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runs/no_native_sft/exposure_audit.json",
+      "sha256": "85c9a566bf599c0ad0ea38185ced4419d9a5839bcea0c46713286f8c604d144d"
+    },
+    "no_native_sft_gpu_resume": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/no_native_sft/runtime_verified.json",
+      "sha256": "08757dd3c5a753f50c4f937473b7ea7b0db1ea19f0ff2a64188a0ce2c8e1dc3e"
     },
     "low_native_sft_no_mtd": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/low_native_sft_no_mtd/report.json",
@@ -143,5 +226,5 @@
   "final_mopd": false,
   "final_quality_accepted": false,
   "weights_uploaded": false,
-  "completed": 1793260241.7954
+  "completed": 1793264915.166008
 }

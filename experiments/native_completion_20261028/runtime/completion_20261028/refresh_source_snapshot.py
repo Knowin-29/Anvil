@@ -40,6 +40,8 @@ def main():
     sources |= set(selected.glob('*.py')) | {selected/'README.md'}
     sources |= {C/'midrun_gs_diagnostic_512.py',C/'submit_midrun_gs512.py'}
     sources |= {C/'mask_decode_probe_20261029.py',C/'prepare_mask_decode_probe_20261029.py'}
+    sources |= set((C/'direct_completion_20261029').glob('*.py'))
+    sources |= set((C/'final_delivery_direct_v1').glob('*.py')) | {C/'direct_final_handoff.py'}
     for source in sorted(sources):
         relative = source.relative_to(R)
         manifest['files'][str(relative)] = copy(source, DEST / 'runtime' / relative)
@@ -115,6 +117,13 @@ def main():
         'mask_decode_probe_spec.json':C/'mask_decode_probe_20261029/spec.json',
         'mask_decode_probe_cpu_validation.json':C/'mask_decode_probe_20261029/cpu_validation.json',
         'mask_decode_probe_submission.json':C/'mask_decode_probe_20261029/submission.json',
+        'mask_decode_probe_report.json':C/'mask_decode_probe_20261029/report.json',
+        'direct_pipeline_spec.json':C/'direct_completion_20261029/spec.json',
+        'direct_pipeline_cpu_validation.json':C/'direct_completion_20261029/cpu_validation.json',
+        'direct_pipeline_submission.json':C/'direct_completion_20261029/submission.json',
+        'direct_final_handoff_policy.json':C/'delivery_runs/direct_completion_20261029/policy.json',
+        'direct_final_handoff_preparation.json':C/'delivery_runs/direct_completion_20261029/preparation_validation.json',
+        'direct_final_interface_validation.json':C/'final_delivery_direct_v1/interface_validation/cpu_validation.json',
     }.items():
         if path.exists():extra[name]=path
     for name, source in extra.items():
@@ -210,6 +219,27 @@ than the train-only category prior. It has not replaced the live formal teacher.
 '''
     text = text.replace('The original live handoff\nand all of its delivery files are unchanged.',
         'The original delivery files are unchanged; its former live handoff was\nexplicitly retired after the quality stop recorded above.')
+    text+='''
+
+The completed paired HF probe found greedy mask cycles in19/32 initial and
+16/32 step512 examples, versus0/32 for each sampled decoder attemperature0.9.
+This explains why clean training rollouts need not imply healthy greedy output;
+it is a small adaptive diagnostic and does not establish a single cause.
+
+The direct_completion_20261029 pipeline follows the user's priority for fewer
+small experiments: one32GPU task performs2048 substantive corrective updates,
+then1536 genuine on-policy MOPD updates, both globalbatch64. It reuses the exact
+reviewed teachers, established greedy mask-cycle unlikelihood and spatial/QA/
+PRISM replay, and the182878-record screened vacancy expansion. Native MOPD
+still samples the full4756000-record spatial pool. Formal nativeSFTweight is0.1,
+MTDweight1; continued mask repair addresses the observed decoding failure.
+The229376 planned exposures are not distinct-record counts or observed work.
+There is no extra GPU smoke/ablation campaign or automatic quality PASS.
+The first actual production updates/checkpoints provide runtime evidence.
+Full final evaluation and final/key-checkpoint HF upload remain outstanding.
+'''
+    text=text.replace('The zero-native-SFT/activeMTD arm is still running.',
+        'The zero-native-SFT/activeMTD arm completed at69.121429 macro, below\ninitialization and the0.1nativeSFT/MTD1 control. QA/spatial SFT stayed enabled.')
     readme.write_text(text)
     print(json.dumps(dict(source_files=len(manifest['files']), evidence_files=len(manifest['evidence']),
                           secrets_scan_passed=True, archived_bytes_verified=True)))

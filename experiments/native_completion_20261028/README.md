@@ -52,7 +52,8 @@ slots; the second waits for formal512 public success before using spare capacity
 All controls remain excluded from final delivery.
 Phase2 nativeSFT0.1/MTD0 now completes at68.098571 macro, versus69.278571
 with the same nativeSFT weight and activeMTD. Where2Place is56.53 versus62.52;
-general scores remain stable. The zero-native-SFT/activeMTD arm is still running.
+general scores remain stable. The zero-native-SFT/activeMTD arm completed at69.121429 macro, below
+initialization and the0.1nativeSFT/MTD1 control. QA/spatial SFT stayed enabled.
 These descriptive short-run results do not support simply reducing nativeSFT
 without distillation, and do not establish a single cause of the regression.
 
@@ -99,3 +100,21 @@ deleted temporary fixtures. No checkpoint has been selected for final delivery.
 The expanded A learning control improves pose80.65°→76.37°, contact error and
 affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
 than the train-only category prior. It has not replaced the live formal teacher.
+
+
+The completed paired HF probe found greedy mask cycles in19/32 initial and
+16/32 step512 examples, versus0/32 for each sampled decoder attemperature0.9.
+This explains why clean training rollouts need not imply healthy greedy output;
+it is a small adaptive diagnostic and does not establish a single cause.
+
+The direct_completion_20261029 pipeline follows the user's priority for fewer
+small experiments: one32GPU task performs2048 substantive corrective updates,
+then1536 genuine on-policy MOPD updates, both globalbatch64. It reuses the exact
+reviewed teachers, established greedy mask-cycle unlikelihood and spatial/QA/
+PRISM replay, and the182878-record screened vacancy expansion. Native MOPD
+still samples the full4756000-record spatial pool. Formal nativeSFTweight is0.1,
+MTDweight1; continued mask repair addresses the observed decoding failure.
+The229376 planned exposures are not distinct-record counts or observed work.
+There is no extra GPU smoke/ablation campaign or automatic quality PASS.
+The first actual production updates/checkpoints provide runtime evidence.
+Full final evaluation and final/key-checkpoint HF upload remain outstanding.

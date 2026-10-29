@@ -276,6 +276,37 @@ def snapshot():
             except Exception as exc:cloud.append(dict(**job,status='UNKNOWN',error=type(exc).__name__))
         save(cache,dict(checked_utc=datetime.now(timezone.utc).isoformat(),jobs=cloud))
     result['cloud']=json.loads(cache.read_text())
+    direct=ROOT/'direct_completion_20261029'
+    result['direct_completion']={}
+    for name in ['spec','submission']:
+        path=direct/(name+'.json')
+        if path.exists():result['direct_completion'][name]=json.loads(path.read_text())
+    result['direct_completion']['nodes']={}
+    for path in direct.glob('node*_status.json'):
+        result['direct_completion']['nodes'][path.stem]=json.loads(path.read_text())
+    result['direct_completion']['failures']=[dict(path=str(path),detail=json.loads(path.read_text())) for path in direct.glob('node*_failure.json')]
+    result['direct_completion']['stages']={}
+    for stage in ['repair','mopd']:
+        item={}
+        for name in ['status','latest','complete']:
+            path=direct/'runs'/stage/(name+'.json')
+            if path.exists():item[name]=json.loads(path.read_text())
+        result['direct_completion']['stages'][stage]=item
+    if 'submission' in result['direct_completion']:
+        identity=result['direct_completion']['submission']['response']['Id']
+        cloud=next((j for j in result['cloud']['jobs'] if j['id']==identity),{})
+        result['direct_completion']['cloud_status']=cloud.get('status','UNKNOWN')
+        result['cpu_data_preparation']['training_admitted']=True
+        result['cpu_data_preparation']['admitted_by_direct_pipeline']=str(direct/'spec.json')
+        stage='mopd' if result['direct_completion']['stages']['mopd'] else 'repair'
+        state=result['direct_completion']['stages'][stage]
+        result['final_training'].update(state='direct_'+stage+'_'+cloud.get('status','UNKNOWN'),
+            world=32,training_run=str(direct/'runs'/stage),updates=result['direct_completion']['spec']['stages'][stage]['steps'],
+            current_runtime=str(direct/'train.py'),current_stage=stage,
+            actual_mopd_training_started=bool(result['direct_completion']['stages']['mopd'].get('status')),
+            prior_formal_attempt_stopped=True)
+        if not result['direct_completion']['stages']['mopd'].get('complete'):
+            result['final_validation'].update(state='waiting_direct_pipeline_completion')
     result['allocated_or_pending_gpus']=sum(j['gpus'] for j in result['cloud']['jobs'] if j['status'] not in ['Success','Succeeded','Failed','Killed','Stopped'])
     result['resource_ceiling_respected']=result['allocated_or_pending_gpus']<=result['campaign_gpu_ceiling']
     if (diagnostic/'benchmark_comparison.json').exists():

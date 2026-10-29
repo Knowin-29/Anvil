@@ -1,0 +1,386 @@
+{
+  "schema": "anvil-objective-control-public-report-v1",
+  "state": "complete_objective_control_requires_review",
+  "objective_control": true,
+  "final_mopd": false,
+  "checkpoint_spec_sha256": "d281330da9434224975fa408044225fd6c6a28fbca217d0f040080d3490ea0f6",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runs/no_native_sft/checkpoint-128",
+  "step": 128,
+  "model": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/merged",
+  "public": {
+    "cv_bench": {
+      "n": 2638,
+      "score": 87.0,
+      "detail": {
+        "per_group": {
+          "2D/Count": {
+            "n": 788,
+            "acc": 71.7
+          },
+          "2D/Relation": {
+            "n": 650,
+            "acc": 96.62
+          },
+          "3D/Depth": {
+            "n": 600,
+            "acc": 96.67
+          },
+          "3D/Distance": {
+            "n": 600,
+            "acc": 87.0
+          }
+        },
+        "n_correct": 2295
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "embspatial": {
+      "n": 3640,
+      "score": 79.12,
+      "detail": {
+        "per_group": {
+          "above": {
+            "n": 596,
+            "acc": 80.7
+          },
+          "close": {
+            "n": 612,
+            "acc": 68.79
+          },
+          "far": {
+            "n": 594,
+            "acc": 64.81
+          },
+          "left": {
+            "n": 616,
+            "acc": 92.21
+          },
+          "right": {
+            "n": 620,
+            "acc": 92.1
+          },
+          "under": {
+            "n": 602,
+            "acc": 75.42
+          }
+        },
+        "n_correct": 2880
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "refspatial_bench": {
+      "n": 277,
+      "score": 48.49,
+      "detail": {
+        "per_group": {
+          "location": {
+            "n": 100,
+            "mean_in_mask": 51.83
+          },
+          "placement": {
+            "n": 100,
+            "mean_in_mask": 48.31
+          },
+          "unseen": {
+            "n": 77,
+            "mean_in_mask": 44.37
+          }
+        },
+        "any_point_hit": 54.15,
+        "points_per_question": {
+          "n": 277,
+          "median": 1,
+          "mean": 2.36,
+          "max": 25,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 277
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 69,
+            "thousandth": 208
+          },
+          "n_ambiguous_under_auto": 69,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "mixed",
+        "referent_by_group": {
+          "location": "object",
+          "placement": "vacancy",
+          "unseen": "mixed"
+        },
+        "by_referent_type": {
+          "mixed": {
+            "n": 77,
+            "mean_in_mask": 44.37
+          },
+          "object": {
+            "n": 100,
+            "mean_in_mask": 51.83
+          },
+          "vacancy": {
+            "n": 100,
+            "mean_in_mask": 48.31
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 3
+    },
+    "where2place": {
+      "n": 100,
+      "score": 61.32,
+      "detail": {
+        "per_group": {
+          "seen": {
+            "n": 70,
+            "mean_in_mask": 63.32
+          },
+          "unseen": {
+            "n": 30,
+            "mean_in_mask": 56.67
+          }
+        },
+        "any_point_hit": 76.0,
+        "points_per_question": {
+          "n": 100,
+          "median": 4,
+          "mean": 5.11,
+          "max": 18,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 100
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 19,
+            "thousandth": 81
+          },
+          "n_ambiguous_under_auto": 19,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "vacancy",
+        "referent_by_group": {}
+      },
+      "parse_failures": 0,
+      "capped": 2
+    },
+    "blink_relative_depth": {
+      "n": 124,
+      "score": 87.1,
+      "detail": {
+        "per_group": {
+          "relative_depth": {
+            "n": 124,
+            "acc": 87.1
+          }
+        },
+        "n_correct": 108
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "erqa": {
+      "n": 287,
+      "score": 49.48,
+      "detail": {
+        "per_group": {
+          "Action Reasoning": {
+            "n": 66,
+            "acc": 46.97
+          },
+          "Other": {
+            "n": 5,
+            "acc": 0.0
+          },
+          "Pointing": {
+            "n": 32,
+            "acc": 59.38
+          },
+          "Spatial Reasoning": {
+            "n": 57,
+            "acc": 43.86
+          },
+          "State Estimation": {
+            "n": 47,
+            "acc": 61.7
+          },
+          "Task Reasoning": {
+            "n": 16,
+            "acc": 75.0
+          },
+          "Trajectory Reasoning": {
+            "n": 64,
+            "acc": 40.62
+          }
+        },
+        "n_correct": 142
+      },
+      "parse_failures": 1,
+      "capped": 0
+    },
+    "vabench_point": {
+      "n": 300,
+      "score": 68.0,
+      "detail": {
+        "per_group": {
+          "point": {
+            "n": 300,
+            "acc": 68.0
+          }
+        },
+        "n_correct": 204,
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 300
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 0
+    }
+  },
+  "general": {
+    "ai2d_test": {
+      "n": 3088,
+      "score": 87.98575129533678,
+      "parse_failures": 0
+    },
+    "scienceqa_test": {
+      "n": 2017,
+      "score": 98.06643529995043,
+      "parse_failures": 0
+    },
+    "textvqa_val": {
+      "n": 5000,
+      "score": 86.92000000000047,
+      "parse_failures": 0
+    }
+  },
+  "paper_aligned_public": {
+    "cv_bench": 87.0,
+    "embspatial": 79.12,
+    "refspatial_bench": 51.83,
+    "where2place": 61.32,
+    "blink_relative_depth": 87.1,
+    "erqa": 49.48,
+    "vabench_point": 68.0
+  },
+  "paper_aligned_macro": 69.12142857142858,
+  "paper_target": {
+    "cv_bench": 88.21,
+    "embspatial": 82.34,
+    "refspatial_bench": 59.0,
+    "where2place": 68.0,
+    "blink_relative_depth": 91.13,
+    "erqa": 50.52,
+    "vabench_point": 80.67
+  },
+  "final_minus_paper_percentage_points": {
+    "cv_bench": -1.2099999999999937,
+    "embspatial": -3.219999999999999,
+    "refspatial_bench": -7.170000000000002,
+    "where2place": -6.68,
+    "blink_relative_depth": -4.030000000000001,
+    "erqa": -1.0400000000000063,
+    "vabench_point": -12.670000000000002
+  },
+  "paper_protocol_note": "RefSpatial Location100; full277 also reported. Historical runtime equivalence is not established.",
+  "student_initial_public": {
+    "cv_bench": 87.07,
+    "embspatial": 79.51,
+    "refspatial_bench": 54.02,
+    "where2place": 63.54,
+    "blink_relative_depth": 86.29,
+    "erqa": 48.78,
+    "vabench_point": 70.67
+  },
+  "checkpoint_minus_initial_percentage_points": {
+    "cv_bench": -0.06999999999999318,
+    "embspatial": -0.39000000000000057,
+    "refspatial_bench": -2.190000000000005,
+    "where2place": -2.219999999999999,
+    "blink_relative_depth": 0.8099999999999881,
+    "erqa": 0.6999999999999957,
+    "vabench_point": -2.6700000000000017
+  },
+  "artifacts_sha256": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/cv_bench.jsonl": "26cbd185f4bdce5929473c1320ada16bcf655f9dd662ea7a584424ba2397cd11",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/cv_bench.jsonl": "d6f7b9bb9b8088ae3221bbd60dff2d02ba5423842611d794efe47106749703d8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/cv_bench.jsonl": "6360964bd69a506e3a73e9e949c459b6bec82959eec6ebce9a4dd54e6dbd2ad7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/cv_bench.jsonl": "503ff1a0efc43713802f5d30cc7fd550544bd5f21dc841619a0186ea7b16d247",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/cv_bench.jsonl": "c6f4f1d950d815ae578075e268ac8673f712d6121ff808bccf2adc126d356985",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/cv_bench.jsonl": "d7afca30d08d3288478d68886277d2e81ccd2ac9c8c0f039ae69fd83a6fb3386",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/cv_bench.jsonl": "c5ce000925e23bb03ac105f4a64ef52768c9c6a7c14f9f51648d952f1d603be8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/cv_bench.jsonl": "537337562a72fa1d4472b2a931bdf256370ce7be0c057691f33f6b0552e9ee7d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/embspatial.jsonl": "99bd9e2175df2ce370f971e266090e6de3e5c71ab6d9c8f23e2b9f09f18195ba",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/embspatial.jsonl": "6117fc25ff6172a2fb341bd70b988a336792606c27b847c82aaed08dd753ce84",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/embspatial.jsonl": "0d626eb4911dc2b6080a5350ec1c4e19c86a16225d98db6dc5105476cd0c6384",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/embspatial.jsonl": "ae4cc5e39fe0033008b34f29f4fe67a5af2b4e9d06174b850f58549b4066ab61",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/embspatial.jsonl": "ccccd8df3fee2bdee6ecccc466bcaf7adfd3c202d42a6887ccb38d3149b7d283",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/embspatial.jsonl": "c5c221368ffcf8134463adcec3623c9e7f864d04e3b6eacd6e1ba9b0f4075ca3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/embspatial.jsonl": "71c6b8220d5a92d425134f46cafc4281ce45b8cd748a9ece3a9b79f06f982492",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/embspatial.jsonl": "e7484fe4766e42ba752bf78d1fe0cd31a4f1762f172096abe221ee5ba95e5cf2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/refspatial_bench.jsonl": "e432007cde137e363778f6fee392e8553bcc1bf3e25dc859ea748770f0a21199",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/refspatial_bench.jsonl": "6ae66494700b7b645b6ab200a6325a0e9c4c3241bd4dfac6a6ee5d20d0a4040f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/refspatial_bench.jsonl": "3679da21c07ee25102db8f48eeac6f1583c7f1392bc49df9eede210395582025",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/refspatial_bench.jsonl": "7979b5cf86903d351bedc0022854ad174bfc4ac999afdc759486bfdc694d90f8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/refspatial_bench.jsonl": "b2473c228d566b30fffc977ce0263e21fde4910304a38b33bdf98c4843958172",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/refspatial_bench.jsonl": "301a73d1ede82d1e16171e9c56c9363eb4cf1969aa2994220c99766394de95c6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/refspatial_bench.jsonl": "4b76d5063aebc2b9b1026ebfc5fc9fc5316433468da07d56d1eb57e4230aa3ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/refspatial_bench.jsonl": "cc2dbb5e776812e2593a4feb90c373de24b2e7f1ff6913047145130ec12dabdc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/where2place.jsonl": "b6387a684a74a23dac647c606e5118a57673894cadd434fe08f49ed90f7b0a6d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/where2place.jsonl": "d2e16033d45082243e4d51ad103fc45150f41540fbeb6b6dd6d8502692883b62",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/where2place.jsonl": "080483adca2ab1c4852157c078184d46610efb6f3b756ccd56b37c28d9c22ac8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/where2place.jsonl": "a6b20d991dc1c0ee44868c9f03b52a9eccb567ac99aa05ef9719eb902ff640b8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/where2place.jsonl": "6e28b8617d35b6d092d4404a818dccbdaba2b6697f860ae9f912db3e7595cc80",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/where2place.jsonl": "60446124110ce08775d6342d552f521dcef59e6a5ac0211e6b8ec71f6dbd9b6f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/where2place.jsonl": "90218f45cd8c980918bfbe77e9b9b336d6aee640b0602a18b844c0141bbc2ad7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/where2place.jsonl": "d42dd2c49ba87fb0dfb6cd153467c5a088db4cba2d1dd1dc2c0bbf1278bdfe19",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/blink_relative_depth.jsonl": "3b6df06da80e6560eee5f6a0dc799e598a1bfce8d6bb2dcd89044f9f47f1737c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/blink_relative_depth.jsonl": "80cb88aff64c5261d0480d04117917247ea5e625372e07cb404b97e89077f4bf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/blink_relative_depth.jsonl": "a1b0ad66f52fe90c959682598ff6a5db4bdf9d18b837876d4aea0c97012f10e5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/blink_relative_depth.jsonl": "eeda0a88d01c3e545ff9b8d318ec178aa5efa5fa4e9662ce7aedb47dcf48bdd6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/blink_relative_depth.jsonl": "e288c62555eeab5d73cefcc2bcff7ca923c5107d93fd8c20d14f31872e1689d7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/blink_relative_depth.jsonl": "e963449950cad3b7ad1e48d73147fcdc5c3a2ee5b340e8325299e2bb8e9e2f8a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/blink_relative_depth.jsonl": "67f7e9a279dbf7df07ffe136f4c519903fd7208f6dc6614637da29eee08729a7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/blink_relative_depth.jsonl": "c3909b223baa2b00aadeecdc7067ff2d7317b030fddc04ed40c8922722363905",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/erqa.jsonl": "7508583e569296c5feb1f27afddaebee2b9428890aba4baa436bab4af3a1838a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/erqa.jsonl": "9c922e463809cc9475fd5f460c5f5cf1b52d9ee72589f44d5d27cddfaa4843fe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/erqa.jsonl": "1c1a325fa21994baccdf8ace754a556bbd4e66cdbde235ba418633dc501d6318",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/erqa.jsonl": "6319a8ca88d96279dd44ff9acaf66cbd5e18d0fb75be4b2a0c9d4c25aead6045",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/erqa.jsonl": "f52942e058bac4e72693d4193caf3de90141a9de4ffae6ceca5992aa83f7c94a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/erqa.jsonl": "39f6d7e8f27e2014604bb8c5c364b2236c51e8f70352720359760f830f1bed51",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/erqa.jsonl": "b8cfe8e8aa61a6e4ef3f9f37648174505bd20ad7e1d8ac4587df6182b9cf70a8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/erqa.jsonl": "1bd88c83003ba8067b1e3855044cc7c97711ede7ca195a7ea056210c58c815ad",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/vabench_point.jsonl": "ee86ed600121bb01e065589cab33d913430b039895fdf7f44b5d75c6551da4ed",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/vabench_point.jsonl": "de4cf17b10d412ed66984b40d710c8c788a9285ce4e6a359cc52d4726766d93c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/vabench_point.jsonl": "205fd4ce27c72982b816e9246531d1e1e692abff45e8274390d4586cd66308ae",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/vabench_point.jsonl": "d870ce883861dbdbe05ef85a788b2254a0e730a48afa3a5f1e729dfb18b3f5ba",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/vabench_point.jsonl": "cd456ee2c086944e17b1348c5b78851b6a30fe2a37101f1a087adf96f1a185bd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/vabench_point.jsonl": "5905af48a4b5a1c7ec3815bf5e9aafe0654fd47edbdbdee984cbb16d63b1a836",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/vabench_point.jsonl": "42d5f68b7228ccaf7c428a2850db2e37568af7a2d41dd0e2aabfde26e000cc1d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/vabench_point.jsonl": "70af40b9414f240368f138cb71f8e2909242d901bd4239d99165503893085a21",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/0/retention.jsonl": "b7e548f3d7f5cb0092c291e28ed02578f2180a26a0fe673f674448ff089f15e1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/1/retention.jsonl": "afced78e657435c66e78cf44a8b663ba3accdcf6b3ed29699a772934aa818237",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/2/retention.jsonl": "50a1f1c3846aadacf471e6bdfc30576987fb6c7751ae92452c11cc951f89cecb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/3/retention.jsonl": "a9c5cbccc05baf68d7dd710e9ecd9f13b2f3f10c2e87f1f3246f920f1c96bf61",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/4/retention.jsonl": "f33be4610e56f85963a28605b1188f8145309a60f583b9fc22052cebee8c3218",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/5/retention.jsonl": "0dade26f9c484d7e9e2e4958978a8602c6bc5d22b87715afd52f5c53482e5100",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/6/retention.jsonl": "fb4fb7782dc2182af8b312d01ef26ab75ed503bb81f4c1bb1bdd57f9bf162b1f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/evaluation/no_native_sft/public/7/retention.jsonl": "ca27ec8e34e413d8a157c115b4b299431ed4c5c81db0a9b096795045a9584306"
+  },
+  "full_native_validation": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false
+}

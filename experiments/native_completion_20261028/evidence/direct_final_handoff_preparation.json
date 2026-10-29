@@ -1,0 +1,20 @@
+{
+  "state": "passed",
+  "initial_actual_lineage_equal": true,
+  "incomplete_live_run_rejected": true,
+  "unchanged_inference_scoring_upload_files": [
+    "score.py",
+    "public_worker.py",
+    "native_worker.py",
+    "node.py",
+    "merge.py",
+    "prepare.py",
+    "configs.py",
+    "upload.py",
+    "initialization_lineage.py",
+    "exposure_audit.py"
+  ],
+  "interface_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_direct_v1/interface_validation/cpu_validation.json",
+  "no_final_gpu_run_claimed": true,
+  "created": 1793267633.5520756
+}

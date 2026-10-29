@@ -1,0 +1,11 @@
+{
+  "state": "passed",
+  "encoded_real_rows": 72,
+  "schedule_rows_checked": 4608,
+  "all_three_native_families_reachable": true,
+  "ul_loss_and_gradient_parity": true,
+  "initial_checkpoint_verified": true,
+  "extra_gpu_smoke_tasks": 0,
+  "execution_proof": "First real production optimizer steps/checkpoint; no synthetic smoke is promoted.",
+  "created": 1793266983.3613303
+}
