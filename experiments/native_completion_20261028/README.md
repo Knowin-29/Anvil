@@ -1,120 +1,83 @@
-# Native MOPD completion campaign (2026-10-28/29)
+# Native MOPD completion campaign
 
-This source snapshot records the current native trainer, data repair scripts, unchanged evaluation code, formal launch/checkpoint diagnostics, and final delivery tools. It does not report a completed formal MOPD model or uploaded final weights.
+The active task is `t-20261030102801-c2p47`, submitted on 2026-10-30 at
+10:28 Asia/Shanghai. It uses four workers with eight A800 80GB GPUs each.
+Final MOPD training, full model-quality review and HF weight delivery remain
+incomplete. Runtime status, rather than this source snapshot, is authoritative.
 
-The selected student has completed the original5,220,000-record SFT and separately audited adaptation stages. Its seven-public benchmark macro is69.982857 against the report's74.27 target. Full G validation and35,989 paired G/S examples support a teacher-usefulness admission decision; A pose quality remains weak and some teacher subforms trail the student. See the evidence files for exact metrics and limitations. SFT general retention is diagnostic, not an entry gate.
+## Active implementation
 
-`runtime/` preserves paths relative to the shared recovery root listed in `snapshot_manifest.json`. The deployment scripts depend on the corresponding original train/evaluation exports, manifests, cached base model and checkpoints on shared storage. Those large artifacts and authentication credentials are not stored here. Source SHA256 values bind this snapshot to the actual cloud files; live files are not moved or rewritten by archiving.
+`runtime/completion_20261028/direct_recovery_20261030/` contains the active
+trainer, unchanged source sampler and launch code. The completed corrective
+stage is reused from `direct_completion_20261029/runs/repair/checkpoint-2048`.
+It completed 2,048 updates and 131,072 exposures, with 126,285 unique records
+and 92,857 unique images in its audited logs.
 
-The selected implementation is `runtime/completion_20261028/native_mopd_v6.py`. `formal_mopd/` prepares evidence-bound formal runs and immutable intermediate public/general evaluations under the32GPU ceiling. `final_delivery/` requires full580,000 native evaluation, all seven public benchmarks, general diagnostics, lineage and an explicit evidence-backed quality review before a complete HF upload with commit-pinned hashes. CPU/preflight success is not a final quality claim.
+The new task performs genuine on-policy MOPD for 1,536 updates, global batch 64,
+with 98,304 planned exposures. It preserves the full 4,756,000-record native
+spatial sampling pool, exact reviewed G/S/A teachers, native SFT weight 0.1,
+MTD weight 1, greedy mask-cycle unlikelihood, and the existing spatial, QA and
+PRISM replay mixture. Full per-form generation budgets are preserved.
 
-The campaign used held-out scores adaptively to choose repairs. These evaluation sets must not be described as a new blind test. The original5.8million-record/160,000-image inventory is retained; supplementary96,931 records and extra image coverage are disclosed separately. Actual exposures and unique records must come from the selected student lineage, not inventory or all experiments combined.
+The prior task `t-20261029174537-bvfnb` completed the corrective stage but
+failed during MOPD update 127 on a 600-second scalar ALLREDUCE timeout.
+Other ranks had reached the collective while rank 1 had not enqueued it;
+no earlier OOM or numerical exception was found. Long generation is the
+likely cause; new per-rank phase telemetry distinguishes generation from
+other precollective work. Its 126 completed but uncheckpointed MOPD updates
+(8,064 exposures), plus 29 uncommitted microbatch records, are preserved as
+failed-attempt evidence and excluded from the delivered model's ancestry.
 
-Active jobs and timestamps continue to live under the recovery root. Refresh this snapshot after final training and delivery; no static status in this directory should be treated as live monitoring.
+The recovery increases the collective timeout to 3,600 seconds and saves a
+full checkpoint every 32 updates. It starts MOPD again from the verified
+corrective checkpoint; the corrective stage is not retrained. A reversible
+source comparison verifies that sampling, loss and optimizer calculations
+are unchanged. CPU imports, frozen file hashes and unfinished-run rejection
+passed. Runtime success still requires actual cloud execution and artifacts.
 
-Formal task `t-20261029095820-px5rk` was submitted on2026-10-29 at09:58CST: two8-A800 workers,1664updates,globalbatch32. Matched full-budget execution measured1.4702x wall-clock speedup over8GPUs. The budget estimates19.24hours at the measured mean,46.85hours conservatively, while retaining at least24hours for final delivery. These are forecasts; actual final quality and weights remain pending. The checkpoint evaluation schedule is128/512/1024/1664.
+## Final evaluation and delivery
 
-The original controller encountered transient cloud visibility immediately after submission. `supervise_formal_v2.py` resumes monitoring the same task with observation retries and conservatively counts unresolved jobs against capacity. No replacement training job was submitted and the frozen training plan/code were not modified.
+`direct_recovery_handoff.py` uses `final_delivery_recovery_v1/` and waits for
+actual cloud Success and all 1,536 MOPD updates. It then merges one exact final
+checkpoint and schedules at most four eight-GPU evaluation nodes within the
+32-GPU campaign cap. The full scope is 580,000 native examples, all seven
+public benchmarks and 10,105 general examples. General retention is diagnostic.
+The handoff stops for evidence-based quality review and cannot auto-accept a
+model or upload weights. Evaluation/scoring and decoder helpers are preserved.
 
-`final_delivery_handoff_v1.py` now waits for the completed formal training and checkpoint diagnostics, then prepares the exact final checkpoint, audits its lineage and submits four disjoint eight-GPU final-evaluation nodes within the32GPU campaign cap. It stops at a complete report requiring quality review; it cannot accept results or upload weights. CPU fault injection verifies capacity, observation retries and ambiguous-submission protection. The final-model GPU evaluation remains pending.
+Delivery includes the merged model, original adapter, decoder/interface,
+evaluation and ancestry evidence, and full checkpoints for repair 2048 and
+MOPD 512/1024/1536, including optimizer, scheduler and all rank RNG states.
+Only the exact final checkpoint is claimed to have complete final evaluation.
+HF delivery requires complete uploads and verification of every remote file
+at a pinned commit. Server HF credentials must remain unchanged.
 
-The project entry and historical GSA source preservation are documented in `../../docs/project_layout_20261029.md`; GSA branch `RWLinno/GSA_Forge/ICLR27` was remotely verified at48f9d4b90473f5427bbca07879ed2a2a355120ba. This is source synchronization, not a claim that all GSA data or models were uploaded.
+## Data accounting and limitations
 
-A separately declared step128 native diagnostic reuses the initial student's fixed35,989 G/S rows and unchanged scorer to detect negative transfer early. It waits for the A controls to finish and always reserves8GPU slots for the formal controller's public validation, keeping the campaign within32GPUs. Paired comparisons require identical sample IDs, reference hashes and inference protocols. CPU validation covers the complete real baseline, mismatch rejection and resource accounting. This diagnostic does not replace full final validation or alter the formal training plan.
+Original inventory is 5,800,000 task records / 160,000 images, including
+5,220,000 SFT records and 580,000 held-out records. Original QA is CLEVR;
+the original spatial source mix is 96.43% COCO and differs from the report's
+mixture. Inventory, unique records, exposures and repetitions are separate.
+Historical warm-start unique coverage is unavailable and is not invented.
 
-## First formal checkpoint and objective controls
+The original supplemental inventory was 96,931 records. Current training
+admits the screened 182,878-record vacancy pool instead of the old 3,384-row
+pool: 180,360 newly available records, 2,518 retained old rows and 866 old
+rows excluded by stronger reservations. PRISM replay combines 13,536 expanded
+records with 3,008 original PRISM DoF records; the latter are not new inventory.
+Actual final coverage comes from the selected student's exposure logs, not
+from unrelated teacher/control runs or the total available pool.
 
-The verified formal step128 checkpoint has seven-public macro68.614286 versus
-the exact initial student's69.982857 (−1.368571 percentage points). Its general
-scores remain essentially stable. On35,989 exact paired native G/S examples,
-gains are small and mask validity is essentially unchanged. This is unresolved
-public spatial regression, not an accepted final result or proof of collapse.
+Earlier experiments exposed mask decoding regression and weak A pose geometry.
+No new claim of universal teacher superiority or final benchmark success is
+made. The initial student's public macro was 69.982857 versus the report's
+74.27; the current recovered model has not yet completed final evaluation.
+Held-out results informed previous repairs and must not be described as a
+new blind test. Historical controls, stopped runs and their sources remain
+under `runtime/` and `evidence/` for traceability; they are not active jobs.
 
-Two nonfinal128-update controls test native-reference SFT0.1/MTD1 and SFT1/MTD0.
-They preserve the1664-update learning-rate horizon and exactly match all4096
-training rows in the original first128 updates. Eight physical GPUs with a
-virtual16 sampler differ in rank RNG and floating-point reduction order, so
-these are diagnostic comparisons rather than exact stochastic replications.
-The reduction audit corrects earlier frozen notes: MTD normalizes over eligible
-examples; all observed nonempty native rows keep the same per-example weight.
-The zero-MTD arm cannot be released as MOPD. Each task requires a genuine GPU
-optimizer1→3 resume check before training, then unchanged seven-public and
-10,105-example general evaluation. Current task receipts are archived;
-source/CPU checks alone do not establish GPU success or quality improvement.
-
-Both phase1 controls have now completed full public/general evaluation. Native
-SFT0.1/MTD1 reaches69.278571 public macro; SFT1/MTD0 reaches68.682857. Both remain
-below the initial69.982857, while general performance remains stable. The lower
-native SFT weight mitigates part of the regression; no sole cause is established.
-Further128-update controls test SFT0/MTD1 and SFT0.1/MTD0 with identical initial
-student, teachers, data and schedule. The first reserves eight public-evaluation
-slots; the second waits for formal512 public success before using spare capacity.
-All controls remain excluded from final delivery.
-Phase2 nativeSFT0.1/MTD0 now completes at68.098571 macro, versus69.278571
-with the same nativeSFT weight and activeMTD. Where2Place is56.53 versus62.52;
-general scores remain stable. The zero-native-SFT/activeMTD arm completed at69.121429 macro, below
-initialization and the0.1nativeSFT/MTD1 control. QA/spatial SFT stayed enabled.
-These descriptive short-run results do not support simply reducing nativeSFT
-without distillation, and do not establish a single cause of the regression.
-
-Formal step512 has now completed full seven-public/general evaluation. Its
-public macro69.088571 recovers0.474286pp versus step128 but remains0.894286pp
-below initialization. RefSpatial Location100 is51.30 and Where2Place60.70;
-ERQA49.83 improves1.05pp over initialization. This is not accepted final quality.
-The subsequent matched native512 diagnostic found mask validity falling from
-50.17% to43.45% and IoU from0.08636 to0.07216 on5,079 unchanged examples.
-The formal run was explicitly stopped for quality review after669 logged
-updates; all22 files of the640 recovery checkpoint and its20,480-row committed
-prefix were verified. The original1664-step budget was not completed. Its
-training controller and final-tip handoff were retired without final submissions.
-No checkpoint was selected for release; the final objective remains unfinished.
-Paired failures show2,842 exact-cycle stops at512 versus2,497 initially. By
-contrast all8,192 committed training rollouts through512 ended with EOS.
-A separate fixed32-example HF probe compares greedy versus sampled decoding
-at initialization and512. It is inference-only and cannot establish final quality.
-
-A read-only upstream audit matched all3,384 active vacancy records exactly to
-source coordinates and image dimensions. The raw source has231,554 records,
-including58 out-of-range targets already excluded from the231,496 processed
-records. The active conversion is faithful, but semantic correctness is not
-independently established. A separate CPU preparation screens the full source
-against native/public/general/test/development images and fixed scan reserves.
-This candidate inventory is not admitted to active training or counted as
-actual coverage; its manifest is archived only when preparation completes.
-Preparation retained182,878 records/35,736 images, including180,360 records
-absent from the existing3,384-record pool. Stronger scan/development exclusions
-remove866 existing rows from this separate candidate. Eight flagged public or
-general image pairs affecting28 such rows were visually inspected and found
-to show distinct content; conservative exclusions remain in place. These new
-reservations do not erase prior student exposure or establish a blind test.
-
-An independent final_delivery_selected_v2 workflow supports explicit selection
-of a sealed formal checkpoint after its cloud run is terminal. It freezes only
-the committed source-exposure prefix, discloses selected versus planned updates
-and the original run's actual disposition, and preserves full580K/seven-public/
-10105-general evaluation and explicit quality review. The original delivery files are unchanged; its former live handoff was
-explicitly retired after the quality stop recorded above. CPU tests use the real512 checkpoint,
-its merged model and16384-row prefix; terminal states are simulated only in
-deleted temporary fixtures. No checkpoint has been selected for final delivery.
-
-The expanded A learning control improves pose80.65°→76.37°, contact error and
-affordance IoU, while action accuracy falls about0.96pp. Pose remains worse
-than the train-only category prior. It has not replaced the live formal teacher.
-
-
-The completed paired HF probe found greedy mask cycles in19/32 initial and
-16/32 step512 examples, versus0/32 for each sampled decoder attemperature0.9.
-This explains why clean training rollouts need not imply healthy greedy output;
-it is a small adaptive diagnostic and does not establish a single cause.
-
-The direct_completion_20261029 pipeline follows the user's priority for fewer
-small experiments: one32GPU task performs2048 substantive corrective updates,
-then1536 genuine on-policy MOPD updates, both globalbatch64. It reuses the exact
-reviewed teachers, established greedy mask-cycle unlikelihood and spatial/QA/
-PRISM replay, and the182878-record screened vacancy expansion. Native MOPD
-still samples the full4756000-record spatial pool. Formal nativeSFTweight is0.1,
-MTDweight1; continued mask repair addresses the observed decoding failure.
-The229376 planned exposures are not distinct-record counts or observed work.
-There is no extra GPU smoke/ablation campaign or automatic quality PASS.
-The first actual production updates/checkpoints provide runtime evidence.
-Full final evaluation and final/key-checkpoint HF upload remain outstanding.
+`snapshot_manifest.json` binds the source/evidence copies to shared-storage
+files. Large weights, training data and credentials are excluded from Git.
+The maintained repository is Knowin-29/Anvil, branch main. GSA historical
+source remains RWLinno/GSA_Forge, branch ICLR27, remotely verified at
+48f9d4b90473f5427bbca07879ed2a2a355120ba. Source sync is separate from weight sync.

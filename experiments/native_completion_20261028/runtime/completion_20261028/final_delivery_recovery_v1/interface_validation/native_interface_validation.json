@@ -1,0 +1,14 @@
+{
+  "rows": 3008,
+  "mode": "native",
+  "valid_parity": true,
+  "malformed_parity": true,
+  "state": "passed",
+  "package_builder_sha256": "85f15ee0c8e3ddc0457f6035fba9626ed5534bb78126f49fa4a57c5f549036d7",
+  "standalone_files_sha256": {
+    "anvil_representation.json": "1ae6d8f18037d2eacdadc48b1e1a3b1796dc346cc80615faf9fcce997d64662e",
+    "anvil_interface.py": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522"
+  },
+  "source_sha256": "179f34f1da803c3d14b233922049cd4141aec6fa215f7aa157712bfc00cdc87c",
+  "gpu_inference_validated": false
+}

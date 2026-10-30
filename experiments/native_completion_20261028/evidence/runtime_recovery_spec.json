@@ -1,0 +1,257 @@
+{
+  "schema": "anvil-direct-corrective-MOPD-v1",
+  "world": 32,
+  "global_batch": 64,
+  "initial": {
+    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+    "adapter_sha256": "0fb12a657fb5fa33c38ba8aef869c754fdd322e93dd1f2bc3b388a71661da8d0"
+  },
+  "teachers": {
+    "G": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
+      "adapter_sha256": "79e1353ff3435a68cba9e7aff4d226d5cfed4525db17961e812c0509e4d05a77",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/complete.json",
+      "completion_sha256": "f9cb5c612499ef8ece843bbe5c47d3586f0067231f0d89a69f8d1166f9652515",
+      "eligible": true,
+      "assessment": {
+        "eligible": true,
+        "benefits": "Matched mask validity 98.3068% vs50.1674%, IoU .133360 vs .086358; public macro72.2429 vs student69.9829.",
+        "limitations": "Matched bbox/detection/point task scores slightly below student; mask IoU remains low. Full390528 G validation complete. Negative transfer must be monitored."
+      }
+    },
+    "S": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_S/checkpoint-38248",
+      "adapter_sha256": "c31617be286ac6beb133a24a7bd706135a4ab4b996bae0e9c5596320d1f73d09",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/pipeline_status.json",
+      "completion_sha256": "bd55c600e34ebe44dc33957f782793058ce05b4118fb09c1c33163b0bebbfd27",
+      "eligible": true,
+      "assessment": {
+        "eligible": true,
+        "benefits": "Matched depth exact .90625 vs .875; direction .772686 vs .757053; distance MAE .098576 vs .105420; graph F1 .787436 vs .750444.",
+        "limitations": "Paired35989 G/S sample, not full exact-student native validation; some S groups are small. Full original S validation exists but sampled deltas are descriptive."
+      }
+    },
+    "A": {
+      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+      "adapter_sha256": "d199a630dfc97dc466bccb997996c4ada85889a3b64c7cc2d259c789075c6be8",
+      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
+      "completion_sha256": "a0e98791c600f5dd5e8dfe58679551674314d8c518ab1f34cfe8d480f435f06f",
+      "eligible": true,
+      "assessment": {
+        "eligible": true,
+        "benefits": "Full4100 matched A: next action63.9615% vs58.3709%, expert continuation25.9393% vs19.2065%; 100% valid DoF and improved contact error.",
+        "limitations": "Pose80.653deg vs student80.904deg is a negligible advantage and remains worse than train-only category prior; affordance IoU .113863 is below student .133661. This is not a claim geometry is solved."
+      }
+    }
+  },
+  "datasets": {
+    "vacancy": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
+      "sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966",
+      "records": 182878
+    },
+    "fsd": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/fsd_goal.jsonl",
+      "sha256": "c4c8f55c271023a6ed505a41f921c57edef7fc3ed2c8b620ae4c57f349b906df",
+      "records": 29448
+    },
+    "prism": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/train_bound.jsonl",
+      "sha256": "a656b33eab4e1d30cde1c5942f77504d0c8c35b1443b908426614dd003d5b16d",
+      "records": 13536
+    },
+    "ai2d": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/ai2d.jsonl",
+      "sha256": "a09bb1109a37262968f35a9f1d17a198502c257fc9897330fd900eb56f1a6b1e",
+      "records": 11774
+    },
+    "scienceqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/scienceqa.jsonl",
+      "sha256": "ee7c092c7b3673e3f1a3da412cf2cb603a1e2026c03d399907d09ed7779ee42e",
+      "records": 5944
+    },
+    "textvqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/textvqa.jsonl",
+      "sha256": "fcb2250ca6daeb87d30885c03e74f7a02b6ea491395a8a1c2f46e66b117dcfbf",
+      "records": 32845
+    }
+  },
+  "initialization_lineage": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/initialization_lineage.json",
+    "sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89"
+  },
+  "teacher_assessment": {
+    "existing_review": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/candidate1_quality_review.json",
+    "review_sha256": "c4cc3b0f12cbddfdf1598be3c25459c544358b987c9496a8a33a81200e4958fa",
+    "decision": "Reuse the exact reviewed G/S/A teachers while directly correcting the student; no new teacher-superiority or final-quality claim.",
+    "new_student_paired_qualification_claimed": false
+  },
+  "stages": {
+    "repair": {
+      "steps": 2048,
+      "lr": 2e-05,
+      "save_every": 256,
+      "ul_weight": 0.1,
+      "ul_rollout_cap": 768
+    },
+    "mopd": {
+      "steps": 1536,
+      "lr": 5e-06,
+      "save_every": 32,
+      "native_sft_weight": 0.1,
+      "mtd_weight": 1.0,
+      "ul_weight": 0.1,
+      "ul_rollout_cap": 768
+    }
+  },
+  "rationale": "User prioritizes full corrective training over more small ablations. Greedy mask-cycle UL previously improved full81250mask validity to98.30%; spatial replay improvedVA26.33\u219271.00. Use independently screened182878vacancy records; preserve QA/native/PRISM. Formal MOPD continues after repair without a small-test gate.",
+  "deadline_utc": "2026-11-02T05:48:00+00:00",
+  "final_reserve_hours": 24,
+  "original_corpus_records": 5800000,
+  "original_full_sft_records": 5220000,
+  "original_spatial_pool": 4756000,
+  "candidate_data_inventory_not_actual_exposure": true,
+  "final_quality_accepted": false,
+  "final_required": [
+    "One exact finalcheckpoint full580K native,7public and10105general evaluation",
+    "Upload final full weights and key checkpoints; verify all remote files at pinned commit"
+  ],
+  "key_checkpoints": [
+    "repair/checkpoint-2048",
+    "mopd/checkpoint-512",
+    "mopd/checkpoint-1024",
+    "mopd/checkpoint-1536"
+  ],
+  "planned_source_exposures": {
+    "repair": {
+      "mask_replay": 16384,
+      "fsd": 32768,
+      "vacancy": 32768,
+      "ai2d": 5504,
+      "original_native": 16384,
+      "prism": 16384,
+      "scienceqa": 5440,
+      "textvqa": 5440
+    },
+    "mopd": {
+      "native_distillation": 49152,
+      "fsd": 12288,
+      "vacancy": 12288,
+      "ai2d": 4096,
+      "mask_replay": 6144,
+      "scienceqa": 4096,
+      "prism": 6144,
+      "textvqa": 4096
+    }
+  },
+  "planned_role_exposures": {
+    "repair": {
+      "qa": 16384,
+      "prism": 16384,
+      "fsd": 32768,
+      "mask": 16384,
+      "native": 16384,
+      "vacancy": 32768
+    },
+    "mopd": {
+      "qa": 12288,
+      "prism": 6144,
+      "fsd": 12288,
+      "mask": 6144,
+      "native": 49152,
+      "vacancy": 12288
+    }
+  },
+  "frozen_files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/cloud_a800/checkpoints.py": "a7fd7b10cf9c67f78ad07d665a94e6ba8e63d988f0261972c17800a7ffc51626",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/cloud_a800/memory_loss.py": "4e76cd0d3e18577f11e333fe174fda2ffa19c114697af4624c610e8b3c32559f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/__init__.py": "8e30641d30991ab8fb9a84f7c79373a3361fac3b3a90f295e217b99d71cb2708",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/alignment.py": "23313c337a6efd6aff1e0f2741830a09507e2d51a991082edad167e5db87ff18",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/alignment_schema.py": "0aa95bbc7ca552fef362b32f5972f49934ae5a2ebc4af5ae3cb79a5ca64a0aa4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/alignment_sources.py": "a37f4d0fe8e0a7012ab27729baebd875e9ffd4f6d02a4a4133e13b7b99764d31",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/build_depth_semantic_audit_pack.py": "806ea01db625cb8dea460f1b8286cec721cba8655627d7acfed63f9253d6732f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/build_scannet_sensor_depth_audit_pack.py": "f7e0e7c3a4a6ceaf81a457f4ef70600985d70c4cccdeb122e4cd970775e7593e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/build_semantic_audit_pack.py": "b6a04cbd4c272bab2d7e937e0a40901513cbc0b9300c6c2e84d8356e450b1c1a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/contracts.py": "b5a29c549ab8fe78f39d86e1790d9ce28f26ca97491d654f18e86c63be969a97",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/generate.py": "bb4c846358ffd9a49a65cefeeac7d3de7110b95bd6baf94560c9f7ceae4a5bf6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/generate_multiform.py": "97efe07f097ca3de355cc277691a82edf15da31bec5864931220eb4a1d49becd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/native_training.py": "1c740d0e4eea3134a3f3a08c6ffafdb232c0d07407f99b0b32f91d392e517ecf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/prompts.py": "c9f5f8b4bd849836b05d6220ddc9c929b99526e91d14cff8cfa71d61d176356e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/prompts_ext.py": "5a95a48b8915cddf58bf95c23f79366cefa360a21abd7a79a0b1643b9d7dc804",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/rescan.py": "cb8ebd5f2d3f2c51a91dd1e54bb0ce5934837bdf123cbb250656cd0509842008",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/taxonomy.py": "5a2260194fd738ffd8a7bc50260cbd37fa42751abda2b22756e792864ab5cb97",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/to_viewer_format.py": "5107868f2ebd896bbe34b3d27db5d608bf2f7abc7511e4b887b889d224003dc7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/validators.py": "7c1c2fefa972c6bd65ab36524536f97bb128fa784f04e5175955909da14c04be",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/verifier.py": "8ba0d5bd5f584456369f44c8f39d382c5ba163a72b73ee6304517b5f65294e8f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/flywheel/vlm_client.py": "1104bb175442fcd091300a13608242dc53fb3138622261bdfc58fa8e84dce2da",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/__init__.py": "c4e97d1213b76dc1e121baa49da9bad61e91ffb14a21b87f2ebceb3f375e5c7b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/anvil_runtime.py": "d8962eaa0253d1ea8fd28ccf3e91eb4f8be3fa76dab9cad8b08675375486565b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/chunked_heads.py": "958ed9b48e2adc692ca43c657269a92616ff9aa47eaefc82b32648649bda7220",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/firstfault_core.py": "c1c7190662599820019a1d9e35d4231c5095fe8109ee734259f8b38c4b387585",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/routing.py": "f52e1739217f4e9b8d7340888a07f032cb6c0016e71910c94d21fd3fac8f8bf2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/completion_policy.json": "b523c29c0d01104757af7c5dac32d06a1c930c7d7047fc4544bd730bfa424ac6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/completion_policy.py": "75be7b3d42ca7f83f4e170be6b9d33ed830b4db7badc9439a640b90a634404b5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/audit_targets.py": "6ecb251d00c361dda5cf34dbe097b747f575b0fd3a1d9497fbb4a990afad6391",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codebook_interface.py": "ccf3ac68fa4396f735d3a58d66af223587c9059a14baefd788ba3ea0093401d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_pose_loss.py": "7ac6327a0ce9ce73f6015ece4c8421a684758808619eb0bac183b21f1a8f86fb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/initialization_lineage.json": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_dof_rotation_codebook.py": "58aef92204bd2562b2b1bc14364fe1f45b3047f10467199df0675c6e13bd97e4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/manifest.json": "abb2b9079fac7be483ddd94441eb0c6e537f0033635e23cb9dd9417845ee17bf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/repair_train.py": "88c8ae5966a46874d0529d13550e4c83aa89b88dd5faeb4d90accce0acc0112d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_node.py": "10041ca43b857bde0bf23e55cf62b80883f8bd1b00b84e184eea91674280c99c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/manifest.json": "084190c12acdc1dee6c18a19663df111a1345b8ec5c29f9aef1e678f49e0443c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/cpu_validation.json": "a82f41b0a2b280475c3ab58ffb88b05b8390ca559170806a2186286dad3a1d23",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/node.py": "2b73f0bc3b8afd342816825509e6d325e1cc749a35eb53155f6112707c781578",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/pool.py": "ea6bbbce9e0b38b18779c98b49630c9c348ddd35e96dced6710b61c93332b29a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/prepare.py": "dda4c49755f16e043061d06559931142d907dffea10e841293e03d82532c2548",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/train.py": "adede7d412b79880eb2f6c68fdda772fb7c8311336bccaed4b72e0d976b8f1df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/candidate1_quality_review.json": "c4cc3b0f12cbddfdf1598be3c25459c544358b987c9496a8a33a81200e4958fa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mopd_lineage.py": "c08a5aa9c4a7f396b155c1488378bdf6183d0b467a20f06ac82054dd57736f66",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mopd_representation.py": "056f40613119a76e9766d1213a952e049c1906cfb4aa19ea9862f8afeb01e768",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v2.py": "55e4c99db50c8066de4a340a4d151a53c75b3b267839b6c2e4c2c29f43683525",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v6.py": "568619ea46d745d785f10a8fd56ee5337653cd35a4c26866d3b7367275a04d75",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json": "f860ac914f92bc2768f12df6a2cacea15eadd97ba206a5c537aa07ceda54ea6d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/policy.json": "1088c0ccc6c16357675782c86120442484f90475380aa1cea45ed7dcdf864e96",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/eval_core.py": "72533225e78b1efa070f4a4d64fd305521d9b3b7ec1b388b6c910b7948bb48d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/training_data.py": "31bceea226bfbd125c234a43e1962d11e16285e3e8f391e837bd71a26e5a40ca",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/node.py": "ffc3b623a90b08bca4807d449da550c6c8e332f4821cdbd8ba30da64678ad937",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/prepare_recovery.py": "853a9d723d0b2e19bc81c54db7767f306ec27337ba59cff625aa0954766f246c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/pool.py": "ea6bbbce9e0b38b18779c98b49630c9c348ddd35e96dced6710b61c93332b29a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/train.py": "0c88bbd96a2e21e87d20adbdccb0cae9211d44f0c2bc3ca1b4f4b0948e66fc1d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/failure_analysis.json": "72d7521c8ecade621192710146b8d72a1a8ac5ff34216c53dcba4ea771564633",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/cpu_recovery_validation.json": "e8dd5fd6848c5d7092a79ec61416a1afe55cd26f4d272c513459c253509a9e79",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/complete.json": "2ce3ec8f148286b2a53f69c753be06cf204f5120714fdbe450f61695885dc02e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/protocol.json": "99d197c4aaf9e82f653e8bc3fb7eaef38a93921e0ccbf0d2ddd56eefc0fe30d4"
+  },
+  "distributed_timeout_seconds": 3600,
+  "recovery": {
+    "reason": "Explicit recovery after confirmed terminal NCCL timeout; restart MOPD from verified completed repair.",
+    "previous_pipeline": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/spec.json",
+      "sha256": "3bfa6fde729958b69cace34cec1e9a55ff74c7c59b11226b96c41bae577be338"
+    },
+    "failure_analysis": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/failure_analysis.json",
+      "sha256": "72d7521c8ecade621192710146b8d72a1a8ac5ff34216c53dcba4ea771564633"
+    },
+    "repair_complete": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/complete.json",
+      "sha256": "2ce3ec8f148286b2a53f69c753be06cf204f5120714fdbe450f61695885dc02e"
+    },
+    "discarded_attempt_updates": 126,
+    "discarded_attempt_exposures": 8064,
+    "discarded_attempt_in_final_optimizer_ancestry": false,
+    "repair_retrained": false,
+    "mopd_restart_step": 0,
+    "mopd_planned_steps": 1536,
+    "planned_mopd_exposures": 98304,
+    "timeout_seconds": 3600,
+    "checkpoint_interval": 32,
+    "full_generation_budgets_preserved": true,
+    "data_loss_teacher_and_optimizer_math_unchanged": true
+  }
+}

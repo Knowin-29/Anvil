@@ -1,6 +1,6 @@
 {
   "schema": "anvil-native-completion-source-snapshot-v1",
-  "created_utc": "2026-10-29T09:57:05.785976+00:00",
+  "created_utc": "2026-10-30T02:35:15.593080+00:00",
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020",
   "files": {
     "cloud_a800/checkpoints.py": {
@@ -1262,6 +1262,186 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_direct_v1/validate_cpu.py",
       "sha256": "ab39d805599e88fd0421d46464163f2a5c331bbe924c8844542e496cac8355d9",
       "bytes": 4730
+    },
+    "completion_20261028/direct_recovery_20261030/node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/node.py",
+      "sha256": "ffc3b623a90b08bca4807d449da550c6c8e332f4821cdbd8ba30da64678ad937",
+      "bytes": 3208
+    },
+    "completion_20261028/direct_recovery_20261030/prepare_recovery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/prepare_recovery.py",
+      "sha256": "853a9d723d0b2e19bc81c54db7767f306ec27337ba59cff625aa0954766f246c",
+      "bytes": 10662
+    },
+    "completion_20261028/direct_recovery_20261030/pool.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/pool.py",
+      "sha256": "ea6bbbce9e0b38b18779c98b49630c9c348ddd35e96dced6710b61c93332b29a",
+      "bytes": 3088
+    },
+    "completion_20261028/direct_recovery_20261030/train.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/train.py",
+      "sha256": "0c88bbd96a2e21e87d20adbdccb0cae9211d44f0c2bc3ca1b4f4b0948e66fc1d",
+      "bytes": 17780
+    },
+    "completion_20261028/direct_recovery_handoff.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_handoff.py",
+      "sha256": "2baca2870ebc7119fdca068796e67a3d3d9aa72d814d3d86c3e238e0783c561a",
+      "bytes": 6306
+    },
+    "completion_20261028/campaign_monitor_recovery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor_recovery.py",
+      "sha256": "ebc37f4295d6ce5954005b80263f752866a930f5f3445eb8e82b2d2fab272116",
+      "bytes": 34406
+    },
+    "completion_20261028/final_delivery_recovery_v1/upload.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/upload.py",
+      "sha256": "59495c9a7b0f4f0b934b3651ee28daa1046a09964034ad21cd9fb98f250b9aa1",
+      "bytes": 5711
+    },
+    "completion_20261028/final_delivery_recovery_v1/prepare.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/prepare.py",
+      "sha256": "a6fde2f30fff08f56c631c6fa734ea79a178113bac83647f0a95a116f81c2259",
+      "bytes": 4094
+    },
+    "completion_20261028/final_delivery_recovery_v1/validate_cpu.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/validate_cpu.py",
+      "sha256": "ab39d805599e88fd0421d46464163f2a5c331bbe924c8844542e496cac8355d9",
+      "bytes": 4730
+    },
+    "completion_20261028/final_delivery_recovery_v1/package.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/package.py",
+      "sha256": "16406ea8a6482afe496d111017df46bb774fbdcab7e80a7e6d20414b45a84b40",
+      "bytes": 10830
+    },
+    "completion_20261028/final_delivery_recovery_v1/lineage.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/lineage.py",
+      "sha256": "9d5a0e440500602cce22fd4725342fac3b4f1ff27e608cab2f5d00af84c0adc7",
+      "bytes": 10547
+    },
+    "completion_20261028/final_delivery_recovery_v1/node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/node.py",
+      "sha256": "bd65787fe913df9a62990b86802a307a5c46619d7afe9dbb0247cd829f471710",
+      "bytes": 5717
+    },
+    "completion_20261028/final_delivery_recovery_v1/common.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/common.py",
+      "sha256": "a42e41a63c5350bd076e5a41d0dca957ff7954cbe0505bb01651811c743ea71d",
+      "bytes": 5876
+    },
+    "completion_20261028/final_delivery_recovery_v1/public_worker.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/public_worker.py",
+      "sha256": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38",
+      "bytes": 4880
+    },
+    "completion_20261028/final_delivery_recovery_v1/score.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/score.py",
+      "sha256": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057",
+      "bytes": 8778
+    },
+    "completion_20261028/final_delivery_recovery_v1/merge.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/merge.py",
+      "sha256": "6053ec6e4ce132d615b894f0173074111323bbd450f68392a44bb32e33537ef7",
+      "bytes": 4362
+    },
+    "completion_20261028/final_delivery_recovery_v1/initialization_lineage.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/initialization_lineage.py",
+      "sha256": "b1828717ef0be8a9c1ce14bfb6847bfa79b6a66625efb560d570f20691b99502",
+      "bytes": 6362
+    },
+    "completion_20261028/final_delivery_recovery_v1/configs.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/configs.py",
+      "sha256": "cbe50c30937eacdd876a8aed2ea07470b5ff1a7f3e103683b375bd0f4313e833",
+      "bytes": 1952
+    },
+    "completion_20261028/final_delivery_recovery_v1/native_worker.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/native_worker.py",
+      "sha256": "9bce9d1ac52ff6f4cd6fe79f57c0c44fcf87a1f9695e2d35e7b243c6999a3879",
+      "bytes": 23351
+    },
+    "completion_20261028/final_delivery_recovery_v1/exposure_audit.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/exposure_audit.py",
+      "sha256": "61b2cf552d70eb0865fe90ab5ae4351df85c534460f09f833e8ce30c9766bac0",
+      "bytes": 4440
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/native_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/native_interface_validation.json",
+      "sha256": "f0986dae2f2ca5ca68a6fe7fac09beb4935eefc09ca434ff2053b53a1185fc7c",
+      "bytes": 561
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d_interface_validation.json",
+      "sha256": "665ca5d0856c39897077f818d05c0196773cb6f58c795aae230362b63b8d21d9",
+      "bytes": 761
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/cpu_validation.json",
+      "sha256": "e694e6f9ecd29a4858fa07550d635e3f893fafe94c15dd82a9ea39b37258a465",
+      "bytes": 2809
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128_interface_validation.json",
+      "sha256": "63707370218a373e27e4cd69d748b5ac492f3a2cc904332666546a46b9e66ad8",
+      "bytes": 965
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/anvil_representation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/anvil_representation.json",
+      "sha256": "057b963f939c737313ae605fa6df99ffa35b0366ffb4f2dfc9d682d95ce17062",
+      "bytes": 292
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/dof_codec_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/dof_codec_interface.py",
+      "sha256": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+      "bytes": 2679
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/dof_codec_prototype.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/dof_codec_prototype.py",
+      "sha256": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+      "bytes": 2213
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/anvil_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation6d/anvil_interface.py",
+      "sha256": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522",
+      "bytes": 771
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/anvil_representation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/anvil_representation.json",
+      "sha256": "0775ee0552d2006ecf7d304d259a722009ac57de0ef2363bc3ae2c532b20cb7b",
+      "bytes": 496
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codec_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codec_interface.py",
+      "sha256": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+      "bytes": 2679
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_rotation_codebook.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_rotation_codebook.json",
+      "sha256": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
+      "bytes": 53679
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codebook_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codebook_interface.py",
+      "sha256": "b51e59fb405a9811e423f732e9be61c93bfb23cf8edaf73b6c60f74e3a18d226",
+      "bytes": 2365
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codec_prototype.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codec_prototype.py",
+      "sha256": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+      "bytes": 2213
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/anvil_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/anvil_interface.py",
+      "sha256": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522",
+      "bytes": 771
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/native/anvil_representation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/native/anvil_representation.json",
+      "sha256": "1ae6d8f18037d2eacdadc48b1e1a3b1796dc346cc80615faf9fcce997d64662e",
+      "bytes": 91
+    },
+    "completion_20261028/final_delivery_recovery_v1/interface_validation/native/anvil_interface.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_recovery_v1/interface_validation/native/anvil_interface.py",
+      "sha256": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522",
+      "bytes": 771
     }
   },
   "evidence": {
@@ -1670,6 +1850,51 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_direct_v1/interface_validation/cpu_validation.json",
       "sha256": "e694e6f9ecd29a4858fa07550d635e3f893fafe94c15dd82a9ea39b37258a465",
       "bytes": 2809
+    },
+    "runtime_recovery_spec.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/spec.json",
+      "sha256": "3be2abe0bd7d4753c0bc97411bada5ba04280fa8a52e24ddcea7aa56841e9cde",
+      "bytes": 20073
+    },
+    "runtime_recovery_cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/cpu_recovery_validation.json",
+      "sha256": "e8dd5fd6848c5d7092a79ec61416a1afe55cd26f4d272c513459c253509a9e79",
+      "bytes": 453
+    },
+    "runtime_recovery_failure_analysis.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/failure_analysis.json",
+      "sha256": "72d7521c8ecade621192710146b8d72a1a8ac5ff34216c53dcba4ea771564633",
+      "bytes": 1605
+    },
+    "runtime_recovery_submission.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/submission.json",
+      "sha256": "b94ac4200d18510e9c6d27c6f936f587074bd016835dc95c2b1f917142ac0c6e",
+      "bytes": 280
+    },
+    "runtime_recovery_protocol.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/protocol.json",
+      "sha256": "d889ba8a8dbc05b8767fe2182cb62dfa5798d011a899b8eefe443edeec7fa063",
+      "bytes": 6719
+    },
+    "runtime_recovery_handoff_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/policy.json",
+      "sha256": "e26e78e6deb7bfb9a770227afa3a815ab05946b27f4c7553695318d4d2eea7f4",
+      "bytes": 3658
+    },
+    "completed_repair2048.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/repair/complete.json",
+      "sha256": "2ce3ec8f148286b2a53f69c753be06cf204f5120714fdbe450f61695885dc02e",
+      "bytes": 717
+    },
+    "completed_repair2048_verification.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/checkpoint2048_verification.json",
+      "sha256": "9a6a6f4ead7e3195d790282266c5c06a231df5abe999a2b361b152a1a5d88e25",
+      "bytes": 1539
+    },
+    "completed_repair_exposure_audit.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/repair_exposure_audit.json",
+      "sha256": "2a417974cb9eb3609075494b62f8f4a079d7d44acacadd49f11642bda71d634e",
+      "bytes": 12289
     }
   },
   "model_weights_in_git": false,
@@ -1678,10 +1903,10 @@
   "final_model_uploaded": false,
   "note": "Exact source snapshot; live cloud scripts remain untouched. Host-bound manifests and private data remain on shared storage. Restore original directory layout to reproduce this campaign.",
   "verbatim_source_whitespace_note": "Two original PRISM trainer lines have trailing spaces. Preserved byte-for-byte because those source files are frozen in running jobs; source SHA256 bindings are authoritative.",
-  "automatic_formal_readiness_policy": "At most2048updates/48guardedtraininghours; at least24h finalreserve; actual8/16GPUthroughput; campaign32GPUcap.",
-  "formal_task_id": "t-20261029095820-px5rk",
-  "final_validation_handoff": "After formal training and scheduled checkpoint diagnostics finish: verify final tip, derive merged copy, freeze 580K+seven-public+10105-general evaluation, submit at most four eight-GPU nodes under32cap, score/audit lineage. Stop for explicit model-quality assessment; no automatic upload or acceptance.",
-  "midrun_native_diagnostic": "Step128, exact35989 previously selected G/S rows, paired with initial student; reserve8publicGPUslots and wait for A controls to release8GPUs; unchanged native scorer; not full final validation.",
+  "automatic_formal_readiness_policy": "Completed repair2048 reused; genuine MOPD1536/global64/world32, checkpoint32, collective timeout3600s; retain original deadline and24h final reserve.",
+  "formal_task_id": "t-20261030102801-c2p47",
+  "final_validation_handoff": "After recovery MOPD1536 and actual cloud Success: evaluate exact final checkpoint on580K native, seven public benchmarks and10105 general records; review actual quality, then package final model and full key checkpoints and verify remote HF files at one commit.",
+  "midrun_native_diagnostic": "Historical only; no additional small GPU diagnostic jobs in the active recovery.",
   "first_formal_checkpoint_public_regression": true,
   "objective_controls": {
     "final_mopd": false,
@@ -1691,5 +1916,16 @@
     "sampler_world": 16,
     "schedule_steps": 1664,
     "limitation": "Physical topology changes generation RNG and floating-point reduction order; all-eligible per-example objective weights are equal."
+  },
+  "historical_configuration": {
+    "pre_recovery_formal_task_id": "t-20261029095820-px5rk"
+  },
+  "active_pipeline": "completion_20261028/direct_recovery_20261030",
+  "recovery_verbatim_whitespace_exceptions": {
+    "files": [
+      "completion_20261028/campaign_monitor_recovery.py",
+      "completion_20261028/final_delivery_recovery_v1/interface_validation/rotation128/dof_codebook_interface.py"
+    ],
+    "reason": "Inherited trailing whitespace / final blank line preserved byte-for-byte to match the actual running monitor and decoder interface; no functional change."
   }
 }

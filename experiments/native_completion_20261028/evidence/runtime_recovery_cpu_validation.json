@@ -1,0 +1,13 @@
+{
+  "state": "passed",
+  "training_change_reversal_exact": true,
+  "data_pool_bytes_unchanged": true,
+  "training_budget_and_mixture_unchanged": true,
+  "inherited_repair_checkpoint_binding_verified": true,
+  "failed_attempt_prefix_exposures_verified": 8064,
+  "old_frozen_sources_unchanged": true,
+  "python_syntax_valid": true,
+  "extra_gpu_test_tasks": 0,
+  "runtime_recovery_still_requires_actual_execution": true,
+  "created": 1793327105.7662992
+}

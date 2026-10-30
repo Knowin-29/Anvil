@@ -1,0 +1,9 @@
+{
+  "spec_sha256": "3be2abe0bd7d4753c0bc97411bada5ba04280fa8a52e24ddcea7aa56841e9cde",
+  "config_sha256": "180bc01b8c71a3c7b7d125183cf464b73ff6988a3f73228af134bc561c91800e",
+  "gpus": 32,
+  "submitted": 1793327277.4859293,
+  "response": {
+    "Id": "t-20261030102801-c2p47"
+  }
+}

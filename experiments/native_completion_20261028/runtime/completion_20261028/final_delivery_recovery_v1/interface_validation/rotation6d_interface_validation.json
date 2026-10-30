@@ -1,0 +1,16 @@
+{
+  "rows": 3008,
+  "mode": "rotation6d",
+  "valid_parity": true,
+  "malformed_parity": true,
+  "state": "passed",
+  "package_builder_sha256": "85f15ee0c8e3ddc0457f6035fba9626ed5534bb78126f49fa4a57c5f549036d7",
+  "standalone_files_sha256": {
+    "anvil_representation.json": "057b963f939c737313ae605fa6df99ffa35b0366ffb4f2dfc9d682d95ce17062",
+    "dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+    "dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+    "anvil_interface.py": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522"
+  },
+  "source_sha256": "179f34f1da803c3d14b233922049cd4141aec6fa215f7aa157712bfc00cdc87c",
+  "gpu_inference_validated": false
+}

@@ -1,0 +1,46 @@
+{
+  "state": "completed_repair_checkpoint2048_verified",
+  "checked_at": "2026-10-29T23:22:19.863539+08:00",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+  "files": 38,
+  "total_bytes": 2079798631,
+  "examples": 131072,
+  "all_file_hashes_verified": true,
+  "adapter_changed_since1792": true,
+  "adapter_tensors_finite": 496,
+  "finite_training_history": true,
+  "completion_receipt_verified": true,
+  "full_planned_repair_exposures_verified": true,
+  "heldout_quality_verified": false,
+  "cpu_recovery_loading_exercised": true,
+  "gpu_resume_experiment": false,
+  "optimizer_parameters_verified": 173113344,
+  "optimizer_state_entries": 496,
+  "optimizer_step": 2048,
+  "scheduler_verified": {
+    "step": 2048,
+    "steps": 2048,
+    "schedule": "warmup3%-cosine"
+  },
+  "all32_rng_files_loadable": true,
+  "all32_cpu_python_numpy_rng_states_settable": true,
+  "cuda_rng_blobs_loaded_on_cpu_only": true,
+  "committed_exposure_prefix": {
+    "rows": 131072,
+    "all32_rank_prefixes_complete": true,
+    "no_uncommitted_suffix": true,
+    "source_exposures": {
+      "mask_replay": 16384,
+      "fsd": 32768,
+      "vacancy": 32768,
+      "ai2d": 5504,
+      "original_native": 16384,
+      "prism": 16384,
+      "scienceqa": 5440,
+      "textvqa": 5440
+    },
+    "unique_records": 126285,
+    "rank_order_prefix_sha256": "70e3fd369dff28668d829789dfd1a160ffefdc668456c127f5184768d1c64860",
+    "counts_are_not_dataset_inventory": true
+  }
+}

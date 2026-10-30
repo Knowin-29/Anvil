@@ -1,0 +1,256 @@
+{
+  "schema": "anvil-stage-exposure-audit-v1",
+  "state": "complete_stage_audit",
+  "run": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+  "execution_only": false,
+  "steps": 2048,
+  "global_batch": 64,
+  "exposures": 131072,
+  "groups": {
+    "ai2d:ai2d": {
+      "exposures": 5504,
+      "unique_records": 5504,
+      "repeated_exposures": 0,
+      "unique_images": 2709,
+      "unique_ids_sha256": "34be8b38a4f9cd442acc1fdfe148202aa1ad43074ba3f6b034120d87fa24a997"
+    },
+    "fsd:fsd_goal": {
+      "exposures": 32768,
+      "unique_records": 29448,
+      "repeated_exposures": 3320,
+      "unique_images": 29346,
+      "unique_ids_sha256": "9e3cec42825cab4f662aab3243a8f0f8ec69c5007d56acdf4a522c274e76d37b"
+    },
+    "mask_replay:coco_train2017": {
+      "exposures": 16384,
+      "unique_records": 16384,
+      "repeated_exposures": 0,
+      "unique_images": 16317,
+      "unique_ids_sha256": "04c9f596fa9892445b41933f02164dd49d4bb1bcccab2107455234ef1a349f00"
+    },
+    "original_native:ALFRED": {
+      "exposures": 1153,
+      "unique_records": 1153,
+      "repeated_exposures": 0,
+      "unique_images": 1128,
+      "unique_ids_sha256": "a60f2a771cf9b3806723943469e66a4c08c074cad4e45d05e8fff16f12406d5d"
+    },
+    "original_native:PRISM": {
+      "exposures": 1480,
+      "unique_records": 1480,
+      "repeated_exposures": 0,
+      "unique_images": 545,
+      "unique_ids_sha256": "c7c41071b4ef0b8ec1b7b35eccae4a519ad0f428c831e751614c7a6961e1f28b"
+    },
+    "original_native:ShareRobot": {
+      "exposures": 2840,
+      "unique_records": 2840,
+      "repeated_exposures": 0,
+      "unique_images": 2535,
+      "unique_ids_sha256": "1c1e129f478a369446fa46e96d79b537c839dd20a816c99c1744dbebf1028908"
+    },
+    "original_native:coco_train2017": {
+      "exposures": 10569,
+      "unique_records": 10569,
+      "repeated_exposures": 0,
+      "unique_images": 9854,
+      "unique_ids_sha256": "eb0631f4d93ec327a7ee6e49b50a8d06780f452b6d2b15b57429c55eabc45228"
+    },
+    "original_native:pixmo_points": {
+      "exposures": 342,
+      "unique_records": 342,
+      "repeated_exposures": 0,
+      "unique_images": 342,
+      "unique_ids_sha256": "0a3f9703948fb67fe2f9f51432fda624cbcd997e3b04c5a3a552af45fa913473"
+    },
+    "prism:PRISM": {
+      "exposures": 16384,
+      "unique_records": 16384,
+      "repeated_exposures": 0,
+      "unique_images": 2828,
+      "unique_ids_sha256": "8ca5d5c598b200dd9095db64eab519f6bf141a89025384c76d5ebcec1ddda2a7"
+    },
+    "scienceqa:scienceqa": {
+      "exposures": 5440,
+      "unique_records": 5440,
+      "repeated_exposures": 0,
+      "unique_images": 4373,
+      "unique_ids_sha256": "735c2624505ccdc2e3b20d4119014af92f76406f4e6a725fedf2abb5d898be74"
+    },
+    "textvqa:textvqa": {
+      "exposures": 5440,
+      "unique_records": 5440,
+      "repeated_exposures": 0,
+      "unique_images": 4836,
+      "unique_ids_sha256": "d53fc39caa3507f59fc092931fae89fa03e77fbfeabef6b79ce982620c5e71ba"
+    },
+    "vacancy:refspatial_vacancy": {
+      "exposures": 32768,
+      "unique_records": 32768,
+      "repeated_exposures": 0,
+      "unique_images": 21858,
+      "unique_ids_sha256": "f5352749b946bceaed89e625ec64be3a5ebcc5d8d004d24a4de1d3df3f622c3f"
+    }
+  },
+  "unique_records": 126285,
+  "unique_images": 92857,
+  "by_form": {
+    "mask": 18040,
+    "point": 67538,
+    "QA": 16384,
+    "bbox": 1660,
+    "dof": 17831,
+    "depth_order": 33,
+    "direction": 2617,
+    "action_cot": 1153,
+    "affordance": 2840,
+    "metric_comparison": 2617,
+    "detection": 186,
+    "relation_graph": 173
+  },
+  "evidence": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/protocol.json",
+      "sha256": "99d197c4aaf9e82f653e8bc3fb7eaef38a93921e0ccbf0d2ddd56eefc0fe30d4"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/complete.json",
+      "sha256": "2ce3ec8f148286b2a53f69c753be06cf204f5120714fdbe450f61695885dc02e"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048/checkpoint_complete.json",
+      "sha256": "8fdb2041c1374a8c56212c9138b69c1c78fb15cc4185c9505fa89d4d3cbc16b8"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank0.jsonl",
+      "sha256": "3ff0dd24e17cd0df5ffa431961ba17e0673a9ae78961865344ab2c4a15978e27"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank1.jsonl",
+      "sha256": "02930a9c1e8c457b366f0f5c006fd9c9d98c7af6184419012ea7bfc5468264b6"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank2.jsonl",
+      "sha256": "c94cb5de139c50f9bb4c5234722b6e7d0b23c656489d12490df929c51b547de5"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank3.jsonl",
+      "sha256": "6c52faeaf83dae41c04896215beca2675b841dc2ad91423a5dbfed86ff8b3081"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank4.jsonl",
+      "sha256": "7d276c452cade1d6abd2e47a8f802d4656588c22b9cb18fc84092b636bfdaee2"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank5.jsonl",
+      "sha256": "8f1a90f0c95803e6ad61c9a31f33f9d9d3dea0b9b3d45b04a924b5095c3f6c64"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank6.jsonl",
+      "sha256": "3ab8cedfb42614f681a8efd0438bf82a55303eb0076a4367b0f032836f77ae01"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank7.jsonl",
+      "sha256": "4985d84526754e81027c685a8e22ac1f7b2f272b80a1193ad82eccfce77f2a9c"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank8.jsonl",
+      "sha256": "ce6656801a2b62d82951f4ddd8216ffcbcc713813bc27ed3327fa7eaa15b72b0"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank9.jsonl",
+      "sha256": "64e4750c4cd97ba3d168c928811392d1201974a38327492853cbfa104b13c3fd"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank10.jsonl",
+      "sha256": "5e5b750b86b06c92ab52c7d1057be3ac0ba7738921a93810771db0622bd54632"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank11.jsonl",
+      "sha256": "1bdeda5442772992e96e51d19ec0d39c2c7a028243ed4f54d3ee7db592c1bb38"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank12.jsonl",
+      "sha256": "7365c522bab2ad5deb1193c9107f554fb883aa19a341f2889481621a766917c6"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank13.jsonl",
+      "sha256": "6c5b80f191b647e846d7de5078a92ebdb2cb086f1120ba93f4dab5eead2e3aff"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank14.jsonl",
+      "sha256": "f57705bfb13fd8843c6a468abb3d1456c40bd76955b5e0835ac04bf4e07ea4fa"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank15.jsonl",
+      "sha256": "d0a24e632e0817e7f276e4be59e40ffeb878b74d1a7ae8d09620df7a63479336"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank16.jsonl",
+      "sha256": "6221cc477950b59e6f8f8bb6b5f31df648b0af0a81adff9ff96776c1381e3780"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank17.jsonl",
+      "sha256": "e457cbe9db913d0b807568a2a980221313a0f5ff2362463b715d26056079b9a0"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank18.jsonl",
+      "sha256": "47dfd35da914d6feb2d866d7e44f39da119c24af0009dfbc8622343624557dde"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank19.jsonl",
+      "sha256": "50c363fade2a0a0285e41a12158b1a00a51c0d61b6c925c57b090312274b2be3"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank20.jsonl",
+      "sha256": "e2cfcd49b6a9cb20513196e57e3ab5b1f099ae105b4cc6d66d9302a6885c00d5"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank21.jsonl",
+      "sha256": "e39fe84fc0194c82abc832db5812fe802a2f5207d6084a1a5159976f3508dd5b"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank22.jsonl",
+      "sha256": "838d36b059bdc93a2d84a39fd66f2eca98671bda58d1fb4bfe10d6dfc18bfa32"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank23.jsonl",
+      "sha256": "9f2317ece449cd41098dd973ba5dea6d41000316dffadb2e3ab029ecd1c6d493"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank24.jsonl",
+      "sha256": "af5ef33b1cf762a12eac1ae1c3692d3e0bc56ee54eb73031d85554d13bfe7c49"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank25.jsonl",
+      "sha256": "0e145efb8722b8ae4e5d0fe2680dd7d43434ffe95a07d2a3cb56c7139954b385"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank26.jsonl",
+      "sha256": "544cd1ae846a142a240cc94e0739b983968d096b0dc94d98cbe3f67c57c32fdf"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank27.jsonl",
+      "sha256": "2b37bd9112065c2af7ca68ec5a9dba1ff063dcf70036bc6c46bc7132108219d3"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank28.jsonl",
+      "sha256": "148aad89e30f6b04267b1ed2ebb878570bd28e5826e883f126a8ad28c39910e0"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank29.jsonl",
+      "sha256": "4919ff703d67843a2edda402d25afed7a29cc50edfce14e3d974f1edcde595ff"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank30.jsonl",
+      "sha256": "8946d5cfd6eed126e6034d07c5353379e93f04ed7ed9639e8d2d74c1188b31c2"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/exposure_rank31.jsonl",
+      "sha256": "30468c873dead53f4039d50e7dd8c75bed85232e5c9fc4cc289dd324c28a83eb"
+    }
+  ],
+  "other_experiment_arms_included": false,
+  "complete_final_model_lineage": false
+}

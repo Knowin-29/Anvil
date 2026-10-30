@@ -1,0 +1,138 @@
+{
+  "schema": "anvil-direct-corrective-MOPD-v1",
+  "stage": "mopd",
+  "spec_sha256": "3be2abe0bd7d4753c0bc97411bada5ba04280fa8a52e24ddcea7aa56841e9cde",
+  "initial": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+  "initial_adapter_sha256": "f661f727aebf0ec5611dffc6aa31d1469acec01b6f5b2387918800953be9e68b",
+  "teachers": {
+    "G": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
+    "S": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_S/checkpoint-38248",
+    "A": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512"
+  },
+  "world_size": 32,
+  "global_batch": 64,
+  "updates": 1536,
+  "schedule": [
+    "native",
+    "fsd",
+    "native",
+    "vacancy",
+    "native",
+    "qa",
+    "native",
+    "mask",
+    "native",
+    "fsd",
+    "native",
+    "vacancy",
+    "native",
+    "qa",
+    "native",
+    "prism"
+  ],
+  "loss": {
+    "steps": 1536,
+    "lr": 5e-06,
+    "save_every": 32,
+    "native_sft_weight": 0.1,
+    "mtd_weight": 1.0,
+    "ul_weight": 0.1,
+    "ul_rollout_cap": 768
+  },
+  "base": "/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B",
+  "model_representation": "anvil-dof-train-rotation128-v1",
+  "model_representation_sha256": "1aa545fa7fc4ddb6519d81cffb5086e5b1021142d70004398d4b9ae7c6a889ea",
+  "representation": {
+    "mode": "rotation128",
+    "version": "anvil-dof-train-rotation128-v1",
+    "derived_contract": "anvil-derived-dof-model-training-v1",
+    "decoder_required": true,
+    "files_sha256": {
+      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codebook_interface.py": "ccf3ac68fa4396f735d3a58d66af223587c9059a14baefd788ba3ea0093401d6",
+      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
+      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_dof_rotation_codebook.py": "58aef92204bd2562b2b1bc14364fe1f45b3047f10467199df0675c6e13bd97e4"
+    }
+  },
+  "decode_required_for_native_inference": true,
+  "scope": "all_11_native_forms",
+  "original_full_corpus_records": 5800000,
+  "sft_pool_already_covered": 5220000,
+  "spatial_pool": 4756000,
+  "datasets": {
+    "vacancy": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
+      "sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966",
+      "records": 182878
+    },
+    "fsd": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/fsd_goal.jsonl",
+      "sha256": "c4c8f55c271023a6ed505a41f921c57edef7fc3ed2c8b620ae4c57f349b906df",
+      "records": 29448
+    },
+    "prism": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/train_bound.jsonl",
+      "sha256": "a656b33eab4e1d30cde1c5942f77504d0c8c35b1443b908426614dd003d5b16d",
+      "records": 13536
+    },
+    "ai2d": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/ai2d.jsonl",
+      "sha256": "a09bb1109a37262968f35a9f1d17a198502c257fc9897330fd900eb56f1a6b1e",
+      "records": 11774
+    },
+    "scienceqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/scienceqa.jsonl",
+      "sha256": "ee7c092c7b3673e3f1a3da412cf2cb603a1e2026c03d399907d09ed7779ee42e",
+      "records": 5944
+    },
+    "textvqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/textvqa.jsonl",
+      "sha256": "fcb2250ca6daeb87d30885c03e74f7a02b6ea491395a8a1c2f46e66b117dcfbf",
+      "records": 32845
+    }
+  },
+  "inventory_is_actual_training_coverage": false,
+  "original_initialization_lineage": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/initialization_lineage.json",
+    "sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89"
+  },
+  "smoke": false,
+  "final_mopd": true,
+  "quality_qualified": false,
+  "final_quality_accepted": false,
+  "teacher_assessment": {
+    "existing_review": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/candidate1_quality_review.json",
+    "review_sha256": "c4cc3b0f12cbddfdf1598be3c25459c544358b987c9496a8a33a81200e4958fa",
+    "decision": "Reuse the exact reviewed G/S/A teachers while directly correcting the student; no new teacher-superiority or final-quality claim.",
+    "new_student_paired_qualification_claimed": false
+  },
+  "code_sha256": "0c88bbd96a2e21e87d20adbdccb0cae9211d44f0c2bc3ca1b4f4b0948e66fc1d",
+  "distributed_timeout_seconds": 3600,
+  "recovery": {
+    "reason": "Explicit recovery after confirmed terminal NCCL timeout; restart MOPD from verified completed repair.",
+    "previous_pipeline": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/spec.json",
+      "sha256": "3bfa6fde729958b69cace34cec1e9a55ff74c7c59b11226b96c41bae577be338"
+    },
+    "failure_analysis": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/failure_analysis.json",
+      "sha256": "72d7521c8ecade621192710146b8d72a1a8ac5ff34216c53dcba4ea771564633"
+    },
+    "repair_complete": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/complete.json",
+      "sha256": "2ce3ec8f148286b2a53f69c753be06cf204f5120714fdbe450f61695885dc02e"
+    },
+    "discarded_attempt_updates": 126,
+    "discarded_attempt_exposures": 8064,
+    "discarded_attempt_in_final_optimizer_ancestry": false,
+    "repair_retrained": false,
+    "mopd_restart_step": 0,
+    "mopd_planned_steps": 1536,
+    "planned_mopd_exposures": 98304,
+    "timeout_seconds": 3600,
+    "checkpoint_interval": 32,
+    "full_generation_budgets_preserved": true,
+    "data_loss_teacher_and_optimizer_math_unchanged": true
+  }
+}

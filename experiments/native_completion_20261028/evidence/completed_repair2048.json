@@ -1,0 +1,22 @@
+{
+  "stage": "repair_training_complete",
+  "steps": 2048,
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+  "adapter_sha256": "f661f727aebf0ec5611dffc6aa31d1469acec01b6f5b2387918800953be9e68b",
+  "spec_sha256": "3bfa6fde729958b69cace34cec1e9a55ff74c7c59b11226b96c41bae577be338",
+  "examples_seen": 131072,
+  "source_exposures": {
+    "mask_replay": 16384,
+    "fsd": 32768,
+    "vacancy": 32768,
+    "ai2d": 5504,
+    "original_native": 16384,
+    "prism": 16384,
+    "scienceqa": 5440,
+    "textvqa": 5440
+  },
+  "final_mopd": false,
+  "smoke": false,
+  "final_quality_accepted": false,
+  "completed": 1793287224.1237543
+}

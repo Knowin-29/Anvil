@@ -1,0 +1,24 @@
+{
+  "schema": "anvil-terminal-runtime-failure-v1",
+  "task": "t-20261029174537-bvfnb",
+  "cloud_status": "Failed",
+  "last_committed_step": 126,
+  "failed_step": 127,
+  "uncheckpointed_exposures": 8064,
+  "uncommitted_microbatch_rows": 29,
+  "first_collective_timeout_ms": 600000,
+  "collective": "ALLREDUCE",
+  "elements": 1,
+  "sequence": 5385,
+  "established": "Other ranks reached the scalar reduction while rank1 had not enqueued it; no earlier OOM/numerical exception found.",
+  "likely_cause": "Long on-policy generation exceeded the default collective wait; phase telemetry will distinguish generation from other precollective work.",
+  "original_files_preserved": true,
+  "final_optimizer_ancestry_includes_failed_attempt": false,
+  "log_bindings": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/mopd/console_node0.log": "348bade6ac6953ed10901f2a6936d415b8df78b199b71939e2f03435b3acd20d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/mopd/console_node1.log": "4ae5794cf22bcc37c08ee711e7e09d63d631f422f41d262645d0b1f7716051e6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/mopd/console_node2.log": "bf4dcfd0ed7c269c8abed90ff223d0d931c5aa06270b23dc55b5b825538df168",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/mopd/console_node3.log": "3b829406a801ae9a17b3508c70ce3a7323467249b4d7fd1c0155dc272790bf05"
+  },
+  "checked_at": "2026-10-30T02:25:05.757440+00:00"
+}
