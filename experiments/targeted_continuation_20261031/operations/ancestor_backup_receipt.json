@@ -1,0 +1,854 @@
+{
+  "state": "complete_remote_verified_ancestor_checkpoints_only",
+  "repository": "Knowin-29/Anvil-MOPD-9B",
+  "revision": "d425815f2aa9d5283ad962b1d0fab44539bb3898",
+  "url": "https://huggingface.co/Knowin-29/Anvil-MOPD-9B/tree/d425815f2aa9d5283ad962b1d0fab44539bb3898",
+  "files": {
+    ".gitattributes": {
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+      "bytes": 1519,
+      "method": "downloaded_sha256"
+    },
+    "README.md": {
+      "sha256": "9746fff157217297cfb96ee5802914e8edb66bdc2dd59dfb7331d1b90694527e",
+      "bytes": 1024,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/README.md": {
+      "sha256": "1799a1e3978098e915f686a2ac07f7e2d3d44ebc769532d3304485ebb0417e96",
+      "bytes": 5264,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/adapter_config.json": {
+      "sha256": "6610ade94cff4a84834637485e83c1f66c61abcc44eff237f7a7e0723bc9068c",
+      "bytes": 1226,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/adapter_model.safetensors": {
+      "sha256": "20c845608e1bf08391915c593c9f4e4d2ce7c12894be205ae3a8400d4e1f11b3",
+      "bytes": 692529024,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/checkpoint_complete.json": {
+      "sha256": "e4a8db8b163a296aeaab7eb07679017ccb374811dfa60ad6ea9db48a019e6360",
+      "bytes": 5382,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/optimizer.pt": {
+      "sha256": "142bf79f5afbea0c9d90db0e7dd666616fc46a7cdb869d26a35d6e23748e996e",
+      "bytes": 1385332787,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_0.pth": {
+      "sha256": "c307565759e4b1a5970fe857f1ef7d15b754013d7133f7490e80899c6a0968f8",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_1.pth": {
+      "sha256": "ea74ccc662c4465f79e51067d8b9456097c50ca193ccf7e0393407b1d6cd2ef6",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_10.pth": {
+      "sha256": "9df60e1d4fd14469d427ceb3ca40f1beb6ad0718423c1d1720fd3a406877a2cf",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_11.pth": {
+      "sha256": "293d70998cdfde15e5651d866d8c5c6d5ef3c3b74a11c94b2208a7e290287f21",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_12.pth": {
+      "sha256": "241233da78253f3f3aebe126f00d5c733ed1dc7d2b100d36a9bf42dc735334ac",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_13.pth": {
+      "sha256": "42ff665d9f0bc9ee92588a621cd0abd68e576c8bf0621c93191b0037edcfb2c8",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_14.pth": {
+      "sha256": "3c49447bd1c9de255fd94d81022fff69ad981c77d23c84c9851cafaa55708b65",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_15.pth": {
+      "sha256": "1cabd199081827be18081a7617432a843a17b8af4e7190900b45edf4ba27a8c0",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_16.pth": {
+      "sha256": "8e6d44110c53614349f184c944b9e7e9c9e596cc57aa866d984d1c897068c945",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_17.pth": {
+      "sha256": "b378635972f8933bcd5911f066f09286dc9fcf31d1855e8389f5673423c7c166",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_18.pth": {
+      "sha256": "6940a17912773df1d210ce6de41a77798bb60efcbba728b69ac347a9e0b2f141",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_19.pth": {
+      "sha256": "3669ef6d1fa85f2ea976a6b76251f7ba9ff1a2b70daa5f9730b8890c11aa09f5",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_2.pth": {
+      "sha256": "6f476e9937dd628ce539cafc01e6a0bca362471d1de3b72b0c236f4d14605bef",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_20.pth": {
+      "sha256": "c53976d8e8564d20064fa162a8a631a7bdb5e54df95d161316d7409dafd4bce6",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_21.pth": {
+      "sha256": "2f16b908444c1201b6bcffdfb3f8836be916827593282ac23bdba145a8a97e52",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_22.pth": {
+      "sha256": "5042b24e7f0f1edcbc46e8b87004489776a3860a996525fe77d8fac58fbae06e",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_23.pth": {
+      "sha256": "fa694fbc755f551dd4beceac40a1f925ba55cf6ff28a36d05330c53a8f559b37",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_24.pth": {
+      "sha256": "37b90818152c10a1003a5fa2f4f50cd60c47580278399b92d03439555ec77bb7",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_25.pth": {
+      "sha256": "03dd19c00c524c339f4b69b0d87dc6569bad9f276792734e6df035313e019792",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_26.pth": {
+      "sha256": "f5a738985c47d8691c4dc4ce231006230b3ad64c50a53b639bbecbf41e8ba277",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_27.pth": {
+      "sha256": "52b06f9d35e90a4c87381ae50f6d65bfb0b2f17f616d2e262f6426d6c6fff70d",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_28.pth": {
+      "sha256": "270deb9484102ac07e3ac2ccf98cdbaa715e919155faec2ae06d0d44731f0d31",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_29.pth": {
+      "sha256": "396a6d6c96ae0fe2493826fd27cddd5c5253d42bd0661473fb09ba253b669d9c",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_3.pth": {
+      "sha256": "7b55df11f1789dacf80184f9070af523bf85b32ac7281004ab18fb264158310d",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_30.pth": {
+      "sha256": "da704578fc4a220c278684457b5ba7e55c6f124cbcffac1fff9d7442460ed735",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_31.pth": {
+      "sha256": "e2a062a206916ce52e6b2d095b38f0b73b770621b798c39b0690090d0521e822",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_4.pth": {
+      "sha256": "61cb13f81aa33b82a40e6235a02dff185a3f56d8862035bcf7e04dfe3d48043b",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_5.pth": {
+      "sha256": "a2ccbf256c22a1dde5ef3ae8dc3b264f708af17ec10eb501a251087e505d82e7",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_6.pth": {
+      "sha256": "4d3b5f8725e82110e12cc9f3d4ad008670fe3220ec23f7f369b24370c2c748d9",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_7.pth": {
+      "sha256": "a877ae5a62d34c3ede883d04050e169a3c1fb1000df34f030b5a07c8099dc554",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_8.pth": {
+      "sha256": "ddb3e8680f851b9ce4c65b1226d9fda4ee194dd8ce4fd9523da1c5a69277e2ae",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/rng_state_9.pth": {
+      "sha256": "50f12a48c0fa21d4fc95d008ec5f82148cd71a80c11a1f03c3821bb0cafbb5c8",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/scheduler.pt": {
+      "sha256": "deca4a2a4852c0f8c3f574592dd458efb81a6db7d4bab6b792e134796b4430e8",
+      "bytes": 1337,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/trainer_state.json": {
+      "sha256": "b0be4fdf1632c45e63f7a4131d1efa2f630bd42b0c29b855dff45a571c1fa3d4",
+      "bytes": 735921,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1024/training_protocol.json": {
+      "sha256": "d889ba8a8dbc05b8767fe2182cb62dfa5798d011a899b8eefe443edeec7fa063",
+      "bytes": 6719,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/README.md": {
+      "sha256": "1799a1e3978098e915f686a2ac07f7e2d3d44ebc769532d3304485ebb0417e96",
+      "bytes": 5264,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/adapter_config.json": {
+      "sha256": "6610ade94cff4a84834637485e83c1f66c61abcc44eff237f7a7e0723bc9068c",
+      "bytes": 1226,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/adapter_model.safetensors": {
+      "sha256": "bb19e4ad1d7968d9a72cfbbe717bdc6eaa8909ccfa5934054f827a39e74fb42a",
+      "bytes": 692529024,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/checkpoint_complete.json": {
+      "sha256": "c3b1deab2c75acc6349d23fc23f16a9c623c6fd70eb4bca99418ded10cd5c500",
+      "bytes": 5383,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/optimizer.pt": {
+      "sha256": "2cf1f576e54063fa46086aa841a162dcdac27ff39cdcc1a052df34ccef0887e4",
+      "bytes": 1385332787,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_0.pth": {
+      "sha256": "c451ef6dfbd9be976ec57c4fa70e0398b786731c79ce52b8425089c1def79e78",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_1.pth": {
+      "sha256": "cb8d914a1d7f809ec44875ea889902e4590dee75943517f9da7f57457fcbfe8d",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_10.pth": {
+      "sha256": "d825bc55a4af6cc66a66ba0e18ca9d186d22463963f6a8c5ea8bdeb1f0ec1aae",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_11.pth": {
+      "sha256": "f1937c9b10b9824c2e23e5615601c6d737bb405b52653bf7d208f39e5033a7f9",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_12.pth": {
+      "sha256": "8837e558ed3ff9f0655b0ed9a24cbc571e6a22d8e602379aef8776740e84f80b",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_13.pth": {
+      "sha256": "32b9c18161c2badbbaeaefb39c225defc047a66254a1c13bbe14d672972df9bd",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_14.pth": {
+      "sha256": "9cc96f26dd1a53ad0705dfa4ab41b27724d2a2dfdd5adc14e61003ac3ef048d1",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_15.pth": {
+      "sha256": "e180dfb322d74747ae12df27a55bc16a09d6bb0a455f26922f0502542788a72e",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_16.pth": {
+      "sha256": "ee27edac03ea10512e0fc455cb73da756de4402eebee78ef991e6c87b43cff52",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_17.pth": {
+      "sha256": "298dc76e2ee82caa0e0348792d927554dbaba72873193a99297160e5af09c9ed",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_18.pth": {
+      "sha256": "390336f30bb3f6cc1f417220dff4e3ee7b8afff939a2950b8d6f0b31bdc043f2",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_19.pth": {
+      "sha256": "9d2601be1e8ff78bbe53a62466dbe4bf5c67e082b59b5537d25cf2625cac4a07",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_2.pth": {
+      "sha256": "8570a830b7ae054052041dc31ab45dc9d3dea51fd9e04f0d51723d9a0fbca6b8",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_20.pth": {
+      "sha256": "e63692ff09876fa1e1b479f73607a50ac3e21b2ca635e53c1e197b24b33c8e04",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_21.pth": {
+      "sha256": "006fc73c8bbb901573720d18833373d904a50ddd9b94da8cda69a94cfcc37717",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_22.pth": {
+      "sha256": "7394e1744789dbe08e1f1e113141c59aa92f4eeccd23191bef3eb623c52f8a05",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_23.pth": {
+      "sha256": "fc5c96da2f3cef3cba3e0249b8a75562874a349c8ef7eb284c4e525e1a214ddf",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_24.pth": {
+      "sha256": "715045fea285604087be895cc5d087377c4818ab06e8bf2dab07b35459978776",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_25.pth": {
+      "sha256": "e0685a2a9d81a3b85182d023033cbe19d4a87539364cf045a0b6ff24d2141779",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_26.pth": {
+      "sha256": "22c0b0c9f2e9d69512e501c0ea850279230fb377114b17ac1b3b870dca06f980",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_27.pth": {
+      "sha256": "7ab6453fd78191b2a16f9827923ba19b911de52600bcacd67ee17fcbcdd015d9",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_28.pth": {
+      "sha256": "e45e755428d3e778603ad24587d541cf90fe4b9d03eff7f8c2c4004c78840528",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_29.pth": {
+      "sha256": "cc4bcbf3031fa77fea31e0ff9ad5827b9d3ea81d8538c9aa8f290c71fafcf31b",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_3.pth": {
+      "sha256": "fb8ad54adcc47df565f6cf2e7ec0f932f18f054f318be43847e4e9c8f3b4a47b",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_30.pth": {
+      "sha256": "31ca4315105c3101ec44d5b008964910d9bf32458f694cde825a4bb3ae40eedf",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_31.pth": {
+      "sha256": "3869ccb6de6cc1b8627f6d209f0bf7f7ddb5079f09682e7f0f3bfe47a72cf670",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_4.pth": {
+      "sha256": "ecb6569ab907f2b1c2e0e7bdff6c9ac58fc4e672885313fd61584c00b65159d2",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_5.pth": {
+      "sha256": "b1cefda949e828def9a7177a287c3982c0a2a6f37bd282b580a9db2915d9e17e",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_6.pth": {
+      "sha256": "045028181fa2f7048eabde15cccda031dc6748206397b1779c6e1874dc4c8df6",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_7.pth": {
+      "sha256": "de2c5fe486ec8d057a0b56a8923d60c2adf5e45f1e45bf021ba01a29becd5f88",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_8.pth": {
+      "sha256": "907929fbf10f2822297d1b6cd9660162e0ffd683d73f3ee0f82f933f7c191059",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/rng_state_9.pth": {
+      "sha256": "ade6866de2a847a19addb012eb33e1ff6375031b8a8f359a61bfeb8474c085e9",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/scheduler.pt": {
+      "sha256": "1a276ea9084cd30b62586f1ae55648da0c5aa9ac554d2e10c5b386cbf8179d67",
+      "bytes": 1337,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/trainer_state.json": {
+      "sha256": "53f1396a9a3e9d6a3f5928f67c066ce67d2f531737a8a39b278bc286a8140aa9",
+      "bytes": 1106654,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-1536/training_protocol.json": {
+      "sha256": "d889ba8a8dbc05b8767fe2182cb62dfa5798d011a899b8eefe443edeec7fa063",
+      "bytes": 6719,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/README.md": {
+      "sha256": "1799a1e3978098e915f686a2ac07f7e2d3d44ebc769532d3304485ebb0417e96",
+      "bytes": 5264,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/adapter_config.json": {
+      "sha256": "6610ade94cff4a84834637485e83c1f66c61abcc44eff237f7a7e0723bc9068c",
+      "bytes": 1226,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/adapter_model.safetensors": {
+      "sha256": "04aca1df752811bd594167361168d1678c71244de119eaf562ac6cae2ccf50b2",
+      "bytes": 692529024,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/checkpoint_complete.json": {
+      "sha256": "93dab28f5f272ea9c037e5224c3441cb4b4072e34f09c4b4a5a50b6b369656a7",
+      "bytes": 5380,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/optimizer.pt": {
+      "sha256": "681ae70bcad5fe08a7fe36d85c80d2f229ee813f3942e461424e6f8462e6da2d",
+      "bytes": 1385332787,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_0.pth": {
+      "sha256": "4438e0b3ba91ed3249e2af90d1ba163f6a89d16a81177011b42cbe57ed78656f",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_1.pth": {
+      "sha256": "e0cfcbb5639e1ac45c30eeec60b42d0b9affdc0c987af643a4ce525de50266df",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_10.pth": {
+      "sha256": "3a51523274266b88f0b21f23f0a21aa03e36d0c66deb36ab761f8c8a24b7a2ab",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_11.pth": {
+      "sha256": "26bb78a5bdbc7fbfdd597d7f21e160eb9e61db5cf3432313bb652430784b6767",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_12.pth": {
+      "sha256": "807c34a7e81222903b834963f46f9fde81653d36d61d2cc4775a60e48bd6cba1",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_13.pth": {
+      "sha256": "ad5790681cf12ff30c0526eb9fa181fc5941a238ba0d31b5ff1d1f23e981ce4a",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_14.pth": {
+      "sha256": "e84d9e7f79f0b4aac5a2297e9b6284c64df7e455599e59cb54ff9cb19244f178",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_15.pth": {
+      "sha256": "0542f1060bdd41a0ad2e14112a8da656d528480619fb130bfee59adf1cf2bec5",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_16.pth": {
+      "sha256": "389ad4a9442b9cb0aa305812e0d0798a9789d3dd825cf1465be3edcad11797a8",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_17.pth": {
+      "sha256": "842106d5a08c599bff461faa8b0585c533154ba9617a673df5e77e5956612171",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_18.pth": {
+      "sha256": "06aab5c6687f190df8fa349f065eabad9852549404c2dfe6bb1619792534fbef",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_19.pth": {
+      "sha256": "a310715728491b42324ab75253e5b2a5ab3bcb60d1d17d42d98e76400ea68c32",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_2.pth": {
+      "sha256": "5ae5256e69be919b1c10f4d3298e30eee6deac205b872410fde710e785c42e23",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_20.pth": {
+      "sha256": "cf540d05089939d6b83a800980dc2e395061743735984167546527119ce38326",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_21.pth": {
+      "sha256": "d3583e662d7b3a0b543a10ff5d70f92c934d1fe2aafb71ec28f7322c8c4bd6f5",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_22.pth": {
+      "sha256": "a6e29b64c09214bfb56b58eff8d6df064784368f3f1cd837e9af444499ea7054",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_23.pth": {
+      "sha256": "a10bb8f97ecbe8e0cfc87f3d117aff59126c5fea3de21c84702db1d277a2ed60",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_24.pth": {
+      "sha256": "ad9266d038c09690b9a3597664efaf1905d77e1fbaad453423f5794cf70fdab5",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_25.pth": {
+      "sha256": "84c8ad0d8dd9f97e9fcbce47fa3f8766d5f9837490ef129db2063cf45f2b5f45",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_26.pth": {
+      "sha256": "ea19b9914fa9008bf24958986a1bd7fb1a132bc854b9bebd93044c98e5232a0d",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_27.pth": {
+      "sha256": "8a2d484a81938658c8ad7a50b6742e5f97e802c62d3176e64ba7e47419807291",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_28.pth": {
+      "sha256": "229e2b0e2a609cbe4cbaab12a3b63b0eb80487c1b4ee39a13c8032f5d51567b6",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_29.pth": {
+      "sha256": "4e7369fc51e382a2412dfd31b81b79a38e8e27aad889556fded621dcdc289af9",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_3.pth": {
+      "sha256": "83ab8b9d3cdf24cc79c6c6d8ee298254f5e068e3231af1e55e1232064b438514",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_30.pth": {
+      "sha256": "a458fb2eae973ec8e9e3f3987ef6e367dc540d7714c62c343b2f5679ae4d4693",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_31.pth": {
+      "sha256": "ed7754dc59462164c68da1f1a3cad2d2ce0c8dd9ba92561bb63c9ded3c64dfb8",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_4.pth": {
+      "sha256": "14da0212f8ee86adc69bc4334165d4c7b97fe5d46cf71decc04baf73e79145eb",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_5.pth": {
+      "sha256": "5d745c1ccab031caa22d13245ae396d5389e02e007a7857e2b380288389f5ec0",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_6.pth": {
+      "sha256": "93bd18064c0fcfbe63fd7ef1d74c847a3b71812812c6ee8b213d4df6fdbab4f3",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_7.pth": {
+      "sha256": "d4c9c858278e07190b71a28e1c4815c6c8e6bf23c2d58a473e061f24b407c4e5",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_8.pth": {
+      "sha256": "de3583f4486ede2e9c8e21debf00748f3d14b53c5d220192a7855eecbd2ea9b1",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/rng_state_9.pth": {
+      "sha256": "7f57d61315e058ca097c156170052b1170349b9e4339ba84403988a8018a2c9d",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/scheduler.pt": {
+      "sha256": "7da142967adecd906416311a69b3015db757dcf622c92beaabcb585c3a45b20c",
+      "bytes": 1337,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/trainer_state.json": {
+      "sha256": "9a6d08706581c8ccaebe889f19d746abc0eb0a434d358a1d6372c7e91bf9b5b2",
+      "bytes": 365932,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_mopd/checkpoint-512/training_protocol.json": {
+      "sha256": "d889ba8a8dbc05b8767fe2182cb62dfa5798d011a899b8eefe443edeec7fa063",
+      "bytes": 6719,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/README.md": {
+      "sha256": "1799a1e3978098e915f686a2ac07f7e2d3d44ebc769532d3304485ebb0417e96",
+      "bytes": 5264,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/adapter_config.json": {
+      "sha256": "6610ade94cff4a84834637485e83c1f66c61abcc44eff237f7a7e0723bc9068c",
+      "bytes": 1226,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/adapter_model.safetensors": {
+      "sha256": "f661f727aebf0ec5611dffc6aa31d1469acec01b6f5b2387918800953be9e68b",
+      "bytes": 692529024,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/checkpoint_complete.json": {
+      "sha256": "8fdb2041c1374a8c56212c9138b69c1c78fb15cc4185c9505fa89d4d3cbc16b8",
+      "bytes": 5383,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/optimizer.pt": {
+      "sha256": "fc04a20fab31e758490f18fa38481a16dea720e0823c5235e3d4165683e83bc1",
+      "bytes": 1385332787,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_0.pth": {
+      "sha256": "3cbb9a92d3de7cfe665c179374738940cbcc10a483b73cb87b208022980bb64c",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_1.pth": {
+      "sha256": "335fbc1bdfe889b0fb3de1f54ba7d532363ac4e55f418a957d0e5da14611d7d5",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_10.pth": {
+      "sha256": "dd4cdb3e0a77d1ac8c86d7fa7c4977816a773e73178952f9d36ec1e835db9306",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_11.pth": {
+      "sha256": "1fda3aab8ed34175f2be9d5d992b74d2244f0539762acf7d7c05b3e491c42868",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_12.pth": {
+      "sha256": "867300b45dce59e42346ec5e4453e176232f09c25c4ad46941c954058e7f7809",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_13.pth": {
+      "sha256": "6cd098891639766fda44fa9e0ee94cd94ff7ea9e6e6c154677b74e0819191068",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_14.pth": {
+      "sha256": "c12f16dae97df459861d547485122c726987937bb8936ffb022592bc483c8b62",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_15.pth": {
+      "sha256": "d8a8aa41110a07077d8ad07bd49ec6c3981621d86bc9433e94a3ca6a4bcbe98c",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_16.pth": {
+      "sha256": "a2433c222d436e85db2f821bd77eb4cf6623837128e108f1ab719950c1cccdb4",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_17.pth": {
+      "sha256": "00f9e78cfabc010ed0665b06acaabd9bfb0316e1a99a07016c294df6d3f99859",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_18.pth": {
+      "sha256": "3066fc756e387bc17b893da0261931a013050dc7f2aaadf5fe573316ff81549f",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_19.pth": {
+      "sha256": "503bcc357e51ffb777e2cdb9d51dd668ef3c3a72d52f82df46cf1c7ecb4222a1",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_2.pth": {
+      "sha256": "0e6eabc364ffa476d8f3fe33334670db0e0a0598e919cbd0dcffa1ca9da811ed",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_20.pth": {
+      "sha256": "8d8bf8c2ee7bd516265ffb5ecac0ac0f185f3a53bf04698d24174279dc317237",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_21.pth": {
+      "sha256": "8ead5c6bb60ee568dda504e40c1ac7cce6a74f1a04ed8e666c2c27f1084d8fac",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_22.pth": {
+      "sha256": "01e5188530d9a8614702f55a5c3e99c0c2cfa530012a10d5e5da8766c1ace9e9",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_23.pth": {
+      "sha256": "6eb0b4ca398235365d9a22be7c9c550ec5cddce8bdc8a7a5537d7a7669470863",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_24.pth": {
+      "sha256": "352d4a80a3fb2a477097cb0c56e427de5c9efe16bfc36757d1eeec83af3b5dd6",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_25.pth": {
+      "sha256": "97386d4ac3b6ce850febe5c6ff41f833ff04bb1dc058795da51b38528dbf7f5b",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_26.pth": {
+      "sha256": "db8a773b2816cf612eb6a5712ce53587073cc40dc6b690d81de24b7d201c55bb",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_27.pth": {
+      "sha256": "12061fef1828577b960190a64083880c5e09d13d6ed9ebe4243665c664f73921",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_28.pth": {
+      "sha256": "2e160509e372edc389c1a8d609774a3037feeb8396c0b42a60ea5cf3e2554b0e",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_29.pth": {
+      "sha256": "4c2404bc39855ce252b856eb0044687608848299c06e0da9c1e19577e6a320b9",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_3.pth": {
+      "sha256": "f7a29fba550e603508a65fba759b51219c275910fc7a03d0924f3da317bf2e38",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_30.pth": {
+      "sha256": "df02052059aa71c33040114532784ba575bb9cebf01dfd8621c7d826e2d4216a",
+      "bytes": 14669,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_31.pth": {
+      "sha256": "3151928b0a03f5af2abee4aeaa88da5ece033fdee5badf7ddbe0e147cc4db91d",
+      "bytes": 14733,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_4.pth": {
+      "sha256": "382049a326f9ac67903417466fdace4efef1120fc960d30716c753f54e82638d",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_5.pth": {
+      "sha256": "c1b6f6905dfa74968da11f86934fe623c63a81026dcd82117215ea270a63c453",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_6.pth": {
+      "sha256": "7afbad1d4cf9e66b759f2afd847d05ea2f06d923ad38ec32bc01b69b7f1dc432",
+      "bytes": 14661,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_7.pth": {
+      "sha256": "e0abd08765848853f654de787ebc9bcf612d5db98c67e6b1759c5f389aada3cd",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_8.pth": {
+      "sha256": "b075b56da7d1cc8ccf228ab1b680a478795e3310f0cd885cdcb466697ca1d25c",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/rng_state_9.pth": {
+      "sha256": "484d6b78c72d3e62bc563b0d0dba470afd230b446e82f6e4f4903b8839324125",
+      "bytes": 14725,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/scheduler.pt": {
+      "sha256": "fcf2cd07686ad8517d476e71d9662be3593b2e8a505153a1d45581ffbf0985d4",
+      "bytes": 1337,
+      "method": "hub_lfs_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/trainer_state.json": {
+      "sha256": "92cc258b028a5d981cb68692a2248af879fd0ded7bb8a69748c3fdf030b68d51",
+      "bytes": 1458577,
+      "method": "downloaded_sha256"
+    },
+    "checkpoints/ancestor_repair/checkpoint-2048/training_protocol.json": {
+      "sha256": "99d197c4aaf9e82f653e8bc3fb7eaef38a93921e0ccbf0d2ddd56eefc0fe30d4",
+      "bytes": 5218,
+      "method": "downloaded_sha256"
+    },
+    "evidence/key_checkpoints.json": {
+      "sha256": "eec670ddead73b148b06c920bc95142783a36ab62b2c0ef14817e943a728dcbc",
+      "bytes": 1094,
+      "method": "downloaded_sha256"
+    }
+  },
+  "manifest_sha256": "4e1f97528fd0a1a242a18e295ef12512b610a0c60e2fbe05629f314f46657b87",
+  "key_checkpoints": [
+    {
+      "path": "ancestor_repair/checkpoint-2048",
+      "step": 2048,
+      "adapter_sha256": "f661f727aebf0ec5611dffc6aa31d1469acec01b6f5b2387918800953be9e68b",
+      "final_evaluated_checkpoint": false
+    },
+    {
+      "path": "ancestor_mopd/checkpoint-512",
+      "step": 512,
+      "adapter_sha256": "04aca1df752811bd594167361168d1678c71244de119eaf562ac6cae2ccf50b2",
+      "final_evaluated_checkpoint": false
+    },
+    {
+      "path": "ancestor_mopd/checkpoint-1024",
+      "step": 1024,
+      "adapter_sha256": "20c845608e1bf08391915c593c9f4e4d2ce7c12894be205ae3a8400d4e1f11b3",
+      "final_evaluated_checkpoint": false
+    },
+    {
+      "path": "ancestor_mopd/checkpoint-1536",
+      "step": 1536,
+      "adapter_sha256": "bb19e4ad1d7968d9a72cfbbe717bdc6eaa8909ccfa5934054f827a39e74fb42a",
+      "final_evaluated_checkpoint": false
+    }
+  ],
+  "credential_store_modified": false,
+  "final_model_uploaded": false,
+  "final_quality_accepted": false,
+  "completed": 1793422827.7952569
+}

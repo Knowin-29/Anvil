@@ -1,0 +1,70 @@
+{
+  "state": "four_nodes_32_distinct_A800_devices_launched",
+  "checked": 1793422782.9836807,
+  "task_id": "t-20261031125657-rhdzz",
+  "spec_sha256": "ad69923106cb9dd8d995e8363071867f63fb1c2d887e5a49f1d9d925ae8b1511",
+  "nodes": [
+    {
+      "node": 0,
+      "host": "t-20261031125657-rhdzz-worker-0",
+      "devices": [
+        "0, GPU-6ffd17ac-7fe1-1d82-1dc2-ec4fe1bc7e92, NVIDIA A800-SXM4-80GB, 81920",
+        "1, GPU-a8e0b998-59d6-c4c9-ae89-5189a6c5b39f, NVIDIA A800-SXM4-80GB, 81920",
+        "2, GPU-0934f3f9-93c8-bd89-88f1-97e424465076, NVIDIA A800-SXM4-80GB, 81920",
+        "3, GPU-de6afbf0-970b-6565-8bd6-5c6914d42107, NVIDIA A800-SXM4-80GB, 81920",
+        "4, GPU-35031a0f-4bed-7a9f-daf6-65942b599841, NVIDIA A800-SXM4-80GB, 81920",
+        "5, GPU-a9480063-668b-77d6-0494-7ca2d90bf124, NVIDIA A800-SXM4-80GB, 81920",
+        "6, GPU-7cb80007-3f8c-c16a-39b1-04bbf4173808, NVIDIA A800-SXM4-80GB, 81920",
+        "7, GPU-71b8e879-4960-74fc-7481-255f61c7a8c9, NVIDIA A800-SXM4-80GB, 81920"
+      ],
+      "started": 1793422671.0749922
+    },
+    {
+      "node": 1,
+      "host": "t-20261031125657-rhdzz-worker-1",
+      "devices": [
+        "0, GPU-12d1bab2-3cd9-c80a-b4e8-54eb2f64143c, NVIDIA A800-SXM4-80GB, 81920",
+        "1, GPU-e83cc627-36df-2a73-e13d-eff2b38cb4cd, NVIDIA A800-SXM4-80GB, 81920",
+        "2, GPU-04d8a1f6-5481-7dba-2e44-127e604304ca, NVIDIA A800-SXM4-80GB, 81920",
+        "3, GPU-f775398c-a83d-f9cf-814f-8c11bebb7f5e, NVIDIA A800-SXM4-80GB, 81920",
+        "4, GPU-fe67dc2d-faf4-f753-048a-09fc4d53c7f6, NVIDIA A800-SXM4-80GB, 81920",
+        "5, GPU-4fe31cbc-4ff2-69ba-aac4-6b9f6c8c1a1d, NVIDIA A800-SXM4-80GB, 81920",
+        "6, GPU-0ed25a73-e63b-93fd-f86a-73032cf5af62, NVIDIA A800-SXM4-80GB, 81920",
+        "7, GPU-d9e135c7-bc7f-c86c-40ae-591e466d8c87, NVIDIA A800-SXM4-80GB, 81920"
+      ],
+      "started": 1793422672.6599505
+    },
+    {
+      "node": 2,
+      "host": "t-20261031125657-rhdzz-worker-2",
+      "devices": [
+        "0, GPU-4bc430e7-b6c5-7cab-92f9-d8eba193eea8, NVIDIA A800-SXM4-80GB, 81920",
+        "1, GPU-443d7714-4970-3bb6-2063-0c08f88d67ea, NVIDIA A800-SXM4-80GB, 81920",
+        "2, GPU-6020bd19-f9bc-e9d6-076e-ce65647c199e, NVIDIA A800-SXM4-80GB, 81920",
+        "3, GPU-888d1d29-9222-ddf0-d1df-74765ef4fc30, NVIDIA A800-SXM4-80GB, 81920",
+        "4, GPU-7453ce1a-33ba-7369-9400-a88859a8b8ad, NVIDIA A800-SXM4-80GB, 81920",
+        "5, GPU-6a7d15d9-523f-96b3-c6f9-5e0bce264697, NVIDIA A800-SXM4-80GB, 81920",
+        "6, GPU-f58fa525-ee81-4006-5548-9407792f205d, NVIDIA A800-SXM4-80GB, 81920",
+        "7, GPU-3293a8e8-4970-24f0-aa01-f32fc34c86e9, NVIDIA A800-SXM4-80GB, 81920"
+      ],
+      "started": 1793422672.5877092
+    },
+    {
+      "node": 3,
+      "host": "t-20261031125657-rhdzz-worker-3",
+      "devices": [
+        "0, GPU-68866590-0af6-5120-84aa-3cbf231d102e, NVIDIA A800-SXM4-80GB, 81920",
+        "1, GPU-1962261b-7d47-577f-b81f-6fd05922b0ac, NVIDIA A800-SXM4-80GB, 81920",
+        "2, GPU-4955569f-2a15-c0c7-892c-ad2087269dcf, NVIDIA A800-SXM4-80GB, 81920",
+        "3, GPU-23e45f19-db6c-6ff8-423e-9ba01754184a, NVIDIA A800-SXM4-80GB, 81920",
+        "4, GPU-7dd1ea40-607e-8fd5-35a0-704cfc08c56d, NVIDIA A800-SXM4-80GB, 81920",
+        "5, GPU-9b6938b0-530c-110f-abaf-8226a7a60c4a, NVIDIA A800-SXM4-80GB, 81920",
+        "6, GPU-7115d132-1fcc-81b4-de28-9d59e1dc2f23, NVIDIA A800-SXM4-80GB, 81920",
+        "7, GPU-a84b625e-3574-00ce-5700-52d94fb5ec6f, NVIDIA A800-SXM4-80GB, 81920"
+      ],
+      "started": 1793422670.0728662
+    }
+  ],
+  "committed_training_updates_verified": false,
+  "parent_initialization_binding_verified": true
+}

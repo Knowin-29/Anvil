@@ -1,0 +1,10 @@
+{
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/cli.yaml",
+  "config_sha256": "5f67f3a3f810f39fe425113549c26ad2b7353c2c1898a77100a396d2fe54cfc4",
+  "spec_sha256": "ad69923106cb9dd8d995e8363071867f63fb1c2d887e5a49f1d9d925ae8b1511",
+  "gpus": 32,
+  "time": 1793422613.0875955,
+  "response": {
+    "Id": "t-20261031125657-rhdzz"
+  }
+}

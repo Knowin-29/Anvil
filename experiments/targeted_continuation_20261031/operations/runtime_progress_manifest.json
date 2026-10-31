@@ -1,0 +1,53 @@
+{
+  "created": 1793442680.8245547,
+  "files": [
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/backup_ancestor_checkpoints.py",
+      "copied_as": "operations/backup_ancestor_checkpoints.py",
+      "sha256": "944167f23c8009fcee9f0e24212a7a5071da25137d2640ebbfe89d814727b5df",
+      "bytes": 9174
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/ancestor_checkpoint_backup_20261031/manifest.json",
+      "copied_as": "operations/ancestor_backup_manifest.json",
+      "sha256": "4e1f97528fd0a1a242a18e295ef12512b610a0c60e2fbe05629f314f46657b87",
+      "bytes": 56723
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/ancestor_checkpoint_backup_20261031/verification_receipt.json",
+      "copied_as": "operations/ancestor_backup_receipt.json",
+      "sha256": "2dbb0878006796c747410849d5a3756153d82ff1f8222831eabb843c07e3fa62",
+      "bytes": 36304
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261031/verify_targeted_checkpoint.py",
+      "copied_as": "operations/verify_targeted_checkpoint.py",
+      "sha256": "bf75524972393d87c3c5f29e5c2004a877b0130a76a9460102249ea84c2c6622",
+      "bytes": 10450
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/repair_checkpoint2048_verification.json",
+      "copied_as": "operations/targeted_repair_checkpoint2048_verification.json",
+      "sha256": "ede271a3c23ad438ba6e6ed5a74bbe2aa3aa34d32ad5985d51f21ab8e5b0376d",
+      "bytes": 2601
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/submission.json",
+      "copied_as": "operations/targeted_submission.json",
+      "sha256": "0240cb8d1328da2670f3e1eabe5dad9b0bac456a8d2195fb469928714fa7842f",
+      "bytes": 391
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261031/targeted_initial_launch.json",
+      "copied_as": "operations/targeted_initial_launch.json",
+      "sha256": "8c17490b788de2b903066335453951666a987cc3f4e2e8654029dfe0068759bc",
+      "bytes": 3622
+    },
+    {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/final_report.json",
+      "copied_as": "evidence/parent_final_report.json",
+      "sha256": "489176b858e8688617636c2a4e1014027d23eaf39fc0e61f08e58729e10c3d81",
+      "bytes": 113755
+    }
+  ]
+}
