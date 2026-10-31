@@ -1,0 +1,11 @@
+{
+  "repository": "Knowin-29/Anvil-MOPD-9B",
+  "revision": "8c2cfe01656473bc2766e2e4fb2af619fb36384a",
+  "files": [
+    ".gitattributes",
+    "README.md"
+  ],
+  "weights_present": false,
+  "checked_at": 1793421843.9966598,
+  "credentials_modified": false
+}

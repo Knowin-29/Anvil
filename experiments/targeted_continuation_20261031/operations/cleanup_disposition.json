@@ -1,0 +1,52 @@
+{
+  "schema": "anvil-post-delivery-local-cleanup-policy-v1",
+  "recorded_at": "2026-10-31T12:46:47.206963+08:00",
+  "authorized_by": "User: weights are no longer needed locally after upload; cleanup obsolete weights/logs/data.",
+  "eligibility": [
+    "Final model quality review accepted with complete exact-checkpoint evaluation",
+    "Full merged weights and key checkpoints present at pinned Knowin-29/Anvil-MOPD-9B revision",
+    "Remote sizes and SHA256 match sealed release manifest",
+    "No active cloud or local job depends on deletion candidates",
+    "Preserve compact logs, source code, manifests, lineage and deletion receipts"
+  ],
+  "current_hf_observation": {
+    "repository": "Knowin-29/Anvil-MOPD-9B",
+    "revision": "8c2cfe01656473bc2766e2e4fb2af619fb36384a",
+    "files": [
+      ".gitattributes",
+      "README.md"
+    ],
+    "weights_present": false,
+    "checked_at": 1793421843.9966598,
+    "credentials_modified": false
+  },
+  "currently_eligible_uploaded_weights": [],
+  "completed_parent_checkpoints": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair",
+      "count": 8,
+      "bytes": 16633306542,
+      "disposition": "retain_until_release_remote_verified_and_no_active_dependency"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd",
+      "count": 48,
+      "bytes": 99787596606,
+      "disposition": "retain_until_release_remote_verified_and_no_active_dependency"
+    }
+  ],
+  "retain_now": [
+    "Active parent merged inference model",
+    "Original bases and G/S/A teachers",
+    "All current and ancestor adapters/checkpoints",
+    "Training and validation data",
+    "Failure and coverage logs",
+    "Codex sessions"
+  ],
+  "after_release": [
+    "Remove redundant project-owned local weight copies and checkpoint payloads after dependency checks",
+    "Remove campaign-only downloaded/cache copies whose authoritative source is verified; shared foundation datasets remain outside blanket cleanup"
+  ],
+  "previous_removed_bytes": 386126220000,
+  "new_deletions_this_review": 0
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_monitor_targeted.py",
+    "copied_as": "campaign_monitor_targeted.py",
+    "sha256": "9f5b7004e3b71fdd055a8edd2997f2e3d6e96674db604e040e070c45a8c76ba4"
+  },
+  {
+    "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261031/failure_resume_storage_review_20261031.md",
+    "copied_as": "failure_resume_storage_review_20261031.md",
+    "sha256": "d6ca5d4992211c8b9d92db6f4d08974798e4e8ee1eb09cb84341546b920b6f84"
+  },
+  {
+    "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261031/cleanup_disposition.json",
+    "copied_as": "cleanup_disposition.json",
+    "sha256": "ab19e7ab3048b0aa8af9abee1f6465bcf8d0599349f065a2a42a78ea8374ceed"
+  },
+  {
+    "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261031/hf_inventory_latest.json",
+    "copied_as": "hf_inventory_latest.json",
+    "sha256": "2c7cd5e41ac4c651dd8439809f1f3c082e94fb833ad78ae14b62f267e7611781"
+  }
+]
