@@ -1,0 +1,42 @@
+{
+  "started": 1793444581.301963,
+  "preflight_sha256": "5c93e76ee7f1fdbd5964fdbe6e021a2e4c31e83091667b6f827e687d49af99ed",
+  "removed": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/merged_model/model.safetensors-00001-of-00004.safetensors",
+      "bytes": 5276436248,
+      "inode": 4723683145,
+      "mtime_ns": 1793418334961493418,
+      "derived_sha256": "aa3f4ff14f0a3f93dc590ae73a05c853933453ba576029906a704a963e3afbdc",
+      "base_sha256": "db6f444b43d318c92f360a13a25561a6a65b10c0631b8ed305a426dbaa6c380e"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/merged_model/model.safetensors-00002-of-00004.safetensors",
+      "bytes": 5335161536,
+      "inode": 4723683132,
+      "mtime_ns": 1793418411522077872,
+      "derived_sha256": "3708039c87cba9e45e0726b237c5da1aea3c61ca6f392964a77f916ab66b197d",
+      "base_sha256": "31c7d7e2dd5d207840b31cc59083c8f4c4718959149e0358c0364052bb9a0330"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/merged_model/model.safetensors-00003-of-00004.safetensors",
+      "bytes": 5368717472,
+      "inode": 4731281429,
+      "mtime_ns": 1793418489727564846,
+      "derived_sha256": "070859ac92eac3eb581b236cba01822d351e613e936a9430ed0fdf06e91e9688",
+      "base_sha256": "7ec36ba3a4176a44c3c0876ad80c56a2f70c84bf008d82e9501df642f17dadec"
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/merged_model/model.safetensors-00004-of-00004.safetensors",
+      "bytes": 3325995744,
+      "inode": 4731539922,
+      "mtime_ns": 1793418561062932490,
+      "derived_sha256": "2694efd6a56f6d44e07716762b5d662459bd0ee883f8094b788a6650b9a68d1b",
+      "base_sha256": "b62b0c4cd7e44edee103ee8f4fe225f246d5e768e07bfd5f25b63a8aa1fdd0c6"
+    }
+  ],
+  "bytes_removed": 19306311000,
+  "scope": "Only the four completed-parent derived inference shards; no checkpoint, source dataset, log or server credential removed",
+  "completed": 1793444636.1364217,
+  "frozen_dependencies_preserved": 261
+}
