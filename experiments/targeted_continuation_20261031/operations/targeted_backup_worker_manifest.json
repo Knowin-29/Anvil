@@ -1,0 +1,16 @@
+{
+  "created": 1793443468.094652,
+  "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/backup_targeted_checkpoints.py",
+  "sha256": "b4eaa09a0c504a5c406027ae815a71435a6d13c250fc7b788d55c15906ad11d3",
+  "live_status": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_checkpoint_backup_20261031/status.json",
+  "live_receipts": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_checkpoint_backup_20261031",
+  "key_checkpoints": [
+    "repair/checkpoint-2048",
+    "repair/checkpoint-4096",
+    "mopd/checkpoint-256",
+    "mopd/checkpoint-512",
+    "mopd/checkpoint-768"
+  ],
+  "final_merged_model_publication": false,
+  "final_upload_waits_for_worker_terminal": true
+}
