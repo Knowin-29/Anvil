@@ -1,0 +1,54 @@
+{
+  "state": "key_mopd_checkpoint1024_integrity_verified",
+  "checked_at": "2026-10-31T02:54:59.023912+08:00",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1024",
+  "files": 38,
+  "total_bytes": 2079075975,
+  "all_file_hashes_verified": true,
+  "adapter_tensors_finite": 496,
+  "adapter_changed_since_repair2048": true,
+  "checkpoint_payloads_cpu_loadable": true,
+  "changed_adapter_tensor_count": 496,
+  "gpu_resume_experiment": false,
+  "optimizer_parameters_verified": 173113344,
+  "optimizer_step": 1024,
+  "scheduler_verified": {
+    "step": 1024,
+    "steps": 1536,
+    "schedule": "warmup3%-cosine"
+  },
+  "all32_rng_files_loadable": true,
+  "cuda_rng_blobs_loaded_on_cpu_only": true,
+  "initial_repair_checkpoint_and_spec_binding_verified": true,
+  "finite_training_history": true,
+  "positive_mtd_updates": 512,
+  "committed_exposure_prefix": {
+    "rows": 65536,
+    "all32_rank_prefixes_complete": true,
+    "unique_records": 64773,
+    "unique_image_bindings": 52816,
+    "source_exposures": {
+      "native_distillation": 32768,
+      "fsd": 8192,
+      "vacancy": 8192,
+      "ai2d": 2752,
+      "mask_replay": 4096,
+      "scienceqa": 2752,
+      "prism": 4096,
+      "textvqa": 2688
+    },
+    "rank_order_prefix_sha256": "d566fe0932f95acec0ab434b0497aabba7ec62988ad5ac2445812a50f2710f36",
+    "native_rows": 32768,
+    "teacher_scored_rows": 32768,
+    "native_families": {
+      "G": 10944,
+      "S": 10944,
+      "A": 10880
+    },
+    "teacher_scored_positions": 3266600,
+    "native_rollout_tokens": 3299367,
+    "counts_are_not_dataset_inventory": true
+  },
+  "heldout_quality_verified": false,
+  "weights_uploaded": false
+}

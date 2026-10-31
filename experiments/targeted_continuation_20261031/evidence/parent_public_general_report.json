@@ -1,0 +1,367 @@
+{
+  "schema": "anvil-final-public-general-interim-report-v1",
+  "state": "public_general_complete_native_pending",
+  "checked_at": "2026-10-31T04:11:06.969723+00:00",
+  "final_spec_sha256": "d6920ef5094efb3f9160112bc0967e3bc1712cfea3f0aaaa27eb849c18cc27b6",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
+  "model": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/merged_model",
+  "scorer_sha256": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057",
+  "native_complete": false,
+  "final_quality_accepted": false,
+  "weights_uploaded": false,
+  "artifacts_sha256": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/cv_bench.jsonl": "ba8686b67b7ece2e1caaaaa1aa3a1ef2fbf6d4be1c53072b8b9b4fe15f43b03d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/cv_bench.jsonl": "590f350e32aea6e3b283ac8294a490aafe7d8952323d52bf51ec4c30af3e8bc5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/cv_bench.jsonl": "00ac7a35a336f29c5e8a0a14f027c51691afa1194193f50b7acd10d5f3691c90",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/cv_bench.jsonl": "b32a6a930815b759b8d40062590cd782570288a55dd702b7d96cb43d54f0a596",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/cv_bench.jsonl": "f590f7fb3cde636a0d373f1ccc193fe7ff0bf71dc493e508be9e269026ea440a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/cv_bench.jsonl": "ff88f153cdaa7242b583f40640c11d4e2ec96fa2c8a02920d8c5a00b6caaa606",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/cv_bench.jsonl": "867dfb6231eaba4f2c30f43b78f87acad173e527478cf4f512e4ed925463e669",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/cv_bench.jsonl": "6e9d0349b993993ef4ef2ac4e4e0f0cc6087d5b277a003b86963a12f20c85933",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/embspatial.jsonl": "71045de77a0e2bb0399ff22edeaf7ec6a22a0a4e5187073c8200cb6ec0619abb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/embspatial.jsonl": "981afbf873b0852f50a7be73fe587b4cc33ba023344ba6d3da473aa825fbbbc5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/embspatial.jsonl": "5a96e2cf994007b3ec943e87289d63ede5e0ef359285849ac9b6f492dd6e32bb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/embspatial.jsonl": "c9abe474070f8058c9981ade497e4d2a0306a1eb5d1b23f45714fb437388b8ce",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/embspatial.jsonl": "7d2786cdae4d65ee6ce2df6a905b8788770f27758c633926b2799e7ebe4e435a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/embspatial.jsonl": "eea6ba773f0e7cb132c9c516a241f69973cdb1e6d352bdaf17e75db5af8917b1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/embspatial.jsonl": "22989e111c4aa45d1628339c43d8c128d0d72d8727709b0815e0db098a2d9176",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/embspatial.jsonl": "178fdad1fa1012e385415fc4e79cb82f49a8de4274b9f0b75a4be269163e8a1a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/refspatial_bench.jsonl": "4957db1e0e5f098ee5b66231c5c805776ca711fc7da65275b2ea10d180d50813",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/refspatial_bench.jsonl": "4781632ca44121eec4cbb1a7e92b66ab15c5dff0ac453cba70d86ace06a92453",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/refspatial_bench.jsonl": "e419a45963ce17eb0033068fe4f44f7578a33723c6c625dc3d754da5c808b287",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/refspatial_bench.jsonl": "d9d65e8c5f9941010d80682e6ba46e06ebd451649074d71b0a24a9a7d66beb33",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/refspatial_bench.jsonl": "d55735fb47d8c0d55cf9d39201e304eda7496f8431246772ca11d8cc8d8eb812",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/refspatial_bench.jsonl": "166aa6bde2a85bd6f9d3e34d70df036772ad6f88479683073e6d72ad311df769",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/refspatial_bench.jsonl": "3a1659806a457d54788650631fe12e8af56fb3c589007f2720f4960ea451b480",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/refspatial_bench.jsonl": "efcf85c5d6d2a34527ffdf2a4d0afbdd53427dea1d9eada665adde55c4c14927",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/where2place.jsonl": "c2ad41b43223c6a7d51aa42bb17a62cfa76910725de2711eccbce90641322d64",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/where2place.jsonl": "72b9c7947ab8c25206979767f9a834a8c718d84ef3dcdd04e42611b00c47da46",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/where2place.jsonl": "95777c93c147c6714321e8f6479462ea9a0b892810373744425c527f34111079",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/where2place.jsonl": "725f0bcccd0c5d7fb59b517b2d1896d76bf6978d6eff6cb60f2f0ebc731349df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/where2place.jsonl": "e20af833ed8b071f4fbbd13b0e43a9ef658d8b6a8068f457a9eb74bebdc15314",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/where2place.jsonl": "e21cf42b08d1bc0abb6d97d0bb0fc6902dbf8af20ec8ef59810de684d83a60f0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/where2place.jsonl": "a8f849c368ff26ac49a494d5bd3726faa9a2c25df14bdef8b8b417d867883868",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/where2place.jsonl": "c8bf419e851bb5f207bf3e58241fdb7980bce972496a63a774d6376f0db2dacd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/blink_relative_depth.jsonl": "626f74e57d1ac20957c9fb6e3a7d954cf2fcbbb5721eb8e8ba6f6bc19cbce271",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/blink_relative_depth.jsonl": "c3be684a129a612d20b8a0a15b695b11165eb215a234506dcf6e26b9009b3629",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/blink_relative_depth.jsonl": "a446d31ec58b1b53c170868f8f70dcb68b5210163b9200b331d4f02825acb062",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/blink_relative_depth.jsonl": "f26b2db17e8839df4a9cf9d83b4fe4924182d9adf3949436d6b0e527141c8ef6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/blink_relative_depth.jsonl": "02d5e1e9415dbc7a94b0737028fdf9ab08f8307894d9f16e79ac6c9db04ad584",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/blink_relative_depth.jsonl": "b8b7683ec65b465550908aca74d1289ffd0fa3444994b8effbcbc6a788eb357b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/blink_relative_depth.jsonl": "c5ef2386559c6e13c7a213d80440554f7ad361d693006371b6a67b8f0ff6707d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/blink_relative_depth.jsonl": "45d99d204642c78a3ac17ed29407830ffa69f57a9f37edb0aa8fa3b1a91831d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/erqa.jsonl": "292c952b70d926d46be384fe7eb2fe3a0385e8cb5e1ac44786cf98be022198f9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/erqa.jsonl": "e0434d0d42fa5439e6685882d86c7665b777d30ce1fc9e1c4d8e5bc451f8986f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/erqa.jsonl": "3c523419ba10f256191c7466c55f2673e12ad28478a439cf780f2a42e6dc3450",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/erqa.jsonl": "54d20943ec8b0b0e92c731b4d4d1c203085705d6a74fcbb2784c5fcf90070196",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/erqa.jsonl": "4ab32191f2b63d42e944602d55adc6a5d2d7fa2f0a85abddb2011154d340e4a3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/erqa.jsonl": "18227ef24a21cb6cbe1cf65eee0591719c46fb417507ccfd4de902ff4fcd38b4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/erqa.jsonl": "d9dcb27cac5436edb32ce825bd37fd5bb32967f33b0ffe811b95ad9a47786cd9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/erqa.jsonl": "79eed20826b7beab24b82eca0985acf2acb856b2df9be14041daf04fc013f594",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/vabench_point.jsonl": "d4ae1d08b86af54243c47700735ffa06eb22c0e35ff9d55c8061f124addfdef8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/vabench_point.jsonl": "74c5238b7d51c8014730bdfcb84238d061b96537f7a4469f3e80077fe41bbfd7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/vabench_point.jsonl": "36785dd55c48113345241b083cbadc504efc111a7cdf38c1059a160459791221",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/vabench_point.jsonl": "9d718175ab16db7798b248eda4b78d081c7fc1aa0a5d4e5c8cf6c4a1b886d987",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/vabench_point.jsonl": "ece41a90bc39b390853f5614aadbb142c45110b8e76305cec77972fbc3dc205e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/vabench_point.jsonl": "c3b05b7791258fd6f30ed28613a5469920dd742f392e79b5f9a890de8a904cf4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/vabench_point.jsonl": "3f25d22d8116d34676c422162589143739334d69d22f5e82cf1396e1a7eac0f5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/vabench_point.jsonl": "9472753ae676e08af747a995914a22e4bb7278f849b1de9872db6b6e1c6d1c47",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/0/retention.jsonl": "1f51dadb294dccc5223c9d324e6408cec949f00b4e8452e757c5c322a7c66c8d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/1/retention.jsonl": "a692c7c941f60b6092bdc7d68651ca94b0f7693844ce0823b2c693a664f2292f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/2/retention.jsonl": "ab13cbc3fc1dd7f6862edea9cd6756a86d95c58640369979050394f29050690a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/3/retention.jsonl": "6bd15f4b3fd7296c62edebb8f249acef02a581ac4bdf0a531bc44e0307266376",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/4/retention.jsonl": "7d5a304c9dabeec8b36b97586b3f226fc4818c7e1558aec659ea018dc4c7980d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/5/retention.jsonl": "79fd283b1a8dff5b9b53ad8636891ae19b0fba723db52d210b0d1b1f0b31fe0f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/6/retention.jsonl": "a4ea13aebe7641a797ac3ca1e54e61850aa4ff8894254b034ce5997b83631508",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public/7/retention.jsonl": "192d5d2a55820f86f315cfde208a46363f04ebc3821bf1773c842db1683cd3bb"
+  },
+  "public": {
+    "cv_bench": {
+      "n": 2638,
+      "score": 87.6,
+      "detail": {
+        "per_group": {
+          "2D/Count": {
+            "n": 788,
+            "acc": 73.22
+          },
+          "2D/Relation": {
+            "n": 650,
+            "acc": 96.62
+          },
+          "3D/Depth": {
+            "n": 600,
+            "acc": 96.33
+          },
+          "3D/Distance": {
+            "n": 600,
+            "acc": 88.0
+          }
+        },
+        "n_correct": 2311
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "embspatial": {
+      "n": 3640,
+      "score": 79.34,
+      "detail": {
+        "per_group": {
+          "above": {
+            "n": 596,
+            "acc": 79.87
+          },
+          "close": {
+            "n": 612,
+            "acc": 67.81
+          },
+          "far": {
+            "n": 594,
+            "acc": 64.98
+          },
+          "left": {
+            "n": 616,
+            "acc": 92.69
+          },
+          "right": {
+            "n": 620,
+            "acc": 91.77
+          },
+          "under": {
+            "n": 602,
+            "acc": 78.24
+          }
+        },
+        "n_correct": 2888
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "refspatial_bench": {
+      "n": 277,
+      "score": 48.01,
+      "detail": {
+        "per_group": {
+          "location": {
+            "n": 100,
+            "mean_in_mask": 53.46
+          },
+          "placement": {
+            "n": 100,
+            "mean_in_mask": 46.54
+          },
+          "unseen": {
+            "n": 77,
+            "mean_in_mask": 42.86
+          }
+        },
+        "any_point_hit": 52.35,
+        "points_per_question": {
+          "n": 277,
+          "median": 1,
+          "mean": 2.72,
+          "max": 25,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 277
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 68,
+            "thousandth": 209
+          },
+          "n_ambiguous_under_auto": 68,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "mixed",
+        "referent_by_group": {
+          "location": "object",
+          "placement": "vacancy",
+          "unseen": "mixed"
+        },
+        "by_referent_type": {
+          "mixed": {
+            "n": 77,
+            "mean_in_mask": 42.86
+          },
+          "object": {
+            "n": 100,
+            "mean_in_mask": 53.46
+          },
+          "vacancy": {
+            "n": 100,
+            "mean_in_mask": 46.54
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 10
+    },
+    "where2place": {
+      "n": 100,
+      "score": 58.49,
+      "detail": {
+        "per_group": {
+          "seen": {
+            "n": 70,
+            "mean_in_mask": 58.32
+          },
+          "unseen": {
+            "n": 30,
+            "mean_in_mask": 58.88
+          }
+        },
+        "any_point_hit": 73.0,
+        "points_per_question": {
+          "n": 99,
+          "median": 3,
+          "mean": 3.92,
+          "max": 15,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 99
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 17,
+            "thousandth": 82
+          },
+          "n_ambiguous_under_auto": 17,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "vacancy",
+        "referent_by_group": {}
+      },
+      "parse_failures": 1,
+      "capped": 3
+    },
+    "blink_relative_depth": {
+      "n": 124,
+      "score": 83.87,
+      "detail": {
+        "per_group": {
+          "relative_depth": {
+            "n": 124,
+            "acc": 83.87
+          }
+        },
+        "n_correct": 104
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "erqa": {
+      "n": 287,
+      "score": 49.48,
+      "detail": {
+        "per_group": {
+          "Action Reasoning": {
+            "n": 66,
+            "acc": 45.45
+          },
+          "Other": {
+            "n": 5,
+            "acc": 0.0
+          },
+          "Pointing": {
+            "n": 32,
+            "acc": 56.25
+          },
+          "Spatial Reasoning": {
+            "n": 57,
+            "acc": 49.12
+          },
+          "State Estimation": {
+            "n": 47,
+            "acc": 59.57
+          },
+          "Task Reasoning": {
+            "n": 16,
+            "acc": 81.25
+          },
+          "Trajectory Reasoning": {
+            "n": 64,
+            "acc": 39.06
+          }
+        },
+        "n_correct": 142
+      },
+      "parse_failures": 1,
+      "capped": 0
+    },
+    "vabench_point": {
+      "n": 300,
+      "score": 73.33,
+      "detail": {
+        "per_group": {
+          "point": {
+            "n": 300,
+            "acc": 73.33
+          }
+        },
+        "n_correct": 220,
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 300
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 0
+    }
+  },
+  "general": {
+    "ai2d_test": {
+      "n": 3088,
+      "score": 87.6619170984456,
+      "parse_failures": 0
+    },
+    "scienceqa_test": {
+      "n": 2017,
+      "score": 98.21517104610808,
+      "parse_failures": 0
+    },
+    "textvqa_val": {
+      "n": 5000,
+      "score": 86.53400000000049,
+      "parse_failures": 0
+    }
+  },
+  "paper_aligned_public": {
+    "cv_bench": 87.6,
+    "embspatial": 79.34,
+    "refspatial_bench": 53.46,
+    "where2place": 58.49,
+    "blink_relative_depth": 83.87,
+    "erqa": 49.48,
+    "vabench_point": 73.33
+  },
+  "paper_aligned_macro": 69.36714285714285,
+  "paper_target": {
+    "cv_bench": 88.21,
+    "embspatial": 82.34,
+    "refspatial_bench": 59.0,
+    "where2place": 68.0,
+    "blink_relative_depth": 91.13,
+    "erqa": 50.52,
+    "vabench_point": 80.67
+  },
+  "final_minus_paper_percentage_points": {
+    "cv_bench": -0.6099999999999994,
+    "embspatial": -3.0,
+    "refspatial_bench": -5.539999999999999,
+    "where2place": -9.509999999999998,
+    "blink_relative_depth": -7.259999999999991,
+    "erqa": -1.0400000000000063,
+    "vabench_point": -7.340000000000003
+  },
+  "paper_protocol_note": "RefSpatial Location100; full277 also reported. Historical runtime equivalence is not established."
+}

@@ -1,0 +1,63 @@
+TaskName: task_train_anvil_targeted_continuation_A800x32
+Description: 'Continue parentMOPD1536: balanced repair4096 then genuineMOPD768; full
+  depth replay; complete final evaluation and key checkpoints'
+Entrypoint: 'set -Eeuo pipefail
+
+  export PYTHONDONTWRITEBYTECODE=1
+
+  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/node.py
+  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/spec.json
+  --spec-sha256 ad69923106cb9dd8d995e8363071867f63fb1c2d887e5a49f1d9d925ae8b1511'
+Tags:
+- train
+UserCodePath: ''
+RemoteMountCodePath: ''
+Envs: []
+ResourceQueueID: q-20260718231052-bvqz2
+Framework: Custom
+TaskRoleSpecs:
+- RoleName: worker
+  RoleReplicas: 4
+  Flavor: custom
+  ResourceSpec:
+    Family: ml.hpcpni2l
+    CPU: 105.0
+    Memory: 1875.0
+    GPUNum: 8
+ActiveDeadlineSeconds: 129600
+EnableTensorBoard: false
+Storages:
+- Type: TosFuse
+  MountPath: /knowin-oss
+  Bucket: knowin-oss
+  Prefix: /
+- Type: Vepfs
+  MountPath: /Knowin/foundation
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: foundation
+- Type: Vepfs
+  MountPath: /Knowin/demo
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: demo
+- Type: Vepfs
+  MountPath: /Knowin/sim
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: sim
+ImageUrl: vemlp-cn-beijing.cr.volces.com/preset-images/cuda:13.0.3-py3.12-ubuntu24.04
+CacheType: Cloudfs
+RetryOptions:
+  EnableRetry: false
+  MaxRetryTimes: 5
+  IntervalSeconds: 120
+  PolicySets: []
+  EnableReserveResourceOnRetry: false
+DiagOptions:
+- Name: EnvironmentalDiagnosis
+  Enable: false
+- Name: PythonDetection
+  Enable: false
+- Name: LogDetection
+  Enable: false
+- Name: VecclHangDetection
+  Enable: false
+Priority: 7

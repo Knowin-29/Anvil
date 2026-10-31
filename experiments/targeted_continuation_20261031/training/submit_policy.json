@@ -1,0 +1,25 @@
+{
+  "schema": "anvil-targeted-continuation-submission-v1",
+  "gpus": 32,
+  "spec": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/spec.json",
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/cli.yaml",
+  "trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/public_trigger.json",
+  "parent_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/final_report.json",
+  "parent_evaluation_spec_sha256": "d6920ef5094efb3f9160112bc0967e3bc1712cfea3f0aaaa27eb849c18cc27b6",
+  "parent_jobs": [
+    "t-20261031115815-69g2z",
+    "t-20261031115835-mdw9z",
+    "t-20261031115855-mwgn9",
+    "t-20261031115919-5d4f8"
+  ],
+  "handoff_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_final_handoff.py",
+  "handoff_policy": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/targeted_repair_20261031/policy.json",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_continuation_controller.py": "da1848a83603d44de2a910e4232a77ec4d6b342652b6a75ff8009b85610a73bd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/spec.json": "ad69923106cb9dd8d995e8363071867f63fb1c2d887e5a49f1d9d925ae8b1511",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/cli.yaml": "5f67f3a3f810f39fe425113549c26ad2b7353c2c1898a77100a396d2fe54cfc4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/public_trigger.json": "f4797de6cd7c1b0393604416f74f4d27598b00ff4adb83a0fe222ec9c43a96b5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/targeted_repair_20261031/policy.json": "194f086ea0bedbee7238936e51518bdee2926e5cd8385aeb478552fb62632784",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_final_handoff.py": "116c0601cc3d34e91d645d8558d2e865d8f8c6c59c7a87f2597a2209f13d6d9e"
+  }
+}

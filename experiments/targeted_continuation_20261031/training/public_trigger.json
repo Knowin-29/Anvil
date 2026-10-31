@@ -1,0 +1,62 @@
+{
+  "schema": "anvil-targeted-repair-trigger-v1",
+  "checked_at": "2026-10-31T04:19:22.220516+00:00",
+  "parent_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
+  "parent_adapter_sha256": "bb19e4ad1d7968d9a72cfbbe717bdc6eaa8909ccfa5934054f827a39e74fb42a",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public_general_report.json",
+  "public_general_report_sha256": "29702f009c25b1736bd2bc9f9a359188d206ecee97739711c6be31adaae520b6",
+  "scores": {
+    "cv_bench": 87.6,
+    "embspatial": 79.34,
+    "refspatial_bench": 53.46,
+    "where2place": 58.49,
+    "blink_relative_depth": 83.87,
+    "erqa": 49.48,
+    "vabench_point": 73.33
+  },
+  "paper_targets": {
+    "cv_bench": 88.21,
+    "embspatial": 82.34,
+    "refspatial_bench": 59.0,
+    "where2place": 68.0,
+    "blink_relative_depth": 91.13,
+    "erqa": 50.52,
+    "vabench_point": 80.67
+  },
+  "macro": 69.36714285714285,
+  "deltas": {
+    "cv_bench": -0.6099999999999994,
+    "embspatial": -3.0,
+    "refspatial_bench": -5.539999999999999,
+    "where2place": -9.509999999999998,
+    "blink_relative_depth": -7.259999999999991,
+    "erqa": -1.0400000000000063,
+    "vabench_point": -7.340000000000003
+  },
+  "final_quality_accepted": false,
+  "reason": "Large remaining spatial placement and relative-depth benchmark gaps; complete native evaluation is still running. No scorer/tolerance changes.",
+  "actual_native_exposures_by_form": {
+    "mask": 4937,
+    "direction": 7885,
+    "affordance": 8552,
+    "dof": 4355,
+    "bbox": 4938,
+    "metric_comparison": 7885,
+    "action_cot": 3477,
+    "point": 5961,
+    "relation_graph": 513,
+    "depth_order": 101,
+    "detection": 548
+  },
+  "confirmed_sampling_issue": "Only101 depth_order rows were drawn in49152 native exposures; inventory14849 depth rows was swamped by larger S forms. This is evidence of underrepresentation, not proof it explains every score gap.",
+  "candidate_sampler": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/pool.py",
+  "candidate_sampler_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/sampler_validation.json",
+  "next_required": [
+    "Finish and inspect full native evaluation of the existing candidate.",
+    "Build an isolated substantive corrective trainer from checkpoint1536 using verified train-only data and the balanced sampler; retain QA and full native-generation MOPD.",
+    "Bind fresh configuration, continuation ancestry, final-evaluation handoff and key checkpoint packaging before submission; do not hot-edit live evaluation.",
+    "Keep total campaign allocation at most32GPUs; reevaluate the exact corrected final model completely before accepted release and HF verification."
+  ],
+  "training_launched": false,
+  "historical_warm_start_coverage_invented": false
+}

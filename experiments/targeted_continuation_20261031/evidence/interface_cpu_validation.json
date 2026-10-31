@@ -1,0 +1,59 @@
+{
+  "state": "passed_cpu_only",
+  "static_partitions_1_to_4_nodes": true,
+  "smoke_rejected_as_final": true,
+  "unreviewed_package_rejected": true,
+  "path_escape_rejected": true,
+  "interface_parity": {
+    "native": {
+      "rows": 3008,
+      "mode": "native",
+      "valid_parity": true,
+      "malformed_parity": true,
+      "state": "passed",
+      "package_builder_sha256": "39a475b7bc133c9f77949efc74f013547a66133e77936da1a40a5197575ea23e",
+      "standalone_files_sha256": {
+        "anvil_representation.json": "1ae6d8f18037d2eacdadc48b1e1a3b1796dc346cc80615faf9fcce997d64662e",
+        "anvil_interface.py": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522"
+      },
+      "source_sha256": "179f34f1da803c3d14b233922049cd4141aec6fa215f7aa157712bfc00cdc87c",
+      "gpu_inference_validated": false
+    },
+    "rotation6d": {
+      "rows": 3008,
+      "mode": "rotation6d",
+      "valid_parity": true,
+      "malformed_parity": true,
+      "state": "passed",
+      "package_builder_sha256": "39a475b7bc133c9f77949efc74f013547a66133e77936da1a40a5197575ea23e",
+      "standalone_files_sha256": {
+        "anvil_representation.json": "057b963f939c737313ae605fa6df99ffa35b0366ffb4f2dfc9d682d95ce17062",
+        "dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+        "dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+        "anvil_interface.py": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522"
+      },
+      "source_sha256": "179f34f1da803c3d14b233922049cd4141aec6fa215f7aa157712bfc00cdc87c",
+      "gpu_inference_validated": false
+    },
+    "rotation128": {
+      "rows": 3008,
+      "mode": "rotation128",
+      "valid_parity": true,
+      "malformed_parity": true,
+      "state": "passed",
+      "package_builder_sha256": "39a475b7bc133c9f77949efc74f013547a66133e77936da1a40a5197575ea23e",
+      "standalone_files_sha256": {
+        "anvil_representation.json": "0775ee0552d2006ecf7d304d259a722009ac57de0ef2363bc3ae2c532b20cb7b",
+        "dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+        "dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
+        "dof_codebook_interface.py": "b51e59fb405a9811e423f732e9be61c93bfb23cf8edaf73b6c60f74e3a18d226",
+        "dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+        "anvil_interface.py": "94659e7017e8197228e52b09257d94905e5ea5f40cd200df896dd90b80926522"
+      },
+      "source_sha256": "179f34f1da803c3d14b233922049cd4141aec6fa215f7aa157712bfc00cdc87c",
+      "gpu_inference_validated": false
+    }
+  },
+  "final_gpu_evaluation_not_yet_run": true,
+  "hf_upload_not_attempted": true
+}

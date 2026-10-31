@@ -1,0 +1,15 @@
+{
+  "state": "candidate_sampler_cpu_validated",
+  "checked_at": "2026-10-31T04:18:13.510206+00:00",
+  "sampler_sha256": "4911303d277aa4d5fe519f0f4ec23e194c676de1a352d0119890fc127412a14d",
+  "all_11_native_forms_reachable": true,
+  "original_native_inventory": 4756000,
+  "planned_repair_depth_exposures": 32768,
+  "actual_unique_depth_records_in_planned_schedule": 14849,
+  "unique_depth_images": 781,
+  "train_only_checks_passed": true,
+  "source_annotations_modified": false,
+  "gpu_experiments_run": false,
+  "trainer_and_handoff_preparation_complete": false,
+  "training_launched": false
+}

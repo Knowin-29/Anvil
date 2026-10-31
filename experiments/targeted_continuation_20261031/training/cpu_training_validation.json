@@ -1,0 +1,14 @@
+{
+  "state": "passed_cpu_only",
+  "inherited_loss_implementation_unchanged": true,
+  "resume_prefix_regression_checks_passed": true,
+  "sampler_validation": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/sampler_validation.json",
+    "sha256": "3a3b694e68e7b85fc5f4f9dd38ac6208be62f957c6fe5a2c072b28010886999c"
+  },
+  "full_generation_budgets_preserved": true,
+  "python_syntax_valid": true,
+  "gpu_diagnostic_tasks": 0,
+  "real_training_checkpoint_and_final_quality_not_yet_verified": true,
+  "created": 1793421066.4653287
+}
