@@ -1,0 +1,38 @@
+{
+  "repair": [
+    "sat",
+    "fsd",
+    "sat",
+    "native",
+    "qa",
+    "sat",
+    "vacancy",
+    "mask",
+    "sat",
+    "fsd",
+    "sat",
+    "native",
+    "qa",
+    "grounding",
+    "sat",
+    "depth"
+  ],
+  "mopd": [
+    "native",
+    "sat",
+    "native",
+    "fsd",
+    "native",
+    "grounding",
+    "native",
+    "qa",
+    "native",
+    "depth",
+    "native",
+    "vacancy",
+    "native",
+    "mask",
+    "native",
+    "sat"
+  ]
+}

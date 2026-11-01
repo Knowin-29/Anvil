@@ -1,0 +1,25 @@
+{
+  "state": "passed_cpu_only",
+  "sources": {
+    "sat": {
+      "records_checked": 51322,
+      "file_sha256": "d666e347380ef32d98dd90b35469b1bf8eb4890869ed50f948d75b1f5d2bdd12",
+      "max_text_utf8_bytes": 590,
+      "encoded_first_and_longest": [
+        {
+          "uid": "sat_source_train:5c5e3aa02a4ddba904d85a61152ec00c6dbd5bed9b3690638161ba311ece8a87",
+          "tokens": 309,
+          "target_tokens": 7
+        },
+        {
+          "uid": "sat_source_train:dfe5fc943a4c590e43e8a02922c33962fb6b908e7dbe34801762c4b147ef931c",
+          "tokens": 408,
+          "target_tokens": 31
+        }
+      ]
+    }
+  },
+  "manifest_sha256": "27e15de9a71dd4c069a835c33ad0a04e3872d42d5d1704be127429071158f535",
+  "validator_sha256": "4f1b4b513643b3bb8142a554ca59e7a4f8f9c27c3434fd47af4b9d715c1788f6",
+  "gpu_jobs": 0
+}

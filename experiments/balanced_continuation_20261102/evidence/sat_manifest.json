@@ -1,0 +1,45 @@
+{
+  "schema": "anvil-source-SAT-replay-v1",
+  "state": "verified_train_only",
+  "files": {
+    "sat": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
+      "sha256": "d666e347380ef32d98dd90b35469b1bf8eb4890869ed50f948d75b1f5d2bdd12",
+      "records": 51322,
+      "bytes": 83102654,
+      "unique_images": 13699
+    }
+  },
+  "source_files": {
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_train_internvl.jsonl": "5884624d520b072eb24db7784e51e54987a8d14a1a78eb38fe2b48426be6e84a",
+    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_test_internvl.jsonl": "8fb7c62c1fa1ee1381ba3cbeddb191314490be44b9d8571e298de2978a87429d"
+  },
+  "source_train_records": 80000,
+  "source_test_records": 4000,
+  "counts": {
+    "multi_image_not_supported": 9755,
+    "admitted": 51322,
+    "heldout_or_similar": 18923
+  },
+  "protected_native_images": 17384,
+  "protected_public_general_images": 13519,
+  "protected_source_test_images": 4113,
+  "inputs_manifest_sha256": "220213faf36360fdf425d951effacf0e535484e26ab9ba778fc9edb89f4824b4",
+  "original_export_manifest_sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd",
+  "image_fingerprints_sha256": "d8d0a718e27ff063e8bee37bce33c113621cfb0c8efa4a792671e296ac83ae84",
+  "exclusions_sha256": "1717274a62f0d12d90f6aa994dbb23fd735a9e21b30549948b3bc76ea6c205cb",
+  "source_targets_regenerated": false,
+  "source_answers_unchanged": true,
+  "removed_prompt_suffix": "\nYou FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process and answer are enclosed within <think> </think> and <answer> </answer> tags. The overall format being: <think> reasoning process here </think><answer> answer here </answer>",
+  "evaluation_answers_consumed": false,
+  "original_sft_records": 5220000,
+  "supplemental_not_original_scale": true,
+  "builder_sha256": "2990263acb51166bc7d184cf91288556a58f8a5e66d0edbb19b8f34a19a4125f",
+  "limitations": [
+    "SAT source train/test annotation split is inherited, not newly certified as an official scene split.",
+    "Exact/decoded/perceptual image exclusion does not establish all semantic or scene-level disjointness.",
+    "Source annotation correctness is not independently established for every example."
+  ],
+  "completed": 1793553744.4761102,
+  "elapsed": 150.89516639709473
+}

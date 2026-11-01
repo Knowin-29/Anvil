@@ -1,0 +1,16 @@
+{
+  "schema": "anvil-complete-evaluation-continuation-trigger-v1",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/focus_repair_20261101/evaluation/final_report.json",
+  "public_general_report_sha256": "9a3243b5b8f18d9b268bb6ff404c5cd6a841285e532503f2c54cd7539ed1c6b3",
+  "scores": {
+    "cv_bench": 86.2,
+    "embspatial": 72.86,
+    "refspatial_bench": 57.92,
+    "where2place": 57.87,
+    "blink_relative_depth": 76.61,
+    "erqa": 48.08,
+    "vabench_point": 74.33
+  },
+  "final_quality_accepted": false,
+  "rationale": "Focus branch completed without runtime crash but macro regressed70.1171->67.6957, especially EmbSpatial/BLINK. Branch from stronger MOPD768 parent using lower LR, source-original SAT multi-choice/spatial reasoning, native/FSD/general replay. No new GPU diagnostic arms or scorer changes. Attribution remains uncertain; no metric success guarantee."
+}

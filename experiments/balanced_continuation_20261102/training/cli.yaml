@@ -1,0 +1,63 @@
+TaskName: task_train_anvil_balanced_continuation_A800x32
+Description: MOPD768 parent -> low-LR SAT repair2560 -> genuine MOPD512; retain19
+  key checkpoints, 5 rejected-focus nonancestors
+Entrypoint: 'set -Eeuo pipefail
+
+  export PYTHONDONTWRITEBYTECODE=1
+
+  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/node.py
+  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/spec.json
+  --spec-sha256 1d80ddf325c452386876a246c9d7d2eb49c35e4e8355ccf370bd8613fba64a87'
+Tags:
+- train
+UserCodePath: ''
+RemoteMountCodePath: ''
+Envs: []
+ResourceQueueID: q-20260718231052-bvqz2
+Framework: Custom
+TaskRoleSpecs:
+- RoleName: worker
+  RoleReplicas: 4
+  Flavor: custom
+  ResourceSpec:
+    Family: ml.hpcpni2l
+    CPU: 105.0
+    Memory: 1875.0
+    GPUNum: 8
+ActiveDeadlineSeconds: 42073
+EnableTensorBoard: false
+Storages:
+- Type: TosFuse
+  MountPath: /knowin-oss
+  Bucket: knowin-oss
+  Prefix: /
+- Type: Vepfs
+  MountPath: /Knowin/foundation
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: foundation
+- Type: Vepfs
+  MountPath: /Knowin/demo
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: demo
+- Type: Vepfs
+  MountPath: /Knowin/sim
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: sim
+ImageUrl: vemlp-cn-beijing.cr.volces.com/preset-images/cuda:13.0.3-py3.12-ubuntu24.04
+CacheType: Cloudfs
+RetryOptions:
+  EnableRetry: false
+  MaxRetryTimes: 5
+  IntervalSeconds: 120
+  PolicySets: []
+  EnableReserveResourceOnRetry: false
+DiagOptions:
+- Name: EnvironmentalDiagnosis
+  Enable: false
+- Name: PythonDetection
+  Enable: false
+- Name: LogDetection
+  Enable: false
+- Name: VecclHangDetection
+  Enable: false
+Priority: 7

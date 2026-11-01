@@ -14,7 +14,7 @@ import re
 import time
 
 REPOSITORY = 'Knowin-29/Anvil-MOPD-9B'
-PIPELINE_SPEC_SHA256 = '5e3d25f7d59d2028d2c47bb4b2b433b6da0703994fad38ec464baac45a95e5bc'
+PIPELINE_SPEC_SHA256 = '1d80ddf325c452386876a246c9d7d2eb49c35e4e8355ccf370bd8613fba64a87'
 KEYS = {
     'ancestor_repair/checkpoint-2048',
     'ancestor_mopd/checkpoint-512',
@@ -24,6 +24,8 @@ KEYS = {
     'mopd/checkpoint-256', 'mopd/checkpoint-512', 'mopd/checkpoint-768',
     'focus_repair/checkpoint-4096', 'focus_repair/checkpoint-8192',
     'focus_mopd/checkpoint-128', 'focus_mopd/checkpoint-256', 'focus_mopd/checkpoint-512',
+    'balanced_repair/checkpoint-1280', 'balanced_repair/checkpoint-2560',
+    'balanced_mopd/checkpoint-128', 'balanced_mopd/checkpoint-256', 'balanced_mopd/checkpoint-512',
 }
 
 
@@ -63,7 +65,7 @@ def inventory(manifest, manifest_identity, final, backup):
                 'Final receipt differs from manifest: ' + name)
     keys = backup['key_checkpoints']
     require(len(keys) == len(KEYS) and {k['path'] for k in keys} == KEYS,
-            'All fourteen declared checkpoints are required')
+            'All nineteen declared checkpoints are required')
     for key in keys:
         prefix = 'checkpoints/' + key['path'] + '/'
         names = {name for name in backup['files'] if name.startswith(prefix)}
@@ -86,18 +88,18 @@ def inventory(manifest, manifest_identity, final, backup):
 
 def bind_final_model(manifest, pipeline, pipeline_sha, evaluation, evaluation_sha):
     require(pipeline_sha == PIPELINE_SPEC_SHA256, 'Different frozen training campaign')
-    require(set(pipeline['key_checkpoints']) == KEYS and len(pipeline['key_checkpoints']) == 14,
+    require(set(pipeline['key_checkpoints']) == KEYS and len(pipeline['key_checkpoints']) == 19,
             'Different declared checkpoint inventory')
     require(set(pipeline['key_checkpoint_sources']) == KEYS, 'Missing checkpoint source mapping')
     require(manifest['final_spec_sha256'] == evaluation_sha, 'Different final evaluation')
     require(manifest['files']['evidence/corrective_pipeline_spec.json']['sha256'] == pipeline_sha
             and manifest['files']['evidence/evaluation_spec.json']['sha256'] == evaluation_sha,
             'Packaged specifications differ')
-    expected = Path(pipeline['key_checkpoint_sources']['focus_mopd/checkpoint-512'])
+    expected = Path(pipeline['key_checkpoint_sources']['balanced_mopd/checkpoint-512'])
     require(Path(evaluation['checkpoint']) == expected
             and Path(evaluation['training_run']) == expected.parent,
-            'Evaluated checkpoint is not the completed focus MOPD512')
-    adapter = manifest['files']['checkpoints/focus_mopd/checkpoint-512/adapter_model.safetensors']
+            'Evaluated checkpoint is not the completed balanced MOPD512')
+    adapter = manifest['files']['checkpoints/balanced_mopd/checkpoint-512/adapter_model.safetensors']
     require(manifest['files']['adapter/adapter_model.safetensors']['sha256'] == adapter['sha256'],
             'Final standalone adapter differs from the declared last checkpoint')
     for name, digest in evaluation['model_files'].items():
