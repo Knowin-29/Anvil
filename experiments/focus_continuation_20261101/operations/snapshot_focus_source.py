@@ -26,6 +26,7 @@ def copy(source,relative):
 for suffix in ['*.py','*.json','*.yaml']:
     for source in sorted(N.glob(suffix)):
         if source.name.startswith(('node','controller')) and source.suffix!='.py':continue
+        if re.match(r'(repair|mopd)_checkpoint\d+_verification\.json$',source.name):continue
         if source.name in ['submission_intent.json','capacity.json']:continue
         copy(source,'training/'+source.name)
 for source in sorted((C/'final_delivery_focus_v1').glob('*.py')):copy(source,'delivery/'+source.name)
@@ -70,6 +71,9 @@ Repair saves every 64 updates and MOPD every 32. A sequential backup worker reta
 
 The historical Anvil-Eval 65.35 aggregate cannot currently be reconstructed from the available mapping. Distinct-unit native metrics are reported separately. Validation results have informed the repairs, so the eventual results are not a new blind test. No reproduction claim is made before final review.
 ''')
+if (N/'repair_checkpoint64_verification.json').exists():
+    with (OUT/'README.md').open('a') as stream:
+        stream.write('\nThe first production checkpoint (repair64) passed CPU verification of all 38 payload hashes, 496 finite updated adapter tensors, optimizer/scheduler step 64, all 32 RNG states and all 4,096 committed exposure records. Training continued beyond the save point. This verifies saved state integrity; it is not a resumed GPU experiment or held-out quality result.\n')
 manifest=dict(schema='anvil-focus-source-snapshot-v1',created=time.time(),runtime_root=str(C),files=files,
               live_sources_modified=False,includes_weights_or_source_data=False)
 (OUT/'source_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

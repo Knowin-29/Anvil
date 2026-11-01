@@ -1,6 +1,6 @@
 {
   "schema": "anvil-focus-source-snapshot-v1",
-  "created": 1793498763.1620371,
+  "created": 1793499035.613748,
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028",
   "files": {
     "training/freeze_campaign.py": {
@@ -215,8 +215,8 @@
     },
     "operations/snapshot_focus_source.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/snapshot_focus_source.py",
-      "sha256": "a7d6e1ec5664ed9b8a57e6c4ace83818beef71b975458fa53000dba10e9d7daa",
-      "bytes": 6903
+      "sha256": "6408db1f3a6c30d72ad2a3f2dc4267a13615f425a7d06f203af5ee4e21627184",
+      "bytes": 7489
     },
     "evidence/supplement_manifest.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/manifest.json",
@@ -258,6 +258,11 @@
       "sha256": "57fac7a16dabe1efa6a5ec9ef71a5baf66286de96be3650dbe00996bc17bc695",
       "bytes": 388
     },
+    "evidence/first_production_checkpoint_integrity.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/repair_checkpoint64_verification.json",
+      "sha256": "f3494ec4a7d53c77da43178c61f29dafbb8a66bfb94e3401c6b886b445f7e17d",
+      "bytes": 2538
+    },
     "operations/inference_cleanup_receipt.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/storage_cleanup_20261101/deletion_receipt.json",
       "sha256": "729b8a13794762663a60af643ec7be802765f7acc49cf0c50a8a402db5c953e3",
@@ -270,8 +275,8 @@
     },
     "operations/failure_resume_storage_review.md": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/failure_resume_storage_review_focus.md",
-      "sha256": "a8c79abbd2232c83fe247fb423089b924afd3c0fa24b5a1ae67991213375a8f5",
-      "bytes": 3920
+      "sha256": "fb6712aa4e7eb5b96f390b2d4d7368b7d8d574eda68052fa50210d1686f88f8e",
+      "bytes": 4337
     }
   },
   "live_sources_modified": false,
