@@ -14,6 +14,7 @@ import re
 import time
 
 REPOSITORY = 'Knowin-29/Anvil-MOPD-9B'
+PIPELINE_SPEC_SHA256 = '5e3d25f7d59d2028d2c47bb4b2b433b6da0703994fad38ec464baac45a95e5bc'
 KEYS = {
     'ancestor_repair/checkpoint-2048',
     'ancestor_mopd/checkpoint-512',
@@ -21,6 +22,8 @@ KEYS = {
     'ancestor_mopd/checkpoint-1536',
     'repair/checkpoint-2048', 'repair/checkpoint-4096',
     'mopd/checkpoint-256', 'mopd/checkpoint-512', 'mopd/checkpoint-768',
+    'focus_repair/checkpoint-4096', 'focus_repair/checkpoint-8192',
+    'focus_mopd/checkpoint-128', 'focus_mopd/checkpoint-256', 'focus_mopd/checkpoint-512',
 }
 
 
@@ -60,7 +63,7 @@ def inventory(manifest, manifest_identity, final, backup):
                 'Final receipt differs from manifest: ' + name)
     keys = backup['key_checkpoints']
     require(len(keys) == len(KEYS) and {k['path'] for k in keys} == KEYS,
-            'All nine declared checkpoints are required')
+            'All fourteen declared checkpoints are required')
     for key in keys:
         prefix = 'checkpoints/' + key['path'] + '/'
         names = {name for name in backup['files'] if name.startswith(prefix)}
@@ -81,13 +84,34 @@ def inventory(manifest, manifest_identity, final, backup):
     return expected
 
 
+def bind_final_model(manifest, pipeline, pipeline_sha, evaluation, evaluation_sha):
+    require(pipeline_sha == PIPELINE_SPEC_SHA256, 'Different frozen training campaign')
+    require(set(pipeline['key_checkpoints']) == KEYS and len(pipeline['key_checkpoints']) == 14,
+            'Different declared checkpoint inventory')
+    require(set(pipeline['key_checkpoint_sources']) == KEYS, 'Missing checkpoint source mapping')
+    require(manifest['final_spec_sha256'] == evaluation_sha, 'Different final evaluation')
+    require(manifest['files']['evidence/corrective_pipeline_spec.json']['sha256'] == pipeline_sha
+            and manifest['files']['evidence/evaluation_spec.json']['sha256'] == evaluation_sha,
+            'Packaged specifications differ')
+    expected = Path(pipeline['key_checkpoint_sources']['focus_mopd/checkpoint-512'])
+    require(Path(evaluation['checkpoint']) == expected
+            and Path(evaluation['training_run']) == expected.parent,
+            'Evaluated checkpoint is not the completed focus MOPD512')
+    adapter = manifest['files']['checkpoints/focus_mopd/checkpoint-512/adapter_model.safetensors']
+    require(manifest['files']['adapter/adapter_model.safetensors']['sha256'] == adapter['sha256'],
+            'Final standalone adapter differs from the declared last checkpoint')
+    for name, digest in evaluation['model_files'].items():
+        if name != 'README.md':
+            require(manifest['files'][name]['sha256'] == digest, 'Merged model differs: ' + name)
+
+
 def field(item, key, default=None):
     return item.get(key, default) if isinstance(item, dict) else getattr(item, key, default)
 
 
 def main():
     parser = argparse.ArgumentParser()
-    for name in ('manifest', 'final-receipt', 'backup-receipt', 'output'):
+    for name in ('manifest', 'final-receipt', 'backup-receipt', 'pipeline-spec', 'evaluation-spec', 'output'):
         parser.add_argument('--' + name, type=Path, required=True)
     args = parser.parse_args()
     require(not args.output.exists(), 'Use a new output receipt path')
@@ -95,6 +119,9 @@ def main():
                               (args.manifest, args.final_receipt, args.backup_receipt)]
     expected = inventory(manifest, dict(bytes=args.manifest.stat().st_size,
                          sha256=sha(args.manifest)), final, backup)
+    pipeline = json.loads(args.pipeline_spec.read_text())
+    evaluation = json.loads(args.evaluation_spec.read_text())
+    bind_final_model(manifest, pipeline, sha(args.pipeline_spec), evaluation, sha(args.evaluation_spec))
     token = os.environ.get('ANVIL_HF_TOKEN')
     require(bool(token), 'Provide transient ANVIL_HF_TOKEN')
     from huggingface_hub import HfApi, hf_hub_url
@@ -131,7 +158,7 @@ def main():
                    key_checkpoints=sorted(KEYS), completed=time.time(),
                    credential_store_modified=False, remote_writes_performed=False,
                    evidence_sha256={str(p): sha(p) for p in
-                       (args.manifest, args.final_receipt, args.backup_receipt, Path(__file__))})
+                       (args.manifest, args.final_receipt, args.backup_receipt, args.pipeline_spec, args.evaluation_spec, Path(__file__))})
     with args.output.open('x') as stream:
         json.dump(receipt, stream, indent=2)
         stream.write('\n')

@@ -1,0 +1,42 @@
+{
+  "state": "passed_cpu_only",
+  "sources": {
+    "grounding": {
+      "records_checked": 97674,
+      "file_sha256": "21e003c92f420c6b7890a2ad083261a012a59333fc4a8afa7aaeb042c5f34105",
+      "max_text_utf8_bytes": 359,
+      "encoded_first_and_longest": [
+        {
+          "uid": "refspatial_grounding:136c0f76dfc5aa7a4ad58486bdd4582133456b1c7c778e51d5b347033b929547",
+          "tokens": 234,
+          "target_tokens": 21
+        },
+        {
+          "uid": "refspatial_grounding:9c52c3cbcb54cd66e57e9830685b847fed07a15a0edd62030a25954bc9d484c7",
+          "tokens": 289,
+          "target_tokens": 21
+        }
+      ]
+    },
+    "spatialqa": {
+      "records_checked": 116175,
+      "file_sha256": "24d63bc1dc3591418650270d9e373299a679fb2e06346f439fe0218dea43930d",
+      "max_text_utf8_bytes": 847,
+      "encoded_first_and_longest": [
+        {
+          "uid": "refspatial_spatialqa:368e63c58108dd02c5a0ef52fa5e2f6989677525ceb3807ac95a269d3da0bb46",
+          "tokens": 259,
+          "target_tokens": 27
+        },
+        {
+          "uid": "refspatial_spatialqa:650d1ac9048aac33106eaea4dcf83f9733081c1c7ccccea7c15cf5438c3f1853",
+          "tokens": 385,
+          "target_tokens": 29
+        }
+      ]
+    }
+  },
+  "manifest_sha256": "08179c0c218d33db1b28165bdede50fa27bd97f129a9aa26d963b7f32ece23b8",
+  "validator_sha256": "1fc96d65fec1ab85ac02c611ef6cbc04903071db4e445b06ff58014efd0d95e3",
+  "gpu_jobs": 0
+}

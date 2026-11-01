@@ -1,0 +1,25 @@
+{
+  "schema": "anvil-targeted-continuation-submission-v1",
+  "gpus": 32,
+  "spec": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/spec.json",
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/cli.yaml",
+  "trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/public_trigger.json",
+  "parent_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/targeted_repair_20261031/evaluation/final_report.json",
+  "parent_evaluation_spec_sha256": "4db91418b2e6135f7bcdc3b5090fd2e311f88c26a6ad9b981faf6615df6dbf7c",
+  "parent_jobs": [
+    "t-20261101054208-ggqmg",
+    "t-20261101054227-k6xrx",
+    "t-20261101054246-xbkzr",
+    "t-20261101054306-mf4tc"
+  ],
+  "handoff_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_final_handoff.py",
+  "handoff_policy": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/focus_repair_20261101/policy.json",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_continuation_controller.py": "86fc9f55a4c3b6e6eedb1d00d3ffc3706d92037051540359737822779a654ea1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/spec.json": "5e3d25f7d59d2028d2c47bb4b2b433b6da0703994fad38ec464baac45a95e5bc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/cli.yaml": "9caf139b919634f7237738c56b1f519f24c0653ade1c599dc32d2b5d75f9970b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/public_trigger.json": "7de6b86bc303446bcb72690aeda6ade51e2b1857ce4e38d3fa1e9b0a5a4643e6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/focus_repair_20261101/policy.json": "529e87db6638e6ac79cb1d7cc48e3af2c50b6bfedce6862338b2158068c76b01",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_final_handoff.py": "57fd4a78f68e06bcf96bfd8f59e72262a3af8aae788bae14f0cac7c6196dbdad"
+  }
+}

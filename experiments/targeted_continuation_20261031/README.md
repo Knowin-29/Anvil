@@ -1,5 +1,12 @@
 # Targeted continuation after completed MOPD1536
 
+Completed November 1, 2026: repair4096 and MOPD768 succeeded, followed by full
+native/public/general evaluation. The seven-benchmark macro was 70.1171%, below
+the paper's 74.27%; this candidate was not accepted as final. All nine declared
+checkpoints were remotely verified at `eaf724a6af7f0f5e1c898ae58842de56e43c6962`.
+The [current continuation](../focus_continuation_20261101/README.md) inherits these
+weights. The preparation and earlier progress notes below are historical.
+
 The parent completed all1536 MOPD updates and its complete checkpoint passed payload-hash, adapter, optimizer, scheduler, RNG and exposure checks. Its full seven-benchmark macro was69.3671 against the paper target74.27; the parent is not an accepted final release. Public/general predictions were scored with the unchanged evaluator. The full580000-example native evaluation runs before this continuation is submitted.
 
 Only101 depth-order records appeared in49152 parent native-distillation exposures. The prepared training sampler preserves access to the4756000-record spatial pool, balances all11 native forms, and covers all14849 existing training depth records in dedicated supervised replay. These depth records span781 images; record count is not image count. No annotations or benchmark scores are rewritten.

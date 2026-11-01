@@ -1,0 +1,38 @@
+{
+  "repair": [
+    "vacancy",
+    "grounding",
+    "vacancy",
+    "spatialqa",
+    "native",
+    "qa",
+    "vacancy",
+    "fsd",
+    "vacancy",
+    "mask",
+    "native",
+    "depth",
+    "grounding",
+    "vacancy",
+    "spatialqa",
+    "vacancy"
+  ],
+  "mopd": [
+    "native",
+    "vacancy",
+    "native",
+    "spatialqa",
+    "native",
+    "grounding",
+    "native",
+    "qa",
+    "native",
+    "depth",
+    "native",
+    "vacancy",
+    "native",
+    "mask",
+    "native",
+    "fsd"
+  ]
+}

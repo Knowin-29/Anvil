@@ -30,9 +30,16 @@ provides 5,766,133 annotations from the frozen 5.8M package, including 572,299
 held-out spatial records. The remaining 33,867 records and original image
 bundle are not public. Download metadata and source-specific terms are indexed
 in `registry/datasets.json`; the subset is not the full eleven-form benchmark.
-Full-corpus specialist and joint SFT repair is in progress. Teacher qualification,
-on-policy MOPD, final export and remote weight verification remain outstanding.
-Existing private SFT preparation backups are not public final weights.
+As of November 1, 2026, the full 5,220,000-record SFT and subsequent MOPD
+stages have completed. The latest completed candidate scored 70.1171% on the
+seven-public-benchmark mean against the manuscript's 74.27%; it has not been
+accepted as the final release. A 32-A800 grounding continuation inherits its
+weights and will receive another complete native/public/general evaluation.
+Nine complete intermediate checkpoints have been remotely verified on
+[Knowin-29/Anvil-MOPD-9B](https://huggingface.co/Knowin-29/Anvil-MOPD-9B).
+The current campaign declares fourteen key checkpoints in total; final merged
+weights, quality acceptance and final remote verification remain pending.
+See the [current continuation and evidence](experiments/focus_continuation_20261101/README.md).
 
 This release also preserves legacy mapping-batch metadata filtering in the MOPD
 plugin while retaining strict native-row encoding budgets. The selected CPU

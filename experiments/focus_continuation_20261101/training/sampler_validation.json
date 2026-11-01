@@ -1,0 +1,30 @@
+{
+  "state": "passed_cpu_only",
+  "sampler_sha256": "c9bcf1e09e8c2c434b2f64f22fd6d8635b24b3437b2a291220f127b810aba48b",
+  "boundary_samples_checked": 128,
+  "original_native_inventory": 4756000,
+  "native_forms_reachable": [
+    "depth_order",
+    "point",
+    "direction",
+    "bbox",
+    "metric_comparison",
+    "affordance",
+    "relation_graph",
+    "detection",
+    "dof",
+    "mask",
+    "action_cot"
+  ],
+  "prior_and_planned_vacancy_unique_records": 182878,
+  "prior_and_planned_vacancy_exposures": 251904,
+  "these_are_planned_not_observed_counts": true,
+  "source_admission": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/manifest.json",
+    "sha256": "08179c0c218d33db1b28165bdede50fa27bd97f129a9aa26d963b7f32ece23b8"
+  },
+  "resume_regression_checks_passed": true,
+  "training_losses_unchanged_except_auxiliary_generation_frequency": true,
+  "auxiliary_mask_rollout_every": 8,
+  "gpu_diagnostic_jobs": 0
+}

@@ -1,0 +1,15 @@
+# Grounding continuation from completed MOPD768
+
+Task `t-20261101095411-z67h9` runs on four nodes / 32 A800 80GB GPUs. It inherits the completed MOPD768 adapter, following the earlier MOPD1536 ancestor; the initial 5,220,000-record SFT is not rerun. The new stages use fresh optimizers: repair8192 then genuine on-policy MOPD512, batch 64. The original 5,800,000-record corpus and reachable 4,756,000 native training pool remain unchanged.
+
+The preceding complete evaluation scored 70.1171% on the seven-benchmark macro against the paper target 74.27%. Placement, relative-depth and pointing gaps and weak native geometry prevented final acceptance. Original scores are retained in `evidence/parent_final_report.json`; no score or generation-budget change is used to meet the target.
+
+The added sources contain 97,674 natural-language grounding pairs and 116,175 relative-depth QA pairs, drawn only from the previously admitted training-image set. Their union contains 35,510 images and adds no new images. Source annotations are retained. The source does not establish an official split or independently verified semantic correctness for every annotation. Source-pool inventory and planned exposures are not actual training coverage.
+
+Prior auxiliary mask generation consumed about 5.33 hours while producing zero nonzero unlikelihood updates. The new frozen schedule retains all mask supervised updates and runs auxiliary generation every eighth mask update. Genuine native MOPD rollouts and inference budgets remain unchanged. The original estimate is 12.21 training hours plus queue/loading variation; eight hours are reserved for evaluation and upload before the 2026-11-02 13:48 CST deadline. This is a schedule estimate, not a promised quality result.
+
+Repair saves every 64 updates and MOPD every 32. A sequential backup worker retains the nine previously verified checkpoint paths and appends five distinct `focus_repair/` or `focus_mopd/` paths. Each contains the adapter, optimizer, scheduler and 32 RNG states. Final publication requires all fourteen declared checkpoints, exact-model full evaluation, evidence-backed quality review and pinned remote inventory/checksum verification. Intermediate checkpoint uploads do not constitute final acceptance. Server HF credentials are not changed.
+
+`source_manifest.json` binds this archive to the actual immutable runtime files. The Python sources preserve their runtime layout assumptions and must be used at the documented runtime paths with the recorded dependencies; do not launch this archival copy blindly. CPU contract checks are not GPU or quality validation. Full native/public/general evaluation is automatic after training Success; final quality review remains explicit.
+
+The historical Anvil-Eval 65.35 aggregate cannot currently be reconstructed from the available mapping. Distinct-unit native metrics are reported separately. Validation results have informed the repairs, so the eventual results are not a new blind test. No reproduction claim is made before final review.

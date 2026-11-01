@@ -1,0 +1,16 @@
+{
+  "schema": "anvil-complete-evaluation-continuation-trigger-v1",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/targeted_repair_20261031/evaluation/final_report.json",
+  "public_general_report_sha256": "6fb7c10b0a83bc2c3cd9fb79c3c3669ce601bac1d0f3165f29d68f0caf450462",
+  "scores": {
+    "cv_bench": 87.38,
+    "embspatial": 79.53,
+    "refspatial_bench": 54.57,
+    "where2place": 60.4,
+    "blink_relative_depth": 85.48,
+    "erqa": 49.13,
+    "vabench_point": 74.33
+  },
+  "final_quality_accepted": false,
+  "rationale": "Complete exact-model macro70.1171 vs paper74.27. Where2Place60.40 vs68, BLINK85.48 vs91.13, VA74.33 vs80.67 and RefSpatial Location54.57 vs59 remain material gaps. Full native pointing/mask geometry remains weak. Continue substantive source-grounded training; no invented tolerance or scorer change."
+}

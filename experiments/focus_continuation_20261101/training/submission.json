@@ -1,0 +1,10 @@
+{
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/cli.yaml",
+  "config_sha256": "9caf139b919634f7237738c56b1f519f24c0653ade1c599dc32d2b5d75f9970b",
+  "spec_sha256": "5e3d25f7d59d2028d2c47bb4b2b433b6da0703994fad38ec464baac45a95e5bc",
+  "gpus": 32,
+  "time": 1793498048.3250926,
+  "response": {
+    "Id": "t-20261101095411-z67h9"
+  }
+}
