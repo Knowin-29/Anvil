@@ -312,8 +312,29 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/storage_cleanup_rejected_focus_20261102/preflight.json",
       "sha256": "5147116c2c59bcb5e9b99af03faa58993eb146a7b99a68fd6a773242746df966",
       "bytes": 56980
+    },
+    "operations/finish_balanced_delivery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/finish_balanced_delivery.py",
+      "sha256": "2bd05342c2f42374beaf9fba7648d6efaf5dce827f18c883912f85fbb1e410bb",
+      "bytes": 10934
+    },
+    "operations/test_balanced_publication_gate.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/test_balanced_publication_gate.py",
+      "sha256": "856527bab75ffd85870619ba39c6d652588f30140af37f17edadbe7c06b62a33",
+      "bytes": 2034
+    },
+    "operations/balanced_publication_gate_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/balanced_publication_gate_validation.json",
+      "sha256": "7c005b37e1fb98298c1f577195a5e75c958d28f047462928b94a3b1ae1af127d",
+      "bytes": 744
+    },
+    "operations/balanced_final_release_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/balanced_final_release_policy.json",
+      "sha256": "348c06a5d91c8b116873a8026d474143d89a07c6dbdec4cade071bb8ceb706a5",
+      "bytes": 3963
     }
   },
   "live_sources_modified": false,
-  "includes_weights_or_source_data": false
+  "includes_weights_or_source_data": false,
+  "publication_workflow_added": 1793558904.9243152
 }

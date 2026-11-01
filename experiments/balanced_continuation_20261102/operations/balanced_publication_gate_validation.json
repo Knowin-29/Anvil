@@ -1,0 +1,22 @@
+{
+  "state": "passed_cpu_only",
+  "checks": [
+    "real_rejected_focus_stays_rejected",
+    "synthetic_explicit_bound_acceptance_recognized_not_persisted",
+    "wrong_report_rejected",
+    "wrong_spec_rejected",
+    "missing_benchmark_rejected",
+    "changed_score_rejected",
+    "changed_paper_target_rejected",
+    "partial_native_rejected",
+    "missing_rationale_rejected",
+    "nonbool_acceptance_rejected"
+  ],
+  "synthetic_fixtures": true,
+  "real_accepted_review_written": false,
+  "gpu_work": false,
+  "hub_calls": false,
+  "source_sha256": "2bd05342c2f42374beaf9fba7648d6efaf5dce827f18c883912f85fbb1e410bb",
+  "validator_sha256": "856527bab75ffd85870619ba39c6d652588f30140af37f17edadbe7c06b62a33",
+  "completed": 1793558858.5830085
+}
