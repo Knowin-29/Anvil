@@ -36,7 +36,9 @@ for name in ['focus_continuation_controller.py','focus_final_handoff.py','backup
              'campaign_monitor_focus.py','prepare_refspatial_grounding_20261101.py','cleanup_targeted_inference_20261101.py']:
     copy(C/name,'operations/'+name)
 for name in ['verify_focus_checkpoint.py','verify_entire_focus_hub.py','validate_focus_release_contract.py',
-             'focus_release_contract_validation.json','snapshot_focus_source.py']:
+             'focus_release_contract_validation.json','snapshot_focus_source.py',
+             'preupload_focus_merged_blobs.py','focus_preupload_contract_validation.json',
+             'published_native_metric_review.json']:
     copy(V/name,'operations/'+name)
 for source,relative in [
     (C/'refspatial_grounding_20261101/manifest.json','evidence/supplement_manifest.json'),
@@ -70,6 +72,8 @@ Repair saves every 64 updates and MOPD every 32. A sequential backup worker reta
 `source_manifest.json` binds this archive to the actual immutable runtime files. The Python sources preserve their runtime layout assumptions and must be used at the documented runtime paths with the recorded dependencies; do not launch this archival copy blindly. CPU contract checks are not GPU or quality validation. Full native/public/general evaluation is automatic after training Success; final quality review remains explicit.
 
 The historical Anvil-Eval 65.35 aggregate cannot currently be reconstructed from the available mapping. Distinct-unit native metrics are reported separately. Validation results have informed the repairs, so the eventual results are not a new blind test. No reproduction claim is made before final review.
+
+A separate CPU worker waits for the exact final merged model and all fourteen verified checkpoint backups, then preuploads its four LFS shards during final evaluation. It creates no repository commit or public release. It verifies shard hashes and that the Hub revision/inventory remain unchanged, uses only the transient authorized token, and holds the campaign Hub-writer lock. Final publication must wait for this worker to terminate as well as for quality acceptance.
 ''')
 if (N/'repair_checkpoint64_verification.json').exists():
     with (OUT/'README.md').open('a') as stream:

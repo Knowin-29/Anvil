@@ -14,4 +14,6 @@ Repair saves every 64 updates and MOPD every 32. A sequential backup worker reta
 
 The historical Anvil-Eval 65.35 aggregate cannot currently be reconstructed from the available mapping. Distinct-unit native metrics are reported separately. Validation results have informed the repairs, so the eventual results are not a new blind test. No reproduction claim is made before final review.
 
+A separate CPU worker waits for the exact final merged model and all fourteen verified checkpoint backups, then preuploads its four LFS shards during final evaluation. It creates no repository commit or public release. It verifies shard hashes and that the Hub revision/inventory remain unchanged, uses only the transient authorized token, and holds the campaign Hub-writer lock. Final publication must wait for this worker to terminate as well as for quality acceptance.
+
 The first production checkpoint (repair64) passed CPU verification of all 38 payload hashes, 496 finite updated adapter tensors, optimizer/scheduler step 64, all 32 RNG states and all 4,096 committed exposure records. Training continued beyond the save point. This verifies saved state integrity; it is not a resumed GPU experiment or held-out quality result.

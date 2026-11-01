@@ -1,6 +1,6 @@
 {
   "schema": "anvil-focus-source-snapshot-v1",
-  "created": 1793499035.613748,
+  "created": 1793500875.324478,
   "runtime_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028",
   "files": {
     "training/freeze_campaign.py": {
@@ -215,8 +215,23 @@
     },
     "operations/snapshot_focus_source.py": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/snapshot_focus_source.py",
-      "sha256": "6408db1f3a6c30d72ad2a3f2dc4267a13615f425a7d06f203af5ee4e21627184",
-      "bytes": 7489
+      "sha256": "a6b29867a77cf5d2060cefc2d4a31358586c8a5324d5bbc1ee7586f68bd8352e",
+      "bytes": 8105
+    },
+    "operations/preupload_focus_merged_blobs.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/preupload_focus_merged_blobs.py",
+      "sha256": "7eb715f4a721f8e32f3cf00ff7ef10648bd8156b5be67ff193f7dc9d9c92dea7",
+      "bytes": 10580
+    },
+    "operations/focus_preupload_contract_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/focus_preupload_contract_validation.json",
+      "sha256": "17e5b3f7a88a1a6756cfb7296647ce60a3e2fe353efbeeaf942a01cb911f4784",
+      "bytes": 471
+    },
+    "operations/published_native_metric_review.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/published_native_metric_review.json",
+      "sha256": "1b49d94a1ceab1a9948be206de67c32b62e7746427db65d3af54824fbfed799b",
+      "bytes": 1381
     },
     "evidence/supplement_manifest.json": {
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/manifest.json",

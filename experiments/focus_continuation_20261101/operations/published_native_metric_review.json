@@ -1,0 +1,45 @@
+{
+  "state": "native_scalar_mapping_still_unresolved_in_published_material",
+  "checked_at": "2026-11-01T02:40:34.998622+00:00",
+  "publication": "arXiv:2610.21882v1",
+  "publication_date": "2026-10-15",
+  "sources": [
+    "https://arxiv.org/abs/2610.21882",
+    "https://arxiv.org/html/2610.21882",
+    "https://arxiv.org/src/2610.21882v1"
+  ],
+  "published_aggregation": {
+    "native_records": 580000,
+    "record_weighted": true,
+    "malformed_missing_incomplete_score": 0,
+    "score_range": [
+      0,
+      100
+    ],
+    "paper_value": 65.35,
+    "per_form_bounded_function_mapping_found": false
+  },
+  "source_archive": {
+    "bytes": 4397524,
+    "sha256": "2b1ecc876619cd412d093c6dbca210605a6a82222c8c280653a9e669f2c52bac",
+    "archive_members": 34,
+    "common_code_data_extension_candidates": [
+      {
+        "name": "00README.json",
+        "bytes": 483
+      }
+    ],
+    "candidate_extensions_checked": [
+      "py",
+      "json",
+      "yaml",
+      "yml",
+      "csv",
+      "tsv",
+      "ipynb"
+    ]
+  },
+  "conclusion": "Published appendix C supplies the record-weighted formula but not a unique per-form normalization/threshold mapping. It agrees with the local manuscript. Preserve separate native metrics and the unresolved comparison; do not synthesize a 65.35-comparable scalar.",
+  "evaluation_code_modified": false,
+  "additional_gpu_jobs": false
+}

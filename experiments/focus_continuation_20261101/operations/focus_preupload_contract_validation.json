@@ -1,0 +1,16 @@
+{
+  "state": "passed",
+  "checks": [
+    "complete_fixture_identity_accepted",
+    "old_candidate_rejected",
+    "missing_key_backup_rejected",
+    "wrong_final_step_rejected",
+    "partial_evaluation_scope_rejected"
+  ],
+  "synthetic_contract_fixtures": true,
+  "network_calls": false,
+  "gpu_work": false,
+  "actual_final_model_verified": false,
+  "completed": 1793500710.0492284,
+  "source_sha256": "7eb715f4a721f8e32f3cf00ff7ef10648bd8156b5be67ff193f7dc9d9c92dea7"
+}
