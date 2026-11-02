@@ -267,8 +267,44 @@
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/manifest.json",
       "sha256": "27e15de9a71dd4c069a835c33ad0a04e3872d42d5d1704be127429071158f535",
       "bytes": 2540
+    },
+    "operations/cleanup_completed_balanced_inference_20261102.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/cleanup_completed_balanced_inference_20261102.py",
+      "sha256": "52a021c9618a35fe2e904aa1999e9686fc85636deff8f11b14f6081771cb9c9c",
+      "bytes": 7368
+    },
+    "operations/completed_parent_cleanup_receipt.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/storage_cleanup_balanced_inference_20261102/deletion_receipt.json",
+      "sha256": "0a5a97730a1616b514bd3829b8f45db8f050c327636ebe84938ebae1cb875d16",
+      "bytes": 2255
+    },
+    "operations/completed_parent_cleanup_preflight.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/storage_cleanup_balanced_inference_20261102/preflight.json",
+      "sha256": "974a5de6a3922c662ead4f5db0b47738c639a3f3f79b926e1b768654e1be4748",
+      "bytes": 59059
+    },
+    "operations/test_cleanup_verified_grounded_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/test_cleanup_verified_grounded_weights.py",
+      "sha256": "e690e758c92cafdbfae889ee84466f4754d60e146bd137ca5771b70794705e6e",
+      "bytes": 7404
+    },
+    "operations/grounded_cleanup_boundary_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/grounded_cleanup_boundary_validation.json",
+      "sha256": "706f5cdb2d2cec513600c1fae71e600a33ef97756559be6844b3670aa8e53eae",
+      "bytes": 324
+    },
+    "operations/watch_grounded_until_key_backup.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/watch_grounded_until_key_backup.py",
+      "sha256": "9cb870d2f572e97a258948b7cab42db9c8e7ce76f10a767cd481cddc4bcffcde",
+      "bytes": 2816
+    },
+    "evidence/first_production_checkpoint_integrity.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/repair_checkpoint64_verification.json",
+      "sha256": "d735aea9219f80272f92fa523cd4f731fe59c810a2e1cdd48dae0ddceb6d17d4",
+      "bytes": 2373
     }
   },
   "includes_weights_or_source_data": false,
-  "live_sources_modified": false
+  "live_sources_modified": false,
+  "updated": 1793601202.3151329
 }

@@ -1,0 +1,9 @@
+{
+  "state": "passed_cpu_only",
+  "checks": 10,
+  "temporary_files_only": true,
+  "actual_cleanup_executed": false,
+  "source_sha256": "54f6614c682dffa0daa12d28a5dd49982eddec7578c4e475248d02b8585e49bd",
+  "test_sha256": "e690e758c92cafdbfae889ee84466f4754d60e146bd137ca5771b70794705e6e",
+  "completed": 1793601056.0798116
+}

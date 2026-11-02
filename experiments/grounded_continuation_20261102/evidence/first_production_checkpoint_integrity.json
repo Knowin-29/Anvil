@@ -1,0 +1,73 @@
+{
+  "state": "grounded_checkpoint_integrity_verified",
+  "checked_at": "2026-11-02T06:22:48.701265+00:00",
+  "stage": "repair",
+  "step": 64,
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/repair/checkpoint-64",
+  "spec_sha256": "47d0f55e3948fc0c77a418373177d18d00bb18b443e986746d6a9d8dc6fe2062",
+  "files": 38,
+  "total_bytes": 2078383630,
+  "all_file_hashes_verified": true,
+  "adapter_tensors_finite": 496,
+  "changed_adapter_tensor_count": 496,
+  "optimizer_parameters_verified": 173113344,
+  "optimizer_step": 64,
+  "scheduler_verified": {
+    "step": 64,
+    "steps": 8192,
+    "schedule": "warmup3%-cosine"
+  },
+  "initial_adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-512",
+  "initial_adapter_sha256": "345278a456e3c03a165bdc0e6c6dea87e49c999cd71553f40493793a1ccd60c4",
+  "all32_rng_files_loadable": true,
+  "cuda_rng_blobs_loaded_on_cpu_only": true,
+  "gpu_resume_experiment": false,
+  "finite_committed_training_history": true,
+  "positive_mtd_updates": 0,
+  "committed_exposure_prefix": {
+    "rows": 4096,
+    "all32_rank_prefixes_complete": true,
+    "unique_records": 4096,
+    "unique_image_bindings": 4021,
+    "source_exposures": {
+      "vacancy": 1536,
+      "grounding": 768,
+      "sat": 512,
+      "original_native": 512,
+      "ai2d": 192,
+      "fsd": 256,
+      "scienceqa": 192,
+      "textvqa": 128
+    },
+    "source_unique_records": {
+      "vacancy": 1536,
+      "grounding": 768,
+      "sat": 512,
+      "original_native": 512,
+      "ai2d": 192,
+      "fsd": 256,
+      "scienceqa": 192,
+      "textvqa": 128
+    },
+    "source_unique_image_bindings": {
+      "vacancy": 1536,
+      "grounding": 768,
+      "sat": 499,
+      "original_native": 495,
+      "ai2d": 192,
+      "fsd": 256,
+      "scienceqa": 185,
+      "textvqa": 128
+    },
+    "rank_order_prefix_sha256": "d828e5b68a6409d43c7ceca90a10a0b696c1f9eac9db2833cc2a4e7599b25e29",
+    "native_rows": 0,
+    "native_forms": {},
+    "native_families": {},
+    "teacher_scored_rows": 0,
+    "teacher_scored_positions": 0,
+    "native_rollout_tokens": 0,
+    "counts_are_not_dataset_inventory": true
+  },
+  "verification_script_sha256": "b5839c7e84b4b4e4c2c8dfc6cb8132f73e6fdf8e86bb8db0e18f28aa9fd1ba67",
+  "heldout_quality_verified": false
+}
