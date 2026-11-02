@@ -1,0 +1,31 @@
+{
+  "schema": "anvil-reviewed-final-delivery-v1",
+  "pipeline_spec_sha256": "47d0f55e3948fc0c77a418373177d18d00bb18b443e986746d6a9d8dc6fe2062",
+  "key_checkpoints": 23,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/finish_grounded_delivery.py": "df127e1bba9db0a91a250ba900f4400ca81e78ab2ab579fdca13758d94db3ddc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/verify_entire_grounded_hub.py": "1e883c9a9e7a3ba4a5a46797d872dd70f8ad4299b806be83ba15f6ee332bf3af",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/grounded_publication_gate_validation.json": "409dc8c54c03567ac305e004e849ab94492e0fc3ab4400621aee3e544b057bae",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py": "5225136ba8d3fede9ae33992609de9791984eeb34f61201c8da57cbdddfabb4a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/controller.py": "30a5b9f48073408a20ac02a0784a15cb9c56a18f00499d04d3b9af6523071fbb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/policy.json": "fa1e42ab1585b06dbc2e9352ed89a489ca083187c7ac36fe178a3839d1665db0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/upload.py": "59495c9a7b0f4f0b934b3651ee28daa1046a09964034ad21cd9fb98f250b9aa1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/prepare.py": "a6fde2f30fff08f56c631c6fa734ea79a178113bac83647f0a95a116f81c2259",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/validate_cpu.py": "ab39d805599e88fd0421d46464163f2a5c331bbe924c8844542e496cac8355d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/package.py": "2bc4aa6ff19feadea0ce70752fd2a4632ecf796021c4d628666c1ec3965c9919",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/lineage.py": "7e7cd96116d56dee8dd87fd190d445bf1d84459b1c600c324a0134d895018e3a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/node.py": "bd65787fe913df9a62990b86802a307a5c46619d7afe9dbb0247cd829f471710",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/common.py": "6f03638e791283896532017afd410b0f4465625887a1708bd79dec21d68fa6ba",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/public_worker.py": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/score.py": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/merge.py": "6053ec6e4ce132d615b894f0173074111323bbd450f68392a44bb32e33537ef7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/initialization_lineage.py": "b1828717ef0be8a9c1ce14bfb6847bfa79b6a66625efb560d570f20691b99502",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/configs.py": "cbe50c30937eacdd876a8aed2ea07470b5ff1a7f3e103683b375bd0f4313e833",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/native_worker.py": "9bce9d1ac52ff6f4cd6fe79f57c0c44fcf87a1f9695e2d35e7b243c6999a3879",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_grounded_v1/exposure_audit.py": "61b2cf552d70eb0865fe90ab5ae4351df85c534460f09f833e8ce30c9766bac0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/grounded_release_contract_validation.json": "ab8a0515e3dde11671fb481be0df559171f927970ef84a0864aadd1d83839b4d"
+  },
+  "quality_decision_automated": false,
+  "cleanup_automated": false,
+  "created": 1793600093.7719703
+}

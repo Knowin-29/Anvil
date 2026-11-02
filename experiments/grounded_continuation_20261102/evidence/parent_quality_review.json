@@ -1,0 +1,48 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "accepted": false,
+  "report_sha256": "9ee8d2014a2640a483f13b62244a6a95d5d798457e5fb040dacc5544200411f9",
+  "final_spec_sha256": "535ad039c82e0c33d3bd4a72db645cb15ffa51c53c3727baf0a91fdefd380768",
+  "rationale": "Full exact-model evaluation completed. Public macro70.442857 exceeds parent70.117143, with CV-Bench89.08 and ERQA51.57 above paper and retained general scores. However Where2Place58.18 vs68.00, VABench-point72.67 vs80.67 and RefSpatial Location53.08 vs59.00 remain material localization/placement gaps. Do not declare the requested final quality achieved. Preserve this stronger model as the continuation parent, all19 verified checkpoint backups, and complete evaluation. Continue with existing admitted grounding/vacancy/FSD annotations, lower learning rate and native/SAT/general replay. No unique causal attribution or invented numeric acceptance cutoff.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 89.08,
+      "paper": 88.21,
+      "difference_pp": 0.8700000000000045
+    },
+    "embspatial": {
+      "score": 79.81,
+      "paper": 82.34,
+      "difference_pp": -2.530000000000001
+    },
+    "refspatial_bench": {
+      "score": 53.08,
+      "paper": 59.0,
+      "difference_pp": -5.920000000000002
+    },
+    "where2place": {
+      "score": 58.18,
+      "paper": 68.0,
+      "difference_pp": -9.82
+    },
+    "blink_relative_depth": {
+      "score": 88.71,
+      "paper": 91.13,
+      "difference_pp": -2.4200000000000017
+    },
+    "erqa": {
+      "score": 51.57,
+      "paper": 50.52,
+      "difference_pp": 1.0499999999999972
+    },
+    "vabench_point": {
+      "score": 72.67,
+      "paper": 80.67,
+      "difference_pp": -8.0
+    }
+  },
+  "native_scope_complete": true,
+  "general_scope_complete": true,
+  "original_deadline_missed": true,
+  "reviewed_at": "2026-11-02T06:07:55.371334+00:00"
+}

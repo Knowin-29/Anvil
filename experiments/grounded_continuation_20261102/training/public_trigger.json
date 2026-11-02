@@ -1,0 +1,16 @@
+{
+  "schema": "anvil-complete-evaluation-continuation-trigger-v1",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
+  "public_general_report_sha256": "9ee8d2014a2640a483f13b62244a6a95d5d798457e5fb040dacc5544200411f9",
+  "scores": {
+    "cv_bench": 89.08,
+    "embspatial": 79.81,
+    "refspatial_bench": 53.08,
+    "where2place": 58.18,
+    "blink_relative_depth": 88.71,
+    "erqa": 51.57,
+    "vabench_point": 72.67
+  },
+  "final_quality_accepted": false,
+  "rationale": "Current full evaluation macro70.442857 with retained general ability, but material RefSpatial53.08/59, Where2Place58.18/68, VABench72.67/80.67 localization/placement gaps. Cover all existing admitted grounding97674, vacancy182878 and FSD29448 records with lower repair LR2e-6. Preserve native, SAT and general replay. Then genuine MOPD256 at2.5e-7, all11 forms and original generation budgets. Existing training annotations unchanged; no benchmark answers or evaluator changes. No guaranteed improvement."
+}

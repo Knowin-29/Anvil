@@ -1,0 +1,12 @@
+{
+  "checked_at": 1793599841.030758,
+  "revision": "8eb2eead706097d838ac61e349c4121e25e5436b",
+  "repository": "Knowin-29/Anvil-MOPD-9B",
+  "keys": 19,
+  "remote_files": 763,
+  "manifest_files": 762,
+  "lfs_metadata_hashes_verified": 665,
+  "method": "Remote size and LFS SHA256 against completed backup manifest; small content hashes use existing complete receipt",
+  "final_model_published": false,
+  "credential_store_modified": false
+}
