@@ -1,0 +1,21 @@
+{
+  "state": "passed",
+  "checks": [
+    "complete_31_checkpoint_fixture_passes",
+    "missing_thirty_first_checkpoint_rejected",
+    "missing_rng_state_rejected",
+    "changed_checkpoint_after_backup_rejected",
+    "unaccepted_release_rejected",
+    "wrong_final_stage_rejected",
+    "changed_merged_model_rejected",
+    "changed_packaged_pipeline_rejected",
+    "unexpected_old_remote_payload_rejected"
+  ],
+  "cpu_only": true,
+  "synthetic_contract_fixtures": true,
+  "final_release_verified": false,
+  "training_quality_assessed": false,
+  "completed": 1793713929.3518,
+  "verifier_sha256": "c1f787723c4e10e5e7213432c50f2ff2c5c235ff5bc8914334f367bf55caf2e4",
+  "script_sha256": "e6ddf8a3f56409cb356f255a18340880368f7649b91551f0a6ff0fbafe595fa7"
+}

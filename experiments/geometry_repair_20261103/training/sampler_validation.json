@@ -1,0 +1,58 @@
+{
+  "state": "candidate_full_repair_sampler_cpu_validated",
+  "candidate_submitted": false,
+  "gpu_jobs": 0,
+  "records_checked": 262144,
+  "role_exposures": {
+    "mask": 65536,
+    "prism": 32768,
+    "grounding": 32768,
+    "native": 32768,
+    "affordance": 16384,
+    "sat": 32768,
+    "qa": 16384,
+    "vacancy": 16384,
+    "fsd": 16384
+  },
+  "form_exposures": {
+    "mask": 68480,
+    "dof": 35712,
+    "point": 68544,
+    "depth_order": 3008,
+    "affordance": 19392,
+    "QA": 49152,
+    "direction": 3008,
+    "bbox": 3008,
+    "metric_comparison": 3008,
+    "relation_graph": 2944,
+    "detection": 2944,
+    "action_cot": 2944
+  },
+  "unique_records_per_role": {
+    "mask": 65536,
+    "prism": 16544,
+    "grounding": 32768,
+    "native": 32226,
+    "affordance": 5907,
+    "sat": 32768,
+    "qa": 16384,
+    "vacancy": 16384,
+    "fsd": 16384
+  },
+  "all11_native_forms_retained": true,
+  "all16544_admitted_prism_records_reachable": true,
+  "all5907_admitted_affordance_records_reachable": true,
+  "mopd_schedule_unchanged": true,
+  "elapsed_seconds": 598.05513048172,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/pool.py": "b5aab4a26abee33bfd9921b12792aba5c88f4c45c1f1d510aeb78e0bcafc8c02",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/point_contracts.py": "cf5bf8a374d08dee81ca8b0a12b3275fc090e866afa435ef5df335510a000c71",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/sampling_config.json": "a5d2aa778c735d337545af664860168cf0cb9945f919bca15e7be34f730e5fb1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/validate_sampler.py": "18c6888c82758a3b950f303fa24579dfc7b10d5ecf4f8e1ffb5b63bbf9b4a0ab"
+  },
+  "limitations": [
+    "Coverage does not establish quality improvement.",
+    "No GPU execution or extra diagnostic task.",
+    "Training, submission, checkpoint-backup and final-delivery bindings still need preparation before launch."
+  ]
+}

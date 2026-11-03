@@ -1,0 +1,16 @@
+{
+  "schema": "anvil-complete-evaluation-continuation-trigger-v1",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/evaluation/final_report.json",
+  "public_general_report_sha256": "71e8fbcf8c60c861d1ce64e36f45eb8cffa40a1968057380b8c78549261e122b",
+  "scores": {
+    "cv_bench": 88.89,
+    "embspatial": 80.96,
+    "refspatial_bench": 60.81,
+    "where2place": 71.17,
+    "blink_relative_depth": 86.29,
+    "erqa": 51.92,
+    "vabench_point": 74.33
+  },
+  "final_quality_accepted": false,
+  "rationale": "Continue the exact format MOPD256 parent after full580000 native,7366public and10105general evaluation. Public macro73.481429 vs paper74.267143 is close, but native maskIoU.158590, affordanceIoU.126352 and DoFrotation111.553995deg remain weak. Previous format repair had5952 exposures each of mask/affordance/DoF and no dedicated expanded-PRISM sampling. Repair4096 at5e-6 allocates65536 direct mask,32768 PRISM covering all16544 admitted rows,16384 affordance covering all5907 rows, plus balanced all11 native forms, unchanged point-format grounding/vacancy/FSD, SAT and general QA replay. Then genuine MOPD256 with all11 forms, existing objective/teachers and generation budgets. Exact-length indexed reads avoid shared-filesystem read amplification without changing selected records or annotations. Coverage limitation is not established as the sole cause; improvement is not guaranteed. No small diagnostic GPU jobs or heldout-label training."
+}

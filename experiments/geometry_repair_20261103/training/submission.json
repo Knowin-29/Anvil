@@ -1,0 +1,10 @@
+{
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/cli.yaml",
+  "config_sha256": "2895063194e35913197c932b2379195ebe4d1d457c9fc6f5c0c6ac7fdd221691",
+  "spec_sha256": "eabf085162304648de505cd364bf351e61b16bb6a998fe6b3e19c18b4607dacc",
+  "gpus": 32,
+  "time": 1793713747.1422958,
+  "response": {
+    "Id": "t-20261103214911-kvhd4"
+  }
+}

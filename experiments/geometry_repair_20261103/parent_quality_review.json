@@ -1,0 +1,198 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "accepted": false,
+  "report_sha256": "71e8fbcf8c60c861d1ce64e36f45eb8cffa40a1968057380b8c78549261e122b",
+  "final_spec_sha256": "3b6a3c060f6bf9b06641692667d0a8747ddae0f4553f7f76274d1805adab5eca",
+  "rationale": "Complete training and exact-model evaluation succeeded. Public macro73.481429 is0.785714pp below the paper macro74.267143, with material individual gaps in BLINK relative depth4.84pp and VABench6.34pp. General scores are retained. Native maskIoU.158590 and affordanceIoU.126352 remain weak; DoF valid geometry formatting is100% but rotation error111.553995deg remains worse than the existing train-only category prior. Native paper scalar normalization is not uniquely specified, so comparable65.35 cannot be claimed. Not accepted as a complete repair of the requested geometry capabilities. Continue from this strongest public candidate using admitted geometry replay and unchanged full evaluation; publication may be reconsidered only with an explicit revised user acceptance scope or stronger measured results.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 88.89,
+      "paper": 88.21,
+      "difference_pp": 0.6800000000000068
+    },
+    "embspatial": {
+      "score": 80.96,
+      "paper": 82.34,
+      "difference_pp": -1.3800000000000097
+    },
+    "refspatial_bench": {
+      "score": 60.81,
+      "paper": 59.0,
+      "difference_pp": 1.8100000000000023
+    },
+    "where2place": {
+      "score": 71.17,
+      "paper": 68.0,
+      "difference_pp": 3.1700000000000017
+    },
+    "blink_relative_depth": {
+      "score": 86.29,
+      "paper": 91.13,
+      "difference_pp": -4.839999999999989
+    },
+    "erqa": {
+      "score": 51.92,
+      "paper": 50.52,
+      "difference_pp": 1.3999999999999986
+    },
+    "vabench_point": {
+      "score": 74.33,
+      "paper": 80.67,
+      "difference_pp": -6.340000000000003
+    }
+  },
+  "native_scope_complete": true,
+  "general_scope_complete": true,
+  "original_deadline_missed": true,
+  "reviewed_at": "2026-11-03T13:48:26.474800+00:00",
+  "native_limitations": [
+    {
+      "form": "action_cot",
+      "source": "ALFRED",
+      "n": 3327,
+      "mean": {
+        "contract_valid": 0.9954914337240758,
+        "expert_continuation_exact": 0.19837691614066727,
+        "json_valid": 1.0,
+        "next_action_exact": 0.5951307484220018,
+        "target_object_exact": 0.5133754132852419,
+        "target_role_exact": 0.8214607754733995,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "affordance",
+      "source": "ShareRobot-Bench",
+      "n": 193,
+      "mean": {
+        "contract_valid": 1.0,
+        "instruction_copy_exact": 1.0,
+        "json_valid": 1.0,
+        "region_iou": 0.12635244256479186,
+        "region_iou50": 0.06735751295336788,
+        "region_iou75": 0.010362694300518135,
+        "region_iou90": 0.0,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "bbox",
+      "source": "coco_train2017",
+      "n": 81280,
+      "mean": {
+        "box_f1_iou50": 0.33634350393700785,
+        "contract_valid": 0.9999876968503937,
+        "json_valid": 0.9999876968503937,
+        "matched_box_iou": 0.3119359422654861,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "depth_order",
+      "source": "PRISM",
+      "n": 3601,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.9258539294640378,
+        "reference_relation_f1": 0.9258539294640378,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "detection",
+      "source": "coco_train2017",
+      "n": 3738,
+      "mean": {
+        "box_f1_iou50": 0.2554696821145065,
+        "contract_valid": 0.9775280898876404,
+        "json_valid": 0.9777956126270733,
+        "matched_box_iou": 0.20919465144024849,
+        "truncated": 0.0222043873729267
+      }
+    },
+    {
+      "form": "direction",
+      "source": "coco_train2017",
+      "n": 89045,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.7626144084451681,
+        "reference_relation_f1": 0.7626144084451681,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "dof",
+      "source": "PRISM",
+      "n": 580,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "normalized_projected_contact_l2": 0.0885290977043974,
+        "pi_symmetric_rotation_error_degrees": 78.71221603900743,
+        "rotation_error_degrees": 111.55399469500902,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "mask",
+      "source": "coco_train2017",
+      "n": 81250,
+      "mean": {
+        "contract_valid": 0.9602584615384615,
+        "json_valid": 0.990596923076923,
+        "matched_mask_iou": 0.15859013261701996,
+        "truncated": 0.002129230769230769
+      }
+    },
+    {
+      "form": "metric_comparison",
+      "source": "coco_train2017",
+      "n": 88984,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "normalized_image_distance_mae": 0.10363197078126384,
+        "relation_identity_exact": 1.0,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "point",
+      "source": "coco_train2017",
+      "n": 81244,
+      "mean": {
+        "contract_valid": 0.9999753827974989,
+        "interior_point_f1": 0.3729506178917828,
+        "json_valid": 1.0,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "point",
+      "source": "pixmo_points",
+      "n": 143016,
+      "mean": {
+        "annotated_point_f1_r50": 0.4727193450688743,
+        "contract_valid": 0.9937559433909493,
+        "json_valid": 0.9939727023549813,
+        "truncated": 0.005747608659171002
+      }
+    },
+    {
+      "form": "relation_graph",
+      "source": "coco_train2017",
+      "n": 3742,
+      "mean": {
+        "contract_valid": 0.9997327632282202,
+        "json_valid": 1.0,
+        "reference_exact": 0.02351683591662213,
+        "reference_relation_f1": 0.7697080844429967,
+        "truncated": 0.0
+      }
+    }
+  ],
+  "further_training_trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/public_trigger.json"
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "anvil-unsubmitted-geometry-sampling-candidate-v1",
+  "sampling_seed": 20261031,
+  "source_offsets": {
+    "repair": {
+      "depth": 572416,
+      "point": 560128,
+      "mask": 556032,
+      "fsd": 599040,
+      "vacancy": 591872,
+      "prism": 543744,
+      "ai2d": 543808,
+      "scienceqa": 543808,
+      "textvqa": 543616,
+      "native:depth_order": 532992,
+      "native:point": 532928,
+      "native:direction": 532928,
+      "native:bbox": 532864,
+      "native:metric_comparison": 532864,
+      "native:affordance": 532864,
+      "native:relation_graph": 532800,
+      "native:detection": 532800,
+      "native:dof": 532800,
+      "native:mask": 532800,
+      "native:action_cot": 532736,
+      "grounding": 536576,
+      "sat": 589824,
+      "affordance": 524288
+    },
+    "mopd": {
+      "depth": 572416,
+      "point": 560128,
+      "mask": 556032,
+      "fsd": 631808,
+      "vacancy": 788480,
+      "prism": 543744,
+      "ai2d": 565696,
+      "scienceqa": 565632,
+      "textvqa": 565440,
+      "native:depth_order": 539008,
+      "native:point": 538880,
+      "native:direction": 538880,
+      "native:bbox": 538816,
+      "native:metric_comparison": 538816,
+      "native:affordance": 538816,
+      "native:relation_graph": 538752,
+      "native:detection": 538752,
+      "native:dof": 538752,
+      "native:mask": 538752,
+      "native:action_cot": 538688,
+      "grounding": 634880,
+      "sat": 655360,
+      "affordance": 524288
+    }
+  },
+  "datasets": {
+    "vacancy": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
+      "sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966",
+      "records": 182878
+    },
+    "fsd": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/fsd_goal.jsonl",
+      "sha256": "c4c8f55c271023a6ed505a41f921c57edef7fc3ed2c8b620ae4c57f349b906df",
+      "records": 29448
+    },
+    "prism": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/train_bound.jsonl",
+      "sha256": "a656b33eab4e1d30cde1c5942f77504d0c8c35b1443b908426614dd003d5b16d",
+      "records": 13536
+    },
+    "ai2d": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/ai2d.jsonl",
+      "sha256": "a09bb1109a37262968f35a9f1d17a198502c257fc9897330fd900eb56f1a6b1e",
+      "records": 11774
+    },
+    "scienceqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/scienceqa.jsonl",
+      "sha256": "ee7c092c7b3673e3f1a3da412cf2cb603a1e2026c03d399907d09ed7779ee42e",
+      "records": 5944
+    },
+    "textvqa": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/textvqa.jsonl",
+      "sha256": "fcb2250ca6daeb87d30885c03e74f7a02b6ea491395a8a1c2f46e66b117dcfbf",
+      "records": 32845
+    },
+    "grounding": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/grounding.jsonl",
+      "sha256": "21e003c92f420c6b7890a2ad083261a012a59333fc4a8afa7aaeb042c5f34105",
+      "records": 97674
+    },
+    "sat": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
+      "sha256": "d666e347380ef32d98dd90b35469b1bf8eb4890869ed50f948d75b1f5d2bdd12",
+      "records": 51322
+    }
+  },
+  "repair_steps": 4096,
+  "mopd_steps": 256,
+  "world": 32,
+  "global_batch": 64,
+  "schedules": {
+    "repair": [
+      "mask",
+      "prism",
+      "grounding",
+      "native",
+      "mask",
+      "affordance",
+      "sat",
+      "qa",
+      "mask",
+      "prism",
+      "vacancy",
+      "native",
+      "mask",
+      "grounding",
+      "sat",
+      "fsd"
+    ],
+    "mopd": [
+      "native",
+      "sat",
+      "native",
+      "fsd",
+      "native",
+      "grounding",
+      "native",
+      "qa",
+      "native",
+      "depth",
+      "native",
+      "vacancy",
+      "native",
+      "mask",
+      "native",
+      "sat"
+    ]
+  },
+  "initial_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-256",
+  "initial_adapter_sha256": "df768f8efbcc08190a28e2accf00f5b47d2d05c07eaad6a41556a42cbe30e094",
+  "submitted": false,
+  "training_source_ready": false,
+  "evaluation_changed": false
+}

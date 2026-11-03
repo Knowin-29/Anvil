@@ -1,0 +1,35 @@
+{
+  "state": "exact_indexed_read_equivalence_passed",
+  "rows": 132,
+  "all_native_forms": [
+    "depth_order",
+    "point",
+    "direction",
+    "bbox",
+    "metric_comparison",
+    "affordance",
+    "relation_graph",
+    "detection",
+    "dof",
+    "mask",
+    "action_cot"
+  ],
+  "original_buffered_reads": {
+    "rchar": 136813594,
+    "seconds": 0.8123747697100043
+  },
+  "exact_length_reads": {
+    "rchar": 413695,
+    "seconds": 0.008842241950333118
+  },
+  "read_byte_ratio": 330.7112582941539,
+  "source_block_size": 1048576,
+  "records_labels_coordinates_and_sampling_unchanged": true,
+  "gpu_jobs": 0,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/pool.py": "b5aab4a26abee33bfd9921b12792aba5c88f4c45c1f1d510aeb78e0bcafc8c02",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/native_io_pool.py": "d66b7f7dc06fbb444ab7f314d2fa43596740ee8264382545289e0b5de604097a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/sampling_config.json": "a5d2aa778c735d337545af664860168cf0cb9945f919bca15e7be34f730e5fb1"
+  },
+  "limitation": "CPU read-path equivalence and local I/O measurement; GPU training throughput improvement not yet measured"
+}
