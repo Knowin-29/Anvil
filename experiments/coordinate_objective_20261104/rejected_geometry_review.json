@@ -1,0 +1,93 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "accepted": false,
+  "report_sha256": "4f8547402087413a526ccd6bff2c788a779c340d85dbf838b8cd34a0902fd7af",
+  "final_spec_sha256": "3a86afcfdd59aec86b2844fdcdd391d4c7deadbbeb6b1915b6f3c221f113500c",
+  "rationale": "The user explicitly requires native mask, affordance and DoF competence. Full evaluation shows mask regression, negligible affordance and DoF improvement, persistent large geometry errors, and public macro regression with substantial BLINK/VABench deficits. This candidate is not an acceptable final release; continue substantive targeted repair after inspecting ineffective learning.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 88.74,
+      "paper": 88.21,
+      "delta": 0.5300000000000011
+    },
+    "embspatial": {
+      "score": 80.82,
+      "paper": 82.34,
+      "delta": -1.5200000000000102
+    },
+    "refspatial_bench": {
+      "score": 57.56,
+      "paper": 59.0,
+      "delta": -1.4399999999999977
+    },
+    "where2place": {
+      "score": 67.83,
+      "paper": 68.0,
+      "delta": -0.1700000000000017
+    },
+    "blink_relative_depth": {
+      "score": 86.29,
+      "paper": 91.13,
+      "delta": -4.839999999999989
+    },
+    "erqa": {
+      "score": 51.22,
+      "paper": 50.52,
+      "delta": 0.6999999999999957
+    },
+    "vabench_point": {
+      "score": 73.67,
+      "paper": 80.67,
+      "delta": -7.0
+    }
+  },
+  "native_assessments": {
+    "mask": {
+      "metric": "matched_mask_iou",
+      "n": 81250,
+      "score": 0.15137225069256233,
+      "previous": 0.15859013261701996,
+      "delta": -0.007217881924457631,
+      "accepted": false
+    },
+    "affordance": {
+      "metric": "region_iou",
+      "n": 193,
+      "score": 0.12777150298006956,
+      "previous": 0.12635244256479186,
+      "delta": 0.0014190604152777009,
+      "accepted": false
+    },
+    "dof": {
+      "metric": "rotation_error_degrees",
+      "n": 580,
+      "score": 111.1998862751065,
+      "previous": 111.55399469500902,
+      "delta": -0.3541084199025306,
+      "accepted": false
+    }
+  },
+  "user_scope_confirmation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_delivery_control_20261103/user_native_quality_scope_20261103T172631Z.json",
+  "public_macro": 72.30428571428573,
+  "previous_public_macro": 73.48142857142857,
+  "general": {
+    "ai2d_test": {
+      "n": 3088,
+      "score": 87.46761658031087,
+      "parse_failures": 0
+    },
+    "scienceqa_test": {
+      "n": 2017,
+      "score": 98.56222112047595,
+      "parse_failures": 0
+    },
+    "textvqa_val": {
+      "n": 5000,
+      "score": 87.17400000000045,
+      "parse_failures": 0
+    }
+  },
+  "created": 1793747779.9234405,
+  "native_quality_required": true,
+  "final_model_publication_authorized_by_this_review": false
+}

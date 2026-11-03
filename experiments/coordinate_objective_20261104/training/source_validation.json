@@ -1,0 +1,56 @@
+{
+  "state": "cpu_geometry_objective_source_checks_passed",
+  "checked": 1793748876.4730642,
+  "model_quality_validated": false,
+  "gpu_jobs_submitted": false,
+  "forms": {
+    "mask": {
+      "rows_checked": 128,
+      "min_scalars": 12,
+      "max_scalars": 336,
+      "mean_coordinate_tokens": 320.7265625,
+      "actual_image_encoding_passed": true
+    },
+    "affordance": {
+      "rows_checked": 128,
+      "min_scalars": 4,
+      "max_scalars": 4,
+      "mean_coordinate_tokens": 39.5078125,
+      "actual_image_encoding_passed": true
+    },
+    "bbox": {
+      "rows_checked": 128,
+      "min_scalars": 4,
+      "max_scalars": 4,
+      "mean_coordinate_tokens": 26.5234375,
+      "actual_image_encoding_passed": true
+    },
+    "detection": {
+      "rows_checked": 128,
+      "min_scalars": 12,
+      "max_scalars": 168,
+      "mean_coordinate_tokens": 228.9453125,
+      "actual_image_encoding_passed": true
+    },
+    "point": {
+      "rows_checked": 128,
+      "min_scalars": 2,
+      "max_scalars": 34,
+      "mean_coordinate_tokens": 13.6875,
+      "actual_image_encoding_passed": true
+    },
+    "dof": {
+      "rows_checked": 128,
+      "min_scalars": 6,
+      "max_scalars": 6,
+      "mean_coordinate_tokens": 50.4140625,
+      "actual_image_encoding_passed": true
+    }
+  },
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/geometry_loss.py": "ff60ea9679bf25c615b429e48bbcbe55edf00d3ea3fe6dc80e8593a729a9251e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/train.py": "3f5770bafc10a0f93c4b92dc7d7d859584d77832e0277a030cdb37740a702b03",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/validate_sources.py": "f16668715a97769666e6beae10b721e4f7d7f805eb159bc21794295226a663b0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/candidate_settings.json": "e6b51e2a8c6654c8c01a198d135516f603a392b925cb6c34d67664c6f38b79ac"
+  }
+}

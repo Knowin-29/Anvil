@@ -1,0 +1,232 @@
+{
+  "files": {
+    "training/freeze_campaign.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/freeze_campaign.py",
+      "sha256": "fe117cfd7cfecd91fa62611ff214d5a493a9ed3db813b93cf1cd858a25b8beef",
+      "bytes": 9776
+    },
+    "training/geometry_loss.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/geometry_loss.py",
+      "sha256": "ff60ea9679bf25c615b429e48bbcbe55edf00d3ea3fe6dc80e8593a729a9251e",
+      "bytes": 5995
+    },
+    "training/native_io_pool.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/native_io_pool.py",
+      "sha256": "d66b7f7dc06fbb444ab7f314d2fa43596740ee8264382545289e0b5de604097a",
+      "bytes": 675
+    },
+    "training/node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/node.py",
+      "sha256": "4880a0bf3df8a293c6def989e1fdc235b4bd5867ff45aa76002556be061f47c0",
+      "bytes": 4051
+    },
+    "training/point_contracts.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/point_contracts.py",
+      "sha256": "cf5bf8a374d08dee81ca8b0a12b3275fc090e866afa435ef5df335510a000c71",
+      "bytes": 3814
+    },
+    "training/pool.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/pool.py",
+      "sha256": "b5aab4a26abee33bfd9921b12792aba5c88f4c45c1f1d510aeb78e0bcafc8c02",
+      "bytes": 5280
+    },
+    "training/resume_state.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/resume_state.py",
+      "sha256": "9b763671a14db5d4270f016f5e25192eac6f2edec08c6879b491bae9a26c25bd",
+      "bytes": 1895
+    },
+    "training/test_geometry_loss.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/test_geometry_loss.py",
+      "sha256": "3245323ad7aa9e055ca4c78b9f9b5ae34d19f1fdda92b1d7f239a2ca3589afa6",
+      "bytes": 4927
+    },
+    "training/train.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/train.py",
+      "sha256": "3f5770bafc10a0f93c4b92dc7d7d859584d77832e0277a030cdb37740a702b03",
+      "bytes": 19404
+    },
+    "training/validate_sources.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/validate_sources.py",
+      "sha256": "f16668715a97769666e6beae10b721e4f7d7f805eb159bc21794295226a663b0",
+      "bytes": 2624
+    },
+    "training/spec.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/spec.json",
+      "sha256": "1ad948f0a3be42bd0785787df86befc76ca9bd0690ca33ba90f576f415d83ad9",
+      "bytes": 65329
+    },
+    "training/schedules.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/schedules.json",
+      "sha256": "f3c9ec86da7502b3fe944c84d755a57879b1d92e5e9592464958d0885afdd3cc",
+      "bytes": 461
+    },
+    "training/candidate_settings.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/candidate_settings.json",
+      "sha256": "e6b51e2a8c6654c8c01a198d135516f603a392b925cb6c34d67664c6f38b79ac",
+      "bytes": 58849
+    },
+    "training/source_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/source_validation.json",
+      "sha256": "6020cc34200ae73c01bf467183b9b72b6e04688e0301633951e9c3ecb697eddc",
+      "bytes": 2060
+    },
+    "training/unit_test_result.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/unit_test_result.json",
+      "sha256": "6fd7d5a460db21fb1103d722d09d5e7247e6a699597e78a6b87b08b021b9b9f4",
+      "bytes": 254
+    },
+    "training/public_trigger.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/public_trigger.json",
+      "sha256": "d388a06142f7ddc6f7a4f10de8cbcf56d25a1c2d3db01e573095125ba05a8804",
+      "bytes": 1517
+    },
+    "training/submit_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/submit_policy.json",
+      "sha256": "6456be874ffdf77253c3e960098e6e1a46f00efcc17403dd53d513806171b9fd",
+      "bytes": 2229
+    },
+    "training/backup_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/backup_policy.json",
+      "sha256": "9a58cf90c1bf25f7cdc2a3133175d6f73bd605edacaac2525f971dc86981ad82",
+      "bytes": 622
+    },
+    "training/cli.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/cli.yaml",
+      "sha256": "0b2c22e85894e74454a7a1b280d81135de75ea0981722dc61b137029e1c489b2",
+      "bytes": 1773
+    },
+    "training/submission.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_20261104/submission.json",
+      "sha256": "1e424d1c5005fa315d1ebd899f9aeb1628db6b9902775911038630413eb93c44",
+      "bytes": 394
+    },
+    "delivery/common.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/common.py",
+      "sha256": "d45f9bc85e9a1d7acb4d791a2628a84404f0e120b2d0264f72daee6cc0e75a13",
+      "bytes": 6511
+    },
+    "delivery/configs.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/configs.py",
+      "sha256": "cbe50c30937eacdd876a8aed2ea07470b5ff1a7f3e103683b375bd0f4313e833",
+      "bytes": 1952
+    },
+    "delivery/exposure_audit.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/exposure_audit.py",
+      "sha256": "61b2cf552d70eb0865fe90ab5ae4351df85c534460f09f833e8ce30c9766bac0",
+      "bytes": 4440
+    },
+    "delivery/initialization_lineage.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/initialization_lineage.py",
+      "sha256": "b1828717ef0be8a9c1ce14bfb6847bfa79b6a66625efb560d570f20691b99502",
+      "bytes": 6362
+    },
+    "delivery/lineage.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/lineage.py",
+      "sha256": "c79edd66020318594d02b3969deb495de0a08acdee99418a7ff5dfcf97ce81c7",
+      "bytes": 11778
+    },
+    "delivery/merge.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/merge.py",
+      "sha256": "6053ec6e4ce132d615b894f0173074111323bbd450f68392a44bb32e33537ef7",
+      "bytes": 4362
+    },
+    "delivery/native_worker.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/native_worker.py",
+      "sha256": "9bce9d1ac52ff6f4cd6fe79f57c0c44fcf87a1f9695e2d35e7b243c6999a3879",
+      "bytes": 23351
+    },
+    "delivery/node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/node.py",
+      "sha256": "6594d8b674566d17b65733cb6f45b12a7cf0604e81d19256825e1ac01ab663d9",
+      "bytes": 7599
+    },
+    "delivery/package.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/package.py",
+      "sha256": "d512e97fa0408c10abffd00071252658924ac9def0479df9a731b22828a06b60",
+      "bytes": 11311
+    },
+    "delivery/prepare.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/prepare.py",
+      "sha256": "a6fde2f30fff08f56c631c6fa734ea79a178113bac83647f0a95a116f81c2259",
+      "bytes": 4094
+    },
+    "delivery/public_worker.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/public_worker.py",
+      "sha256": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38",
+      "bytes": 4880
+    },
+    "delivery/score.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/score.py",
+      "sha256": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057",
+      "bytes": 8778
+    },
+    "delivery/upload.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/upload.py",
+      "sha256": "59495c9a7b0f4f0b934b3651ee28daa1046a09964034ad21cd9fb98f250b9aa1",
+      "bytes": 5711
+    },
+    "delivery/validate_cpu.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/validate_cpu.py",
+      "sha256": "ab39d805599e88fd0421d46464163f2a5c331bbe924c8844542e496cac8355d9",
+      "bytes": 4730
+    },
+    "delivery/interface_validation/cpu_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/interface_validation/cpu_validation.json",
+      "sha256": "b2f03dbc75b61a8419ecf8d00395b4fc6a3c898cfe1657b1eb0274fb4c1ec4a4",
+      "bytes": 2809
+    },
+    "delivery/interface_validation/native_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/interface_validation/native_interface_validation.json",
+      "sha256": "01af9715a45aacb97a9caab293106b7a4e32bee6453f5e3d61bc222934638536",
+      "bytes": 561
+    },
+    "delivery/interface_validation/rotation128_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/interface_validation/rotation128_interface_validation.json",
+      "sha256": "0437935085926a42cd2f2b600c4ddae19e8997091b8d5ba52eac285f08d00081",
+      "bytes": 965
+    },
+    "delivery/interface_validation/rotation6d_interface_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v1/interface_validation/rotation6d_interface_validation.json",
+      "sha256": "3fcd0c9f3ee2a7ab70df813cd300a3b2e6016ae238e7393f41ef4084d39618c1",
+      "bytes": 761
+    },
+    "control/coordinate_continuation_controller.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_continuation_controller.py",
+      "sha256": "cbcc4be65f6ff89e62f567a373731a6700943f1fb8e3c97611d2b70ab3861162",
+      "bytes": 6559
+    },
+    "control/coordinate_final_handoff.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_final_handoff.py",
+      "sha256": "910d4d6b70625a11e811fa7ad090924ca46a36ead7ffc967213be0952de5b1b0",
+      "bytes": 6320
+    },
+    "control/backup_coordinate_checkpoints.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/backup_coordinate_checkpoints.py",
+      "sha256": "46089219056cf827f32f32d173aff7fb781e39e75250cc3f3c267af6a0ece837",
+      "bytes": 14349
+    },
+    "control/handoff_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_20261104/policy.json",
+      "sha256": "70eb1923dfe935f22d2731a6726aefe2ff5b42572680328c1b7293480bb82420",
+      "bytes": 4740
+    },
+    "verification/verify_coordinate_checkpoint.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/verify_coordinate_checkpoint.py",
+      "sha256": "699b53ac690e3d34b114e9e70dbc4f14c97bf1bcc590fbe49dccdbe50cc04777",
+      "bytes": 10946
+    },
+    "rejected_geometry_full_evaluation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_repair_candidate_20261103/evaluation/final_report.json",
+      "sha256": "4f8547402087413a526ccd6bff2c788a779c340d85dbf838b8cd34a0902fd7af",
+      "bytes": 118354
+    },
+    "rejected_geometry_review.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_delivery_control_20261103/quality_review.json",
+      "sha256": "2e4876bcaa3fbbb59330c87636a048a7dca52583737d19d554f5689b2ab75eb3",
+      "bytes": 2809
+    }
+  },
+  "created": 1793749128.7750027,
+  "server_credentials_modified": false,
+  "task": "t-20261104073649-l8q77"
+}

@@ -1,0 +1,11 @@
+{
+  "spec_sha256": "1ad948f0a3be42bd0785787df86befc76ca9bd0690ca33ba90f576f415d83ad9",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/backup_coordinate_checkpoints.py": "46089219056cf827f32f32d173aff7fb781e39e75250cc3f3c267af6a0ece837",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/verify_coordinate_checkpoint.py": "699b53ac690e3d34b114e9e70dbc4f14c97bf1bcc590fbe49dccdbe50cc04777"
+  },
+  "parent_hf_revision": "6bca12d523756a32ac20e9eaf4943adb57a5975a",
+  "previous_keys": 31,
+  "planned_keys": 35,
+  "credentials_modified": false
+}
