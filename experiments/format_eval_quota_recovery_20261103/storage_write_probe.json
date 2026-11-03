@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "checked": 1793708884.7158275,
+  "probes": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/evaluation",
+      "bytes": 67108864,
+      "seconds": 0.031105756759643555
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/repair_cache",
+      "bytes": 67108864,
+      "seconds": 0.04551577568054199
+    }
+  ],
+  "cleanup_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/format_superseded_cleanup_quota_20261103/complete.json"
+}

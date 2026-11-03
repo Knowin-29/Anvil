@@ -1,0 +1,80 @@
+{
+  "created": 1793709555.0921762,
+  "files": {
+    "eval_node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/eval_node.py",
+      "sha256": "36d1477f4e32365bc43eeb51cc2d4611ebc0fe53506a8a1d3bf4ee4c8940fe6d",
+      "bytes": 7605
+    },
+    "supervisor.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/supervisor.py",
+      "sha256": "2b9bcc03be6b569911ecbd04e1841773dbb9353eafd9c60646bc5d1cee1bf4eb",
+      "bytes": 6183
+    },
+    "finish_delivery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/finish_delivery.py",
+      "sha256": "c5dbc9e4a3ff1a804f1d07a992d658de098720e6212a5e13febc664dc733937e",
+      "bytes": 10994
+    },
+    "cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/cleanup_verified_weights.py",
+      "sha256": "999743f1ba7a29169a15fa75983841c1140067549d29c1576bdf4b9cdd3da314",
+      "bytes": 16796
+    },
+    "test_cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/test_cleanup_verified_weights.py",
+      "sha256": "33fe4082211d7f641bdde198c181c51bc1f7ca19a0a709f4a42f227b4e5070aa",
+      "bytes": 10523
+    },
+    "policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/policy.json",
+      "sha256": "8d504bbbac33f26f6e9db6188fb85a96ffb38515b7651542cd5b8d1ae2af37fa",
+      "bytes": 12153
+    },
+    "release_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/release_policy.json",
+      "sha256": "cadc2e3ab2e02ac69e360bb8f624f5ce1bed4113c67ef41150f64079f76f439f",
+      "bytes": 13215
+    },
+    "cpu_recovery_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/cpu_recovery_validation.json",
+      "sha256": "affc6f15add182150cf2b114ef6788849f1bb2b24c638fb018fef9d828ece61b",
+      "bytes": 358
+    },
+    "cleanup_boundary_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/cleanup_boundary_validation.json",
+      "sha256": "3addbac57c9d21b5975911567845f19fe7a056d20d64a3584296cb5e9f18aae5",
+      "bytes": 422
+    },
+    "storage_write_probe.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/storage_write_probe.json",
+      "sha256": "7d6856b5848decc882d99fa75bcd368ba14afe37e17e57312d4404ea70c80fef",
+      "bytes": 637
+    },
+    "prune_format_superseded_saves_quota_20261103.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/prune_format_superseded_saves_quota_20261103.py",
+      "sha256": "6f2441c7673eadd07a9b1ba98d8a1be4c6328bc91485bf89be41c35ca629cb62",
+      "bytes": 8575
+    },
+    "configs/node_0.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/configs/node_0.yaml",
+      "sha256": "419db7e3ae03242b647db3c4e2da5d39f2c1ef4c8c12ef2a9c3e166fc1318a56",
+      "bytes": 1853
+    },
+    "configs/node_1.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/configs/node_1.yaml",
+      "sha256": "bb525382bbbe4d9eab757730f4d4c03bf2a6cb859ef52586beaa2dc3bd81cabd",
+      "bytes": 1853
+    },
+    "configs/node_2.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/configs/node_2.yaml",
+      "sha256": "6e51c3eb63aab65a39591d3d7f49ecd789bd0e8b3f027beadeec926672952d6b",
+      "bytes": 1853
+    },
+    "configs/node_3.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/configs/node_3.yaml",
+      "sha256": "8acb808928cfe15291125f8e0fc0253b2fe46b033ce1e31d1c22fce9c30a4f4f",
+      "bytes": 1853
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "tests": 17,
+  "cpu_only": true,
+  "gpu_jobs": 0,
+  "checked": 1793709309.1807897,
+  "source_sha256": "999743f1ba7a29169a15fa75983841c1140067549d29c1576bdf4b9cdd3da314",
+  "test_sha256": "33fe4082211d7f641bdde198c181c51bc1f7ca19a0a709f4a42f227b4e5070aa",
+  "scope": "Retain all keys; accept only ledger-proven missing nonkeys; reject changed files, live readers, symlinks and incomplete release"
+}

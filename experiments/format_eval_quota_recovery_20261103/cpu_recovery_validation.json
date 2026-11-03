@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "checked": 1793709009.8967736,
+  "task_partition_and_resume_checker_unchanged": true,
+  "evaluation_workers_and_scoring_frozen": true,
+  "node_local_cache_paths": true,
+  "transient_worker_credentials_removed": true,
+  "gpu_experiments": 0,
+  "final_spec_sha256": "3b6a3c060f6bf9b06641692667d0a8747ddae0f4553f7f76274d1805adab5eca"
+}
