@@ -1,0 +1,43 @@
+{
+  "state": "passed_cpu_only",
+  "boundary_samples_checked": 128,
+  "original_native_inventory": 4756000,
+  "native_forms_reachable": [
+    "depth_order",
+    "point",
+    "direction",
+    "bbox",
+    "metric_comparison",
+    "affordance",
+    "relation_graph",
+    "detection",
+    "dof",
+    "mask",
+    "action_cot"
+  ],
+  "supplementary_pool_coverage": {
+    "grounding": {
+      "inventory": 97674,
+      "planned_exposures": 98304,
+      "planned_unique_records": 97674
+    },
+    "vacancy": {
+      "inventory": 182878,
+      "planned_exposures": 196608,
+      "planned_unique_records": 182878
+    },
+    "fsd": {
+      "inventory": 29448,
+      "planned_exposures": 32768,
+      "planned_unique_records": 29448
+    },
+    "sat": {
+      "inventory": 51322,
+      "planned_exposures": 65536,
+      "planned_unique_records": 51322
+    }
+  },
+  "these_are_planned_not_observed_counts": true,
+  "training_loss_implementation_unchanged": true,
+  "gpu_diagnostic_jobs": 0
+}

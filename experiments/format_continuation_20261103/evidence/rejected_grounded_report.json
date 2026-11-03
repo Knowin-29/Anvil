@@ -1,0 +1,906 @@
+{
+  "schema": "anvil-final-evaluation-report-v1",
+  "state": "complete_requires_quality_review",
+  "final_spec_sha256": "01d1d64d8e686940c936f562e331d6dec8a51e9caa0c95945dc8b14bf1af8355",
+  "model": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/merged_model",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/mopd/checkpoint-256",
+  "native": {
+    "n": 580000,
+    "finish_reasons": {
+      "stop": 578911,
+      "length": 980,
+      "abort": 109
+    },
+    "groups": [
+      {
+        "form": "action_cot",
+        "source": "ALFRED",
+        "n": 3327,
+        "mean": {
+          "contract_valid": 0.9948902915539525,
+          "expert_continuation_exact": 0.19477006311992787,
+          "json_valid": 0.9996994289149383,
+          "next_action_exact": 0.5897204688908927,
+          "target_object_exact": 0.5034565674782085,
+          "target_role_exact": 0.8205590622182146,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "affordance",
+        "source": "ShareRobot-Bench",
+        "n": 193,
+        "mean": {
+          "contract_valid": 1.0,
+          "instruction_copy_exact": 1.0,
+          "json_valid": 1.0,
+          "region_iou": 0.11995491217393252,
+          "region_iou50": 0.05699481865284974,
+          "region_iou75": 0.0,
+          "region_iou90": 0.0,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "bbox",
+        "source": "coco_train2017",
+        "n": 81280,
+        "mean": {
+          "box_f1_iou50": 0.3376599409448819,
+          "contract_valid": 1.0,
+          "json_valid": 1.0,
+          "matched_box_iou": 0.3124982941678738,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "depth_order",
+        "source": "PRISM",
+        "n": 3601,
+        "mean": {
+          "contract_valid": 1.0,
+          "json_valid": 1.0,
+          "reference_exact": 0.9266870313801722,
+          "reference_relation_f1": 0.9266870313801722,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "detection",
+        "source": "coco_train2017",
+        "n": 3738,
+        "mean": {
+          "box_f1_iou50": 0.2590952073017429,
+          "contract_valid": 0.9831460674157303,
+          "json_valid": 0.9831460674157303,
+          "matched_box_iou": 0.21156798545686523,
+          "truncated": 0.016853932584269662
+        }
+      },
+      {
+        "form": "direction",
+        "source": "coco_train2017",
+        "n": 89045,
+        "mean": {
+          "contract_valid": 1.0,
+          "json_valid": 1.0,
+          "reference_exact": 0.76233365152451,
+          "reference_relation_f1": 0.76233365152451,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "dof",
+        "source": "PRISM",
+        "n": 580,
+        "mean": {
+          "contract_valid": 0.9982758620689656,
+          "json_valid": 0.9982758620689656,
+          "normalized_projected_contact_l2": 0.08992807337778386,
+          "pi_symmetric_rotation_error_degrees": 82.17703638991635,
+          "rotation_error_degrees": 110.38015629442174,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "mask",
+        "source": "coco_train2017",
+        "n": 81250,
+        "mean": {
+          "contract_valid": 0.9596307692307692,
+          "json_valid": 0.9883446153846154,
+          "matched_mask_iou": 0.15886085549512474,
+          "truncated": 0.0013784615384615385
+        }
+      },
+      {
+        "form": "metric_comparison",
+        "source": "coco_train2017",
+        "n": 88984,
+        "mean": {
+          "contract_valid": 1.0,
+          "json_valid": 1.0,
+          "normalized_image_distance_mae": 0.10345460823434324,
+          "relation_identity_exact": 0.9999775240492673,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "point",
+        "source": "coco_train2017",
+        "n": 81244,
+        "mean": {
+          "contract_valid": 1.0,
+          "interior_point_f1": 0.3718182265767318,
+          "json_valid": 1.0,
+          "truncated": 0.0
+        }
+      },
+      {
+        "form": "point",
+        "source": "pixmo_points",
+        "n": 143016,
+        "mean": {
+          "annotated_point_f1_r50": 0.47453610571525273,
+          "contract_valid": 0.9939587179056889,
+          "json_valid": 0.9940775857246742,
+          "truncated": 0.005628740840185714
+        }
+      },
+      {
+        "form": "relation_graph",
+        "source": "coco_train2017",
+        "n": 3742,
+        "mean": {
+          "contract_valid": 0.9994655264564404,
+          "json_valid": 0.9997327632282202,
+          "reference_exact": 0.023784072688401926,
+          "reference_relation_f1": 0.7692775895434326,
+          "truncated": 0.0
+        }
+      }
+    ]
+  },
+  "public": {
+    "cv_bench": {
+      "n": 2638,
+      "score": 89.01,
+      "detail": {
+        "per_group": {
+          "2D/Count": {
+            "n": 788,
+            "acc": 77.03
+          },
+          "2D/Relation": {
+            "n": 650,
+            "acc": 96.31
+          },
+          "3D/Depth": {
+            "n": 600,
+            "acc": 96.33
+          },
+          "3D/Distance": {
+            "n": 600,
+            "acc": 89.5
+          }
+        },
+        "n_correct": 2348
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "embspatial": {
+      "n": 3640,
+      "score": 80.88,
+      "detail": {
+        "per_group": {
+          "above": {
+            "n": 596,
+            "acc": 85.07
+          },
+          "close": {
+            "n": 612,
+            "acc": 68.14
+          },
+          "far": {
+            "n": 594,
+            "acc": 64.14
+          },
+          "left": {
+            "n": 616,
+            "acc": 92.86
+          },
+          "right": {
+            "n": 620,
+            "acc": 92.26
+          },
+          "under": {
+            "n": 602,
+            "acc": 82.23
+          }
+        },
+        "n_correct": 2944
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "refspatial_bench": {
+      "n": 277,
+      "score": 45.18,
+      "detail": {
+        "per_group": {
+          "location": {
+            "n": 100,
+            "mean_in_mask": 54.24
+          },
+          "placement": {
+            "n": 100,
+            "mean_in_mask": 41.62
+          },
+          "unseen": {
+            "n": 77,
+            "mean_in_mask": 38.03
+          }
+        },
+        "any_point_hit": 53.07,
+        "points_per_question": {
+          "n": 277,
+          "median": 1,
+          "mean": 2.74,
+          "max": 21,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 277
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 71,
+            "thousandth": 206
+          },
+          "n_ambiguous_under_auto": 71,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "mixed",
+        "referent_by_group": {
+          "location": "object",
+          "placement": "vacancy",
+          "unseen": "mixed"
+        },
+        "by_referent_type": {
+          "mixed": {
+            "n": 77,
+            "mean_in_mask": 38.03
+          },
+          "object": {
+            "n": 100,
+            "mean_in_mask": 54.24
+          },
+          "vacancy": {
+            "n": 100,
+            "mean_in_mask": 41.62
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 11
+    },
+    "where2place": {
+      "n": 100,
+      "score": 54.59,
+      "detail": {
+        "per_group": {
+          "seen": {
+            "n": 70,
+            "mean_in_mask": 55.4
+          },
+          "unseen": {
+            "n": 30,
+            "mean_in_mask": 52.69
+          }
+        },
+        "any_point_hit": 72.0,
+        "points_per_question": {
+          "n": 100,
+          "median": 4,
+          "mean": 4.57,
+          "max": 16,
+          "note": "many points drive the in-mask fraction towards the mask area share, which is close to random; compare against points_per_question before reading a high score as localisation"
+        },
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 100
+          },
+          "n_reinterpreted_vs_auto": 0,
+          "auto_would_have_said": {
+            "ambiguous": 16,
+            "thousandth": 84
+          },
+          "n_ambiguous_under_auto": 16,
+          "corpus_vote_under_auto": "thousandth"
+        },
+        "referent_type": "vacancy",
+        "referent_by_group": {}
+      },
+      "parse_failures": 0,
+      "capped": 4
+    },
+    "blink_relative_depth": {
+      "n": 124,
+      "score": 86.29,
+      "detail": {
+        "per_group": {
+          "relative_depth": {
+            "n": 124,
+            "acc": 86.29
+          }
+        },
+        "n_correct": 107
+      },
+      "parse_failures": 0,
+      "capped": 0
+    },
+    "erqa": {
+      "n": 287,
+      "score": 51.57,
+      "detail": {
+        "per_group": {
+          "Action Reasoning": {
+            "n": 66,
+            "acc": 46.97
+          },
+          "Other": {
+            "n": 5,
+            "acc": 20.0
+          },
+          "Pointing": {
+            "n": 32,
+            "acc": 56.25
+          },
+          "Spatial Reasoning": {
+            "n": 57,
+            "acc": 49.12
+          },
+          "State Estimation": {
+            "n": 47,
+            "acc": 63.83
+          },
+          "Task Reasoning": {
+            "n": 16,
+            "acc": 75.0
+          },
+          "Trajectory Reasoning": {
+            "n": 64,
+            "acc": 43.75
+          }
+        },
+        "n_correct": 148
+      },
+      "parse_failures": 1,
+      "capped": 0
+    },
+    "vabench_point": {
+      "n": 300,
+      "score": 72.0,
+      "detail": {
+        "per_group": {
+          "point": {
+            "n": 300,
+            "acc": 72.0
+          }
+        },
+        "n_correct": 216,
+        "coord_scale": {
+          "rule": "prompt-driven: the prompt states [0,1], so >1.5 is read as the model's thousandth training habit and 'pixel' is inadmissible",
+          "used": {
+            "thousandth": 300
+          }
+        }
+      },
+      "parse_failures": 0,
+      "capped": 0
+    }
+  },
+  "general": {
+    "ai2d_test": {
+      "n": 3088,
+      "score": 87.56476683937824,
+      "parse_failures": 0
+    },
+    "scienceqa_test": {
+      "n": 2017,
+      "score": 98.5126425384234,
+      "parse_failures": 0
+    },
+    "textvqa_val": {
+      "n": 5000,
+      "score": 87.12200000000048,
+      "parse_failures": 0
+    }
+  },
+  "paper_aligned_public": {
+    "cv_bench": 89.01,
+    "embspatial": 80.88,
+    "refspatial_bench": 54.24,
+    "where2place": 54.59,
+    "blink_relative_depth": 86.29,
+    "erqa": 51.57,
+    "vabench_point": 72.0
+  },
+  "paper_aligned_macro": 69.79714285714286,
+  "paper_target": {
+    "cv_bench": 88.21,
+    "embspatial": 82.34,
+    "refspatial_bench": 59.0,
+    "where2place": 68.0,
+    "blink_relative_depth": 91.13,
+    "erqa": 50.52,
+    "vabench_point": 80.67
+  },
+  "final_minus_paper_percentage_points": {
+    "cv_bench": 0.8000000000000114,
+    "embspatial": -1.460000000000008,
+    "refspatial_bench": -4.759999999999998,
+    "where2place": -13.409999999999997,
+    "blink_relative_depth": -4.839999999999989,
+    "erqa": 1.0499999999999972,
+    "vabench_point": -8.670000000000002
+  },
+  "paper_protocol_note": "RefSpatial Location100; full277 also reported. Historical runtime equivalence is not established.",
+  "artifacts_sha256": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/metrics.json": "f2aef265f2626b61255413945c1fe52afda87eb042bcde0028b9ef152b42a66b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_affordance.jsonl": "c5d1f0b3dd71524b3fdf563a105776245cff8533f693c05e212f764c6a80da12",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_dof.jsonl": "d517e2c14762d7bba09d7da2341868fd14be6a317d529fac2b58e6b110b6c8d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_action_cot.jsonl": "71f4c86a00942cb9e6dd97aaa7385c805f3c6373d7a702ad812044f4d7cc9f72",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_depth_order.jsonl": "5246fea7b69d1cc96175011a8532df6ea3155493831d2a0840d66423bb4a3a91",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_detection.jsonl": "9e714cbdaee487661a4cce219d107ac0df670e4b98911ff1dbf84a4a865f20e1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_relation_graph.jsonl": "e0f76a117785ee51451fb7dadd07c5fb14d98fd9761a11d168de397d9d94c7c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_mask.jsonl": "b0cbfee6d19b7c3a26fd273a8eca70c109f52ba94395c72350efa4ce1907b3a9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_bbox.jsonl": "7902b35c0c1c4674b7ac058a056596e98e0867bd431662aa65f09dfa0a84c548",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_metric_comparison.jsonl": "dd3c10a66114a5ce0e3d43818155267419a39d1743a7afdba9b2e88158e09f4c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_direction.jsonl": "d5ed81132646c035b3a6c04b4723106de3ce2ffa918000bac100e54619eeef0a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/0/predictions_point.jsonl": "463741741349475b68a6151c8d092fae7f2947f1a0bf0170c9282e43e686f1b3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/metrics.json": "1d7369e664bb1bfd4bbb607f8a80d796ff9255473caf1fc145b45ad1a3d63f53",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_affordance.jsonl": "7f9bd2a58ebb48e4367797616e7a4528575c34081a1c2784d0e8c5f7c6d3c882",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_dof.jsonl": "3e8a56052a36ed3b3ed9a80612a4a5894d99057ec66a39259dc2e92b272f11c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_action_cot.jsonl": "612a6deb9c0703f2f344708f699166d16b14d1a0dcba1d616c34f65eae0dfb74",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_depth_order.jsonl": "678ff3886c6da73a657b16bde311ff652bee55f2bda1f2a61362d424a22f59a0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_detection.jsonl": "00c605a8981e841d59bbf4cb1c016ce9694d18175c4e3068c03b38b9e1f6faaf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_relation_graph.jsonl": "033752f51dc572c40e1fb08c6438928cfb7d7111a5e0315102b228064796ce9c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_mask.jsonl": "da7f43c0fcbb975b8a95f83bcabfe5cf0c003286d28626582efff5ebbf0762d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_bbox.jsonl": "264aeebfabe7e9fbecab8325c32312398b1cb951c4665b780529f31eef9ec643",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_metric_comparison.jsonl": "70e7af8da5d3c101d18ffcfc0d9d56838b8b7fbccf1729897079851f2fb6bab2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_direction.jsonl": "c7207e235aef4a79f3f535fc5f0964b82d9bd9ae2e8e227ce148560b3d31fa41",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/1/predictions_point.jsonl": "353217aa4527b6d0c07364789893d6e004c1fe4c450924663a1311b7634de0f0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/metrics.json": "c453ea714bdade7a3978ea8bc4d167f9295bdd3dc5b83d5540f0f94624ab3d71",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_affordance.jsonl": "658666dfbb1531c52ceabc6e381a5dd3f7f5c61e98038ec8d74b9e0b27b2d99e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_dof.jsonl": "7f8a74c803805a32b58ecf8b0252aa5c7df8c723ee29b656c34abf79af9c3fc8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_action_cot.jsonl": "287737e3e3236051cd886f08e9e19c6bfaead9d39b70332e840b19eb12f58486",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_depth_order.jsonl": "4168cc41b843e583b76ace024381df6c77a01b0364a5159e0d32e579b7539e82",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_detection.jsonl": "b1f88e789a03c967817a440cc6aeea3b74880363a3531ba4f9859b0cea0f5aab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_relation_graph.jsonl": "8e57c14a163757b11733ca43baab8ba5eb2b6c36cf6debd20620fe929a63b3c9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_mask.jsonl": "2f96c48ce233d685d17b13defcc946d88e1967e988f81523eeb7a6182aebc6e7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_bbox.jsonl": "5417492bf9a8c6e73241617d20ebcf43ca06241b067407c4d7864764987fb4ae",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_metric_comparison.jsonl": "8af4e6b783108a9c2593542274186c4d5ec374886c5232f0656a3a30d2e2e241",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_direction.jsonl": "221498349204f82e2d7d2d1cef48b0ced6b5c2dd58f74fe033369ff8c1804f02",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/2/predictions_point.jsonl": "b11520154a40e7bd4d6d214100076a398ff9ce59d1b24e9834fdf14781fe33be",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/metrics.json": "18ba73781f421a6efdc57d74a978c4fc6be7f8572188433352db549965f71533",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_affordance.jsonl": "1ee9f92b39f8f43964279557e8bc644620096df9e71ae741b97eda7bc2eb13b3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_dof.jsonl": "0315fb2ca095a8139ce447c8ccb9c13aeb2106f2fcae8779da42b2c82858b233",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_action_cot.jsonl": "be06cd45c8e65f99a9884c4e0fa9165af46fd5d4acb83faf91a60ee714d15540",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_depth_order.jsonl": "97e66c5930c4c43401f6d985160a2cefd596201ac14efc48ca79a222c1d9e99b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_detection.jsonl": "607e4a77dca645c160cf6e1b4c7a0c23c524e44a9b8168f0ee348e26988c7c0e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_relation_graph.jsonl": "b46185b62e26a3340c0623734e45d152b90d489d24f74502d19e75976e9c0ea5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_mask.jsonl": "ca9debf12665d7ed52a277adb7f69d900184011a7ec2ad025e7a2d9c824de162",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_bbox.jsonl": "4842eeca1c6b7c1bc2820282385d177f57dc78c5f1b82a3962be1b2f464f3b68",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_metric_comparison.jsonl": "ac5436822686f6efc12a95e3c6339356846ba36aad551a3fcaf54d87f05377d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_direction.jsonl": "461a1d5acf0a11f45d3524b64bd38db05411a0086a9f78297855dcb7beb152e7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/3/predictions_point.jsonl": "725d9b7d8ee59eb60c8a3a5757201ef457180c4885975978af887b22d80e6b72",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/metrics.json": "ec20bd0bdcadc9d6a0ae2e1e9bc4ce00866223addb61b12b376d505c0a91d90d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_affordance.jsonl": "590965fc2e8a5352f3d4cbf1185558f8e2e9a6c62b02a7fbcbd8af49e52bd5c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_dof.jsonl": "32f8ab9d62fb91eba34dcb9893efb18815d53806fb3ac98ab40589babdaee229",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_action_cot.jsonl": "c541c3d28d9208edc9569dfa8f0b8d2150685c6acf43d2fd79d8878697aa930d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_depth_order.jsonl": "2e268f62d20c111f0e0f4cb82dca1b5bb9ee08c99fa695a6cff4e80030a00a3c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_detection.jsonl": "8e3ec98f1b5ba6a987dd5bd474e5cd57d40a18e529acdc30f815722d609b637b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_relation_graph.jsonl": "e180c299bd0aee37565a17865f65404aa32a5b168596a450aeecd5d361c27c1f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_mask.jsonl": "9ff665014667a60661885aece0ca1cc3c4ca0c223de4fd8ca214d6949ac89071",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_bbox.jsonl": "103b84f2bdee29278ae6e7e6ad42e2045f9125cab6a18cd93086b92135747ccf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_metric_comparison.jsonl": "0ad89492c3894021338bda2880b6d823858abb8ec7be301934b50729fafca9df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_direction.jsonl": "3476d7dbc134edf5835460d6cc490765d3eeccae13633d175f811fda13affcd4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/4/predictions_point.jsonl": "498f24d1a87329c31adcad178c20b890a67056c69710705dd206e96ac58f5757",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/metrics.json": "9514d29d089ed4439c642fa3bb10384ff288a280bbb8f18fc9c4c05632362e79",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_affordance.jsonl": "c3600b9a6ebfaac2b64b0480363911a9bbe293c8446f487865552d1da90a5adb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_dof.jsonl": "1306c9db8858a120f6770cc26a8677c2af45de526cf97ce93c975f3ce5d437a5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_action_cot.jsonl": "af78d725ca576e1ba46178d1b36e02d4e4626eafe6acfeaa09b004daa9ba93e1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_depth_order.jsonl": "2f1cd59f64440e71a9352ce53f0ddfcfcc131b50de3d1a998f2039c2c011fb1e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_detection.jsonl": "95507a078f4686e2052733a6fc5c11c3dcaf63702c87c126ca6d4e7c3b898757",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_relation_graph.jsonl": "74f6311069b42a800cc7800be6bdda6d261861d5f2a3b0eadb01e18e89215103",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_mask.jsonl": "b1b0ffe67b8eb7410125e864e562de34c30a7ec8eb35a847f4592d08593f1d6e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_bbox.jsonl": "5d3a191f255b54f4a8f8e111370eb005882cbfe6568487906fd41fa8ec6819eb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_metric_comparison.jsonl": "eb5cd0a9ae0da5a6526740e0ca4b65d662a56a882e8f9bff1251b98f86beba0b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_direction.jsonl": "f7de1425ab268e333ebd53b1fd9c7b1911e0d52b3bff1e5ae1fbf7b568b8d927",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/5/predictions_point.jsonl": "6c9adf0af51aca1701d7d2e93d78b9aec12c7cefc846d09d6a96abb3ba481306",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/metrics.json": "39de66b4b99614275d3749206dee444d7d1ec0cfa74af9d71f36c039b0320841",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_affordance.jsonl": "c574a1fb0c8468664f4b5870b09675c580e6959c2f0b3e14a00a4a966cf538df",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_dof.jsonl": "d629f981f6ea000e3ff64eae3f0ac77996098b550935ba6f35e0f4e65843291f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_action_cot.jsonl": "94604595551096ab876ed09ba6cf220c5f44783725ca7ae1a432a063837881a9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_depth_order.jsonl": "2417fa6600ce837706c8b0c39c4aa30a2e2b1c6955bffc608ffd5fcda249ef11",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_detection.jsonl": "2098f31b9edf3e47a94b8c5231e4cd62232e02176006b7a83c52488e40436254",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_relation_graph.jsonl": "54ce7ae2a766a897c418ddfc7d6b0c6eee8fd5efa3473f3246ee64195dd0be68",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_mask.jsonl": "f681683f45a5fba7c434ae6d990e662ae362daac33c4f3183e70a1f7eb9c950d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_bbox.jsonl": "fb86f393e113e5dd9922ccfa72f02a604b4fcdd7b7d2acb50b7fc6acbe15c6c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_metric_comparison.jsonl": "d0037f42b00b63c8171f9a109d0938a25b9a4006a13e88dd9406fd1a2731b249",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_direction.jsonl": "4744c1b480f060042f1687638640a4b00ac8fe2b258397c385fa47f581299035",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/6/predictions_point.jsonl": "92abc711126d7330946ad905cfb2f59e0aea8f5b3c7d1dd598172d82cc209443",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/metrics.json": "6ff5c9c78cd55a9e81015623369d06f092378a28943c794de33a0a26766477af",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_affordance.jsonl": "149f4b49db1185fcb0131096007de5abedd64cfd5d6f3be552adbadf93a6bb15",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_dof.jsonl": "abfae67b47b28bde1f7ea8e1ab22bbb6d26bed1f08b576591b53dc97185a4125",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_action_cot.jsonl": "5b2791cb6fd7b47a1257f9ae007e2850d11a42bca7dce209914b767d4f6f4b95",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_depth_order.jsonl": "c40b9a7d73d76c85746fd66ec819538a024ad325ce1b209db92555513b35dea9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_detection.jsonl": "6c6adb84fb2e90a2c1c85579356fde0d07081842a416658715bc25d1984d4a03",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_relation_graph.jsonl": "c798dffbace9f1bb4652a985ac1b185269a47e972a362858f7706707fc3d3701",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_mask.jsonl": "a312ce9ea01f0e21d729649a12b8b588e228f986653cc87962bf30ff08f0dc66",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_bbox.jsonl": "27dc10a17ec1ee5ab54195aed343ba4351c72c4191d73e3ab9bf1827d369eb4d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_metric_comparison.jsonl": "4b729a0d3ce6389cca31302ec216a59015f57d96a825235bbf463b29bc9504e0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_direction.jsonl": "4ce668afa0d16feb0e9cdccd2ad039913dfeba9cde3e328b3ee2b2835ef3705a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/7/predictions_point.jsonl": "5af9e9f5ff0f1dc6d8775b5317ce12a0dd6603a05d4739c595a638146af06cef",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/metrics.json": "033821ac700900aa9f9263f5fe964cbc2b15611b207c17904d92a7b2a908ec4c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_affordance.jsonl": "af218f80f5bf08c59ada98c76cbbd96cd6efce85d0583840886b7da9555a46e6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_dof.jsonl": "5795fd17663b00459ce77592521bdaf551e314c9e1123037949b22d267a98a8b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_action_cot.jsonl": "0ec470068e2c031ada1381fde09199468bb0a01600dccd479f90d6dc839493d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_depth_order.jsonl": "4d53633bec88d55884699f9d73f716a896bd2a20a756c14234ee828d17ff12b8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_detection.jsonl": "18be43c8138a631024c73c9e50f7219b5cf077fb96296e5512bbdc155e00d323",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_relation_graph.jsonl": "41143831d211b4ebf6b9d5f457fd831e3c1d627373a498290a404e210e0444bf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_mask.jsonl": "2add818df0cda7d4a3107c69c530a4f6e2f4c90de1842116869e21cfa861adff",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_bbox.jsonl": "e99d7eb2c07f0e30b9878f6daaf18e6a05d2b5f2752acb99816d96254fe39861",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_metric_comparison.jsonl": "5574468bbf1cd7ae5c3e4eb97eef16d97f89e21bc6dcadfd2260a3ae55d6b29a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_direction.jsonl": "e4c2d05b32cde985f87031189a737d9a5df4d8dca785e9df3430330269427d54",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/8/predictions_point.jsonl": "2f7431781eb5506dd4427bd5bd924fb3c1e961f6354ecf9987d882d208e5cd66",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/metrics.json": "75ed7078c78660af5b7f6bfdc0227daf3f15b829ccc84a088f164cd8af58b9be",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_affordance.jsonl": "87078faf255b174bc64ffe8104ae78fbc9718c968e6f59c2026e5439625273d7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_dof.jsonl": "a2d8ae1c8e488626ee90b7b7777866365db1452973f408ea58cbb4ba89c67c7b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_action_cot.jsonl": "5a55fe1a9effa2176451ffd3b7a9ceb3c7d27070b68728a1d12a84ea82e2e21b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_depth_order.jsonl": "9d6c030ffb0a8b4684fb4196ea0e3ded2a6b1ecd36eb2e539e265676049548bf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_detection.jsonl": "b44cb012ffa1a1039f07ceef6bbed4c41ca216c18e0e4a71f3644e3eb12aae33",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_relation_graph.jsonl": "8b0e2591c5231889a7bc6c729638610a305a78b1f469a8f55b31fda45f380087",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_mask.jsonl": "4ab2603e3c96678df08b27f05dbc7d356027e4b30a5c8a8fa01f1afca56889b3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_bbox.jsonl": "c464a7f588ebeb59ca07811284c7b265b173f32009490853cc1d7863deaf8a1a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_metric_comparison.jsonl": "a73efa08dc77ee50ef85c2933a58f80c033f1a841a43183fa88fc1954f8667ec",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_direction.jsonl": "eaa12cc82c80debfe38bd488b5283a3437376d2f2be9cff7c31ce264379a3049",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/9/predictions_point.jsonl": "9685c5f220b5dc9a083ad35ca422806f046c9860ffa6b860b898886d088c0df4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/metrics.json": "16e5c7a2005fac63c1a0f8a439518b74f571a8efe4ffc0351475f2a95cece926",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_affordance.jsonl": "98d534c581e2aac10978e622457e7ccaf9cce789f1a64b2e71678d251aee3479",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_dof.jsonl": "b122053434d9fe78f4a4df3f8ff5bed8070e85ab11c1e661182639572da8de3f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_action_cot.jsonl": "65d5fa8ad1fc3c44b952b662c2ce6970f0c9558927eee550a78ce6f353eabb45",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_depth_order.jsonl": "2eeca17b350ddce7ef6bc4140ae242d4ce26bdfecfdadcc53ac2e0f014d5d2b1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_detection.jsonl": "6a42ccf7a0e24bbdd56790d23629b45693a17c240d8aac1add3dd41fd6ad760c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_relation_graph.jsonl": "c7a2ed418e41ca7365c42b09b978eb1563bd2f36f25884cede2abdf78ddd5e3a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_mask.jsonl": "b72161bba4bff68ad54dc520217404ccaac59f8850772ffda7124bfc0c6f17e4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_bbox.jsonl": "d5de6dad88e26b706b89d88a0982ffb1afafe170f440a1b5e53442006a964df8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_metric_comparison.jsonl": "80caad6367b9c8f565b3e1a842fcaf4e065b2ccb365ef2025914bdc299334cdd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_direction.jsonl": "12bb52270875ed022914d6d8a8a19d77455982eaf69caef554b52ee744de116d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/10/predictions_point.jsonl": "2b916ac4ad358f58a3e8ce5e4732457cef26f93466525505985507cf88cfd455",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/metrics.json": "1a2a3d0ec969adfcbed29ebe71f047d3600d1a3ff4a97a94b623bd8076103673",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_affordance.jsonl": "1afb81b396635ddf63360cf48cf834e81d2cc1ce1d2ff18a4471972649f3ebe0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_dof.jsonl": "74cb3f34f8c2da18748e051c097743e41da27791b75707cbdc0751c4e1cd5539",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_action_cot.jsonl": "05fc122273489d072e1279958551d2ec6bdb0ad091b2d836dc4c3d67dd724d4c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_depth_order.jsonl": "e7ead9a0012d6d6aa91f270a0c524750ba3be0ba89d879413ca1efa0eb1c6d85",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_detection.jsonl": "e8e5d63e3adc1b777781b84615197063afc44fbdded2775a994e9cee66c427ab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_relation_graph.jsonl": "e34606b86ae78dc2d58efe41f2e1ce5764e633469ba48b3f7ed251910e887760",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_mask.jsonl": "3da64d2f24e4b29652991f208bcd699d0b34492f9d1137cffc910f0cece4511e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_bbox.jsonl": "70f0988eac011e42df8ec252366adb59caf588be070b2590960f900bce854c18",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_metric_comparison.jsonl": "30d91d199463266c588d037a2b2368e6a90e52294978a8d0338b74465d01ece4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_direction.jsonl": "259c6609865528c1e8a8065c447c27aac446f81ba2dd326fbfd958f9e76cc432",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/11/predictions_point.jsonl": "83f0dd49196bc74e129218a774897c68428aaa3b47531fda7110c8fca411f878",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/metrics.json": "077794911bd4fe8ad9eef74f7d4b227b90cd2403b6f6e9d54a37bbfccf221dfe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_affordance.jsonl": "0c87e8015d6b48f320d786e6248167226d79aac5e7f507a3e55b8b96b2396ba3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_dof.jsonl": "aa3095adfd6d8cdfcece9a64150ad0db43ef0b8367e89588ee1c054383e028f4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_action_cot.jsonl": "5f247390a835a4fed105be54b1756626f19e4e4abe38a1bf32342f8d67f3c936",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_depth_order.jsonl": "fe7d6e3b1be5355a425e216e6abc9994796503de207361ef45328cdebc44547b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_detection.jsonl": "5617541f5c61350a8bc6b46afa94823f77ecad6138d0e4e30e7b44935ee1fc68",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_relation_graph.jsonl": "b5f30486f764a711a3826e285e3865e6d9358ffa37e3396090e958d0c4159ee7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_mask.jsonl": "5b096865c17e2f9823fc7694f5df71e6fd705a25c08c3e7349f05c36ba11f185",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_bbox.jsonl": "89030f32a63d92edd7d747773667c60722a79f8f6d613bae28dadb4f67cc4d23",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_metric_comparison.jsonl": "d63be2ade45c8b96e1f371641e6e4646bf76cb4cae3979e3cbab3890c6f64e10",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_direction.jsonl": "9ca160561d223b7e6d6bdff0c6870e4f882c784af8996cbfc04f6abdb5ddc170",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/12/predictions_point.jsonl": "acb8685e6545533ea0abc36d27e8fd40e68b41eb1abcece62430612bc8e35c57",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/metrics.json": "6498b20c6e2dc5f70c64b7ca1a8fb9d1c58ee0cde154c66dc3645c474aec7b54",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_affordance.jsonl": "e1fcbc088a91728bc2f9b4165bc861a63e26024c7bc6add797ef87f154e55fcd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_dof.jsonl": "911fa0f906f32787e50dad86e519f4d3c9fb057fb7af3e71e715efb169590c97",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_action_cot.jsonl": "000f28b95dbfeade2d3280e67ecc7b1e027d6d2335db4450c9a0d1c93b9b1bb4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_depth_order.jsonl": "a63a8bf3eeb2447a9decc0e56ca6de52d4a7f4995413cdb5e0e89f9feef1ae1b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_detection.jsonl": "c3731ae83e2a615a495fd81531462826cdb214e4e313050fac139f57606d2fbe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_relation_graph.jsonl": "28d0c0b7f099b267e5ffdf95a9aee22bfcda6305ce0d3bf0e009aae1851e2106",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_mask.jsonl": "a315ddb3e81f019fa5cd4ed8243e01e6d182eea015f8793f6ec492df1c196d72",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_bbox.jsonl": "921471bc6e73c12fd0e029b506043448eea8f83f54c3e5944f5e98958de6eaf2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_metric_comparison.jsonl": "c40979098a168447d1b45f1eaa7c846b2ac7a4a452f4297f627c6c41c9f9f407",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_direction.jsonl": "b1e65b11d2fa930dcb7c60e90ae51ce6dc353acd644019ea4f428de88a1fae95",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/13/predictions_point.jsonl": "330709eede65a63fc7cb4a04664de78dac7ebb770621f1e5b0e9e2a57828c84e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/metrics.json": "ecaaf82590ab9c2f7a466083d31b32c56db4b366e64dce486fb2a400204f632d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_affordance.jsonl": "479cb0e9e9162a7c9a3300df5aad606fb0217e759de396556d4001c75de0bd94",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_dof.jsonl": "8baabb74ddf131b5748c6da932fd76a36e56459853465eaf1a3db20bb4dbffc3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_action_cot.jsonl": "de0f3108f8842e8058e20acfc685668e3f9139bd2081e68aaee7c19611ff9888",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_depth_order.jsonl": "b9a1db33b11b100115b25160062cb0d3d33bf2dd2be4b92b73ec32ffc1ea51e1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_detection.jsonl": "13a2f6060f81fc5e65c8f0f084a029d9362fcec133a0e91999dc5eb5d5219833",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_relation_graph.jsonl": "7831cbec88485ff7f2b0cf388996442ee7ddfaf8a9b3b425952b97758a0dffa0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_mask.jsonl": "6c2b4a2d9b06949504f03cddb76c83236a16bf28377faea6591dd09fb45edf24",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_bbox.jsonl": "947654b6a50f373a4375ec34ee8f54992d8f13e341ae2e002485a556b3f7e9f3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_metric_comparison.jsonl": "f701de59f39dbccd81c43295cab340583dc92ce624ddf5322138fc3216cff3f0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_direction.jsonl": "78599c440118e46158ce9c9058914fee62b2775a8ceb3834f2316cb9a0176325",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/14/predictions_point.jsonl": "5b5f8fc70426fe6779d7e55065c87b12cb8ad8d4e842969bad0205d298b1c231",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/metrics.json": "1a0403e5944875a91cfc1c353db779ef29b709ae554fdb3550079ccf3146804e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_affordance.jsonl": "616e3675a84e798275b9fd7b6dfa88552a26d23c7a7970dd2181c5a894ad85d7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_dof.jsonl": "ba12eb447730bcc2d5c9d1e7d8c6983a49d690590879c56695e0946fed2a0075",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_action_cot.jsonl": "10680907d88ab03cac586cb233bf1a67f19159425bfce60e092053c878cc620f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_depth_order.jsonl": "4567ad11139d2b4d516abd7fb56039803e507c018fd61d185e6af68ed0672e66",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_detection.jsonl": "5653b2d9498d7dbf3769fa267a79a9fd9eda9d48fd648db380fe8b9e4ed65a82",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_relation_graph.jsonl": "605e7f9b7dba1f024b129b50cc9c0121fe84bc9becf4e9cc91773b84e8e2707f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_mask.jsonl": "9f9b93968335156f6bbcd8657746129b528ce2cf986a42b631e876728821211a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_bbox.jsonl": "dc99d1edddca735a0c6d2e2553b5ca2dd224d18bbf402049ef6fbe212345ca59",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_metric_comparison.jsonl": "2c585a3282382f1b1f1d0878726886574a76a406f9b4e1683444ee3c1a080ca9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_direction.jsonl": "3d7b0ca04f022f8f95945cef67d258ef9a274f5547f172b113c9843fbf16cf34",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/15/predictions_point.jsonl": "5c307367ab644e453c416bb3bc84562a19ef531588248bea1870a3b7da6aeea3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/metrics.json": "9219a4e24693f6d708ecf653b8312480246f00107de8f101ba41fb334466c765",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_affordance.jsonl": "7d2c45e6851d17446950bb3072fe3fb8766dd1a261d45bd74c47ae2a38650baf",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_dof.jsonl": "eaa0459a7a1e3cd72b762d5856c2ef340e358b389fe7b6d6a7ea775984f2def2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_action_cot.jsonl": "5abbf04d8a079212238656ffffeacc75c91ead44a0eb0e9251da6c6eb6cffcbd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_depth_order.jsonl": "76e64a3ef19c671aa889de5965ae2137395079c152a002e46c7ce11f387d1e36",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_detection.jsonl": "e2b2e7d0d92aa058da2c6b1e4098aeba4596cce75e9c874490cc9089cce606a0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_relation_graph.jsonl": "23a987290ba7f513351e99f77b8382f8d3983a6e06a6279f30aa9bfc17680e44",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_mask.jsonl": "f4a54be721d9ab40aa1ed44db7018245357d1c947e53be5b8ef3d8e12ed32a0c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_bbox.jsonl": "07f0b7536fefa2986fccf4347fd1679461405ea81016557c49242a9afa4c11e8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_metric_comparison.jsonl": "23da9b931f87fdb78c512e630370d89ee7910accec2fe29e14379e5b46b8c1c0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_direction.jsonl": "012fce6124c7caa7fb605c443fc20dd9f9424c522737b24d8d862c7ab565f21b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/16/predictions_point.jsonl": "a6fc38553643c40e2e7fde043cd6cad30f2981148978a3d9caa122fce63d1cb1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/metrics.json": "a88b3589492dee0cba76d30b302b4627265f8f4f359819111280217024b4fab5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_affordance.jsonl": "acb9eb82c9e374b0614653a25c6ec2491a97751be6e4a195410b8f37d779402b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_dof.jsonl": "77dc0231d7032a83e2e75520c4f67690175cc807714b5aa13030bb7f609a7344",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_action_cot.jsonl": "d0bbb1d66912c7f462728d92504b925e795e3d25b3753804488ac210964b30ea",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_depth_order.jsonl": "a9f926bb96a8ed69181cac78812f2dc93f79cd5a353191e62d3ddc20a94f8eda",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_detection.jsonl": "45f4ec7f693cb9539d347f82505b67b7adbc3349e4491d0af35ebd84569b5678",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_relation_graph.jsonl": "439c3b165281c7e1b3700cdc8c03b2d7e337df4c073c971f98533e1568af80f4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_mask.jsonl": "da1e4ed369297a10627249fdd7df23c4dbc1f783c8eea626579a52490cea680a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_bbox.jsonl": "68cb2742231ef1966239f78e9b0a5f31ef750339813abb81a57c3ee78e073732",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_metric_comparison.jsonl": "cdb638dab77a98b24b84a0421a542816690668abc0b3c46d268c6e80397c459c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_direction.jsonl": "915b0c4c0f0d54a195066234aac9853dfb726783cfb31563b6c82ef274c3dcc0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/17/predictions_point.jsonl": "72edf9ce2a6cdbb5cadac11c9334bae275ba2a180eb3dfba09380320de505356",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/metrics.json": "68a523639d39941e5db162607e87eb29b3f4286616f189f4ba9ca1019e1ac8a4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_affordance.jsonl": "f9ff8aba7a080d77fff8cb071340c55142e8e4584fa859fc29a1c8acd0e26879",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_dof.jsonl": "51b974c29d64112442933bf5b1a1c89b775ad20d8a4feea263f44a2378f69bf3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_action_cot.jsonl": "53925430ac3ff887b1cf578756f208a0e61f54aaff777469ebf1e3797a33b47d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_depth_order.jsonl": "df979cd3e8c1f67f2e81e0622b446fd4c52a59ac5ae68e5478803e123ac75fef",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_detection.jsonl": "ba94aafe4ba1de2093b973855cee26d2434703f819d57faef7c0721e0254e14f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_relation_graph.jsonl": "84aff4d8870eafea266a24c05a97304ca3db91180cfb4252a5571eac33ac1bf2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_mask.jsonl": "277024b609b5fef82e321658f8c9a5da5e65fa6b1bf28fecb7655f6e07e08b09",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_bbox.jsonl": "878ecd7bc15157d2e20a7232bc9267020993fa318d81ab00b75abe5733832369",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_metric_comparison.jsonl": "bfd4939dfad00608080a785d3d2869c517e048a42dcbc4449662315e0b86bf12",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_direction.jsonl": "d3fb65f1efbb5ad5e070c933567959dcd8ac39508ac235eee7a1929be9f9252d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/18/predictions_point.jsonl": "221d63ca04770617d1d76f824d0f6f534868232583cfa08132ca17c613e0eff1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/metrics.json": "edef2dc4cf75a5c3216091c10a55ee0b1071af501a04db012b2685e171901804",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_affordance.jsonl": "d7a6e916f1d57d5870e0e6e18b314048b0067cfa98c181e7a9469cc47d42eca6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_dof.jsonl": "f0f5fbfabf94bc50b66b3aa83a5258015d7218c31e6374ef63fb988df26348a3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_action_cot.jsonl": "1a826dfe80bbf997a7a577116495649d5af6adaefd00e04493f8f8949659fc42",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_depth_order.jsonl": "b2a3b8cf789ac4cb2b4dfd87153b306711697be6b7e1b1073da3b6d8b6c508f5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_detection.jsonl": "ed85277e54de9a5d9e58ef16534d87c23589f6b67b39772ce631009d7d300ecc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_relation_graph.jsonl": "8df1a73044a5b673920ef1376e16cdb0603d18ce987f00d3da197b966ebb41c2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_mask.jsonl": "086c884eaf89d39e7932f1317ec72980181e8165120afe2a03df10ed7a754191",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_bbox.jsonl": "ed02e355f0bceaaf54306153b475d5675eea3783f6ddf2165dfad35bb790ff11",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_metric_comparison.jsonl": "45b064547b240ba014471d39b71ab60a5137585489f99852ccfda93dd7f084b7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_direction.jsonl": "4765fc217de204edf2860168a61114faf251e7819d51eb19ffa923e25ff35e07",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/19/predictions_point.jsonl": "e723c0a7a0392eb66634d8085d55d6e1c91f4fb1bcd08239184a6f7090e2a0d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/metrics.json": "13442b0ac928ec68652ae59122cf6a98391415dcc44cc0a340b449a79be2191b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_affordance.jsonl": "21b516f87d9748571e829222e0e2f7e08719cf629f4e29820967facab2fb3f28",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_dof.jsonl": "8d36ec92a012c511e5dc33f2aa24bc58ccd7a916f580a59e46773ce92f18fe5a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_action_cot.jsonl": "c163c3ad978343229cf91a6470d1a492f40528c734bf5b7b2f0859bbe9418d1e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_depth_order.jsonl": "dfb20a216bd414d7efeaae7d9d0d3771b958bc649bd9b3723b01984f1e7d9bb2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_detection.jsonl": "2cf7f63ca9775db42a49e85e0ca06ed52f864239e0a99430f3cc82cc8d90fc78",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_relation_graph.jsonl": "f26181bea05b6a2b6c23b81582ca6b3f07f45652caa0ec7b758112fb39f3e686",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_mask.jsonl": "5b3cc953e2c5797c67c220659adbb701523828e6e1796fc0879f1dd7e6ed5a0d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_bbox.jsonl": "9e1b12f69e78368403b68735755f291002afefcb71ff1b975b98c668e5e0ae04",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_metric_comparison.jsonl": "850947a9f9949d7d7c343562e8524b85c84386853f52316c42111afab9b11c6a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_direction.jsonl": "eec4c27e25ec5826ade03417f75f6ea139aa94e186b0e35552e2e7d320f9d2b6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/20/predictions_point.jsonl": "f3010ba88d6c32f0dc1acc5d50460f9565187c1a2d550ec4c5a502d2738fc05f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/metrics.json": "ebbb34b08a6f1806ea30175e12866a165eb60c90e2f64fae1be6d9b17cbe3b1f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_affordance.jsonl": "4bed85e67c1629d3b01e4708889c4764752dc15b6e5fad386fa50bd2dc035a0a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_dof.jsonl": "d88fd5787a78259869ab8db57eaa8e0faa371963d44093f58e41339d3c53cb45",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_action_cot.jsonl": "7a3c5c478811a05a79438f33f4b35d0a93ffecca26f562596b15561b0dc4a937",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_depth_order.jsonl": "25b013d0cb292c7c7d88c3e144f3c1e20a0dd0c0c88ed22c966e8e54ffcfe43d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_detection.jsonl": "a627f1833b315f9ed58ecc7cbf0716094ad22e18cd1f95b713cf7eac6165e426",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_relation_graph.jsonl": "05e4ea8a1b9bcb22bd9b8c7142d7099291bc2d577f8184de24d59ac2ccb0d579",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_mask.jsonl": "80cbb4775afe55ac89a8ba204df1bb5a8a775edfbeb99be345b65feb8c9c863f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_bbox.jsonl": "9baa48fc40649231bb5972ec87dfb18a442d6842f5a956dea685a73342ce7462",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_metric_comparison.jsonl": "d7806af752896543bdcea3fdf2a033bdb4dd01591b38725dcf0b14fbfedee2db",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_direction.jsonl": "4bf1ecf859e55c60ac4ed25b8fc03f3e85b7ab2faff938fc21ec633180f804e2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/21/predictions_point.jsonl": "c65e9ce46ed8f3557c598001f6e804c4f8556e65ce83023ffc2c39e380d304d8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/metrics.json": "5fa403d07f99daebdd4a6728a9306bd6d5bc3b09068db2b4a467b8d155ab0774",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_affordance.jsonl": "a869b8fddceaeacc7045427f59222d823f75e95bc2b29cb6e3036d1b4ba447e5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_dof.jsonl": "bdddfd36913751d1f1be5308a25838384be1f08a8e9ccd65691d3e6f90657691",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_action_cot.jsonl": "e4373fe961e33a72062ca6ffc424d79d6a1c45d8f3513785927d07ecf98be85e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_depth_order.jsonl": "50f6fab6b3f8ed70ea280bf8569e1451789bb555073bc7b1148d7c745a91b14f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_detection.jsonl": "a9796b6791a26b54b3d9a498339eafc441d4e0128f1e6e5876727d0bb3f652ea",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_relation_graph.jsonl": "479bd45a455fe3f7b4733ead15df8b1fb164e7a6fd836f49e5b734f77cea2527",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_mask.jsonl": "c84b9e3fb8ed07c240c172e673be5e8fb2cdd30a3c570b235499eb7edf84f50e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_bbox.jsonl": "3294b72ff6f700f9a795106f3a58a5424123903044f8412a5ae19b68c43f38bc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_metric_comparison.jsonl": "e478c722c8c11f9800a2283548bb74c24f0634106e578af065ab0c0838c69520",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_direction.jsonl": "2d2a9a1636249c95b90d1a29feb4d0c030d68ece92656fc387a1b4ffcea08c80",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/22/predictions_point.jsonl": "bce01adf45e43f3baf058d85651ada97744a7aca8ad9466b4326c1e5bb87768b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/metrics.json": "5ce11fcf06165ca4452cc6f65fdd204603603c655b6d18b4183772c0ee70ab04",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_affordance.jsonl": "6e21554542f17215c74245996386159eadf05ba7917be8c437ddb864efafebde",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_dof.jsonl": "4ad5fd09b7010062b6501e6c0f4b06dbdca943f9d4de1092bb026816a2a3f447",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_action_cot.jsonl": "9f5b519340ed661fadc5bdc461d1863ebd10725ee60373d01815f3816a07450f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_depth_order.jsonl": "2d0f81cd9713808d854bf8b3618fda02fdb6269f7d015125213270f89f883709",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_detection.jsonl": "b53f259c85af91b84b86a7fc8e89886ed8fdb6df36c9fda1d9d1fef11d9bf012",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_relation_graph.jsonl": "d3c1b40dd71c6f54ce93c21e8964dadae9efb0d7af4fa65cefd3a5245891d6d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_mask.jsonl": "b2d4af2a88728ce3f767064863e661ff3a99838c3c4592deeb08a4cdb0bf4413",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_bbox.jsonl": "3b6a27a5adbfc66677cd2218734d24113a56e19b460da789f62da06b33376349",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_metric_comparison.jsonl": "b89ace714c56857920ebe5b050ad5966877c9b684a9d3afde762b2601869def2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_direction.jsonl": "fdd8620dfd9899c4ffc140bfc318c05760f38e68be4094bfe2094efaf4ef73f3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/23/predictions_point.jsonl": "dc931d4b3960b17ae5de4e0765247ec80a5061d44e10e2c6def98f1485674b57",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/metrics.json": "5aafa43240dc9666ba2c0dd360c9de7bdf00229021abc2a5a97985dead66cdc6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_affordance.jsonl": "a4404f14a9d63d6fe3879e59cb4efe277444536fb15aaf3c74328606d4c1d7b2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_dof.jsonl": "4f53da679103f7443f51103a518bc4174601e89b73efd7c9455981912c6bd798",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_action_cot.jsonl": "73104582cd6c1f139431a9f127c4fe571342551e97e6e0c8cc0f61328955736d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_depth_order.jsonl": "1c824fbd1dce128ff02f4c051f156e03edde79f2df024337ac70f64ae0375e45",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_detection.jsonl": "8e0e6d3bc9d576b5b543ee0e40aafddba676c81d57d7fac1affb7b13927af503",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_relation_graph.jsonl": "491916ba9935dab5a692d15dd41bfb02e742b0abb7df4dcc0fbc04cd74b1584a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_mask.jsonl": "0993815b573371bca0bd7143140c7695602b55814737eb4c9e74c55efc89a097",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_bbox.jsonl": "d4c24c26c08770f1594985f378194eb7f71e946af14948793ddef94f02978261",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_metric_comparison.jsonl": "1421b847b9b75671e9a1166c7d5721452117522207e6f9450c7b824793b36ae5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_direction.jsonl": "2bb924015d6e689b668c25312326cca871d62b327c6d7e8a17c237385c6619d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/24/predictions_point.jsonl": "a3dba4c388c37987c484ce2031ba548dae7a946305eaf2e834f9503bf2a93d1a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/metrics.json": "96d0ab596475295c269d4b34f327706dfded722307c0662b3075a7089ba15bfe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_affordance.jsonl": "a548c3e62037695b47e825144a9e226278a4cbd13f25d1fdb0171fbf3eefb3f2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_dof.jsonl": "546535e61c073305740b512bcf032b78d1618b920e784f2aff307dfaf2fe048d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_action_cot.jsonl": "5970283e4c3c38d2a55a652672bb6a1866395ebca817746d4e393e8a7698e583",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_depth_order.jsonl": "243abbb250334b694750979c96021828190a6860d60b152590bcbe43e43ec5d1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_detection.jsonl": "476fb34aed7a02d8078a5a8619c908ec4a4edf22474c204b4f1760b0372616a9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_relation_graph.jsonl": "b4026aaec81543e07925880f1f0ed81cd71b4109765094dd9b95902792bbbd06",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_mask.jsonl": "2ec091ae302cd3fe23384c0e44c6701e37b80cc33f9088a7cb59cc1a118c6148",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_bbox.jsonl": "f5210d65db62a9a505727bd7b6685d94911c07bca61c9eadaabc29497868a973",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_metric_comparison.jsonl": "61b2a573198fe363a20258335e5aedbb410a4ea1e80b1c0af9e9f5ef7e7696c6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_direction.jsonl": "6f89a049f2668b489b19c50097813eb4edfe4cbc18e879ba6350a2835fe988c3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/25/predictions_point.jsonl": "068cc1301a654cc552cba4945bfcbd4eff523e0850b1a12663d6a8a6cbd5696a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/metrics.json": "f7aa276c98938676434f39afcfc221cba8ef9b5790116322a7497e12a55a00d4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_affordance.jsonl": "6d7b20023b27bdba9a4522fe11c71e7562654c56014757fe2c5128d98d6043c4",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_dof.jsonl": "a9a858bda62f2e7575bfb9fc89ee6712bb0469bc927ff8c6099d7ab52276af77",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_action_cot.jsonl": "f47d350f12f075618c6b1b080ab5332d8da31d02189bc1538096e51268d7ed96",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_depth_order.jsonl": "dcd1e3ec1f60a0762379d65eb4c701a05397ceda9f55030cf7299cb16c92e1c3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_detection.jsonl": "b39d740c19910e0802fa6da9e9b05ade45fc78e186a61e9e83dfcecbb8082d68",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_relation_graph.jsonl": "70b9d85c7b8dd781aa872443b607f7d201026d2cabae7f6acef9cd1e46439147",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_mask.jsonl": "bb530ffb727f128075978abf7c3eb5bca5886d85b413ed58742039d0af1e0276",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_bbox.jsonl": "05c72f458fad111b58b0ca4dd1a0a6d5eeb46c05640b463c7ec73b827ec7dbcb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_metric_comparison.jsonl": "254663a891092b246650ad1a50dc8a060b5058247112ca411b65c1a51085520b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_direction.jsonl": "b237d90b19acaa14bbab11ebe50720f378f818549e91aa0b25e233396b1e83e5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/26/predictions_point.jsonl": "bbb372507efe2b7896e5b59b1392736ca36668db15456e21e1732df384afd1f0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/metrics.json": "e7a498c4837ce875b08265d103e0d66939e8be79029503c743002d7d1ca0f3e7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_affordance.jsonl": "6605e15f67cb1b43aeb231e3f1286f630ca1b25a4b2a313f94fe6db690ba0ae1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_dof.jsonl": "bfa0cc9c3355e7ba7511ed9cf08e5469bcbda8d92f8056b610a2a081445c5ef2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_action_cot.jsonl": "889e97c1ca35a37e3c0b8c17ee3242f98b5aa62efb0629ace9ac3876d7d47db2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_depth_order.jsonl": "7f2b9d50905a8bc8151b07042e2400a4a644ff3e51f6f548e17d248e27c0bfa7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_detection.jsonl": "d31759a9d5f342c6b24ef667583810c2b4f47e8fd8832a68a57035399e5cc940",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_relation_graph.jsonl": "058bc2923eaddf06430943738998cf456f3da96a00dca07e7ddce9ce0fe8f6c3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_mask.jsonl": "180d3216c6aa70887d68276ebbcc39ce1f96bf7e39eab72699f00360ef6ce7a7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_bbox.jsonl": "11c085fc97cbad8f4a454e61b14ced20d7a08b3fde2e7e4b50d27c549cf017a2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_metric_comparison.jsonl": "6c257bd0c253c81a66a45b3e8c703e4bb08347eeee7c3a32a824a8efde86bace",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_direction.jsonl": "f0727fd04c02c8b58d0025e6e36d8900cedd3579f00abc68d8186ad57925478e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/27/predictions_point.jsonl": "cb216920c3f0a291ee55a64cd906133ecc46dcb24fbdc555de10e216fe374101",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/metrics.json": "d9d209c8e8731e0d9883b86de0fd6e5745c4dcdcbfeebdface984c772f10ad23",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_affordance.jsonl": "e603fc299f9ad568e4947110f38580420083c59f901d63256b83c05dc33cbac3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_dof.jsonl": "f7a773d0bbc346d2f5a8216d0352d2e5c178e4084f640ff95f91078d0e3dcc65",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_action_cot.jsonl": "dfb7e6dae24440f663f03fe2d19de8b6eca4e1bc247db291370e9bdfce337b0a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_depth_order.jsonl": "04a11a979d0d73edc7ee4aa3a397373e2060a3e812418a07810c250351a7f335",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_detection.jsonl": "5175fd4be384484fd2fe3f8f0ebd55da97fe43c6b0b10d886cef6a7dd709166b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_relation_graph.jsonl": "80b067e9ccd845076e518341c26ef290562ddc569cf2f033edc29aec1dfff3ab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_mask.jsonl": "cc19b1828206c07603860bb4f26129cb41ad114554db6f66444da82c4129b942",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_bbox.jsonl": "0edd28de0f3bd80558ff1bcb08d4861dbb475f46849e5a72627586eef7d983c7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_metric_comparison.jsonl": "e52214eb3eb325a4c569ccb56d308fb258d152485c99fade35a4b5d6fc81a3ac",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_direction.jsonl": "bec74cfa0bbef3a530e5c11a6e18fdbe8722076ac62f4c467d0aeeb89a6bf187",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/28/predictions_point.jsonl": "8f04ec7c796651c749c7c93f2dd95c531d77c4de49614309225cc283cfe578a7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/metrics.json": "76db1266f50f764150a95b8ecaf56bf1713e1a1a592c763c3ed611205dad9076",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_affordance.jsonl": "e42d3fcb5bf3acb38e99ae9d77079a1a6ea60c4c676839094a09e65fd3cb65de",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_dof.jsonl": "acc60eaa112235e6fcf7d95d86c4a48e274498c88386476aead1336cf6ceefc5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_action_cot.jsonl": "3c2de06de9fedf913dbb6c2abfe89432f50809b0dcd35da749234d986c45d365",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_depth_order.jsonl": "add4f76fd04f65072a14f403b66776a263e49bdfc3fad221c310ede8c4b1565f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_detection.jsonl": "901620c813270e12c38e91f1166b3aaaebc8e4205e3ef26a90c3ddde4ab52a0d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_relation_graph.jsonl": "e2efc04d64304a42c4df87b73f84af1d1150bd572ae7d36476b864f8498f6b90",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_mask.jsonl": "6675babd89e3db6fff1765d747e91524f082a861b3a850d530c82e27dd02e28a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_bbox.jsonl": "29caf2e57effbe03f0bb3a2980cef16af0ac18366237e05c812400831b34540e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_metric_comparison.jsonl": "e675533bad264db0e8f3425c053ca2935789adf56b34cc2c5c66bf4309b68c57",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_direction.jsonl": "ac50edd1aac13670ed7fc4bcc920b366a5a9645d554b7379a3e4a90ef15ab007",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/29/predictions_point.jsonl": "0c19f6d6bf2181a1db48057163ef76e79957f5fab69dd41b8f980d49159658ac",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/metrics.json": "661fe9b74b2531857e6cc76e14b54cb658e526156eeec141f48da8a3ebf8176b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_affordance.jsonl": "01db7f9d4d6b4d256b77681f2db71454dfef17344adc0b909f30fb09331e3124",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_dof.jsonl": "c1733c120790b52b062aa91c8fd0149837bd6ae72637bfb74e2ae1cbcb08152e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_action_cot.jsonl": "a2928e210d26bca198a8ed72e8cfc8e0e2361c447884bcd9eb62f69184d35451",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_depth_order.jsonl": "10a0b125f8ffe8bbc2fdcd843ce50d6cc1002b08854f840245db3e173646180e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_detection.jsonl": "19c8d3607bba439a92a75cc47ae69e182ed98488d02e5fc9200ada2e57d80491",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_relation_graph.jsonl": "91422207aa7f132daeeed8a558067c0ed6a68929edc377ac72372f5eca617568",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_mask.jsonl": "4edcbd5cbc049bcc2b2f01922cc0e162ec262cd7bc4088b45476d095a8353bf7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_bbox.jsonl": "9b90003df102d83e3b85af6c1ef03886aa8e830916d2e867117e33aa6296e36a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_metric_comparison.jsonl": "ee88f62b1bbdc7dee9d79365e124682718674961a77da8c4d28e36cde96b1be5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_direction.jsonl": "e9139d8ff0c3f012e4289945b9589f0cf40c93d61c25c7dbbadf1e35c24ca9e8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/30/predictions_point.jsonl": "c5c01fd4aefe09fcebab485450f09ab9b8f78a4147f39cf54319b0a1a816d6dd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/metrics.json": "6f294e34de1283a1e14a23747c7d379484d17ffda6cb17b1dfe935df4258df82",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_affordance.jsonl": "cf2d5072fb30754050fedfe6a0a5ebe1e8720880bd466bf7fa2bd6f9d779f2ca",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_dof.jsonl": "34ee0a15a9145bcfce7cffa9c4fe4ec6640ff1596def37d1f12de7d62d9121fe",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_action_cot.jsonl": "bb9fd98e77899bc601df4fccdb57dbb0ada494ab74a97c335a6c292a0be18612",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_depth_order.jsonl": "84d99a86053a4293ef0bc9257d60116ba3deacb5bb5374117ab640e7a2cf7d7f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_detection.jsonl": "da37b8e5a3dba8e2b9622f7cf1dc009a0de9fa6ba2aa17f29eaca537480f5e01",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_relation_graph.jsonl": "18f6ed84687c89e04ddabafa8256ddeba7fd429c96603403085cc234091daa31",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_mask.jsonl": "e7ff05592236d0830913eb7fab1f696f35cd5b2ac29c14e495ce2e10081dda69",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_bbox.jsonl": "89b701d3c5c2e9dc928f366a856c6a4027feea905baff3208a9fdc0794826eed",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_metric_comparison.jsonl": "40a28487b293a99bae5080ec74cb8f25e7c6ec2a6e6040311c5b02928dfe7afb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_direction.jsonl": "cbe295b73cf0a0cd0cecad711097551c0e55fb58c62f09af7369c7309b03cef9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/native/31/predictions_point.jsonl": "df86348ed4f7fa1873588bc3a78af6cf91213f38b060603cf66e43b5c3a5da8e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/cv_bench.jsonl": "f7d592f93d0eaa494435e9306c1367fcb3a27e946ad9dbff18877a561795d9f9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/cv_bench.jsonl": "fa79cd10be38b281ecbefd6db1ee782bbaac1aa9a84ed43b2437bdd6089c0449",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/cv_bench.jsonl": "c8bc399a9374708157bcc5ff187b9defe90b0a85c5d4e51144abadd8c0cf27f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/cv_bench.jsonl": "dea818c2c3767dd5a30a972312390b01c7336a74738fa5ceac7706e89162d944",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/cv_bench.jsonl": "0e6dc9c6499f50b816954aab3c8318c7fcacc3997e148960c78d1652c4bcf865",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/cv_bench.jsonl": "cbc862d3442fc03f292ff7928854fe1f746bc5259a36d9806353d1973bb4fc00",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/cv_bench.jsonl": "eba6444a4909fe7dbdc3abefb16533845c920210bb33ce59ef9de473a05b1a65",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/cv_bench.jsonl": "52cebc06801e2e3633e1f06aa5da7001f52410a709dc94e7eef76b3985369ed9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/embspatial.jsonl": "703fbb4ed5030f8cd88b1a47f6bee97924f842db86ceba2738af46a1d1621ec2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/embspatial.jsonl": "07eea59acf49ed0de2cd94024c2161855d424cad0262ce5b0f60e72db40101b1",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/embspatial.jsonl": "a6e7a41df42b85a80fd780360cee6eb289b1e9df851453da5542d4bc029a4f10",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/embspatial.jsonl": "1f29892c62d5fa06eec0126c1c54504670102dad61e51c5f7010c0e20187d164",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/embspatial.jsonl": "dd366659d906639f7ffa33cde41dffd10c0447fced5f88810bc7f713766c5c05",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/embspatial.jsonl": "46801199e900d2af967fa29bc5ddb296ad7ef7ffb904296fdfa991ece0eec288",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/embspatial.jsonl": "3e6a890a1149ebb2fb4f077daac4aee343dfbe8025b0c373297a455761bf4610",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/embspatial.jsonl": "10bd1b5d7e494db2ebd923e68249416520346c0216e4fa467872253c0d279f52",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/refspatial_bench.jsonl": "a7b3cf1e5810953cb2fef3e3bb54ee7c934822b8e57a59b3a40b789b9fb34a72",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/refspatial_bench.jsonl": "33e5c0a9d12e4f8999a579f1e9a9430deaac5a36c2ab92509721ff3308be326b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/refspatial_bench.jsonl": "00aef8aecfaa4ee9e7793038ab54e098e5349719d8c432ba0c809d94ba98afa3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/refspatial_bench.jsonl": "196d8672a6fae1a52e05bc94021eb141ad0e4333df0f150590b8872d1019db65",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/refspatial_bench.jsonl": "6b491ac4173215c2ecf0c545e7f6714f05b8ce8a99007c4c7ab5ab1a63134cb6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/refspatial_bench.jsonl": "fdfb895ac1d36210aac56daf58ec68fe19a9dc18073926d40759b2aad3adc2f9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/refspatial_bench.jsonl": "a17bca80f0a443c665bc70c8c64e79b4e67125ce9465ce40ca70171b688dd33b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/refspatial_bench.jsonl": "a6ef9ccc5e530c89ea0509ac73fd502dea771d6e7e34a5ecccf81a13ca0499dd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/where2place.jsonl": "fd2e6d5e8ebb5580ba6cc32009c80c9b19635f0c9416f1d33800ffe1140c7b4e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/where2place.jsonl": "038a31f6b65d3c4e29357af6869eb3a044b18cbb93bcd43a3bc02e7842375d83",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/where2place.jsonl": "d89306829b4d297f57f44bf0ec0e5018b82b0df47bea5fd7c86a899dc0bcbb4b",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/where2place.jsonl": "bc85b57af896b5dad2c2d742de4d0fb2179d152062c91c4332b2bafb1965a58c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/where2place.jsonl": "2cc3ec6ead5973ebe9caf5cd00c51abe68db4ceb75f790408094cac49bcc8f6c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/where2place.jsonl": "6221963ef5918b54e470f50b3a1323fe302411c5821fa2b8bd8a01ca69b7a1b6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/where2place.jsonl": "17368ff6fc6a378b9e55ecf733320d7d0f815c38e3d1df8d387de38b76ac6307",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/where2place.jsonl": "3ba1ee471d47fd653804fc6cec2fa6f07c05aaf3d2e0f4f42c71137edda996d6",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/blink_relative_depth.jsonl": "70c8edbdc778d19f2d6dee2b612969a66c294713f37b1b11b82a190240309cf8",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/blink_relative_depth.jsonl": "e0b95131c121b74938f340b57eae14a04215cf4f9189204f9e74ea377526593e",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/blink_relative_depth.jsonl": "f23943558e69bf1fb9b1a2ed7e18640f6a836e6366f3fa3a8fc9b987f29a6b53",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/blink_relative_depth.jsonl": "59b19414168cb231acf3acc01837aab11c775eaf5a589ae639679cc985ea66fd",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/blink_relative_depth.jsonl": "ed2a946115e58176ee72fa143bc697f244922f10707296827b7cd478548a8b18",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/blink_relative_depth.jsonl": "f7fa431688321a6e10f4c52226a6c7c89263db85524ebe1e62d1989fee8368d0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/blink_relative_depth.jsonl": "36a854a5dd4df6641fd71f9828204ddadb0fabb5efe1bceaa98788e3b7e56c3f",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/blink_relative_depth.jsonl": "a8885e74a5c51bb20b75eb00ace33921f17fb5a1961b56e576debcc86484e2ab",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/erqa.jsonl": "9ffc729e00cdd5999c301f0749d2646aa5b776478d7de450d68b45a5afb8f977",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/erqa.jsonl": "abac7013e67478405a4293a1917e4c5649c9804ce3075c93c4a4ca20cfbed247",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/erqa.jsonl": "0dceed14e00ebefc828f7ac6db9ef30bd51710a68d8aaa2fda17705f2f244205",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/erqa.jsonl": "77fe4bf7568223e7cb180f9e16c355816ce40f338007658e9e4d70c9683dabaa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/erqa.jsonl": "21843dee79364c40a890af5c5005c79e8db107425d74f4271e283f341d93b428",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/erqa.jsonl": "3cf2a808963558d016569193d26fe611f77f39a6051ebf38bf65237f5544300a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/erqa.jsonl": "4e66a908ca8441afe4dae89b613eba6df86b780e41658e2a5b141caf3d334b30",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/erqa.jsonl": "acf59d8781a7917b31b6005b0f2c4ee7f6a0dc069f9d10314482fa1a7a69a350",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/vabench_point.jsonl": "5f27f169eedad67fa86a520f86532ecd3076d2bcad63c5926650c750c3fe9fe7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/vabench_point.jsonl": "9f1693230a937bfc46b590a200ece1d18fe3f06782765b7c445d408b8e2590d9",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/vabench_point.jsonl": "88827dbe53e94b3b6b429acb8679b30e6a782249d1c3397f7bf2aa665634a33d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/vabench_point.jsonl": "68e19711a5ba489ffe1d9e9569e94315a99ae285908746d5eee9b179eba2977c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/vabench_point.jsonl": "0cfc5fffe7c0ae70d5e295af15dd2dbb1718c1a57c6b80108b43d9a87163c283",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/vabench_point.jsonl": "30a6e00ac1bdbb9cac636ba13068efd904724668bed4cf8a8c2ecd31a17ce6a0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/vabench_point.jsonl": "9ff72e7c636ea7fd7027dea4ca2b79dbc50ecd6c3bc625c9c712643392126c88",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/vabench_point.jsonl": "782bf4f7b375e392d3fb3dcc870649d70cab1399cd5a81a42a83e80ac22d4c26",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/0/retention.jsonl": "cbae0271274738faf36822f64416bb351e140c9318b4b42ebdea5d96e8ea347c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/1/retention.jsonl": "9e420c2242037f266a246d261db634d57c7d67494a56071df17ccfd1cadf5502",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/2/retention.jsonl": "0495013eb897499a935444f7e8aa0d3ea0ce362f76943752f66320029ed2a7a3",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/3/retention.jsonl": "25dd5e92156a9202a25f68627da345b2b7f9435a0af38e0b820f20063c2e0575",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/4/retention.jsonl": "d190194e51a1af8de81aca36fa9bf1503d9248a8e4c5bb6f4d55377631054f83",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/5/retention.jsonl": "faa1abf03c9f36be654e734185bf3f34134d55156cff5e0d441fd5e133cc8cfc",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/6/retention.jsonl": "3b482f38101f390dbb559bb155d66f2e9e8ee495674aed2f30957f309dfa3aec",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/grounded_repair_20261102/evaluation/public/7/retention.jsonl": "d0c2e9207ebbc242ceb809533dadca553f76dce5fdd2c7f085292677140d610f"
+  },
+  "final_quality_accepted": false,
+  "published_results_reproduced": false,
+  "weights_uploaded": false
+}

@@ -1,0 +1,13 @@
+# Point contract correction after complete grounded evaluation
+
+Production task `t-20261103105205-8tfn8` uses 32 A800 80GB GPUs. It branches from balanced MOPD512 (public macro70.442857), not the rejected grounded branch (69.797143). The grounded run finished normally and completed all580000 native,7366 public and10105 general examples; placement/localization gaps prevent final acceptance. The original five-day deadline was missed. New24h execution expiry is an operational limit, not a claim that the original deadline was met.
+
+Repair8192 at3e-6 and true on-policy MOPD256 at2.5e-7 retain the existing loss implementation, all11 native forms, original rollout budgets, batch64, complete admitted supplemental pools and native/SAT/general replay. Point-contract augmentation preserves every canonical UID, image binding and annotated coordinate:25% original answers,50% normalized tuple answers and25% normalized JSON for grounding/vacancy; FSD uses25% original and75% answer-wrapped original point lists.310000 admitted records were checked on CPU with exact coordinate round trips. No new labels, altered benchmark answers/scoring or small GPU diagnostic arms. This addresses a documented train/inference contract discrepancy, but improvement and final quality are not established yet.
+
+The prior5.22M-record SFT is retained. New stages initialize fresh optimizers from the completed parent's weights; they are not seamless optimizer resumes. Within-stage saves occur every64 repair/32MOPD updates and retain optimizer, scheduler and all32RNG states. The23 existing checkpoints are remotely verified at20824ee1f9a2e1677958e0ab91efb269d0634473; four new keys will bring the inventory to27. Five focus and four grounded keys are nonancestor backups, never added to the new model's training exposures. Original corpus source-composition and native aggregate reproducibility limitations remain unchanged.
+
+Full evaluation, checkpoint backups and merged-blob staging are supervised automatically. Final publication requires a bound complete evaluation and explicit evidence-based quality acceptance, then full pinned repository verification. Preuploaded blobs and intermediate checkpoints do not constitute a final merged release. No credentials are included or persisted.
+
+This pass removed243.89GiB of superseded, non-key repair state on shared storage; all23 key checkpoints, allMOPD saves, metadata, logs, data and Codex history remain. Non-key saves were superseded, not individually uploaded. Final cleanup is prepared separately and has not run.
+
+This is an immutable runtime source snapshot with explicit absolute dependencies, not a relocatable launcher. `source_manifest.json` binds each file to its runtime origin. No weights or datasets are included.

@@ -1,0 +1,45 @@
+{
+  "state": "passed_cpu_only",
+  "datasets": {
+    "grounding": {
+      "records": 97674,
+      "source_sha256": "21e003c92f420c6b7890a2ad083261a012a59333fc4a8afa7aaeb042c5f34105",
+      "contracts_checked": {
+        "original_native_point": 24425,
+        "normalized_tuple_points": 48849,
+        "normalized_json_points": 24424
+      },
+      "label_coordinates_preserved_exactly": true,
+      "uids_and_images_preserved": true
+    },
+    "vacancy": {
+      "records": 182878,
+      "source_sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966",
+      "contracts_checked": {
+        "original_native_point": 45726,
+        "normalized_tuple_points": 91451,
+        "normalized_json_points": 45725
+      },
+      "label_coordinates_preserved_exactly": true,
+      "uids_and_images_preserved": true
+    },
+    "fsd": {
+      "records": 29448,
+      "source_sha256": "c4c8f55c271023a6ed505a41f921c57edef7fc3ed2c8b620ae4c57f349b906df",
+      "contracts_checked": {
+        "original_native_point": 7368,
+        "answer_wrapped_native_point": 22104
+      },
+      "label_coordinates_preserved_exactly": true,
+      "uids_and_images_preserved": true
+    }
+  },
+  "total_unique_source_rows": 310000,
+  "created": 1793674060.942901,
+  "code_sha256": "cf5bf8a374d08dee81ca8b0a12b3275fc090e866afa435ef5df335510a000c71",
+  "test_sha256": "016f88a52a8ea836e0f7db57ac022f0103b58c2053a2b7d02732fdffdc06c18f",
+  "benchmark_answers_read": false,
+  "new_unique_records_claimed": 0,
+  "gpu_jobs": 0,
+  "measured_quality_improvement": false
+}

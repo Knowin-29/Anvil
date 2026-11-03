@@ -1,0 +1,16 @@
+{
+  "schema": "anvil-complete-evaluation-continuation-trigger-v1",
+  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
+  "public_general_report_sha256": "9ee8d2014a2640a483f13b62244a6a95d5d798457e5fb040dacc5544200411f9",
+  "scores": {
+    "cv_bench": 89.08,
+    "embspatial": 79.81,
+    "refspatial_bench": 53.08,
+    "where2place": 58.18,
+    "blink_relative_depth": 88.71,
+    "erqa": 51.57,
+    "vabench_point": 72.67
+  },
+  "final_quality_accepted": false,
+  "rationale": "Grounded continuation completed but regressed to macro69.797143 from balanced70.442857. Branch from the stronger balanced MOPD512, excluding grounded and focus exposures from ancestry. Repair the training-side output-contract mismatch using only admitted labels: exact normalized tuple/JSON coordinate variants plus original native point replay, and answer-wrapped FSD points. Canonical UIDs, image/scan exclusions and all coordinates remain unchanged; no invented points. Cover all admitted grounding97674/vacancy182878/FSD29448/SAT51322 pools at repair LR3e-6, between the prior balanced5e-6 and grounded2e-6. Retain native/SAT/general replay. Then genuine MOPD256 at2.5e-7, all11 forms and unchanged generation budgets and benchmarks. The format discrepancy is established; it is not proven the sole cause or a guarantee of improvement."
+}

@@ -1,0 +1,14 @@
+{
+  "state": "completed",
+  "files": 4410,
+  "bytes": 261870029064,
+  "allocated_bytes": 261878529024,
+  "completed": 1793673920.6838439,
+  "intent_sha256": "a4666aab458f0e15501d5f07a030e48609e0ed82ef1601cd185d9b9363c02f01",
+  "all23_keys_retained": true,
+  "all_mopd_saves_retained": true,
+  "server_credentials_modified": false,
+  "system_disk_bytes_removed": 0,
+  "storage": "shared /Knowin/sim",
+  "open_file_inspection_scope": "Visible local processes; inaccessible unrelated processes excluded; cloud campaign independently terminal"
+}

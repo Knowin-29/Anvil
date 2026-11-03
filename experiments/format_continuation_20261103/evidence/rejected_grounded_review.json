@@ -1,0 +1,48 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "accepted": false,
+  "report_sha256": "7aa8742ec1cb3028a82e501a1746e2fb3dfaa4aafd4e148dcc8529ef4f7d98d4",
+  "final_spec_sha256": "01d1d64d8e686940c936f562e331d6dec8a51e9caa0c95945dc8b14bf1af8355",
+  "rationale": "Training and complete evaluation finished normally. Public macro69.797143 regressed from balanced parent70.442857. Where2Place54.59 vs paper68, VABench72 vs80.67, RefSpatial Location54.24 vs59 and relative depth86.29 vs91.13 remain material gaps. General metrics are retained. This candidate is not accepted for final publication. Preserve all23 verified key backups and evaluation evidence. Training-side instruction/coordinate format coverage is a diagnosed discrepancy, not proven sole cause; continue only with admitted training annotations, unchanged benchmark scoring and genuine MOPD. No claim of reproduction or guaranteed improvement.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 89.01,
+      "paper": 88.21,
+      "difference_pp": 0.8
+    },
+    "embspatial": {
+      "score": 80.88,
+      "paper": 82.34,
+      "difference_pp": -1.46
+    },
+    "refspatial_bench": {
+      "score": 54.24,
+      "paper": 59.0,
+      "difference_pp": -4.76
+    },
+    "where2place": {
+      "score": 54.59,
+      "paper": 68.0,
+      "difference_pp": -13.41
+    },
+    "blink_relative_depth": {
+      "score": 86.29,
+      "paper": 91.13,
+      "difference_pp": -4.84
+    },
+    "erqa": {
+      "score": 51.57,
+      "paper": 50.52,
+      "difference_pp": 1.05
+    },
+    "vabench_point": {
+      "score": 72.0,
+      "paper": 80.67,
+      "difference_pp": -8.67
+    }
+  },
+  "native_scope_complete": true,
+  "general_scope_complete": true,
+  "original_deadline_missed": true,
+  "reviewed_at": "2026-11-03T02:39:31.978507+00:00"
+}
