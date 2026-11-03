@@ -1,0 +1,7 @@
+# Exact candidate publication after complete quality review
+
+These workers bind the running coordinate-v2 campaign and all35 declared key checkpoints. The full native/public/general report and explicit quality review must refer to the same final evaluation specification. Accepted reviews must include every native form/source group, including mask, affordance, rotation and contact measurements, and explicitly assess public benchmarks and general ability. No native paper aggregate or automatic quality threshold is invented.
+
+The preupload worker stages the four merged model blobs without creating a commit. The publisher waits for the complete report and review, all checkpoint backups, preupload completion, idle successful campaign jobs and released writer locks. Rejection stops publication. Acceptance permits the final package commit, followed by pinned exact inventory, size and content-hash verification for the merged model, adapters and complete key-checkpoint state. Ambiguous uploads require reconciliation; they are not blindly retried.
+
+Ten CPU tests cover rejection, missing native capability review, wrong report identities, incomplete scope, altered metrics, stale adapters, missing checkpoint keys and unsafe shard paths. Synthetic completeness fixtures are not persisted as acceptance reviews. Training and evaluation sources are unchanged. No credentials are stored and no cleanup is performed by these workers.

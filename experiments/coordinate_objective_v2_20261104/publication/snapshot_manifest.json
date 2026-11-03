@@ -1,0 +1,41 @@
+{
+  "files": {
+    "finish_delivery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/finish_delivery.py",
+      "sha256": "f9209fabfab073cc57fe06cdc870a2c7906446a91917bb937d04d14c7f2cfa13",
+      "bytes": 10207
+    },
+    "quality_gate.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/quality_gate.py",
+      "sha256": "4d1ced2602e2d83195503d96b4bd3f418ff4b555133702978a2b3c4dfb0d1ce4",
+      "bytes": 4291
+    },
+    "test_release.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/test_release.py",
+      "sha256": "fe8e9c4c5badd6bd7f65b6f585b8b9981fe548465bb5990f6b0e52c008af1df7",
+      "bytes": 7118
+    },
+    "release_policy_v2.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/release_policy_v2.json",
+      "sha256": "c02b808d8069ac1db3a63f41711dea3df947a702ea940c96d0bd871a9c16c66a",
+      "bytes": 6399
+    },
+    "cpu_release_tests.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/cpu_release_tests.json",
+      "sha256": "4cee7e07120ad99ffbeacfe95136a5440b6392ec92b357a1882baa30f4a72be4",
+      "bytes": 1285
+    },
+    "preupload_coordinate_merged_blobs_v2.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/preupload_coordinate_merged_blobs_v2.py",
+      "sha256": "92b99f462590b993405a4882ad47ef7b95baf83aed7bf21cefed92fa4ea7ad07",
+      "bytes": 10994
+    },
+    "verify_entire_coordinate_hub_v2.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/verify_entire_coordinate_hub_v2.py",
+      "sha256": "f7a4a7626b4693eb16d46d45be6ed7b13209077bb7f142cb605419d73b9c7b07",
+      "bytes": 9828
+    }
+  },
+  "created": 1793749913.6334789,
+  "credentials_persisted": false
+}
