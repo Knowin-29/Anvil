@@ -1,0 +1,29 @@
+{
+  "schema": "anvil-additional-review-requirements-v2",
+  "user_policy": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/user_acceptance_policy.json",
+  "user_policy_sha256": "1317e84bbd5cdafff8eb2e7fde96bd3189fbf9591c356672e0281b44f0131e5d",
+  "scoring_protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/PROTOCOL.md",
+  "score_artifact": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/final_native_score.json",
+  "quality_review_fields": {
+    "user_acceptance_policy_sha256": "1317e84bbd5cdafff8eb2e7fde96bd3189fbf9591c356672e0281b44f0131e5d",
+    "paper_native_tolerance_assessment": {
+      "paper_score": 65.35,
+      "measured_score": "exact final_native_score.json score",
+      "scoring_protocol_verified": true,
+      "scoring_reference": "anvil-eval-record-score-v1.1",
+      "score_artifact": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/final_native_score.json",
+      "score_artifact_sha256": "actual hash after scoring",
+      "accepted": "True only if score >=58.815 and per-group geometry accepted"
+    }
+  },
+  "all_prior_native_and_general_group_reviews_still_required": true,
+  "historical_equivalence_claimed": false,
+  "order": [
+    "full_evaluation",
+    "versioned_native_cpu_scoring",
+    "genuine_user_tolerance_quality_review",
+    "accepted_release_upload",
+    "verified_local_cleanup",
+    "final_presentation_v2"
+  ]
+}

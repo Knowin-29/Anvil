@@ -1,0 +1,557 @@
+{
+  "schema": "anvil-staged-public-release-v2",
+  "parent_package_manifest_sha256": "99b1ee19c842208dbaaaa1eef1ef4314c3d9c2868ea3e9216b0654b4af43a08b",
+  "local_total_records": 5800000,
+  "public_annotation_records": 5766133,
+  "public_spatial_records": 5302133,
+  "public_original_images": 0,
+  "upstream_terms": {
+    "CLEVR": "https://cs.stanford.edu/people/jcjohns/clevr/",
+    "coco_train2017": "https://cocodataset.org/#termsofuse",
+    "pixmo_points": "https://huggingface.co/datasets/allenai/pixmo-points"
+  },
+  "released_annotation_files": {
+    "records/train/QA-00000.jsonl.gz": {
+      "sha256": "1c492dd94a19ddeb50f54b7fa0d11c788386a22da6eb1e80cd1d80cfbab731ae",
+      "bytes": 15609776,
+      "records": 100000,
+      "split": "train",
+      "form": "QA"
+    },
+    "records/train/QA-00001.jsonl.gz": {
+      "sha256": "51a8353dd4f3698b3ffe5877d6932cd461e45fadf3b32d04bbf58a66a25d3269",
+      "bytes": 15612633,
+      "records": 100000,
+      "split": "train",
+      "form": "QA"
+    },
+    "records/train/QA-00002.jsonl.gz": {
+      "sha256": "67ffa310edc3fee89a1ec181ad9d05d9982c88ee45c3b32c2a17605ae7fe1b06",
+      "bytes": 15613750,
+      "records": 100000,
+      "split": "train",
+      "form": "QA"
+    },
+    "records/train/QA-00003.jsonl.gz": {
+      "sha256": "64d3b579bd087888dd6502b61213981a37255d8fce36dcef8b1bcc246553de5e",
+      "bytes": 15604906,
+      "records": 100000,
+      "split": "train",
+      "form": "QA"
+    },
+    "records/train/QA-00004.jsonl.gz": {
+      "sha256": "dd0e549950e9e5d6c046fa6c48f26f48b2fa50591716666ff9b571a20adf6b59",
+      "bytes": 9995160,
+      "records": 64000,
+      "split": "train",
+      "form": "QA"
+    },
+    "spatial/train/bbox-00000.jsonl.gz": {
+      "sha256": "41a2a9b39e6b1bfbea6d48ab2477db02be7cd3253b2063a3a61325d9f44aa1f1",
+      "bytes": 19224607,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00001.jsonl.gz": {
+      "sha256": "16cbb18b685c4f1b3658c879b16042fd26c54f7c3b24af0ead2992b393b115ae",
+      "bytes": 19237105,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00002.jsonl.gz": {
+      "sha256": "51f28250ebab7ed439482910935b6eeabd39c433d2004ac94891e8d73135c69f",
+      "bytes": 19220547,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00003.jsonl.gz": {
+      "sha256": "0245b18fcbce74abf7169cec912999604f43b4efd5aece422eeb788c13c8d06a",
+      "bytes": 19199530,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00004.jsonl.gz": {
+      "sha256": "764a74ae39fb0d7da3f5291fe231fbafdd83dac9b31c1b1df6de702ccc33eb4f",
+      "bytes": 19232778,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00005.jsonl.gz": {
+      "sha256": "e16aca52f779957a9294ab9737df0b054375a29722d0ad6900b29ca7d1224afc",
+      "bytes": 19218339,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 100000
+      }
+    },
+    "spatial/train/bbox-00006.jsonl.gz": {
+      "sha256": "dd16c2f5c92e3adfbd7ba425dac084d8d64c4ad0243b9ec678713a492110e6a2",
+      "bytes": 17754449,
+      "records": 92157,
+      "split_source_form_counts": {
+        "train/coco_train2017/bbox": 92157
+      }
+    },
+    "spatial/train/detection-00000.jsonl.gz": {
+      "sha256": "ca081abd835ebf7d057ebce56ce5a00300a7ee42aaeb3e0d51a580db0a4ff314",
+      "bytes": 35787116,
+      "records": 76852,
+      "split_source_form_counts": {
+        "train/coco_train2017/detection": 76852
+      }
+    },
+    "spatial/train/direction-00000.jsonl.gz": {
+      "sha256": "15301ea9aff61e2dc32ee4a4a57480f0a9377fa7d1287f7f5b26f99eaeb2633f",
+      "bytes": 17781558,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00001.jsonl.gz": {
+      "sha256": "8daf443863b1b2c9e7b5fb0a1cb8cf82ab855dc15ce0b8a63c8f3d4de80d44a7",
+      "bytes": 17783793,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00002.jsonl.gz": {
+      "sha256": "04eb16f13dd4ee38c9cb3400e2ba18ef5e0d86863f7948ef108f5aa7ae343e89",
+      "bytes": 17791862,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00003.jsonl.gz": {
+      "sha256": "23dd72ebb3a4e0aa7ca44845ddcfe7c63e09e599c1f6a84195215b9a7f09a822",
+      "bytes": 17783466,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00004.jsonl.gz": {
+      "sha256": "4b9614b7dbaa5ccc95f6791d7bcbdf29558f767c8cadf831db8211030591d515",
+      "bytes": 17776579,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00005.jsonl.gz": {
+      "sha256": "3c2aa0d3c9f1136fcfd44f26e85c55981103b0666549807ca4c5c0aa9b5c49ac",
+      "bytes": 17771004,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00006.jsonl.gz": {
+      "sha256": "9a8d9f5d6f6fe5f35b6e37128652d225cb4a5aa55f8bfa4c07d1fa7caadfae4b",
+      "bytes": 17784444,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00007.jsonl.gz": {
+      "sha256": "b48a44b87faa5e7e78dbe9de4f8ab03d6538eaace7cccdc1ac811db17b94b98a",
+      "bytes": 17790374,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00008.jsonl.gz": {
+      "sha256": "f6b67f03e6c202cdf642f1a63c150b07b81a7e30720d8eada514f0910e1430a7",
+      "bytes": 17775943,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00009.jsonl.gz": {
+      "sha256": "a9404cf28dd916d84b9b59912dd0335c2edc353a3349daf9d52e94fef7c0c034",
+      "bytes": 17782197,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00010.jsonl.gz": {
+      "sha256": "29d3d9a70d723132dac87f637704357b0b3951bd0cb00a40b7598670cd7025fd",
+      "bytes": 17777811,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 100000
+      }
+    },
+    "spatial/train/direction-00011.jsonl.gz": {
+      "sha256": "b26a1c99863e559f7ae978a3070fcc07454a50826dc8907b74d657cc8ab25f6f",
+      "bytes": 13887517,
+      "records": 78150,
+      "split_source_form_counts": {
+        "train/coco_train2017/direction": 78150
+      }
+    },
+    "spatial/train/mask-00000.jsonl.gz": {
+      "sha256": "dd1f32034a3cedf1891bdbf289ad7783721e7b2473f88c25abcc2e67024b151e",
+      "bytes": 38352074,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00001.jsonl.gz": {
+      "sha256": "b5ad4ecb85b6997c5eb77034ba0840a78a60efba9fc0eba89e73d28774777f86",
+      "bytes": 38216725,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00002.jsonl.gz": {
+      "sha256": "d1e9b6718b92a842b4e2228dc1657c9aae9e778953b67901fafbf275c3452da2",
+      "bytes": 38173963,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00003.jsonl.gz": {
+      "sha256": "41e684f3fc8d5a63ce842fde2efa142de4b5d428ccd0ad48b3932520409b05ed",
+      "bytes": 38209621,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00004.jsonl.gz": {
+      "sha256": "69d8805020d57d31fba7ebae41fae1e67f1b8a06254393f70c4e9336b85fe1c8",
+      "bytes": 38299129,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00005.jsonl.gz": {
+      "sha256": "ded76681cf811710e0206b0586da45748bba18046bd04d4e6d4f127414516208",
+      "bytes": 38325574,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 100000
+      }
+    },
+    "spatial/train/mask-00006.jsonl.gz": {
+      "sha256": "32bab050a2e044906dae03adc490e8048c6594fcf640cc1caaf28352f57f62ed",
+      "bytes": 35304990,
+      "records": 92060,
+      "split_source_form_counts": {
+        "train/coco_train2017/mask": 92060
+      }
+    },
+    "spatial/train/metric_comparison-00000.jsonl.gz": {
+      "sha256": "10e58d1eb57d1aadec695baec0429496f9fafb604b0c84da1e243b75ad8e0a9b",
+      "bytes": 18322551,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00001.jsonl.gz": {
+      "sha256": "ab3333e7448f051090efb4d3f2e1894b3f2c5eb1da6c916a775d3f8b12878319",
+      "bytes": 18317721,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00002.jsonl.gz": {
+      "sha256": "6794edfa89eedb28b0011329294524cbbadd3db6b859b91bd416bac22a271b2a",
+      "bytes": 18325131,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00003.jsonl.gz": {
+      "sha256": "a4882c5ff2bbe5423b5cf7dcc191fe7f3492380463a621bf10ea51e6e1ef4c80",
+      "bytes": 18319002,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00004.jsonl.gz": {
+      "sha256": "827c9e1f0feb3886cb262e9ce167ae51bac832cbd97cda661464d8ad78d152cb",
+      "bytes": 18323196,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00005.jsonl.gz": {
+      "sha256": "21aace9fb72baa18be88217e70ac920ade413962f55258c2b6619bf9c386f4a3",
+      "bytes": 18312972,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00006.jsonl.gz": {
+      "sha256": "6f97e43818e0f903bcf6cc31dcf32638deda0f92414d81075eb6f5382282a1b7",
+      "bytes": 18323131,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00007.jsonl.gz": {
+      "sha256": "5190112729509c73faae4c15d37aac0be6bf0e1d76685676d5e76c5106093493",
+      "bytes": 18329301,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00008.jsonl.gz": {
+      "sha256": "a1f9bc68cfc646fc991b6f86c3669e22ffdefe52cc68d0446a53da8d35a1eb72",
+      "bytes": 18312212,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00009.jsonl.gz": {
+      "sha256": "1e7dffdb0203dae551ae1ff7c7aaaee7e0dbfe58bc8bef7a275f5c302e139fcf",
+      "bytes": 18327554,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00010.jsonl.gz": {
+      "sha256": "a0994728c92a36000cad546e5715edb81c7512dc7553893961ce72d0b5cb230f",
+      "bytes": 18321154,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 100000
+      }
+    },
+    "spatial/train/metric_comparison-00011.jsonl.gz": {
+      "sha256": "37bc84e639eafada322e9dca60f306e4f5247f6e98eca3fb5bbaa6af7a7e3e7f",
+      "bytes": 14299795,
+      "records": 78079,
+      "split_source_form_counts": {
+        "train/coco_train2017/metric_comparison": 78079
+      }
+    },
+    "spatial/train/point-00000.jsonl.gz": {
+      "sha256": "ad94ea58a6891ebd255743c37064a382cdcda352f2ca8e84977c2f233918681c",
+      "bytes": 18238775,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00001.jsonl.gz": {
+      "sha256": "f5b5f7e12304d92f65d04ea4ad40d184926b71bd15910d6f6f26c7fda9ee86c0",
+      "bytes": 18248784,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00002.jsonl.gz": {
+      "sha256": "fcea578659244f266eb190f41a5560f192e871a4df18eae52b593ad56ab26f36",
+      "bytes": 18244085,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00003.jsonl.gz": {
+      "sha256": "9d113ec3fde5174b0d848af4de83ceaa8b101ddf3bd0b891e73a1b532b46a75e",
+      "bytes": 18215212,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00004.jsonl.gz": {
+      "sha256": "da79fd1d2e109a35ae47c3374848a109e686c3686703acd4a4169193014929a1",
+      "bytes": 18244759,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00005.jsonl.gz": {
+      "sha256": "c4e4b1eef99f0ec3dcd0073174130378d7cf570d26c62a9da8b081bcdd37b536",
+      "bytes": 18236085,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 100000
+      }
+    },
+    "spatial/train/point-00006.jsonl.gz": {
+      "sha256": "dd0302c7d942e24a004014e279cc43659453cfcf649cb6c4ce834aabb1637424",
+      "bytes": 19353109,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/coco_train2017/point": 92231,
+        "train/pixmo_points/point": 7769
+      }
+    },
+    "spatial/train/point-00007.jsonl.gz": {
+      "sha256": "3954eba7cfa3a3e4323914d4fc2d300cad2fbd2d3d5cb5a546a2047b1de182a7",
+      "bytes": 20162040,
+      "records": 100000,
+      "split_source_form_counts": {
+        "train/pixmo_points/point": 100000
+      }
+    },
+    "spatial/train/point-00008.jsonl.gz": {
+      "sha256": "1dfbdecf788677b98e4c4bd256f679eadc0239a526330545355e7d1d327ac93e",
+      "bytes": 6840942,
+      "records": 35739,
+      "split_source_form_counts": {
+        "train/pixmo_points/point": 35739
+      }
+    },
+    "spatial/train/relation_graph-00000.jsonl.gz": {
+      "sha256": "02b51b6cf27cefb3d653f07cb49c0da03c4a8598f3b331ebd5dbb956679c1df0",
+      "bytes": 41002147,
+      "records": 76797,
+      "split_source_form_counts": {
+        "train/coco_train2017/relation_graph": 76797
+      }
+    },
+    "spatial/benchmark/bbox-00000.jsonl.gz": {
+      "sha256": "233e01c097e4a76c94c2b035fd7912dd44622bbbf1d133559448192f8072cd99",
+      "bytes": 15061464,
+      "records": 81280,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/bbox": 81280
+      }
+    },
+    "spatial/benchmark/detection-00000.jsonl.gz": {
+      "sha256": "0eacf7cfe77c09e9c6ae23d39f2e255644e2b61d802d8a5a6e1ba5890f28304d",
+      "bytes": 2824082,
+      "records": 3738,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/detection": 3738
+      }
+    },
+    "spatial/benchmark/direction-00000.jsonl.gz": {
+      "sha256": "01d17cbee0a12ddd2cb1e8ceeb4d4d4b3d8923246bbf509e0bc6f38a64338e63",
+      "bytes": 15900063,
+      "records": 89045,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/direction": 89045
+      }
+    },
+    "spatial/benchmark/mask-00000.jsonl.gz": {
+      "sha256": "07b484c7abcaaa2887673ccd62b881e9df211848e1f12f350f053a72d7cb146c",
+      "bytes": 28922376,
+      "records": 81250,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/mask": 81250
+      }
+    },
+    "spatial/benchmark/metric_comparison-00000.jsonl.gz": {
+      "sha256": "fd6185376e68de2368abfbce9e6fbcea5cccb866d48a9ed9b2b2649ff1582c6b",
+      "bytes": 16319012,
+      "records": 88984,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/metric_comparison": 88984
+      }
+    },
+    "spatial/benchmark/point-00000.jsonl.gz": {
+      "sha256": "3b1c3216b5b14e5276ada222c6f04474e75c48bff2a6b02b94025f3a37a21395",
+      "bytes": 18973179,
+      "records": 100000,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/point": 81244,
+        "benchmark/pixmo_points/point": 18756
+      }
+    },
+    "spatial/benchmark/point-00001.jsonl.gz": {
+      "sha256": "9ec81d919a53229f5ed739a342265236ec462671cf6b4e88e6c5d91a19eccaff",
+      "bytes": 19198878,
+      "records": 100000,
+      "split_source_form_counts": {
+        "benchmark/pixmo_points/point": 100000
+      }
+    },
+    "spatial/benchmark/point-00002.jsonl.gz": {
+      "sha256": "8519f1ead50ab1eff8686a1fec79a26735a75def07b3f305fe40730c4f41b754",
+      "bytes": 4756666,
+      "records": 24260,
+      "split_source_form_counts": {
+        "benchmark/pixmo_points/point": 24260
+      }
+    },
+    "spatial/benchmark/relation_graph-00000.jsonl.gz": {
+      "sha256": "e60415854b3acd51a6d0bf12fad741b339557dfd92c8c439f335a81fead5bddd",
+      "bytes": 2678181,
+      "records": 3742,
+      "split_source_form_counts": {
+        "benchmark/coco_train2017/relation_graph": 3742
+      }
+    }
+  },
+  "inventory_scope": "all original package files and images; not all record payloads",
+  "full_aggregate_publicly_released": false,
+  "public_benchmark_records": 572299,
+  "unreleased_records": 33867,
+  "public_subset_sources": [
+    "CLEVR",
+    "coco_train2017",
+    "pixmo_points"
+  ],
+  "annotation_only_release": true,
+  "annotation_terms": {
+    "CLEVR": "https://creativecommons.org/licenses/by/4.0/",
+    "coco_train2017": "https://creativecommons.org/licenses/by/4.0/",
+    "pixmo_points": "https://opendatacommons.org/licenses/by/1-0/"
+  },
+  "record_privacy_scan": "All released spatial lines scanned; one exact hash-bound PixMo image-text IP label checked against its upstream annotation, not an Anvil server. Original bytes preserved.",
+  "split_source_counts": {
+    "train/coco_train2017": 4586326,
+    "train/pixmo_points": 143508,
+    "benchmark/coco_train2017": 429283,
+    "benchmark/pixmo_points": 143016
+  },
+  "presentation_files": {
+    "README.md": {
+      "bytes": 4190,
+      "sha256": "d54aa7381b6a553cde7e7d538ce727831f337b62bd0013fdc28d7c548ef8b4c7"
+    },
+    "docs/ATTRIBUTION.md": {
+      "bytes": 2929,
+      "sha256": "812b8c531c11b49b745840079556a3e2ce28ec4f41dc70ca9ba1367967fb7640"
+    },
+    "scripts/rebuild_clevr_images.py": {
+      "bytes": 5268,
+      "sha256": "dd3dafe8e055ecb92c94de6624bb710f70b494a8ccc54beffc0ae3067ead698a"
+    },
+    "scripts/rebuild_spatial_images.py": {
+      "bytes": 3718,
+      "sha256": "58526dd66594291879ba9d23d4194175c71f438f6f302fd51d1b3bee3727ee18"
+    }
+  },
+  "presentation_parent_revision": "91dd25a5723447e0c1e47ed9057fc187305e1ac9"
+}
