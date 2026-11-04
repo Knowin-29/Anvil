@@ -1,0 +1,253 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "created": 1793808574.6319966,
+  "report_sha256": "dc6908d822d2f22d07062e028e1e4dbd6ef97311f58d257d5761bedf42c15607",
+  "final_spec_sha256": "c3d5f79c472ee3629df981ac174afa15c0a0604e163b964067b66501fca42e36",
+  "accepted": false,
+  "final_quality_accepted": false,
+  "native_quality_required": true,
+  "final_model_publication_authorized_by_this_review": false,
+  "rationale": "Full evaluation is complete. All seven public benchmarks pass the 10% relative degradation tolerance. Native geometry fails: versioned Anvil-Eval v1.1 score 50.476384441895995 is below 58.815; mask and affordance IoU and DoF rotation remain inadequate. Continue substantive visual adaptation from the preserved completed checkpoint.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 88.4,
+      "paper": 88.21,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 79.389
+    },
+    "embspatial": {
+      "score": 81.29,
+      "paper": 82.34,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 74.10600000000001
+    },
+    "refspatial_bench": {
+      "score": 61.0,
+      "paper": 59.0,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 53.1
+    },
+    "where2place": {
+      "score": 68.33,
+      "paper": 68.0,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 61.2
+    },
+    "blink_relative_depth": {
+      "score": 84.68,
+      "paper": 91.13,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 82.017
+    },
+    "erqa": {
+      "score": 48.78,
+      "paper": 50.52,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 45.468
+    },
+    "vabench_point": {
+      "score": 74.67,
+      "paper": 80.67,
+      "accepted": true,
+      "rationale": "Measured full benchmark score meets the minimum of 90% of the paper reference.",
+      "minimum": 72.60300000000001
+    }
+  },
+  "native_group_assessments": {
+    "action_cot::ALFRED": {
+      "n": 3327,
+      "metrics": {
+        "contract_valid": 0.9942891493838293,
+        "expert_continuation_exact": 0.1950706342049895,
+        "json_valid": 0.9993988578298768,
+        "next_action_exact": 0.5969341749323716,
+        "target_object_exact": 0.4962428614367298,
+        "target_role_exact": 0.822663059813646,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "affordance::ShareRobot-Bench": {
+      "n": 193,
+      "metrics": {
+        "contract_valid": 0.9792746113989638,
+        "instruction_copy_exact": 0.9792746113989638,
+        "json_valid": 0.9792746113989638,
+        "region_iou": 0.1131302459636152,
+        "region_iou50": 0.031088082901554404,
+        "region_iou75": 0.0,
+        "region_iou90": 0.0,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "bbox::coco_train2017": {
+      "n": 81280,
+      "metrics": {
+        "box_f1_iou50": 0.3364419291338583,
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "matched_box_iou": 0.31126768277695965,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "depth_order::PRISM": {
+      "n": 3601,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.9252985281866148,
+        "reference_relation_f1": 0.9252985281866148,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "detection::coco_train2017": {
+      "n": 3738,
+      "metrics": {
+        "box_f1_iou50": 0.25288159316823083,
+        "contract_valid": 0.9753879079721777,
+        "json_valid": 0.9753879079721777,
+        "matched_box_iou": 0.2061495159861905,
+        "truncated": 0.024612092027822365
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "direction::coco_train2017": {
+      "n": 89045,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.7626368689988208,
+        "reference_relation_f1": 0.7626368689988208,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "dof::PRISM": {
+      "n": 580,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "normalized_projected_contact_l2": 0.08901703266133036,
+        "pi_symmetric_rotation_error_degrees": 81.69607451282238,
+        "rotation_error_degrees": 109.2857602376284,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "mask::coco_train2017": {
+      "n": 81250,
+      "metrics": {
+        "contract_valid": 0.9114338461538461,
+        "json_valid": 0.9509169230769231,
+        "matched_mask_iou": 0.14220660052174994,
+        "truncated": 0.0025723076923076923
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "metric_comparison::coco_train2017": {
+      "n": 88984,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "normalized_image_distance_mae": 0.10300742553506025,
+        "relation_identity_exact": 0.9999438101231682,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "point::coco_train2017": {
+      "n": 81244,
+      "metrics": {
+        "contract_valid": 1.0,
+        "interior_point_f1": 0.37248289104426174,
+        "json_valid": 1.0,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "point::pixmo_points": {
+      "n": 143016,
+      "metrics": {
+        "annotated_point_f1_r50": 0.46985516674714084,
+        "contract_valid": 0.9904276444593612,
+        "json_valid": 0.9914834703809364,
+        "truncated": 0.007712423784751356
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    },
+    "relation_graph::coco_train2017": {
+      "n": 3742,
+      "metrics": {
+        "contract_valid": 0.998663816141101,
+        "json_valid": 0.9997327632282202,
+        "reference_exact": 0.024853019775521113,
+        "reference_relation_f1": 0.7686311459960053,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "Included in the complete 580000-record review; native capability acceptance is withheld because the joint geometry requirement fails. Raw measurements retained without changing scoring or targets."
+    }
+  },
+  "general_assessments": {
+    "ai2d_test": {
+      "measurements": {
+        "n": 3088,
+        "score": 87.40284974093264,
+        "parse_failures": 0
+      },
+      "accepted": true,
+      "rationale": "Full evaluation completed with finite scores and zero parse failures; no catastrophic collapse is evident in these evaluated general tasks."
+    },
+    "scienceqa_test": {
+      "measurements": {
+        "n": 2017,
+        "score": 98.5126425384234,
+        "parse_failures": 0
+      },
+      "accepted": true,
+      "rationale": "Full evaluation completed with finite scores and zero parse failures; no catastrophic collapse is evident in these evaluated general tasks."
+    },
+    "textvqa_val": {
+      "measurements": {
+        "n": 5000,
+        "score": 86.69400000000046,
+        "parse_failures": 0
+      },
+      "accepted": true,
+      "rationale": "Full evaluation completed with finite scores and zero parse failures; no catastrophic collapse is evident in these evaluated general tasks."
+    }
+  },
+  "native_score": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/final_native_score.json",
+    "sha256": "1959669f63f723747f2fc3fb448d0854c41868ece01174254c3bf37b1abc2b6b",
+    "score": 50.476384441895995,
+    "minimum": 58.815,
+    "accepted": false,
+    "scorer_historical_equivalence_established": false
+  },
+  "policy": {
+    "relative_degradation_max": 0.1,
+    "improvement_passes": true,
+    "native_geometry_required": true
+  }
+}

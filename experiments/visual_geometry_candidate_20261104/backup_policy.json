@@ -1,0 +1,11 @@
+{
+  "spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/backup_visual_checkpoints.py": "56e7d9bba9422cf7edf90d7d54394a9d82e10ab86b0e8ce57e824a1525641b46",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/verify_checkpoint.py": "08ced7ae4b207d632a2ab8725fab9db01aca3741fbb27c1eaa4c28b7ac2ec1eb"
+  },
+  "parent_hf_revision": "574164bea67033e6117348584076c9627f4d97e8",
+  "previous_keys": 35,
+  "planned_keys": 39,
+  "credentials_modified": false
+}

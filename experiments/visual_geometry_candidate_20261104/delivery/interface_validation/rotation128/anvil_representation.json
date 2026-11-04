@@ -1,0 +1,10 @@
+{
+  "mode": "rotation128",
+  "decoder_required": true,
+  "source_inference_files_sha256": {
+    "dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+    "dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+    "dof_codebook_interface.py": "ccf3ac68fa4396f735d3a58d66af223587c9059a14baefd788ba3ea0093401d6",
+    "dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10"
+  }
+}

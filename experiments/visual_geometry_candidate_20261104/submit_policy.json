@@ -1,0 +1,25 @@
+{
+  "schema": "anvil-targeted-continuation-submission-v1",
+  "gpus": 32,
+  "spec": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/spec.json",
+  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/cli.yaml",
+  "trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/public_trigger.json",
+  "parent_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation/final_report.json",
+  "parent_evaluation_spec_sha256": "c3d5f79c472ee3629df981ac174afa15c0a0604e163b964067b66501fca42e36",
+  "parent_jobs": [
+    "t-20261104230112-7zx4q",
+    "t-20261104230159-5nzrb",
+    "t-20261104230247-665gd",
+    "t-20261104230330-mlz8c"
+  ],
+  "handoff_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_final_handoff.py",
+  "handoff_policy": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/policy.json",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_continuation_controller.py": "e0ef1addb8f77db64c62eb22021c4ff62557129e412962fffcd8be35509c7a85",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_final_handoff.py": "6f7b4206be4f96f32a814d5b26aa66a6ae2d3eba5acb27dda00d2378ec563816",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/spec.json": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/cli.yaml": "d8fd3997054d309fef2e2fb1e13a4bd56f4ea9af579a84b95fc726928822ea9a",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/public_trigger.json": "7ad430fcc676cd0ec8e486ae47b46ae986d846a18689d2a92d34c8264b3071f0",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/policy.json": "a7f8f4a25e84d52cc292025e43c7dcedcb7ca0861a6ea3ea83187fdbcde0483e"
+  }
+}
