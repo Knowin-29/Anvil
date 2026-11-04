@@ -1,6 +1,6 @@
 {
   "schema": "anvil-visual-campaign-source-snapshot-v1",
-  "created": 1793809141.538239,
+  "created": 1793809328.3715117,
   "files": [
     {
       "path": "validate_visual_adapter.py",
@@ -31,6 +31,11 @@
       "path": "node.py",
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/node.py",
       "sha256": "d7f2dfa093958ec840e78457d47df4c824cd82b687261d937a62f55b5bbb1bc8"
+    },
+    {
+      "path": "sync_monitor_sources.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/sync_monitor_sources.py",
+      "sha256": "fa6e091f08608e39aaa9469fd411b809a9a415635cd1474a62155713a5974118"
     },
     {
       "path": "point_contracts.py",
@@ -125,7 +130,7 @@
     {
       "path": "candidate_notes.json",
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/candidate_notes.json",
-      "sha256": "0f0cc2bde665a42bcad77b90fb655a8c7783c930803edabbe967c97f6b2a0302"
+      "sha256": "2cb4242cdff11b6309e3c62b18b1c18220300b724d37d48f479ddf1b57a04136"
     },
     {
       "path": "protocol.json",
@@ -348,6 +353,11 @@
       "sha256": "a7f8f4a25e84d52cc292025e43c7dcedcb7ca0861a6ea3ea83187fdbcde0483e"
     },
     {
+      "path": "release_control/first_checkpoint_monitor_policy.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/first_checkpoint_monitor_policy.json",
+      "sha256": "07c8933eaafa7746e2d390283f14aed78a904de80afeb247ea7dbd7f6bed26c3"
+    },
+    {
       "path": "release_control/derivation.json",
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/derivation.json",
       "sha256": "fac89de1de7394b28e588e4a7b36dbd14a43dfaafc1975f44fdd603c8001c284"
@@ -381,6 +391,11 @@
       "path": "release_control/cleanup_policy.json",
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/cleanup_policy.json",
       "sha256": "4068fb35d028c80815530d8eaa73ac4d8abfa573d23cb48d7bbb59301a108f88"
+    },
+    {
+      "path": "release_control/verify_first_production_checkpoint.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/verify_first_production_checkpoint.py",
+      "sha256": "e987c808a68d244982f54a9674dc11e9c3a85361dcb874f938fd10d6dafc08d1"
     },
     {
       "path": "release_control/cpu_validation.json",

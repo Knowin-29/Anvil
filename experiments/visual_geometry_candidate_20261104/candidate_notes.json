@@ -1,7 +1,7 @@
 {
   "schema": "anvil-visual-adaptation-preparation-v1",
   "created": 1793806115.490714,
-  "state": "trainer_prepared_cpu_verified_not_frozen_or_submitted",
+  "state": "submitted_production_training_initializing",
   "evidence": {
     "completed_geometry_groups": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/early_geometry_group_results.json",
@@ -54,10 +54,10 @@
     "Do not submit while active/queued/UNKNOWN campaign GPU usage would exceed32.",
     "Current candidate sources, weights, evaluation and scorer remain immutable."
   ],
-  "gpu_jobs_submitted": 0,
+  "gpu_jobs_submitted": 1,
   "training_complete": false,
   "quality_accepted": false,
-  "updated": 1793807310.415872,
+  "updated": 1793809205.0062664,
   "trainer": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/train.py",
   "optimizer_tests": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/optimizer_cpu_tests.json",
   "trainer_interface_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/trainer_interface_validation.json",
@@ -79,10 +79,9 @@
       "save_every": 32
     }
   },
-  "remaining_pre_submission": [
-    "Complete current full evaluation and genuine rejection review.",
-    "Build/freeze candidate settings, full lineage with explicit zero-delta initialization transform, mixed-rank merger integration, full evaluation launcher and import binding.",
-    "Extend verified checkpoint backup/release/cleanup/presentation policies to include visual repair and final MOPD stages; preserve current35 remotely verified checkpoints.",
-    "Validate resource counts and current authoritative job states; submit only within32-GPU ceiling."
-  ]
+  "remaining_pre_submission": [],
+  "task_id": "t-20261105001409-lb4r4",
+  "submitted_gpus": 32,
+  "spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+  "release_control": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104"
 }
