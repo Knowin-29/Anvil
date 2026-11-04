@@ -1,0 +1,64 @@
+TaskName: task_anvil_final_eval_c3d5f79c_dispatch_node1_A800x8
+Description: Full final evaluation with version-pinned dependency resolution; unchanged
+  final model, samples, generation budgets and scorers.
+Entrypoint: 'set -Eeuo pipefail
+
+  export PYTHONDONTWRITEBYTECODE=1
+
+  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/launch_node.py
+  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation_spec.json
+  --output /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation
+  --node 1 --nodes 4'
+Tags:
+- eval
+UserCodePath: ''
+RemoteMountCodePath: ''
+Envs: []
+ResourceQueueID: q-20260718231052-bvqz2
+Framework: Custom
+TaskRoleSpecs:
+- RoleName: worker
+  RoleReplicas: 1
+  Flavor: custom
+  ResourceSpec:
+    Family: ml.hpcpni2l
+    CPU: 105.0
+    Memory: 1875.0
+    GPUNum: 8
+ActiveDeadlineSeconds: 172800
+EnableTensorBoard: false
+Storages:
+- Type: TosFuse
+  MountPath: /knowin-oss
+  Bucket: knowin-oss
+  Prefix: /
+- Type: Vepfs
+  MountPath: /Knowin/foundation
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: foundation
+- Type: Vepfs
+  MountPath: /Knowin/demo
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: demo
+- Type: Vepfs
+  MountPath: /Knowin/sim
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: sim
+ImageUrl: vemlp-cn-beijing.cr.volces.com/preset-images/cuda:13.0.3-py3.12-ubuntu24.04
+CacheType: Cloudfs
+RetryOptions:
+  EnableRetry: false
+  MaxRetryTimes: 5
+  IntervalSeconds: 120
+  PolicySets: []
+  EnableReserveResourceOnRetry: false
+DiagOptions:
+- Name: EnvironmentalDiagnosis
+  Enable: false
+- Name: PythonDetection
+  Enable: false
+- Name: LogDetection
+  Enable: false
+- Name: VecclHangDetection
+  Enable: false
+Priority: 7

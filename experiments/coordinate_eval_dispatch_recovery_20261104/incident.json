@@ -1,0 +1,15 @@
+{
+  "cause": "Frozen evaluation node.py prepended obsolete final_delivery_geometry_v1, so common.formal_training rejected the current training run",
+  "cloud_error": "ValueError: Different direct training run",
+  "failed_tasks": [
+    "t-20261104224419-kts89",
+    "t-20261104224458-wqxnb",
+    "t-20261104224542-l9ffg",
+    "t-20261104224625-wxd4j"
+  ],
+  "fix": "Load the intended sealed v2 common module before executing the unchanged frozen node; workers and scorers remain unchanged",
+  "evaluation_spec_sha256": "c3d5f79c472ee3629df981ac174afa15c0a0604e163b964067b66501fca42e36",
+  "model_and_checkpoints_unchanged": true,
+  "full_scope_preserved": true,
+  "created": 1793804302.4880164
+}
