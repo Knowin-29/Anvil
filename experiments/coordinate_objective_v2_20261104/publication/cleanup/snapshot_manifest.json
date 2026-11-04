@@ -1,0 +1,26 @@
+{
+  "files": {
+    "cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/cleanup_verified_weights.py",
+      "sha256": "a727862b709680f3e27c560fd917cd5bf58d9b6b01f6c26e55485a78b0605b18",
+      "bytes": 18124
+    },
+    "test_cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/test_cleanup_verified_weights.py",
+      "sha256": "a222f973751cdea22aa671f70c453aacdce5439655225564b39c02239f2691c5",
+      "bytes": 11821
+    },
+    "cleanup_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/cleanup_policy.json",
+      "sha256": "2e8695227fbaa473eabc2e27ebeb20ac8e194b7b57e0a1a508500179e059267d",
+      "bytes": 4031
+    },
+    "cleanup_tests.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/cleanup_tests.json",
+      "sha256": "9b6f6c02983495674312e70bd14e216d819fb2074713078bf5cf6b1774238d03",
+      "bytes": 891
+    }
+  },
+  "created": 1793750665.675286,
+  "credentials_persisted": false
+}

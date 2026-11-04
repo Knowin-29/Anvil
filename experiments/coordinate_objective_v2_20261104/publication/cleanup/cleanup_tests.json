@@ -1,0 +1,16 @@
+{
+  "state": "passed_cpu_only",
+  "tests": 19,
+  "failed": 0,
+  "exit_code": 0,
+  "observed_output": "Ran 19 tests in 1.071s; OK",
+  "temporary_files_only": true,
+  "real_weights_deleted": false,
+  "gpu_jobs": false,
+  "checked": 1793750631.3639646,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/cleanup_verified_weights.py": "a727862b709680f3e27c560fd917cd5bf58d9b6b01f6c26e55485a78b0605b18",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/test_cleanup_verified_weights.py": "a222f973751cdea22aa671f70c453aacdce5439655225564b39c02239f2691c5",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/quality_gate.py": "4d1ced2602e2d83195503d96b4bd3f418ff4b555133702978a2b3c4dfb0d1ce4"
+  }
+}
