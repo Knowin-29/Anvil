@@ -1,0 +1,19 @@
+{
+  "state": "actual_expanded_adapter_merge_mapping_verified_cpu_only",
+  "checked": 1793807176.8372438,
+  "adapter_sha256": "9d0927e0bf08ef9c419863c852b27d59f5918be10d0fff7443003d4e591d9c7f",
+  "mapped_projections": 282,
+  "visual_projections": 34,
+  "language_projections": 248,
+  "visual_rank": 32,
+  "language_rank": 64,
+  "scale": 2.0,
+  "real_base_projection_zero_delta_verified": "model.visual.blocks.19.attn.qkv.weight",
+  "source_modified": false,
+  "gpu_jobs_used": 0,
+  "unit_tests_passed": 4,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/merge_low_rank.py": "ba6b4fbe8e902ca16ed563e43abc82934dd3ffd268a2a4feafb8a6d7190b4934",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/test_merge_low_rank.py": "b17b46f2a26e6b49a477e8390bc5e31906f0dd1a709480a873bf3814bdbff9e1"
+  }
+}

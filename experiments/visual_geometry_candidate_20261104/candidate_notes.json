@@ -1,7 +1,7 @@
 {
   "schema": "anvil-visual-adaptation-preparation-v1",
   "created": 1793806115.490714,
-  "state": "initialization_prepared_training_not_submitted",
+  "state": "trainer_prepared_cpu_verified_not_frozen_or_submitted",
   "evidence": {
     "completed_geometry_groups": {
       "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/early_geometry_group_results.json",
@@ -56,5 +56,33 @@
   ],
   "gpu_jobs_submitted": 0,
   "training_complete": false,
-  "quality_accepted": false
+  "quality_accepted": false,
+  "updated": 1793807310.415872,
+  "trainer": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/train.py",
+  "optimizer_tests": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/optimizer_cpu_tests.json",
+  "trainer_interface_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/trainer_interface_validation.json",
+  "merge_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/merge_cpu_validation.json",
+  "proposed_stages": {
+    "repair": {
+      "steps": 8192,
+      "lr": 1e-06,
+      "targeted_geometry_lr": 2e-06,
+      "visual_lr": 2e-05,
+      "first_checkpoint_step": 64,
+      "save_every": 256
+    },
+    "mopd": {
+      "steps": 256,
+      "lr": 2.5e-07,
+      "visual_lr": 2.5e-07,
+      "first_checkpoint_step": 32,
+      "save_every": 32
+    }
+  },
+  "remaining_pre_submission": [
+    "Complete current full evaluation and genuine rejection review.",
+    "Build/freeze candidate settings, full lineage with explicit zero-delta initialization transform, mixed-rank merger integration, full evaluation launcher and import binding.",
+    "Extend verified checkpoint backup/release/cleanup/presentation policies to include visual repair and final MOPD stages; preserve current35 remotely verified checkpoints.",
+    "Validate resource counts and current authoritative job states; submit only within32-GPU ceiling."
+  ]
 }
