@@ -1,0 +1,15 @@
+{
+  "schema": "anvil-eval-score-protocol-seal-v1.1",
+  "created": 1793777972.1947427,
+  "candidate_report_exists": false,
+  "files": {
+    "PROTOCOL.md": "03a106f8b070dc4048d9fd36d81bbd28f622c090ddb66b5bc92e452c96439171",
+    "score_records.py": "340ecaef7bb5e9669e4c42491acb9ec718e8462a2c50868ad121a11ab17900c4",
+    "wait_and_score.py": "85f6d452b1aefe1ad6df708ce6c932b564f00bf923f9269d6a461eb17f0a6246",
+    "test_score_records.py": "512af3b6b480275e7dccdd33a6d33a4d23d1afe5955f0e9e26e396cb50446065"
+  },
+  "cpu_tests_passed": 8,
+  "user_authorized_completion": true,
+  "supersedes": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_20261104/protocol_seal.json",
+  "change": "Native-validator distance floating margin; scoring formula unchanged"
+}
