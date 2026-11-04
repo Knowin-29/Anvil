@@ -1,0 +1,41 @@
+{
+  "schema": "anvil-source-snapshot-v1",
+  "files": [
+    {
+      "path": "expand_visual_adapter.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/expand_visual_adapter.py",
+      "sha256": "16e2d4d86853b9b36bf4808929417288b924d1e439c50d780a0efa390283e522",
+      "bytes": 5572
+    },
+    {
+      "path": "validate_visual_adapter.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/validate_visual_adapter.py",
+      "sha256": "d76ef48e480c53ca07fad4a8f372607f89651cb5567700359adfef8afbd42189",
+      "bytes": 4565
+    },
+    {
+      "path": "cpu_validation.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/cpu_validation.json",
+      "sha256": "66249b98f592d7e73b62b545a58a786c05510390eb002756fcf397d3b84de733",
+      "bytes": 659
+    },
+    {
+      "path": "protocol.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/protocol.json",
+      "sha256": "9ec0b6b0184a2c28e3bcab29b3a234e019c32e48f8654ec95c4261bd680ffdd5",
+      "bytes": 1912
+    },
+    {
+      "path": "candidate_notes.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/candidate_notes.json",
+      "sha256": "51555be3b4e19e0810094f77148987f4f048b876154ae3c8ce03128a83b3881e",
+      "bytes": 3698
+    },
+    {
+      "path": "initialization/initialization.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/initialization/initialization.json",
+      "sha256": "b5214a908b3d7d26d52079bf7b502ac09a532979dfb437442ee7213482618e21",
+      "bytes": 3735
+    }
+  ]
+}

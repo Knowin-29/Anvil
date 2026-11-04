@@ -1,0 +1,60 @@
+{
+  "schema": "anvil-visual-adaptation-preparation-v1",
+  "created": 1793806115.490714,
+  "state": "initialization_prepared_training_not_submitted",
+  "evidence": {
+    "completed_geometry_groups": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/early_geometry_group_results.json",
+      "sha256": "3f2c8b20ab6f457376c2459e1bddfbebb09ce4218dd3560511cf0fba512637c8"
+    },
+    "completed_public_general": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/completed_public_general_report.json",
+      "sha256": "dc1da2157c0dfcaa2dcb86b728075c5bf54170e45234d5e7f47a35a3791b3628"
+    },
+    "prior_training_dynamics": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/training_dynamics_summary.json",
+      "sha256": "681860959d256190b752fb6a0f368ca6f01c191bf1a05bf565f09aa11548eb51"
+    },
+    "current_adapter_config": {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-256/adapter_config.json",
+      "sha256": "6610ade94cff4a84834637485e83c1f66c61abcc44eff237f7a7e0723bc9068c"
+    }
+  },
+  "finding": "Prior adapter target regex updates only model.language_model; vision tower and merger remain frozen. Complete current DoF and affordance predictions remain weak despite lower training loss.",
+  "hypothesis": "Train low-rank updates in the final eight visual blocks and visual merger jointly with language to improve spatial grounding. This is an optimization hypothesis, not a demonstrated cause or result.",
+  "initialization": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/initialization/initialization.json",
+    "sha256": "b5214a908b3d7d26d52079bf7b502ac09a532979dfb437442ee7213482618e21"
+  },
+  "interface_protocol": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/protocol.json",
+    "sha256": "9ec0b6b0184a2c28e3bcab29b3a234e019c32e48f8654ec95c4261bd680ffdd5"
+  },
+  "preserved": {
+    "base": "Qwen3.5-9B",
+    "merged_model_architecture": "unchanged",
+    "language_tensors": "all496 unchanged",
+    "initial_visual_delta": "zero",
+    "source_sft_records": 5220000,
+    "source_spatial_pool_records": 4756000,
+    "native_forms": 11,
+    "native_evaluation_records": 580000,
+    "public_records": 7366,
+    "general_records": 10105,
+    "heldout_training_allowed": false,
+    "server_credentials_modified": false
+  },
+  "training_requirements": [
+    "Use existing bound training pools and all native forms; preserve current complete evaluation.",
+    "Fresh stage optimizers for the expanded parameter set; preserve original trained tensors exactly at initialization.",
+    "Keep public/general replay and genuine final on-policy MOPD with bound teachers.",
+    "Record nonzero finite visual gradient/update on the first real production checkpoint; no GPU diagnostic arm.",
+    "Derive new immutable trainer, campaign, backup, merge, full evaluation, release and cleanup policies; remove hard-coded 173113344 adapter parameter assumptions where necessary.",
+    "Inheritance/interface and lineage must distinguish zero-delta initialization from a trained checkpoint.",
+    "Do not submit while active/queued/UNKNOWN campaign GPU usage would exceed32.",
+    "Current candidate sources, weights, evaluation and scorer remain immutable."
+  ],
+  "gpu_jobs_submitted": 0,
+  "training_complete": false,
+  "quality_accepted": false
+}

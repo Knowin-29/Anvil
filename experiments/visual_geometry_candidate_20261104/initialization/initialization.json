@@ -1,0 +1,163 @@
+{
+  "schema": "anvil-zero-delta-visual-adapter-initialization-v1",
+  "state": "prepared_not_trained",
+  "created": 1793805845.3620324,
+  "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-256",
+  "source_adapter_sha256": "f541b227f4a805900c42989308616ffaeb18001a534b45b57d5c6e0af2c3efb7",
+  "base": "/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B",
+  "output": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/initialization",
+  "preserved_language_tensors": 496,
+  "added_visual_tensors": 68,
+  "language_parameters": 173113344,
+  "visual_parameters": 5136384,
+  "total_adapter_parameters": 178249728,
+  "visual_rank": 32,
+  "visual_alpha": 64,
+  "visual_modules": {
+    "model.visual.blocks.19.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.19.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.19.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.19.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.20.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.20.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.20.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.20.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.21.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.21.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.21.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.21.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.22.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.22.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.22.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.22.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.23.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.23.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.23.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.23.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.24.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.24.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.24.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.24.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.25.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.25.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.25.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.25.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.blocks.26.attn.proj": [
+      1152,
+      1152
+    ],
+    "model.visual.blocks.26.attn.qkv": [
+      3456,
+      1152
+    ],
+    "model.visual.blocks.26.mlp.linear_fc1": [
+      4304,
+      1152
+    ],
+    "model.visual.blocks.26.mlp.linear_fc2": [
+      1152,
+      4304
+    ],
+    "model.visual.merger.linear_fc1": [
+      4608,
+      4608
+    ],
+    "model.visual.merger.linear_fc2": [
+      4096,
+      4608
+    ]
+  },
+  "initial_visual_delta_exactly_zero": true,
+  "language_tensors_exactly_unchanged": true,
+  "seed": 20261104,
+  "source_modified": false,
+  "optimizer_resumed": false,
+  "training_performed": false,
+  "quality_accepted": false,
+  "adapter_sha256": "9d0927e0bf08ef9c419863c852b27d59f5918be10d0fff7443003d4e591d9c7f",
+  "config_sha256": "5379538613edef85d37c22b38cfafd1996e0225a80eb309f8fc7c4a31ac9029f"
+}
