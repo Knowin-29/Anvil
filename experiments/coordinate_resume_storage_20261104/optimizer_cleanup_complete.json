@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "files_removed": 126,
+  "bytes_freed": 174551931162,
+  "preview_sha256": "c3c65ad18feddd26225bfc5c8bd811ca64e88192aa9e5339d64aff2ea3691a3c",
+  "started": 1793797972.3080618,
+  "completed": 1793797974.7290757,
+  "all_adapter_weights_retained": true,
+  "all_key_checkpoints_retained": true,
+  "resume160_retained": true
+}

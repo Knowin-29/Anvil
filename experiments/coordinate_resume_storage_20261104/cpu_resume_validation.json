@@ -1,0 +1,11 @@
+{
+  "state": "passed",
+  "optimizer_steps": 160,
+  "scheduler_steps": 160,
+  "rank_rng_states_loadable": 32,
+  "exposure_prefixes_tested": 32,
+  "logs_and_exposure_originals_preserved": true,
+  "write_probe_bytes": 3221225472,
+  "write_probe_seconds": 2.0575063228607178,
+  "checked": 1793798129.2515407
+}

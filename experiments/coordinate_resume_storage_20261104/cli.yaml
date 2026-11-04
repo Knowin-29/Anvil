@@ -1,0 +1,61 @@
+TaskName: task_train_anvil_coordinate_resume160_A800x32
+Description: Resume original coordinate MOPD160 to256 after storage quota cleanup;
+  exact optimizer and32 RNGs; unchanged frozen training protocol.
+Entrypoint: 'set -Eeuo pipefail
+
+  export PYTHONDONTWRITEBYTECODE=1
+
+  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/node.py'
+Tags:
+- train
+UserCodePath: ''
+RemoteMountCodePath: ''
+Envs: []
+ResourceQueueID: q-20260718231052-bvqz2
+Framework: Custom
+TaskRoleSpecs:
+- RoleName: worker
+  RoleReplicas: 4
+  Flavor: custom
+  ResourceSpec:
+    Family: ml.hpcpni2l
+    CPU: 105.0
+    Memory: 1875.0
+    GPUNum: 8
+ActiveDeadlineSeconds: 37724
+EnableTensorBoard: false
+Storages:
+- Type: TosFuse
+  MountPath: /knowin-oss
+  Bucket: knowin-oss
+  Prefix: /
+- Type: Vepfs
+  MountPath: /Knowin/foundation
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: foundation
+- Type: Vepfs
+  MountPath: /Knowin/demo
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: demo
+- Type: Vepfs
+  MountPath: /Knowin/sim
+  VepfsId: vepfs-cnbjcdcfe37d29da
+  SubPath: sim
+ImageUrl: vemlp-cn-beijing.cr.volces.com/preset-images/cuda:13.0.3-py3.12-ubuntu24.04
+CacheType: Cloudfs
+RetryOptions:
+  EnableRetry: false
+  MaxRetryTimes: 5
+  IntervalSeconds: 120
+  PolicySets: []
+  EnableReserveResourceOnRetry: false
+DiagOptions:
+- Name: EnvironmentalDiagnosis
+  Enable: false
+- Name: PythonDetection
+  Enable: false
+- Name: LogDetection
+  Enable: false
+- Name: VecclHangDetection
+  Enable: false
+Priority: 7

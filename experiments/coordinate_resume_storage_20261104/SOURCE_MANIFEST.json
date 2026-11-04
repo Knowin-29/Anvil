@@ -1,0 +1,96 @@
+{
+  "files": {
+    "node.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/node.py",
+      "sha256": "a8c845a1f3da44a2359b8540d6a62f58b959b010c46b639237f4f1d875042e91",
+      "bytes": 5049
+    },
+    "handoff.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/handoff.py",
+      "sha256": "cccd778c5c9490e827e74ca93b8cecd49a91274370d7e6b57fcb75f269931794",
+      "bytes": 6583
+    },
+    "finish_delivery.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/finish_delivery.py",
+      "sha256": "d4306b96b241c943822dbb1de351ceb65d1627d1f40e2d48af5f1d491f0df4e6",
+      "bytes": 10696
+    },
+    "cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cleanup_verified_weights.py",
+      "sha256": "b19d3d37a0197cae82db637a8ce83a98262f7d9b8692112d0510dce52047319f",
+      "bytes": 19953
+    },
+    "test_cleanup_verified_weights.py": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/test_cleanup_verified_weights.py",
+      "sha256": "9eeeaef39815770a3f9e664ec8e0bfc68082e61fc18ced3ae29731944087b167",
+      "bytes": 14364
+    },
+    "resume_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/resume_policy.json",
+      "sha256": "884d96c67839d6d937fad18bea92e3796b57d606e6bf0a25a19d96f398d9bb6d",
+      "bytes": 1317
+    },
+    "release_policy_resume_v3.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/release_policy_resume_v3.json",
+      "sha256": "64e51084ca1cdbb0b1f7ab5f58ea756b5a44e551dfc558ef2a87db6c3043a7fe",
+      "bytes": 8191
+    },
+    "cleanup_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cleanup_policy.json",
+      "sha256": "6bee7bee36a6f240d0a502e1a41ac86b6edbe57fabab78d6511bbcc4447a255f",
+      "bytes": 4740
+    },
+    "cleanup_tests.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cleanup_tests.json",
+      "sha256": "9d68a2b9079aa9f58640e5c5d22f0fa4fd61345c7f28cfb6f93bd542fe2e96c5",
+      "bytes": 394
+    },
+    "cpu_resume_validation.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cpu_resume_validation.json",
+      "sha256": "8501875b7069aad7819945f4e1eb84d802cfe3bce853076ccc0338adb788ab2f",
+      "bytes": 306
+    },
+    "resume160_verification.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/resume160_verification.json",
+      "sha256": "c341b28cccbca2a910d8c9b41dab3c616af50e291626fef9f1c4634e469ee619",
+      "bytes": 471
+    },
+    "incident.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/incident.json",
+      "sha256": "1a5390936d2575e155104ec03e03b3a59530f12c610a91d86fcf3e3a356ee5c6",
+      "bytes": 966
+    },
+    "optimizer_cleanup_preview.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/optimizer_cleanup_preview.json",
+      "sha256": "c3c65ad18feddd26225bfc5c8bd811ca64e88192aa9e5339d64aff2ea3691a3c",
+      "bytes": 49748
+    },
+    "optimizer_cleanup_complete.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/optimizer_cleanup_complete.json",
+      "sha256": "c9a9034769258d13ee4ae16f3c7a647df17f0c4660dac554de009e5cf9cb5033",
+      "bytes": 347
+    },
+    "optimizer_cleanup_deleted.jsonl": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/optimizer_cleanup_deleted.jsonl",
+      "sha256": "477693468d771408bd213ab650d34c852ae2742209b116f8086931713778a0c3",
+      "bytes": 42161
+    },
+    "submission.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/submission.json",
+      "sha256": "57380c70d58a5af715a486237ffeb430acef333e9689633895dac571f5da99eb",
+      "bytes": 410
+    },
+    "cli.yaml": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cli.yaml",
+      "sha256": "c87ab9a8068f50b22cca1720e0e7a8f7188ee13fef3ab9aa4c43cb2973d0c5d9",
+      "bytes": 1586
+    },
+    "resume_handoff_policy.json": {
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/resume_handoff_policy_20261104.json",
+      "sha256": "072a391a74bf4bfece7d8822fd46242591a9719037e37d6cddd2cf5b53cf7534",
+      "bytes": 5417
+    }
+  },
+  "original_training_source_unchanged": true,
+  "task_id": "t-20261104211657-7d4ln"
+}
