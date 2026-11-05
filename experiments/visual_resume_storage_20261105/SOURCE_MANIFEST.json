@@ -2,9 +2,19 @@
   "schema": "anvil-exact-visual-resume-source-v1",
   "files": [
     {
+      "path": "verify_resumed_checkpoint.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/verify_resumed_checkpoint.py",
+      "sha256": "ce1f493d1c5b368d308152a135db91ce4e3c675d6fed622b872b1c3627479343"
+    },
+    {
       "path": "finish_delivery.py",
       "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/finish_delivery.py",
       "sha256": "c1b4a6566dde415b55a27340ca4811868e1e9822d4be403143b651dfc2adc3e5"
+    },
+    {
+      "path": "observe.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/observe.py",
+      "sha256": "a63eb2e496cb97c45333701be567ae5197436d5a50ed9b38e41d62878a09d7e1"
     },
     {
       "path": "storage_budget.py",
@@ -97,6 +107,6 @@
       "sha256": "245465e497f61f9f217d03ccee37fef27013245f28a88895bb91f6d6798d0beb"
     }
   ],
-  "created": 1793846324.6331687,
+  "created": 1793846521.6766267,
   "weights_included": false
 }
