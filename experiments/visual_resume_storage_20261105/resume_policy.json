@@ -1,0 +1,24 @@
+{
+  "schema": "anvil-exact-visual-resume-v1",
+  "pipeline_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+  "resume_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-768",
+  "resume_step": 768,
+  "target_repair_step": 8192,
+  "target_mopd_step": 256,
+  "resume_seal_sha256": "f7cddf9b3d1a7c21d155b3205192eb4133e707c574d2d1cff5bf5b1f1268ef5b",
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/node.py": "21582112c9b1b3be154bb622dd2e6a7e833194e33c041aef5ed46d321ca25591",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/storage_budget.py": "be21065caa379ebb5d1df765a09567d10aae724caa4c12ac4a77bcc95d541a35",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/test_resume.py": "6311873da08214cb3741ab53d03b22bd6b46204460f2cc7bf489e9cad1979e41",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/resume768_verification.json": "40f14f1021b404cb1a6dc0d4adbd10995b064f9e8746715cd85772ec5eff0305",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/optimizer_cleanup_complete.json": "c4f8273c65dd8e1c94f1ec00bade292263a9f041bfd2244222bb228a8500cf31",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/optimizer_cleanup_preview.json": "e50f56f72c376f06abfea8665082d7bf71d8c85a185d0b73653767eac262ac1d",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/failure_archive.json": "245465e497f61f9f217d03ccee37fef27013245f28a88895bb91f6d6798d0beb",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/spec.json": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d"
+  },
+  "optimizer_scheduler_rng_resumed": true,
+  "original_trainer_unchanged": true,
+  "gpus": 32,
+  "required_reserve_gib": 256,
+  "created": 1793846231.191718
+}

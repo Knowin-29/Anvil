@@ -1,0 +1,102 @@
+{
+  "schema": "anvil-exact-visual-resume-source-v1",
+  "files": [
+    {
+      "path": "finish_delivery.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/finish_delivery.py",
+      "sha256": "c1b4a6566dde415b55a27340ca4811868e1e9822d4be403143b651dfc2adc3e5"
+    },
+    {
+      "path": "storage_budget.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/storage_budget.py",
+      "sha256": "be21065caa379ebb5d1df765a09567d10aae724caa4c12ac4a77bcc95d541a35"
+    },
+    {
+      "path": "freeze_resume.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/freeze_resume.py",
+      "sha256": "60d502a9dbc435b008d53252b58af0979cee36f06af6a4afed89c4edc231321d"
+    },
+    {
+      "path": "cleanup_verified_weights.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/cleanup_verified_weights.py",
+      "sha256": "2df689a26b5e614c09244b26293e749b6ae87f4f2f53b6ff75589c293d0de11a"
+    },
+    {
+      "path": "node.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/node.py",
+      "sha256": "21582112c9b1b3be154bb622dd2e6a7e833194e33c041aef5ed46d321ca25591"
+    },
+    {
+      "path": "sync_source.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/sync_source.py",
+      "sha256": "23be38c686e527859a23255a5e1b3c05b450ea9e47928f045bf09e9fb98cd940"
+    },
+    {
+      "path": "test_resume.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/test_resume.py",
+      "sha256": "6311873da08214cb3741ab53d03b22bd6b46204460f2cc7bf489e9cad1979e41"
+    },
+    {
+      "path": "prune_superseded_optimizers.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/prune_superseded_optimizers.py",
+      "sha256": "bf339be20c5a071ec1a9160648d33f82db200f38f8c73abf2fdfe41a50e6c7e5"
+    },
+    {
+      "path": "submit_and_handoff.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/submit_and_handoff.py",
+      "sha256": "ed6e9b9006e42dbe34a781c439cf487a1c9d5d1aa3b31f037962149267d99e56"
+    },
+    {
+      "path": "handoff.py",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/handoff.py",
+      "sha256": "7f0d403074fc2ae10b13ffaef97cfe19a856079cd39808dc889a5bfdfdb10e20"
+    },
+    {
+      "path": "resume_policy.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/resume_policy.json",
+      "sha256": "f2fe2918f8e81ce77d8b52104941af4272011c7121645fc135d292d0a294b3c1"
+    },
+    {
+      "path": "handoff_policy.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/handoff_policy.json",
+      "sha256": "3d60a759ace8c26a0ba67cc55253b1aa63efe49fe5315ca879848160bb005a47"
+    },
+    {
+      "path": "release_policy.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/release_policy.json",
+      "sha256": "27aed689ad65a45e170f86f2a45234bff83e14584b489e52c8ce573c1d7178ad"
+    },
+    {
+      "path": "cleanup_policy.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/cleanup_policy.json",
+      "sha256": "9e22326e3fbf897b78a55ec9a257b238b0411a2d70d41ffa0fae6176e838bf08"
+    },
+    {
+      "path": "cli.yaml",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/cli.yaml",
+      "sha256": "572958cd7c7cf03075566a2f5fcd966f93ee5b31f84932fb25e591cc2c663862"
+    },
+    {
+      "path": "resume768_verification.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/resume768_verification.json",
+      "sha256": "40f14f1021b404cb1a6dc0d4adbd10995b064f9e8746715cd85772ec5eff0305"
+    },
+    {
+      "path": "optimizer_cleanup_complete.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/optimizer_cleanup_complete.json",
+      "sha256": "c4f8273c65dd8e1c94f1ec00bade292263a9f041bfd2244222bb228a8500cf31"
+    },
+    {
+      "path": "optimizer_cleanup_preview.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/optimizer_cleanup_preview.json",
+      "sha256": "e50f56f72c376f06abfea8665082d7bf71d8c85a185d0b73653767eac262ac1d"
+    },
+    {
+      "path": "failure_archive.json",
+      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/failure_archive.json",
+      "sha256": "245465e497f61f9f217d03ccee37fef27013245f28a88895bb91f6d6798d0beb"
+    }
+  ],
+  "created": 1793846324.6331687,
+  "weights_included": false
+}
