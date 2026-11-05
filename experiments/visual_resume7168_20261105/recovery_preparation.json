@@ -1,0 +1,9 @@
+{
+  "state": "prepared",
+  "resume_step": 7168,
+  "training_sources_unchanged": true,
+  "original_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+  "io_changes_only": true,
+  "tests_passed": 5,
+  "time": 1793876801.3194096
+}

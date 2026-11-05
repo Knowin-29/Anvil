@@ -1,0 +1,188 @@
+{
+  "candidates": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-512/optimizer.pt",
+      "step": 512,
+      "bytes": 1426482559,
+      "sha256": "123bb5456a506295d9388759da0cec5b7ed79c69efa468618647c2408cb912fb",
+      "inode": 4831862183
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-6912/optimizer.pt",
+      "step": 6912,
+      "bytes": 1426482559,
+      "sha256": "b52e9d6cfbd466fb37c1047157aca578fc31ba0f1faf901d5acc50f09e14a057",
+      "inode": 4823797656
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-1024/optimizer.pt",
+      "step": 1024,
+      "bytes": 1426482559,
+      "sha256": "8001c58f7e1f1d4b486d8c32d330a301969e335f2141ecd59adb081309ab466b",
+      "inode": 4723688863
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-4352/optimizer.pt",
+      "step": 4352,
+      "bytes": 1426482559,
+      "sha256": "d7a3cc8092d8b29eeb59b74631e99a499aa09abea04ff5a91815cab3ecc4e2c2",
+      "inode": 4731318856
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-256/optimizer.pt",
+      "step": 256,
+      "bytes": 1426482559,
+      "sha256": "e62441ed868aed72c3bc16b32a60138ce78ceef6003d5c7588e326a4f7bcbf4b",
+      "inode": 4824263812
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-3584/optimizer.pt",
+      "step": 3584,
+      "bytes": 1426482559,
+      "sha256": "bfd069cd70055113dbb4f1ef534499b19c929d51e59e9755d6f79658a527960d",
+      "inode": 4731287156
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-5632/optimizer.pt",
+      "step": 5632,
+      "bytes": 1426482559,
+      "sha256": "2780c120f978d717bb153a1f1c1c58f3056e6d4b542e36900ae8653debae90c0",
+      "inode": 4731287188
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-1536/optimizer.pt",
+      "step": 1536,
+      "bytes": 1426482559,
+      "sha256": "b1838924777063a5490746322ddaab49abdcd8e33ee263e1fe99d63ba0164113",
+      "inode": 4731287076
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-1280/optimizer.pt",
+      "step": 1280,
+      "bytes": 1426482559,
+      "sha256": "9e023750a0a540c17f6f918f4c792271204b1949b70358a4c8bb1302a7ad7dba",
+      "inode": 4823747247
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-5120/optimizer.pt",
+      "step": 5120,
+      "bytes": 1426482559,
+      "sha256": "d90ffa73b2ddd755878d2c9e380ac409c1e3591a73e6460e1aad9e0d5f6337cc",
+      "inode": 4731318891
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-3072/optimizer.pt",
+      "step": 3072,
+      "bytes": 1426482559,
+      "sha256": "120358cb789489a3c5fede95aff6acbb7458c6c2b4477ad0279a4ca30fdfc331",
+      "inode": 4731287140
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-5376/optimizer.pt",
+      "step": 5376,
+      "bytes": 1426482559,
+      "sha256": "5968edc50fa51694965ee267feb7b612bb34718e1ed1bcb46b33a259d9e3f5fd",
+      "inode": 4823797624
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-6656/optimizer.pt",
+      "step": 6656,
+      "bytes": 1426482559,
+      "sha256": "8653b9b6742fb0a9e64ecd02dacab06252689df5a21def54e8c704cdb587b943",
+      "inode": 4823797640
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-3328/optimizer.pt",
+      "step": 3328,
+      "bytes": 1426482559,
+      "sha256": "d6ec03060547a9091d188b7bf93eb8be898a9b371611f964de8c2357d558adc1",
+      "inode": 4823539427
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-3840/optimizer.pt",
+      "step": 3840,
+      "bytes": 1426482559,
+      "sha256": "c8ba5c796ffc20798a5c247400786e6cbb6d0e4c031557577a53f5ac20997a11",
+      "inode": 4731318838
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-5888/optimizer.pt",
+      "step": 5888,
+      "bytes": 1426482559,
+      "sha256": "25727c744bc12efb5299cc24723b8b8e3d601fd9dec58e1dfd20586214136f0a",
+      "inode": 4731287204
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-6400/optimizer.pt",
+      "step": 6400,
+      "bytes": 1426482559,
+      "sha256": "0001ab386a5c81dc3a6f23172c3dbc26552ed4a4b0f42bd0f07b652b5105299b",
+      "inode": 4832120354
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-2560/optimizer.pt",
+      "step": 2560,
+      "bytes": 1426482559,
+      "sha256": "0e71ecd071222f2af975eec92cb7a2ac01d7a40eb6de9ce67e58b84336b4284c",
+      "inode": 4731318817
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-2816/optimizer.pt",
+      "step": 2816,
+      "bytes": 1426482559,
+      "sha256": "4028758a44cb57f1e0db960de863d86fa853f76926fd946664ff467bf0f8966e",
+      "inode": 4832120322
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-6144/optimizer.pt",
+      "step": 6144,
+      "bytes": 1426482559,
+      "sha256": "c25bb44e3c6bc1455c886c0adcffa212cc7eb0f8ac38a93dc0ae8be760fdda1d",
+      "inode": 4832120338
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-4608/optimizer.pt",
+      "step": 4608,
+      "bytes": 1426482559,
+      "sha256": "4fb4af2f09b0aa7f78b069f4abb2cc70bfc22b83a6d227dd4a0ac8b05cdd9d75",
+      "inode": 4731318873
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-2304/optimizer.pt",
+      "step": 2304,
+      "bytes": 1426482559,
+      "sha256": "5d23fc1f2b55a0906198e727890aaed47d7b91dce5cd393735a358f4e5b5400b",
+      "inode": 4731287124
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-2048/optimizer.pt",
+      "step": 2048,
+      "bytes": 1426482559,
+      "sha256": "ffc31768dee2e9fe50e2b7eff03707c9bf32f758a83cd407c28dc08ca4dc7fd6",
+      "inode": 4731287108
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-1792/optimizer.pt",
+      "step": 1792,
+      "bytes": 1426482559,
+      "sha256": "de1ce5ea871f5a57f82380d1bb8aeff18072fa486ba4baabac619ed07dc44097",
+      "inode": 4731287092
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-4864/optimizer.pt",
+      "step": 4864,
+      "bytes": 1426482559,
+      "sha256": "f93c87a50ebe1b20a39761a49956263f222b876088c780e17cd374af7e573c58",
+      "inode": 4731287172
+    }
+  ],
+  "total_bytes": 35662063975,
+  "keep_steps": [
+    64,
+    768,
+    4096,
+    7168
+  ],
+  "replacement_verified": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json",
+  "reason": "Superseded inactive optimizer states; preserve every adapter, all selected key states, and latest exact resume"
+}

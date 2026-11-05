@@ -1,0 +1,12 @@
+{
+  "task": "t-20261105103839-7bfdh",
+  "terminal": "Failed",
+  "first_exception": "OSError errno122 Disk quota exceeded appending repair/logging.jsonl",
+  "last_logged_step": 7186,
+  "resume_step": 7168,
+  "model_numerical_collapse_observed": false,
+  "original_sources_unchanged": true,
+  "preallocation_keep_size_supported": false,
+  "quota_retry_and_live_probes": true,
+  "time": 1793876857.6787095
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "anvil-post-accepted-release-cleanup-v3",
+  "state": "prepared_not_executed",
+  "key_checkpoints": 39,
+  "files": {
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/cleanup_verified_weights.py": "27af8c86a50c11f80287994ee4405950a190c0abaa23c2dc37294d10d16c1d6c",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/quality_gate.py": "879d4b5b31b3e5cc29b345081795d203e4d8a00d8193ae8685247188a7ba6175",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/release_policy.json": "9f7d54c6da1b03b1e3698b432e23861a4a4ce999d7a9e7da8d234e2bef89f9f7",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/verification_20261101/verify_entire_visual_hub.py": "2af7452b4e1451a38cb2996875becd0d62d2a0acf7c8a648beadefebd4746df2",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/cpu_validation.json": "90fe0d80edf1fb17853be5228a7066e4c7210efa90afc1ee05a3a70598fb9f77",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_verified_weights.py": "d7d45a41f9c668a165003ceffed86bf710f185bfb0d1d1b6220698bb61326afa",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/release_policy.json": "eaa844bdcccd18a89a5f1e35e9eb25856d1ae2efe403ddebece755a045363459"
+  },
+  "preview_argv": [
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_verified_weights.py",
+    "--manifest",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/final_package/release_manifest.json",
+    "--final-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/final_release/upload_verification.json",
+    "--backup-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_checkpoint_backup_20261104/mopd_256/verification_receipt.json",
+    "--verification-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/final_release/whole_hub_verification.json",
+    "--output",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/post_release_cleanup_preview"
+  ],
+  "apply_argv": [
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_verified_weights.py",
+    "--manifest",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/final_package/release_manifest.json",
+    "--final-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/final_release/upload_verification.json",
+    "--backup-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_checkpoint_backup_20261104/mopd_256/verification_receipt.json",
+    "--verification-receipt",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/final_release/whole_hub_verification.json",
+    "--output",
+    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/post_release_cleanup",
+    "--apply"
+  ],
+  "conditions": [
+    "explicit_exact_model_quality_acceptance",
+    "full_remote_39_checkpoint_and_merged_weight_verification",
+    "idle_campaign_and_no_live_readers",
+    "verified_payload_identity"
+  ],
+  "retains": [
+    "data",
+    "logs",
+    "metadata",
+    "base_models",
+    "teachers",
+    "source",
+    "Codex_history"
+  ],
+  "old_quota_ledger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/optimizer_cleanup_complete.json",
+  "recovery_submission": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/submission.json",
+  "additional_quota_ledger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/optimizer_cleanup_complete.json"
+}
