@@ -1,0 +1,247 @@
+{
+  "schema": "anvil-final-quality-review-v1",
+  "accepted": false,
+  "final_quality_accepted": false,
+  "report_sha256": "2926aef14d9d55af7016fe21a375c4321d6a78319c2e10d401ccc3da3b7cf0ca",
+  "final_spec_sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308",
+  "native_score_sha256": "be4fd825c373dc1c302c6384e93713bbe70af8d4236061cc0b3c8611fb4ca012",
+  "user_acceptance_policy_sha256": "e65f00c804df8140621adf593fd65a359bd0903c23906cae71416ebf4d0705bc",
+  "rationale": "All seven full public benchmarks meet the user 10% relative tolerance and the three measured general tasks retain their previous scores. Full native Anvil-Eval v1.1 is 50.62367136038148, below 58.815. Mask and affordance IoU remain low and DoF rotation error is 113.631 degrees. This selected checkpoint is uploaded but is not an accepted final model.",
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 88.44,
+      "reference": 88.21,
+      "minimum": 79.389,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "embspatial": {
+      "score": 81.29,
+      "reference": 82.34,
+      "minimum": 74.10600000000001,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "refspatial_bench": {
+      "score": 60.38,
+      "reference": 59.0,
+      "minimum": 53.1,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "where2place": {
+      "score": 71.47,
+      "reference": 68.0,
+      "minimum": 61.2,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "blink_relative_depth": {
+      "score": 82.26,
+      "reference": 91.13,
+      "minimum": 82.017,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "erqa": {
+      "score": 47.74,
+      "reference": 50.52,
+      "minimum": 45.468,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    },
+    "vabench_point": {
+      "score": 74.33,
+      "reference": 80.67,
+      "minimum": 72.60300000000001,
+      "accepted": true,
+      "rationale": "Complete benchmark result meets the fixed user tolerance."
+    }
+  },
+  "native_group_assessments": {
+    "action_cot::ALFRED": {
+      "n": 3327,
+      "metrics": {
+        "contract_valid": 0.992185151788398,
+        "expert_continuation_exact": 0.19326720769461977,
+        "json_valid": 1.0,
+        "next_action_exact": 0.5963330327622482,
+        "target_object_exact": 0.49594229035166815,
+        "target_role_exact": 0.8208596333032763,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "affordance::ShareRobot-Bench": {
+      "n": 193,
+      "metrics": {
+        "contract_valid": 0.9896373056994818,
+        "instruction_copy_exact": 0.9896373056994818,
+        "json_valid": 0.9896373056994818,
+        "region_iou": 0.12354546538508018,
+        "region_iou50": 0.05699481865284974,
+        "region_iou75": 0.0,
+        "region_iou90": 0.0,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "bbox::coco_train2017": {
+      "n": 81280,
+      "metrics": {
+        "box_f1_iou50": 0.33972687007874014,
+        "contract_valid": 0.9999753937007874,
+        "json_valid": 0.9999753937007874,
+        "matched_box_iou": 0.31437113066024264,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "depth_order::PRISM": {
+      "n": 3601,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.9252985281866148,
+        "reference_relation_f1": 0.9252985281866148,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "detection::coco_train2017": {
+      "n": 3738,
+      "metrics": {
+        "box_f1_iou50": 0.25281093049924985,
+        "contract_valid": 0.9775280898876404,
+        "json_valid": 0.9777956126270733,
+        "matched_box_iou": 0.20620022667973842,
+        "truncated": 0.021936864633493848
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "direction::coco_train2017": {
+      "n": 89045,
+      "metrics": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.762299960694031,
+        "reference_relation_f1": 0.762299960694031,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "dof::PRISM": {
+      "n": 580,
+      "metrics": {
+        "contract_valid": 0.9896551724137931,
+        "json_valid": 0.9896551724137931,
+        "normalized_projected_contact_l2": 0.10268040364997578,
+        "pi_symmetric_rotation_error_degrees": 83.86835897311367,
+        "rotation_error_degrees": 113.63100456738191,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "mask::coco_train2017": {
+      "n": 81250,
+      "metrics": {
+        "contract_valid": 0.9132676923076923,
+        "json_valid": 0.953636923076923,
+        "matched_mask_iou": 0.14693131905526,
+        "truncated": 0.0024984615384615384
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "metric_comparison::coco_train2017": {
+      "n": 88984,
+      "metrics": {
+        "contract_valid": 0.9999887620246336,
+        "json_valid": 0.9999887620246336,
+        "normalized_image_distance_mae": 0.10344775715787848,
+        "relation_identity_exact": 0.9999213341724354,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "point::coco_train2017": {
+      "n": 81244,
+      "metrics": {
+        "contract_valid": 0.9999876913987494,
+        "interior_point_f1": 0.3738614543843238,
+        "json_valid": 0.9999876913987494,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "point::pixmo_points": {
+      "n": 143016,
+      "metrics": {
+        "annotated_point_f1_r50": 0.47114205881296334,
+        "contract_valid": 0.9916303070985064,
+        "json_valid": 0.992301560664541,
+        "truncated": 0.007111092465178721
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    },
+    "relation_graph::coco_train2017": {
+      "n": 3742,
+      "metrics": {
+        "contract_valid": 0.9989310529128808,
+        "json_valid": 0.9997327632282202,
+        "reference_exact": 0.02244788882950294,
+        "reference_relation_f1": 0.7678372579603482,
+        "truncated": 0.0
+      },
+      "accepted": false,
+      "rationale": "All records are included in the complete native evaluation. Final joint native acceptance is withheld: the versioned aggregate fails the fixed threshold and geometry remains insufficient."
+    }
+  },
+  "general_assessments": {
+    "ai2d_test": {
+      "measurements": {
+        "n": 3088,
+        "score": 87.27331606217616,
+        "parse_failures": 0
+      },
+      "previous_score": 87.40284974093264,
+      "difference_percentage_points": -0.1295336787564736,
+      "accepted": true,
+      "rationale": "Complete evaluation, zero parse failures and scores within 0.13 percentage points of the previous model on this task."
+    },
+    "scienceqa_test": {
+      "measurements": {
+        "n": 2017,
+        "score": 98.46306395637085,
+        "parse_failures": 0
+      },
+      "previous_score": 98.5126425384234,
+      "difference_percentage_points": -0.04957858205256116,
+      "accepted": true,
+      "rationale": "Complete evaluation, zero parse failures and scores within 0.13 percentage points of the previous model on this task."
+    },
+    "textvqa_val": {
+      "measurements": {
+        "n": 5000,
+        "score": 86.69200000000045,
+        "parse_failures": 0
+      },
+      "previous_score": 86.69400000000046,
+      "difference_percentage_points": -0.0020000000000095497,
+      "accepted": true,
+      "rationale": "Complete evaluation, zero parse failures and scores within 0.13 percentage points of the previous model on this task."
+    }
+  },
+  "historical_scorer_equivalence_established": false,
+  "created": 1793894525.6213803
+}

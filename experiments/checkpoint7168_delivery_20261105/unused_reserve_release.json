@@ -1,0 +1,24 @@
+{
+  "state": "completed",
+  "time": 1793895303.5994713,
+  "active_campaign_gpus": 0,
+  "files": [
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/storage_reserve.bin",
+      "inode": 4555995276,
+      "bytes": 117037858816,
+      "allocated": 117037858816
+    },
+    {
+      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/emergency_reserve.bin",
+      "inode": 4857163129,
+      "bytes": 30064771072,
+      "allocated": 30064771072
+    }
+  ],
+  "reason": "Original training terminated, replacement32-GPU job cancelled, selected8-GPU evaluation completed; release unused allocation without deleting model/data/log files",
+  "bytes_released": 147102629888,
+  "allocated_bytes_released": 147102629888,
+  "completed": 1793895316.610419,
+  "weights_data_logs_deleted": false
+}

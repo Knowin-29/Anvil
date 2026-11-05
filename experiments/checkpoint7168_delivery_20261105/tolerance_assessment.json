@@ -1,0 +1,226 @@
+{
+  "schema": "anvil-selected-checkpoint-tolerance-v1",
+  "report_sha256": "2926aef14d9d55af7016fe21a375c4321d6a78319c2e10d401ccc3da3b7cf0ca",
+  "evaluation_spec_sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
+  "native": {
+    "measured": 50.62367136038148,
+    "reference": 65.35,
+    "minimum": 58.815,
+    "passed": false
+  },
+  "public": {
+    "cv_bench": {
+      "measured": 88.44,
+      "reference": 88.21,
+      "minimum": 79.389,
+      "passed": true
+    },
+    "embspatial": {
+      "measured": 81.29,
+      "reference": 82.34,
+      "minimum": 74.10600000000001,
+      "passed": true
+    },
+    "refspatial_bench": {
+      "measured": 60.38,
+      "reference": 59.0,
+      "minimum": 53.1,
+      "passed": true
+    },
+    "where2place": {
+      "measured": 71.47,
+      "reference": 68.0,
+      "minimum": 61.2,
+      "passed": true
+    },
+    "blink_relative_depth": {
+      "measured": 82.26,
+      "reference": 91.13,
+      "minimum": 82.017,
+      "passed": true
+    },
+    "erqa": {
+      "measured": 47.74,
+      "reference": 50.52,
+      "minimum": 45.468,
+      "passed": true
+    },
+    "vabench_point": {
+      "measured": 74.33,
+      "reference": 80.67,
+      "minimum": 72.60300000000001,
+      "passed": true
+    }
+  },
+  "all_numeric_tolerances_pass": false,
+  "full_counts_verified": true,
+  "general": {
+    "ai2d_test": {
+      "n": 3088,
+      "score": 87.27331606217616,
+      "parse_failures": 0
+    },
+    "scienceqa_test": {
+      "n": 2017,
+      "score": 98.46306395637085,
+      "parse_failures": 0
+    },
+    "textvqa_val": {
+      "n": 5000,
+      "score": 86.69200000000045,
+      "parse_failures": 0
+    }
+  },
+  "native_groups": [
+    {
+      "form": "action_cot",
+      "source": "ALFRED",
+      "n": 3327,
+      "mean": {
+        "contract_valid": 0.992185151788398,
+        "expert_continuation_exact": 0.19326720769461977,
+        "json_valid": 1.0,
+        "next_action_exact": 0.5963330327622482,
+        "target_object_exact": 0.49594229035166815,
+        "target_role_exact": 0.8208596333032763,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "affordance",
+      "source": "ShareRobot-Bench",
+      "n": 193,
+      "mean": {
+        "contract_valid": 0.9896373056994818,
+        "instruction_copy_exact": 0.9896373056994818,
+        "json_valid": 0.9896373056994818,
+        "region_iou": 0.12354546538508018,
+        "region_iou50": 0.05699481865284974,
+        "region_iou75": 0.0,
+        "region_iou90": 0.0,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "bbox",
+      "source": "coco_train2017",
+      "n": 81280,
+      "mean": {
+        "box_f1_iou50": 0.33972687007874014,
+        "contract_valid": 0.9999753937007874,
+        "json_valid": 0.9999753937007874,
+        "matched_box_iou": 0.31437113066024264,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "depth_order",
+      "source": "PRISM",
+      "n": 3601,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.9252985281866148,
+        "reference_relation_f1": 0.9252985281866148,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "detection",
+      "source": "coco_train2017",
+      "n": 3738,
+      "mean": {
+        "box_f1_iou50": 0.25281093049924985,
+        "contract_valid": 0.9775280898876404,
+        "json_valid": 0.9777956126270733,
+        "matched_box_iou": 0.20620022667973842,
+        "truncated": 0.021936864633493848
+      }
+    },
+    {
+      "form": "direction",
+      "source": "coco_train2017",
+      "n": 89045,
+      "mean": {
+        "contract_valid": 1.0,
+        "json_valid": 1.0,
+        "reference_exact": 0.762299960694031,
+        "reference_relation_f1": 0.762299960694031,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "dof",
+      "source": "PRISM",
+      "n": 580,
+      "mean": {
+        "contract_valid": 0.9896551724137931,
+        "json_valid": 0.9896551724137931,
+        "normalized_projected_contact_l2": 0.10268040364997578,
+        "pi_symmetric_rotation_error_degrees": 83.86835897311367,
+        "rotation_error_degrees": 113.63100456738191,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "mask",
+      "source": "coco_train2017",
+      "n": 81250,
+      "mean": {
+        "contract_valid": 0.9132676923076923,
+        "json_valid": 0.953636923076923,
+        "matched_mask_iou": 0.14693131905526,
+        "truncated": 0.0024984615384615384
+      }
+    },
+    {
+      "form": "metric_comparison",
+      "source": "coco_train2017",
+      "n": 88984,
+      "mean": {
+        "contract_valid": 0.9999887620246336,
+        "json_valid": 0.9999887620246336,
+        "normalized_image_distance_mae": 0.10344775715787848,
+        "relation_identity_exact": 0.9999213341724354,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "point",
+      "source": "coco_train2017",
+      "n": 81244,
+      "mean": {
+        "contract_valid": 0.9999876913987494,
+        "interior_point_f1": 0.3738614543843238,
+        "json_valid": 0.9999876913987494,
+        "truncated": 0.0
+      }
+    },
+    {
+      "form": "point",
+      "source": "pixmo_points",
+      "n": 143016,
+      "mean": {
+        "annotated_point_f1_r50": 0.47114205881296334,
+        "contract_valid": 0.9916303070985064,
+        "json_valid": 0.992301560664541,
+        "truncated": 0.007111092465178721
+      }
+    },
+    {
+      "form": "relation_graph",
+      "source": "coco_train2017",
+      "n": 3742,
+      "mean": {
+        "contract_valid": 0.9989310529128808,
+        "json_valid": 0.9997327632282202,
+        "reference_exact": 0.02244788882950294,
+        "reference_relation_f1": 0.7678372579603482,
+        "truncated": 0.0
+      }
+    }
+  ],
+  "native_score_sha256": "be4fd825c373dc1c302c6384e93713bbe70af8d4236061cc0b3c8611fb4ca012",
+  "requires_native_and_general_review": true
+}

@@ -1,0 +1,73 @@
+{
+  "state": "completed_cpu_training_update_audit",
+  "checkpoint_step": 7168,
+  "all_logged_losses_and_gradient_norms_finite": true,
+  "optimizer_groups_changed": {
+    "language": {
+      "tensors": 496,
+      "changed_tensors": 496,
+      "parameters": 173113344,
+      "changed_parameters": 173113022,
+      "initial_sum_squared": 8182.5763271301985,
+      "delta_sum_squared": 1.6214103882330164,
+      "maximum_absolute_delta": 0.0018996084108948708,
+      "dtypes": [
+        "torch.float32"
+      ],
+      "relative_l2_change": 0.014076719056502754
+    },
+    "visual": {
+      "tensors": 68,
+      "changed_tensors": 68,
+      "parameters": 5136384,
+      "changed_parameters": 5130784,
+      "initial_sum_squared": 362.33463859558105,
+      "delta_sum_squared": 7.606118464842439,
+      "maximum_absolute_delta": 0.012486319057643414,
+      "dtypes": [
+        "torch.float32"
+      ],
+      "relative_l2_change": 0.1448860644093183
+    }
+  },
+  "logged": {
+    "sft": {
+      "minimum": 3.105289715366055e-07,
+      "maximum": 0.734539058059454,
+      "first512_mean": 0.4185818635499645,
+      "last512_mean": 0.4110783295025467
+    },
+    "geometry_aux_ce": {
+      "minimum": 0.0,
+      "maximum": 1.4887553248554468,
+      "first512_mean": 0.464442891443241,
+      "last512_mean": 0.4314142352451995
+    },
+    "grad_norm": {
+      "minimum": 3.3912292565219104e-05,
+      "maximum": 16.091270446777344,
+      "first512_mean": 1.612402841515518,
+      "last512_mean": 1.7477497831608844
+    },
+    "lr": {
+      "minimum": 8.130081300813008e-09,
+      "maximum": 2e-06,
+      "first512_mean": 1.0912523052999694e-06,
+      "last512_mean": 9.131336771566041e-08
+    },
+    "visual_lr": {
+      "minimum": 8.130081300813009e-08,
+      "maximum": 2e-05,
+      "first512_mean": 1.520532600250849e-05,
+      "last512_mean": 1.2693237252384e-06
+    }
+  },
+  "remaining_planned_updates": 1024,
+  "remaining_cosine_learning_rate_area_fraction": 0.0033910000341524017,
+  "inference_quality": {
+    "previous_native_score": 50.476384441895995,
+    "selected_native_score": 50.62367136038148
+  },
+  "causality_note": "Nonzero updates and finite losses exclude a completely frozen adapter or observed numerical collapse; they do not establish that data semantics or training objectives are correct.",
+  "created": 1793894425.9274602
+}

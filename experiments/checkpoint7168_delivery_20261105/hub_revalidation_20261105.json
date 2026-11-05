@@ -1,0 +1,12 @@
+{
+  "state": "dataset_and_uploaded_checkpoints_revalidated",
+  "dataset_revision": "a2bb5d1c94321de3bab02278344d41a2f8912d2f",
+  "dataset_files": 71,
+  "dataset_annotation_shards": 63,
+  "dataset_downloadable_records": 5766133,
+  "model_revision": "6f20c865d35af8226a2ca3c316658428351c9976",
+  "key_checkpoints": 37,
+  "model_files": 1487,
+  "credentials_modified": false,
+  "checked": 1793889812.6292675
+}

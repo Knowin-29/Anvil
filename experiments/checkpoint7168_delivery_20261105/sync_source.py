@@ -11,18 +11,21 @@ def run(*args,env=None):
 assert run('git','-C',str(repo),'branch','--show-current')=='main'
 assert not run('git','-C',str(repo),'status','--porcelain')
 mapping={p:dest/p.name for p in W.glob('*.py')}
-for name in ['selection.json','source_derivation.json','release_source_derivation.json','release_layout_validation.json','cleanup_guard_validation.json','user_selection.json','evaluation_spec.json','OPERATIONS.md']:
+for name in ['selection.json','source_derivation.json','release_source_derivation.json','release_layout_validation.json','cleanup_guard_validation.json','user_selection.json','evaluation_spec.json','OPERATIONS.md','quality_review.json','native_score.json','tolerance_assessment.json','training_update_audit.json','hub_revalidation_20261105.json','unused_reserve_release.json']:
  mapping[W/name]=dest/name
 h=C/'final_delivery_checkpoint7168_v1'
 for p in h.glob('*.py'):mapping[p]=repo/'experiments/final_delivery_checkpoint7168_v1'/p.name
 mapping[W/'evaluation/node_0_cli.yaml']=dest/'evaluation_cli.yaml'
+mapping[W/'evaluation/final_report.json']=dest/'evaluation_report.json'
+for name in ['plan.json','complete.json','layout_map.json']:
+ mapping[W/'checkpoint_collection'/name]=dest/'checkpoint_collection'/name
 manifest=[]
 for source,target in mapping.items():
  text=source.read_text();assert not re.search(r'(?:ghp_[A-Za-z0-9]{20,}|hf_[A-Za-z0-9]{20,})',text)
  target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target);manifest.append(dict(path=str(target.relative_to(repo)),source=str(source),sha256=sha(source)))
 save(dest/'SOURCE_MANIFEST.json',dict(schema='anvil-selected-checkpoint-delivery-source-v1',files=manifest,created=time.time(),weights_included=False))
 run('git','-C',str(repo),'add','--',str(dest.relative_to(repo)),'experiments/final_delivery_checkpoint7168_v1')
-run('git','-C',str(repo),'commit','-m','Deliver selected checkpoint7168 with full eight-GPU evaluation and staged Hub release')
+run('git','-C',str(repo),'commit','-m','Publish full checkpoint7168 results and organize five featured training stages')
 helper=C/'verification_20261101/sync_format_source_git.py';tree=ast.parse(helper.read_text());nodes=[n for n in tree.body if (isinstance(n,ast.FunctionDef) and n.name in {'strings','user_texts'}) or (isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=='SESSION' for t in n.targets))]
 ns={'Path':Path};exec(compile(ast.Module(body=nodes,type_ignores=[]),str(helper),'exec'),ns)
 token=None

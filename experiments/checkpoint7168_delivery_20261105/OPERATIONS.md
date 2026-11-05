@@ -2,6 +2,16 @@
 
 The user selected repair checkpoint 7168, immediate checkpoint upload, and a full evaluation on one 8×A800 node. No further 32-GPU training is authorized by this delivery plan.
 
+## Current outcome
+
+Full DLC evaluation `t-20261105200557-zxq4k` succeeded. All 580,000 native, 7,366 public and 10,105 general records were verified. Seven public scores meet the user tolerance. Native v1.1 score is 50.62367136038148, below 58.815; `quality_review.json` rejects final acceptance. The original scorer has not been changed.
+
+`organize_checkpoints.py --apply` completed the separately authorized checkpoint collection presentation. HF head is `8bbfbd28ccc17fde47f852570bf23e9ec73b9791`, with 37 checkpoints, five featured stages, actual measured results and the standalone pose interface. The original uploaded revision remains pinned in `checkpoint_upload/verification_receipt.json`; `checkpoint_collection/complete.json` verifies the current layout. No root merged model was published as an accepted final model.
+
+The earlier `finalize_selected.py` and `cleanup_selected.py` remain gated and refer to the earlier collection parent. Do not invoke them by manufacturing a passing review; a future accepted candidate needs its own bound evaluation and a release plan against the current HF head.
+
+The user was asked whether the 8-GPU resource remains available for corrective training and for how long, because their latest allocation was for this now-completed evaluation. No follow-up training has been submitted. All original checkpoint payloads remain available for continuation.
+
 ## Runtime
 
 - Controller: `evaluate_selected.py`; inspect `status.json` and `controller_failure.json`.
