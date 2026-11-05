@@ -1,7 +1,7 @@
 {
   "state": "key_mopd_checkpoint1024_integrity_verified",
   "checked_at": "2026-10-31T02:54:59.023912+08:00",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1024",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1024",
   "files": 38,
   "total_bytes": 2079075975,
   "all_file_hashes_verified": true,

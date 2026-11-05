@@ -13,8 +13,8 @@ import time
 
 C = Path(__file__).resolve().parent
 D = C / 'diagnosis_32gpu'
-UPSTREAM = Path('/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D')
-HISTORICAL = Path('/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl')
+UPSTREAM = Path('/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D')
+HISTORICAL = Path('/workspace/anvil-project/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl')
 RAW_SUFFIX = (' Your answer should be formatted as a list of tuples, i.e. [(x1, y1)], '
               'where each tuple contains the x and y coordinates of a point satisfying '
               'the conditions above. The coordinates should be between 0 and 1, '

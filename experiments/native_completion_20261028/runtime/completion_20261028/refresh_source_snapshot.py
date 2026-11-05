@@ -7,7 +7,7 @@ import re
 
 C = Path(__file__).resolve().parent
 R = C.parent
-DEST = Path('/Knowin/demo/weilinruan/Anvil/01_Code/experiments/native_completion_20261028')
+DEST = Path('/workspace/Anvil/experiments/native_completion_20261028')
 SECRET = re.compile(rb'(?:hf_[A-Za-z0-9]{25,}|gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{25,})')
 
 

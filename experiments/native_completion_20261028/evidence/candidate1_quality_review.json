@@ -3,28 +3,28 @@
   "reviewed_utc": "2026-10-29T01:16:00.131833+00:00",
   "decision": "admit_exact_candidates_for_formal_MOPD_with_intermediate_evaluation",
   "student": {
-    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
+    "adapter": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/checkpoint-1024",
     "adapter_sha256": "0fb12a657fb5fa33c38ba8aef869c754fdd322e93dd1f2bc3b388a71661da8d0",
-    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/complete.json",
+    "completion_receipt": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/complete.json",
     "completion_sha256": "52206dc3a22a0e0000040d26c5e54b4c17fa5e0a4b85ba725a443610a10f2df4"
   },
   "teachers": {
     "G": {
-      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
+      "adapter": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
       "adapter_sha256": "79e1353ff3435a68cba9e7aff4d226d5cfed4525db17961e812c0509e4d05a77",
-      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/complete.json",
+      "completion_receipt": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/complete.json",
       "completion_sha256": "f9cb5c612499ef8ece843bbe5c47d3586f0067231f0d89a69f8d1166f9652515"
     },
     "A": {
-      "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+      "adapter": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
       "adapter_sha256": "d199a630dfc97dc466bccb997996c4ada85889a3b64c7cc2d259c789075c6be8",
-      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
+      "completion_receipt": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
       "completion_sha256": "a0e98791c600f5dd5e8dfe58679551674314d8c518ab1f34cfe8d480f435f06f"
     },
     "S": {
-      "adapter": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_S/checkpoint-38248",
+      "adapter": "/data/anvil/a800_repair_20261020/repair_S/checkpoint-38248",
       "adapter_sha256": "c31617be286ac6beb133a24a7bd706135a4ab4b996bae0e9c5596320d1f73d09",
-      "completion_receipt": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/pipeline_status.json",
+      "completion_receipt": "/data/anvil/a800_repair_20261020/pipeline_status.json",
       "completion_sha256": "bd55c600e34ebe44dc33957f782793058ce05b4118fb09c1c33163b0bebbfd27"
     }
   },
@@ -338,12 +338,12 @@
   "universal_teacher_superiority_claimed": false,
   "adaptive_selection_disclosed": true,
   "evidence": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_teachers_comparison.json": "f667998cf6048ea0dd9450a874db475cee16f543e64b6f46bb9e6ec68df88bf6",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_comparison.json": "f8fb6a0756d092a675811d61af68e7054a9602676699d1c5dfd9e3e1b964ffc0",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native_comparison.json": "2d4b77e396da20513e1263f5eb3532147b3a53022800d03ac2059fa5fc7e53bf",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/A_adapted_student_matched_review.json": "a2aebae665af75eeedb5db0da1de0a0f58b72bc2cab02b2032c393cbe8b6ae3c",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_public_comparison.json": "ba558ef5304c386bc60efe56bdf070afa39d4a7240f232d9e0d2db0026b2bd8f",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_comparison_G.json": "3a1e6631b6f36855fc811dce7638d0d0555149202ed3e83085a2b18c384781d9",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/bindings.json": "fba1865be5f310e1007028a077acf5364f8d12c6a415041e72e922d02be337ba"
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_teachers_comparison.json": "f667998cf6048ea0dd9450a874db475cee16f543e64b6f46bb9e6ec68df88bf6",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_matched_native_comparison.json": "f8fb6a0756d092a675811d61af68e7054a9602676699d1c5dfd9e3e1b964ffc0",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/G_spatial_priority_native_comparison.json": "2d4b77e396da20513e1263f5eb3532147b3a53022800d03ac2059fa5fc7e53bf",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/A_adapted_student_matched_review.json": "a2aebae665af75eeedb5db0da1de0a0f58b72bc2cab02b2032c393cbe8b6ae3c",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_public_comparison.json": "ba558ef5304c386bc60efe56bdf070afa39d4a7240f232d9e0d2db0026b2bd8f",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_comparison_G.json": "3a1e6631b6f36855fc811dce7638d0d0555149202ed3e83085a2b18c384781d9",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/mopd_v6_candidate1/bindings.json": "fba1865be5f310e1007028a077acf5364f8d12c6a415041e72e922d02be337ba"
   }
 }

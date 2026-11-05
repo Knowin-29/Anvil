@@ -5,9 +5,9 @@ Entrypoint: 'set -Eeuo pipefail
 
   export PYTHONDONTWRITEBYTECODE=1
 
-  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/eval_node.py
-  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/evaluation_spec.json
-  --output /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/evaluation
+  /data/anvil/recovery_20261020/.venv-train/bin/python -u /data/anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/eval_node.py
+  --spec /data/anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/evaluation_spec.json
+  --output /data/anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103/evaluation
   --node 1 --nodes 4'
 Tags:
 - eval

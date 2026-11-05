@@ -17,7 +17,7 @@ TERMINAL = {'Success', 'Stopped', 'Killed'}
 
 
 def observe(task_id):
-    proc = subprocess.run(['/root/.volc/bin/volc', '--log-level', 'error', 'ml_task', 'get',
+    proc = subprocess.run(['/opt/volc/bin/volc', '--log-level', 'error', 'ml_task', 'get',
                            '--id', task_id, '--output', 'json', '--format', 'Id,Name,Status'],
                           capture_output=True, text=True, timeout=45)
     parsed = []

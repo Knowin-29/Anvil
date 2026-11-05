@@ -1,6 +1,6 @@
 {
   "state": "all38_file_hashes_verified",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-160",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-160",
   "step": 160,
   "checked": 1793797952.1268046,
   "seal_sha256": "16ff02d0279fb43781cb8a9c2a9d5fdf281f7f6989405651879bbae3457746bf",

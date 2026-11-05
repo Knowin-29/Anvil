@@ -3,6 +3,6 @@
   "only_training_source_change": "Import exact-length native-row reader; all objective, rollout and optimizer code is byte-identical to parent",
   "train_sha256": "a6e09354af5f3d509a6bc32864129db092429a947638f9a4bb4a575c5426e6b0",
   "parent_train_sha256": "d57b39faaae954616d1a7d4cce195048ba6f7decaeebd36ec10f560fc10066d9",
-  "io_equivalence_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/native_io_validation.json",
+  "io_equivalence_receipt": "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/native_io_validation.json",
   "submitted": false
 }

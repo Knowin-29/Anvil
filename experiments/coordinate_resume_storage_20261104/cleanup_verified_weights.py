@@ -18,7 +18,7 @@ import stat
 import sys
 import time
 
-C = Path('/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028')
+C = Path('/data/anvil/recovery_20261020/completion_20261028')
 V = C / 'verification_20261101'
 PIPELINE = C / 'geometry_objective_v2_20261104'
 DELIVERY = C / 'delivery_runs/geometry_objective_v2_20261104'

@@ -16,12 +16,12 @@ import stat
 import sys
 import time
 
-C = Path('/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028')
+C = Path('/data/anvil/recovery_20261020/completion_20261028')
 V = C / 'verification_20261101'
 P = C / 'format_repair_20261103'
 D = C / 'delivery_runs/format_repair_20261103'
 B = C / 'format_checkpoint_backup_20261103'
-OUT = Path('/root/anvil-quota-recovery-20261103/format_superseded_cleanup')
+OUT = Path('/opt/anvil-private/anvil-quota-recovery-20261103/format_superseded_cleanup')
 PAYLOAD = re.compile(r'(adapter_model\.safetensors|optimizer\.pt|scheduler\.pt|rng_state_\d+\.pth)')
 
 

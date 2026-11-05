@@ -6,7 +6,7 @@ ap=argparse.ArgumentParser();ap.add_argument('--cloud',action='store_true');args
 submission=json.loads((W/'submission.json').read_text());identity=submission['response']['Id']
 obs=dict(checked=time.time(),task_id=identity,stages={},failures=[str(p) for p in [*W.glob('node*_failure.json'),W/'controller_failure.json',C/'delivery_runs/visual_geometry_20261104/failure.json'] if p.exists()])
 if args.cloud:
- proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','get','--id',identity,'--output','json'],capture_output=True,text=True,timeout=60)
+ proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','get','--id',identity,'--output','json'],capture_output=True,text=True,timeout=60)
  values=[]
  for line in proc.stdout.splitlines():
   try:item=json.loads(line)

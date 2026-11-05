@@ -518,8 +518,8 @@
     }
   ],
   "evidence": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/report.json": "39eda7ada04d777ff3086486c8385f0440712631c19e2866651cdacd12187715",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512/trainer_state.json": "51b284c4bf25e2698a2b2114d9c1173f3a2ee13151b6bbbfcbcd83d4e7cb6881"
+    "/data/anvil/recovery_20261020/completion_20261028/checkpoint_prefixes/candidate1_step512/report.json": "39eda7ada04d777ff3086486c8385f0440712631c19e2866651cdacd12187715",
+    "/data/anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-512/trainer_state.json": "51b284c4bf25e2698a2b2114d9c1173f3a2ee13151b6bbbfcbcd83d4e7cb6881"
   },
   "limitations": [
     "Token balance is a generation-only proxy, not measured GPU utilization or a proven achievable speedup.",

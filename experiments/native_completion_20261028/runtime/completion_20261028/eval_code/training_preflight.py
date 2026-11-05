@@ -14,7 +14,7 @@ def run(llm, processor, destination):
     from vllm import SamplingParams
     from trains.flywheel.native_training import strict_json, validate_target
 
-    panel = Path("/Knowin/sim/weilinruan/Anvil/arxiv/native_teacher_panel_20261012")
+    panel = Path("/data/anvil/arxiv/native_teacher_panel_20261012")
     manifest = json.loads((panel / "manifest.json").read_text())
     assert manifest["split"] == "train"
     assert hashlib.sha256((panel / "panel.jsonl").read_bytes()).hexdigest() == manifest["panel_sha256"]

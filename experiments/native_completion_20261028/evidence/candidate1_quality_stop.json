@@ -9,10 +9,10 @@
     "Continue the existing no-native-SFT control to distinguish objective effects before choosing replacement."
   ],
   "evidence": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native512_review_20261029.json": "1d3a98a446548c035b01d968a4f89b815c319f11599eed4fc29f32674e42bf76"
+    "/data/anvil/recovery_20261020/completion_20261028/native512_review_20261029.json": "1d3a98a446548c035b01d968a4f89b815c319f11599eed4fc29f32674e42bf76"
   },
   "planned_steps": 1664,
-  "recovery_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-640",
+  "recovery_checkpoint": "/data/anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-640",
   "recovery_checkpoint_files_verified": 22,
   "recovery_adapter_sha256": "1865b99761a584076922b46d2ce6b7d9bb586c6ff81c1ab8cee39face7bfc2fc",
   "recovery_committed_prefix": {

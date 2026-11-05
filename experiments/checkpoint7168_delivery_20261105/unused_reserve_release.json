@@ -4,13 +4,13 @@
   "active_campaign_gpus": 0,
   "files": [
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/storage_reserve.bin",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/visual_resume_storage_20261105/storage_reserve.bin",
       "inode": 4555995276,
       "bytes": 117037858816,
       "allocated": 117037858816
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/emergency_reserve.bin",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/emergency_reserve.bin",
       "inode": 4857163129,
       "bytes": 30064771072,
       "allocated": 30064771072

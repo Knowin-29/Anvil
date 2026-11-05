@@ -7,7 +7,7 @@ import torch
 from PIL import Image
 from transformers import AutoProcessor
 
-BASE = "/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B"
+BASE = "/data/models/Qwen/Qwen3.5-9B"
 EMPTY_THINK = "<think>\n\n</think>\n\n"
 
 

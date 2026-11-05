@@ -5,9 +5,9 @@
   "checked": 1793806822.6523347,
   "command": "python -m unittest -v test_visual_optimization",
   "files": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/train.py": "1bd52cfb0c575eb834351a218b7e17a5bafef68c025ba56be01a4f26a89dacc1",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/visual_optimization.py": "0e712ce1b3d9085be7571180ed3f235febd9eb4f86d0ca780139e0da7d665cb4",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/test_visual_optimization.py": "e239bc652d2ef2aad826319a497e19c9c0cae03ffdaa8e4a25ec8f40b25a1fef"
+    "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/train.py": "1bd52cfb0c575eb834351a218b7e17a5bafef68c025ba56be01a4f26a89dacc1",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/visual_optimization.py": "0e712ce1b3d9085be7571180ed3f235febd9eb4f86d0ca780139e0da7d665cb4",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/test_visual_optimization.py": "e239bc652d2ef2aad826319a497e19c9c0cae03ffdaa8e4a25ec8f40b25a1fef"
   },
   "coverage": [
     "visual/language trainable partitions",

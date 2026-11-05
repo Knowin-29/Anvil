@@ -5,7 +5,7 @@ Entrypoint: 'set -Eeuo pipefail
 
   export PYTHONDONTWRITEBYTECODE=1
 
-  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/node.py'
+  /data/anvil/recovery_20261020/.venv-train/bin/python -u /data/anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/node.py'
 Tags:
 - train
 UserCodePath: ''

@@ -1,6 +1,6 @@
 {
   "schema": "anvil-complete-evaluation-continuation-trigger-v1",
-  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation/final_report.json",
+  "public_general_report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation/final_report.json",
   "public_general_report_sha256": "dc6908d822d2f22d07062e028e1e4dbd6ef97311f58d257d5761bedf42c15607",
   "scores": {
     "cv_bench": 88.4,
@@ -14,7 +14,7 @@
   "final_quality_accepted": false,
   "rationale": "Continue the completed coordinate MOPD256 weights. Full public benchmarks pass the per-benchmark 10% threshold; native geometry fails. Preserve all language weights and introduce zero-delta rank32 adapters in final eight visual blocks and merger. Joint visual/language repair8192 then genuine MOPD256. Full original pools, all11 forms, general/public replay, scorers and generation budgets retained. This intervention tests whether trainable visual features improve grounding; improvement requires full heldout evaluation.",
   "rejected_review": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/quality_review.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/coordinate_delivery_control_v2_20261104/quality_review.json",
     "sha256": "29e4f35a05cacd90224adc103e7e65cbc734020049c13d4259041294eda9faa4"
   }
 }

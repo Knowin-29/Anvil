@@ -20,7 +20,7 @@
   "prior_and_planned_vacancy_exposures": 251904,
   "these_are_planned_not_observed_counts": true,
   "source_admission": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/manifest.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/manifest.json",
     "sha256": "08179c0c218d33db1b28165bdede50fa27bd97f129a9aa26d963b7f32ece23b8"
   },
   "resume_regression_checks_passed": true,

@@ -1,9 +1,9 @@
 {
   "schema": "anvil-inherited-model-interface-v1",
   "state": "untrained_zero_delta_visual_extension",
-  "source_protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/protocol.json",
+  "source_protocol": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/protocol.json",
   "source_protocol_sha256": "be77434a9d11b5fb9c9800d600fc6df2f1d47e8e3ab59a58209149a47242ef95",
-  "initialization_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/initialization/initialization.json",
+  "initialization_receipt": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/initialization/initialization.json",
   "created": 1793805944.7352352,
   "model_representation": "anvil-dof-train-rotation128-v1",
   "model_representation_sha256": "1aa545fa7fc4ddb6519d81cffb5086e5b1021142d70004398d4b9ae7c6a889ea",
@@ -14,11 +14,11 @@
     "derived_contract": "anvil-derived-dof-model-training-v1",
     "decoder_required": true,
     "files_sha256": {
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codebook_interface.py": "ccf3ac68fa4396f735d3a58d66af223587c9059a14baefd788ba3ea0093401d6",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_dof_rotation_codebook.py": "58aef92204bd2562b2b1bc14364fe1f45b3047f10467199df0675c6e13bd97e4"
+      "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_prototype.py": "e791628032becf42e59b1bbdd7ad48de300a88b272fa88bce21bb477b0b4d95a",
+      "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codec_interface.py": "07247bf6153776d441c5e83c0a90ab5e8391e18cc8f44d730f079488ac70461b",
+      "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_codebook_interface.py": "ccf3ac68fa4396f735d3a58d66af223587c9059a14baefd788ba3ea0093401d6",
+      "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/dof_rotation_codebook.json": "c099c219f5199a03dc64083d1b4124371a68607c1d8309fa409eaf5b49533b10",
+      "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prepare_dof_rotation_codebook.py": "58aef92204bd2562b2b1bc14364fe1f45b3047f10467199df0675c6e13bd97e4"
     }
   }
 }

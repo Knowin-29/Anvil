@@ -7,7 +7,7 @@ import hashlib,io,json,zipfile
 from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parent;OUT=ROOT/'retention_replay';OUT.mkdir(exist_ok=True)
-SOURCE=Path('/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/sources')
+SOURCE=Path('/workspace/anvil-legacy/data/general_retention_v1/sources')
 NATIVE=ROOT.parent.parent.parent/'arxiv/native_evaluation_export_20261012_v4'
 def sha(p):
  with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()

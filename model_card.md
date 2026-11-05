@@ -39,9 +39,25 @@ from huggingface_hub import snapshot_download
 
 model_path = snapshot_download(
     "Knowin-29/Anvil-MOPD-9B",
+    revision="712b84d42cf90d25457e534845243b4a1882afbb",
     ignore_patterns=["checkpoints/**", "docs/**"],
 )
 ```
+
+This fixed release contains 1,529 files: the merged model, adapter, inference
+interface, evaluation records, and 37 complete training checkpoints. All files
+were checked against the publication receipt (1,301 LFS SHA-256 checks and 228
+downloaded small-file SHA-256 checks). The minimal download above excludes the
+large training-state archive. No login is required for these public files.
+
+The released model's seven-benchmark mean is **72.27%**, distinct from the
+manuscript v1 reference of **74.27%**. The full 580,000-record native evaluation
+scores **50.6237** under Anvil-Eval v1.1; it is not part of this seven-task mean.
+The original native target was not met. Release acceptance concerns the seven
+public benchmarks, not an exact reproduction of all manuscript results.
+RefSpatial uses the Location100 protocol; the historical paper runtime is not
+established as identical. Follow the published evaluation specification when
+comparing checkpoints.
 
 Load with Transformers `Qwen3_5ForConditionalGeneration` and `AutoProcessor`, using BF16 and thinking disabled. Evaluation uses up to 1,536 image tokens. The packaged `anvil/anvil_interface.py` handles native DoF prompts and pose decoding: call `prepare_native_prompt("dof", prompt)` before generation and `decode_native_response("dof", text, prompt)` afterward. The pose representation is `rotation128`; other native forms use their original prompts and responses.
 

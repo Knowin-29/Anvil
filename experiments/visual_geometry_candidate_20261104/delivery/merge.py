@@ -12,7 +12,7 @@ from safetensors.torch import load_file, save_file
 
 ROOT = Path(__file__).resolve().parent.parent
 RECOVERY = ROOT.parent
-BASE = Path("/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B")
+BASE = Path("/data/models/Qwen/Qwen3.5-9B")
 RUNS = RECOVERY.parent / "arxiv"
 sys.path.insert(0,str(ROOT/"visual_geometry_candidate_20261104"))
 from merge_low_rank import collect_pairs, merge_tensor

@@ -1,15 +1,15 @@
 {
   "family": "A",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
   "adapter_sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244",
   "warm_start": {
-    "checkpoint": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024",
+    "checkpoint": "/data/anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024",
     "updates": 1024,
     "per_row_exposure_log_available": false,
     "exact_unique_records": null
   },
   "specialist_sft": {
-    "checkpoint": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177",
+    "checkpoint": "/data/anvil/a800_repair_20261020/repair_A/checkpoint-177",
     "epoch": 1.0,
     "updates": 177,
     "available_training_records": 11317,
@@ -20,8 +20,8 @@
     {
       "schema": "anvil-stage-exposure-audit-v1",
       "state": "complete_stage_audit",
-      "run": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr",
-      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512",
+      "run": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr",
+      "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512",
       "execution_only": false,
       "steps": 512,
       "global_batch": 32,
@@ -66,31 +66,31 @@
       },
       "evidence": [
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
           "sha256": "9307a5391a4a3ebddf0fa75928aba9844b7be03a50388e823af96f49187d80d8"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
           "sha256": "00c6a842540881690c1a54927f472c0d9d6818fee4355e7bb1311d34059e7e6d"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
           "sha256": "6b81817a625ff0a692b93ebce05d33bcb06b0e3dfef1afb6a4d4c7cb856b659f"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
           "sha256": "62a477c1df6af58beb5d42189689e7cc19c60ecd89d78c5ff6ee419fc52c58f3"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
           "sha256": "9e78a17325791b9514fb77ba7b15ab53c9a5e59e7ba93eb808086d8da1120547"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
           "sha256": "bbfbcf4ffef62ad29248e4abf9eda89980e14be57541510b523d11b8b46d7793"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
           "sha256": "91bc290408f7dd62ae0b4e448b8e5e63e536ed9023cee31b8910586549ac26a9"
         }
       ],
@@ -100,8 +100,8 @@
     {
       "schema": "anvil-stage-exposure-audit-v1",
       "state": "complete_stage_audit",
-      "run": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4",
-      "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+      "run": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4",
+      "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
       "execution_only": false,
       "steps": 2048,
       "global_batch": 32,
@@ -153,31 +153,31 @@
       },
       "evidence": [
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
           "sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
           "sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
           "sha256": "f47b34226328ad341d435d6e8338e03f42cb9d0cc58fb9f53943720426cf9712"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
           "sha256": "35799dc6a1035dfb50220e300db8fa201f2d9bf36e00451f2b6c8a3d0bc16136"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
           "sha256": "1e36ec6c9e5bdeec76e8a1d1497a3113c1df9811c75546ad981054b4021fb692"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
           "sha256": "df342c77c83defdd8dcb12ed8e0c27462be396a17a15d3bef98882f8ccf6c824"
         },
         {
-          "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
+          "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
           "sha256": "322261ca43e6e6c421372e4e22731dc9efcf5b38a70356ac5806457f5a92433e"
         }
       ],
@@ -231,107 +231,107 @@
   "counted_as_direct_student_exposure": false,
   "evidence": [
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
       "sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
       "sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/checkpoint_complete.json",
       "sha256": "f47b34226328ad341d435d6e8338e03f42cb9d0cc58fb9f53943720426cf9712"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank0.jsonl",
       "sha256": "35799dc6a1035dfb50220e300db8fa201f2d9bf36e00451f2b6c8a3d0bc16136"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank1.jsonl",
       "sha256": "1e36ec6c9e5bdeec76e8a1d1497a3113c1df9811c75546ad981054b4021fb692"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank2.jsonl",
       "sha256": "df342c77c83defdd8dcb12ed8e0c27462be396a17a15d3bef98882f8ccf6c824"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/exposure_rank3.jsonl",
       "sha256": "322261ca43e6e6c421372e4e22731dc9efcf5b38a70356ac5806457f5a92433e"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/adapter_model.safetensors",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048/adapter_model.safetensors",
       "sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/protocol.json",
       "sha256": "9307a5391a4a3ebddf0fa75928aba9844b7be03a50388e823af96f49187d80d8"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/complete.json",
       "sha256": "00c6a842540881690c1a54927f472c0d9d6818fee4355e7bb1311d34059e7e6d"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/checkpoint_complete.json",
       "sha256": "6b81817a625ff0a692b93ebce05d33bcb06b0e3dfef1afb6a4d4c7cb856b659f"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank0.jsonl",
       "sha256": "62a477c1df6af58beb5d42189689e7cc19c60ecd89d78c5ff6ee419fc52c58f3"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank1.jsonl",
       "sha256": "9e78a17325791b9514fb77ba7b15ab53c9a5e59e7ba93eb808086d8da1120547"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank2.jsonl",
       "sha256": "bbfbcf4ffef62ad29248e4abf9eda89980e14be57541510b523d11b8b46d7793"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/exposure_rank3.jsonl",
       "sha256": "91bc290408f7dd62ae0b4e448b8e5e63e536ed9023cee31b8910586549ac26a9"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/adapter_model.safetensors",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/codebook_repairs/A_codebook_low_lr/checkpoint-512/adapter_model.safetensors",
       "sha256": "e2065acffbd58d2d10d07927e5a144261603f93b5211ffbff5ce041f86cf51ab"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/complete.json",
+      "path": "/data/anvil/a800_repair_20261020/repair_A/complete.json",
       "sha256": "6b84c0fad6978f4ea1a18a47ed7f150d52e7cbe83050f38ccd19d758346486f5"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/training_protocol.json",
+      "path": "/data/anvil/a800_repair_20261020/repair_A/training_protocol.json",
       "sha256": "7d1ba865c4afccdb950590232c09528a680c84ff83a8d8dca37afc6e420ef9c1"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177/trainer_state.json",
+      "path": "/data/anvil/a800_repair_20261020/repair_A/checkpoint-177/trainer_state.json",
       "sha256": "7eabc9cacbadfeeae0a91e9888af81264a69ae297af51dd3fbe24df51a40fdeb"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_A/checkpoint-177/adapter_model.safetensors",
+      "path": "/data/anvil/a800_repair_20261020/repair_A/checkpoint-177/adapter_model.safetensors",
       "sha256": "3e592ddb3285064c3da9db785411ef9432656f80bd485f926d1161332a74bf9b"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_training_export_20261012_v4_r2/manifest.json",
+      "path": "/data/anvil/arxiv/native_training_export_20261012_v4_r2/manifest.json",
       "sha256": "979e0ba9deac9b6b1de58af7a08e820eff7c733fae141c3fa2dac17d3839d2dd"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/protocol.json",
+      "path": "/data/anvil/arxiv/native_a_specialist_20261012_v4/protocol.json",
       "sha256": "3c68913634b85ed15a43aa63fac3be24693623256978c2c05b3791e34f26244b"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training.command.json",
+      "path": "/data/anvil/arxiv/native_a_specialist_20261012_v4/training.command.json",
       "sha256": "1d1c6672e24d42a4717f7e9d1442bc2efcdffaa0194a8963a1f67c0806c24c5a"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training.result.json",
+      "path": "/data/anvil/arxiv/native_a_specialist_20261012_v4/training.result.json",
       "sha256": "a5cadcd63edc9af297c784832ac6c6e8daa7745293f3c9e521a8aabe03ae2793"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/trainer_state.json",
+      "path": "/data/anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/trainer_state.json",
       "sha256": "3d92d0c79fd99b8f27ea06b99f5779a36b72ac6ec953cce275ff9b56d50f8dfe"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/adapter_model.safetensors",
+      "path": "/data/anvil/arxiv/native_a_specialist_20261012_v4/training/checkpoint-1024/adapter_model.safetensors",
       "sha256": "3459635b22124198c56b0c68716c934c29e5e438b93a38ef37c6fbbaf6983649"
     }
   ]

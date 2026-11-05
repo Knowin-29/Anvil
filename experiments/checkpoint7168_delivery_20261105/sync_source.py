@@ -1,6 +1,6 @@
 from pathlib import Path
 import ast,base64,hashlib,json,os,re,shutil,subprocess,time,zipfile
-W=Path(__file__).resolve().parent;C=W.parent;repo=Path('/Knowin/demo/weilinruan/Anvil/01_Code');dest=repo/'experiments/checkpoint7168_delivery_20261105'
+W=Path(__file__).resolve().parent;C=W.parent;repo=Path('/workspace/Anvil');dest=repo/'experiments/checkpoint7168_delivery_20261105'
 def sha(p):
  with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def save(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')

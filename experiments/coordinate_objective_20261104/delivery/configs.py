@@ -27,7 +27,7 @@ def main():
         text=yaml.safe_dump(config,allow_unicode=True,sort_keys=False)
         if path.exists():require(path.read_text()==text,'Config already exists with different contents')
         else:path.write_text(text)
-        print(shlex.join(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(path),'--output','json']))
+        print(shlex.join(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(path),'--output','json']))
     print(f'Prepared {args.nodes*8} GPUs. Submit only after checking total active campaign allocation stays <=32.')
 
 

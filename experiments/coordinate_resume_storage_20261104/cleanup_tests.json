@@ -1,7 +1,7 @@
 {
   "state": "passed",
   "tests": 24,
-  "suite": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/test_cleanup_verified_weights.py",
+  "suite": "/data/anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/test_cleanup_verified_weights.py",
   "suite_sha256": "9eeeaef39815770a3f9e664ec8e0bfc68082e61fc18ced3ae29731944087b167",
   "source_sha256": "b19d3d37a0197cae82db637a8ce83a98262f7d9b8692112d0510dce52047319f",
   "checked": 1793798412.5904274

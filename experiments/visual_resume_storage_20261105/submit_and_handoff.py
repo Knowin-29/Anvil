@@ -25,7 +25,7 @@ def main():
   save(W/'capacity.json',dict(cloud=cloud,active=active,requested=32,cap=32,checked=time.time()))
   binding=dict(config_sha256=sha(W/'cli.yaml'),resume_policy_sha256=sha(W/'resume_policy.json'),pipeline_spec_sha256=policy['pipeline_spec_sha256'],gpus=32,time=time.time())
   save(W/'submission_intent.json',binding)
-  proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(W/'cli.yaml'),'--output','json'],capture_output=True,text=True,timeout=90)
+  proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(W/'cli.yaml'),'--output','json'],capture_output=True,text=True,timeout=90)
   (W/'submission.log').write_text(proc.stdout+proc.stderr);receipt=dict(binding,response=submission_response(proc.stdout,proc.returncode));save(W/'submission.json',receipt)
   register(receipt,32,'visual_exact_resume768_repair8192_mopd256',W/'cli.yaml')
  print(json.dumps(dict(task=receipt['response']['Id'],resume_step=768)),flush=True)

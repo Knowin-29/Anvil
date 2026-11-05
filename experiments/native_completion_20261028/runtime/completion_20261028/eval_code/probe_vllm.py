@@ -8,7 +8,7 @@ from pathlib import Path
 import time
 
 ROOT = Path(__file__).resolve().parent
-PANEL = Path("/Knowin/sim/weilinruan/Anvil/arxiv/native_teacher_panel_20261012")
+PANEL = Path("/data/anvil/arxiv/native_teacher_panel_20261012")
 BUDGETS = {"bbox": 2048, "detection": 8192, "mask": 16384, "point": 16384,
            "direction": 512, "metric_comparison": 512, "relation_graph": 8192,
            "depth_order": 2048, "affordance": 512, "dof": 2048, "action_cot": 2048}

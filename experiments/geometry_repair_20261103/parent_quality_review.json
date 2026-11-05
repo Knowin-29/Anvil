@@ -194,5 +194,5 @@
       }
     }
   ],
-  "further_training_trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/public_trigger.json"
+  "further_training_trigger": "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/public_trigger.json"
 }

@@ -55,42 +55,42 @@
   },
   "datasets": {
     "vacancy": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/train.jsonl",
       "sha256": "dd4c2f46228b5b883475c511577971d6cbcdfd7cfec38a4a8cb1f006a944c966",
       "records": 182878
     },
     "fsd": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/fsd_goal.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/fsd_goal.jsonl",
       "sha256": "c4c8f55c271023a6ed505a41f921c57edef7fc3ed2c8b620ae4c57f349b906df",
       "records": 29448
     },
     "prism": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/train_bound.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/train_bound.jsonl",
       "sha256": "a656b33eab4e1d30cde1c5942f77504d0c8c35b1443b908426614dd003d5b16d",
       "records": 13536
     },
     "ai2d": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/ai2d.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/ai2d.jsonl",
       "sha256": "a09bb1109a37262968f35a9f1d17a198502c257fc9897330fd900eb56f1a6b1e",
       "records": 11774
     },
     "scienceqa": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/scienceqa.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/scienceqa.jsonl",
       "sha256": "ee7c092c7b3673e3f1a3da412cf2cb603a1e2026c03d399907d09ed7779ee42e",
       "records": 5944
     },
     "textvqa": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/textvqa.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/textvqa.jsonl",
       "sha256": "fcb2250ca6daeb87d30885c03e74f7a02b6ea491395a8a1c2f46e66b117dcfbf",
       "records": 32845
     },
     "grounding": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/grounding.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/grounding.jsonl",
       "sha256": "21e003c92f420c6b7890a2ad083261a012a59333fc4a8afa7aaeb042c5f34105",
       "records": 97674
     },
     "sat": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
       "sha256": "d666e347380ef32d98dd90b35469b1bf8eb4890869ed50f948d75b1f5d2bdd12",
       "records": 51322
     }
@@ -137,7 +137,7 @@
       "sat"
     ]
   },
-  "initial_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-256",
+  "initial_checkpoint": "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-256",
   "initial_adapter_sha256": "df768f8efbcc08190a28e2accf00f5b47d2d05c07eaad6a41556a42cbe30e094",
   "submitted": false,
   "training_source_ready": false,

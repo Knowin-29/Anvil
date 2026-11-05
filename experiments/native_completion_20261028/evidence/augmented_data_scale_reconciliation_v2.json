@@ -23,9 +23,9 @@
   "source_mixture_matches_paper": false,
   "actual_exposure_rule": "Use each final model lineage plus exposure logs; this inventory does NOT establish that all supplemental rows were trained.",
   "bindings": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/manifest.json": "084190c12acdc1dee6c18a19663df111a1345b8ec5c29f9aef1e678f49e0443c",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/manifest.json": "abb2b9079fac7be483ddd94441eb0c6e537f0033635e23cb9dd9417845ee17bf"
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/retention_replay/manifest.json": "084190c12acdc1dee6c18a19663df111a1345b8ec5c29f9aef1e678f49e0443c",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_replay/manifest.json": "214ebe2693f7b747630a26f56424d79918b79c94f52100e15f341752a47892dd",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_expansion/manifest.json": "abb2b9079fac7be483ddd94441eb0c6e537f0033635e23cb9dd9417845ee17bf"
   },
   "prism_overlap_with_previous_supplements": 0,
   "original_prism_supplement_overlap": 0,

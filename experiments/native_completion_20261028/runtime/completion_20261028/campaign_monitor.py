@@ -269,7 +269,7 @@ def snapshot():
         cloud=[]
         for job in result['submitted_jobs']:
             try:
-                proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','get','--id',job['id'],'--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=20)
+                proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','get','--id',job['id'],'--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=20)
                 rows=[json.loads(line) for line in proc.stdout.splitlines() if line.startswith('[{"Id"')]
                 assert proc.returncode==0 and len(rows)==1
                 cloud.append(dict(**job,status=rows[0][0]['Status']))

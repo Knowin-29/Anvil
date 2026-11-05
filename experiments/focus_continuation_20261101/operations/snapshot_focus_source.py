@@ -7,7 +7,7 @@ import re
 import shutil
 import time
 C=Path(__file__).resolve().parent.parent
-REPO=Path('/Knowin/demo/weilinruan/Anvil/01_Code')
+REPO=Path('/workspace/Anvil')
 OUT=REPO/'experiments/focus_continuation_20261101'
 N=C/'focus_repair_20261101'
 V=C/'verification_20261101'

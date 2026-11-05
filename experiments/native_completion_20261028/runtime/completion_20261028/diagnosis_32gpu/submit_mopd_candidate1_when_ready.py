@@ -37,7 +37,7 @@ def main():
             if active+8>32:time.sleep(30);continue
             for path,digest in spec['frozen_files'].items():assert sha(path)==digest,path
             save(O/'capacity.json',dict(cloud=cloud,gpus_before=active,requested=8,ceiling=32,checked=time.time()))
-            proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=60)
+            proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=60)
             (O/'submission.log').write_text(proc.stdout+proc.stderr)
             responses=[]
             for line in proc.stdout.splitlines():

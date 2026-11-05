@@ -1,10 +1,10 @@
 {
   "schema": "anvil-targeted-continuation-submission-v1",
   "gpus": 32,
-  "spec": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/spec.json",
-  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/cli.yaml",
-  "trigger": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/public_trigger.json",
-  "parent_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
+  "spec": "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/spec.json",
+  "config": "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/cli.yaml",
+  "trigger": "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/public_trigger.json",
+  "parent_report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
   "parent_evaluation_spec_sha256": "535ad039c82e0c33d3bd4a72db645cb15ffa51c53c3727baf0a91fdefd380768",
   "parent_jobs": [
     "t-20261102112615-62nq7",
@@ -12,14 +12,14 @@
     "t-20261102112700-dwbfh",
     "t-20261102112724-gp25v"
   ],
-  "handoff_source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_final_handoff.py",
-  "handoff_policy": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/policy.json",
+  "handoff_source": "/data/anvil/recovery_20261020/completion_20261028/format_final_handoff.py",
+  "handoff_policy": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/policy.json",
   "files": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_continuation_controller.py": "e29b15540f5d3028516584e55c9d14e5e8a4706da0a9a92ecec7bf9a35616cc1",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/spec.json": "8c9055fb91efa16daec6492ffa59ed1baa31b93b188bef4616075e9d094c93d7",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/cli.yaml": "c2713abed78aef894d9a532b8bc4a9d67b41e584a8261bf0bc43e0ec24a5e6e0",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/public_trigger.json": "01519e9b54543484f008c3f87959aaa316d59349f1b070f13ebd5475510a37b5",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/policy.json": "19128f7089d00120dfc4df277d8977f9dbebfdf783e79f8e09f5f2734818262d",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_final_handoff.py": "8341e239316081d4335e5fb8c0b824045ee83d5eda39e9472017c6ff30f8208f"
+    "/data/anvil/recovery_20261020/completion_20261028/format_continuation_controller.py": "e29b15540f5d3028516584e55c9d14e5e8a4706da0a9a92ecec7bf9a35616cc1",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/spec.json": "8c9055fb91efa16daec6492ffa59ed1baa31b93b188bef4616075e9d094c93d7",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/cli.yaml": "c2713abed78aef894d9a532b8bc4a9d67b41e584a8261bf0bc43e0ec24a5e6e0",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/public_trigger.json": "01519e9b54543484f008c3f87959aaa316d59349f1b070f13ebd5475510a37b5",
+    "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/format_repair_20261103/policy.json": "19128f7089d00120dfc4df277d8977f9dbebfdf783e79f8e09f5f2734818262d",
+    "/data/anvil/recovery_20261020/completion_20261028/format_final_handoff.py": "8341e239316081d4335e5fb8c0b824045ee83d5eda39e9472017c6ff30f8208f"
   }
 }

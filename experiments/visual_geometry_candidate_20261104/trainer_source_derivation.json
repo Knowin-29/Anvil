@@ -2,31 +2,31 @@
   "schema": "anvil-unsubmitted-trainer-source-derivation-v1",
   "source_files": {
     "train.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/train.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/train.py",
       "sha256": "4826852441111b262b6eb4ec44c69231acda592fbbacf4d0f54031ea570755e5"
     },
     "node.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/node.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/node.py",
       "sha256": "4880a0bf3df8a293c6def989e1fdc235b4bd5867ff45aa76002556be061f47c0"
     },
     "native_io_pool.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/native_io_pool.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/native_io_pool.py",
       "sha256": "d66b7f7dc06fbb444ab7f314d2fa43596740ee8264382545289e0b5de604097a"
     },
     "pool.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/pool.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/pool.py",
       "sha256": "b5aab4a26abee33bfd9921b12792aba5c88f4c45c1f1d510aeb78e0bcafc8c02"
     },
     "geometry_loss.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/geometry_loss.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/geometry_loss.py",
       "sha256": "b13bbadbcabf29b7a591c05e0ad7d5be91d74fba742a4fc3af1e2cdc3be3d8d8"
     },
     "point_contracts.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/point_contracts.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/point_contracts.py",
       "sha256": "cf5bf8a374d08dee81ca8b0a12b3275fc090e866afa435ef5df335510a000c71"
     },
     "resume_state.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/resume_state.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/resume_state.py",
       "sha256": "9b763671a14db5d4270f016f5e25192eac6f2edec08c6879b491bae9a26c25bd"
     }
   },

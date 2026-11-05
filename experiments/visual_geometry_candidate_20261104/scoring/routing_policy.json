@@ -1,10 +1,10 @@
 {
   "schema": "anvil-same-score-new-candidate-route-v1",
-  "definition_root": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104",
+  "definition_root": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104",
   "definition_seal_sha256": "fa32c7a280524efe3f131038b0c236ad1f013fa99a0997786413103491092539",
   "waiter_sha256": "7b1893442a1e99cd7d1451b60fb1a3637afe9c416d2c0940959a33c00056a2f5",
   "pipeline_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
-  "report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/evaluation/final_report.json",
-  "output": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_native_score_20261104/final_native_score.json",
+  "report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/visual_geometry_20261104/evaluation/final_report.json",
+  "output": "/data/anvil/recovery_20261020/completion_20261028/visual_native_score_20261104/final_native_score.json",
   "scoring_formula_unchanged": true
 }

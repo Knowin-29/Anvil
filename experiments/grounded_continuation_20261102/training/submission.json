@@ -1,5 +1,5 @@
 {
-  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/cli.yaml",
+  "config": "/data/anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/cli.yaml",
   "config_sha256": "601c13b0689b4723147800cb8a5884a508b3885527b00b553387a50a2a6d0cf5",
   "spec_sha256": "47d0f55e3948fc0c77a418373177d18d00bb18b443e986746d6a9d8dc6fe2062",
   "gpus": 32,

@@ -5,9 +5,9 @@ Entrypoint: 'set -Eeuo pipefail
 
   export PYTHONDONTWRITEBYTECODE=1
 
-  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/launch_node.py
-  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation_spec.json
-  --output /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation
+  /data/anvil/recovery_20261020/.venv-train/bin/python -u /data/anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/launch_node.py
+  --spec /data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation_spec.json
+  --output /data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation
   --node 1 --nodes 4'
 Tags:
 - eval

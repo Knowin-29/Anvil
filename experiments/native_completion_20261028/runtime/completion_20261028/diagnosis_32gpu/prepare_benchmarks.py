@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parent
-os.environ['ANVIL_BENCHMARK_ROOT']='/Knowin/foundation/data/datasets/transferred_datasets/EmbodiedAI_benchmark'
+os.environ['ANVIL_BENCHMARK_ROOT']='/data/sources/transferred_datasets/EmbodiedAI_benchmark'
 sys.path.insert(0,str(ROOT/'code'))
 from gsa_eval.registry import BENCHMARKS
 
@@ -31,7 +31,7 @@ def main():
                     if path not in manifest['images']:manifest['images'][path]=sha(path)
         manifest['public'][name]={'n':len(rows),'sha256':sha(dest),'max_tokens':spec.max_tokens}
         print(name,len(rows),flush=True)
-    src=Path('/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/p5_retention_clean_run_seed17_v2/retention/inputs/runtime_index.jsonl')
+    src=Path('/workspace/anvil-project/04_Experiments/iclr_evidence/engineering/data/p5_retention_clean_run_seed17_v2/retention/inputs/runtime_index.jsonl')
     rows=[json.loads(l) for l in src.open()]
     counts=Counter(r['dataset'] for r in rows)
     assert counts=={'ai2d_test':3088,'scienceqa_test':2017,'textvqa_val':5000},counts
@@ -41,7 +41,7 @@ def main():
         if path not in manifest['images']:manifest['images'][path]=sha(path)
         assert manifest['images'][path]==r['image_sha256']
     dest=out/'retention.jsonl';dest.write_bytes(src.read_bytes())
-    ref=Path('/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/sources/vlmevalkit/vqa_eval.py')
+    ref=Path('/workspace/anvil-legacy/data/general_retention_v1/sources/vlmevalkit/vqa_eval.py')
     assert sha(ref)=='c04e0a1cad29cd8caa786ea1a96d2d945630304d756d1bba234b36e66c83f06d'
     manifest['retention']={'counts':dict(counts),'source':str(src),'sha256':sha(dest),'vqa_reference':str(ref),'vqa_reference_sha256':sha(ref)}
     manifest['code']={str(p.relative_to(ROOT/'code')):sha(p) for p in (ROOT/'code').rglob('*.py')}

@@ -2,7 +2,7 @@
 from pathlib import Path
 import ast,hashlib,json,re,shutil,time
 V=Path(__file__).resolve().parent;C=V.parent;N=C/'balanced_repair_20261102'
-REPO=Path('/Knowin/demo/weilinruan/Anvil/01_Code');OUT=REPO/'experiments/balanced_continuation_20261102';OUT.mkdir(exist_ok=True)
+REPO=Path('/workspace/Anvil');OUT=REPO/'experiments/balanced_continuation_20261102';OUT.mkdir(exist_ok=True)
 files={}
 def copy(source,relative):
  assert source.is_file(),source

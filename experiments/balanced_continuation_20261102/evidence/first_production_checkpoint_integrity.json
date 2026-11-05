@@ -3,7 +3,7 @@
   "checked_at": "2026-11-01T18:28:15.706419+00:00",
   "stage": "repair",
   "step": 64,
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-64",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-64",
   "spec_sha256": "1d80ddf325c452386876a246c9d7d2eb49c35e4e8355ccf370bd8613fba64a87",
   "files": 38,
   "total_bytes": 2078386517,
@@ -17,7 +17,7 @@
     "steps": 2560,
     "schedule": "warmup3%-cosine"
   },
-  "initial_adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-768",
+  "initial_adapter": "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-768",
   "initial_adapter_sha256": "c7813b969b2aec281c962e79188e5dcaf335f4bb34be9c432a312fa221478a29",
   "all32_rng_files_loadable": true,
   "cuda_rng_blobs_loaded_on_cpu_only": true,

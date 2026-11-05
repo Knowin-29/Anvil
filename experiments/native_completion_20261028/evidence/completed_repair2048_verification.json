@@ -1,7 +1,7 @@
 {
   "state": "completed_repair_checkpoint2048_verified",
   "checked_at": "2026-10-29T23:22:19.863539+08:00",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
   "files": 38,
   "total_bytes": 2079798631,
   "examples": 131072,

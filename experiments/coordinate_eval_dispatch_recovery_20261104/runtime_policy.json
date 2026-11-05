@@ -1,18 +1,18 @@
 {
   "schema": "anvil-evaluation-import-binding-v1",
-  "evaluation_spec": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation_spec.json",
+  "evaluation_spec": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation_spec.json",
   "evaluation_spec_sha256": "c3d5f79c472ee3629df981ac174afa15c0a0604e163b964067b66501fca42e36",
-  "output": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation",
-  "intended_package": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2",
-  "old_failed_submissions": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/submissions",
+  "output": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/evaluation",
+  "intended_package": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2",
+  "old_failed_submissions": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_objective_v2_20261104/submissions",
   "unchanged_model_and_scoring": true,
   "files": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/launch_node.py": "04c6f570b116842749c5a69a64fee19341d4500a5fcc9a8777e5eaf36811ffd8",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/node.py": "6594d8b674566d17b65733cb6f45b12a7cf0604e81d19256825e1ac01ab663d9",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/common.py": "7564508167c8421259a33d679d22b2ea23872881d028bcb1ec8f88212682601a",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/public_worker.py": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/native_worker.py": "9bce9d1ac52ff6f4cd6fe79f57c0c44fcf87a1f9695e2d35e7b243c6999a3879",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/score.py": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057"
+    "/data/anvil/recovery_20261020/completion_20261028/coordinate_eval_dispatch_recovery_20261104/launch_node.py": "04c6f570b116842749c5a69a64fee19341d4500a5fcc9a8777e5eaf36811ffd8",
+    "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/node.py": "6594d8b674566d17b65733cb6f45b12a7cf0604e81d19256825e1ac01ab663d9",
+    "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/common.py": "7564508167c8421259a33d679d22b2ea23872881d028bcb1ec8f88212682601a",
+    "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/public_worker.py": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38",
+    "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/native_worker.py": "9bce9d1ac52ff6f4cd6fe79f57c0c44fcf87a1f9695e2d35e7b243c6999a3879",
+    "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/score.py": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057"
   },
   "created": 1793804098.720277
 }

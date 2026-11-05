@@ -20,7 +20,7 @@
   "planned_sat_repair_exposures": 61440,
   "these_are_planned_not_observed_counts": true,
   "source_admission": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/manifest.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/sat_replay_20261102/manifest.json",
     "sha256": "27e15de9a71dd4c069a835c33ad0a04e3872d42d5d1704be127429071158f535"
   },
   "resume_regression_checks_passed": true,

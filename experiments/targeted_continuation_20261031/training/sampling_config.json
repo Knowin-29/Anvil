@@ -102,7 +102,7 @@
       "prism"
     ]
   },
-  "parent_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
+  "parent_checkpoint": "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
   "model_training_launched": false,
   "trainer_and_handoff_preparation_complete": false
 }

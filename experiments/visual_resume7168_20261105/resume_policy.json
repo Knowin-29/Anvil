@@ -1,19 +1,19 @@
 {
   "schema": "anvil-exact-visual-resume-v1",
   "pipeline_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
-  "resume_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
+  "resume_checkpoint": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
   "resume_step": 7168,
   "target_repair_step": 8192,
   "target_mopd_step": 256,
   "resume_seal_sha256": "619eee4448fcce2b37c68a03029f123281eb50bcd9d8eae30be093772edb7958",
   "files": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/node.py": "f0005189417559572ee1fbbb213fd6dac03246c6f59e2bca7c179f14d5904192",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/storage_budget.py": "08c7a8990e22b7f28a56664810b1691e38f6ad0c8c479daa55664e360bc9cb8f",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/quota_io.py": "12ec0536bd52158c9ec0dea9bb706b778592548b2db4e6b4a23d4eb5d87e0019",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/train_bootstrap.py": "136b6e677294d405508a462328b2451e7ef37122d178cb6439d96202ee48654f",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/test_quota_io.py": "7c2699ecf914a1efcd59b1069b9b9256df97851178123a7433cb0ef2468a7fda",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json": "d8bc33fbf56967e1e523ae1449b7d3d24c522e7e09a41a0cc621f86adff73f55",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/spec.json": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d"
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/node.py": "f0005189417559572ee1fbbb213fd6dac03246c6f59e2bca7c179f14d5904192",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/storage_budget.py": "08c7a8990e22b7f28a56664810b1691e38f6ad0c8c479daa55664e360bc9cb8f",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/quota_io.py": "12ec0536bd52158c9ec0dea9bb706b778592548b2db4e6b4a23d4eb5d87e0019",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/train_bootstrap.py": "136b6e677294d405508a462328b2451e7ef37122d178cb6439d96202ee48654f",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/test_quota_io.py": "7c2699ecf914a1efcd59b1069b9b9256df97851178123a7433cb0ef2468a7fda",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json": "d8bc33fbf56967e1e523ae1449b7d3d24c522e7e09a41a0cc621f86adff73f55",
+    "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/spec.json": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d"
   },
   "optimizer_scheduler_rng_resumed": true,
   "original_trainer_unchanged": true,

@@ -75,7 +75,7 @@ def main():
                 binding = dict(final_spec_sha256=policy['evaluation_spec_sha256'], config_sha256=sha(config),
                                gpus=8, time=time.time(), recovery_policy_sha256=sha(Q / 'policy.json'))
                 save(folder / 'submission_intent.json', binding)
-                proc = subprocess.run(['/root/.volc/bin/volc', '--log-level', 'error', 'ml_task', 'submit',
+                proc = subprocess.run(['/opt/volc/bin/volc', '--log-level', 'error', 'ml_task', 'submit',
                                        '--conf', str(config), '--output', 'json'], capture_output=True, text=True, timeout=90)
                 (folder / 'submission.log').write_text(proc.stdout + proc.stderr)
                 submitted = dict(binding, response=submission_response(proc.stdout, proc.returncode))

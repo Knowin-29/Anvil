@@ -38,7 +38,7 @@
   },
   "arrow_config": null,
   "auto_mapping": null,
-  "base_model_name_or_path": "/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B",
+  "base_model_name_or_path": "/data/models/Qwen/Qwen3.5-9B",
   "bias": "none",
   "corda_config": null,
   "ensure_weight_tying": false,

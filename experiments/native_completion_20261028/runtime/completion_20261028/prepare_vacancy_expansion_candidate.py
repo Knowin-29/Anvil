@@ -41,7 +41,7 @@ def main():
     started=time.time()
     OUT.mkdir(exist_ok=False)
     source=UPSTREAM/'vacant_qa_filtered_3D_groupLength.jsonl'
-    historical_dev=Path('/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/vacancy_repair_20260914/split/dev.jsonl')
+    historical_dev=Path('/workspace/anvil-project/04_Experiments/iclr_evidence/engineering/data/vacancy_repair_20260914/split/dev.jsonl')
     development_paths=[historical_dev,D/'spatial_replay/development.jsonl',D/'retention_replay/development.jsonl',
                        D/'prism_expansion/sft_source/evaluation.jsonl']
     paths=[source, C/'vacancy_upstream_fidelity_20261029.json',D/'inputs/manifest.json',EXPORT/'manifest.json',

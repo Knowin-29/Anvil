@@ -118,7 +118,7 @@ def main(wait_download):
     # enter this exclusion pass, never their reference answers.
     dev_paths=set()
     for row in records(ROOT/'spatial_replay/development.jsonl'):dev_paths.update(row['images'])
-    fsd=Path('/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425')
+    fsd=Path('/data/sources/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425')
     for row in records(fsd/'data_test_internvl_no_think.jsonl'):dev_paths.add(str(fsd/row['image']))
     with ThreadPoolExecutor(max_workers=16) as pool:
         for path,fp in zip(sorted(dev_paths),pool.map(fingerprint,sorted(dev_paths))):protected.add(fp,path);protected_sha.add(fp['sha256'])

@@ -13,7 +13,7 @@ import numpy as np
 import torch
 from safetensors.torch import load_file
 
-C = Path('/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028')
+C = Path('/data/anvil/recovery_20261020/completion_20261028')
 PIPELINE = C/'geometry_objective_20261104'
 SPEC_SHA = '1ad948f0a3be42bd0785787df86befc76ca9bd0690ca33ba90f576f415d83ad9'
 

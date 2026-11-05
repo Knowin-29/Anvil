@@ -15,7 +15,7 @@
   "gpu_inference_validated": false,
   "parity_verified_by_identical_standalone_bytes": true,
   "inherited_parity_receipt": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/interface_validation/rotation6d_interface_validation.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_geometry_objective_v2/interface_validation/rotation6d_interface_validation.json",
     "sha256": "3fcd0c9f3ee2a7ab70df813cd300a3b2e6016ae238e7393f41ef4084d39618c1"
   }
 }

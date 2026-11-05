@@ -4,7 +4,7 @@
   "completed_repair": {
     "stage": "repair_training_complete",
     "steps": 8192,
-    "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8192",
+    "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8192",
     "adapter_sha256": "2d0dcd5c3d127f65dc61b03586ab5c74b6f111498c9e2dc633980db111cbf605",
     "spec_sha256": "01b438ee02b653394ff744979f83ddfc2ca80e396a6eee1f2198b1cb7519356c",
     "examples_seen": 524288,
@@ -26,927 +26,927 @@
     "final_quality_accepted": false,
     "completed": 1793786732.454531
   },
-  "remote_backup_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_checkpoint_backup_v2_20261104/repair_8192/verification_receipt.json",
+  "remote_backup_receipt": "/data/anvil/recovery_20261020/completion_20261028/coordinate_checkpoint_backup_v2_20261104/repair_8192/verification_receipt.json",
   "remote_revision": "5a1a911eda2be2a6365be15b0786587d65b91ff8",
   "protected": [
-    "/Knowin/sim/weilinruan/Anvil/a800_repair_20261020/repair_S/checkpoint-38248",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-512",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-1280",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-2560",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1024",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-512",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-512",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/repair/checkpoint-4096",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/repair/checkpoint-8192",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/repair/checkpoint-4096",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/repair/checkpoint-8192",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-160",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4096",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8192",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/repair/checkpoint-2048",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/repair/checkpoint-4096",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/mopd/checkpoint-128",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/repair/checkpoint-4096",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/repair/checkpoint-8192",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-256",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-512",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-768",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/repair/checkpoint-2048",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/repair/checkpoint-4096"
+    "/data/anvil/a800_repair_20261020/repair_S/checkpoint-38248",
+    "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/mopd/checkpoint-512",
+    "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-1280",
+    "/data/anvil/recovery_20261020/completion_20261028/balanced_repair_20261102/runs/repair/checkpoint-2560",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+    "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/checkpoint-1024",
+    "/data/anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair/checkpoint-2048",
+    "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1024",
+    "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
+    "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-512",
+    "/data/anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/mopd/checkpoint-512",
+    "/data/anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/repair/checkpoint-4096",
+    "/data/anvil/recovery_20261020/completion_20261028/focus_repair_20261101/runs/repair/checkpoint-8192",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/repair/checkpoint-4096",
+    "/data/anvil/recovery_20261020/completion_20261028/format_repair_20261103/runs/repair/checkpoint-8192",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-160",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4096",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8192",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/repair/checkpoint-2048",
+    "/data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/runs/repair/checkpoint-4096",
+    "/data/anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/mopd/checkpoint-128",
+    "/data/anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/repair/checkpoint-4096",
+    "/data/anvil/recovery_20261020/completion_20261028/grounded_repair_20261102/runs/repair/checkpoint-8192",
+    "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-256",
+    "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-512",
+    "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/mopd/checkpoint-768",
+    "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/repair/checkpoint-2048",
+    "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/runs/repair/checkpoint-4096"
   ],
   "candidates": [
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1024/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1024/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "6e17b564a7db1feca4c99a2faafeffc35bcd0e465589ccc465616f9fb71ed365",
       "inode": 4723430545,
       "mtime_ns": 1793754345864428320
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1088/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1088/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "6638a71cc14413fff578b94a3c867c1daa41b7d1bdc49de9ae23560aa877acb1",
       "inode": 4723430560,
       "mtime_ns": 1793754751742565773
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1152/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1152/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7053fd3093e8a6cea10f45e5a35f437193fd4b51b63b4bf05a12cc1521ed0f3c",
       "inode": 4815940987,
       "mtime_ns": 1793754911592476905
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1216/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1216/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7e9565f4cded5b90825df19c8987bd2215bdb428747ce7dcdf13f252bf3d166b",
       "inode": 4723462202,
       "mtime_ns": 1793755312300758326
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-128/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-128/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "0199ee2d33b393f748f9158544cd53612f12f90fec10738ac0bc7ae3a56d2f4a",
       "inode": 4815940927,
       "mtime_ns": 1793750359079983960
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1280/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1280/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "93506a0f0977769bbcd8541af049e2712d18937f148ff0a05c30d3aa2d3e2075",
       "inode": 4723462217,
       "mtime_ns": 1793755469621113993
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1344/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1344/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8780256658cfc152093b93363ae2b0e6102fd3d3eb13b4c04b0862a08f9de296",
       "inode": 4723462232,
       "mtime_ns": 1793755872643436967
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1408/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1408/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "2da4e46f99b090365fbe5b0f6bd26549c7ff5992c26b3133c9eabdd4445ed84e",
       "inode": 4824005567,
       "mtime_ns": 1793756028723970917
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1472/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1472/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c948f9e83b7961347496298b8bb3c49ecc36eb53f7a1895b987ff6ed6f33482b",
       "inode": 4824005583,
       "mtime_ns": 1793756434152651241
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1536/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1536/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "97cc2502db7bf0e3ad5a5abdf15dd6f750c5932421a0b89cf8e5a2ea5ed4ec3c",
       "inode": 4723462247,
       "mtime_ns": 1793756590612299538
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1600/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1600/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "3dee86fbe663e57ff3833ff3564f9eef24719f20bc3a0f73838aba94bd611485",
       "inode": 4824005600,
       "mtime_ns": 1793756994409503804
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1664/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1664/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7cef83273d5cc42fa2407e5567d6121be551ba9e2e5a578f3cd90e8ceb221c06",
       "inode": 4723462262,
       "mtime_ns": 1793757151604076309
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1728/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1728/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "9b1e13580ac3e9f1261bc2ff270796932edea57497ab0f8d19aff92fc980b2ed",
       "inode": 4815941002,
       "mtime_ns": 1793757574017466332
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1792/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1792/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "2970613d4e415485808e18b84d17639d90e1abd51fe0846ca88642b38043a948",
       "inode": 4723430575,
       "mtime_ns": 1793757749574849741
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1856/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1856/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "84e27f8517f3d7f52401fb724446a54b6128e436af8466cfedc75115c7f4ca90",
       "inode": 4723462277,
       "mtime_ns": 1793758150711643909
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-192/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-192/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8b5866dd18510861c6f1551051e55ecca6da2021e1e43df6c18d7976ba93b114",
       "inode": 4723430485,
       "mtime_ns": 1793750796319627705
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1920/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1920/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "eeb338450003c644ff6d85e967c0b749a1860483cea5e05c5c0aff079c3d7b13",
       "inode": 4723430590,
       "mtime_ns": 1793758309486047145
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1984/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-1984/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "efcaa8a0384d3b77e3120cb4dbf8c89eb45dbb39f0fbf6393a94eefa88252c7a",
       "inode": 4723462292,
       "mtime_ns": 1793758708600864698
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2048/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2048/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "efa69816ad8d6ae0cb08c214980eb4cf326fcca0d7f4502912c3609a3f8d8480",
       "inode": 4723462307,
       "mtime_ns": 1793758867371290875
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2112/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2112/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f5946db6e02ea0f7f471124da38760ccc603de9eac021ed0f1d8a48b2f25ab0c",
       "inode": 4824005623,
       "mtime_ns": 1793759275914838574
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2176/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2176/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "67580bf115752e1e5c776312527abe7a7ac21dbcc1285054864159696c870cf6",
       "inode": 4723462322,
       "mtime_ns": 1793759439535276114
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2240/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2240/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "0dd7e745d4e7e3cadc98e7e456873b4b211854ad874c4f0a13a126b1554b0261",
       "inode": 4815941017,
       "mtime_ns": 1793759856787643949
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2304/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2304/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "0ba8c5c47e51f7fb376ed002335b0eaf44f9eb42d200c411203e684043a62d11",
       "inode": 4723462337,
       "mtime_ns": 1793760020143089827
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2368/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2368/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "916168a149acd1d137618a154cd871eb1c8f5d1c7a1cceb3b6063cc536b260a3",
       "inode": 4723430605,
       "mtime_ns": 1793760441350658561
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2432/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2432/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "78be3f250cfa19978bbed830b2ea482e424beac8dced0d39c4688e6e335560b9",
       "inode": 4723462352,
       "mtime_ns": 1793760600341686958
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2496/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2496/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "477f3a594739396c32f40c4afd8b35b9e82c002f4b5b5f9cbeb8ab78862899ed",
       "inode": 4815941032,
       "mtime_ns": 1793761010363130408
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-256/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-256/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "cace59d0d48bc0f80fac52c81163ce9f7afe7c396d4896f2f7948db040f74de8",
       "inode": 4723462172,
       "mtime_ns": 1793750956481754979
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2560/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2560/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "aefa13990a905740eeb7bfb84d93690d0cad4b6ff8bb849734eb2ebdbca4f5e7",
       "inode": 4824263693,
       "mtime_ns": 1793761172392756085
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2624/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2624/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "62050c148fde0912fb38175b40100debad24c4246853349047ac89174cb29d11",
       "inode": 4723430620,
       "mtime_ns": 1793761584377637995
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2688/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2688/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1f77bd963e84b79b6faa1f4bc98b1ac5a5b5adb6012ce291f6e10a757858ecbd",
       "inode": 4824263710,
       "mtime_ns": 1793761746245606035
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2752/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2752/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f500d211577b5ef8e1fcd3b681766dfa997b330a20177748edf3d5a2ef613af5",
       "inode": 4723462367,
       "mtime_ns": 1793762158257501705
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2816/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2816/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "4f2837acc04575378bd70904dc64ccdc24fa1a136c59d18a76c8ab266fac82b6",
       "inode": 4723430635,
       "mtime_ns": 1793762318605050180
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2880/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2880/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "cedddc9aae68146a3cb130fd20778fdaaac5cb85a3d606aebb48adb958c322ba",
       "inode": 4723430650,
       "mtime_ns": 1793762728414301613
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2944/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-2944/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "126133c8184d04ee3dab051c8a5ac34cea6c486df5498c7f5c0576ba36683f89",
       "inode": 4815941047,
       "mtime_ns": 1793762896920090300
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3008/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3008/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "2f4be730a359dbf1e992e443a736c977b6412ce4bd59b2712b6e081da78ff2d8",
       "inode": 4824263730,
       "mtime_ns": 1793763305923006739
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3072/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3072/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "e8c257a704c9a1d63c497d202b6c3aefdd64849764ed8f880873089c64a10b0a",
       "inode": 4815941062,
       "mtime_ns": 1793763475353297557
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3136/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3136/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "d3f67c4acc800fe21f8c78d06fa4618ea6ef9d9a9c8c34a7b3356ff6bc31cf45",
       "inode": 4815941077,
       "mtime_ns": 1793763876663960314
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-320/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-320/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "6edc93a7498c4d065634f2136b2427f94b54be3c6a083f791d9e28e7aae90b44",
       "inode": 4824005490,
       "mtime_ns": 1793751359858011697
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3200/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3200/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "194b7fd60a752a27d3a2946e7ddf31199dde35d01fdbec9bdfeda31fb92a6be3",
       "inode": 4723462382,
       "mtime_ns": 1793764040239885900
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3264/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3264/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "d092a3e2794e9548852ed5b1a217d414ea6cb5996f21510114913a356b9d5b85",
       "inode": 4815941092,
       "mtime_ns": 1793764459741358510
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3328/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3328/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "9194cfdb7b022d3b1bdffddb7b1c8f6bbcfa6eacad7f72d712ce6e5a5350e073",
       "inode": 4723462397,
       "mtime_ns": 1793764635481573496
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3392/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3392/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "46626485241d6e8f718259c646206366fff843c4ac30a8644dc0cebfe989eb04",
       "inode": 4723688713,
       "mtime_ns": 1793765049367360420
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3456/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3456/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "d77d6f42c06c225899b69903af412eeb14777974f6104e04a131443f700ca792",
       "inode": 4815941107,
       "mtime_ns": 1793765211014645121
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3520/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3520/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "837ca22ae168c44ccd71bd6bee0261f37afc861ea9d76e484ec14f191c1a73b3",
       "inode": 4824263753,
       "mtime_ns": 1793765617952644793
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3584/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3584/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c5d90517daa8abdea800ab9a496011210cd5a5bdc3bbfbdb42ccf2715c00a1b4",
       "inode": 4723688728,
       "mtime_ns": 1793765784318689743
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3648/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3648/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f7e1acb3c846295c85b598a6009bc2eee30f64013d14caa376bf90b2b4030695",
       "inode": 4723688743,
       "mtime_ns": 1793766202929942027
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3712/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3712/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "a6e184dd67ba1726486894e3d6c453932f72e3b9011008b9e92ee4c9501771c0",
       "inode": 4823539202,
       "mtime_ns": 1793766361919431194
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3776/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3776/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "17cd18f53a1748c6cec3eeff13b7611d029c7f675dab9bd8d3d03fafd79a92a6",
       "inode": 4824263772,
       "mtime_ns": 1793766772119460061
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-384/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-384/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "272cafe202f6006961b947acb4fa216ca992640ab38fc28d50a49987391a12d7",
       "inode": 4824005506,
       "mtime_ns": 1793751533155347910
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3840/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3840/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "016b6ef877afeb44b2cfa9f74df85f675e3977b28d0889957011df5381e78071",
       "inode": 4723720460,
       "mtime_ns": 1793766937538380386
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3904/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3904/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "5ea03abebd1836fd57deb7a41137c42530743b14e575db1548836c17ca97bcfc",
       "inode": 4823539217,
       "mtime_ns": 1793767348472679071
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3968/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-3968/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "123e7a34ce3c72b69b8f920b1d32abc9836d1d13a3eca3b898f4c2693ae24ee2",
       "inode": 4723688758,
       "mtime_ns": 1793767517813219217
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4032/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4032/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "5f063560ee74c2022d37cf523bd2c178c22cdef44c2cfecc42c2598671b21883",
       "inode": 4823539232,
       "mtime_ns": 1793767928322502603
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4160/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4160/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "b4940708642703b4d4346f0707d38e244c93acb14c8b1364f9e1be5abdf77afc",
       "inode": 4824263793,
       "mtime_ns": 1793768510199054305
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4224/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4224/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "2fd1af981beaf8ffb8b1d51696215ab028a6b5b2e8e50ffa60971fe233d35f91",
       "inode": 4723720490,
       "mtime_ns": 1793768675714645435
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4288/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4288/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "28edf104997b38980a113167205eb54b773d0609c11beee281f32d592101a089",
       "inode": 4823539247,
       "mtime_ns": 1793769081815396807
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4352/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4352/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "e7279c6d6358d7980c0343e39772d9521080f5fe94dee7dc7c7472500a7658ea",
       "inode": 4723720505,
       "mtime_ns": 1793769245336958713
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4416/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4416/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7445df907ec5d61a1256657f9b64cb833c5dcee145b72096e82dc47a95f1a3a7",
       "inode": 4824263812,
       "mtime_ns": 1793769656302664212
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-448/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-448/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "834938954c0c63a9ac5ce38f0a4ee657c64318a67067bc30c325cfa31e699685",
       "inode": 4815940942,
       "mtime_ns": 1793751934734726011
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4480/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4480/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c112f8f116be8595539c03a534ff32e44ffbebd698132c1875dd1ed4da84d2dc",
       "inode": 4723688773,
       "mtime_ns": 1793769820445377808
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4544/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4544/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "83025a7a7cfeda150ea082c32f1a2cb172467e01b0a6a42966aee8a5c632228e",
       "inode": 4723720520,
       "mtime_ns": 1793770236621387333
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4608/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4608/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "676f5b1cd1104dda1fbdd47375479213ffa4182912009461a160c27ea177a3cc",
       "inode": 4723688788,
       "mtime_ns": 1793770402165084869
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4672/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4672/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "d7d8a33f391b3ca83fa277d0a1c0664d8e539f3f76fb2ca39bef928617f21ab9",
       "inode": 4824263831,
       "mtime_ns": 1793770814203567685
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4736/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4736/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1eff4e8ab291addaa973ca2e129b641b3d24bd97bc9e89d5ad384ac83dc35564",
       "inode": 4823539262,
       "mtime_ns": 1793770980167236518
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4800/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4800/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1aee580949361a54d233ff006650ba8f7a84c264701cee96a93ecad20bd6565b",
       "inode": 4723688803,
       "mtime_ns": 1793771393324527224
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4864/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4864/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "e6cf4c003b78886cbc32fc3e6af5100161f89bee6338c180bea22b44367656ef",
       "inode": 4723688818,
       "mtime_ns": 1793771559264583097
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4928/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4928/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "e952e8eca745f85e3dec55a410f721683290ca67073247e7d12780343f4879a5",
       "inode": 4824263850,
       "mtime_ns": 1793771973025065975
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4992/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-4992/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7195ca91ca12ad23eb130117ef35c0b6d73fe034911bd2601d4c547ded5ff0e3",
       "inode": 4824263866,
       "mtime_ns": 1793772140109768002
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5056/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5056/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1d82b1b8e51a849e03c45ef55ab20f9eabe8084b25aec3567f3d0a0b55185163",
       "inode": 4723688833,
       "mtime_ns": 1793772565065725706
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-512/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-512/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "906a46fa2996b5ca59233d2115271dbabe9034e340ceeb68bc7c7292207e0a5f",
       "inode": 4723430500,
       "mtime_ns": 1793752091489078013
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5120/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5120/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "36a2698638a5490d18c3d8350993596c06134066339a6976972d18152827b126",
       "inode": 4723720535,
       "mtime_ns": 1793772724924609457
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5184/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5184/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "9f2331ba29a6fec0ac3b96ff76656d5015afdbc9e293afd14c870e784aa3aabe",
       "inode": 4823539277,
       "mtime_ns": 1793773134589806101
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5248/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5248/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "bf8c381def35e3c75b0064d43fb4a4eec6b377f27f64ffcb7d8f6ba0767b6e98",
       "inode": 4723720550,
       "mtime_ns": 1793773298144975391
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5312/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5312/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "b932cbeab7f5c2a958c5b0e3cd0b02f26898d7fde571f469e245717f8ff2c495",
       "inode": 4723688848,
       "mtime_ns": 1793773708576615922
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5376/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5376/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "47cdd2319b423ad5a2b98388cfeb51b0be6b032ef80529458a859ab3e0af700b",
       "inode": 4824263887,
       "mtime_ns": 1793773876759932216
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5440/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5440/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "df53eabf9453dba2d69cc1bd1c69a05be3d4a7c76eb01c1560dc1887e26b232e",
       "inode": 4824263903,
       "mtime_ns": 1793774294800163837
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5504/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5504/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "17f2c65f662bedd066d56eed43b1d152a591575836a3eb922a76bc0dcd0b5345",
       "inode": 4823539292,
       "mtime_ns": 1793774481880491198
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5568/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5568/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1be6ee2e8b5393ff73921f306ca7a6c9432ff8cf57783ab9cec42f91e81db6ae",
       "inode": 4824263920,
       "mtime_ns": 1793774893574338175
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5632/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5632/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f51cc7f2d3eb86486bceb9a4662b2c09dda9e64243e022e7ee5cf2de86a88f3c",
       "inode": 4823539307,
       "mtime_ns": 1793775056369447378
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5696/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5696/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "24f8ce501a9d798c1fbee9790c2e74efa8b834c68344a8c81309025742c6b232",
       "inode": 4823539322,
       "mtime_ns": 1793775467349927083
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-576/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-576/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "cc7e56bb377a407db1e337b64dbfecdde44a63063651b48c9f4cc063f8e3e4df",
       "inode": 4824005524,
       "mtime_ns": 1793752494103699065
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5760/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5760/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1b5c9696b33582fe33896432fcdaad4df8fe1286a6112101c5b54eb04d054f33",
       "inode": 4823539337,
       "mtime_ns": 1793775632327606012
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5824/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5824/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c5e0b9add416b130f78304a692338ac2f4e99be35caf0f25771afcb0a69f3cee",
       "inode": 4723688863,
       "mtime_ns": 1793776047408772098
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5888/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5888/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "17153ee3b58dbf31a25cdef423333478892ae921877b9bad0f80ced877b3c0eb",
       "inode": 4831862020,
       "mtime_ns": 1793776211669565768
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5952/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-5952/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8fc6b6bbde79532d5763008c7b02de6542e22a338c3c5019d653643c032e3e66",
       "inode": 4723720565,
       "mtime_ns": 1793776620008454412
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6016/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6016/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "aaa4b6588bc19fc5a439457c2edea3702a5431c7f283905795666b2c87e95189",
       "inode": 4823539352,
       "mtime_ns": 1793776787828043562
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6080/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6080/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "51ebff9331d46305fa5fb61062635ee94d4176c1874f79c55a2d03b7947e266c",
       "inode": 4823539367,
       "mtime_ns": 1793777207040965681
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6144/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6144/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f3d0bc3caac5c28f700efabbbf2acc2b6ae5edf3dbb3d68051ff551ffa3087f0",
       "inode": 4723688878,
       "mtime_ns": 1793777373873056292
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6208/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6208/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "ad6f0d24e53cbf9bba35c4f1db33329a04c1788fdfaebc3bb1881c5d45d52c68",
       "inode": 4723688893,
       "mtime_ns": 1793777790387710977
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6272/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6272/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8e6d11c43f27c25f33fe3761671b8ee17bd98aeae37d2fca5c8cebc23543d259",
       "inode": 4831862041,
       "mtime_ns": 1793777955741213458
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6336/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6336/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f674ab0e9728765b554af0d1d5161b44695f79ce16f3aecaa65106eaf9c60345",
       "inode": 4831862057,
       "mtime_ns": 1793778371705990269
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-64/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-64/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "678016482dd5abc46573c1b465163978d7b409c881544bbdc846adba8b0ea9bb",
       "inode": 4824005470,
       "mtime_ns": 1793750208432337413
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-640/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-640/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "20b4f6635086e8fdda70c220bc694173847a8e45d4dde5f6cdaf96d989c32d9f",
       "inode": 4815940957,
       "mtime_ns": 1793752650029490148
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6400/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6400/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1d94a5ebf1baf5a3607894e978f28ed2392c471f7545860fa212adf4dbd300c9",
       "inode": 4823539382,
       "mtime_ns": 1793778539057866052
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6464/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6464/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "fec0200913fe26cdc652a8d752236c26c4d7d3d06d0b396aabb58df6f7ebcea4",
       "inode": 4831862074,
       "mtime_ns": 1793778962344088783
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6528/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6528/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "338fc15feb103e44064e533f88eed76f38c2fa04412d2f3c915fdd9af76b7ff2",
       "inode": 4831862090,
       "mtime_ns": 1793779131484055559
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6592/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6592/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "60f4a6cb0ae631961e4b92b0a6b80b4e6966a9e72ee24594ac61fa9085d63502",
       "inode": 4823539397,
       "mtime_ns": 1793779551670159231
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6656/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6656/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "b7614171f70748dc1a822c05a680f2ae5850b25a3c030684f926b5075467d212",
       "inode": 4823539412,
       "mtime_ns": 1793779723867363772
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6720/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6720/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "f36cbe940e8ad24201548a4c8fcb61278623748416a876f702ce83b50490f6bc",
       "inode": 4823539427,
       "mtime_ns": 1793780141021777799
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6784/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6784/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "b2664b8ee76db81c9d3eabded65004edcc9367f3a8b5e8004a979404050a8bde",
       "inode": 4723688908,
       "mtime_ns": 1793780309162367017
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6848/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6848/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "9cc2884284c6444322fba1c65dce33cc81cafb62b1405ec00f6b5891313e9626",
       "inode": 4823539442,
       "mtime_ns": 1793780721281643979
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6912/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6912/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "ecd7c192faa6438e7eac5a21e9a2f1a9cae66b0b655f26650bdfa0ddc875d015",
       "inode": 4723720580,
       "mtime_ns": 1793780887023042915
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6976/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-6976/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "36f4f68222185aace7950c2cf9211fbadfe264135e8cf9903964a2ee42eea720",
       "inode": 4723688923,
       "mtime_ns": 1793781308286740243
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-704/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-704/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "e39a19668821d108dfcd9e1c1bd34ea98e48176a741f2f32d4c725f279ea2ab2",
       "inode": 4723462187,
       "mtime_ns": 1793753068133650177
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7040/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7040/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "ccf5ee22e554f69f7c6789ac132542e2c7d317a32b41648e9dcd37e59a782525",
       "inode": 4831862113,
       "mtime_ns": 1793781475217778419
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7104/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7104/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "33127c32eaaac108d7e3c08b0d25efb2909e5d823a8c79bc5210e9cb8633f609",
       "inode": 4831862129,
       "mtime_ns": 1793781900414837112
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7168/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7168/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "a0b1dd5f3eb7ff93e35c92218b707f96c82d4402788fc67d17ebff02f4f8bc76",
       "inode": 4723720595,
       "mtime_ns": 1793782064049560637
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7232/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7232/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "083655269f74d7b878123335ddc562be5dbd71fd8316767d026d03fb5178a31a",
       "inode": 4831862146,
       "mtime_ns": 1793782478345605299
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7296/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7296/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c1f42db77666be3bcd8925c01f7e4138000670d48264132278d859f35898521a",
       "inode": 4723688938,
       "mtime_ns": 1793782646050170708
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7360/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7360/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "ad1df965faead139247a306257145b257057075e17c3f817f88cc5b1ba4439dd",
       "inode": 4823797505,
       "mtime_ns": 1793783066641675244
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7424/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7424/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "6a1ac9bbb4cd969fe4d84dda3f260c8e9dd062f19696853851e06a7565bf0527",
       "inode": 4723688953,
       "mtime_ns": 1793783236968103864
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7488/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7488/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "2f9c768bcedbb5faf8fddefe70a80f42c897dad8926541ed94f69d9f2dc72757",
       "inode": 4823797520,
       "mtime_ns": 1793783647558063541
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7552/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7552/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "c0723d48867ef28990db2238ab46a4a52f6202b2f3f3e324cd83da67b79f0409",
       "inode": 4723720610,
       "mtime_ns": 1793783816839447045
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7616/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7616/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "7f26014b562ea74169c4c23b0d925d12913bb8a0cd9c3575d775b0c46fca6a66",
       "inode": 4831862167,
       "mtime_ns": 1793784233165400141
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-768/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-768/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8908105723a030f40ee35b94ebd543e2ec7540ede96f66764f93c55c5c77cb7a",
       "inode": 4815940972,
       "mtime_ns": 1793753227290898022
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7680/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7680/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "3877c6cff85c45924ea988ae22526b9f674e2b03c71b97c19573d168ee665ecf",
       "inode": 4831862183,
       "mtime_ns": 1793784396701219328
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7744/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7744/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "cf3db82c4d8bbffed7c54bb23ade2d7f6b67462f6d793a64e1e850c74216b77c",
       "inode": 4831862199,
       "mtime_ns": 1793784810141379529
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7808/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7808/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "13635746b2b000e9a1c5d9e3dbf9a732470c2ed74b5f8bae21efbca3992d3317",
       "inode": 4723720625,
       "mtime_ns": 1793784977862290963
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7872/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7872/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "6e9a29ca0ef4be81f57e133d6810625eb25aba30b71365d662a294fffb59d3c6",
       "inode": 4731287048,
       "mtime_ns": 1793785390379092340
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7936/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-7936/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "1ca2644016298ba061ce967499beb6d3a03b91f7552f26cb41ae24a2b96b2156",
       "inode": 4823797535,
       "mtime_ns": 1793785558034126839
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8000/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8000/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "39f1f4f759441515a53843b60ef2e807bd9ed691fc1883ba2fa11bc02bd3d1fb",
       "inode": 4823797550,
       "mtime_ns": 1793785975558425324
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8064/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8064/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "64471c3581b0324b42a1148ec7263a43211c9fb33528d95bc491aae7e12f7601",
       "inode": 4723720640,
       "mtime_ns": 1793786145962692389
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8128/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-8128/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "8e0d7bd07b367a750f65ed0afb3d93c574c14f0ad42df5f4fc8ab6b961b2a377",
       "inode": 4823797565,
       "mtime_ns": 1793786562646179347
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-832/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-832/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "564cce8952a6da5032cd2ee50f4aabd2e42e554f009dccf57f0bbb1ede4f7037",
       "inode": 4824005543,
       "mtime_ns": 1793753634900366893
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-896/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-896/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "a6261d3008103f9aa61dce957b1915a12d2260f4b99a518ea0c1fa05dfda712e",
       "inode": 4723430515,
       "mtime_ns": 1793753791848357419
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-960/optimizer.pt",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/runs/repair/checkpoint-960/optimizer.pt",
       "bytes": 1385332787,
       "sha256": "bfeb5e398f710a1c1459374dcb1e356e35c2bdb83bd63cc4929096061b78a874",
       "inode": 4723430530,

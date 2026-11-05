@@ -2,7 +2,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 import ast, copy, hashlib, json, os, re, shutil, shlex, sys, time
 
-C=Path('/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028')
+C=Path('/data/anvil/recovery_20261020/completion_20261028')
 R=C.parent; OLD=C/'direct_completion_20261029'; O=C/'direct_recovery_20261030'
 H0=C/'final_delivery_direct_v1'; H=C/'final_delivery_recovery_v1'
 FD=C/'delivery_runs/direct_recovery_20261030'

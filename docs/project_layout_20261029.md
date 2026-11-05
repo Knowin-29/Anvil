@@ -1,5 +1,8 @@
 # Anvil 项目入口
 
+> 历史快照（2026-11-02），不代表当前训练状态。最终权重已发布；
+> 请以仓库根 README 和 model_card.md 为准。以下路径是公开版可迁移示例。
+
 2026-10-21 整合，2026-11-02 更新。后续开发使用 `01_Code` 的
 [Knowin-29/Anvil / main](https://github.com/Knowin-29/Anvil/tree/main)。
 
@@ -30,7 +33,7 @@ HF已固定版本校验14个完整关键断点，本轮新增5个，共19个。
 最终质量验收、合并模型发布和全仓校验仍未完成。服务器HF凭证未修改。
 
 实时状态与实际覆盖量：
-`/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/campaign_balanced_status.json`。
+`/data/anvil/recovery_20261020/completion_20261028/campaign_balanced_status.json`。
 当前任务的 `balanced_repair_20261102/` 保存冻结配置与训练日志；历史任务保留。
 最终验收要求同一个 checkpoint 完成评测，再核验 HF 固定 commit 下的所有文件。
 

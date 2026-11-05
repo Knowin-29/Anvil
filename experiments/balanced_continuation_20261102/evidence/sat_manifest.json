@@ -3,7 +3,7 @@
   "state": "verified_train_only",
   "files": {
     "sat": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/sat_replay_20261102/sat.jsonl",
       "sha256": "d666e347380ef32d98dd90b35469b1bf8eb4890869ed50f948d75b1f5d2bdd12",
       "records": 51322,
       "bytes": 83102654,
@@ -11,8 +11,8 @@
     }
   },
   "source_files": {
-    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_train_internvl.jsonl": "5884624d520b072eb24db7784e51e54987a8d14a1a78eb38fe2b48426be6e84a",
-    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_test_internvl.jsonl": "8fb7c62c1fa1ee1381ba3cbeddb191314490be44b9d8571e298de2978a87429d"
+    "/data/sources/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_train_internvl.jsonl": "5884624d520b072eb24db7784e51e54987a8d14a1a78eb38fe2b48426be6e84a",
+    "/data/sources/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428/data_test_internvl.jsonl": "8fb7c62c1fa1ee1381ba3cbeddb191314490be44b9d8571e298de2978a87429d"
   },
   "source_train_records": 80000,
   "source_test_records": 4000,

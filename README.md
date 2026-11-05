@@ -23,6 +23,13 @@ dependencies remain explicit from source conversion to verification and learning
 - [Release results and usage](model_card.md): measured benchmark scores and inference entry points.
 - [Training and evaluation record](experiments/checkpoint7168_delivery_20261105/OPERATIONS.md): selected checkpoint ancestry, full evaluation and verified publication.
 
+The frozen model revision is `712b84d42cf90d25457e534845243b4a1882afbb`;
+the dataset revision is `a2bb5d1c94321de3bab02278344d41a2f8912d2f`.
+Use the pinned download in [the model card](model_card.md#get-the-model) to
+retrieve inference files without downloading all 37 training checkpoints.
+The public data release excludes original images and 33,867 rights-restricted
+records; the complete local corpus and the downloadable subset are not identical.
+
 The final model inherits the full 5.22M-record SFT and completed MOPD stages,
 followed by 458,752 visual-repair sample exposures. Evaluation covers 580,000
 native records, 7,366 public benchmark examples and 10,105 general-ability
@@ -32,6 +39,15 @@ above 68%, with every reported score within 10% of its manuscript reference.
 [Paper](https://arxiv.org/abs/2610.21882) · [Project](https://knowin-29.github.io/Anvil.github.io/) · [Data collection](https://huggingface.co/collections/Knowin-29/anvil-6ad0934f9fe868151f1ccb9a)
 
 ## Maintained version
+
+The public experiment snapshots use portable example roots: `/data/anvil`
+for run assets, `/data/models` for base models, `/data/sources` for upstream
+data, and `/workspace/Anvil` for this checkout. Adapt these to your machine;
+archived cloud controllers and cleanup scripts are provenance, not quick-start
+commands. Original runtime files were not changed by release normalization.
+Hashes inside historical experiment receipts refer to their original bytes;
+`SOURCE_CHECKSUMS.json` in the source ZIP hashes the portable released files.
+Current-file privacy scans do not certify the entire Git history as anonymous.
 
 `main` is the maintained source branch at [Knowin-29/Anvil](https://github.com/Knowin-29/Anvil).
 The source package contains the data conversion, native evaluation and MOPD

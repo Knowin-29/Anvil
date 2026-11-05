@@ -52,7 +52,7 @@ def submit(folder, config, gpus, scope, plan_path):
         return None
     save(folder / 'submission_intent.json', dict(config=str(config), config_sha256=sha(config),
                                                plan_sha256=sha(plan_path), time=time.time()))
-    proc = subprocess.run(['/root/.volc/bin/volc', '--log-level', 'error', 'ml_task', 'submit',
+    proc = subprocess.run(['/opt/volc/bin/volc', '--log-level', 'error', 'ml_task', 'submit',
                            '--conf', str(config), '--output', 'json'], capture_output=True, text=True, timeout=60)
     (folder / 'submission.log').write_text(proc.stdout + proc.stderr)
     values = []

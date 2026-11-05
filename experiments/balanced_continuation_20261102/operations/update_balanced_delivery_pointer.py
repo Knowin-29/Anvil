@@ -3,7 +3,7 @@ from pathlib import Path
 from datetime import datetime,timezone
 import json,hashlib,os
 V=Path(__file__).resolve().parent;C=V.parent;P=C/'balanced_repair_20261102';FD=C/'delivery_runs/balanced_repair_20261102'
-D=Path('/Knowin/demo/weilinruan/Anvil/03_Delivery');p=D/'CURRENT_CAMPAIGN.json'
+D=Path('/workspace/anvil-project/03_Delivery');p=D/'CURRENT_CAMPAIGN.json'
 def read(x):return json.loads(x.read_text())
 def bound(x):return dict(path=str(x),sha256=hashlib.sha256(x.read_bytes()).hexdigest())
 def write(x,v):

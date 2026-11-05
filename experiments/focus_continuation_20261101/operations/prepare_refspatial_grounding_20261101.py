@@ -12,7 +12,7 @@ import time
 C = Path(__file__).resolve().parent
 OLD = C / 'vacancy_expansion_candidate_20261029'
 OUT = C / 'refspatial_grounding_20261101'
-SOURCE = Path('/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D')
+SOURCE = Path('/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D')
 
 
 def sha(path):

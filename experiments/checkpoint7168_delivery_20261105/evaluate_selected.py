@@ -36,7 +36,7 @@ def main():
   save(Z/'capacity_before_eval.json',dict(active=active,requested=8,cap=8,cloud=cloud,time=time.time()))
   binding=dict(final_spec_sha256=sha(spec),config_sha256=sha(config),gpus=8,time=time.time())
   save(Z/'evaluation_submission_intent.json',binding)
-  proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=90)
+  proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=90)
   (Z/'evaluation_submission.log').write_text(proc.stdout+proc.stderr);submitted=dict(binding,response=submission_response(proc.stdout,proc.returncode));save(submission,submitted)
  register(submitted,8,'selected_visual_checkpoint7168_complete_evaluation',config)
  fcntl.flock(shared,fcntl.LOCK_UN);identity=submitted['response']['Id'];print(json.dumps(dict(task=identity,gpus=8)),flush=True)

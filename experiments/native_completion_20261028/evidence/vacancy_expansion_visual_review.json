@@ -11,8 +11,8 @@
   "public_general_linked_unique_image_pairs": 8,
   "pairs": [
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47333298_26581932820416_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/2ab6b1f1d5ffee943d5dcb772a27b8466aed6cb09f3e0746c1f369505d64e0bc.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47333298_26581932820416_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/textvqa_val/2ab6b1f1d5ffee943d5dcb772a27b8466aed6cb09f3e0746c1f369505d64e0bc.jpg",
       "reason": "dhash64_radius6",
       "distance": 6,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -22,8 +22,8 @@
       "protected_sha256": "2ab6b1f1d5ffee943d5dcb772a27b8466aed6cb09f3e0746c1f369505d64e0bc"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332597_363052914018166_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/8b6061f837199057c1c235965a118e0767f9241d44eb19ffd590659170bba7ee.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332597_363052914018166_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/textvqa_val/8b6061f837199057c1c235965a118e0767f9241d44eb19ffd590659170bba7ee.jpg",
       "reason": "dhash64_radius6",
       "distance": 4,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -33,8 +33,8 @@
       "protected_sha256": "8b6061f837199057c1c235965a118e0767f9241d44eb19ffd590659170bba7ee"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47204585_564525942708_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/7c4c88c95443a6db2c5a1deef09e94d7e30c7c244b87f8f8bfea881ba45efbb9.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47204585_564525942708_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/textvqa_val/7c4c88c95443a6db2c5a1deef09e94d7e30c7c244b87f8f8bfea881ba45efbb9.jpg",
       "reason": "dhash64_radius6",
       "distance": 6,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -44,8 +44,8 @@
       "protected_sha256": "7c4c88c95443a6db2c5a1deef09e94d7e30c7c244b87f8f8bfea881ba45efbb9"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/42447294_408860199741666_wide_image.png",
-      "protected": "/Knowin/foundation/data/datasets/transferred_datasets/EmbodiedAI_benchmark/ERQA/images/304_0.png",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/42447294_408860199741666_wide_image.png",
+      "protected": "/data/sources/transferred_datasets/EmbodiedAI_benchmark/ERQA/images/304_0.png",
       "reason": "dhash64_radius6",
       "distance": 6,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -55,8 +55,8 @@
       "protected_sha256": "0aef865cfdaf4f0441ba10a408b8c89c7e2a8bc09395e9c4c27ce4ac2737ff78"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/48018081_103457325320708_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/f49f918fdf1acd62e871871f85737a45ed37ee4daa1c8b3efff66552558a64d5.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/48018081_103457325320708_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/textvqa_val/f49f918fdf1acd62e871871f85737a45ed37ee4daa1c8b3efff66552558a64d5.jpg",
       "reason": "dhash64_radius6",
       "distance": 5,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -66,8 +66,8 @@
       "protected_sha256": "f49f918fdf1acd62e871871f85737a45ed37ee4daa1c8b3efff66552558a64d5"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429870_14379983683708_wide_image.png",
-      "protected": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/assets/cv_bench/3D_1939.png",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429870_14379983683708_wide_image.png",
+      "protected": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/assets/cv_bench/3D_1939.png",
       "reason": "dhash64_radius6",
       "distance": 6,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -77,8 +77,8 @@
       "protected_sha256": "133d5419a81c0041d1ed3dbced5c629a3b9488fd7c7a7fe181ab4b441f8d8055"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332591_362642590426666_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/ai2d_test/e222cdadc0c7a7c91dd73385807f4a368859ac590ff5573bf884d63722c4456a.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47332591_362642590426666_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/ai2d_test/e222cdadc0c7a7c91dd73385807f4a368859ac590ff5573bf884d63722c4456a.jpg",
       "reason": "dhash64_radius6",
       "distance": 5,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -88,8 +88,8 @@
       "protected_sha256": "e222cdadc0c7a7c91dd73385807f4a368859ac590ff5573bf884d63722c4456a"
     },
     {
-      "source": "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429764_358116643902166_wide_image.png",
-      "protected": "/Knowin/demo/weilinruan/GSA_collect/data/general_retention_v1/extracted_adapter/textvqa_val/c360b6f437eff08254b406ae5c2ceaca4865b0046ad31defbea111b508115855.jpg",
+      "source": "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/image/47429764_358116643902166_wide_image.png",
+      "protected": "/workspace/anvil-legacy/data/general_retention_v1/extracted_adapter/textvqa_val/c360b6f437eff08254b406ae5c2ceaca4865b0046ad31defbea111b508115855.jpg",
       "reason": "dhash64_radius6",
       "distance": 6,
       "reviewer": "assistant_visual_inspection_via_view_image",
@@ -108,9 +108,9 @@
     "The conservative candidate exclusions remain in place, including the visually distinct pairs."
   ],
   "evidence": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json": "f860ac914f92bc2768f12df6a2cacea15eadd97ba206a5c537aa07ceda54ea6d",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/exclusions.jsonl": "d7fb93774c5ec4efaead62df9d157c19bd9b815cf526a6a8669a5ad1c47a5cb6",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/image_fingerprints.jsonl": "c764b61b750d37208c3fdbcd8cf88558a3589de70b4e738133df085e10d6cb61"
+    "/data/anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json": "f860ac914f92bc2768f12df6a2cacea15eadd97ba206a5c537aa07ceda54ea6d",
+    "/data/anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/exclusions.jsonl": "d7fb93774c5ec4efaead62df9d157c19bd9b815cf526a6a8669a5ad1c47a5cb6",
+    "/data/anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/image_fingerprints.jsonl": "c764b61b750d37208c3fdbcd8cf88558a3589de70b4e738133df085e10d6cb61"
   },
   "completed": 1793258727.4304035
 }

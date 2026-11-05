@@ -7,11 +7,11 @@
       "script": "supervise_formal_v2.py",
       "action": "retire_due_to_explicit_quality_stop",
       "prior_cmdline": [
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python",
+        "/data/anvil/recovery_20261020/.venv-train/bin/python",
         "-u",
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/supervise_formal_v2.py",
+        "/data/anvil/recovery_20261020/completion_20261028/supervise_formal_v2.py",
         "--plan",
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/plan.json"
+        "/data/anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/plan.json"
       ]
     },
     {
@@ -19,11 +19,11 @@
       "script": "final_delivery_handoff_v1.py",
       "action": "retire_due_to_explicit_quality_stop",
       "prior_cmdline": [
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python",
+        "/data/anvil/recovery_20261020/.venv-train/bin/python",
         "-u",
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py",
+        "/data/anvil/recovery_20261020/completion_20261028/final_delivery_handoff_v1.py",
         "--policy",
-        "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/candidate1_20261029/handoff_policy.json"
+        "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/candidate1_20261029/handoff_policy.json"
       ]
     }
   ],

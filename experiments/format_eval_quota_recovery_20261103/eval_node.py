@@ -13,7 +13,7 @@ import queue
 import subprocess
 import sys
 import time
-sys.path.insert(0, '/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_format_v1')
+sys.path.insert(0, '/data/anvil/recovery_20261020/completion_20261028/final_delivery_format_v1')
 from common import C, D, HERE, TRAIN, EVAL, check_protocol, load_spec, read, require, save, sha
 
 

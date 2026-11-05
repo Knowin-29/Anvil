@@ -1,42 +1,42 @@
 {
   "state": "prepared_for_future_decision_only",
   "source_comparison": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_matched_review.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_matched_review.json",
     "sha256": "e994e7fcefc09b3faa3622248507335af4c80aa60faaa1a89aa8e707e8ce0e7d"
   },
   "binding": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/bindings.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/bindings.json",
     "sha256": "5b6d64b3dfd100b658752bf05565e778277180a8a7ae1d302d9d5454534764f6"
   },
   "teacher_lineage": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/A_teacher_lineage.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/A_teacher_lineage.json",
     "sha256": "5f4904e0bd75224ebaa33fe70b164f32b928a9de58957b6b6d19201e9794a076"
   },
   "initial_student_lineage": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/initialization_lineage.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/next_candidate_prism_20261029/initialization_lineage.json",
     "sha256": "f54a5e6690e2b5ab92294aad397694132dbe83c8c093c16970ca74a35de7ef89"
   },
   "previous_A": {
-    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
+    "adapter": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/checkpoint-512",
     "adapter_sha256": "d199a630dfc97dc466bccb997996c4ada85889a3b64c7cc2d259c789075c6be8",
-    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
+    "completion_receipt": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/complete.json",
     "completion_sha256": "a0e98791c600f5dd5e8dfe58679551674314d8c518ab1f34cfe8d480f435f06f"
   },
   "proposed_A": {
-    "adapter": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
+    "adapter": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/checkpoint-2048",
     "adapter_sha256": "cc4104fb33d5b72aafb8be2661656f7d8d3266762ebb7815340f2ab7430e9244",
-    "completion_receipt": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
+    "completion_receipt": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/complete.json",
     "completion_sha256": "316f2dc513ad7e2d5bbf0e88768f8a732857e8421000ff17637eb9d51efdf98d"
   },
   "interfaces": {
     "G": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/protocol.json",
       "protocol_sha256": "6703e4626e7ebb2e271dd422970784f4a09ce94df06ed32c897914f29937e49f",
       "declared_representation": null,
       "student_requires_representation_adaptation": false
     },
     "A": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/prism_learning_repairs/A_prism_lr1e4/protocol.json",
       "protocol_sha256": "ea2e6aa90be39323aa01864bff3872528ec1ee197f7fc5576506d2b8c628bc48",
       "declared_representation": "anvil-dof-train-rotation128-v1",
       "student_requires_representation_adaptation": false
@@ -48,7 +48,7 @@
       "student_requires_representation_adaptation": false
     },
     "student": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/student_adaptation_run/main/protocol.json",
       "protocol_sha256": "ef61ca5a508e835dc08bf1966fc6b6fc66c1fa146124d81ac0c462b9c209e53a",
       "declared_representation": "anvil-dof-train-rotation128-v1",
       "student_requires_representation_adaptation": false
@@ -331,7 +331,7 @@
   "final_quality_accepted": false,
   "weights_uploaded": false,
   "code": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/prepare_next_teacher_candidate.py",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/prepare_next_teacher_candidate.py",
     "sha256": "237b769cd3876b2a9f5f7415361aff574fdd996f94aa1bba0d1cc516b1c5a667"
   },
   "completed": 1793253556.9451482

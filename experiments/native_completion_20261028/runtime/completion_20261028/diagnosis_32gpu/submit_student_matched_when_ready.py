@@ -33,7 +33,7 @@ def main():
             save(D/'student_matched_native_submission_status.json',dict(state='waiting_for_capacity',active=active,requested=8,pid=os.getpid(),updated=time.time()))
             if active+8>32:time.sleep(30);continue
             save(D/'student_matched_native_capacity.json',dict(cloud=cloud,gpus_before=active,requested=8,ceiling=32,checked=time.time()))
-            proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=60)
+            proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=60)
             (D/'student_matched_native_submission.log').write_text(proc.stdout+proc.stderr)
             responses=[]
             for line in proc.stdout.splitlines():

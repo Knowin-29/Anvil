@@ -23,7 +23,7 @@ def main():
     save(ROOT/'g_priority_submission_status.json',dict(state='waiting_for_capacity',node=node,gpus=active,additional=8,updated=time.time(),pid=os.getpid()))
     if active+8>32:time.sleep(30);continue
     save(ROOT/('g_priority_native_node'+str(node)+'_capacity.json'),dict(cloud=cloud,gpus_before=active,requested=8,ceiling=32,checked=time.time()))
-    p=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(configs[node]),'--output','json'],capture_output=True,text=True,timeout=120)
+    p=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(configs[node]),'--output','json'],capture_output=True,text=True,timeout=120)
     (ROOT/('g_priority_native_node'+str(node)+'_submission.log')).write_text(p.stdout+p.stderr)
     values=[]
     for line in p.stdout.splitlines():

@@ -18,7 +18,7 @@ D = C / 'diagnosis_32gpu'
 sys.path.insert(0, str(D))
 from prepare_spatial_replay import Protected, fingerprint, sha, EXPORT
 
-SOURCE = Path('/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428')
+SOURCE = Path('/data/sources/originDatasets_transfer_from_hpc3/SAT_rft_spatial_qa_train_80000_test_4000_0428')
 OUT = C / 'sat_replay_20261102'
 SUFFIX = '\nYou FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process and answer are enclosed within <think> </think> and <answer> </answer> tags. The overall format being: <think> reasoning process here </think><answer> answer here </answer>'
 

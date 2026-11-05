@@ -1,5 +1,5 @@
 {
-  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/cli.yaml",
+  "config": "/data/anvil/recovery_20261020/completion_20261028/geometry_objective_v2_20261104/cli.yaml",
   "config_sha256": "1122d604ca46191a98b127334fb8625f30f59c087c4b8a7e60db006974fb9618",
   "spec_sha256": "01b438ee02b653394ff744979f83ddfc2ca80e396a6eee1f2198b1cb7519356c",
   "gpus": 32,

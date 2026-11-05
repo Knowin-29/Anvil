@@ -2,7 +2,7 @@
 import ast,base64,hashlib,json,os,re,shutil,subprocess,time,zipfile
 from pathlib import Path
 C=Path(__file__).resolve().parent.parent;V=C/'visual_geometry_candidate_20261104';H=C/'final_delivery_visual_geometry_v1'
-repo=Path('/Knowin/demo/weilinruan/Anvil/01_Code');dest=repo/'experiments/visual_geometry_candidate_20261104'
+repo=Path('/workspace/Anvil');dest=repo/'experiments/visual_geometry_candidate_20261104'
 def sha(p):
  with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
 def save(p,v):Path(p).write_text(json.dumps(v,indent=2)+'\n')

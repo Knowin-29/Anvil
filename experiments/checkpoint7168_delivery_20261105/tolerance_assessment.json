@@ -2,7 +2,7 @@
   "schema": "anvil-selected-checkpoint-tolerance-v1",
   "report_sha256": "2926aef14d9d55af7016fe21a375c4321d6a78319c2e10d401ccc3da3b7cf0ca",
   "evaluation_spec_sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
   "native": {
     "measured": 50.62367136038148,
     "reference": 65.35,

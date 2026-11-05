@@ -2,87 +2,87 @@
   "created": 1793778108.199363,
   "files": {
     "scoring/PROTOCOL.md": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/PROTOCOL.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/PROTOCOL.md",
       "sha256": "03a106f8b070dc4048d9fd36d81bbd28f622c090ddb66b5bc92e452c96439171",
       "bytes": 3610
     },
     "scoring/score_records.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/score_records.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/score_records.py",
       "sha256": "340ecaef7bb5e9669e4c42491acb9ec718e8462a2c50868ad121a11ab17900c4",
       "bytes": 7271
     },
     "scoring/wait_and_score.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/wait_and_score.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/wait_and_score.py",
       "sha256": "85f6d452b1aefe1ad6df708ce6c932b564f00bf923f9269d6a461eb17f0a6246",
       "bytes": 1870
     },
     "scoring/test_score_records.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/test_score_records.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/test_score_records.py",
       "sha256": "512af3b6b480275e7dccdd33a6d33a4d23d1afe5955f0e9e26e396cb50446065",
       "bytes": 3560
     },
     "scoring/protocol_seal.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/protocol_seal.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/protocol_seal.json",
       "sha256": "fa32c7a280524efe3f131038b0c236ad1f013fa99a0997786413103491092539",
       "bytes": 790
     },
     "scoring/previous_geometry_native_score.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/previous_geometry_native_score.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/previous_geometry_native_score.json",
       "sha256": "ca73d6e4ac8c7e9fc93d8dedf6126cf2d30a788f954388c5757265bb56b34997",
       "bytes": 89513
     },
     "model/model_presentation.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/model_presentation.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/model_presentation.py",
       "sha256": "47b3c6b37369c2fbe73e7fbacf74dfe223cb019a0bc1b1b52387aa96b43717a1",
       "bytes": 11429
     },
     "model/finalize_model.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/finalize_model.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/finalize_model.py",
       "sha256": "59d0d96c62a72c28a9a4056e499fa75b236f0d954b95b80822065f6bd40d42e8",
       "bytes": 11528
     },
     "model/test_model_presentation.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/test_model_presentation.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/test_model_presentation.py",
       "sha256": "43ee6eadf4156ca211b984ebe03925d6f08a2d7c31a7b9a12f602cc8ab49d3f7",
       "bytes": 4682
     },
     "model/user_acceptance_policy.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/user_acceptance_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/user_acceptance_policy.json",
       "sha256": "1317e84bbd5cdafff8eb2e7fde96bd3189fbf9591c356672e0281b44f0131e5d",
       "bytes": 1485
     },
     "model/review_requirements.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/review_requirements.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_v2_20261104/review_requirements.json",
       "sha256": "1ea0a1121fb1b7e0c8189e7fb470396290264d400ae48fb4862cc2c782baedb8",
       "bytes": 1565
     },
     "dataset/dataset_README.md": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_README.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_README.md",
       "sha256": "d54aa7381b6a553cde7e7d538ce727831f337b62bd0013fdc28d7c548ef8b4c7",
       "bytes": 4190
     },
     "dataset/dataset_ATTRIBUTION.md": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_ATTRIBUTION.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_ATTRIBUTION.md",
       "sha256": "812b8c531c11b49b745840079556a3e2ce28ec4f41dc70ca9ba1367967fb7640",
       "bytes": 2929
     },
     "dataset/dataset_release_manifest_updated.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_release_manifest_updated.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_release_manifest_updated.json",
       "sha256": "aea6d027a4ec9c1ad31a45cdbbb351e7df5934d815e1abcb1356f669809558f7",
       "bytes": 19737
     },
     "dataset/publish_dataset.py": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/publish_dataset.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/publish_dataset.py",
       "sha256": "4a46a579755139b3beb3daa17d54e4e7fb32da6c00ca4664742a8234ba4e3f0f",
       "bytes": 3312
     },
     "dataset/dataset_commit.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_commit.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_commit.json",
       "sha256": "a0909f70e6cf14334b0da873bf399f726d64d4109ca193299f39a666e98d8e16",
       "bytes": 126
     },
     "dataset/dataset_complete.json": {
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_complete.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/hub_presentation_20261104/dataset_complete.json",
       "sha256": "43284054be0a97e504ab5ff335668cdf3f732c16d19cd30c8347e6a8b29108c2",
       "bytes": 260
     }

@@ -10,6 +10,6 @@
   },
   "cpu_tests_passed": 8,
   "user_authorized_completion": true,
-  "supersedes": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_20261104/protocol_seal.json",
+  "supersedes": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_20261104/protocol_seal.json",
   "change": "Native-validator distance floating margin; scoring formula unchanged"
 }

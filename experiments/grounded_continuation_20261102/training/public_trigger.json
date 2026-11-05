@@ -1,6 +1,6 @@
 {
   "schema": "anvil-complete-evaluation-continuation-trigger-v1",
-  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
+  "public_general_report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/balanced_repair_20261102/evaluation/final_report.json",
   "public_general_report_sha256": "9ee8d2014a2640a483f13b62244a6a95d5d798457e5fb040dacc5544200411f9",
   "scores": {
     "cv_bench": 89.08,

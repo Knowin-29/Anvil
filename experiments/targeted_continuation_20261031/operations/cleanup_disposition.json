@@ -23,13 +23,13 @@
   "currently_eligible_uploaded_weights": [],
   "completed_parent_checkpoints": [
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/direct_completion_20261029/runs/repair",
       "count": 8,
       "bytes": 16633306542,
       "disposition": "retain_until_release_remote_verified_and_no_active_dependency"
     },
     {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd",
       "count": 48,
       "bytes": 99787596606,
       "disposition": "retain_until_release_remote_verified_and_no_active_dependency"

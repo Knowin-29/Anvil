@@ -1,5 +1,5 @@
 {
-  "config": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cli.yaml",
+  "config": "/data/anvil/recovery_20261020/completion_20261028/coordinate_resume_storage_20261104/cli.yaml",
   "config_sha256": "c87ab9a8068f50b22cca1720e0e7a8f7188ee13fef3ab9aa4c43cb2973d0c5d9",
   "resume_policy_sha256": "884d96c67839d6d937fad18bea92e3796b57d606e6bf0a25a19d96f398d9bb6d",
   "gpus": 32,

@@ -24,7 +24,7 @@ from eval_core import BUDGETS, canonical, check_saved, digest, repeat_period, se
 from probe_vllm import render
 
 CODE = Path(__file__).resolve().parent
-ROOT = Path("/Knowin/sim/weilinruan/Anvil/recovery_20261020")
+ROOT = Path("/data/anvil/recovery_20261020")
 EXPORT = ROOT.parent / "arxiv/native_evaluation_export_20261012_v4"
 SCORE_CODE = CODE / "score_code"
 METRICS = None

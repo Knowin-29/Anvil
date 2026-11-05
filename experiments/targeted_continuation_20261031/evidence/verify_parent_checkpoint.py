@@ -11,7 +11,7 @@ import numpy as np
 import torch
 from safetensors.torch import load_file
 
-C = Path('/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028')
+C = Path('/data/anvil/recovery_20261020/completion_20261028')
 O = C / 'direct_recovery_20261030'
 RUN = O / 'runs/mopd'
 STEP = 1536

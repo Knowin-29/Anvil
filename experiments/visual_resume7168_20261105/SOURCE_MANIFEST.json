@@ -3,122 +3,122 @@
   "files": [
     {
       "path": "verify_resumed_checkpoint.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/verify_resumed_checkpoint.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/verify_resumed_checkpoint.py",
       "sha256": "41a7f140add731ae783c47856e1d757b29f93cc47a3f3f76c4a571924795edf7"
     },
     {
       "path": "finish_delivery.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/finish_delivery.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/finish_delivery.py",
       "sha256": "c1b4a6566dde415b55a27340ca4811868e1e9822d4be403143b651dfc2adc3e5"
     },
     {
       "path": "observe.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/observe.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/observe.py",
       "sha256": "7d579df99ca1d9482509aea966402a1606afda769d0975ca23f6ac57fcc52298"
     },
     {
       "path": "storage_budget.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/storage_budget.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/storage_budget.py",
       "sha256": "08c7a8990e22b7f28a56664810b1691e38f6ad0c8c479daa55664e360bc9cb8f"
     },
     {
       "path": "quota_io.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/quota_io.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/quota_io.py",
       "sha256": "12ec0536bd52158c9ec0dea9bb706b778592548b2db4e6b4a23d4eb5d87e0019"
     },
     {
       "path": "cleanup_verified_weights.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_verified_weights.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_verified_weights.py",
       "sha256": "d7d45a41f9c668a165003ceffed86bf710f185bfb0d1d1b6220698bb61326afa"
     },
     {
       "path": "node.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/node.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/node.py",
       "sha256": "f0005189417559572ee1fbbb213fd6dac03246c6f59e2bca7c179f14d5904192"
     },
     {
       "path": "test_quota_io.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/test_quota_io.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/test_quota_io.py",
       "sha256": "7c2699ecf914a1efcd59b1069b9b9256df97851178123a7433cb0ef2468a7fda"
     },
     {
       "path": "sync_source.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/sync_source.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/sync_source.py",
       "sha256": "440498b530c1e5723a9e55a3810598d478fc00a5f28375ff10b3885e3f5e9cc2"
     },
     {
       "path": "prepare_recovery.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/prepare_recovery.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/prepare_recovery.py",
       "sha256": "eadd164e5a32cc356278e09f75ca4d14821707b2f796d30bb84138fc57f5f710"
     },
     {
       "path": "train_bootstrap.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/train_bootstrap.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/train_bootstrap.py",
       "sha256": "136b6e677294d405508a462328b2451e7ef37122d178cb6439d96202ee48654f"
     },
     {
       "path": "submit_and_handoff.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/submit_and_handoff.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/submit_and_handoff.py",
       "sha256": "2c8597e4c8efb5f1c3dc31df5445297b23b5531b9eaec6e7f046f2254bfcb6eb"
     },
     {
       "path": "handoff.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/handoff.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/handoff.py",
       "sha256": "701f82459cb1f519548570993aa0fad485959b1b873fca48ca9ea8ab0d77f580"
     },
     {
       "path": "resume_policy.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume_policy.json",
       "sha256": "304c6d1170601e739fb50de149c75f5d59ae3c1ffc395a94c17a07b601a2efa0"
     },
     {
       "path": "handoff_policy.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/handoff_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/handoff_policy.json",
       "sha256": "f99d46d935ed954dc217dae4468f6e7f29fac7c1b82fd90d8481751165a20cd7"
     },
     {
       "path": "release_policy.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/release_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/release_policy.json",
       "sha256": "eaa844bdcccd18a89a5f1e35e9eb25856d1ae2efe403ddebece755a045363459"
     },
     {
       "path": "cleanup_policy.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cleanup_policy.json",
       "sha256": "13311e15c456afd07170d89157a8b31b5e7599de5404eed463d240ca517071b7"
     },
     {
       "path": "cli.yaml",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cli.yaml",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/cli.yaml",
       "sha256": "fad68f144583991f668e63858f83b0a1200211760a91786ae7e1d6174cee8c1c"
     },
     {
       "path": "resume7168_verification.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json",
       "sha256": "d8bc33fbf56967e1e523ae1449b7d3d24c522e7e09a41a0cc621f86adff73f55"
     },
     {
       "path": "optimizer_cleanup_complete.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/optimizer_cleanup_complete.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/optimizer_cleanup_complete.json",
       "sha256": "fbf7234323127052bdb8bfb845d92e012b2658315b466265e840c14ca14214a6"
     },
     {
       "path": "optimizer_cleanup_preview.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/optimizer_cleanup_preview.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/optimizer_cleanup_preview.json",
       "sha256": "af2dffd1215f631c97a6633bc98db77f3b3225027af9931ef529c0a272d5b912"
     },
     {
       "path": "incident.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/incident.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/incident.json",
       "sha256": "4bbf34c1865331d59c175a3341a296bfac1478d762652466ce17ab5bd2b66ddc"
     },
     {
       "path": "emergency_reserve_initial.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/emergency_reserve_initial.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/emergency_reserve_initial.json",
       "sha256": "74ca7bada7bd9898d89f8fee2c707434b8278f459376e9454b858544ba1c5fe4"
     },
     {
       "path": "recovery_preparation.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/recovery_preparation.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/recovery_preparation.json",
       "sha256": "e40097fcdf0c3614e91a3e3cefe73c3eee1384c8017fd46be38fbfeb46095567"
     }
   ],

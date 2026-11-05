@@ -10,8 +10,8 @@ import sqlite3
 
 ROOT = Path(__file__).resolve().parent
 EXPORT = ROOT.parents[2] / "arxiv/native_training_export_20261012_v4_r2"
-PROJECT = Path("/Knowin/demo/weilinruan/Anvil")
-COLLECT = Path("/Knowin/demo/weilinruan/GSA_collect")
+PROJECT = Path("/workspace/anvil-project")
+COLLECT = Path("/workspace/anvil-legacy")
 
 
 def sha(path):

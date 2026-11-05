@@ -238,7 +238,7 @@
     }
   },
   "native_score": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/final_native_score.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/anvil_eval_score_v1_1_20261104/final_native_score.json",
     "sha256": "1959669f63f723747f2fc3fb448d0854c41868ece01174254c3bf37b1abc2b6b",
     "score": 50.476384441895995,
     "minimum": 58.815,

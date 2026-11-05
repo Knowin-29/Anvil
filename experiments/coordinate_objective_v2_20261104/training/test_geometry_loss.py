@@ -7,7 +7,7 @@ from transformers import AutoTokenizer
 
 from geometry_loss import GeometryLoss, coordinate_spans, digit_weights, geometry_eligible
 
-BASE = '/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B'
+BASE = '/data/models/Qwen/Qwen3.5-9B'
 PREFIX = '<think>\n\n</think>\n\n'
 
 

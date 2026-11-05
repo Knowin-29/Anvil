@@ -72,7 +72,7 @@
         }
       },
       "protocol": {
-        "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/protocol.json",
+        "path": "/data/anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/protocol.json",
         "sha256": "0146e4a60e1e3d2e7abb56699758bbbef764afdef798174691204325a598cfe5"
       }
     },
@@ -115,7 +115,7 @@
         }
       },
       "protocol": {
-        "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/low_native_sft/protocol.json",
+        "path": "/data/anvil/recovery_20261020/completion_20261028/objective_controls_20261029/runs/low_native_sft/protocol.json",
         "sha256": "1103b46d595bd1f79a83189cfb2ed255a0ba786bbc819c1d4f6538a5da5f1666"
       }
     }
@@ -136,12 +136,12 @@
   "correction": "Earlier frozen control notes called this a token-normalization-group change. That wording was imprecise: selected_stages counts examples, and the observed all-eligible rows preserve the same per-example objective weighting. Frozen execution manifests remain unchanged; this addendum supersedes that interpretation.",
   "mask_routing_note": "Native atomic routing selects the declared family for every nonempty response. Invalid JSON alone does not suppress MTD; no empty native scored spans observed in these prefixes.",
   "evidence": {
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v6.py": "568619ea46d745d785f10a8fd56ee5337653cd35a4c26866d3b7367275a04d75",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/native_mopd_v7.py": "aa3cafd691165f170461ee03d6f013df9fb59cd464f55f7b11939784110c3d1b",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/mopd_representation.py": "056f40613119a76e9766d1213a952e049c1906cfb4aa19ea9862f8afeb01e768",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/anvil_runtime.py": "d8962eaa0253d1ea8fd28ccf3e91eb4f8be3fa76dab9cad8b08675375486565b",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/chunked_heads.py": "958ed9b48e2adc692ca43c657269a92616ff9aa47eaefc82b32648649bda7220",
-    "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/audit_mtd_reduction.py": "04489e7d756ea972fe3d5f639072e99611ee6ec4f9fb88e53004eaa863d10cbc"
+    "/data/anvil/recovery_20261020/completion_20261028/native_mopd_v6.py": "568619ea46d745d785f10a8fd56ee5337653cd35a4c26866d3b7367275a04d75",
+    "/data/anvil/recovery_20261020/completion_20261028/native_mopd_v7.py": "aa3cafd691165f170461ee03d6f013df9fb59cd464f55f7b11939784110c3d1b",
+    "/data/anvil/recovery_20261020/completion_20261028/mopd_representation.py": "056f40613119a76e9766d1213a952e049c1906cfb4aa19ea9862f8afeb01e768",
+    "/data/anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/anvil_runtime.py": "d8962eaa0253d1ea8fd28ccf3e91eb4f8be3fa76dab9cad8b08675375486565b",
+    "/data/anvil/recovery_20261020/completion_20261028/Anvil/trains/mopd/chunked_heads.py": "958ed9b48e2adc692ca43c657269a92616ff9aa47eaefc82b32648649bda7220",
+    "/data/anvil/recovery_20261020/completion_20261028/audit_mtd_reduction.py": "04489e7d756ea972fe3d5f639072e99611ee6ec4f9fb88e53004eaa863d10cbc"
   },
   "gpu_training_modified": false,
   "quality_cause_proven": false,

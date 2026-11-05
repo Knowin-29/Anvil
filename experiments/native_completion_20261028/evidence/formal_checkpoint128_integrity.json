@@ -1,7 +1,7 @@
 {
   "state": "verified_formal_checkpoint_and_128_update_prefix",
   "checked_at": "2026-10-29T11:23:51.254042+08:00",
-  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-128",
+  "checkpoint": "/data/anvil/recovery_20261020/completion_20261028/formal_mopd/runs/candidate1_20261029/training/checkpoint-128",
   "checkpoint_receipt_sha256": "f5b6873d2fc80c48fcb2eda28c91c5d2c0807c68d3aa3141b4aab9f7dd0b12c4",
   "adapter_sha256": "3fbd796aa170dd1e705c1d8b0a4a8d59dc985ca5745d959da7e0679b96251bef",
   "checkpoint_files_verified": 22,

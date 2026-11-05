@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-15",
+  "version": "2026-11-06",
   "raw_images_distributed": false,
   "datasets": [
     {
@@ -23,7 +23,8 @@
       "access": "Complete portable package verified in private Hub staging; licensed annotation subset publicly downloadable; original images not public",
       "public_annotation_release": {
         "repo_id": "Knowin-29/Anvil-Ben",
-        "revision": "91dd25a5723447e0c1e47ed9057fc187305e1ac9",
+        "revision": "a2bb5d1c94321de3bab02278344d41a2f8912d2f",
+        "revision_note": "Current dataset presentation and reconstruction tools; annotation counts unchanged",
         "annotation_records": 5766133,
         "heldout_records": 572299,
         "train_records": 5193834,

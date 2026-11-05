@@ -12,7 +12,7 @@ def save(path,obj):
  tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(obj,indent=2)+'\n');tmp.replace(path)
 
 def check(job):
- p=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','get','--id',job['id'],'--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=30)
+ p=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','get','--id',job['id'],'--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=30)
  values=[json.loads(line) for line in p.stdout.splitlines() if line.startswith('[{"Id"')]
  if p.returncode or len(values)!=1:raise RuntimeError('Cannot resolve status for '+job['id'])
  return dict(job,status=values[0][0]['Status'])
@@ -37,7 +37,7 @@ def main():
    save(ROOT/'student_adaptation_submission_status.json',dict(state='waiting_for_capacity',gpus=active,additional=8,updated=time.time(),pid=os.getpid(),spec_sha256=expected_spec))
    if active+8<=32:
     save(ROOT/'student_adaptation_submission_capacity.json',dict(cloud=cloud,allocated_or_pending_gpus=active,requested=8,ceiling=32,checked=time.time()))
-    p=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=120)
+    p=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit','--conf',str(config),'--output','json'],capture_output=True,text=True,timeout=120)
     (ROOT/'student_adaptation_submission.log').write_text(p.stdout+p.stderr)
     # Never repeat an ambiguous mutation automatically.
     values=[]

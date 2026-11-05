@@ -5,8 +5,8 @@ Entrypoint: 'set -Eeuo pipefail
 
   export PYTHONDONTWRITEBYTECODE=1
 
-  /Knowin/sim/weilinruan/Anvil/recovery_20261020/.venv-train/bin/python -u /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/node.py
-  --spec /Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/spec.json
+  /data/anvil/recovery_20261020/.venv-train/bin/python -u /data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/node.py
+  --spec /data/anvil/recovery_20261020/completion_20261028/geometry_repair_candidate_20261103/spec.json
   --spec-sha256 eabf085162304648de505cd364bf351e61b16bb6a998fe6b3e19c18b4607dacc'
 Tags:
 - train

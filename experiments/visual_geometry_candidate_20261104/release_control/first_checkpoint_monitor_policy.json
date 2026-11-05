@@ -1,5 +1,5 @@
 {
-  "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/verify_first_production_checkpoint.py",
+  "source": "/data/anvil/recovery_20261020/completion_20261028/visual_delivery_control_20261104/verify_first_production_checkpoint.py",
   "source_sha256": "e987c808a68d244982f54a9674dc11e9c3a85361dcb874f938fd10d6dafc08d1",
   "pipeline_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
   "checkpoint": 64,

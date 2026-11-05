@@ -14,7 +14,7 @@
     "initialization_lineage.py",
     "exposure_audit.py"
   ],
-  "interface_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_direct_v1/interface_validation/cpu_validation.json",
+  "interface_validation": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_direct_v1/interface_validation/cpu_validation.json",
   "no_final_gpu_run_claimed": true,
   "created": 1793267633.5520756
 }

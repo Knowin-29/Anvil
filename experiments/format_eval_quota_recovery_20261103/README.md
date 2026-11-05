@@ -10,4 +10,4 @@ The supervisor enforces the 32-GPU campaign limit, including queued or unknown t
 
 CPU validation checked unchanged partition/resume logic, frozen workers/scoring and local cache routing. Seventeen cleanup-boundary tests passed. No additional small GPU experiment was submitted. Server credential stores were not changed.
 
-These files are an auditable source snapshot. Runtime paths in policies and YAML refer to the shared production workspace; the authoritative runtime recovery directory is `/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103`.
+These files are an auditable source snapshot. Runtime paths in policies and YAML refer to the shared production workspace; the authoritative runtime recovery directory is `/data/anvil/recovery_20261020/completion_20261028/format_eval_quota_recovery_20261103`.

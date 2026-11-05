@@ -124,7 +124,7 @@ def submit_node(root, policy, spec_path, node):
     binding = dict(final_spec_sha256=sha(spec_path), config_sha256=sha(config),
                    config=str(config), gpus=8, time=time.time())
     save(folder / 'submission_intent.json', binding)
-    proc = subprocess.run(['/root/.volc/bin/volc', '--log-level', 'error', 'ml_task',
+    proc = subprocess.run(['/opt/volc/bin/volc', '--log-level', 'error', 'ml_task',
                            'submit', '--conf', str(config), '--output', 'json'],
                           capture_output=True, text=True, timeout=90)
     (folder / 'submission.log').write_text(proc.stdout + proc.stderr)

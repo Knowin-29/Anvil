@@ -101,7 +101,7 @@ def main():
                     intent = dict(config=str(policy['config']), config_sha256=sha(policy['config']),
                                   spec_sha256=sha(policy['spec']), gpus=32, time=time.time())
                     save(root/'submission_intent.json', intent)
-                    proc = subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','submit',
+                    proc = subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','submit',
                                            '--conf',policy['config'],'--output','json'],
                                           capture_output=True,text=True,timeout=90)
                     (root/'submission.log').write_text(proc.stdout+proc.stderr)

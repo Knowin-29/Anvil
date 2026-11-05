@@ -15,7 +15,7 @@ start=time.monotonic()
 print(json.dumps(dict(observer_pid=os.getpid(),task=TASK,window_seconds=args.seconds,gpu_mutations=False)),flush=True)
 while time.monotonic()-start<args.seconds:
     try:
-        proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','get','--id',TASK,
+        proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','get','--id',TASK,
             '--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=30)
         rows=[json.loads(line.strip())[0] for line in proc.stdout.splitlines() if line.strip().startswith('[{"Id"')]
         cloud=rows[0]['Status'] if len(rows)==1 and proc.returncode==0 else 'UNKNOWN'

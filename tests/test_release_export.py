@@ -14,17 +14,28 @@ import pytest
 EXPORTER = Path(__file__).resolve().parents[1] / "tools/export_anvil_release.py"
 
 
-def test_historical_registries_do_not_claim_a_final_model_release():
+def test_historical_controls_remain_separate_from_verified_final_release():
     root = EXPORTER.parents[1]
     for name in ("models.json", "model_registry.json"):
         registry = json.loads((root / "registry" / name).read_text())
         assert registry["artifact_role"] == "historical_mechanism_control"
         assert registry["eligible_for_final_model_release"] is False
         final = registry["final_release"]
-        assert final["checkpoint"] is None
-        assert final["weights_sha256"] is None
-        assert final["evaluation_manifest"] is None
-        assert final["uploaded"] is False
+        assert final["status"] == "verified_final_release"
+        assert final["checkpoint"] == "visual_repair/checkpoint-7168"
+        assert final["uploaded"] is True
+        assert final["acceptance_scope"] == "seven_public_benchmarks"
+        receipt = json.loads((root / final["verification_receipt"]).read_text())
+        assert final["revision"] == receipt["revision"]
+        assert final["repository"] == receipt["repository"]
+        assert receipt["selected_step"] == 7168
+        assert len(final["weights_sha256"]) == 4
+        for path, sha256 in final["weights_sha256"].items():
+            assert receipt["files"][path]["sha256"] == sha256
+        assert (root / final["evaluation_manifest"]).is_file()
+        review = json.loads((root / final["acceptance_review"]).read_text())
+        assert review["accepted"] is True
+        assert review["public_mean"] == final["public_mean"]
         assert registry["weights_sha256"] != final["weights_sha256"]
 
 

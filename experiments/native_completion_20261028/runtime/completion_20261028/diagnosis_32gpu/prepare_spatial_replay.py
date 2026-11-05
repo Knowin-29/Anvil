@@ -19,8 +19,8 @@ sys.path.insert(0, str(ROOT.parent / 'Anvil/tools'))
 from arxiv_source_scale import fingerprint, sha, save
 
 OUT = ROOT / 'spatial_replay'
-FSD = Path('/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425')
-VAC = Path('/Knowin/demo/weilinruan/Anvil/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl')
+FSD = Path('/data/sources/originDatasets_transfer_from_hpc3/FSD_points_rft_fsd_free_point_train_32790_test_300_0425')
+VAC = Path('/workspace/anvil-project/04_Experiments/iclr_evidence/engineering/data/source_controls_20260915/vacancy/train.jsonl')
 EXPORT = ROOT.parent.parent.parent / 'arxiv/native_training_export_20261012_v4_r2'
 
 

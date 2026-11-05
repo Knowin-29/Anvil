@@ -11,7 +11,7 @@ from safetensors.torch import load_file, save_file
 
 ROOT = Path(__file__).resolve().parent.parent
 RECOVERY = ROOT.parent
-BASE = Path("/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B")
+BASE = Path("/data/models/Qwen/Qwen3.5-9B")
 RUNS = RECOVERY.parent / "arxiv"
 
 

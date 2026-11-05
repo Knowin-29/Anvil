@@ -3,16 +3,16 @@
   "checked": 1793807049.4412365,
   "trainer_sha256": "1bd52cfb0c575eb834351a218b7e17a5bafef68c025ba56be01a4f26a89dacc1",
   "bindings": {
-    "native_io_pool": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/native_io_pool.py",
-    "pool": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/pool.py",
-    "geometry_loss": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/geometry_loss.py",
-    "point_contracts": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/point_contracts.py",
-    "resume_state": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/resume_state.py",
-    "visual_optimization": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/visual_optimization.py"
+    "native_io_pool": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/native_io_pool.py",
+    "pool": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/pool.py",
+    "geometry_loss": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/geometry_loss.py",
+    "point_contracts": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/point_contracts.py",
+    "resume_state": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/resume_state.py",
+    "visual_optimization": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/visual_optimization.py"
   },
   "interfaces": {
     "G": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/spatial_repairs/G_spatial/protocol.json",
       "protocol_sha256": "6703e4626e7ebb2e271dd422970784f4a09ce94df06ed32c897914f29937e49f",
       "declared_representation": null,
       "student_requires_representation_adaptation": false
@@ -24,13 +24,13 @@
       "student_requires_representation_adaptation": false
     },
     "A": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/diagnosis_32gpu/pose_repairs/A_pose_angular/protocol.json",
       "protocol_sha256": "2e98d5ed7f48f2ba3a09ff3d4e366819ac5611471f263b78b502b5bc08192491",
       "declared_representation": "anvil-dof-train-rotation128-v1",
       "student_requires_representation_adaptation": false
     },
     "student": {
-      "protocol": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/protocol.json",
+      "protocol": "/data/anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/protocol.json",
       "protocol_sha256": "9ec0b6b0184a2c28e3bcab29b3a234e019c32e48f8654ec95c4261bd680ffdd5",
       "declared_representation": "anvil-dof-train-rotation128-v1",
       "student_requires_representation_adaptation": false

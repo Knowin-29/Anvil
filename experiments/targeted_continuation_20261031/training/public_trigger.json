@@ -1,9 +1,9 @@
 {
   "schema": "anvil-targeted-repair-trigger-v1",
   "checked_at": "2026-10-31T04:19:22.220516+00:00",
-  "parent_checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
+  "parent_checkpoint": "/data/anvil/recovery_20261020/completion_20261028/direct_recovery_20261030/runs/mopd/checkpoint-1536",
   "parent_adapter_sha256": "bb19e4ad1d7968d9a72cfbbe717bdc6eaa8909ccfa5934054f827a39e74fb42a",
-  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public_general_report.json",
+  "public_general_report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/direct_recovery_20261030/evaluation/public_general_report.json",
   "public_general_report_sha256": "29702f009c25b1736bd2bc9f9a359188d206ecee97739711c6be31adaae520b6",
   "scores": {
     "cv_bench": 87.6,
@@ -49,8 +49,8 @@
     "detection": 548
   },
   "confirmed_sampling_issue": "Only101 depth_order rows were drawn in49152 native exposures; inventory14849 depth rows was swamped by larger S forms. This is evidence of underrepresentation, not proof it explains every score gap.",
-  "candidate_sampler": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/pool.py",
-  "candidate_sampler_validation": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/sampler_validation.json",
+  "candidate_sampler": "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/pool.py",
+  "candidate_sampler_validation": "/data/anvil/recovery_20261020/completion_20261028/targeted_repair_20261031/sampler_validation.json",
   "next_required": [
     "Finish and inspect full native evaluation of the existing candidate.",
     "Build an isolated substantive corrective trainer from checkpoint1536 using verified train-only data and the balanced sampler; retain QA and full native-generation MOPD.",

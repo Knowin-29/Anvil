@@ -17,7 +17,7 @@ def main():
         _,_,name,memory=map(str.strip,g.split(','));assert 'A800' in name and int(memory)>=79000
     def worker(g):
         index,uuid,_,_=map(str.strip,g.split(','));i=int(index);role='base' if i<4 else 'joint';shard=i%4
-        model='/Knowin/foundation/weilinruan/hf_models/Qwen/Qwen3.5-9B' if role=='base' else str(ROOT.parent/'merged_joint')
+        model='/data/models/Qwen/Qwen3.5-9B' if role=='base' else str(ROOT.parent/'merged_joint')
         env=os.environ.copy();cache=ROOT/'cache'/role/str(shard);cache.mkdir(parents=True,exist_ok=True)
         env.update(CUDA_DEVICE_ORDER='PCI_BUS_ID',CUDA_VISIBLE_DEVICES=index,ANVIL_EXPECTED_GPU_UUID=uuid,
             HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',HF_HUB_DISABLE_IMPLICIT_TOKEN='1',

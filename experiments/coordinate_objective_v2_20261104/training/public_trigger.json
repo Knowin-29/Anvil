@@ -1,6 +1,6 @@
 {
   "schema": "anvil-complete-evaluation-continuation-trigger-v1",
-  "public_general_report": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_repair_candidate_20261103/evaluation/final_report.json",
+  "public_general_report": "/data/anvil/recovery_20261020/completion_20261028/delivery_runs/geometry_repair_candidate_20261103/evaluation/final_report.json",
   "public_general_report_sha256": "4f8547402087413a526ccd6bff2c788a779c340d85dbf838b8cd34a0902fd7af",
   "scores": {
     "cv_bench": 88.74,
@@ -14,7 +14,7 @@
   "final_quality_accepted": false,
   "rationale": "The full geometry-replay experiment failed native quality: mask IoU regressed, affordance/rotation gains were negligible. Branch from the better fully evaluated format MOPD256 parent. Retain full-target CE, angular DoF supervision, all original data and all11 forms; add scalar-normalized coordinate CE emphasizing integer image coordinates and leading camera-position decimals. Only dedicated mask/affordance/PRISM steps use2e-5 peak LR; other repair steps retain5e-6. Repair8192 then genuine on-policy MOPD256 with unchanged teachers, rollout budgets and scorer. No GPU diagnostic arm. Effectiveness is an unproven optimization hypothesis requiring full evaluation.",
   "rejected_review": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/geometry_delivery_control_20261103/quality_review.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/geometry_delivery_control_20261103/quality_review.json",
     "sha256": "2e4876bcaa3fbbb59330c87636a048a7dca52583737d19d554f5689b2ab75eb3"
   }
 }

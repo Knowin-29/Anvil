@@ -26,7 +26,7 @@ def save(path,value):
 
 
 def cloud(task):
-    proc=subprocess.run(['/root/.volc/bin/volc','--log-level','error','ml_task','get','--id',task,
+    proc=subprocess.run(['/opt/volc/bin/volc','--log-level','error','ml_task','get','--id',task,
         '--output','json','--format','Id,Name,Status'],capture_output=True,text=True,timeout=25)
     rows=[json.loads(line) for line in proc.stdout.splitlines() if line.startswith('[{"Id"')]
     assert proc.returncode==0 and len(rows)==1

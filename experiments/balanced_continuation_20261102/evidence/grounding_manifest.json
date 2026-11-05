@@ -3,14 +3,14 @@
   "state": "verified_train_only",
   "files": {
     "grounding": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/grounding.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/grounding.jsonl",
       "bytes": 157504838,
       "sha256": "21e003c92f420c6b7890a2ad083261a012a59333fc4a8afa7aaeb042c5f34105",
       "records": 97674,
       "unique_images": 35445
     },
     "spatialqa": {
-      "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/spatialqa.jsonl",
+      "path": "/data/anvil/recovery_20261020/completion_20261028/refspatial_grounding_20261101/spatialqa.jsonl",
       "bytes": 200533660,
       "sha256": "24d63bc1dc3591418650270d9e373299a679fb2e06346f439fe0218dea43930d",
       "records": 116175,
@@ -26,17 +26,17 @@
     "spatialqa_unadmitted_image_groups": 120029
   },
   "source_files": {
-    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/reasoning_template_qa_filtered_3D_groupLength.jsonl": {
+    "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/reasoning_template_qa_filtered_3D_groupLength.jsonl": {
       "bytes": 1538437731,
       "sha256": "41b5080aa882bedcc8e41ba5d7f67e8006a6b72a66e8e119a9099865e42def3a"
     },
-    "/Knowin/foundation/data/datasets/originDatasets_transfer_from_hpc3/refspatial/3D/choice_qa_filtered_3D_groupLength.jsonl": {
+    "/data/sources/originDatasets_transfer_from_hpc3/refspatial/3D/choice_qa_filtered_3D_groupLength.jsonl": {
       "bytes": 803640969,
       "sha256": "707a5ce2946f9a2a05bbbc250925d097eac9255e0a56f1aa44082b34cccf12d6"
     }
   },
   "inherited_partition_manifest": {
-    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json",
+    "path": "/data/anvil/recovery_20261020/completion_20261028/vacancy_expansion_candidate_20261029/manifest.json",
     "sha256": "f860ac914f92bc2768f12df6a2cacea15eadd97ba206a5c537aa07ceda54ea6d"
   },
   "admitted_train_images": 35736,

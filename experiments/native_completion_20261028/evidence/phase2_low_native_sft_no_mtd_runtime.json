@@ -48,14 +48,14 @@
     "stochastic_rollouts_identical_claimed": false,
     "topology_note": "Sources and update schedule match16GPU formal; generation RNG and floating-point reduction order differ on8GPUs; per-example weights are equal.",
     "exposure_files": {
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank0.jsonl": "dfdb3b7cd68a9de0931a63cdc183a463aed346b27a0ed49e5e007cefb8b6fc99",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank1.jsonl": "51058d28cff49e9a1134cd16f2477dc911e6fd8485f4d515761056ab66c12cfb",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank2.jsonl": "22c330c3fb4d707312b53c02b1c1ef401f35931024436704487df78b3c4a6356",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank3.jsonl": "77e2fe912fed246059c4f7179f589c29393c282753ecc2b02582d542e97db4c5",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank4.jsonl": "1a93345d87fde2e935aedb4923222699b0a91386027556553d16c4f0d2117730",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank5.jsonl": "f366872dd7a71c35487d7047ba680034ea821366e230186901a4e4998cf31ac0",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank6.jsonl": "55d6a181b60d4966e6db1f3ad7974bdc476134fbd6a4abc61dc11b8340fc724c",
-      "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank7.jsonl": "3c6db3f8afd1fd011d1cacd8a84a4cc829fd12830235d9c28c4c44e052fa1286"
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank0.jsonl": "dfdb3b7cd68a9de0931a63cdc183a463aed346b27a0ed49e5e007cefb8b6fc99",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank1.jsonl": "51058d28cff49e9a1134cd16f2477dc911e6fd8485f4d515761056ab66c12cfb",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank2.jsonl": "22c330c3fb4d707312b53c02b1c1ef401f35931024436704487df78b3c4a6356",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank3.jsonl": "77e2fe912fed246059c4f7179f589c29393c282753ecc2b02582d542e97db4c5",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank4.jsonl": "1a93345d87fde2e935aedb4923222699b0a91386027556553d16c4f0d2117730",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank5.jsonl": "f366872dd7a71c35487d7047ba680034ea821366e230186901a4e4998cf31ac0",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank6.jsonl": "55d6a181b60d4966e6db1f3ad7974bdc476134fbd6a4abc61dc11b8340fc724c",
+      "/data/anvil/recovery_20261020/completion_20261028/objective_controls_phase2_20261029/runtime/low_native_sft_no_mtd/exposure_rank7.jsonl": "3c6db3f8afd1fd011d1cacd8a84a4cc829fd12830235d9c28c4c44e052fa1286"
     }
   },
   "teacher_loaded": false,

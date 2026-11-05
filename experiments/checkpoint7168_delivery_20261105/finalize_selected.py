@@ -124,7 +124,7 @@ def apply():
             repository=REPO,revision=revision,parent_revision=parent,files=expected,checkpoints=37,
             featured_stages=5,selected_step=7168,final_spec_sha256=sha(Z/'evaluation_spec.json'),
             quality_review_sha256=sha(Z/'quality_review.json'),credentials_modified=False,completed=time.time()))
-        pointer=Path('/Knowin/demo/weilinruan/Anvil/03_Delivery/CURRENT_CAMPAIGN.json')
+        pointer=Path('/workspace/anvil-project/03_Delivery/CURRENT_CAMPAIGN.json')
         current=read(pointer);assert current['delivery']==str(Z)
         current.update(updated=time.time(),state='accepted_selected7168_remotely_verified',
             final_quality_accepted=True,final_model_uploaded=True,final_revision=revision)

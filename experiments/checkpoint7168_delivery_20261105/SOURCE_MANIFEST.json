@@ -3,262 +3,262 @@
   "files": [
     {
       "path": "experiments/checkpoint7168_delivery_20261105/evaluate_selected.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluate_selected.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluate_selected.py",
       "sha256": "e3424da339e8a332f09dc629d27e683771e06c702937cd82b4edcdfb27253498"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/publish_public_final.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/publish_public_final.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/publish_public_final.py",
       "sha256": "1de9803d783b1273727dc1846515b06676fb91429933a9cd842f752dcaa61fa7"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/upload_checkpoint.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/upload_checkpoint.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/upload_checkpoint.py",
       "sha256": "2c698f76982f863b5682bfb09b7fe2920cf35e02433c20df01d2325cf3a6612a"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/audit_final_delivery.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/audit_final_delivery.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/audit_final_delivery.py",
       "sha256": "b987dfaf0dbf6857a7b6cdb48287037345dc6d1e36f95c58e5b9dae9f17e0bca"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/sync_source.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/sync_source.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/sync_source.py",
       "sha256": "d24e88703fd42862c3d62f207da0d9d5fad5d077c039755cc96f3054b91ad3fa"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/prepare_sources.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/prepare_sources.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/prepare_sources.py",
       "sha256": "1c74557e37ceb4b90b6925bf62d6c68255c32a1e628a3ac44e9c2322288ef130"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/preupload_selected.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/preupload_selected.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/preupload_selected.py",
       "sha256": "d8637faa589a7247527468881ec220c33b1b61b1b69127e09716ad60b54a22ef"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/finalize_selected.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/finalize_selected.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/finalize_selected.py",
       "sha256": "c011ae7d4b01e54924c81122a3c201e341feca56c1ebaa39088705e912332209"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/organize_checkpoints.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/organize_checkpoints.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/organize_checkpoints.py",
       "sha256": "a4500655b3681674e54c8fc5b6fe53461d056c2339aaa34a287afcff5f05c46f"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/package_interface.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/package_interface.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/package_interface.py",
       "sha256": "5366e3eb5dbcef97fad8db09863e81df475c835d79fc18865c7f5f190897ac78"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/model_presentation.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/model_presentation.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/model_presentation.py",
       "sha256": "9ecb4bf5947da360dcd5b79d0053a4297d5761791405c8f629c9ee33949b0d70"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/release_io.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_io.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_io.py",
       "sha256": "b1579bcf36d220f202884c4e97f69f8dbb44b2a3afa102b54697a5ff3b72f5fe"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/cleanup_selected.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/cleanup_selected.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/cleanup_selected.py",
       "sha256": "eb129e75c4d7d6ade6ae8197ff6b9bdf80d73459b385c9bd2eb6a34eeab5b514"
     },
     {
       "path": "README.md",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/README.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/README.md",
       "sha256": "8f353ee30fc68f69151f28f2708fadfebe1d1baac09295ba12e654e6b18c6225"
     },
     {
       "path": "model_card.md",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/model_card.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/model_card.md",
       "sha256": "63cf9a83c9502d2efc55239ff1eabe80640e9158881764978bea181949ce8dd7"
     },
     {
       "path": "registry/models.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/registry/models.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/registry/models.json",
       "sha256": "aa70dfeeed2184dccf71e78f8ae41f303c0171c05446aa0ccd76daa79b49ed8e"
     },
     {
       "path": "registry/model_registry.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/registry/model_registry.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_presentation/registry/model_registry.json",
       "sha256": "615f02261c9a31f2f4c999a1e049d0b306b7e3fdbc66019b317a6ca89e23165c"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/selection.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/selection.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/selection.json",
       "sha256": "bf90866937ae9475e7ceff66fb4ca2232c2091c8c737340eb1a45610b7d2a89d"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/source_derivation.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_derivation.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/source_derivation.json",
       "sha256": "acd7b205bdf38781183ee3ae9c18fa47bcebecb4dfbf86538d0743c16cce3334"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/release_source_derivation.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_source_derivation.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_source_derivation.json",
       "sha256": "7ae07770f94d380e2da42a03ba9cb3db2d34f669635ebbead153b85604c2e91b"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/release_layout_validation.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_layout_validation.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/release_layout_validation.json",
       "sha256": "7b520cd060226841aa06373b6d46a2f92f3072eb2cf716d81401d04d20a2e6bc"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/cleanup_guard_validation.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/cleanup_guard_validation.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/cleanup_guard_validation.json",
       "sha256": "4aa17c75c12986e77c4dd900c615513453d844e7785ff30d2419ead3a36f9714"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/user_selection.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/user_selection.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/user_selection.json",
       "sha256": "db71f523c9149f7f8e3562d467392a0db2b59f6f881d051203f9a8933ba9cbf4"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/evaluation_spec.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation_spec.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation_spec.json",
       "sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/OPERATIONS.md",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/OPERATIONS.md",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/OPERATIONS.md",
       "sha256": "675d1c07d5d62d8c04bf74f01323543f9d63d50377224176ea8c7ecf31a070ac"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/quality_review.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/quality_review.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/quality_review.json",
       "sha256": "37d8641e92c94c8cc374ae49d925b18e103c078da82a34eef68de1da28f7cc33"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/native_score.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/native_score.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/native_score.json",
       "sha256": "be4fd825c373dc1c302c6384e93713bbe70af8d4236061cc0b3c8611fb4ca012"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/tolerance_assessment.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/tolerance_assessment.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/tolerance_assessment.json",
       "sha256": "b1b23c02f271149ec17ff2cf3ba0d190cdd453cdb3bf549603fcd14274622ffe"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/training_update_audit.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/training_update_audit.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/training_update_audit.json",
       "sha256": "48fdd3bf45e67c445d80372851a50982cd6bd0d2d25b387294c27a360da92188"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/hub_revalidation_20261105.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/hub_revalidation_20261105.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/hub_revalidation_20261105.json",
       "sha256": "16e09e8f29933f1341a8a4856e28435599460cb773bdaa5e1eebb9fa46274562"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/unused_reserve_release.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/unused_reserve_release.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/unused_reserve_release.json",
       "sha256": "161fbb8fd6c37c95adbab905fe99e1d9b4bd81010c89287ada61a2ac609e0341"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/prepare.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/prepare.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/prepare.py",
       "sha256": "02ec076b89330f738a53fb24548c5d415f17c4ce2423db63e69bde3e40244337"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/node.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/node.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/node.py",
       "sha256": "c7d716caf219016e0816f678f1928cc7c7c6735c648a5c7ff5483d7846e53bd5"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/common.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/common.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/common.py",
       "sha256": "07bfcea099431c46d129a5987ecb0def3e28b2673664811145f2ffa2d0cf532b"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/public_worker.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/public_worker.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/public_worker.py",
       "sha256": "85d648095f45b5b5f4c0e4e6c7ac124ebf7f5dad95ed8f96b6b8afd21920ce38"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/score.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/score.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/score.py",
       "sha256": "e94bee8026dc4e58942250268e2d906f0468d90773ea897c9a2aa85fd588c057"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/merge.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/merge.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/merge.py",
       "sha256": "efcce0ed0654702211bb81d881535dc4bad33c0007162300e82d6cab31bfb68b"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/configs.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/configs.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/configs.py",
       "sha256": "cbe50c30937eacdd876a8aed2ea07470b5ff1a7f3e103683b375bd0f4313e833"
     },
     {
       "path": "experiments/final_delivery_checkpoint7168_v1/native_worker.py",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/native_worker.py",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/final_delivery_checkpoint7168_v1/native_worker.py",
       "sha256": "9317713f7f5d14a2d65a7a4c1bad721928c779173fd636caef973e800a581c7a"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/evaluation_cli.yaml",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation/node_0_cli.yaml",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation/node_0_cli.yaml",
       "sha256": "5f69753aadd796bed72a025fa63e3037f094c32e18c232ff063166e2801ba561"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/evaluation_report.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation/final_report.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/evaluation/final_report.json",
       "sha256": "2926aef14d9d55af7016fe21a375c4321d6a78319c2e10d401ccc3da3b7cf0ca"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/checkpoint_collection/plan.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/plan.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/plan.json",
       "sha256": "0fe2ca04c5a5e73e35e2b7048a69d6e10dd2a332c64f78c088531d37aaacc3b0"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/checkpoint_collection/complete.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/complete.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/complete.json",
       "sha256": "ba714b13d31f539012bf5340d77434c26fbbb17cb947373fb59d16481ae58a63"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/checkpoint_collection/layout_map.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/layout_map.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/checkpoint_collection/layout_map.json",
       "sha256": "0747b609686ab9f3dea9110f6cd98bcb98bb4ec30092add5fd632c46d062ac14"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/public_acceptance_policy.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/public_acceptance_policy.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/public_acceptance_policy.json",
       "sha256": "bf5390ac18c5d50180cf031066d9989535d4820f804792be1508deff6776f662"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/public_quality_review.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/public_quality_review.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/public_quality_review.json",
       "sha256": "e1d0c99e2db8f3fd94e1286e7b18237f30bddba083051c26ac485b86b658fa23"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/final_release/plan.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/plan.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/plan.json",
       "sha256": "c1fd83eaae3bc8d0b08eeaf89a2602bcf2e7bc6f0c3e16ce207d3e61dc299141"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/final_release/commit.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/commit.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/commit.json",
       "sha256": "07c98bb687287293a4e88e39abfdbb2900efb18a6663609027c04d9868dfde5c"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/final_release/verification_receipt.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/verification_receipt.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/final_release/verification_receipt.json",
       "sha256": "d00e5df2fd11934dada3c67d4ca6bd35dcffc5b52e9b05551783f09f693b9813"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/verified_local_cleanup/plan.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/plan.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/plan.json",
       "sha256": "c4c50652e27788e0695a610d1caaf6cf78e6741cfccb0c3b9d822653fdc6e935"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/verified_local_cleanup/complete.json",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/complete.json",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/complete.json",
       "sha256": "4d1ff2cb00935561729215f52fb817a3eab06280e81d0801f1bebbfe8eaefe86"
     },
     {
       "path": "experiments/checkpoint7168_delivery_20261105/verified_local_cleanup/deletions.jsonl",
-      "source": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/deletions.jsonl",
+      "source": "/data/anvil/recovery_20261020/completion_20261028/checkpoint7168_delivery_20261105/verified_local_cleanup/deletions.jsonl",
       "sha256": "b91652524bfdc2ef75e451731a492cb4a7b6172a51a4617ca6817e743227d1aa"
     }
   ],

@@ -32,7 +32,7 @@ def audit():
     assert sha(bundle['path'])==bundle['sha256']
     assert Path(bundle['link']).resolve()==Path(bundle['path'])
     assert bundle['commit']==source['commit'] and source['branch']=='main'
-    repo=Path('/Knowin/demo/weilinruan/Anvil/01_Code')
+    repo=Path('/workspace/Anvil')
     assert subprocess.check_output(['git','-C',str(repo),'rev-parse','HEAD'],text=True).strip()==source['commit']
     assert not subprocess.check_output(['git','-C',str(repo),'status','--porcelain'],text=True).strip()
     registry=read(repo/'registry/models.json')['final_release']
