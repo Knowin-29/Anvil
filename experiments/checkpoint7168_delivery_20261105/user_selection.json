@@ -1,0 +1,10 @@
+{
+  "reason": "User selected verified checkpoint7168 for project closure because32GPUs unavailable",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
+  "training_stage": "repair",
+  "step": 7168,
+  "cancelled_training_task": "t-20261105190848-9cphl",
+  "stop_future_training": true,
+  "final_quality_accepted": false,
+  "time": 1793879562.047709
+}

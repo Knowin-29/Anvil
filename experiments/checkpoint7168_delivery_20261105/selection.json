@@ -1,0 +1,22 @@
+{
+  "schema": "anvil-user-selected-checkpoint-v1",
+  "checkpoint": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_geometry_candidate_20261104/runs/repair/checkpoint-7168",
+  "stage": "repair",
+  "step": 7168,
+  "planned_stage_steps": 8192,
+  "stage_plan_completed": false,
+  "final_mopd": false,
+  "pipeline_spec_sha256": "e6916be53e75129dc621f007d063b8877e4060ab5eaadfd4d73bc7e8d876736d",
+  "seal_sha256": "619eee4448fcce2b37c68a03029f123281eb50bcd9d8eae30be093772edb7958",
+  "integrity": {
+    "path": "/Knowin/sim/weilinruan/Anvil/recovery_20261020/completion_20261028/visual_resume7168_20261105/resume7168_verification.json",
+    "sha256": "d8bc33fbf56967e1e523ae1449b7d3d24c522e7e09a41a0cc621f86adff73f55"
+  },
+  "parent_mopd_retained": true,
+  "eval_gpus": 8,
+  "full_native_records": 580000,
+  "full_public_records": 7366,
+  "full_general_records": 10105,
+  "publish_checkpoint_now": true,
+  "final_acceptance_relative_degradation_max": 0.1
+}

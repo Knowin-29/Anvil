@@ -1,0 +1,12 @@
+{
+  "state": "passed",
+  "checkpoint_count": 37,
+  "featured_stages": 5,
+  "archived_checkpoints": 32,
+  "byte_identical_weight_and_state_files": 1295,
+  "layout_collision_free": true,
+  "original_sources_modified": false,
+  "renderer_fixture_only": true,
+  "candidate_scores_created": false,
+  "checked": 1793880688.4194996
+}
