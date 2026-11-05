@@ -11,7 +11,7 @@ def run(*args,env=None):
 assert run('git','-C',str(repo),'branch','--show-current')=='main'
 assert not run('git','-C',str(repo),'status','--porcelain')
 mapping={p:dest/p.name for p in W.glob('*.py')}
-for name in ['selection.json','source_derivation.json','release_source_derivation.json','release_layout_validation.json','user_selection.json','evaluation_spec.json','OPERATIONS.md']:
+for name in ['selection.json','source_derivation.json','release_source_derivation.json','release_layout_validation.json','cleanup_guard_validation.json','user_selection.json','evaluation_spec.json','OPERATIONS.md']:
  mapping[W/name]=dest/name
 h=C/'final_delivery_checkpoint7168_v1'
 for p in h.glob('*.py'):mapping[p]=repo/'experiments/final_delivery_checkpoint7168_v1'/p.name
