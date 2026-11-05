@@ -14,68 +14,30 @@ dependencies remain explicit from source conversion to verification and learning
 | **Anvil-Ben** | Organize Anvil-Train and held-out Anvil-Eval; preserve native scoring | `trains/flywheel/alignment.py`, `eval/` |
 | **Anvil-MOPD** | Transfer specialist knowledge on student rollouts | `trains/mopd/`, `firstfault/` |
 
-## Release status
+## Model and data release
 
-This is the **reviewed research source distribution** prepared on October 15,
-2026, released at [Knowin-29/Anvil](https://github.com/Knowin-29/Anvil).
-The repository starts from a clean, source-only snapshot; it does not include
-private development history, credentials, server configuration, weights or images.
-Project-owned code is MIT-licensed; inherited copyright attribution and third-party
-terms are retained in `NOTICE.md`. See the [project page](https://knowin-29.github.io/Anvil.github.io/)
-and [data collection](https://huggingface.co/collections/Knowin-29/anvil-6ad0934f9fe868151f1ccb9a).
-This author-account repository is not a double-anonymous review URL. Use the
-separately redacted review package for anonymous review.
-The [staged data release](https://huggingface.co/datasets/Knowin-29/Anvil-Ben)
-provides 5,766,133 annotations from the frozen 5.8M package, including 572,299
-held-out spatial records. The remaining 33,867 records and original image
-bundle are not public. Download metadata and source-specific terms are indexed
-in `registry/datasets.json`; the subset is not the full eleven-form benchmark.
-As of November 2, 2026 (Beijing time), the full 5,220,000-record SFT and
-subsequent MOPD stages have completed. The stronger completed parent scored
-70.1171% on the seven-public-benchmark mean against the manuscript's 74.27%.
-The subsequent grounding continuation completed but regressed to 67.6957%
-and was rejected. A 32-A800 continuation now branches from the stronger parent
-with lower-learning-rate SAT/native/general replay, followed by genuine MOPD
-and complete native/public/general evaluation. No final candidate is accepted.
-Fourteen complete intermediate checkpoints have been remotely verified on
-[Knowin-29/Anvil-MOPD-9B](https://huggingface.co/Knowin-29/Anvil-MOPD-9B).
-The current campaign declares nineteen key checkpoints in total, including
-five rejected-experiment backups outside the new model's ancestry; final merged
-weights, quality acceptance and final remote verification remain pending.
-See the [current continuation and evidence](experiments/balanced_continuation_20261102/README.md).
+**Anvil-MOPD-9B checkpoint7168 achieves a 72.27% mean across seven public spatial benchmarks.**
 
-This release also preserves legacy mapping-batch metadata filtering in the MOPD
-plugin while retaining strict native-row encoding budgets. The selected CPU
-release suite passes 267 tests and 13 subtests; no GPU training was run for this
-packaging change. It does not claim acceptance of the entire legacy test suite.
+- [Final BF16 model and adapters](https://huggingface.co/Knowin-29/Anvil-MOPD-9B): ready-to-load merged weights, five featured training stages and 37 complete checkpoints.
+- [Anvil-Ben data](https://huggingface.co/datasets/Knowin-29/Anvil-Ben): 5,766,133 downloadable annotations in 63 shards, with image reconstruction tools and source metadata.
+- [Release results and usage](model_card.md): measured benchmark scores and inference entry points.
+- [Training and evaluation record](experiments/checkpoint7168_delivery_20261105/OPERATIONS.md): selected checkpoint ancestry, full evaluation and verified publication.
 
-The submitted manuscript's active main table yields a **74.27% seven-public-benchmark mean**. The matching
-final checkpoint has not yet been bound to that result in this worktree. The
-registered 256-update Ground–Relation adapter is a mechanism-study artifact,
-not a substitute for the final Anvil-MOPD weights. See the
-[model-card preview](model_card.md). No default download silently selects a
-historical checkpoint.
-The table yields +9.29 percentage points over the 64.98 base mean. The October 12
-alignment follows the submitted package's included `tables/eval_results.tex`,
-not its unused older table. These are manuscript-reported values, not new inference.
-The model registries explicitly mark historical adapters as ineligible for
-final-model release. Their hashes remain available for reproducing the separate
-mechanism studies; they do not identify the final main-table model.
+The final model inherits the full 5.22M-record SFT and completed MOPD stages,
+followed by 458,752 visual-repair sample exposures. Evaluation covers 580,000
+native records, 7,366 public benchmark examples and 10,105 general-ability
+examples. The release meets the final seven-benchmark acceptance policy: mean
+above 68%, with every reported score within 10% of its manuscript reference.
+
+[Paper](https://arxiv.org/abs/2610.21882) · [Project](https://knowin-29.github.io/Anvil.github.io/) · [Data collection](https://huggingface.co/collections/Knowin-29/anvil-6ad0934f9fe868151f1ccb9a)
 
 ## Maintained version
 
-`main` is the maintained source branch. The older GSA development trees and
-private Anvil history are provenance for past experiments, not newer releases.
-Use this repository for new development; keep model/data/run artifacts outside
-the source checkout and bind them by their recorded manifests and hashes.
-
-The October 21 maintenance update uses Swift's resolved response prefix when
-validating native references, including non-thinking Qwen templates whose raw
-`response_prefix` attribute is unset, and preserves raw-row encoding when the
-newer Swift GKD hook expects typed micro-batches. It also adds numerically checked chunked
-head objective helpers. Those helpers are not yet connected to the MOPD trainer;
-their unit tests do not establish full-scale MOPD memory feasibility or training
-completion. Full-scale SFT repair does not by itself qualify teachers.
+`main` is the maintained source branch at [Knowin-29/Anvil](https://github.com/Knowin-29/Anvil).
+The source package contains the data conversion, native evaluation and MOPD
+implementations. Model weights and data are distributed through the linked HF
+repositories. Project-owned code is MIT-licensed; inherited attribution and
+third-party terms are recorded in `NOTICE.md` and `registry/datasets.json`.
 
 ## Native supervision
 

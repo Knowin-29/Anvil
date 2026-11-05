@@ -1,0 +1,61 @@
+{
+  "schema": "anvil-public-final-quality-review-v1",
+  "accepted": true,
+  "acceptance_scope": "Seven named public benchmarks under the latest user instruction",
+  "rationale": "Full existing evaluation exceeds mean 68 and all seven scores are within 10% of their paper references. Release the evaluated checkpoint without new training or DLC submissions.",
+  "selected_step": 7168,
+  "public_mean": 72.27285714285715,
+  "benchmark_assessments": {
+    "cv_bench": {
+      "score": 88.44,
+      "paper_reference": 88.21,
+      "relative_difference": 0.002607414125382655,
+      "accepted": true
+    },
+    "embspatial": {
+      "score": 81.29,
+      "paper_reference": 82.34,
+      "relative_difference": 0.01275200388632496,
+      "accepted": true
+    },
+    "refspatial_bench": {
+      "score": 60.38,
+      "paper_reference": 59.0,
+      "relative_difference": 0.02338983050847462,
+      "accepted": true
+    },
+    "where2place": {
+      "score": 71.47,
+      "paper_reference": 68.0,
+      "relative_difference": 0.051029411764705865,
+      "accepted": true
+    },
+    "blink_relative_depth": {
+      "score": 82.26,
+      "paper_reference": 91.13,
+      "relative_difference": 0.09733347964446386,
+      "accepted": true
+    },
+    "erqa": {
+      "score": 47.74,
+      "paper_reference": 50.52,
+      "relative_difference": 0.05502771179730802,
+      "accepted": true
+    },
+    "vabench_point": {
+      "score": 74.33,
+      "paper_reference": 80.67,
+      "relative_difference": 0.07859179372753196,
+      "accepted": true
+    }
+  },
+  "report_sha256": "2926aef14d9d55af7016fe21a375c4321d6a78319c2e10d401ccc3da3b7cf0ca",
+  "final_spec_sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308",
+  "user_acceptance_policy_sha256": "bf5390ac18c5d50180cf031066d9989535d4820f804792be1508deff6776f662",
+  "historical_native_quality_review_sha256": "37d8641e92c94c8cc374ae49d925b18e103c078da82a34eef68de1da28f7cc33",
+  "native_score_sha256": "be4fd825c373dc1c302c6384e93713bbe70af8d4236061cc0b3c8611fb4ca012",
+  "native_score": 50.62367136038148,
+  "native_gate_passed": false,
+  "native_is_final_acceptance_gate": false,
+  "new_dlc_submissions": 0
+}

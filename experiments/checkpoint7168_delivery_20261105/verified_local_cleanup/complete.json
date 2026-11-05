@@ -1,0 +1,9 @@
+{
+  "state": "verified_local_checkpoint_and_inference_copies_removed",
+  "revision": "712b84d42cf90d25457e534845243b4a1882afbb",
+  "files": 1299,
+  "logical_bytes": 96328062396,
+  "allocated_bytes_unlinked": 96330574336,
+  "plan_sha256": "c4c50652e27788e0695a610d1caaf6cf78e6741cfccb0c3b9d822653fdc6e935",
+  "completed": 1793897233.8360162
+}

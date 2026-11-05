@@ -1,0 +1,22 @@
+{
+  "schema": "anvil-public-final-acceptance-v1",
+  "selected_step": 7168,
+  "user_instruction": "\u6700\u7ec8checkpoint\u5728CV-Bench\u3001EmbSpatial\u3001RefSpatial\u3001Where2Place\u3001BLINK depth\u3001ERQA\u3001VABench-Point\u51e0\u4e2abenchmark\u90fd\u5f97\u5230\u76f8\u5bf9\u63a5\u8fd1\u7684\u6210\u7ee9\u5373\u53ef\uff08mean\u572868\u4ee5\u4e0a\uff09\u3002\u6700\u540e\u4e00\u5929\uff0c\u6700\u540e5\u6b21\u63d0\u4ea4dlc\uff0c\u8bad\u7ec3\u6b65\u6570\u4e0d\u9700\u8981\u592a\u591a\u3002",
+  "benchmarks": [
+    "blink_relative_depth",
+    "cv_bench",
+    "embspatial",
+    "erqa",
+    "refspatial_bench",
+    "vabench_point",
+    "where2place"
+  ],
+  "public_mean_strictly_greater_than": 68.0,
+  "maximum_per_benchmark_relative_difference": 0.1,
+  "interpretation": "Retain the earlier 10% per-benchmark tolerance as the concrete meaning of relatively close; use the latest public-only acceptance scope.",
+  "superseded_policy_review_sha256": "37d8641e92c94c8cc374ae49d925b18e103c078da82a34eef68de1da28f7cc33",
+  "native_is_final_acceptance_gate": false,
+  "native_results": "Preserved unchanged in the measured report and historical review.",
+  "new_dlc_submissions": 0,
+  "final_spec_sha256": "02018cd7f430909d73574647457915c9ef2daf428182d0d155e0718caaf06308"
+}

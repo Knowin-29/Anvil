@@ -2,11 +2,22 @@
   "artifact_role": "historical_mechanism_control",
   "eligible_for_final_model_release": false,
   "final_release": {
-    "status": "checkpoint_and_evaluation_binding_missing",
-    "checkpoint": null,
-    "weights_sha256": null,
-    "evaluation_manifest": null,
-    "uploaded": false
+    "status": "verified_final_release",
+    "checkpoint": "visual_repair/checkpoint-7168",
+    "repository": "Knowin-29/Anvil-MOPD-9B",
+    "revision": "712b84d42cf90d25457e534845243b4a1882afbb",
+    "weights_sha256": {
+      "model.safetensors-00001-of-00004.safetensors": "fda753748f6d5a1373b224a1f633b25728589538f4d2ed06397775dfc6530d38",
+      "model.safetensors-00002-of-00004.safetensors": "ebf435662f7d282394e5be22a8dc5a57126163a20913457b0740bd8d38f08c28",
+      "model.safetensors-00003-of-00004.safetensors": "185b7834846aead7f2ad0ed69bd463e0e73b55bf9309020104062dd3844ab8cf",
+      "model.safetensors-00004-of-00004.safetensors": "ed4a83672952fb76f8eebccf161c224962561b44484a163fbc1224d0730bfb08"
+    },
+    "evaluation_manifest": "experiments/checkpoint7168_delivery_20261105/evaluation_report.json",
+    "acceptance_review": "experiments/checkpoint7168_delivery_20261105/public_quality_review.json",
+    "verification_receipt": "experiments/checkpoint7168_delivery_20261105/final_release/verification_receipt.json",
+    "acceptance_scope": "seven_public_benchmarks",
+    "public_mean": 72.27285714285715,
+    "uploaded": true
   },
   "base_repository": "Qwen/Qwen3.5-9B",
   "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
@@ -39,7 +50,11 @@
       "evaluation_export_manifest_sha256": "43ed54572e076a1e2bb086bbdca0e92ea33b51e4a38b573bdcd10497f343f49d",
       "planned_records": 580000,
       "shards": 3,
-      "records_per_shard": [193339, 193331, 193330],
+      "records_per_shard": [
+        193339,
+        193331,
+        193330
+      ],
       "partition": "Per-form original ordinal modulo three; disjoint union covers every selected record",
       "response_text_policy": "identity-generated-text-v1",
       "template": "qwen3_vl",
@@ -74,11 +89,51 @@
         "final_mopd_result": false,
         "scope": "Terminal SFT preparation checkpoints, original frozen prompts, full denominators for completed forms only",
         "rows": [
-          {"form": "depth_order", "source": "PRISM", "metric": "reference_exact", "n": 3601, "specialist": "S", "specialist_successes": 3301, "joint_successes": 3174},
-          {"form": "action_cot", "source": "ALFRED", "metric": "expert_continuation_exact", "n": 3327, "specialist": "A", "specialist_successes": 862, "joint_successes": 605},
-          {"form": "action_cot", "source": "ALFRED", "metric": "next_action_exact", "n": 3327, "specialist": "A", "specialist_successes": 2144, "joint_successes": 1864},
-          {"form": "affordance", "source": "ShareRobot-Bench", "metric": "region_iou50", "n": 193, "specialist": "A", "specialist_successes": 11, "joint_successes": 13},
-          {"form": "dof", "source": "PRISM", "metric": "contract_valid", "n": 580, "specialist": "A", "specialist_successes": 0, "joint_successes": 0}
+          {
+            "form": "depth_order",
+            "source": "PRISM",
+            "metric": "reference_exact",
+            "n": 3601,
+            "specialist": "S",
+            "specialist_successes": 3301,
+            "joint_successes": 3174
+          },
+          {
+            "form": "action_cot",
+            "source": "ALFRED",
+            "metric": "expert_continuation_exact",
+            "n": 3327,
+            "specialist": "A",
+            "specialist_successes": 862,
+            "joint_successes": 605
+          },
+          {
+            "form": "action_cot",
+            "source": "ALFRED",
+            "metric": "next_action_exact",
+            "n": 3327,
+            "specialist": "A",
+            "specialist_successes": 2144,
+            "joint_successes": 1864
+          },
+          {
+            "form": "affordance",
+            "source": "ShareRobot-Bench",
+            "metric": "region_iou50",
+            "n": 193,
+            "specialist": "A",
+            "specialist_successes": 11,
+            "joint_successes": 13
+          },
+          {
+            "form": "dof",
+            "source": "PRISM",
+            "metric": "contract_valid",
+            "n": 580,
+            "specialist": "A",
+            "specialist_successes": 0,
+            "joint_successes": 0
+          }
         ],
         "evidence_metrics_sha256": {
           "A_complete_scope": "0a9bf5ce768d296a3eef5e729e34278761a769c146bd13675cd4c0f0827cb512",
@@ -117,7 +172,7 @@
           "family": "S",
           "form": "metric_comparison",
           "source": "coco_train2017",
-          "nll_difference": 0.00006145583731356763
+          "nll_difference": 6.145583731356763e-05
         },
         "panel_manifest_sha256": "89a2a3bca9dbaead0f2d0400943aa7b3f98c33fdd45f651abe1c5dd28368e2e8",
         "protocol_sha256": "01c4cf0d0d0de7fd32fefa5bc57c1e5d62b0842cbc31703c81c88a1db441cd92",

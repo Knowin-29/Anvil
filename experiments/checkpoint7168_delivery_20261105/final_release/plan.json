@@ -1,0 +1,8 @@
+{
+  "parent_revision": "8bbfbd28ccc17fde47f852570bf23e9ec73b9791",
+  "files": 1529,
+  "checkpoints": 37,
+  "featured_stages": 5,
+  "quality_review_sha256": "e1d0c99e2db8f3fd94e1286e7b18237f30bddba083051c26ac485b86b658fa23",
+  "expected_inventory_sha256": "d4881accf266a54748e6d1ab799221ea11cc0fb215869d487ab2e9a50f48a7b7"
+}

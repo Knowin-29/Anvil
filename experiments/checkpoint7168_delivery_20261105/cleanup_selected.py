@@ -35,9 +35,14 @@ def verified_release():
     assert whole['state']=='accepted_selected_model_and37_checkpoints_remotely_verified'
     assert whole['repository']==REPO and whole['checkpoints']==37 and whole['selected_step']==7168
     assert whole['final_spec_sha256']==sha(Z/'evaluation_spec.json')
-    assert whole['quality_review_sha256']==sha(Z/'quality_review.json')
-    assert read(Z/'quality_review.json')['accepted'] is True
-    assert read(Z/'tolerance_assessment.json')['all_numeric_tolerances_pass'] is True
+    assert whole['quality_review_sha256']==sha(Z/'public_quality_review.json')
+    assert whole['user_acceptance_policy_sha256']==sha(Z/'public_acceptance_policy.json')
+    review=read(Z/'public_quality_review.json')
+    assert review['accepted'] is True and review['public_mean']>68
+    assert review['report_sha256']==sha(Z/'evaluation/final_report.json')
+    assert review['final_spec_sha256']==whole['final_spec_sha256']
+    assert len(review['benchmark_assessments'])==7
+    assert all(x['accepted'] and x['relative_difference']<=0.10 for x in review['benchmark_assessments'].values())
     return whole
 
 def remote_check(api,whole):
@@ -50,11 +55,13 @@ def remote_check(api,whole):
         if meta.lfs:assert meta.lfs.sha256==item['sha256'],name
 
 def candidates(whole):
-    mapping=read(Z/'final_release/layout_map.json')
+    mapping=read(Z/'checkpoint_collection/layout_map.json')
+    collection=read(Z/'checkpoint_collection/complete.json')
     backup=read(Z/'checkpoint_upload/manifest.json')
     prior=read(Z/'checkpoint_upload/verification_receipt.json')
     assert prior['manifest_sha256']==sha(Z/'checkpoint_upload/manifest.json')
-    assert prior['revision']==whole['parent_revision'] and len(prior['key_checkpoints'])==37
+    assert prior['revision']==collection['parent_revision'] and len(prior['key_checkpoints'])==37
+    assert collection['revision']==whole['parent_revision'] and collection['checkpoint_count']==37
     payload=read(Z/'release_payload/payload_manifest.json')
     assert payload['final_spec_sha256']==whole['final_spec_sha256']
     output={}
@@ -63,10 +70,20 @@ def candidates(whole):
             if is_checkpoint:
                 if not name.startswith('checkpoints/') or not PAYLOAD.fullmatch(Path(name).name):continue
             elif Path(name).suffix!='.safetensors':continue
-            remote=mapping[name]
+            remote=mapping[name] if is_checkpoint else name
             expected={k:item[k] for k in ['bytes','sha256']}
             assert whole['files'][remote]==expected,'Payload not byte-identical to accepted remote copy'
             p=Path(item['source'])
+            if p!=p.resolve():
+                aliases={
+                    C/'targeted_repair_20261031/runs/ancestor_repair':C/'direct_completion_20261029/runs/repair',
+                    C/'targeted_repair_20261031/runs/ancestor_mopd':C/'direct_recovery_20261030/runs/mopd',
+                }
+                alias=p.parent.parent
+                assert alias in aliases and alias.is_symlink() and alias.resolve()==aliases[alias]
+                canonical=aliases[alias]/p.parent.name/p.name
+                assert p.resolve()==canonical and not p.is_symlink()
+                p=canonical
             assert p.is_absolute() and p==p.resolve() and p.is_relative_to(C) and p.is_file()
             if str(p) in output:
                 assert output[str(p)]['expected']==expected
@@ -90,7 +107,8 @@ def main():
             lock=stack.enter_context(p.open('a'));fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
         cloud=require_idle();api,token=auth();remote_check(api,whole)
         sources=candidates(whole)
-        items=[dict(helper.identity(Path(name),item['expected'],C),remote_paths=item['remote_paths'])
+        items=[dict(helper.identity(Path(name),item['expected'],C),remote_paths=item['remote_paths'],
+                    allocated_bytes=Path(name).stat().st_blocks*512)
             for name,item in sorted(sources.items())]
         inspection=helper.no_local_readers(items)
         assert len({(x['device'],x['inode']) for x in items})==len(items),'Hard-linked candidates need review'
@@ -100,6 +118,7 @@ def main():
         out.mkdir()
         save(out/'plan.json',dict(schema='anvil-selected7168-local-copy-cleanup-v1',revision=whole['revision'],
             dry_run=not args.apply,candidates=items,logical_bytes=sum(x['bytes'] for x in items),
+            allocated_bytes=sum(x['allocated_bytes'] for x in items),
             final_receipt_sha256=sha(Z/'final_release/verification_receipt.json'),
             script_sha256=sha(__file__),helper_sha256=HELPER_SHA,cloud=cloud,local_inspection=inspection,
             retained='Non-key checkpoints, all logs, source, metadata, datasets, bases, teachers and Codex records',
@@ -115,6 +134,7 @@ def main():
                     log.flush();os.fsync(log.fileno())
             save(out/'complete.json',dict(state='verified_local_checkpoint_and_inference_copies_removed',
                 revision=whole['revision'],files=len(items),logical_bytes=sum(x['bytes'] for x in items),
+                allocated_bytes_unlinked=sum(x['allocated_bytes'] for x in items),
                 plan_sha256=sha(out/'plan.json'),completed=time.time()))
         print(json.dumps(dict(dry_run=not args.apply,files=len(items),logical_bytes=sum(x['bytes'] for x in items))))
 

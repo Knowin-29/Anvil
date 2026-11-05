@@ -2,11 +2,22 @@
   "artifact_role": "historical_mechanism_control",
   "eligible_for_final_model_release": false,
   "final_release": {
-    "status": "checkpoint_and_evaluation_binding_missing",
-    "checkpoint": null,
-    "weights_sha256": null,
-    "evaluation_manifest": null,
-    "uploaded": false
+    "status": "verified_final_release",
+    "checkpoint": "visual_repair/checkpoint-7168",
+    "repository": "Knowin-29/Anvil-MOPD-9B",
+    "revision": "712b84d42cf90d25457e534845243b4a1882afbb",
+    "weights_sha256": {
+      "model.safetensors-00001-of-00004.safetensors": "fda753748f6d5a1373b224a1f633b25728589538f4d2ed06397775dfc6530d38",
+      "model.safetensors-00002-of-00004.safetensors": "ebf435662f7d282394e5be22a8dc5a57126163a20913457b0740bd8d38f08c28",
+      "model.safetensors-00003-of-00004.safetensors": "185b7834846aead7f2ad0ed69bd463e0e73b55bf9309020104062dd3844ab8cf",
+      "model.safetensors-00004-of-00004.safetensors": "ed4a83672952fb76f8eebccf161c224962561b44484a163fbc1224d0730bfb08"
+    },
+    "evaluation_manifest": "experiments/checkpoint7168_delivery_20261105/evaluation_report.json",
+    "acceptance_review": "experiments/checkpoint7168_delivery_20261105/public_quality_review.json",
+    "verification_receipt": "experiments/checkpoint7168_delivery_20261105/final_release/verification_receipt.json",
+    "acceptance_scope": "seven_public_benchmarks",
+    "public_mean": 72.27285714285715,
+    "uploaded": true
   },
   "base_repository": "Qwen/Qwen3.5-9B",
   "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
